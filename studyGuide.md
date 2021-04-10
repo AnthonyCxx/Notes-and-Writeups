@@ -133,12 +133,12 @@ arrayTemplate<int> thisArray;
    sure that everything is always in order. Now, the errors thrown from \<cassert\> aren't very helpful to the end-user, so \<cassert\> should only be 
    used by the programmer. 
  
- - Side note: since 0 always evaluates to false, you can put something like 'assert(0);' at the end of a switch statement for the default value <br />
+ - Side note: since 0 always evaluates to false, you can put something like 'assert(0);' at the end of a switch statement for the default value 
               (assuming you never want to run into a default value)
 
 ### Try, Throw, and Catch
-- Try, throw, and catch are the three exception-handling keywords that help out the user understand the problem. The primary difference is that <br />
-  using try, throw, and catch will not end the program, but instead execute a different section of code (an error message, usually), whereas <br />
+- Try, throw, and catch are the three exception-handling keywords that help out the user understand the problem. The primary difference is that 
+  using try, throw, and catch will not end the program, but instead execute a different section of code (an error message, usually), whereas 
   \<cassert\> straight-up kills the program.
 
 #### Example : Catching a Division by Zero Error with Try, Throw, and Catch
@@ -184,7 +184,7 @@ int main()
   on the data-type being thrown. 
   
   ##### Catching Other Errors
-  If you want to catch any data type, write 'catch(...)' (this is for variadic statements, which were introduced in C++11. You can put this at the end of a series <br />
+  If you want to catch any data type, write 'catch(...)' (this is for variadic statements, which were introduced in C++11. You can put this at the end of a series 
   of catch statements to make sure you catch everything.
   
   ### Exception Classes with Try, Throw, and Catch
