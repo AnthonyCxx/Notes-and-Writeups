@@ -123,7 +123,7 @@ arrayTemplate<int> thisArray;
 	
 
 #### Misc.
-- ```->```  is a shorthand for ```c++(*someObject).someObjectMember``` <br />
+- ```->```  is a shorthand for ```(*someObject).someObjectMember``` <br />
 - To overload the ```++``` operator, you have to specify whether it is the pre- or post-increment operator. You do so by adding a dummy variable, which <br />
   will allow the compiler to differentiate. With no dummy variable, the operator is pre-increment; with a dummy variable, the operator is post-increment. <br />
   You can use an integer as this dummy value and just pass '0' every time. <br />
