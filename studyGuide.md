@@ -83,7 +83,7 @@ const arrayClass& arrayClass::operator=(const className& rightObject)
 ```
 
 ### 'This' Keyword 
-- The keyword this is a pointer to the current object. It is commonly used to call other methods from within the same class. For example, ```c++ this->listKiller()```  <br />
+- The keyword this is a pointer to the current object. It is commonly used to call other methods from within the same class. For example, ```this->listKiller()```  <br />
   could be  written inside a destructor to call the 'listKiller' method. <br />
 
 - It is common to return a whole object by doing return \*this. Doing so allows you to chain method calls. <br />
