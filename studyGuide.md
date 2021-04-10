@@ -54,22 +54,18 @@ friend ostream& operator<<(ostream&, const className&);		//declaration
 
 ostream& operator<<(ostream& osObject, const className& cObject)   //instantiation
 {
- //local declaration, if any
- //Output the members of cObject.
- //osObject << . . .
- //Return the stream object.
- return osObject;
+   osObject << cObject.someAttribute << endl;    //You can directly access the member because it's a friend function!
 }
 ```
 
-##### Overloading the = Operator:
+##### Overloading the = Operator (performs a deep copy):
 ```c++
-const arrayClass& arrayClass::operator=(const className& rightObject)
+const arrayClass& arrayClass::operator=(const arrayClass& rightObject)
 {
  //local declaration, if any
- 	if (this != &rightObject)//avoid self-assignment
+ 	if (this != &rightObject)    //avoid self-assignment
  	{
- 		delete [] list; //Delete the current instantiation of the list
+ 		delete [] list;      //Delete the current instantiation of the list
 		
  		maxSize = otherList.maxSize;    //Copy data members
  		length = otherList.length; 
@@ -381,63 +377,70 @@ bool linkedListType<Type>::isEmpty() const
    return first==nullptr;    //List is empty if count is 0 or the *first pointer is nullptr
 }
 
-//print() -- iterate over the list and 
+//print() -- iterate over the list and print out values as it goes
 template <class Type>
 void linkedListType<Type>::print() const
 {
-   nodeType<Type> *cur=first;
+   nodeType<Type> *cur=first;    //set the pointer to the first node
 
-   while(cur != nullptr) {
-      cout << cur->info << " ";
-      cur = cur->link;
+   while(cur != nullptr)     //the last item equals nullptr, so this means iterate until you reach the end of the list 
+   {
+      cout << cur->info << " ";		//output the info for that node
+      cur = cur->link;                     //follow the link from that node
    }
 }
 
 template <class Type>
 int linkedListType<Type>::length() const
 {
-   return count;
+   return count;	//count is the amount of elements (aka the length of the linked list)
 }
 
+//Copy consturctor
 template <class Type>
 linkedListType<Type>::linkedListType(const linkedListType<Type>& otherList)
 {
-   first = nullptr;
-   copyList(otherList);
+   first = nullptr;	
+   copyList(otherList); 	//Refer to copyList()
 }
 
+//Overloaded operator= =
 template <class Type>
 const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>& otherList)
 {
-   if(this != &otherList)
-      copyList(otherList);
+   if(this != &otherList) 	//avoid self-assignment
+      copyList(otherList);		//Refer to copyList()
    return *this;
 
 }
 
+//copyList()
 template <class Type>
 void linkedListType<Type>::copyList(const linkedListType<Type>& otherList)
 {        
-   //Preliminary case
+   //If the current list is not empty, empty it
    if(this->first != nullptr) 
    {
-      listKiller();
+      listKiller();	//Refer to listKiller()
    }
    
+   //If the list to be copied is empty, set the new list to empty
    if(otherList.first == nullptr)
    {
       //the source list is empty
       first = last = nullptr;
       count = 0;  
    } 
-   else 
+   else //if the other list is not empty...
    {
       nodeType<Type> *curPtr;
       nodeType<Type> *newNode;
    
-      count = otherList.count;
+      count = otherList.count;	//copy the count
+      
       //point to first node in the other list
       curPtr = otherList.first;
+      
       //setup the new list with the first node
       first = new nodeType<Type>;
       first->info = curPtr->info;
@@ -448,6 +451,7 @@ void linkedListType<Type>::copyList(const linkedListType<Type>& otherList)
       //while curPtr will track the other list. 
       last = first;
       curPtr = curPtr->link; 
+      
       while(curPtr != nullptr) {
          newNode = new nodeType<Type>;
          newNode->info = curPtr->info;
@@ -477,7 +481,7 @@ linkedListIterator<Type> linkedListType<Type>::end()
    return temp;
 }
 
-//listKiller
+//listKiller()
 template <class Type>
 void linkedListType<Type>::listKiller()
 {
@@ -485,7 +489,8 @@ void linkedListType<Type>::listKiller()
    nodeType<Type> *tmp;
 
    //Iterate over all nodes, deleting them as it goes
-   while(first!= nullptr) {
+   while(first!= nullptr) 
+   {
       tmp = first;
       first = first->link;
       delete tmp; 
@@ -493,6 +498,7 @@ void linkedListType<Type>::listKiller()
 
    //Change class values to indicate an empty list
    last = nullptr;
+   //first is implicitly set to nullptr because the it followed the link from before the last element, which set it to nullptr
    count = 0;
 }
 
@@ -520,7 +526,7 @@ void linkedListType<Type>::listKiller()
  	//Function to overload the dereferencing operator *.
  	//Postcondition: Returns the info contained in the node.
  
- 	linkedListIterator<Type> operator++();     //<====== Remember, the pre-increment operator has no dummy variable
+ 	linkedListIterator<Type> operator++();     
  	//Overload the pre-increment operator.
  	//Postcondition: The iterator is advanced to the next
 	 // node.
