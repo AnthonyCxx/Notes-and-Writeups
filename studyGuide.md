@@ -7,7 +7,7 @@
 	- Operator function format: ```returnType operator operatorSymbol(formal parameter list);``` <br />
 	- Example:                  ```bool operator==(const clockType& otherClock) const;``` <br />
 	
-	```c++()	 []	 ->	  = ```   	 must be overloaded from within a class definition if used with a class.
+	```()	 []	 ->	  = ```   	 must be overloaded from within a class definition if used with a class.
 			
 Notable restrictions on operator overloading <br />
 - You cannot change operator precedence <br />
