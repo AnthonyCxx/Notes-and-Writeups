@@ -129,8 +129,96 @@ arrayTemplate<int> thisArray;
 ## Chapter 14 - Exception Handling
 
 ### \<cassert\>
+- \<cassert\> is an exception-handling library used by programmers to end their code pre-maturely in the case of what would be a fatal error. <br />
+   The entire library consists of a single function, which aborts the program if the user-specified condition is not true. This allows you to make <br />
+   sure that everything is always in order. Now, the errors thrown from \<cassert\> aren't very helpful to the end-user, so \<cassert\> should only be 
+   used by the programmer. 
+ 
+ - Side note: since 0 always evaluates to false, you can put something like 'assert(0);' at the end of a switch statement for the default value <br />
+              (assuming you never want to run into a default value)
 
 ### Try, Throw, and Catch
+- Try, throw, and catch are the three exception-handling keywords that help out the user understand the problem. The primary difference is that <br />
+  using try, throw, and catch will not end the program, but instead execute a different section of code (an error message, usually), whereas <br />
+  \<cassert\> straight-up kills the program.
+
+#### Example : Catching a Division by Zero Error with Try, Throw, and Catch
+```c++
+#include <iostream> 
+#inlucde <string>
+using namespace std; 
+
+int main() 
+{ 
+	try
+	{
+		int dividend, divisor, quotient; 
+		string divisionByZeroError = "You cannot divide by zero";
+		
+ 		cout << "Enter the dividend: ";   //The number to be divided
+ 		cin >> dividend; 
+	
+ 		cout << endl; 
+ 		cout << "Line 9: Enter the divisor: ";    //The number to divide by
+ 		cin >> divisor; 
+ 		cout << endl; 
+	
+		if (divisor == 0)
+		    throw divisionByZeroError;	    //Breaks out of the 'try' statement
+		
+ 		quotient = dividend / divisor;     //Divide the dividend by the divisor
+ 	
+		cout << "Line 13: Quotient = " << quotient << endl; 
+ 
+		return 0; //Line 14
+	}
+	catch(string zeroErr)	//Catch by data type -- since 'zeroErr' is a string, and a string (divisionByZeroError)
+	{                      // was thrown, this statement will catch it
+		cout << "Error: " << zeroErr << endl;    //cout << "Error: " << "You cannot divide by zero" << endl;
+	}
+}
+```
+- Here, you can see a try, throw, and catch statement trio. Here's how it works: for any block of code that you expect an error may occur in, <br />
+  you should put the statements in a try block. Then, write a conditional that throws a some data-type (usually a string) that evaluates to true if the <br />
+  program _would_ have run into an error. This will immediately exit the try block whenever that error would have been thrown. Since you're throwing an error, <br />
+  you will also need to catch it. The 'catch' statement activates whenever an exception (error) is thrown, and which catch statement activates depends <br />
+  on the data-type being thrown. 
+  
+  ##### Catching Other Errors
+  If you want to catch any data type, write 'catch(...)' (this is for variadic statements, which were introduced in C++11. You can put this at the end of a series <br />
+  of catch statements to make sure you catch everything.
+  
+  ### Exception Classes with Try, Throw, and Catch
+  - One of the more efficent ways to catch errors is to write a class that can handle errors by taking in a string in its parameterized constructor (this <br />
+    saves you from having to declare tons of different strings for every error). Here is an example of what a divisionByZero class should look like.
+```c++
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+class divisionByZeroError 
+{ 
+	public: 
+ 	divisionByZeroError()
+ 	{ 
+ 	    cmessage = "You cannot divide by zero"; 
+ 	} 
+ 	divisionByZeroError(string inputStr) 
+ 	{ 
+ 	    cmessage = inputStr; 
+ 	} 
+ 	string what() 
+ 	{ 
+ 	    return cmessage;
+ 	} 
+	
+	private: 
+            string cmessage; 
+}; 
+ ```
+ Now with this class, you could just throw ```divisionByZeroError("someErrorMessage")```  for custom error messages <br />
+ or ```divisionByZeroError()``` for the default one. In this case, you would need to instantiate a divisionByZeroError object <br />
+ call ```divisionByZeroErrorObject.what()``` to get the error message.
 
 ## Chapter 15
 
