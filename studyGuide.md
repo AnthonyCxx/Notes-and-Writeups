@@ -223,7 +223,75 @@ class divisionByZeroError
  call ```divisionByZeroErrorObject.what()``` to get the error message.
 
 ## Chapter 15 - Recursion
+- Recursion is the simple idea that a function can call itself. Obviously, this would cause an infinite loop, so you should have a base case <br />
+  that should break the recursion loop when it gets to a simple enough answer. A common example would be calculating a factorial. <br />
+  
+  ### Recursion
+  ```c++
+  int factorial(int targetNumber){
+ 	if (num == 0)
+ 	  return 1;
+ 	else
+ 	  return targetNumber * factorial(targetNum - 1);
+  }
+  ```
+  int factorial(int) -- a function which takes the factorial of a number <br />
+  TargetNumber -- the number you want to calculate the factorial of <br />
+  
+  The function factorial calls itself with the ```targetNumber - 1``` whenever the target number is not 0. So, what happens is the function creates <br />
+  replicas of itself until it reaches the base case (0) and then starts returning the numbers it needs to actually calculate the factorials.
+  
+  The problem with recursion is that it involves an exponential amount of function calls, which are inefficient in both memory and processing speed -- <br />
+  This is because each new instance of the function has overhead involved and declares its own local variables; moreover, a function instance cannot <br />
+  deinstantiate until the calls it relies on finish. If you want a convenient approach, go with recursion, but if you want an efficient one, go with iteration. <br />
 
+#### Example of Recusion with a Recursive Binary Search
+```c++
+  // C++ program to implement recursive Binary Search
+#include <bits/stdc++.h>
+using namespace std;
+  
+// A recursive binary search function. It returns
+// location of x in given array arr[l..r] is present,
+// otherwise -1
+int binarySearch(int arr[], int l, int r, int x)
+{
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+  
+        // If the element is present at the middle
+        // itself
+        if (arr[mid] == x)
+            return mid;
+  
+        // If element is smaller than mid, then
+        // it can only be present in left subarray
+        if (arr[mid] > x)
+            return binarySearch(arr, l, mid - 1, x);
+  
+        // Else the element can only be present
+        // in right subarray
+        return binarySearch(arr, mid + 1, r, x);
+    }
+  
+    // We reach here when element is not
+    // present in array
+    return -1;
+}
+  
+int main(void)
+{
+    int arr[] = { 2, 3, 4, 10, 40 };
+    int x = 10;
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int result = binarySearch(arr, 0, n - 1, x);
+    (result == -1) ? cout << "Element is not present in array"
+                   : cout << "Element is present at index " << result;
+    return 0;
+}
+  
+```
+[Adapted from This GeeksForGeeks Article](https://www.geeksforgeeks.org/binary-search/)
 
 ## Chapter 16 - Linked Lists
 
