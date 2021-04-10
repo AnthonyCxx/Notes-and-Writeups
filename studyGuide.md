@@ -18,8 +18,8 @@
 		
 Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access <br /> 
 to the data members of the class (public and private). Using the keyword friend at the front of a function  <br />
-declaration gives the function access to all the data members of the given class. The keyword friend is only   <br />
-included in the function declaration.  <br />
+declaration gives the function access to all the data members of the given class. **The keyword friend is only   <br />
+included in the function declaration**.  <br />
 	
 ```class1.operator=(class2)``` is an equally valid way to write ```class1 = class2``` <br />
 	
