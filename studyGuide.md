@@ -343,10 +343,11 @@ int main(void)
  
 Here is the excerpt our implementation of the methods of a linked list from lab12
 ```c++
+//Default constructor
 template <class Type>
 linkedListType<Type>::linkedListType()
 {
-   first = nullptr;
+   first = nullptr;    //Instantiates an empty linked list -- a linked list with no nodes
     last = nullptr;
    count = 0;
 }
@@ -354,29 +355,33 @@ linkedListType<Type>::linkedListType()
 template <class Type>
 linkedListType<Type>::~linkedListType()
 {
-   listKiller();
+   listKiller();     //Refer to listKiller()
 }
 
+//front() -- returns the data from the first node
 template <class Type>
 Type linkedListType<Type>::front() const
 {
-   assert(first != nullptr);
-   return first->info;
+   assert(first != nullptr);   //Prevent calling data from a null pointer
+   return first->info;           //Return the data from the first node
 }
 
+//back() -- returns the data from the last node
 template <class Type>
 Type linkedListType<Type>::back() const
 {
-   assert(last != nullptr);
+   assert(last != nullptr);   //Refer to first() for comments
    return last->info;
 }
 
+//isEmpty()
 template <class Type>
 bool linkedListType<Type>::isEmpty() const
 {
-   return first==nullptr;
+   return first==nullptr;    //List is empty if count is 0 or the *first pointer is nullptr
 }
 
+//print() -- iterate over the list and 
 template <class Type>
 void linkedListType<Type>::print() const
 {
