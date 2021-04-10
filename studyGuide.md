@@ -1,30 +1,31 @@
-# Chapter 13
+# 1720 Study Guide
+## Chapter 13
 
-	## Operator Overloading
+### Operator Overloading
 		
-		• To overload an operator, you must write an operator function
-			- Operator function format: ```c++ returnType operator operatorSymbol(formal parameter list);```
-			- Example:                                ```c++bool operator==(const clockType& otherClock) const;```
+ To overload an operator, you must write an operator function
+	- Operator function format: ```c++ returnType operator operatorSymbol(formal parameter list);```
+	- Example:                                ```c++bool operator==(const clockType& otherClock) const;```
 	
-		• ```c++ ()	 []	 ->	  = ```   	 must be overloaded from within a class definition if used with a class.
+	```c++ ()	 []	 ->	  = ```   	 must be overloaded from within a class definition if used with a class.
 			
-		• Notable restrictions on operator overloading
-			- You cannot change operator precedence
-			- Associativity cannot be changed 
-			- You cannot use default parameters
-			- You cannot create new operators
-			- You cannot overload some operators (```c++ .    .*   ::   ?:   sizeof()   ```)
+Notable restrictions on operator overloading
+- You cannot change operator precedence
+- Associativity cannot be changed 
+- You cannot use default parameters
+- You cannot create new operators
+- You cannot overload some operators (```c++ .    .*   ::   ?:   sizeof()   ```)
 		
-		• Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access
-	           to the data members of the class (public and private). Using the keyword friend at the front of a function 
-	           declaration gives the function access to all the data members of the given class. The keyword friend is only  
-	           included in the function declaration. 
+Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access
+to the data members of the class (public and private). Using the keyword friend at the front of a function 
+declaration gives the function access to all the data members of the given class. The keyword friend is only  
+included in the function declaration. 
 	
-		• class1.operator=(class2) is an equally valid way to write class1 = class2 test
+```c++ class1.operator=(class2)``` is an equally valid way to write ```c++ class1 = class2 ```
 	
-		• Example of function overloading:
-		```c++rectangleType rectangleType::operator* (const rectangleType& rectangle) const 
-    { 
+Example of function overloading:
+```c++rectangleType rectangleType::operator* (const rectangleType& rectangle) const 
+{ 
       rectangleType tempRect;   //del
       
       tempRect.length = length * rectangle.length; 
