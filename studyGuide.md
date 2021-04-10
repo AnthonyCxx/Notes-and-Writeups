@@ -90,6 +90,8 @@ const arrayClass& arrayClass::operator=(const className& rightObject)
   For example. You could do ```myRectangle.setLength(15.25).setWidth(12.00)``` as the first method (setLength) will return the object. Essentially, by returning 
   ```*this``` from our function, we allow ourselves to write  ```myRectangle.setLength(15.25)``` and ```myRectange.setWidth(12.00)``` in a single line. <br />
   If you use Python, this is how method chaining works in Python too. <br />
+  
+- **It is necessary to use ```this->``` when using a method or data member inherited from a base class.
 	
 ### Templates
 
