@@ -1,4 +1,5 @@
 # 1720 Study Guide
+
 ## Chapter 13 - Operator Overloading and Templates
 
 ### Operator Overloading
@@ -293,6 +294,102 @@ int main(void)
 ```
 [Adapted from This GeeksForGeeks Article](https://www.geeksforgeeks.org/binary-search/)
 
-## Chapter 16 - Linked Lists
+## Chapter 16 - Linked Lists and Iterators
 
+### Linked Lists Data Structure
+- Linked lists are similar to arrays in that they are both a series of individual items, but the main difference is the way they are stored <br />
+  in memory. Arrays are contiguous, which means that you have to have enough consecutive space in memory to store one, which becomes a problem <br />
+  when you have massive arrays. Linked lists on the other hand are non-contiguous, so you don't have to store them consecutively. This allows <br />
+  for having more individual nodes. Now, the only drawback with linked lists is that you have to have some way to connect the nodes (indices) <br />
+  together, which is done by using a pointer. This means that since each individual element of a linked list is composed of the actual data <br />
+  **and** the pointer to the next node in the linked list, each individual element requires more memory. Essentially, linked lists are a little <br />
+  more versatile but require more memory.
+  
+  Now that you understand what a node (item) in a linked list is, let's have a look at an individual node in one:
+  ```c++
+  template <class Type>
+  struct nodeType       
+  {
+    Type info;
+    nodeType<Type> *link;    //Pointer to the info! Not an actual instance of a nodeType variable
+  };
+  ```
+  Here you can see a struct _nodeType_ that defines an individual node (item) in a linked list. You can see that it's composed of some data (of varied type). <br />
+  Additionally, you can see that it contains a nodeType<Type> pointer that points to the next item in the linked list. It's important that you include the \*, <br />
+  otherwise the program will not compile since a struct cannot contain itself (it would cause an infinite loop). <br />
+  
+  ```c++
+  template <class Type>
+  class linkedListType
+  {    
+	protected:       
+	    int count;  //number of elements in the list
+            nodeType<Type> *first;  //point to first node
+            nodeType<Type> *last;   //point to last node
+             
+	    ...the other methods 
+  }
+  ```
+  In this excerpt from our lab12 linkedList.h, you can see the rest of the data members for a linked list - the count and the pointers to the first and last elements  <br />
+  in the list. The count is self-explanatory, it's the amount of items in the list (\*first and \*last are pointers, and thus are not counter by 'count').  <br />
+  When you have an empty linked list, the pointers \*first and \*last should both be ```nullptr``` to prevent dangling pointers. Otherwise, they should  <br />
+  point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  <br />
+  the \*first pointer in particular, you will lose the entire list and all that memory will be leaked.
+  
+ ### Iterators
+ An iterator is quite simple - an iterator is an object that contains a pointer and some methods for working with the pointer more easily.
+ Here is a look at the example linked list iterator from our book:
+ 
+ ```c++
+ template <class Type>
+ class linkedListIterator
+ {
+	public:
+ 	linkedListIterator();
+ 	//Default constructor
+ 	//Postcondition: current = nullptr;
+ 	
+	linkedListIterator(nodeType<Type> *ptr);
+ 	//Constructor with a parameter.
+ 	//Postcondition: current = ptr;
+ 
+ 	Type operator*();
+ 	//Function to overload the dereferencing operator *.
+ 	//Postcondition: Returns the info contained in the node.
+ 
+ 	linkedListIterator<Type> operator++();     //<====== Remember, the pre-increment operator has no dummy variable
+ 	//Overload the pre-increment operator.
+ 	//Postcondition: The iterator is advanced to the next
+	 // node.
+ 
+ 	bool operator==(const linkedListIterator<Type>& right) const;
+ 	//Overload the equality operator.
+ 	//Postcondition: Returns true if this iterator is equal to
+ 	// the iterator specified by right,
+ 	// otherwise it returns false.
+ 
+ 	bool operator!=(const linkedListIterator<Type>& right) const;
+ 	//Overload the not equal to operator.
+ 	//Postcondition: Returns true if this iterator is not equal
+ 	// to the iterator specified by right,
+ 	// otherwise it returns false.
 
+	private:
+ 	nodeType<Type> *current; //pointer to point to the current
+ 	//node in the linked list
+ };
+ ```
+ LinkedListIterator Example taken from [C++ Programming: Program Design Including Data Structures by D.S. Malik](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560/ref=sr_1_22?dchild=1&keywords=C%2B%2B+programming+eighth+edition&qid=1618090926&sr=8-22)
+ 
+ This class is pretty simple, it's just a pointer called ```current``` with a few overloaded operators. You need the extra pointer because without <br />
+ another pointer, you would lose track of \*first or \*last, both of which would be bad.
+ 
+ | Operator | Function                                            |
+ | -------- | --------------------------------------------------- |
+ | *        | Returns ```current->info``` of the current object   |
+ | ++       | Increments the pointer to the next node in the list |
+ | ==       | Returns ```current == other.current```              |
+ | !=       | Returns ```current != other.current```              |
+
+ 
+ # End of Study Guide 
