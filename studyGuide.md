@@ -1,5 +1,5 @@
 # 1720 Study Guide
-## Chapter 13
+## Chapter 13 - Operator Overloading and Templates
 
 ### Operator Overloading
 		
@@ -92,6 +92,31 @@ const arrayClass& arrayClass::operator=(const className& rightObject)
   this is how method chaining works in Python too. <br />
 	
 ### Templates
+
+#### General Template Format
+```c++
+template <class Type>
+variable/function declaration;
+```
+
+##### Example : Templated Comparison Function
+```c++
+template <class Type>    
+Type larger(Type x, Type y)
+{
+   if (x >= y)
+   return x;
+   else
+   return y;
+}
+```
+
+- When declaring **or** referencing a templated variable, you must also specify the data type. For example, you declare an integer array from an array template as <br />
+```c++
+arrayTemplate<int> thisArray;
+```
+
+
 	
 
 ## Misc.
@@ -101,7 +126,7 @@ const arrayClass& arrayClass::operator=(const className& rightObject)
   You can use an integer as this dummy value and just pass '0' every time. <br />
 - Most methods can be overloaded as either a member or non-member function, but some cannot (```<<``` and ```>>```) <br />
 
-## Chapter 14
+## Chapter 14 - Exception Handling
 
 
 ## Chapter 15
