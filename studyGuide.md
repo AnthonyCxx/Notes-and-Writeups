@@ -470,14 +470,14 @@ void linkedListType<Type>::copyList(const linkedListType<Type>& otherList)
 template <class Type>
 linkedListIterator<Type> linkedListType<Type>::begin()
 {
-   linkedListIterator<Type> temp(first);
+   linkedListIterator<Type> temp(first);	//return an iterator pointing to the first node
    return temp;
 }
 
 template <class Type>
 linkedListIterator<Type> linkedListType<Type>::end()
 {
-   linkedListIterator<Type> temp(nullptr);
+   linkedListIterator<Type> temp(nullptr);	//return an iterator to the last node (the last node is always nullptr, so no need to do last)
    return temp;
 }
 
