@@ -4,10 +4,8 @@
 ### Operator Overloading
 		
  To overload an operator, you must write an operator function <br />
-	- Operator function format: ```c++
-	-			    returnType operator operatorSymbol(formal parameter list);
-	-			    ``` <br />
-	- Example:                                ```c++bool operator==(const clockType& otherClock) const;``` <br />
+	- Operator function format: ```returnType operator operatorSymbol(formal parameter list); <br />
+	- Example:                  ```bool operator==(const clockType& otherClock) const;``` <br />
 	
 	```c++()	 []	 ->	  = ```   	 must be overloaded from within a class definition if used with a class.
 			
