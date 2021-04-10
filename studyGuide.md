@@ -235,12 +235,12 @@ class divisionByZeroError
   int factorial(int) -- a function which takes the factorial of a number <br />
   TargetNumber -- the number you want to calculate the factorial of <br />
   
-  The function factorial calls itself with the ```targetNumber - 1``` whenever the target number is not 0. So, what happens is the function creates <br />
-  replicas of itself until it reaches the base case (0) and then starts returning the numbers it needs to actually calculate the factorials.
+  The function factorial calls itself with the ```targetNumber - 1``` whenever the target number is not 0. So, what happens is the function creates
+  replicas of itself until it reaches the base case (0) and then starts returning the numbers it needs to actually calculate the factorials. <br />
   
-  The problem with recursion is that it involves an exponential amount of function calls, which are inefficient in both memory and processing speed -- <br />
-  This is because each new instance of the function has overhead involved and declares its own local variables; moreover, a function instance cannot <br />
-  deinstantiate until the calls it relies on finish. If you want a convenient approach, go with recursion, but if you want an efficient one, go with iteration. <br />
+  The problem with recursion is that it involves an exponential amount of function calls, which are inefficient in both memory and processing speed -- 
+  This is because each new instance of the function has overhead involved and declares its own local variables; moreover, a function instance cannot 
+  deinstantiate until the calls it relies on finish. If you want a convenient approach, go with recursion, but if you want an efficient one, go with iteration. 
 
 #### Example of Recusion with a Recursive Binary Search
 ```c++
@@ -293,12 +293,12 @@ int main(void)
 ## Chapter 16 - Linked Lists and Iterators
 
 ### Linked Lists Data Structure
-- Linked lists are similar to arrays in that they are both a series of individual items, but the main difference is the way they are stored <br />
-  in memory. Arrays are contiguous, which means that you have to have enough consecutive space in memory to store one, which becomes a problem <br />
-  when you have massive arrays. Linked lists on the other hand are non-contiguous, so you don't have to store them consecutively. This allows <br />
-  for having more individual nodes. Now, the only drawback with linked lists is that you have to have some way to connect the nodes (indices) <br />
-  together, which is done by using a pointer. This means that since each individual element of a linked list is composed of the actual data <br />
-  **and** the pointer to the next node in the linked list, each individual element requires more memory. Essentially, linked lists are a little <br />
+- Linked lists are similar to arrays in that they are both a series of individual items, but the main difference is the way they are stored 
+  in memory. Arrays are contiguous, which means that you have to have enough consecutive space in memory to store one, which becomes a problem 
+  when you have massive arrays. Linked lists on the other hand are non-contiguous, so you don't have to store them consecutively. This allows 
+  for having more individual nodes. Now, the only drawback with linked lists is that you have to have some way to connect the nodes (indices) 
+  together, which is done by using a pointer. This means that since each individual element of a linked list is composed of the actual data 
+  **and** the pointer to the next node in the linked list, each individual element requires more memory. Essentially, linked lists are a little
   more versatile but require more memory.
   
   #### Nodes (the indivdual elements)
@@ -312,9 +312,9 @@ int main(void)
     nodeType<Type> *link;    //Pointer to the info! Not an actual instance of a nodeType variable
   };
   ```
-  Here you can see a struct _nodeType_ that defines an individual node (item) in a linked list. You can see that it's composed of some data (of varied type). <br />
-  Additionally, you can see that it contains a nodeType<Type> pointer that points to the next item in the linked list. It's important that you include the \*, <br />
-  otherwise the program will not compile since a struct cannot contain itself (it would cause an infinite loop). <br />
+  Here you can see a struct _nodeType_ that defines an individual node (item) in a linked list. You can see that it's composed of some data (of varied type). 
+  Additionally, you can see that it contains a nodeType<Type> pointer that points to the next item in the linked list. It's important that you include the \*, 
+  otherwise the program will not compile since a struct cannot contain itself (it would cause an infinite loop). 
   
   #### Linked List Data Members
   ```c++
@@ -329,10 +329,10 @@ int main(void)
 	    ...the other methods 
   }
   ```
-  In this excerpt from our lab12 linkedList.h, you can see the rest of the data members for a linked list - the count and the pointers to the first and last elements  <br />
-  in the list. The count is self-explanatory, it's the amount of items in the list (\*first and \*last are pointers, and thus are not counter by 'count').  <br />
-  When you have an empty linked list, the pointers \*first and \*last should both be ```nullptr``` to prevent dangling pointers. Otherwise, they should  <br />
-  point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  <br />
+  In this excerpt from our lab12 linkedList.h, you can see the rest of the data members for a linked list - the count and the pointers to the first and last elements 
+  in the list. The count is self-explanatory, it's the amount of items in the list (\*first and \*last are pointers, and thus are not counter by 'count'). 
+  When you have an empty linked list, the pointers \*first and \*last should both be ```nullptr``` to prevent dangling pointers. Otherwise, they should 
+  point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  
   the \*first pointer in particular, you will lose the entire list and all that memory will be leaked.
   
   #### Linked List Implementation
