@@ -4,24 +4,24 @@
 ### Operator Overloading
 		
  #### To overload an operator, you must write an operator function <br />
-	- Operator function format: ```returnType operator operatorSymbol(formal parameter list);``` <br />
-	- Example:                  ```bool operator==(const clockType& otherClock) const;``` <br />
+- Operator function format: ```returnType operator operatorSymbol(formal parameter list);``` <br />
+- Example:                  ```bool operator==(const clockType& otherClock) const;``` <br />
 	
-	```()	 []	 ->	  = ```   	 must be overloaded from within a class definition if used with a class.
+	```(),  [],  ->,  = ``` must be overloaded from within a class definition if used with a class.
 			
 #### Notable restrictions on operator overloading <br />
 - You cannot change operator precedence <br />
 - Associativity cannot be changed  <br />
 - You cannot use default parameters <br />
 - You cannot create new operators <br />
-- You cannot overload some operators ```c++ .    .*   ::   ?:   sizeof()   ``` <br />
+- You cannot overload some operators ``` .    .*   ::   ?:   sizeof()``` <br />
 		
 Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access <br /> 
 to the data members of the class (public and private). Using the keyword friend at the front of a function  <br />
 declaration gives the function access to all the data members of the given class. The keyword friend is only   <br />
 included in the function declaration.  <br />
 	
-```c++ class1.operator=(class2)``` is an equally valid way to write ```c++ class1 = class2 ``` <br />
+```class1.operator=(class2)``` is an equally valid way to write ```class1 = class2``` <br />
 	
 #### Example of function overloading: <br />
 ``` c++
