@@ -152,25 +152,25 @@ int main()
 { 
 	try
 	{
-		int dividend, divisor, quotient; 
+		int dividend = 0, divisor = 0, quotient = 0; 
 		string divisionByZeroError = "You cannot divide by zero";
 		
- 		cout << "Enter the dividend: ";   //The number to be divided
+ 		cout << "Enter a dividend: ";   //The number to be divided
  		cin >> dividend; 
-	
- 		cout << endl; 
- 		cout << "Line 9: Enter the divisor: ";    //The number to divide by
+		cout << endl; 
+ 		
+		cout << "Enter a divisor: ";    //The number to divide by
  		cin >> divisor; 
  		cout << endl; 
 	
 		if (divisor == 0)
-		    throw divisionByZeroError;	    //Breaks out of the 'try' statement
+		    throw divisionByZeroError;	    //Breaks out of the 'try' statement if thrown
 		
  		quotient = dividend / divisor;     //Divide the dividend by the divisor
  	
-		cout << "Line 13: Quotient = " << quotient << endl; 
+		cout << "The quotient is " << quotient << endl; 
  
-		return 0; //Line 14
+		return 0;
 	}
 	catch(string zeroErr)	//Catch by data type -- since 'zeroErr' is a string, and a string (divisionByZeroError)
 	{                      // was thrown, this statement will catch it
@@ -189,7 +189,7 @@ int main()
   of catch statements to make sure you catch everything.
   
   ### Exception Classes with Try, Throw, and Catch
-  - One of the more efficent ways to catch errors is to write a class that can handle errors by taking in a string in its parameterized constructor (this <br />
+  - One of the more efficent ways to catch errors is to write a class that can handle errors by taking in a string in its parameterized constructor (this
     saves you from having to declare tons of different strings for every error). Here is an example of what a divisionByZero class should look like.
 ```c++
 #include <iostream> 
@@ -220,8 +220,8 @@ class divisionByZeroError
  or ```divisionByZeroError()``` for the default one. In this case, you would need to instantiate a divisionByZeroError object <br />
  call ```divisionByZeroErrorObject.what()``` to get the error message.
 
-## Chapter 15
+## Chapter 15 - Recursion
 
 
-## Chapter 16
+## Chapter 16 - Linked Lists
 
