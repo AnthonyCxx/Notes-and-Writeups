@@ -332,8 +332,8 @@ int main(void)
   In this excerpt from our lab12 linkedList.h, you can see the rest of the data members for a linked list - the count and the pointers to the first and last elements 
   in the list. The count is self-explanatory, it's the amount of items in the list (\*first and \*last are pointers, and thus are not counter by 'count'). 
   When you have an empty linked list, the pointers \*first and \*last should both be ```nullptr``` to prevent dangling pointers. Otherwise, they should 
-  point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  
-  the \*first pointer in particular, you will lose the entire list and all that memory will be leaked.
+  point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  the 
+  \*first pointer in particular, you will lose the entire list and all that memory will be leaked.
   
   #### Linked List Implementation
  
