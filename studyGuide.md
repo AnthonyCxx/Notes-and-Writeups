@@ -91,7 +91,7 @@ const arrayClass& arrayClass::operator=(const className& rightObject)
   ```*this``` from our function, we allow ourselves to write  ```myRectangle.setLength(15.25)``` and ```myRectange.setWidth(12.00)``` in a single line. <br />
   If you use Python, this is how method chaining works in Python too. <br />
   
-- **It is necessary to use ```this->``` when using a method or data member inherited from a base class.
+- **It is necessary to use ```this->``` when using a method or data member inherited from a base class.**
 	
 ### Templates
 
