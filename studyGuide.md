@@ -14,7 +14,7 @@
 - Associativity cannot be changed  <br />
 - You cannot use default parameters <br />
 - You cannot create new operators <br />
-- You cannot overload some operators (```c++ .    .*   ::   ?:   sizeof()   ```) <br />
+- You cannot overload some operators ```c++ .    .*   ::   ?:   sizeof()   ``` <br />
 		
 Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access <br /> 
 to the data members of the class (public and private). Using the keyword friend at the front of a function  <br />
