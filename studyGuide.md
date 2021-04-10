@@ -305,6 +305,8 @@ int main(void)
   **and** the pointer to the next node in the linked list, each individual element requires more memory. Essentially, linked lists are a little <br />
   more versatile but require more memory.
   
+  #### Nodes (the indivdual elements)
+  
   Now that you understand what a node (item) in a linked list is, let's have a look at an individual node in one:
   ```c++
   template <class Type>
@@ -318,6 +320,7 @@ int main(void)
   Additionally, you can see that it contains a nodeType<Type> pointer that points to the next item in the linked list. It's important that you include the \*, <br />
   otherwise the program will not compile since a struct cannot contain itself (it would cause an infinite loop). <br />
   
+  #### Linked List Data Members
   ```c++
   template <class Type>
   class linkedListType
@@ -335,6 +338,161 @@ int main(void)
   When you have an empty linked list, the pointers \*first and \*last should both be ```nullptr``` to prevent dangling pointers. Otherwise, they should  <br />
   point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  <br />
   the \*first pointer in particular, you will lose the entire list and all that memory will be leaked.
+  
+  #### Linked List Implementation
+ 
+Here is the excerpt our implementation of the methods of a linked list from lab12
+```c++
+template <class Type>
+linkedListType<Type>::linkedListType()
+{
+   first = nullptr;
+    last = nullptr;
+   count = 0;
+}
+
+template <class Type>
+linkedListType<Type>::~linkedListType()
+{
+   listKiller();
+}
+
+template <class Type>
+Type linkedListType<Type>::front() const
+{
+   assert(first != nullptr);
+   return first->info;
+}
+
+template <class Type>
+Type linkedListType<Type>::back() const
+{
+   assert(last != nullptr);
+   return last->info;
+}
+
+template <class Type>
+bool linkedListType<Type>::isEmpty() const
+{
+   return first==nullptr;
+}
+
+template <class Type>
+void linkedListType<Type>::print() const
+{
+   nodeType<Type> *cur=first;
+
+   while(cur != nullptr) {
+      cout << cur->info << " ";
+      cur = cur->link;
+   }
+}
+
+template <class Type>
+int linkedListType<Type>::length() const
+{
+   return count;
+}
+
+template <class Type>
+linkedListType<Type>::linkedListType(const linkedListType<Type>& otherList)
+{
+   first = nullptr;
+   copyList(otherList);
+}
+
+template <class Type>
+const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>& otherList)
+{
+   if(this != &otherList)
+      copyList(otherList);
+   return *this;
+
+}
+
+template <class Type>
+void linkedListType<Type>::copyList(const linkedListType<Type>& otherList)
+{        
+   //Preliminary case
+   if(this->first != nullptr) 
+   {
+      listKiller();
+   }
+   
+   if(otherList.first == nullptr)
+   {
+      //the source list is empty
+      first = last = nullptr;
+      count = 0;  
+   } 
+   else 
+   {
+      nodeType<Type> *curPtr;
+      nodeType<Type> *newNode;
+   
+      count = otherList.count;
+      //point to first node in the other list
+      curPtr = otherList.first;
+      //setup the new list with the first node
+      first = new nodeType<Type>;
+      first->info = curPtr->info;
+      first->link = nullptr;
+     
+      //get ready to copy the rest of the list to
+      //the new list.  last will track the new list
+      //while curPtr will track the other list. 
+      last = first;
+      curPtr = curPtr->link; 
+      while(curPtr != nullptr) {
+         newNode = new nodeType<Type>;
+         newNode->info = curPtr->info;
+         newNode->link = nullptr;
+        
+         //tie in new node on end of the new list 
+         last->link = newNode;
+         last = newNode;
+        
+         //move to the next node in the other list. 
+         curPtr = curPtr->link;
+      }
+   }
+}
+
+template <class Type>
+linkedListIterator<Type> linkedListType<Type>::begin()
+{
+   linkedListIterator<Type> temp(first);
+   return temp;
+}
+
+template <class Type>
+linkedListIterator<Type> linkedListType<Type>::end()
+{
+   linkedListIterator<Type> temp(nullptr);
+   return temp;
+}
+
+//listKiller
+template <class Type>
+void linkedListType<Type>::listKiller()
+{
+   //Declare a temporary node
+   nodeType<Type> *tmp;
+
+   //Iterate over all nodes, deleting them as it goes
+   while(first!= nullptr) {
+      tmp = first;
+      first = first->link;
+      delete tmp; 
+   }
+
+   //Change class values to indicate an empty list
+   last = nullptr;
+   count = 0;
+}
+
+```
+  
   
  ### Iterators
  An iterator is quite simple - an iterator is an object that contains a pointer and some methods for working with the pointer more easily.
