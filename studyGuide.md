@@ -128,7 +128,7 @@ arrayTemplate<int> thisArray;
 
 ## Chapter 14 - Exception Handling
 
-### <cassert>
+### \<cassert\>
 
 ### Try, Throw, and Catch
 
