@@ -333,7 +333,7 @@ int main(void)
   point to the first and last nodes in the linked list respectively, as those pointers are the _only_ way to keep track of the list. If you lose track of  the 
   \*first pointer in particular, you will lose the entire list and all that memory will be leaked.
   
-  #### Linked List Implementation
+#### Linked List Implementation
  
 Here is the excerpt our implementation of the methods of a linked list from lab12
 ```c++
@@ -402,7 +402,7 @@ linkedListType<Type>::linkedListType(const linkedListType<Type>& otherList)
    copyList(otherList); 	//Refer to copyList()
 }
 
-//Overloaded operator= =
+//Overloaded operator= 
 template <class Type>
 const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>& otherList)
 {
