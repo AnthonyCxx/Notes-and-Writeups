@@ -25,12 +25,12 @@
 	
 ```class1.operator=(class2)``` is an equally valid way to write ```class1 = class2``` <br />
 	
-#### Special Cases of Overloading...
+#### Some Cases of Overloading...
 ##### Example of function overloading in a class: <br />
 ``` c++
 rectangleType rectangleType::operator* (const rectangleType& rectangle) const 
 { 
-      rectangleType tempRect;   //del
+      rectangleType tempRect;   //delcare a temporary rectangle object (goes out of scope when the function ends)
       
       tempRect.length = length * rectangle.length; 
       tempRect.width = width * rectangle.width; 
@@ -41,15 +41,14 @@ rectangleType rectangleType::operator* (const rectangleType& rectangle) const
 
 ##### Example of operator overloading outside of a class: <br />
 ```c++
-returnType operator#(const className& firstObject,
-const className& secondObject)
+returnType operator#(const className& firstObject, const className& secondObject)
 {
  	//algorithm to perform the operation
  	return value;
 }
 ```
 
-##### Overloading the Stream Insertion and Extraction Operators:
+##### Overloading the Stream Insertion and Extraction Operators (Special Case!):
 ```c++
 friend ostream& operator<<(ostream&, const className&);		//declaration
 
@@ -61,12 +60,13 @@ ostream& operator<<(ostream& osObject, const className& cObject)   //instantiati
 
 ##### Overloading the = Operator (performs a deep copy):
 ```c++
+//Overloading the '=' operator is important because it only performs a shallow copy by default
 const arrayClass& arrayClass::operator=(const arrayClass& rightObject)
 {
  //local declaration, if any
  	if (this != &rightObject)    //avoid self-assignment
  	{
- 		delete [] list;      //Delete the current instantiation of the list
+ 		delete [] list;      //Delete the current instantiation of the list (otherwise this list would just append items)
 		
  		maxSize = otherList.maxSize;    //Copy data members
  		length = otherList.length; 
@@ -104,7 +104,7 @@ variable/function declaration;
 template <class Type>    
 Type larger(Type x, Type y)
 {
-   if (x >= y)
+   if (x >= y)		
       return x;
    else
       return y;
@@ -115,8 +115,6 @@ Type larger(Type x, Type y)
 ```c++
 arrayTemplate<int> thisArray;
 ```
-
-
 	
 
 #### Misc.
@@ -309,7 +307,7 @@ int main(void)
   template <class Type>
   struct nodeType       
   {
-    Type info;
+    Type info;                     //The information held by that node
     nodeType<Type> *link;    //Pointer to the info! Not an actual instance of a nodeType variable
   };
   ```
