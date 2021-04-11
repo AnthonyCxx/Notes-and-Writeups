@@ -511,6 +511,7 @@ void linkedListType<Type>::listKiller()
  Here is a look at the example linked list iterator from our book:
  
  ```c++
+ //****************** linkedListIterator Declaration *****************************
  template <class Type>
  class linkedListIterator
  {
@@ -548,7 +549,49 @@ void linkedListType<Type>::listKiller()
  	nodeType<Type> *current; //pointer to point to the current
  	//node in the linked list
  };
- ```
+ 
+ 
+ 
+ //********************** linkedListIterator Implementation ***************************
+ template <class Type>
+ linkedListIterator<Type>::linkedListIterator()
+ {
+     curptr = nullptr;		//iterator defaults to nullptr
+  }
+ 
+ template <class Type>
+ linkedListIterator<Type>::linkedListIterator(nodeType<Type> *ptr)  //takes a _pointer_ to a nodeType!
+ {
+     curptr = ptr;	//iterator is set to the given pointer
+ }
+ 
+ template <class Type>
+ Type linkedListIterator<Type>::operator*()
+ {
+    assert(curptr != nullptr);
+     return curptr->info;		//return the current info
+ }
+ 
+ template <class Type>
+ linkedListIterator<Type> linkedListIterator<Type>::operator++()
+ {
+    assert(curptr != nullptr)
+    curptr = curptr->link;		//follow the current link
+    return *this;			//return the iterator
+ }
+ 
+ template <class Type>
+ bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>& right) const
+ {
+    return (curptr == right.curptr);		//compare two iterators
+ }
+
+template <class Type>
+bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>& right) const
+{
+    return (curptr != right.curptr);		//compare the addresses of the two items
+}
+```
  LinkedListIterator Example taken from [C++ Programming: Program Design Including Data Structures by D.S. Malik](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560/ref=sr_1_22?dchild=1&keywords=C%2B%2B+programming+eighth+edition&qid=1618090926&sr=8-22)
  
  This class is pretty simple, it's just a pointer called ```current``` with a few overloaded operators. You need the extra pointer because without <br />
