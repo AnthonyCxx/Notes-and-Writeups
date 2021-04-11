@@ -84,7 +84,7 @@ const arrayClass& arrayClass::operator=(const arrayClass& rightObject)
 - The keyword this is a pointer to the current object. It is commonly used to call other methods from within the same class. For example, ```this->listKiller()``` 
   could be  written inside a destructor to call the 'listKiller' method. <br />
 
-- It is common to return a whole object by doing ```return \*this```. Doing so allows you to chain method calls. <br />
+- It is common to return a whole object by doing ```return *this```. Doing so allows you to chain method calls. <br />
   For example. You could do ```myRectangle.setLength(15.25).setWidth(12.00)``` as the first method (setLength) will return the object. Essentially, by returning 
   ```*this``` from our function, we allow ourselves to write  ```myRectangle.setLength(15.25)``` and ```myRectange.setWidth(12.00)``` in a single line.
   If you use Python, this is how method chaining works in Python too. <br />
