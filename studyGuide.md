@@ -176,11 +176,10 @@ int main()
 	}
 }
 ```
-- Here, you can see a try, throw, and catch statement trio. Here's how it works: for any block of code that you expect an error may occur in, 
-  you should put the statements in a try block. Then, write a conditional that throws a some data-type (usually a string) that evaluates to true if the 
-  program _would_ have run into an error. This will immediately exit the try block whenever that error would have been thrown. Since you're throwing an error, 
-  you will also need to catch it. The 'catch' statement activates whenever an exception (error) is thrown, and which catch statement activates depends 
-  on the data-type being thrown. 
+- Here, you can see a try, throw, and catch statement trio. Here's how it works: put any section of code that might cause an error (such as dividing by zero)
+  into a try block. Then, write a conditional that throws a some data-type (usually a string) that evaluates to true if the program _would_ have run 
+  into an error. This will immediately exit the try block whenever that error would have been thrown. Since you're throwing an error, you will also need to catch it.
+  The 'catch' statement activates whenever an exception (error) is thrown, and which catch statement activates depends on the data-type being thrown. 
   
   ##### Catching Other Errors
   If you want to catch any data type, write 'catch(...)' (this is for variadic statements, which were introduced in C++11. You can put this at the end of a series 
