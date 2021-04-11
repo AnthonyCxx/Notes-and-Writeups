@@ -143,7 +143,7 @@ arrayTemplate<int> thisArray;
 #### Example : Catching a Division by Zero Error with Try, Throw, and Catch
 ```c++
 #include <iostream> 
-#inlucde <string>
+#include <string>
 using namespace std; 
 
 int main() 
