@@ -132,8 +132,8 @@ arrayTemplate<int> thisArray;
    sure that everything is always in order. Now, the errors thrown from \<cassert\> aren't very helpful to the end-user, so \<cassert\> should only be 
    used by the programmer. 
  
- - Side note: since 0 always evaluates to false, you can put something like 'assert(0);' at the end of a switch statement for the default value 
-              (assuming you never want to run into a default value)
+ - Side note: since 0 always evaluates to false, you can put something like ```assert(0);``` at the end of a switch statement for the default value 
+               (assuming you never want to run into a default value)
 
 ### Try, Throw, and Catch
 - Try, throw, and catch are the three exception-handling keywords that help out the user understand the problem. The primary difference is that 
