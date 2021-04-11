@@ -1,4 +1,5 @@
 # 1720 Study Guide
+## This is a free resource; I am not responsible for any discrepancies
 
 ## Chapter 13 - Operator Overloading and Templates
 
