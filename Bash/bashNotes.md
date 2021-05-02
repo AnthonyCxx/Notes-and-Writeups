@@ -34,4 +34,4 @@ allowing you to continue without having to wait on it.
 |  |  |
 | -- | -- |
 |  | `&&` |
-|  | `||` |
+|  | `\|\|` |
