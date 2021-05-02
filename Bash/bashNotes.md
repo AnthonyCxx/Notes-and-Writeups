@@ -1,13 +1,13 @@
-## Bash Script Format
+# Bash Script Format
 \#! /bin/bash <br />
 \<script>       <!-- Had to put a '\<' because '<script>' is an html tag... -->
 
-## Bash I/O Streams
+# Bash I/O Streams
 - Standard input (stdin) 
 - Standard output (stdout)
 - Standard Error  (stderr)
 
-### Standard I/O Redirection
+## Standard I/O Redirection
 |  |  |
 | -- | -- |
 | stdin | `<` |
@@ -34,5 +34,12 @@ allowing you to continue without having to wait on it.
 ## Operators
 |  |  |
 | -- | -- |
-|  | `&&` |
-|  | `\|\|` |
+| Run second command if first succeeds | `&&` |
+| Run second command if first fails | `\|\|` |
+
+
+### Redirecting native error messages
+`2>/dev/null`
+
+
+
