@@ -38,7 +38,7 @@ allowing you to continue without having to wait on it.
 | Run second command if first fails | `\|\|` |
 
 
-### Redirecti/dispose of native error messages
+### Redirect/dispose of native error messages
 `2>/dev/null`
 
 ### Control Operators
