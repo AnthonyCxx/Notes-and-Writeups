@@ -18,12 +18,11 @@
 | redirect stdout and stderr from one command to input of another | `2&>1 \|` |
 | take in from stdin until specified, isolated string | `<< <string>` |
 
-## Commands
-`bash --version` - gets version of Bash
-
 ## Waiting on Commands to Finish
 Adding an `&` to the end of a command will run the command 'in the background',
 allowing you to continue without having to wait on it.
 
-## Run multiple commands in a single line
-`firstCommand ; secondCommand`
+## Bash Options
+- `bash -n` - reads the program without executing it. Used to check the syntax of a program
+- `bash -v` - echoes the commands as it runs (includes comments)
+- `bash -x` - echoes the command BEFORE it runs the command (does not include comments)
