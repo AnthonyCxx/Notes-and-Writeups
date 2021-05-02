@@ -14,7 +14,8 @@
 | stderr | `2>` |
 | stdout and stderr | `&>` |
 | redirect stderr to where stdout is directed | `2&>1` |
-| redirect output from one command to input of another | `\|` |
+| redirect stdout from one command to input of another | `\|` |
+| redirect stdout and stderr from one command to input of another | `2&>1 \|` |
 
 ## Commands
 `bash --version` - gets version of Bash
