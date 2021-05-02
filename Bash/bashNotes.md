@@ -10,11 +10,11 @@
 |  |  |
 | -- | -- |
 | stdin | `<` |
-- stdout - `>`
-- stderr - `2>`
-- stdout and stderr - `&>`
-- redirect stderr to where stdout is directed - `2&>1`
-- redirect output to input of another command - `|`
+| stdout | `>` |
+| stderr | `2>` |
+| stdout and stderr | `&>` |
+| redirect stderr to where stdout is directed | `2&>1` |
+| redirect output to input of another command | `|` |
 
 ## Commands
 `bash --version` - gets version of Bash
