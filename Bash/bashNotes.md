@@ -20,3 +20,10 @@
 
 ## Commands
 `bash --version` - gets version of Bash
+
+## Waiting on Commands to Finish
+Adding an `&` to the end of a command will run the command 'in the background',
+allowing you to continue without having to wait on it.
+
+## Run multiple commands in a single line
+`firstCommand ; secondCommand`
