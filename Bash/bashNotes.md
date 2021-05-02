@@ -38,11 +38,17 @@ allowing you to continue without having to wait on it.
 | Run second command if first fails | `\|\|` |
 
 
-### Redirecting native error messages
+### Redirecti/dispose of native error messages
 `2>/dev/null`
 
-### Grouping Commands
+### Control Operators
 |  |  |
 | -- | -- |
 | group commands in main shell | `{ command1 ; command2 ; }` |
 | run commands in subshell | `( command1 ; command2 ; )` |
+
+### Control Syntax
+- If statement
+```bash
+echo "what"
+```
