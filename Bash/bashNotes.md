@@ -7,7 +7,7 @@
 - Standard output (stdout)
 - Standard Error  (stderr)
 
-## Standard I/O Redirection
+### Standard I/O Redirection
 |  |  |
 | -- | -- |
 | stdin | `<` |
@@ -19,11 +19,11 @@
 | redirect stdout and stderr from one command to input of another | `2&>1 \|` |
 | take in from stdin until specified, isolated string | `<< <string>` |
 
-## Waiting on Commands to Finish
+### Waiting on Commands to Finish
 Adding an `&` to the end of a command will run the command 'in the background',
 allowing you to continue without having to wait on it.
 
-## Bash Options
+### Bash Options
 - `bash -n` - reads the program without executing it. Used to check the syntax of a program
 - `bash -v` - echoes the commands as it runs (includes comments)
 - `bash -x` - echoes the command BEFORE it runs the command (does not include comments)
@@ -31,7 +31,7 @@ allowing you to continue without having to wait on it.
 
 # Control Flow
 
-## Operators
+### Operators
 |  |  |
 | -- | -- |
 | Run second command if first succeeds | `&&` |
