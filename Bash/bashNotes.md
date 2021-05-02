@@ -6,8 +6,10 @@
 - Standard output (stdout)
 - Standard Error  (stderr)
 
-### Standard I/O Redirectoin
-- stdin  - `<`
+### Standard I/O Redirection
+|  |  |
+| -- | -- |
+| stdin | `<` |
 - stdout - `>`
 - stderr - `2>`
 - stdout and stderr - `&>`
