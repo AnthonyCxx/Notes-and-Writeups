@@ -1,6 +1,6 @@
 ## Bash Script Format
-\#! /bin/bash
-\<script>
+\#! /bin/bash <br />
+\<script>       <!-- Had to put a '\<' because '<script>' is an html tag... -->
 
 ## Bash I/O Streams
 - Standard input (stdin) 
