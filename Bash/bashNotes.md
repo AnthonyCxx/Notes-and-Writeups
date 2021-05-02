@@ -16,7 +16,7 @@
 | stdout and stderr | `&>` |
 | redirect stderr to where stdout is directed | `2&>1` |
 | redirect stdout from one command to input of another | `\|` |
-| redirect stdout and stderr from one command to input of another | `2&>1 \|` |
+| redirect stdout and stderr from one command to stdin of another | `2&>1 \|` |
 | take in from stdin until specified, isolated string | `<< <string>` |
 
 ### Waiting on Commands to Finish
