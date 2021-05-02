@@ -26,3 +26,12 @@ allowing you to continue without having to wait on it.
 - `bash -n` - reads the program without executing it. Used to check the syntax of a program
 - `bash -v` - echoes the commands as it runs (includes comments)
 - `bash -x` - echoes the command BEFORE it runs the command (does not include comments)
+
+
+# Control Flow
+
+## Operators
+|  |  |
+| -- | -- |
+|  | `&&` |
+|  | `||` |
