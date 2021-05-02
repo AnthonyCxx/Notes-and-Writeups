@@ -41,5 +41,8 @@ allowing you to continue without having to wait on it.
 ### Redirecting native error messages
 `2>/dev/null`
 
-
-
+### Grouping Commands
+|  |  |
+| -- | -- |
+| group commands in main shell | `{ command1 ; command2 ; }` |
+| run commands in subshell | `( command1 ; command2 ; )` |
