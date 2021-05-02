@@ -7,7 +7,7 @@
 - Standard output (stdout)
 - Standard Error  (stderr)
 
-### Standard I/O Redirection
+### I/O Redirection
 |  |  |
 | -- | -- |
 | stdin | `<` |
