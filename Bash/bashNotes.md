@@ -1,6 +1,5 @@
 ## Bash Script Format
 \#! /bin/bash
-<script>
 
 ## Bash I/O Streams
 - Standard input (stdin) 
