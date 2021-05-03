@@ -30,6 +30,14 @@ allowing you to continue without having to wait on it.
 someArray=("firstElement", "secondElement", "thirdElement")
 itemOne={someArray[0]}
 ```
+#### Modifying Strings
+```bash
+string="some phrase"
+
+echo this is a random ${string#some}
+```
+This snippet would excerpt `this is a random phrase`, as the `string#some` would remove `some` from the string.
+
 # Arrays
 `personalInfo=("John Doe", "(000)-000-0000", "000 something road, 00000")`
 
