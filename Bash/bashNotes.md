@@ -63,10 +63,12 @@ else
 
 ### Curly Brackets {}
 #### Building Arrays
-- `echo {0..10}` - print the numbers 0-10
-- `echo {10..0}` - print 0-10 backwards
-- `echo {0..10..2}` - print every other element in the list 0-10 (2, 4, 6, 8, 10)
-- `echo {0..9}{0..9}` - combine sequences, printing all numbers 0-99
+|  |  |
+| -- | -- |
+| `echo {0..10}` | print the numbers 0-10 |
+| `echo {10..0}` | print 0-10 backwards |
+| `echo {0..10..2}` | print every other element in the list 0-10 (2, 4, 6, 8, 10) |
+| `echo {0..9}{0..9}` | combine sequences, printing all numbers 0-99 |
 
 #### Accessing Array Elements
 ```bash
