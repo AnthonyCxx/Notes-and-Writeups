@@ -68,5 +68,10 @@ else
 - `echo {0..10..2}` - print every other element in the list 0-10 (2, 4, 6, 8, 10)
 - `echo {0..9}{0..9}` - combine sequences, printing all numbers 0-99
 
+#### Accessing Array Elements
+```bash
+someArray=("firstElement", "secondElement", "thirdElement")
+itemOne={someArray[0]}
+```
 # Arrays
-personalInfo=("John Doe", "(000)-000-0000", "000 something road, 00000")
+`personalInfo=("John Doe", "(000)-000-0000", "000 something road, 00000")`
