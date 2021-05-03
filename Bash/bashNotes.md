@@ -61,6 +61,7 @@ else
 # Brackets
 ### Square Brackets []
 #### Globbing - [link](https://tldp.org/LDP/abs/html/globbingref.html)
+`ls -l file01[359]` - lists files file013, file015, and file019
 
 ### Curly Brackets {}
 #### Building Arrays
@@ -79,6 +80,13 @@ itemOne={someArray[0]}
 # Arrays
 `personalInfo=("John Doe", "(000)-000-0000", "000 something road, 00000")`
 
+
+# Wildcards
+|  |  |
+| -- | -- |
+| * | mactches any character 0 or more times |
+| ? | maches any character 1 or more times |
+| \[\] | maches any character in the set |
 
 # Sources
 [Linux.com](https://www.linux.com/): [curly braces](https://www.linux.com/topic/desktop/all-about-curly-braces-bash/), square braces [part 1](https://www.linux.com/training-tutorials/using-square-brackets-bash-part-1/) and [part 2](https://www.linux.com/training-tutorials/using-square-brackets-bash-part-2/) <br />
