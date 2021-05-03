@@ -50,5 +50,20 @@ allowing you to continue without having to wait on it.
 ### Control Syntax
 - If statement
 ```bash
-echo "what"
+if [ ! -d someDir ]
+then
+  echo directory \'someDir\' does not exist, creating directory \'someDir\'
+  mkdir someDir
+else
+  echo directory \'someDir\ exists...
 ```
+
+# Brackets
+### Square Brackets []
+
+### Curly Brackets {}
+#### Building Arrays
+- `echo {0..10}` - print the numbers 0-10
+- `echo {10..0}` - print 0-10 backwards
+- `echo {0..10..2}` - print every second element in the list 0-10
+- 
