@@ -61,6 +61,7 @@ else
 # Brackets
 ### Square Brackets []
 
+
 ### Curly Brackets {}
 #### Building Arrays
 |  |  |
@@ -77,3 +78,7 @@ itemOne={someArray[0]}
 ```
 # Arrays
 `personalInfo=("John Doe", "(000)-000-0000", "000 something road, 00000")`
+
+
+# Sources
+[Linux.com](https://www.linux.com/): [curly braces](https://www.linux.com/topic/desktop/all-about-curly-braces-bash/), square braces [part 1](https://www.linux.com/training-tutorials/using-square-brackets-bash-part-1/) and [part 2](https://www.linux.com/training-tutorials/using-square-brackets-bash-part-2/) <br />
