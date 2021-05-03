@@ -39,7 +39,7 @@ allowing you to continue without having to wait on it.
 
 
 ### Redirect/dispose of native error messages
-`2>/dev/null`
+`2>/dev/null` - what is [/dev/null](https://en.wikipedia.org/wiki/Null_device)?
 
 ### Control Operators
 |  |  |
