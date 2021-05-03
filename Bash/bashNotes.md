@@ -60,7 +60,7 @@ else
 
 # Brackets
 ### Square Brackets []
-
+#### Globbing - [link](https://tldp.org/LDP/abs/html/globbingref.html)
 
 ### Curly Brackets {}
 #### Building Arrays
