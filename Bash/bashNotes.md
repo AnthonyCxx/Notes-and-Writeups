@@ -47,7 +47,7 @@ This snippet would echo `this is a random phrase`, as the `string#some` would re
 | -- | -- |
 | * | mactches any character 0 or more times |
 | ? | maches any character 1 or more times |
-| \[\] | maches any character in the set |
+| \[\] | maches any one character in the set |
 
 # Sources
 [Linux.com](https://www.linux.com/): [curly braces](https://www.linux.com/topic/desktop/all-about-curly-braces-bash/), square braces [part 1](https://www.linux.com/training-tutorials/using-square-brackets-bash-part-1/) and [part 2](https://www.linux.com/training-tutorials/using-square-brackets-bash-part-2/) <br />
