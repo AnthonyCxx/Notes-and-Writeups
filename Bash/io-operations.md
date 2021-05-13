@@ -21,7 +21,7 @@
 ### Echo
 Prints text to stdout (the terminal) <br />
 
-A note: If you use single quotes, any variables will not be replaced. You must use no quotes or standard, double quotes.
+A note: If you use single quotes, any variables will not be replaced. Use no quotes or standard, double quotes.
 
 | Option | Function |
 | ------ | -------- | 
@@ -30,3 +30,20 @@ A note: If you use single quotes, any variables will not be replaced. You must u
 | `-E` | disable escape characters (default) |
 
 ### Printf
+
+### Escape Characters
+| Character | Function |
+| --------- | -------- |
+| `\\` | single backslash |
+| `\b` | backspace |
+| `\n` | newline |
+| `\r` | carraige return |
+| `\t` | horizontal tab |
+| `\v` | vertical tab |
+| `\a` | alert (error sound, [bel character](https://en.wikipedia.org/wiki/Bell_character)) |
+
+
+
+#### Sources
+- Linuxize: [Bash Printf Command](https://linuxize.com/post/bash-printf-command/)
+- The Linux Documentation Project: [Escape Characters](https://tldp.org/LDP/abs/html/escapingsection.html)
