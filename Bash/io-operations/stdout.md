@@ -27,10 +27,10 @@ Futhermore, _printf_ should be used where portability is important, as the behav
 ### Conversion Specifiers
 | Character | Replaced By |
 | --------- | -------- |
-| %d | an decimal (base-10) integer |
-| %s | a string |
-| %% | a percent sign |
-| %x / %X | a hexadecimal integer |
+| `%d` | an decimal (base-10) integer |
+| `%s` | a string |
+| `%%` | a percent sign |
+| `%x` / `%X` | a hexadecimal integer |
 |  |  |
 |  |  |
 |  |  |
