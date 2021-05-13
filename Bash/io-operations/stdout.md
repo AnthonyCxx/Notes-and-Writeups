@@ -31,7 +31,7 @@ Futhermore, _printf_ should be used where portability is important, as the behav
 | `%f` | a decimal floating point |
 | `%s` | a string |
 | `%%` | a percent sign |
-| `%x` / `%X` | a hexadecimal integer |
+| `%x`, `%X` | a hexadecimal integer |
 |  |  |
 |  |  |
 |  |  |
