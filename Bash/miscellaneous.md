@@ -4,4 +4,4 @@
 | `type <cmd>` | displays the type of command (native, hashed, etc) |
 
 
-Adding an item to path: ```bash $PATH="$PATH:<new_value>"```
+Adding an item to path: `$PATH="$PATH:<new_value>"`
