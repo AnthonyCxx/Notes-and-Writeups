@@ -37,9 +37,9 @@ Futhermore, _printf_ should be used where portability is important, as the behav
 |  |  |
 
 #### Notes
-- Putting an integer before the `f` in a `%f` will edit the amount of decimal places
+- You can include width and decimal precision specifiers for floats by putting a number before the `f`. Put a whole number for width and a decimal for precision.
 - Putting a `#` before the `x` in `%x` / `%X` will prepend a `0x` to indicate it is a hex digit.
 
-#### Sources
+## Sources
 - Linuxize: [Bash Printf Command](https://linuxize.com/post/bash-printf-command/)
 - The Linux Documentation Project: [Escape Characters](https://tldp.org/LDP/abs/html/escapingsection.html)
