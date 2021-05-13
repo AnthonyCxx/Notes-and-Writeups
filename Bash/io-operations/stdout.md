@@ -36,7 +36,7 @@ Futhermore, _printf_ should be used where portability is important, as the behav
 |  |  |
 |  |  |
 
-####
+#### Notes
 - Putting an integer before the `f` in a `%f` will edit the amount of decimal places
 - Putting a `#` before the `x` in `%x` / `%X` will prepend a `0x` to indicate it is a hex digit.
 
