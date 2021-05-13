@@ -14,3 +14,6 @@
 | redirect stdout from one command to input of another | `\|` |
 | redirect stdout and stderr from one command to stdin of another | `2&>1 \|` |
 | take in from stdin until specified, isolated string | `<< <string>` |
+
+### Redirect/dispose of native error messages
+`2>/dev/null` - what is [/dev/null](https://en.wikipedia.org/wiki/Null_device)?
