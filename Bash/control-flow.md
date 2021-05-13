@@ -6,10 +6,6 @@
 | Run second command if first succeeds | `&&` |
 | Run second command if first fails | `\|\|` |
 
-
-### Redirect/dispose of native error messages
-`2>/dev/null` - what is [/dev/null](https://en.wikipedia.org/wiki/Null_device)?
-
 ### Control Operators
 |  |  |
 | -- | -- |
