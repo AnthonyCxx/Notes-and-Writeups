@@ -19,11 +19,11 @@
 ### Control Syntax
 - If statement
 ```bash
-if cal         
+if ls        
 then                 
-  echo calander successfully displayed
+  echo files displayed succesfully
 else
-  echo date cannot be shown. Exiting...                                                                            
+  echo Error: files cannot be displayed. Exiting...                                                                            
   exit 1
 fi
 ```
