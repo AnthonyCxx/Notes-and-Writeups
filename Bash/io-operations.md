@@ -17,3 +17,16 @@
 
 ### Redirect/dispose of native error messages
 `2>/dev/null` - what is [/dev/null](https://en.wikipedia.org/wiki/Null_device)?
+
+### Echo
+Prints text to stdout (the terminal) <br />
+
+A note: If you use single quotes, any variables will not be replaced. You must use no quotes or standard, double quotes.
+
+| Option | Function |
+| ------ | -------- | 
+| `-n` | do not include newline | 
+| `-e` | enable escape characters |
+| `-E` | disable escape characters (default) |
+
+### Printf
