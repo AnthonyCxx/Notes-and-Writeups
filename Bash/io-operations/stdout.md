@@ -27,6 +27,7 @@ A note: If you use single quotes, any variables will not be replaced. Use no quo
 ### Conversion Specifiers
 To be done :/
 | Character | Function |
+| --------- | -------- |
 |  |  |
 |  |  |
 |  |  |
