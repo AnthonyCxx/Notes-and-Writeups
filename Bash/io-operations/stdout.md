@@ -11,7 +11,7 @@ A note: If you use single quotes, any variables will not be replaced. Use no quo
 | `-E` | disable escape characters (default) |
 
 ## Printf
-
+Like _echo_, _printf_ outputs text 
 
 ### Escape Characters
 | Character | Function |
