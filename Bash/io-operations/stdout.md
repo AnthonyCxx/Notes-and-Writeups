@@ -25,7 +25,6 @@ Like _echo_, _printf_ outputs text
 | `\a` | alert (error sound, [bel character](https://en.wikipedia.org/wiki/Bell_character)) |
 
 ### Conversion Specifiers
-To be done :/
 | Character | Function |
 | --------- | -------- |
 |  |  |
