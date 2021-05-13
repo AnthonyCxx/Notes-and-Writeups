@@ -1,6 +1,5 @@
-## Echo
+# Echo
 Prints text to stdout (the terminal) <br />
-`echo` performs differently from OS to OS, use `printf` in industry scripts. <br />
 
 A note: If you use single quotes, any variables will not be replaced. Use no quotes or standard, double quotes.
 
@@ -10,8 +9,9 @@ A note: If you use single quotes, any variables will not be replaced. Use no quo
 | `-e` | enable escape characters |
 | `-E` | disable escape characters (default) |
 
-## Printf
-Like _echo_, _printf_ outputs text 
+# Printf
+Like _echo_, _printf_ outputs text to the screen; however, although more complex,  _printf_ provides more control over the formatting of the output. <br />
+Futhermore, _printf_ should be used where portability is important, as the behavior of _echo_ varies from system to system.
 
 ### Escape Characters
 | Character | Function |
