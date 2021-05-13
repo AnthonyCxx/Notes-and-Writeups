@@ -19,10 +19,11 @@
 ### Control Syntax
 - If statement
 ```bash
-if [ ! -d someDir ]   # Normally, you would not use need the [], but here you do           
+if cal         
 then                 
-  echo directory \'someDir\' does not exist, creating directory \'someDir\'
-  mkdir someDir
+  echo calander successfully displayed
 else
-  echo directory \'someDir\' exists...
+  echo date cannot be shown. Exiting...                                                                            
+  exit 1
+fi
 ```
