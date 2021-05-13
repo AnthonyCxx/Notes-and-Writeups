@@ -1,3 +1,6 @@
+# What is Stdout?
+...
+
 # Echo
 Prints text to stdout (the terminal) <br />
 
