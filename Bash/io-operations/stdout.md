@@ -16,11 +16,11 @@ A note: If you use single quotes, any variables will not be replaced. Use no quo
 ### Escape Characters
 | Character | Function |
 | --------- | -------- |
-| `\\` | single backslash |
-| `\b` | backspace |
 | `\n` | newline |
-| `\r` | carraige return |
 | `\t` | horizontal tab |
+| `\\` | single backslash |
+| `\r` | carraige return |
+| `\b` | backspace |
 | `\v` | vertical tab |
 | `\a` | alert (error sound, [bel character](https://en.wikipedia.org/wiki/Bell_character)) |
 
