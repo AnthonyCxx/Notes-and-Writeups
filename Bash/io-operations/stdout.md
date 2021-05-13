@@ -25,15 +25,17 @@ Futhermore, _printf_ should be used where portability is important, as the behav
 | `\a` | alert (error sound, [bel character](https://en.wikipedia.org/wiki/Bell_character)) |
 
 ### Conversion Specifiers
-| Character | Function |
+| Character | Replaced By |
 | --------- | -------- |
+| %d | an decimal (base-10) integer |
+| %s | a string |
+| %% | a percent sign |
+| %x / %X | a hexadecimal integer |
 |  |  |
 |  |  |
 |  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+
+- Putting a `#` between the `%` and `x` in `%x` will prepend a `0x` to indicate it is a hex digit.
 
 #### Sources
 - Linuxize: [Bash Printf Command](https://linuxize.com/post/bash-printf-command/)
