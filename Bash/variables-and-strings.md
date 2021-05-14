@@ -48,7 +48,7 @@ Calling a variable in `{ }` with a `%` on the end and a a set of the final chara
 var=call
 echo ${var%ll}   #Echos 'ca'
 ```
-> Note: it is possible to use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
+> Note: use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
 
 ### Substituting Text in a Variable Call
 You can substitute text in a string with the structure `${var/old_pattern/new_pattern}`. 
