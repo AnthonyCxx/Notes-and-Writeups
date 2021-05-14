@@ -9,3 +9,4 @@ Below is every resource that I have used/reference in these notes:
 - The Linux Documentation Project: [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
 - The Linux Documentation Project: [Advanched Bash Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
 - Linuxize: [Bash Articles](https://linuxize.com/tags/bash/)
+- [Great Bash](http://www.carlalbing.com/) by Carl Albing (available on the O'Rielly Learning Platform through the [ACM](https://www.acm.org/)
