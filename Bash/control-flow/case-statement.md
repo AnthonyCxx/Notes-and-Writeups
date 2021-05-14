@@ -19,7 +19,7 @@ case $INPUT in
 esac
 ```
 > Basic Format
-```bash
+> ```bash
 case <var> in
 
    <option>)
@@ -28,4 +28,4 @@ case <var> in
    <option>)
        <statements>
        ;;
-```
+> ```
