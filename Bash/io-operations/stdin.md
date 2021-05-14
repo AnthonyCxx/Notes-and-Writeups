@@ -18,4 +18,5 @@
 (`$0` is the name of the command)
 
 #### Referring to All Arguments
-There are two ways to refer to all arguments in Bash: `$*` and `$@`. `$*` will refer to all the arguments as a single string, while `$@` refers to them as a list of independent strings.
+There are two ways to refer to all arguments in Bash: `$*` and `$@`. <br />
+`$*` will refer to all the arguments as a single string, while `$@` refers to them as a list of independent strings.
