@@ -11,7 +11,7 @@ done
 ```
 > The double parentheses are necessary, as they indicate an arithmetic operation. <br />
 >> Here are the sections of the for loop:
->> | Part of Loop | Contextual Example | Purpose |
+>> | Part of Loop | Part | Purpose |
 >> | ------------ | ------------------ | ------- | 
 >> | Declaration | i=0 | declares the variable |
 >> | Loop Condition | i < 10 | continue to loop until the condition is false |
