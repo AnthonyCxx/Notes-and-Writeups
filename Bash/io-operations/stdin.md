@@ -7,6 +7,7 @@
 | ------ | -------- |
 | `-p <str>` | prompts the user for input |
 | `-r` | read as raw string. _Always_ use this option. |
+| `-s` | silent. Do not display keystrokes on-screen |
 | `-t <int>` | accepts input for only `<int>` seconds |
 | `-d <str>` | stop reading after `<str>` |
 
