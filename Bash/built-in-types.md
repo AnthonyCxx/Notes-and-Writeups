@@ -10,3 +10,11 @@ Below are some of the qualities and operations of variables and strings.
 # Variables
 
 # Strings
+
+#### Modifying Strings
+```bash
+string="some phrase"
+
+echo this is a random ${string#some}
+```
+This snippet would echo `this is a random phrase`, as the `string#some` would remove `some` from the string.
