@@ -21,9 +21,9 @@ esac
 > case \<var\> in <br />
 
 > \<option\>) <br />
->    \<statements\> <br />
->    ;; <br />
+>        \<statements\> <br />
+>      ;; <br />
 > \<option\>) <br />
->    \<statements\> <br />
->    ;; <br />
+>        \<statements\> <br />
+>        ;; <br />
 > esac <br />
