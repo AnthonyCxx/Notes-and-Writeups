@@ -21,10 +21,11 @@ Below are some of the qualities and operations of variables and strings.
 ## Pre-defined Variables
 | Variable | Function |
 | -------- | -------- |
-| $? | stores whether or not the proceeding command succeeded or failed |
-| $PS1 | the standard prompt string for your shell |
-| $PATH | the path environmental variable. Do **not** play with this. |
-|  |  |
+| `$?` | stores whether or not the proceeding command succeeded or failed |
+| `$PS1` | the standard prompt string for your shell |
+| `$PATH` | the path environmental variable. Do _**not**_ play with this. |
+| `$USER` | the username of the script executer |
+| `$*` or `$@ `| all the commandline arguments for the script |
 
 # Strings
 
