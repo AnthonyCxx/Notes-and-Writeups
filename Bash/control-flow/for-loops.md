@@ -2,7 +2,7 @@
 
 ## Integer-progression For Loop
 Bash uses C-like for loops, with three sections and double parentheses. <br />
-Here is a short program that echos 0-9:
+Here is a short snippet that echos 0-9:
 ```bash
 for ((i=0 ; i < 10 ; i++))
 do
