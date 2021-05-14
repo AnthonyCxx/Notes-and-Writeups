@@ -15,6 +15,6 @@ Below are some of the qualities and operations of variables and strings.
 ```bash
 string="some phrase"
 
-echo this is a random ${string#some}
+echo this is a ${string#some}
 ```
-This snippet would echo `this is a random phrase`, as the `string#some` would remove `some` from the string.
+This snippet would echo `this is a phrase`, as the `string#some` would remove `some` from the string.
