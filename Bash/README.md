@@ -7,6 +7,9 @@ Note: **this project is in progress** and is continually being updated as a part
 ## Order
 After I have enough content, I will recommend a reading order here.
 
+## Recommended Readings
+- [Weaknesses of Bash](https://mywiki.wooledge.org/BashWeaknesses)
+
 ## Sources
 Below is every resource that I have used and or reference in these notes, ordered by frequency of use:
 - [Great Bash](http://www.carlalbing.com/) by Carl Albing (available on the O'Rielly Learning Platform through [The Association of Computer Machinery](https://www.acm.org/))
