@@ -1,6 +1,6 @@
 # For Loops
 
-## Integer-progression For-Loop
+## Range-based For-loop
 Bash uses C-like for-loops, with three sections and double parentheses. <br />
 Here is a short snippet that echos 0-9:
 ```bash
