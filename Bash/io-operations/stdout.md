@@ -35,6 +35,7 @@ Futhermore, _printf_ should be used where portability is important, as the behav
 | `%s` | a string |
 | `%%` | a percent sign |
 | `%x`, `%X` | a hexadecimal integer |
+
 This list is not [comprehensive](https://linuxize.com/post/bash-printf-command/)
 
 #### Notes
