@@ -15,7 +15,7 @@ Below are some of the qualities and operations of variables and strings.
 4. Are called in the program with a `$` prepended
 
 ## Declaring a Variable
-1. Assigned values EXACTLY as follows: `var=10`. Bash is _very_ picky about spacing.
+1. Assigned values _exactly_ as follows: `var=10`. Bash is _very_ picky about spacing.
 2. `declare -x <var>` exports a variable (lets you use it outside the current script). Alternatively, use `export <var>`
 
 ## Pre-defined Variables
