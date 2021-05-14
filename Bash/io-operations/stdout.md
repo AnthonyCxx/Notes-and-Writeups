@@ -13,7 +13,7 @@ A note: If you use single quotes, any variables will not be replaced. Use no quo
 | `-E` | disable escape characters (default) |
 
 # Printf
-Like _echo_, _printf_ outputs text to the screen; however, although more complex,  _printf_ provides more control over the formatting of the output. <br />
+Like _echo_, _printf_ outputs text to the screen; however, _printf_ is more complex and provides more control over the formatting of the output. <br />
 Futhermore, _printf_ should be used where portability is important, as the behavior of _echo_ varies from system to system.
 
 ### Escape Characters
