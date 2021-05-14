@@ -15,6 +15,12 @@ Refer below for explanations of the flags.
 | `-t <int>` | accepts input for only `<int>` seconds |
 | `-d <str>` | stop reading after `<str>` |
 
+### Example
+```bash
+read -r -p "Input: " INPUT         # User enters 'one two three'
+printf "Input read: $INPUT\n"      # $INPUT outputs 'one two three'
+```
+
 
 # Commandline Arguments
 #### Positional Arguments
