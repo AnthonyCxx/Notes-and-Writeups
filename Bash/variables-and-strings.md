@@ -38,7 +38,7 @@ Calling a variable in `{ }` with a `%` on the end and a a set of the final chara
 `var=call
 echo ${var%ll}   #Echos 'ca'
 ```
-Note: it is possible to use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
+> Note: it is possible to use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
 
 ### Infixing a Variable in a String
 To set apart a variable, put `{ }` around it.
