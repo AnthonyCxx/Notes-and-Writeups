@@ -19,6 +19,12 @@ Below are some of the qualities and operations of variables and strings.
 2. `declare -x <var>` exports a variable (lets you use it outside the current script). Alternatively, use `export <var>`
 
 ## Pre-defined Variables
+| Variable | Function |
+| -------- | -------- |
+| $? | stores whether or not the proceeding command succeeded or failed |
+| $PS1 | the standard prompt string for your shell |
+| $PATH | the path environmental variable. Do **not** play with this. |
+|  |  |
 
 # Strings
 
@@ -29,3 +35,9 @@ string="some phrase"
 echo this is a ${string#some}
 ```
 This snippet would echo `this is a phrase`, as the `string#some` would remove `some` from the string.
+
+# Miscellaneous and Closing Notes
+1. You can assign a string to a variable without using quotes if it has no spaces
+2. If you need to attach something directly to a variable, set apart the variable with {}
+3. Calling a non-declaring variable is the same as calling no variable at all
+4. Variables act as substitutions. Putting a command into a variable and calling it will just run that command
