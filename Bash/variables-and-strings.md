@@ -68,6 +68,6 @@ Below is a list of some of those variables.
 | `$PS1` | the standard prompt string for your shell |
 | `$USER` | the username of the script executer |
 | `$*` or `$@ `| all the commandline arguments for the script |
-| `$PATH` | the path environmental variable. Do _**not**_ play with this. |
+| `$PATH` | the path environment variable. Do _**not**_ play with this. |
 
 This list is not comprehensive, but [this one](https://sodocumentation.net/bash/topic/4797/internal-variables) is.
