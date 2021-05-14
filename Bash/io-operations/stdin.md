@@ -2,7 +2,8 @@
 
 # Read
 The read command accepts input from the user until a delimiter is read (newline, `\n`, by default) and then assigns the input to a variable. <br />
-A general read command would like like: `read -r -p "Input: " VAR`, which prompts the user with _Input:_ and then stores the input in `$VAR`
+A general read command would like like: `read -r -p "Input: " VAR`, which prompts the user with _Input:_ and then stores the input in `$VAR`. <br />
+Refer below for explanations of the flags.
 
 ### Read Options
 | Option | Function |
