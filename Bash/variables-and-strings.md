@@ -58,7 +58,10 @@ echo ${var%ll}   #Echos 'ca'
 > Note: If you do not know the characters, use the Shell wildcards `?` and `*`. <br />
   On another note, `%%` or `##` can be used directly after the variable name to make the result greedy.
 
-## Some Examples of Pre-defined Variables
+## Pre-defined Variables
+Bash has some useful variables built-in that are exteremely useful when writing scripts. <br />
+Below is a list of some of those variables.
+
 | Variable | Function |
 | -------- | -------- |
 | `$?` | stores whether or not the proceeding command succeeded or failed |
