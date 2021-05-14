@@ -14,7 +14,8 @@
 
 
 # Commandline Arguments
-- By default, each commandline argument is stored in a variable by the name of its order. `$1` is the first argument, `$2` is the second argument, etc. 
+#### Positional Arguments
+By default, each commandline argument is stored in a variable by the name of its order. `$1` is the first argument, `$2` is the second argument, etc. 
 (`$0` is the name of the command)
 
 #### Referring to All Arguments
