@@ -10,7 +10,7 @@ do
 done
 ```
 > The double parentheses are needed, as they indicate an arithmetic operation. <br />
-Here are the sections of the for loop:
+>> Here are the sections of the for loop:
 >> 1. Declaration - declares the variable
 >> 2. Loop condition - continue to loop until this requirement is false
 >> 3. Update statement - each time a loop is completed, run this statement
