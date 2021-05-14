@@ -25,8 +25,15 @@ Below are some of the qualities and operations of variables and strings.
 
 ## Variables and { }
 
-### Modifying Variable Calls with {} and %
-Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will truncate that part of the string. 
+### Modifying Variable Calls with {}, #, and $
+Calling a variable in `{ }` with a `#' on the end and a set of the beginning character will remove them from the output
+```bash
+string="some phrase"
+
+echo this is a ${string#some} #Echos 'this is a phrase'
+```
+
+Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will remove them from the output
 ```bash
 `var=call
 echo ${var%ll}   #Echos 'ca'
@@ -52,13 +59,3 @@ echo pencil${snippet}er   #Echos 'Pencil Sharpener'
 | `$PATH` | the path environmental variable. Do _**not**_ play with this. |
 
 This list is not comprehensive, but [this one](https://sodocumentation.net/bash/topic/4797/internal-variables) is.
-
-# Strings
-
-## Modifying Strings
-```bash
-string="some phrase"
-
-echo this is a ${string#some}
-```
-This snippet would echo `this is a phrase`, as the `string#some` would remove `some` from the string.
