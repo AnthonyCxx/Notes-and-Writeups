@@ -34,7 +34,7 @@ echo ${letterH}ouse       #Echos 'House'
 echo pencil${snippet}er   #Echos 'Pencil Sharpener'
 ```
 
-### Removing the Beginning of a Variable Call
+### Removing the Beginning of a String
 Calling a variable in `{ }` with a `#' on the end and a set of the beginning character will remove them from the output
 ```bash
 string="some phrase"
@@ -42,7 +42,7 @@ string="some phrase"
 echo this is a ${string#some} #Echos 'this is a phrase'
 ```
 
-### Removing the End of a Variable Call
+### Removing the End of a String
 Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will remove them from the output
 ```bash
 var=call
@@ -50,7 +50,7 @@ echo ${var%ll}   #Echos 'ca'
 ```
 > Note: use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
 
-### Substituting Text in a Variable Call
+### Substituting Text in a String
 You can substitute text in a string with the structure `${var/old_pattern/new_pattern}`. 
 ```bash
 var="a house made of three and a fourth walls"
