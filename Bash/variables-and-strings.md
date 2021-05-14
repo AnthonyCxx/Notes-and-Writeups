@@ -30,10 +30,10 @@ Below are some of the qualities and operations of variables and strings.
 This list is not [comprehensive](https://sodocumentation.net/bash/topic/4797/internal-variables)
 
 ## Notes on Variables
-1. You can assign a string to a variable without using quotes if it has no spaces
-2. If you need to attach something directly to a variable, set apart the variable with {}
-3. Calling a non-declaring variable is the same as calling no variable at all
-4. Variables act as substitutions. Putting a command into a variable and calling it will just run that command
+- You can assign a string to a variable without using quotes if it has no spaces
+- If you need to attach something directly to a variable, set apart the variable with {}
+- Calling a non-declaring variable is the same as calling no variable at all
+- Variables act as substitutions. Putting a command into a variable and calling it will just run that command
 
 # Strings
 
