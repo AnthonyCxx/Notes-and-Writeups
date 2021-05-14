@@ -1,6 +1,6 @@
 # Bash Script Format
 ```bash
-#! /bin/bash <br />
+#! /bin/bash
 <script>       
 ```
 
