@@ -1,6 +1,7 @@
 # What is Stdin?
 
 # Read
+The read command accepts input from the user until a delimiter is read (newline, `\n`, by default) and then assigned the input to a variable. <br />
 
 ### Read Options
 | Option | Function |
