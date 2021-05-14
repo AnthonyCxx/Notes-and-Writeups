@@ -23,7 +23,17 @@ Below are some of the qualities and operations of variables and strings.
 - Calling a non-declaring variable is the same as calling no variable at all.
 - Variables act as substitutions. Putting a command into a variable and calling it will just run that command.
 
-## Modifying Variable Calls with {}, #, and %
+## Modifying Variable Calls
+### Infixing a Variable in a String
+To set apart a variable, put `{ }` around it.
+```bash
+letterH='H'
+snippet=' sharpen'
+
+echo ${letterH}ouse       #Echos 'House'
+echo pencil${snippet}er   #Echos 'Pencil Sharpener'
+```
+
 ### Removing the Beginning of a Variable Call
 Calling a variable in `{ }` with a `#' on the end and a set of the beginning character will remove them from the output
 ```bash
@@ -45,16 +55,6 @@ You can substitute text in a string with the structure `${var/old_pattern/new_pa
 ```bash
 var="a house made of three and a fourth walls"
 echo ${var/made/with}   # Replaces 'made' with 'with' in the string
-```
-
-### Infixing a Variable in a String
-To set apart a variable, put `{ }` around it.
-```bash
-letterH='H'
-snippet=' sharpen'
-
-echo ${letterH}ouse       #Echos 'House'
-echo pencil${snippet}er   #Echos 'Pencil Sharpener'
 ```
 
 ## Some Examples of Pre-defined Variables
