@@ -42,7 +42,7 @@ echo ${var/made of/with}   #Replaces 'made of' with 'with' in the string
 ```
 
 ### String Slicing
-You can extract a substring from a string using `${var:index:substr_length} 
+You can extract a substring from a string using `${var:index:substr_length}`
 ```bash
 var='cinco'
 echo ${var:2:3}  #Echos 'nco'
