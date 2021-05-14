@@ -1,6 +1,6 @@
 # For Loops
 
-## Integer Progression For Loop
+## Integer-progression For Loop
 Bash uses C-like for loops, with three sections and double parentheses. <br />
 Here is a short program that echos {0..10}:
 ```bash
