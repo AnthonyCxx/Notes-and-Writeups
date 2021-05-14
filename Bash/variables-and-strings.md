@@ -26,6 +26,7 @@ Below are some of the qualities and operations of variables and strings.
 | `$PATH` | the path environmental variable. Do _**not**_ play with this. |
 | `$USER` | the username of the script executer |
 | `$*` or `$@ `| all the commandline arguments for the script |
+This list is not [comprehensive](https://sodocumentation.net/bash/topic/4797/internal-variables)
 
 # Strings
 
