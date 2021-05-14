@@ -1,12 +1,12 @@
 # Control Flow
 
-### Operators
+### Hinge Operators
 |  |  |
 | -- | -- |
 | Run second command if first succeeds | `&&` |
 | Run second command if first fails | `\|\|` |
 
-### Control Operators
+### Grouping Commands
 |  |  |
 | -- | -- |
 | group commands in main shell | `{ command1 ; command2 ; }` |
