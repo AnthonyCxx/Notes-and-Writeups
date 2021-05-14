@@ -41,6 +41,13 @@ var="a house made of three and a fourth walls"
 echo ${var/made of/with}   #Replaces 'made of' with 'with' in the string
 ```
 
+### String Slicing
+You can extract a substring from a string using `${var:index:substr_length} 
+```bash
+var='cinco'
+echo ${var:2:3}  #Echos 'nco'
+```
+
 ### Removing the Beginning of a String
 Calling a variable in `{ }` with a `#' on the end and a set of the character from the beginning will remove them from the output
 ```bash
