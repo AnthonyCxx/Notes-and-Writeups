@@ -35,7 +35,7 @@ echo this is a ${string#some} #Echos 'this is a phrase'
 ### Removing the End of a Variable Call
 Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will remove them from the output
 ```bash
-`var=call
+var=call
 echo ${var%ll}   #Echos 'ca'
 ```
 > Note: it is possible to use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
