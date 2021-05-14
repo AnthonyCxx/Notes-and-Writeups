@@ -18,12 +18,12 @@ case $INPUT in
 esac
 ```
 > Format: 
-case <var> in
+> case <var> in
 
-<option>)
-    <statements>
-    ;;
-<option>)
-    <statements>
-    ;;
-esac
+> <option>)
+>    <statements>
+>    ;;
+> <option>)
+>    <statements>
+>    ;;
+> esac
