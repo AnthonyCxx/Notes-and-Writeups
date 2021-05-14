@@ -75,6 +75,7 @@ Below is a list of some of those variables.
 | `$?` | stores whether or not the proceeding command succeeded or failed |
 | `$PS1` | the standard prompt string for your shell |
 | `$USER` | the username of the script executer |
+| `$RANDOM` | returns a random integer between 0 and 32767 |
 | `$*` or `$@ `| all the commandline arguments for the script |
 | `$PATH` | the path environment variable. Do _**not**_ play with this. |
 
