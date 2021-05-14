@@ -21,10 +21,10 @@ case <var> in
 
 case $INPUT in
 
-    [Yy]es)   #If yes, 
+    [Yy]es)   #If Yes or yes, 
          echo "Understood, proceeding..."
         ;;
-     [Nn]o)   #If no,
+     [Nn]o)   #If No or no,
          echo "Understood, abandoning..."
         ;;
      *)       #Otherwise...
