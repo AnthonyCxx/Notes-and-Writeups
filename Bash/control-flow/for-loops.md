@@ -9,7 +9,7 @@ do
   echo $i
 done
 ```
-> The double parentheses are needed, as they indicate an arithmetic operation. <br />
+> The double parentheses are necessary, as they indicate an arithmetic operation. <br />
 >> Here are the sections of the for loop:
 >> | Part of Loop | Contextual Example | Purpose |
 >> | ------------ | ------------------ | ------- | 
