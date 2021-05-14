@@ -34,8 +34,15 @@ echo ${letterH}ouse       #Echos 'House'
 echo pencil${snippet}er   #Echos 'Pencil Sharpener'
 ```
 
+### Substituting Text in a String
+You can substitute text in a string with the structure `${var/old_pattern/new_pattern}`. 
+```bash
+var="a house made of three and a fourth walls"
+echo ${var/made of/with}   # Replaces 'made of' with 'with' in the string
+```
+
 ### Removing the Beginning of a String
-Calling a variable in `{ }` with a `#' on the end and a set of the beginning character will remove them from the output
+Calling a variable in `{ }` with a `#' on the end and a set of the character from the beginning will remove them from the output
 ```bash
 string="some phrase"
 
@@ -49,13 +56,6 @@ var=call
 echo ${var%ll}   #Echos 'ca'
 ```
 > Note: use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
-
-### Substituting Text in a String
-You can substitute text in a string with the structure `${var/old_pattern/new_pattern}`. 
-```bash
-var="a house made of three and a fourth walls"
-echo ${var/made/with}   # Replaces 'made' with 'with' in the string
-```
 
 ## Some Examples of Pre-defined Variables
 | Variable | Function |
