@@ -18,13 +18,7 @@ case $INPUT in
          ;;
 esac
 ```
-> Format: <br />
-> case \<var\> in <br />
-
-> \<option\>) <br />
->   \<statements\> <br />
->      ;; <br />
-> \<option\>) <br />
->  \<statements\> <br />
->   ;; <br />
-> esac <br />
+> Format
+```bash
+test
+```
