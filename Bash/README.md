@@ -10,4 +10,4 @@ Below is every resource that I have used and or reference in these notes, ordere
 - The Linux Documentation Project: [Advanched Bash Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
 - Linuxize: [Bash Articles](https://linuxize.com/tags/bash/)
 - [Great Bash](http://www.carlalbing.com/) by Carl Albing (available on the O'Rielly Learning Platform through [The Association of Computer Machinery](https://www.acm.org/))
-- 
+- The Linux Inofrmation Project: [home page](http://linfo.org/)
