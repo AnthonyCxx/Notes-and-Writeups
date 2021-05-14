@@ -40,7 +40,7 @@ This list is not [comprehensive](https://linuxize.com/post/bash-printf-command/)
 
 #### Notes
 - Putting a whole number after the `%` in a numeric specifier will change the width field to equal that amount of characters.
-- If you put a `0` in front of the width specifier, it will pad the empty space with 0s.
+- If you put a `0` in front of the width specifier, it will pad (zero fill) the empty space with 0s.
 - You can change the precision of a float by putting a decimal after the `%` in `%f` (`.2` for two decimal places).
 - Putting a `#` before the `x` in `%x` / `%X` will prepend a `0x` to indicate it is a hex digit.
 
