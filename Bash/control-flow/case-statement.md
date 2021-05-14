@@ -6,13 +6,13 @@ Case statements are the Bash equivalent of the C/Java [switch statement](https:/
 
 case $INPUT in
 
-    [Yy]es)
+    [Yy]es)   #If yes, 
          echo "Understood, proceeding..."
         ;;
-     [Nn]o)
+     [Nn]o)   #If no,
          echo "Understood, abandoning..."
         ;;
-     *)
+     *)       #Otherwise...
          echo "Misunderstood, dying..."
          ;;
 esac
