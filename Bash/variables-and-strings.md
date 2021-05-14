@@ -40,6 +40,13 @@ echo ${var%ll}   #Echos 'ca'
 ```
 > Note: it is possible to use the Shell wildcards `?` and `*` with these calls. Use `%%` or `##` directly after the variable name to make the result greedier.
 
+### Substituting Text in a Variable Call
+You can substitute text in a string with the structure `${var/old_pattern/new_pattern}`. 
+```bash
+var="a house made of three and a fourth walls"
+echo ${var/made/with}   # Replaces 'made' with 'with' in the string
+```
+
 ### Infixing a Variable in a String
 To set apart a variable, put `{ }` around it.
 ```bash
