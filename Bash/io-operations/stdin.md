@@ -1,7 +1,16 @@
 # What is Stdin?
 
+# Read
 
-## Commandline Arguments
+### Read Options
+| Option | Function |
+| `-p <str>` | prompts the user for input |
+| `-r` | raw string -- do not interpret backslashes at escape chars. |
+| `-t <int>` | accepts input for only `<int>` seconds |
+| `-d <str>` | stop reading after `<str>` |
+
+
+# Commandline Arguments
 - By default, each commandline argument is stored in a variable by the name of its order. `$1` is the first argument, etc. (`$0` is the name of the command)
 
 #### Referring to All Arguments
