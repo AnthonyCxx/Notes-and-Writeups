@@ -20,7 +20,7 @@ Refer below for explanations of the flags.
 read -r -p "Input: " INPUT         # User enters 'one two three'
 printf "Input read: $INPUT\n"      # $INPUT outputs 'one two three'
 ```
-
+> If multiple variables are specified, then each variable will get a single word, and the final variable will take the rest.
 
 # Commandline Arguments
 #### Positional Arguments
