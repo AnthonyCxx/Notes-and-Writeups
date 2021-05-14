@@ -9,6 +9,7 @@ After I have enough content, I will recommend a reading order here.
 
 ## Recommended Readings
 - [Weaknesses of Bash](https://mywiki.wooledge.org/BashWeaknesses)
+- [Advantages of Bash](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_01_02.html#:~:text=Bash%20can%20run%20most%20sh,that%20such%20conditions%20stimulate%20creativity.)
 
 ## Sources
 Below is every resource that I have used and or reference in these notes, ordered by frequency of use:
