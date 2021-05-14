@@ -23,10 +23,8 @@ Below are some of the qualities and operations of variables and strings.
 - Calling a non-declaring variable is the same as calling no variable at all.
 - Variables act as substitutions. Putting a command into a variable and calling it will just run that command.
 
-## Variables and { }
-
-### Modifying Variable Calls with {}, #, and $
-#### Removing the Beginning of a Variable Call
+## Modifying Variable Calls with {}, #, and $
+### Removing the Beginning of a Variable Call
 Calling a variable in `{ }` with a `#' on the end and a set of the beginning character will remove them from the output
 ```bash
 string="some phrase"
@@ -34,7 +32,7 @@ string="some phrase"
 echo this is a ${string#some} #Echos 'this is a phrase'
 ```
 
-# Removing the End of a Variable Call
+### Removing the End of a Variable Call
 Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will remove them from the output
 ```bash
 `var=call
