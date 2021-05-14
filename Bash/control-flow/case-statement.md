@@ -1,5 +1,5 @@
 # Case Statements
-Case statemnts are the Bash equivalent of the C/Java [switch statement](https://www.geeksforgeeks.org/switch-statement-cc/). <br />
+Case statements are the Bash equivalent of the C/Java [switch statement](https://www.geeksforgeeks.org/switch-statement-cc/). <br />
 ```bash
 
  read -r -p "Input: " INPUT
