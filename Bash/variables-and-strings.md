@@ -29,6 +29,12 @@ Below are some of the qualities and operations of variables and strings.
 
 This list is not [comprehensive](https://sodocumentation.net/bash/topic/4797/internal-variables)
 
+## Notes on Variables
+1. You can assign a string to a variable without using quotes if it has no spaces
+2. If you need to attach something directly to a variable, set apart the variable with {}
+3. Calling a non-declaring variable is the same as calling no variable at all
+4. Variables act as substitutions. Putting a command into a variable and calling it will just run that command
+
 # Strings
 
 #### Modifying Strings
@@ -38,9 +44,3 @@ string="some phrase"
 echo this is a ${string#some}
 ```
 This snippet would echo `this is a phrase`, as the `string#some` would remove `some` from the string.
-
-# Miscellaneous and Closing Notes
-1. You can assign a string to a variable without using quotes if it has no spaces
-2. If you need to attach something directly to a variable, set apart the variable with {}
-3. Calling a non-declaring variable is the same as calling no variable at all
-4. Variables act as substitutions. Putting a command into a variable and calling it will just run that command
