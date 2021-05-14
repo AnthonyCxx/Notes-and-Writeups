@@ -14,3 +14,4 @@ Below is every resource that I have used and or reference in these notes, ordere
 - The Linux Documentation Project: [Advanched Bash Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
 - Linuxize: [Bash Articles](https://linuxize.com/tags/bash/)
 - The Linux Inofrmation Project: [home page](http://linfo.org/)
+- SS64 Commandline Reference: [Bash Reference](https://ss64.com/bash/)
