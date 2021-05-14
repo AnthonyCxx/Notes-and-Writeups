@@ -4,8 +4,9 @@
 
 ### Read Options
 | Option | Function |
+| ------ | -------- |
 | `-p <str>` | prompts the user for input |
-| `-r` | raw string -- do not interpret backslashes at escape chars. |
+| `-r` | read as raw string. _Always_ use this option. |
 | `-t <int>` | accepts input for only `<int>` seconds |
 | `-d <str>` | stop reading after `<str>` |
 
