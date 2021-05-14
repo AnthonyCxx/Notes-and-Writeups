@@ -5,7 +5,7 @@ As per such, I do provide examples for reference, but do not explain them.
 Note: **this project is in progress** and is continually being updated as a part of me learning Bash. I am still learning Bash.
 
 ## Sources
-Below is every resource that I have used/reference in these notes:
+Below is every resource that I have used and or reference in these notes:
 - The Linux Documentation Project: [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
 - The Linux Documentation Project: [Advanched Bash Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
 - Linuxize: [Bash Articles](https://linuxize.com/tags/bash/)
