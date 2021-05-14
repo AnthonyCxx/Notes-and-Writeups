@@ -38,7 +38,7 @@ echo pencil${snippet}er   #Echos 'Pencil Sharpener'
 You can substitute text in a string with the structure `${var/old_pattern/new_pattern}`. 
 ```bash
 var="a house made of three and a fourth walls"
-echo ${var/made of/with}   # Replaces 'made of' with 'with' in the string
+echo ${var/made of/with}   #Replaces 'made of' with 'with' in the string
 ```
 
 ### Removing the Beginning of a String
