@@ -18,7 +18,7 @@ case $INPUT in
          ;;
 esac
 ```
-> Format
+> Basic Format
 ```bash
 case <var> in
 
