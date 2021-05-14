@@ -17,7 +17,7 @@ case $INPUT in
          ;;
 esac
 ```
-> Format: 
+> Format: <br />
 > case \<var\> in <br />
 
 > \<option\>) <br />
