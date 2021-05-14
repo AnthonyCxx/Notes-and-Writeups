@@ -1,6 +1,6 @@
 # For Loops
 
-## Range-based For-loop
+## Range-based For-loop with Integers
 Bash uses C-like for-loops, with three sections and double parentheses. <br />
 Here is a short snippet that echos 0-9:
 ```bash
@@ -16,3 +16,10 @@ done
 >> | Declaration | i=0 | declares the variable |
 >> | Loop Condition | i < 10 | continue to loop until the condition is false |
 >> | Update statement | i++ | each time a loop is completed, run this statement |
+
+## Range-based For-loops with Arrays
+```bash
+
+
+
+```
