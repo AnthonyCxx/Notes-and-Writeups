@@ -2,7 +2,7 @@
 This is a collection of notes on Bash Scripting, which is primarily meant to be a reference rather than a learning resource. <br />
 As per such, I do provide examples for reference, but do not explain them.
 
-Note: this project is **in progress** and is continually being updated as a part of me learning Bash. I am still learning Bash.
+Note: **this project is in progress** and is continually being updated as a part of me learning Bash. I am still learning Bash.
 
 ## Sources
 Below is every resource that I have used/reference in these notes:
