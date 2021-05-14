@@ -20,5 +20,12 @@ esac
 ```
 > Format
 ```bash
-test
+case <var> in
+
+   <option>)
+       <statements>
+       ;;
+   <option>)
+       <statements>
+       ;;
 ```
