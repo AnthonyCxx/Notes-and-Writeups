@@ -28,6 +28,6 @@ case $INPUT in
         ;;
      [M]maybe | *)       #If 'Maybe', 'maybe', or anything else
          echo "Misunderstood, dying..."
-         ;;
+        ;;
 esac
 ```
