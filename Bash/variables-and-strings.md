@@ -55,6 +55,7 @@ string="some phrase"
 
 echo this is a ${string#some} #Echos 'this is a phrase'
 ```
+> Note: `${#var}` can be used to represent the length of the string
 
 ### Removing the End of a String
 Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will remove them from the output
