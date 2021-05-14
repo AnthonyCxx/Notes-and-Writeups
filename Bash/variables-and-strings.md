@@ -23,7 +23,7 @@ Below are some of the qualities and operations of variables and strings.
 - Calling a non-declaring variable is the same as calling no variable at all.
 - Variables act as substitutions. Putting a command into a variable and calling it will just run that command.
 
-## Variables and {}
+## Variables and { }
 
 ### Modifying Variable Calls with {} and %
 Calling a variable in `{ }` with a `%` on the end and a a set of the final characters will truncate that part of the string. 
