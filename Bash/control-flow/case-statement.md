@@ -12,6 +12,7 @@ case <var> in
    <option>)
        <statements>
        ;;
+esac
 ```
 
 ### Example
