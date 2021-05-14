@@ -12,7 +12,7 @@ Below are some of the qualities and operations of variables and strings.
 1. Begin with a letter or an underscore (underscores are counted as letters in Bash and in programing like [Vim](https://www.vim.org/))  
 2. Can contain letters, numbers, or an underscore
 3. Are case-sensitive; e.g. `myvar` is not the same as `myVar`
-4. Are called in the program with a '$' prepended
+4. Are called in the program with a `$` prepended
 
 ## Declaring a Variable
 1. Assigned values EXACTLY as follows: `var=10`. Bash is _very_ picky about spacing.
