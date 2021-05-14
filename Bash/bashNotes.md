@@ -1,6 +1,8 @@
 # Bash Script Format
-\#! /bin/bash <br />
-\<script>       <!-- Had to put a '\<' because '<script>' is an html tag... -->
+```bash
+#! /bin/bash <br />
+<script>       
+```
 
 ### Waiting on Commands to Finish
 Adding an `&` to the end of a command will run the command 'in the background',
