@@ -30,22 +30,22 @@ The main difference is that you will get a segmentation fault if you try to edit
 ```C
 //C-String using Char Array
 char name[] = "bob";
-printf("Name before (char array): %s\n", name);
+printf("(char array) Name before: %s\n", name);
 
 name[2] = 'p';
-printf("Name after (char array): %s\n\n", name);
+printf("(char array) Name after: %s\n\n", name);
 
 //C-String using Char Pointer
 char* surname = "bob";
-printf("Name before (char pointer): %s\n", surname);
+printf("(char pointer) Name before: %s\n", surname);
 
 surname[2] = 'p';   //Seg fault.
-printf("Name after (char pointer): %s\n", surname);
+printf("(char pointer) Name after: %s\n", surname);
 ```
 > Output: <br />
-> Name before (char array): bob <br />
-> Name after (char array): bop <br />
-> Name before (char pointer): bob <br />
+> (char array) Name before: bob <br />
+> (char array) Name after: bop <br />
+> (char pointer) Name before: bob <br />
 > Segmentation fault (core dumped) <br />
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
