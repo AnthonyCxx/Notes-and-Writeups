@@ -28,7 +28,7 @@ There are no strings in C, only char arrays and char pointerss, both of which mu
 The main difference is that you will get a segmentation fault if you try to edit a char pointer.
 ```C
 //C-String using Char Array
- char name[] = "bob";
+char name[] = "bob";
 printf("Name before (char array): %s\n", name);
 
 name[2] = 'p';
