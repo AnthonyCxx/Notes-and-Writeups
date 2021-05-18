@@ -2,7 +2,7 @@
 
 | Function | Paramters | Function | 
 | -------- | --------- | -------- |
-| printf |  | |
+| `printf()` |  | |
 
 ## Printf
 _Printf_ is the basic C print function.
