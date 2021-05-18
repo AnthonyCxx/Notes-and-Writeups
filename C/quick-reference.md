@@ -1,4 +1,4 @@
-# Master C Programming Reference Guide
+# Quick C Programming Reference Guide
 
 ## Output
 ```C
