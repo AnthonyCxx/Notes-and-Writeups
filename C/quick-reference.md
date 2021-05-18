@@ -1,4 +1,5 @@
-# Quick C Programming Reference Guide
+# Quick C Programming Reference Guide for C++ Programmers
+If it's not mentioned here, it's probably the same.
 
 ## Output
 ```C
