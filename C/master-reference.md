@@ -41,11 +41,11 @@ printf("Name before (char pointer): %s\n", surname);
 surname[2] = 'p';
 printf("Name after (char pointer): %s\n", surname);
 ```
-> Output: 
-> Name before (char array): bob
-> Name after (char array): bop
-> Name before (char pointer): bob
-> Segmentation fault (core dumped)
+> Output: <br />
+> Name before (char array): bob <br />
+> Name after (char array): bop <br />
+> Name before (char pointer): bob <br />
+> Segmentation fault (core dumped) <br />
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 - [Char Arrays vs Char Pointers](https://stackoverflow.com/questions/10186765/what-is-the-difference-between-char-array-and-char-pointer-in-c)
