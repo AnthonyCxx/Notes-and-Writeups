@@ -18,7 +18,7 @@ Ref: [C Conversion/Format Specifiers](https://aticleworld.com/format-specifiers-
  //Get user input.
 char input[50];                         //Declare a char array of 50 bytes
 printf("Input: ");                     //Prompt
-fgets(input, sizeof(input), stdin);   //Fgets implicitly copies in a newline character.
+fgets(input, sizeof(input), stdin);   //Note: fgets implicitly copies in a newline character.
 printf("%s", input);                 //Print user-provided string
 ```
 > Format: _fgets(variable, sizeof(variable), source);_
