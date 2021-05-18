@@ -42,15 +42,13 @@ printf("(char pointer) Name before: %s\n", surname);
 surname[2] = 'p';   //Seg fault.
 printf("(char pointer) Name after: %s\n", surname);
 ```
-> Output: <br />
-> (char array) Name before: bob <br />
-> (char array) Name after: bop <br />
-> (char pointer) Name before: bob <br />
-> Segmentation fault (core dumped) <br />
 
 ### Notable Functions
 | Function | Function |
 | -------- | -------- |
+| strlen(_**str**_) | returns the length of the string |
+| strcmp(_**str**_, _**str**_) | compares the two strings; returns 0 is equal |
+| strcat(_**str**_, _**str**_) | [concatonates](https://www.programmingsimplified.com/c-program-concatenate-strings) the second string to the first |
 | strcpy(_**str**_, _**str**_) | copies the second string into the first |
 
 ### Readings
