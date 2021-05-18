@@ -6,9 +6,9 @@
 printf("Hello, world!");
 
 // Output a variable
-char name[] = "some name";
-printf("%s\n", name);      
-// The conversion specifier MUST match the datatype. Strings (char arrays) use %s
+int num = 5;
+printf("%d\n", num);      
+// The conversion specifier MUST match the datatype. Standard integers use _%d_
 ```
 > Format: _printf(format section, expression section);_
 > 
