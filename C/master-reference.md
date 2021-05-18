@@ -26,7 +26,19 @@ printf("%s", input);                 //Print user-provided string
 ## 'Strings'
 There are no strings in C, only char arrays and char points, both of which must end in a null-terminating character. Below are two equally valid ways of writing a 'string'.
 ```C
-char input
+//C-String using Char Array
+ char name[] = "bob";
+printf("Name before (char array): %s\n", name);
+
+name[2] = 'p';
+printf("Name after (char array): %s\n", name);
+
+//C-String using Char Pointer
+char* surname = "bob";
+printf("Name before (char pointer): %s\n", surname);
+
+surname[2] = 'p';
+printf("Name after (char pointer): %s\n", surname);
 ```
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
