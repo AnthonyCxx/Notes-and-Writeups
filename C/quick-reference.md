@@ -47,6 +47,12 @@ printf("(char pointer) Name after: %s\n", surname);
 > (char array) Name after: bop <br />
 > (char pointer) Name before: bob <br />
 > Segmentation fault (core dumped) <br />
+
+### Notable Functions
+| Function | Function |
+| -------- | -------- |
+| strcpy(_**str**_, _**str**_) | copies the second string into the first |
+
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 - [Char Arrays vs Char Pointers](https://stackoverflow.com/questions/10186765/what-is-the-difference-between-char-array-and-char-pointer-in-c)
