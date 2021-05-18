@@ -2,7 +2,7 @@
 Note that the size in bytes is compiler-dependent.
 
 | Name |  Format Specifier |  Size (Bytes) | Numeric Range |
-| ---- | ----------------- | ------------- | ---- --------- |
+| ---- | ----------------- | ------------- | ------------- |
 | `char` |  | 1 | -128 - 127 | 
 | `short int` |  | 2 | -32767 - 32767 |  
 | `int` |   | 4 | -2,147,483,647 - 2,147,483,647 |  
