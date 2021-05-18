@@ -8,7 +8,7 @@ printf("Hello, world!");
 // Output a variable
 int num = 5;
 printf("%d\n", num);      
-// The conversion specifier MUST match the datatype. Standard integers use _%d_
+// The conversion specifier MUST match the datatype. Standard integers use %d
 ```
 > Format: _printf(format section, expression section);_
 > 
