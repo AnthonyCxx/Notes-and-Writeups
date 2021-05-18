@@ -12,7 +12,7 @@ printf("%s\n", name);
 ```
 > Format: _printf(format section, expression section);_
 > 
-Ref: [Conversion/Format Specifiers](https://aticleworld.com/format-specifiers-in-c/)
+Ref: [C Conversion/Format Specifiers](https://aticleworld.com/format-specifiers-in-c/)
 ## Input
 ```C
  //Get user input.
@@ -22,3 +22,9 @@ fgets(input, sizeof(input), stdin);   //Fgets implicitly copies in a newline cha
 printf("%s", input);                 //Print user-provided string
 ```
 > Format: _fgets(variable, sizeof(variable), source);_
+
+## 'Strings'
+There are no strings in C, only char arrays and char points, both of which must end in a null-terminating character. Below are two equally valid ways of writing a 'string'. Here is [a reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm).
+```C
+
+```
