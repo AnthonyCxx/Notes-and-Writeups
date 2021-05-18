@@ -24,7 +24,8 @@ printf("%s", input);                 //Print user-provided string
 > Format: _fgets(variable, sizeof(variable), source);_
 
 ## 'Strings'
-There are no strings in C, only char arrays and char points, both of which must end in a null-terminating character. Below are two equally valid ways of writing a 'string'.
+There are no strings in C, only char arrays and char pointerss, both of which must end in a null-terminating character. Below are two equally valid ways of writing a 'string'.
+The main difference is that you will get a segmentation fault if you try to edit a char pointer.
 ```C
 //C-String using Char Array
  char name[] = "bob";
@@ -40,6 +41,11 @@ printf("Name before (char pointer): %s\n", surname);
 surname[2] = 'p';
 printf("Name after (char pointer): %s\n", surname);
 ```
+> Output: 
+> Name before (char array): bob
+> Name after (char array): bop
+> Name before (char pointer): bob
+> Segmentation fault (core dumped)
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 - [Char Arrays vs Char Pointers](https://stackoverflow.com/questions/10186765/what-is-the-difference-between-char-array-and-char-pointer-in-c)
