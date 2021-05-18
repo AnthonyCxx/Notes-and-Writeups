@@ -10,7 +10,7 @@ char name[] = "some name";
 printf("%s\n", name);      
 // The conversion specifier MUST match the datatype. Strings (char arrays) use %s
 ```
-> Format: _printf(format section, expression section);_
+> Format: `printf(format section, expression section);`
 > 
 Ref: [Conversion/Format Specifiers](https://aticleworld.com/format-specifiers-in-c/)
 ## Input
