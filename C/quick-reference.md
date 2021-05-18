@@ -2,20 +2,20 @@
 
 ## Output
 ```C
-// General output
+//General output
 printf("Hello, world!");
 
-// Output a variable
+//Output a variable
 int num = 5;
 printf("%d\n", num);      
-// The conversion specifier MUST match the datatype. Standard integers use %d.
+//The conversion specifier MUST match the datatype. Standard integers use %d.
 ```
 > Format: _printf(format section, expression section);_
 > 
 Ref: [C Conversion/Format Specifiers](https://aticleworld.com/format-specifiers-in-c/)
 ## Input
 ```C
- //Get user input.
+//Get user input
 char input[50];                         //Declare a char array of 50 bytes
 printf("Input: ");                     //Prompt
 fgets(input, sizeof(input), stdin);   //Note: fgets implicitly copies in a newline character.
