@@ -32,13 +32,13 @@ The main difference is that you will get a segmentation fault if you try to edit
 printf("Name before (char array): %s\n", name);
 
 name[2] = 'p';
-printf("Name after (char array): %s\n", name);
+printf("Name after (char array): %s\n\n", name);
 
 //C-String using Char Pointer
 char* surname = "bob";
 printf("Name before (char pointer): %s\n", surname);
 
-surname[2] = 'p';
+surname[2] = 'p';   //Seg fault.
 printf("Name after (char pointer): %s\n", surname);
 ```
 > Output: <br />
