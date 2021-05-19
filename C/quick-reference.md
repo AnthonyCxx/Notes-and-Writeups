@@ -35,6 +35,7 @@ char weekday[20], month[20], dtm[100];
 strcpy(dtm, "Saturday March 25 1989");   //assigns "Saturday March 25 1989" to "dtm"
 sscanf(dtm, "%s %s %d  %d", weekday, month, &day, &year);   //Copies word/integer sequentially into the appropriate variables
 ```
+> Format: _sscanf(source, format, variables)_
 > Source: [sscanf](https://www.tutorialspoint.com/c_standard_library/c_function_sscanf.htm)
 
 ## 'Strings'
