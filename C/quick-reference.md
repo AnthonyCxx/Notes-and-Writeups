@@ -33,14 +33,14 @@ The main difference is that you will get a segmentation fault if you try to edit
 char name[] = "bob";
 printf("(char array) Name before: %s\n", name);
 
-name[2] = 'p';
+name[2] = 'p';    //changes 'bob' to 'bop' ; legal
 printf("(char array) Name after: %s\n\n", name);
 
 //C-String using Char Pointer
 char* surname = "bob";
 printf("(char pointer) Name before: %s\n", surname);
 
-surname[2] = 'p';   //Seg fault.
+surname[2] = 'p';   //Seg fault. ; cannot change char pointers
 printf("(char pointer) Name after: %s\n", surname);
 ```
 
