@@ -1,6 +1,7 @@
 # Quick C Programming Reference Guide for C++ Programmers
 If it's not mentioned here, it's probably the same. <br />
-I got most of this from a quick skim of [_Practical C Programming_](https://www.amazon.com/Practical-Programming-Does-Nutshell-Handbooks/dp/1565923065), by Steve Oualline. It's an especially good book for people who already know C++. <br />
+I got most of this from a quick skim of [_Practical C Programming_](https://www.amazon.com/Practical-Programming-Does-Nutshell-Handbooks/dp/1565923065), by Steve Oualline. <br /> 
+It's an especially good book for people who already know C++. <br />
 
 Just as a note, C is really pointer-heavy. If you don't understand pointers yet, you're gonna suffer -- a lot.
 
