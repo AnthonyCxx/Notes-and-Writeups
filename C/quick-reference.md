@@ -1,5 +1,6 @@
 # Quick C Programming Reference Guide for C++ Programmers
-If it's not mentioned here, it's probably the same.
+If it's not mentioned here, it's probably the same. <br />
+I got most of this from a quick skim of [_Practical C Programming_](https://www.amazon.com/Practical-Programming-Does-Nutshell-Handbooks/dp/1565923065), by Steve Oualline
 
 ## Output
 ```C
