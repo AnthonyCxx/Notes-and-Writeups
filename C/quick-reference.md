@@ -75,3 +75,23 @@ These functions are included in the `<string.h>` header file
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 - [Char Arrays vs Char Pointers](https://stackoverflow.com/questions/10186765/what-is-the-difference-between-char-array-and-char-pointer-in-c)
+
+
+## Strange? Stuff
+Apparently you can put `{ }` arbitrarily in the middle of a program to mess with variable locality.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+
+  {
+     //Putting the variable inside {} confines it to this block
+     int local = 5;
+  }
+
+  printf("%d\n", local);  //error, variable "local" undefined
+
+  return 0;
+}
+```
