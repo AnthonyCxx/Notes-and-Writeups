@@ -15,6 +15,8 @@ printf("%d\n", num);
 > 
 Ref: [C Conversion/Format Specifiers](https://aticleworld.com/format-specifiers-in-c/)
 ## Input
+
+### Getting User Input
 ```C
 //Get user input
 char input[50];                         //Declare a char array of 50 bytes
@@ -23,6 +25,17 @@ fgets(input, sizeof(input), stdin);   //Note: fgets implicitly copies in a newli
 printf("%s", input);                 //Print user-provided string
 ```
 > Format: _fgets(variable, sizeof(variable), source);_
+
+### Processing User Input
+```C
+//Taken from the TutroialsPoint article 'C library function - sscanf()', linked below
+int day, year;
+char weekday[20], month[20], dtm[100];
+
+strcpy(dtm, "Saturday March 25 1989");   //assigns "Saturday March 25 1989" to "dtm"
+sscanf(dtm, "%s %s %d  %d", weekday, month, &day, &year);   //Copies word/integer sequentially into the appropriate variables
+```
+> Source: [sscanf](https://www.tutorialspoint.com/c_standard_library/c_function_sscanf.htm)
 
 ## 'Strings'
 There are no strings in C, only char arrays and char pointers, both of which must end in a null-terminating character. 
