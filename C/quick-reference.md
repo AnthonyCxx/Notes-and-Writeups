@@ -68,7 +68,8 @@ These functions are included in the `<string.h>` header file
 | strchr(_**str**_, _**int**_) | returns a pointer to the first instance of some character in the string - [guide](https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm) |
 | strrchr(_**str**_, _**int**_) | returns a pointer to the last instance of some character in a string - [guide](https://www.tutorialspoint.com/c_standard_library/c_function_strrchr.htm) |
 | strcat(_**str**_, _**str**_) | [concatonates](https://www.programmingsimplified.com/c-program-concatenate-strings) the second string to the first |
-| strcpy(_**str**_, _**str**_) | copies the second string into the first |
+| strcpy(_**str**_, _**str**_) | copies the second string into the first |\
+> Do _NOT_ do `if (strcmp(str1, str2))` since it returns 0. You have to do `if (strcmp(str1, str2) == 0)`.
 
 ### Readings
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
