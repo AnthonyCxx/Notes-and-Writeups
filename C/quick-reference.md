@@ -45,9 +45,12 @@ printf("(char pointer) Name after: %s\n", surname);
 ```
 
 ### Notable Functions
+These functions are included in the `<string.h>` header file
 | Function | Function |
 | -------- | -------- |
 | strlen(_**str**_) | returns the length of the string |
+| strchr(_**str**_, _**int**_) | returns a pointer to the first instance of some character in the string - [guide](https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm) |
+| strrchr(_**str**_, _**int**_) | returns a pointer to the last instance of some character in a string - [guide](https://www.tutorialspoint.com/c_standard_library/c_function_strrchr.htm) |
 | strcmp(_**str**_, _**str**_) | compares the two strings; **returns 0 is equal** |
 | strcat(_**str**_, _**str**_) | [concatonates](https://www.programmingsimplified.com/c-program-concatenate-strings) the second string to the first |
 | strcpy(_**str**_, _**str**_) | copies the second string into the first |
