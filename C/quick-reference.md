@@ -32,6 +32,7 @@ printf("%s", input);                 //Print user-provided string
 int day, year;
 char weekday[20], month[20], dtm[100];
 
+//sscanf allows you to parse a single string for different variables
 strcpy(dtm, "Saturday March 25 1989");   //assigns "Saturday March 25 1989" to "dtm"
 sscanf(dtm, "%s %s %d  %d", weekday, month, &day, &year);   //Copies word/integer sequentially into the appropriate variables
 ```
