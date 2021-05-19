@@ -31,11 +31,11 @@ printf("%s", input);                 //Print user-provided string
 ```C
 //Taken from the TutroialsPoint article 'C library function - sscanf()', linked below
 int day, year;
-char weekday[20], month[20], dtm[100];
+char weekday[20], month[20], full_date[100];
 
 //sscanf allows you to parse a single string for different variables
-strcpy(dtm, "Saturday March 25 1989");   //assigns "Saturday March 25 1989" to "dtm"
-sscanf(dtm, "%s %s %d  %d", weekday, month, &day, &year);   //Copies word/integer sequentially into the appropriate variables
+strcpy(full_date, "Saturday March 25 1989");   //assigns "Saturday March 25 1989" to "full_date"
+sscanf(full_date, "%s %s %d  %d", weekday, month, &day, &year);   //Copies word/integer sequentially into the appropriate variables
 ```
 > Format: _sscanf(source, format, variables)_ <br />
 > Source: [TutorialsPoint](https://www.tutorialspoint.com/c_standard_library/c_function_sscanf.htm)
