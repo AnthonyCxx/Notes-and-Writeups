@@ -36,7 +36,7 @@ strcpy(dtm, "Saturday March 25 1989");   //assigns "Saturday March 25 1989" to "
 sscanf(dtm, "%s %s %d  %d", weekday, month, &day, &year);   //Copies word/integer sequentially into the appropriate variables
 ```
 > Format: _sscanf(source, format, variables)_ <br />
-> Source: [sscanf](https://www.tutorialspoint.com/c_standard_library/c_function_sscanf.htm)
+> Source: [TutorialsPoint](https://www.tutorialspoint.com/c_standard_library/c_function_sscanf.htm)
 
 ## 'Strings'
 There are no strings in C, only char arrays and char pointers, both of which must end in a null-terminating character. 
