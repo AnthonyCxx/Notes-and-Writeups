@@ -1,6 +1,8 @@
 # Quick C Programming Reference Guide for C++ Programmers
 If it's not mentioned here, it's probably the same. <br />
-I got most of this from a quick skim of [_Practical C Programming_](https://www.amazon.com/Practical-Programming-Does-Nutshell-Handbooks/dp/1565923065), by Steve Oualline. It's an especially good book for people who already know C++.
+I got most of this from a quick skim of [_Practical C Programming_](https://www.amazon.com/Practical-Programming-Does-Nutshell-Handbooks/dp/1565923065), by Steve Oualline. It's an especially good book for people who already know C++. <br />
+
+Just as a note, C is really pointer-heavy. If you don't understand pointers yet, you're gonna suffer -- a lot.
 
 ## Output
 ```C
@@ -76,6 +78,9 @@ These functions are included in the `<string.h>` header file
 - [A reference for C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 - [Char Arrays vs Char Pointers](https://stackoverflow.com/questions/10186765/what-is-the-difference-between-char-array-and-char-pointer-in-c)
 
+
+### Typecasting
+In C, you have to put `(int) var` to typecase a variable instead of C++'s `static_cast<int>(var)` 
 
 ## Strange? Stuff
 Apparently you can put `{ }` arbitrarily in the middle of a program to mess with variable locality.
