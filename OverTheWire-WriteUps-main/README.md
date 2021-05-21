@@ -1,5 +1,5 @@
 # OverTheWire-WriteUps
-This repository contains write-ups on various OverTheWire levels. Once I finish the Bandit exercises, I will begin working on Krypton.
+This repository contains write-ups on various OverTheWire levels. Once I finish the Bandit exercises, I will begin working on Krypton or Semtex.
 
 ## Project Description
 These write-ups should serve as a guide for newer students who are learning Linux, particularly in the context of cybersecurity.
