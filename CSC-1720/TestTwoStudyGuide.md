@@ -55,6 +55,8 @@ friend ostream& operator<<(ostream&, const className&);		//declaration
 ostream& operator<<(ostream& osObject, const className& cObject)   //instantiation
 {
    osObject << cObject.someAttribute << endl;    //You can directly access the member because it's a friend function!
+   
+   return osObject;
 }
 ```
 
