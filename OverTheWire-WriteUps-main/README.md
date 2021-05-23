@@ -12,4 +12,4 @@ If you are not familiar with OverTheWire, OverTheWire is a community of people w
 cybersecurity/ethical hacking. The _Bandit_ challenges are a set of those challenges designed to teach proficiency in Linux. There are a total of 35 Bandit exercises.
 
 ## Personal Contact
-Please contact me at ecox@highpoint.edu if you have any questions
+Please contact me at ecox[at]highpoint[dot]edu if you have any questions
