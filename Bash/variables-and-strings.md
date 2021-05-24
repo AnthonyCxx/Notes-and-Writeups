@@ -20,7 +20,7 @@ Below are some of the qualities and operations of variables and strings.
 
 ## Notes on Variables
 - You can assign a string to a variable without using quotes if it has no spaces (`var=string`).
-- Calling a non-declaring variable is the same as calling no variable at all.
+- Calling a undeclared variable is the same as calling no variable at all.
 - Variables act as substitutions. Putting a command into a variable and calling it will just run that command.
 
 ## Modifying Variable Calls
