@@ -49,7 +49,7 @@ echo ${var:2:3}  #Echos 'nco'
 ```
 
 ### Removing the Beginning of a String
-Calling a variable in `{ }` with a `#' on the end and a set of the character from the beginning will remove them from the output
+Calling a variable in `{ }` with a `#` on the end and a set of the character from the beginning will remove them from the output
 ```bash
 string="some phrase"
 
