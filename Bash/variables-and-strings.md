@@ -22,6 +22,7 @@ Below are some of the qualities and operations of variables and strings.
 - You can assign a string to a variable without using quotes if it has no spaces (`var=string`).
 - Calling a undeclared variable is the same as calling no variable at all.
 - Variables act as substitutions. Putting a command into a variable and calling it will just run that command.
+- It is best practice to declare variables entirely in uppercase as it makes them identifiable.
 
 ## Modifying Variable Calls
 ### Infixing a Variable in a String
