@@ -5,6 +5,8 @@
 | 0 | moves the cursor to the beginning of the line |
 | ^ | moves the cursor to the first non-blank character on the line |
 | $ | moves the cursor to the end of the line |
+| ctrl + f | moves forward a page |
+| ctrl + b | moves backward a page |
 
 ## Maniuplating Text
 | Key | Action |
@@ -21,3 +23,4 @@
 | Key | Action |
 | --- | ------ |
 | :_**command**_ | execute a command |
+| . | repeat the previous command |
