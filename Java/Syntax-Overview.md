@@ -12,6 +12,6 @@ This is a multi-line comment
 # Data Types
 
 ## Primitive Data Types
-![image](https://user-images.githubusercontent.com/70488531/120082419-f6995680-c090-11eb-882b-cae5e14d5056.png)
+![image](https://user-images.githubusercontent.com/70488531/120082437-20527d80-c091-11eb-9045-f6399571af36.png)
 
 ## Non-Primitive Data Types
