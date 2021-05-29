@@ -1,7 +1,7 @@
 ## Navigation
 | Key | Action |
 | --- | -------- |
-| :_num_ | moves the cursor to line number _num_ |
+| :_**num**_ | moves the cursor to line number _num_ |
 |  |  |
 |  |  |
 |  |  |
