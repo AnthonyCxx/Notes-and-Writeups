@@ -27,8 +27,8 @@ Just as a note, underscores are considered letters, not characters. <br />
 | W | move forward a word (ignore symbols and whitespace) |
 | b | move backward a word (stop at symbols or whitespace) |
 | B | move backward a word (ignore symbols and whitespace) |
-| f **_character_** | move forwards to the next instance of **_character_** |
-| F **_character_** | move backwards to the next instance of **_character_** |
+| f**_character_** | move forwards to the next instance of **_character_** |
+| F**_character_** | move backwards to the next instance of **_character_** |
 | ctrl + u | move forward a section |
 | ctrl + d | move backward a section |
 | ctrl + f | move forward a page |
