@@ -22,9 +22,9 @@ Replace anything that is both itali
 | 0 | move the cursor to the beginning of the line |
 | ^ | move the cursor to the first non-blank character on the line |
 | $ | move the cursor to the end of the line |
-| ctrl + u | move forward  |
+| ctrl + u | move forward a section |
 | ctrl + d | move backward a section |
-| ctrl + f | move forward a section |
+| ctrl + f | move forward a page |
 | ctrl + b | move backward a page |
 | ctrl + { | move forward a paragraph (to the next blank line) |
 | ctrl + } | move backward a paragraph (to the next blank line) |
