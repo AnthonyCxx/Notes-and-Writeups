@@ -38,6 +38,8 @@ Just as a note, underscores are considered letters, not symbols. <br />
 | W | move forward a word (ignore symbols and whitespace) |
 | b | move backward a word (stop at symbols or whitespace) |
 | B | move backward a word (ignore symbols and whitespace) |
+| e | jump to the end of the word |
+| E | jump to the end of the word (ignore symbols) |
 | f{character} | move forwards to the next instance of **_character_** |
 | F{character} | move backwards to the next instance of **_character_** |
 | ctrl + u | move forward a section |
