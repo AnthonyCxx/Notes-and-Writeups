@@ -1,5 +1,5 @@
 # A Guide to Vim Command Combinations
-Please, please do not memorize these. Just use them to better understand Vim so you can create your own combos.
+Please, please do not memorize these. Just use them to learn Vim's grammar so you can create your own combos.
 
 ## Navigation
 | Combo | Action |
