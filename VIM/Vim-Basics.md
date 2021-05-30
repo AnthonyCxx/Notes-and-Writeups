@@ -46,6 +46,9 @@ Just as a note, underscores are considered letters, not characters. <br />
 | a | open insert after the cursor | 
 | A | open insert at the end of the line |
 | dd | delete the current line |
+| C | delete the rest of the line and start insert |
+| D | delete the rest of the line |
+| S | delete the entire line and start insert |
 | o | open a new line below the cursor |
 | O | open a new line above the cursor |
 
