@@ -25,7 +25,7 @@ class HelloWorld
 
 ## Data Types
 | Data Type | Bytes | Minimum Value | Maximum Value |  
-| --------- | ----- | ----- |
+| --------- | ----- | ------------- | ------------- |
 | bool | 1 | true | false |
 | char | 2 | 0 | 65,535 |
 | sbyte | 1 | -128 | 127 |
