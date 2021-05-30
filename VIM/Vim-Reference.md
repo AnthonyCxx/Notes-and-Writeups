@@ -1,5 +1,6 @@
 # A Keystroke Reference for Vim
-Replace anything that is both italicized and bolded.
+Replace anything that is both italicized and bolded. <br />
+Just as a note, underscores are considered letters, not characters. <br />
 
 ## Fundamental Commands
 | Key | Action |
@@ -22,12 +23,31 @@ Replace anything that is both italicized and bolded.
 | 0 | move the cursor to the beginning of the line |
 | ^ | move the cursor to the first non-blank character on the line |
 | $ | move the cursor to the end of the line |
+| w | move forward a word (stop at symbols or whitespace) |
+| W | move forward a word (ignore symbols and whitespace) |
+| b | move backward a word (stop at symbols or whitespace) |
+| B | move backward a word (ignore symbols and whitespace) |
 | ctrl + u | move forward a section |
 | ctrl + d | move backward a section |
 | ctrl + f | move forward a page |
 | ctrl + b | move backward a page |
 | ctrl + { | move forward a paragraph (to the next blank line) |
 | ctrl + } | move backward a paragraph (to the next blank line) |
+| gg | jump to the beginning of the file |
+| G | jump to the end of the file |
+| % | jump to matching element of a {}, (), or \[ \]  pair |
+|  |  |
+
+## Editing Text
+| Key | Action |
+| --- | ------ |
+| i | open insert before the cursor |
+| a | open insert after the cursor | 
+| A | open insert at the end of the line |
+| o | open a new line below the cursor |
+| O | open a new line above the cursor |
+
+
 
 ## Manipulating Text
 | Key | Action |
