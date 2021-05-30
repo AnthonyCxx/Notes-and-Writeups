@@ -57,10 +57,10 @@ Just as a note, underscores are considered letters, not characters. <br />
 | Key | Action |
 | --- | ------ |
 | x | delete a character |
-| J | join the current line and the line below |
 | yy | yank (copy) text |
 | p | paste text below the cursor |
 | P | paste text above the cursor |
+| J | join the current line and the line below |
 | :s/_**old_text**_/_**new_text**_/g | gind and replace some text on the current line |
 | :%s/_**old_text**_/_**new_text**_/g | find and replace some text on all lines |
 
