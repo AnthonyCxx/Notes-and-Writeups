@@ -1,3 +1,6 @@
+## Fundamentals
+|  |  |
+
 ## Navigation
 | Key | Action |
 | --- | -------- |
@@ -11,7 +14,8 @@
 ## Maniuplating Text
 | Key | Action |
 | --- | ------ |
-|  |  |
+| :s/old_text/new_text/g | replace some text on the current line |
+| :%s/old_text/new_text/g | replace some text on all lines |
 
 ## Searching
 | Key | Action |
