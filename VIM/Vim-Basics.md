@@ -19,10 +19,13 @@ Just as a note, underscores are considered letters, not characters. <br />
 ## Modes
 | Mode | Key | Function | 
 | ---- | --- | -------- | 
+| Normal Mode | esc | the default mode, returned to with _esc_ |
 | Insert Mode | i | begin insert before the cursor |
-| Visual Mode | v | highlight text for group manipulations |
+| Replace Mode | R | overwrites characters instead of inserting |
+| Visual Mode | v | highlight text for group manipulation |
 | Visual Line Mode | V | highlights text by line |
-| Visual Block Mode | ctrl + v | highlight by blocks |
+| Visual Block Mode | ctrl + v | highlight text by blocks (great for adjusting columns) |
+| Commmand Mode | : | use native vim commands (ex. find and replace) |
 
 ## Navigation
 | Key | Action |
@@ -84,9 +87,9 @@ Just as a note, underscores are considered letters, not characters. <br />
 ## Miscellaneous
 | Key | Action |
 | --- | ------ |
-| :_**command**_ | execute a command |
 | :!_**command**_  | execute a shell command without exiting vim |
 | . | repeat the previous command |
 | u | undo the previous command |
 | ctrl + r | redo the previous undo |
 | ctrl + l | refresh the screen |
+| q: | opens commandline history (escape with ctrl + c twice) |
