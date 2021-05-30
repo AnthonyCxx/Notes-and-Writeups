@@ -50,6 +50,9 @@ Just as a note, underscores are considered letters, not symbols. <br />
 | ctrl + } | move backward a paragraph (to the next blank line) |
 | gg | jump to the beginning of the file |
 | G | jump to the end of the file |
+| H | jump to the top of the screen |
+| M | jump to the middle of the screen |
+| L | jump to the bottom of the screen |
 | % | jump to matching element of a {}, (), or \[ \]  pair |
 
 ## Editing Text
