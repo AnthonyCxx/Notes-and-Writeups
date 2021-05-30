@@ -4,7 +4,7 @@
 | h | move the cursor left one character |
 | j | move the cursor down one character |
 | k | move the cursor up one character |
-| l |  |
+| l | move the cursor right one character |
 
 ## Navigation
 | Key | Action |
