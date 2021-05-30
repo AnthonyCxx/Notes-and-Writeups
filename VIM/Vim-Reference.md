@@ -1,5 +1,5 @@
 # A Keystroke Reference for Vim
-Replace anything that is both itali
+Replace anything that is both italicized and bolded.
 
 ## Fundamental Commands
 | Key | Action |
