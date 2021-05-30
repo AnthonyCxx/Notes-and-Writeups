@@ -16,6 +16,14 @@ Just as a note, underscores are considered letters, not characters. <br />
 | :q! | quit the file without saving |
 | :wq | save the file and quit |
 
+## Modes
+| Mode | Key | Function | 
+| ---- | --- | -------- | 
+| Insert Mode | i | begin insert before the cursor |
+| Visual Mode | v | highlight text for group manipulations |
+| Visual Line Mode | V | highlights text by line |
+| Visual Block Mode | ctrl + v | highlight by blocks |
+
 ## Navigation
 | Key | Action |
 | --- | -------- |
@@ -43,6 +51,7 @@ Just as a note, underscores are considered letters, not characters. <br />
 | Key | Action |
 | --- | ------ |
 | i | open insert before the cursor |
+| I | open insert at the beginning of the line | 
 | a | open insert after the cursor | 
 | A | open insert at the end of the line |
 | dd | delete the current line |
