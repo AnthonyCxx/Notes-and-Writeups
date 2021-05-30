@@ -98,9 +98,9 @@ Just as a note, underscores are considered letters, not symbols. <br />
 ## Miscellaneous
 | Key | Action |
 | --- | ------ |
-| :!_**command**_  | execute a shell command without exiting vim |
-| . | repeat the previous command |
 | u | undo the previous command |
 | ctrl + r | redo the previous undo |
 | ctrl + l | refresh the screen |
+| :!_**command**_  | execute a shell command without exiting vim |
+| . | repeat the previous command |
 | q: | opens commandline history (escape with ctrl + c twice) |
