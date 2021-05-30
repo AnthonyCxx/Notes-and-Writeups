@@ -1,4 +1,4 @@
-# A Keystroke Reference for Vim
+# A Basic Keystroke Reference for Vim
 Replace anything that is both italicized and bolded. <br />
 Just as a note, underscores are considered letters, not characters. <br />
 
@@ -47,7 +47,6 @@ Just as a note, underscores are considered letters, not characters. <br />
 | dd | delete the current line |
 | o | open a new line below the cursor |
 | O | open a new line above the cursor |
-
 
 
 ## Manipulating Text
