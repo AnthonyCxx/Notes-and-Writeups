@@ -89,6 +89,12 @@ Just as a note, underscores are considered letters, not symbols. <br />
 | n | move cursor to next search result |
 | N | move cursor to previous search result |
 
+## Working with Files
+| Key | Action |
+| --- | ------ | 
+| :e **_filename_** | open file  |
+| :r **_filename_** | import file at cursor position |
+
 ## Miscellaneous
 | Key | Action |
 | --- | ------ |
