@@ -41,8 +41,8 @@ Replace anything that is both italicized and bolded.
 | --- | -------- |
 | / | forward search |
 | ? | backwards search |
-| n | move cursor to next result |
-| N | move cursor to previous result |
+| n | move cursor to next search result |
+| N | move cursor to previous search result |
 
 ## Miscellaneous
 | Key | Action |
