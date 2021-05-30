@@ -33,8 +33,8 @@ Replace anything that is both italicized and bolded.
 | Key | Action |
 | --- | ------ |
 | x | delete a character |
-| :s/_**old_text**_/_**new_text**_/g | replace some text on the current line |
-| :%s/_**old_text**_/_**new_text**_/g | replace some text on all lines |
+| :s/_**old_text**_/_**new_text**_/g | gind and replace some text on the current line |
+| :%s/_**old_text**_/_**new_text**_/g | find and replace some text on all lines |
 
 ## Searching
 | Key | Action |
