@@ -1,5 +1,10 @@
 ## Fundamentals
-|  |  |
+| Key | Action |
+| --- | -------- |
+| h | move the cursor left one character |
+| j | move the cursor down one character |
+| k | move the cursor up one character |
+| l |  |
 
 ## Navigation
 | Key | Action |
@@ -14,6 +19,7 @@
 ## Maniuplating Text
 | Key | Action |
 | --- | ------ |
+| x | delete a character |
 | :s/_**old_text**_/_**new_text**_/g | replace some text on the current line |
 | :%s/_**old_text**_/_**new_text**_/g | replace some text on all lines |
 
