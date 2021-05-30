@@ -5,7 +5,7 @@
 ```bash
 mcs -out:hello.exe hello.cs
 ```
-### Runnning
+### Running
 ```bash
 mono hello.exe
 ```
