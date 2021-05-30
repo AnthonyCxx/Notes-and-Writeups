@@ -1,6 +1,6 @@
 # A Basic Keystroke Reference for Vim
 Replace anything that is both italicized and bolded or is in curly brackets `{ }`. <br />
-Just as a note, underscores are considered letters, not characters. <br />
+Just as a note, underscores are considered letters, not symbols. <br />
 
 ## Fundamental Commands
 | Key | Action |
