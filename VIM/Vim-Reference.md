@@ -28,6 +28,8 @@
 | --- | -------- |
 | / | forward search |
 | ? | backwards search |
+|  |  |
+|  |  |
 
 ## Miscellaneous
 | Key | Action |
