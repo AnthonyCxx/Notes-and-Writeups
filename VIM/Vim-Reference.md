@@ -48,6 +48,7 @@ Replace anything that is both italicized and bolded.
 | Key | Action |
 | --- | ------ |
 | :_**command**_ | execute a command |
+| :!_**command**_  | execute a shell command without exiting vim |
 | . | repeat the previous command |
 | u | undo the previous command |
 | ctrl + r | redo the previous undo |
