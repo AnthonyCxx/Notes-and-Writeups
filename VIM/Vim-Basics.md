@@ -80,3 +80,4 @@ Just as a note, underscores are considered letters, not characters. <br />
 | . | repeat the previous command |
 | u | undo the previous command |
 | ctrl + r | redo the previous undo |
+| ctrl + l | refresh the screen |
