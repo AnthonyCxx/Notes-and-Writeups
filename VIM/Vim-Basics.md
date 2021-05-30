@@ -27,6 +27,8 @@ Just as a note, underscores are considered letters, not characters. <br />
 | W | move forward a word (ignore symbols and whitespace) |
 | b | move backward a word (stop at symbols or whitespace) |
 | B | move backward a word (ignore symbols and whitespace) |
+| f_**character**_ | move forwards to the next instance of _**character**_ |
+| F_**character**_ | move backwards to the next instance of _**character**_ |
 | ctrl + u | move forward a section |
 | ctrl + d | move backward a section |
 | ctrl + f | move forward a page |
@@ -36,7 +38,6 @@ Just as a note, underscores are considered letters, not characters. <br />
 | gg | jump to the beginning of the file |
 | G | jump to the end of the file |
 | % | jump to matching element of a {}, (), or \[ \]  pair |
-|  |  |
 
 ## Editing Text
 | Key | Action |
@@ -54,6 +55,9 @@ Just as a note, underscores are considered letters, not characters. <br />
 | --- | ------ |
 | x | delete a character |
 | J | join the current line and the line below |
+| yy | yank (copy) text |
+| p | paste text below the cursor |
+| P | paste text above the cursor |
 | :s/_**old_text**_/_**new_text**_/g | gind and replace some text on the current line |
 | :%s/_**old_text**_/_**new_text**_/g | find and replace some text on all lines |
 
