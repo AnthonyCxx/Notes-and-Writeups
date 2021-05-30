@@ -44,6 +44,7 @@ Just as a note, underscores are considered letters, not characters. <br />
 | i | open insert before the cursor |
 | a | open insert after the cursor | 
 | A | open insert at the end of the line |
+| dd | delete the current line |
 | o | open a new line below the cursor |
 | O | open a new line above the cursor |
 
@@ -53,14 +54,15 @@ Just as a note, underscores are considered letters, not characters. <br />
 | Key | Action |
 | --- | ------ |
 | x | delete a character |
+| J | join the current line and the line below |
 | :s/_**old_text**_/_**new_text**_/g | gind and replace some text on the current line |
 | :%s/_**old_text**_/_**new_text**_/g | find and replace some text on all lines |
 
 ## Searching
 | Key | Action |
 | --- | -------- |
-| / | forward search |
-| ? | backwards search |
+| /_**text/pattern**_ | forward search |
+| ?_**text/pattern**_  | backwards search |
 | n | move cursor to next search result |
 | N | move cursor to previous search result |
 
