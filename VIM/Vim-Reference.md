@@ -1,10 +1,15 @@
-## Fundamentals
+# A Keystroke Reference for Vim
+Replace anything that is both itali
+
+## Fundamental Commands
 | Key | Action |
 | --- | -------- |
 | h | move the cursor left one character |
 | j | move the cursor down one character |
 | k | move the cursor up one character |
 | l | move the cursor right one character |
+| i | enter insert (edit) mode |
+| esc | return to normal mode | 
 | :w | write to (save) the file |
 | :q | quit the current file |
 | :q! | quit the file without saving |
@@ -18,14 +23,13 @@
 | ^ | move the cursor to the first non-blank character on the line |
 | $ | move the cursor to the end of the line |
 | ctrl + u | move forward  |
-| ctrl + d | move backward a page
-| ctrl + f | move forward a page |
+| ctrl + d | move backward a section |
+| ctrl + f | move forward a section |
 | ctrl + b | move backward a page |
 | ctrl + { | move forward a paragraph (to the next blank line) |
 | ctrl + } | move backward a paragraph (to the next blank line) |
 
-
-## Maniuplating Text
+## Manipulating Text
 | Key | Action |
 | --- | ------ |
 | x | delete a character |
@@ -37,8 +41,8 @@
 | --- | -------- |
 | / | forward search |
 | ? | backwards search |
-|  |  |
-|  |  |
+| n | move cursor to next result |
+| N | move cursor to previous result |
 
 ## Miscellaneous
 | Key | Action |
