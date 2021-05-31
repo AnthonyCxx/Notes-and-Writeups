@@ -1,16 +1,16 @@
 # Reference Notes for C#
 
-## Compiling and Running on the Commandline with Mono
-### Compiling 
+# Compiling and Running on the Commandline with Mono
+## Compiling 
 ```bash
 mcs -out:hello.exe hello.cs
 ```
-### Running
+## Running
 ```bash
 mono hello.exe
 ```
 
-## C# Program Structure
+# C# Program Structure
 ```C#
 //Class
 class HelloWorld
@@ -23,9 +23,9 @@ class HelloWorld
 }
 ```
 
-## C# Data Types
+# C# Data Types
 
-### Primitive Data Types
+## Primitive Data Types
 | Data Type | Bytes | Minimum Value | Maximum Value | Default Value |
 | --------- | ----- | ------------- | ------------- | ------------- |
 | bool | 1 | true | false | false |
@@ -43,11 +43,11 @@ class HelloWorld
 | decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 |
 > Note: private variables should have a `_` prepended (per industry standard, not my opinion)
 
-### Non-Primitive Data Types
-#### Arrays
+## Non-Primitive Data Types
+### Arrays
 
-## I/O Operations
-### Printing
+# I/O Operations
+## Printing
 ```C#
 //Print (without implicit \n)
 Console.Write("");
@@ -61,7 +61,7 @@ string name = Console.ReadLine();
 Console.WriteLine("Hello, " + name); 
 ```
 
-### Reading
+## Reading
 ```C#
 Console.ReadLine();
 ```
