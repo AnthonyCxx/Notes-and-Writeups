@@ -1,7 +1,7 @@
 # Conditional Statements in C#
 Conditionals are 
 ```C#
-if (condition)
+if (condition)   //If the condition is true, then
 {
     //Execute statements
 }
