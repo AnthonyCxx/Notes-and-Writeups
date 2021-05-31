@@ -12,7 +12,7 @@ string filepath = @"C:\Program Files";
 Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result.
 ```C#
 //Promp the user for their name
-Console.Write("Enter your name: ");
+Console.Write("Enter your name: ");  //No implicit \n
 
 //Read in their name
 string name = Console.ReadLine();
