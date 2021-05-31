@@ -39,7 +39,7 @@ class HelloWorld
 | float | 4 | -3.402823 x 10^38 | 3.402823 x 10^38 | 0 |
 | double | 8 | -1.79769313486232 x 10^308 | 1.79769313486232 x 10^308 | 0 |
 | decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 |
-> Note: private variables should have a `_` prepended
+> Note: private variables should have a `_` prepended (per industry standard, not my opinion)
 
 ## I/O Operations
 ### Printing
