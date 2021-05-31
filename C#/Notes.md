@@ -1,5 +1,6 @@
 # Reference Notes for C#
-This is not meant to be a tutorial for C#, only reference notes for people who already know a C-family language.
+This is not meant to be a tutorial for C#, only reference notes for people who already know a C-family language. <br />
+If it's not explicitly listed here, assume it's the same as C/C++.
 
 # Compiling and Running on the Commandline with [Mono](https://kozmicluis.com/compile-c-sharp-command-line/)
 ## Compiling 
