@@ -35,6 +35,7 @@ class HelloWorld
     }
 }
 ```
+> Note: args\[0\] in C# is not the program name, but the first commandline argument
 > Note: Use [PascalCase](https://techterms.com/definition/pascalcase) for method names
 
 # C# Data Types
