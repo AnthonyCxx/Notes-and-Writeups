@@ -48,3 +48,22 @@ else
 ```
 
 ## Else if
+Like the _else_ statement, an _else if_ statement must follow an _if_ statement. An _else if_ statement executes if both the preceeding statement _and_ the given
+condition are true. You can use an _else if_ statement without using an _else_ statement.
+```C#
+if (isBook)   //'isBook' is replaced by its value (false)
+{
+    //Not executed, because 'isBook' is false
+    System.Console.WriteLine("The item is a book!");
+}
+else if (1 == 2)
+{
+    //Not executed even though the if statement is false, because 1 does not equal 2
+    System.Console.WriteLine("Hmm, the item may be a book...");
+}
+else
+{
+    //IS executed, because 'isBook' is false and the else if statement failed
+    Sysmtem.Console.WriteLine("The item is NOT a book!");
+}
+```
