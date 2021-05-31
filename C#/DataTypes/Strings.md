@@ -23,7 +23,7 @@ Console.WriteLine($"Hello, {name}";
 
 ## Methods
 
-### string.Join()
+### .Join()
 The _string.Join(**_separator_**, **_iterable object_**)_
 ```C#
 //Declare and initialize an array of students
