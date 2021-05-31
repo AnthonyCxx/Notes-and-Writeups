@@ -49,9 +49,15 @@ Console.Write("");
 
 //Print (with implicit \n)
 Console.WriteLine("");
+
+//Using variables with Print Statements
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+Console.WriteLine("Hello, " + name); 
 ```
 
 ### Reading
 ```C#
 Console.ReadLine();
 ```
+
