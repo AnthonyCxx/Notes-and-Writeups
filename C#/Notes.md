@@ -64,9 +64,6 @@ class HelloWorld
 //Declare an array of students
 string[] students = {"Henry", "Charlie", "Seth"};
 
-//Print the array is a comma-separated string
-Console.WriteLine(string.Join(", ", students));
-
 //Declare a two-dimensional array (3 x 3)
 int[,] ticTacToeBoard = new int[3, 3];
 
