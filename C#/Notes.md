@@ -28,7 +28,7 @@ class HelloWorld
     static void GreetUser(string name)
     {
         //Method contents
-        Console.WriteLine("Hello, " + name);
+        System.Console.WriteLine("Hello, " + name);
     }
 }
 ```
