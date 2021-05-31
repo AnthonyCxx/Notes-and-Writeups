@@ -44,6 +44,10 @@ class HelloWorld
 ## I/O Operations
 ### Printing
 ```C#
+//Print (without implicit \n)
+Console.Write("");
+
+//Print (with implicit \n)
 Console.WriteLine("");
 ```
 
