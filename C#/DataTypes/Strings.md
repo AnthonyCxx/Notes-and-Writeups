@@ -8,7 +8,7 @@ This comes in extremely handy with Windows as Windows uses backslashes as a deli
 string filepath = @"C:\Program Files";
 ```
 
-### Interpolated Strings ($, {})
+### Interpolated Strings ($, { })
 Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result.
 ```C#
 //Promp the user for their name
