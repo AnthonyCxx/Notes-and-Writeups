@@ -5,6 +5,7 @@
 | --------- | ----- | ------------- | ------------- | ------------- |
 | bool | 1 | true | false | false |
 | char | 2 | 0 | 65,535 | \0 |
+| string | N/A | 0 | None, dynamically allocated | null |
 | sbyte | 1 | -128 | 127 | 0 | 
 | byte | 1 | 0 | 255 | 0 |
 | short | 2 | -32,768 | 32,767 | 0 |
