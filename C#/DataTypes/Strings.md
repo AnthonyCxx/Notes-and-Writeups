@@ -1,14 +1,14 @@
 # Strings
 
 ## Quotations
-### @"String"
+### Raw Strings (@)
 Prefixing a string with a _@_ will make the string raw (disables escape characters). <br />
 This comes in extremely handy with Windows as Windows uses backslashes as a delimiter to separate files and folders.
 ```C#
 string filepath = @"C:\Program Files";
 ```
 
-### $"{String}"
+### Interpolated Strings ($, {})
 Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result.
 ```C#
 //Promp the user for their name
