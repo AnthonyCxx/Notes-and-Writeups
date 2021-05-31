@@ -22,6 +22,12 @@ class HelloWorld
     {
         //Program
     }
+    
+    //Declaring a method
+    static void HelloWorld()
+    {
+        Console.WriteLine("Hello, World!");
+    }
 }
 ```
 
