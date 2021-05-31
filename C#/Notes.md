@@ -10,7 +10,7 @@ mcs -out:hello.exe hello.cs
 mono hello.exe
 ```
 
-## Program Structure
+## C# Program Structure
 ```C#
 //Class
 class HelloWorld
