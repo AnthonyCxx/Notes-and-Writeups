@@ -14,6 +14,9 @@ mono hello.exe
 
 # C# Program Structure
 ```C#
+//Classes to include (think of these as header files)
+using System;    //Includes I/O Operations and more
+
 //Class
 class HelloWorld
 {
