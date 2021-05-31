@@ -30,6 +30,7 @@ dotnet build <Program Name>.csproj
 //Example
 dotnet build HelloWorld.csproj
 ```
+> Note: the result will be under _/bin/Debug_
 
 ## Running a Project
 ```
