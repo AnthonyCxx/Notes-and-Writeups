@@ -11,8 +11,22 @@ class ClassName
 }
 ```
 
-
-
+### Example
+```C#
+class Item
+{
+    //Data Members
+    public int ItemID;
+    public string Name;
+    
+    //Constructor
+    public Item(int id, itemName)
+    {
+        this.ItemID = id;
+          this.Name = itemName;
+    }
+}
+```
 
 ### Conventions
 Per [Microsoft's C# Coding Convention Guidelines](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions), always do the following:
