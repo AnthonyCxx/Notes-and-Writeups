@@ -20,7 +20,7 @@ class Item
     public string Name;
     
     //Constructor
-    public Item(int id, itemName)
+    public Item(int id, string itemName)
     {
         this.ItemID = id;
           this.Name = itemName;
