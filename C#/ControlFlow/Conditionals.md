@@ -1,12 +1,14 @@
 # Conditional Statements in C#
 Conditionals are control structures that allow you to control the flow of a program based on certain (boolean) criteria.
+
+### Format
 ```C#
 if (condition)   //If the condition is true, then
 {
     //Execute statements
 }
 ```
-### Example:
+### Example
 ```C#
 bool isBook = true;
 
