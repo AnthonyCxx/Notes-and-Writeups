@@ -12,6 +12,34 @@ mcs -out:hello.exe hello.cs
 mono hello.exe
 ```
 
+# Building Self-Contained Executables with dotnet (.NET)
+## Creating a Project
+```
+//Format 
+dotnet new <Application Type> -n <Project Name>
+
+//Example
+dotnet new Console -n HelloWorld
+```
+
+## Building a Project
+```
+//Format
+dotnet build <Program Name>.csproj
+
+//Example
+dotnet build HelloWorld.csproj
+```
+
+## Running a Project
+```
+//Format
+dotnet run <Application Name>
+
+//Example
+dotnet run HelloWorld
+```
+
 # C# Program Structure
 ```C#
 //Class
