@@ -1,4 +1,5 @@
 # Reference Notes for C#
+This is not meant to be a tutorial for C#, only reference notes for people who already know a C-family language.
 
 # Compiling and Running on the Commandline with [Mono](https://kozmicluis.com/compile-c-sharp-command-line/)
 ## Compiling 
@@ -45,6 +46,21 @@ class HelloWorld
 
 ## Non-Primitive Data Types
 ### Arrays
+```C#
+//Declare an array of students
+string[] students = {"Henry", "Charlie", "Seth"};
+
+//Print the array is a comma-separated string
+Console.WriteLine(string.Join(", ", students));
+
+//Declare a two-dimensional array (3 x 3)
+int[,] ticTacToeBoard = new int[3, 3];
+
+//Declare and initialize a 2 dimensional array
+string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "three", "3" } };
+```
+> Note: Arrays are dynamic in C# unless a size limit is set. 
+> Note: Add a comma inbetween the \[ \] to add another dimension to the array
 
 # I/O Operations
 ## Printing
