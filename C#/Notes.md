@@ -26,13 +26,14 @@ class HelloWorld
         //Program
     }
     
-    //Declaring a method
-    static void HelloWorld()
+    //Declaring a method 
+    static void GreetUser(string name)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello, " + name);
     }
 }
 ```
+> Note: Use [PascalCase](https://techterms.com/definition/pascalcase) for method names
 
 # C# Data Types
 
