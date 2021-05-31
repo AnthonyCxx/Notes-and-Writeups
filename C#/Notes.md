@@ -59,7 +59,7 @@ int[,] ticTacToeBoard = new int[3, 3];
 //Declare and initialize a 2 dimensional array
 string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "three", "3" } };
 ```
-> Note: Arrays are dynamic in C# unless a size limit is set. 
+> Note: Arrays are dynamic in C# unless a size limit is set. <br />
 > Note: Add a comma inbetween the \[ \] to add another dimension to the array
 
 # I/O Operations
