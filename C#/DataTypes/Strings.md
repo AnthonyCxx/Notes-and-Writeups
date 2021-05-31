@@ -27,7 +27,7 @@ Console.WriteLine($"Hello, {name}";
 The _string.Join(**_separator_**, **_iterable object_**)_
 ```C#
 //Declare and initialize an array of students
- string[] students = {"Henry", "Charlie", "Seth"};
+string[] students = {"Henry", "Charlie", "Seth"};
 
 //Print the students in a comma-separated string
 Console.WriteLine(string.Join(", ", students));
