@@ -4,6 +4,11 @@ A class is a custom data type, which is composed of data members member function
 ### Format
 ```C#
 class ClassName
+{
+    //Data members
+    
+    //Function members
+}
 ```
 
 
