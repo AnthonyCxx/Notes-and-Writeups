@@ -23,7 +23,7 @@ class HelloWorld
 }
 ```
 
-## Data Types
+## C# Data Types
 | Data Type | Bytes | Minimum Value | Maximum Value | Default Value |
 | --------- | ----- | ------------- | ------------- | ------------- |
 | bool | 1 | true | false | false |
