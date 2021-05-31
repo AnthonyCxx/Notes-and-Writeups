@@ -52,6 +52,8 @@ else
 Like the _else_ statement, an _else if_ statement must follow an _if_ statement. An _else if_ statement executes if both the preceeding statement _and_ the given
 condition are true. You can use an _else if_ statement without using an _else_ statement.
 ```C#
+bool isBook = false;
+
 if (isBook)   //'isBook' is replaced by its value (false)
 {
     //Not executed, because 'isBook' is false
