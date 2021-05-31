@@ -24,11 +24,13 @@ class HelloWorld
     static void Main(string[] args)
     {
         //Program
+        GreetUser("Jason");
     }
     
     //Declaring a method 
     static void GreetUser(string name)
     {
+        //Method contents
         Console.WriteLine("Hello, " + name);
     }
 }
