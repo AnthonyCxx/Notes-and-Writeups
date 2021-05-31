@@ -12,6 +12,11 @@ if (condition)   //If the condition is true, then
     //Execute statements
 }
 ```
+
+## If 
+The _if_ keyword is the heart of conditional statements - you cannot have a conditional statement without first have an _if_ statement. <br />
+An _if_ statement evaluates a condition and executes some code if the condition is true.
+
 ### Example
 ```C#
 bool isBook = true;
@@ -21,12 +26,8 @@ if (isBook)   //'isBook' is replaced by its value (true)
     //Statements to be executed
     System.Console.WriteLine("The item is a book!");
 }
-
 ```
 > This snippet prints "The item is a book!"
-
-## If 
-The _if_ keyword is the heart of conditional statements - you cannot have a conditional statement without first have an _if_ statement. <br />
 
 ## Else
 
