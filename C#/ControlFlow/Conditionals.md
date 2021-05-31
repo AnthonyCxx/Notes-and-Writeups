@@ -30,5 +30,21 @@ if (isBook)   //'isBook' is replaced by its value (true)
 > This snippet prints "The item is a book!"
 
 ## Else
+An _else_ statement always directly follows either an _if_ or _else if_ statement. An _else_ statement executes when the preceeding condition is false. <br />
+An _else_ statement must always come at the end of a conditional structure.
+```C#
+bool isBook = false;
+
+if (isBook)   //'isBook' is replaced by its value (false)
+{
+    //Not executed, because 'isBook' is false
+    System.Console.WriteLine("The item is a book!");
+}
+else
+{
+    //IS executed, because 'isBook' is false
+    Sysmtem.Console.WriteLine("The item is NOT a book!");
+}
+```
 
 ## Else if
