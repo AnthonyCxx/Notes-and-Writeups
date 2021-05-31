@@ -19,7 +19,7 @@ class Item
     public int ItemID;
     public string Name;
     
-    //Constructor
+    //Constructor (a special member function)
     public Item(int id, string itemName)
     {
         this.ItemID = id;
