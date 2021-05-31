@@ -24,6 +24,8 @@ class HelloWorld
 ```
 
 ## C# Data Types
+
+### Primitive Data Types
 | Data Type | Bytes | Minimum Value | Maximum Value | Default Value |
 | --------- | ----- | ------------- | ------------- | ------------- |
 | bool | 1 | true | false | false |
@@ -40,6 +42,9 @@ class HelloWorld
 | double | 8 | -1.79769313486232 x 10^308 | 1.79769313486232 x 10^308 | 0 |
 | decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 |
 > Note: private variables should have a `_` prepended (per industry standard, not my opinion)
+
+### Non-Primitive Data Types
+#### Arrays
 
 ## I/O Operations
 ### Printing
