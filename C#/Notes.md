@@ -14,7 +14,7 @@ mono hello.exe
 
 # Building Self-Contained Executables with dotnet (.NET)
 ## Creating a Project
-```C#
+```
 //Format 
 dotnet new <Application Type> -n <Project Name>
 
@@ -23,7 +23,7 @@ dotnet new Console -n HelloWorld
 ```
 
 ## Building a Project
-```C#
+```
 //Format
 dotnet build <Program Name>.csproj
 
@@ -32,7 +32,7 @@ dotnet build HelloWorld.csproj
 ```
 
 ## Running a Project
-```C#
+```
 //Format
 dotnet run <Application Name>
 
