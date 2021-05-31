@@ -56,7 +56,7 @@ Console.WriteLine(string.Join(", ", students));
 //Declare a two-dimensional array (3 x 3)
 int[,] ticTacToeBoard = new int[3, 3];
 
-//Declare and initialize a 2 dimensional array
+//Declare and initialize a two-dimensional array
 string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "three", "3" } };
 ```
 > Note: Arrays are dynamic in C# unless a size limit is set. <br />
