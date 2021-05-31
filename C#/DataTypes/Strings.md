@@ -17,7 +17,7 @@ Console.Write("Enter your name: ");
 //Read in their name
 string name = Console.ReadLine();
 
-//Greet the user
+//Greet the user by name
 Console.WriteLine($"Hello, {name}"; 
 ```
 
