@@ -41,6 +41,24 @@ for(int i=0, j=0; i < 6; i += 1, j += 2 )
 }
 ```
  
+## While Statement
+The _while_ statment continues to execute the body of the loop until the given condition is false.
+
+### Format
+
+### Example
+```C#
+while (1 == 1)
+{
+    System.Console.WriteLine("this is an infinite loop");
+}
+```
+> Note: this is actually an infinte loop (1 _always_ equals 1), please do not run this. <br />
+> Side Note: If you are actually dumb enough to run this, you can stop the program with _ctrl_ + _c_. Don't say I didn't warn you.
+
+## Do...While Statement
+The do...whle loop acts similarly to a while
+
 ## Foreach Statement
 A _foreach_ loop executes the body of the loop for every item in a [container](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.container?view=net-5.0) (iterable object). The variable declared in the loop is updated to be the item at the current index in the loop for each item in the loop. In other words, the 
 variable takes on the value of the container at said index until all the items have been run through.
@@ -63,4 +81,4 @@ foreach(string item in backpack)
 }
 System.Console.Write("\n");     //End the line
 ```
-> Note: if the items are of different types, use the [_var_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var) keyword
+> Note: if the items are of different types, use the [_var_ keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
