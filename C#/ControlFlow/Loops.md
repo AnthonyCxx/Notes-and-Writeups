@@ -29,10 +29,10 @@ for(int i=0, j=0; i < 6; i += 1, j += 2 )
 }
 ```
 > Output:
-> 0 0  <br />
-> 1 2  <br />
-> 2 4  <br />
-> 3 6  <br />
-> 4 8  <br />
+> 0  0 <br />
+> 1  2 <br />
+> 2  4 <br />
+> 3  6 <br />
+> 4  8 <br />
 > 5 10 <br />
 ## Foreach Statement
