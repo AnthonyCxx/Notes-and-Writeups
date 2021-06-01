@@ -30,7 +30,7 @@ for(int i=0, j=0; i < 6; i += 1, j += 2 )
   System.Console.WriteLine(i + " " + j);
 }
 ```
-> Output:
+> Output: <br />
 > 0  0 <br />
 > 1  2 <br />
 > 2  4 <br />
