@@ -37,4 +37,14 @@ for(int i=0, j=0; i < 6; i += 1, j += 2 )
 > 3  6 <br />
 > 4  8 <br />
 > 5 10 <br />
+ 
 ## Foreach Statement
+```C#
+string[] backpack = { "Pencil", "Spellbook", "Lobster" };
+
+foreach (string item in backpack)
+{
+    System.Console.Write(item + " ");   //Print out each item
+}
+System.Console.Write("\n");     //End the line
+```
