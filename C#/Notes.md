@@ -107,14 +107,3 @@ System.Console.Write("Enter your name: ");
 string name = System.Console.ReadLine();
 System.Console.WriteLine("Hello, " + name); 
 ```
-
-## Reading
-```C#
-//Read a whole line
-System.Console.ReadLine();
-
-
-//Read a single character
-System.Console.Read
-```
-> Note: Data may be read as a string? Similarly to Python...
