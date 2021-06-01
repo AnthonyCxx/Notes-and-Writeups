@@ -22,7 +22,7 @@ character = Console.Read();
 
 Console.WriteLine("\nYou entered: " + (char) character)
 ```
-> Note: Putting _(char)_ in front of a variable will [type-cast](https://www.w3schools.com/cs/cs_type_casting.asp) the integer into an ASCII character.
+> Note: Putting _(char)_ in front of a variable will [type-cast](https://www.w3schools.com/cs/cs_type_casting.asp) the integer into an [ASCII](https://en.wikipedia.org/wiki/ASCII) character.
 
 ## Console.ReadKey()
 _Console.ReadKey()_ returns a single character and is often used with prompts. <br />
