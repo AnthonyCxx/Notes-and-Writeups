@@ -110,4 +110,4 @@ foreach(string item in backpack)
 }
 System.Console.Write("\n");     //End the line
 ```
-> Note: if the items are of different types, use the [_var_ keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
+> Note: if the items are of different types, use [the _var_ keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
