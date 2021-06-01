@@ -15,7 +15,7 @@ Console.WriteLine("Hello, " + fullname);
 
 ## Console.ReadKey()
 _Console.ReadKey()_ returns a single character and is often used with prompts. <br />
-_Console.ReadKey()_ will only read a character; to use the character, use the _.KeyChar_ ReadKey() data member (Console.ReadKey().KeyChar.
+_Console.ReadKey()_ will only read a character; to use the character, use the _.KeyChar_ ReadKey() data member.
 ```C#
 char choice;
 
