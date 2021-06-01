@@ -97,19 +97,24 @@ string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "th
 ## Printing
 ```C#
 //Print (without implicit \n)
-Console.Write("");
+System.Console.Write("");
 
 //Print (with implicit \n)
-Console.WriteLine("");
+System.Console.WriteLine("");
 
 //Using variables with Print Statements
-Console.Write("Enter your name: ");
-string name = Console.ReadLine();
-Console.WriteLine("Hello, " + name); 
+System.Console.Write("Enter your name: ");
+string name = System.Console.ReadLine();
+System.Console.WriteLine("Hello, " + name); 
 ```
 
 ## Reading
 ```C#
-Console.ReadLine();
+//Read a whole line
+System.Console.ReadLine();
+
+
+//Read a single character
+System.Console.Read
 ```
 > Note: Data may be read as a string? Similarly to Python...
