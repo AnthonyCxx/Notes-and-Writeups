@@ -20,9 +20,11 @@ for (int iterator = 0; iterator < 5; iterator++)  /Declaration, condition, and u
 >> | iterator++ | increment the iterator by 1 ([postfix operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-)) |
 
 ### Advanced For Loops
-Both the declaration and update statements of a _for_ loop can contain more than one value, as long as they are separated by commas. The following code snippet 
-declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. Counter _j_ counts by twos.
+Both the declaration and update statements of a _for_ loop can contain more than one value, as long as they are separated by commas. If you need multiple conditions,
+just use the logical _&&_ and _||_ operators. The following code snippet declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. 
+Counter _j_ counts by twos.
 ```C#
+//Prints two counters simultaneously
 for(int i=0, j=0; i < 6; i += 1, j += 2 )
 {
   System.Console.WriteLine(i + " " + j);
