@@ -31,12 +31,12 @@ switch (choice)
   case '1':
     Console.WriteLine("You chose 1!");
     break;
-case '2':
+  case '2':
     Console.WriteLine("You chose 2!");
     break;
-default:
-  Console.WriteLine("Unknown choice");
-  break;
+  default:
+    Console.WriteLine("Unknown choice");
+    break;
 ```
 > Reference: [How to Read a Character in C#](https://www.includehelp.com/dot-net/methods-to-read-a-character-in-c-sharp.aspx)
 
