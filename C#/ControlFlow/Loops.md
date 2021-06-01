@@ -31,7 +31,7 @@ for (int iterator = 0; iterator < 5; iterator++)  /Declaration, condition, and u
 
 ### Advanced For Loops
 Both the declaration and update statements of a _for_ loop can contain more than one value, as long as they are separated by commas. If you need multiple conditions,
-just use the logical _&&_ and _||_ operators. The following code snippet declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. 
+just use the logical _&&_ and _| |_ operators. The following code snippet declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. 
 Counter _j_ counts by twos.
 ```C#
 //Prints two counters simultaneously
