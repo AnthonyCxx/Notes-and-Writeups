@@ -64,7 +64,29 @@ while (1 == 1)
 > Side Note: If you are actually dumb enough to run this, you can stop the program with _ctrl_ + _c_. Don't say I didn't warn you.
 
 ## Do...While Statement
-The do...whle loop acts similarly to a while
+The _do...while_ loop acts similarly to a while loop, repeating until the given condition is false; however, unlike a normal _while_ loop, a _do...while_ loop will
+always execute at least once.
+
+### Format
+```C#
+do
+{
+    //Body
+} while (condition);
+```
+> Note: pay close attention to the _;_ at the end of the while statement. A _do...while_ loop is the only loop with a semi-colon.
+
+### Example
+```C#
+int input;
+
+do
+{
+    System.Console.Write("Enter a number more than 5: ");       //Prompt the user
+    input = System.Int32.Parse( System.Console.ReadLine() );    //Store the input as an integer (converted from a string)
+} while (input <= 5);
+```
+> Reference: [Converting Strings to Integers in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
 
 ## Foreach Statement
 A _foreach_ loop executes the body of the loop for every item in a [container](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.container?view=net-5.0) (iterable object). The variable declared in the loop is updated to be the item at the current index in the loop for each item in the loop. In other words, the 
