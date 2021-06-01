@@ -12,6 +12,8 @@ Console.WriteLine("Hello, " + fullname);
 ```
 
 ## Console.Read()
+_Console.Read()_ will read in a single character and return its value as an ASCII decimal ([base 10](https://www.purplemath.com/modules/numbbase.htm)) integer. <br />
+If there are no characters to be read, then _Console.Read()_ will return a -1.
 
 ## Console.ReadKey()
 _Console.ReadKey()_ returns a single character and is often used with prompts. <br />
@@ -39,7 +41,7 @@ default:
 > Reference: [How to Read a Character in C#](https://www.includehelp.com/dot-net/methods-to-read-a-character-in-c-sharp.aspx)
 
 ## Console.Beep()
-Plays a [bell character], which is often used to indicate some error or prohibited action.
+Plays a [bell character](https://en.wikipedia.org/wiki/Bell_character), which is often used to indicate some error or prohibited action.
 ```C#
 System.Console.Beep();
 ```
