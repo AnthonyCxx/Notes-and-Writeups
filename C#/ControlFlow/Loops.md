@@ -4,7 +4,7 @@ C# has 4 types of iteration statements: for statements, foreach statements, do s
 
 ## For Statements
 The _for_ statement allows you to execute a block of statements a specific number of times. A _for_ statement consists of a declaration statement, a condition,
-and an update statemnt in that order; each of these sections are separated by semi-colons. <br />
+and an update statemnt in that order; each of these sections are separated by semi-colons. It is best to use a for loop when the exact amount of executions is known. <br />
 ```C#
 //Prints "Hello, World!" five times
 for (int iterator = 0; iterator < 5; iterator++)  /Declaration, condition, and update statements
