@@ -77,6 +77,15 @@ class HelloWorld
 > Note: args\[0\] in C# is not the program name, but the first commandline argument <br />
 > Note: Use [PascalCase](https://techterms.com/definition/pascalcase) for method names
 
+## Comments
+Comment Styles in C#
+| Comment Type | Syntax |
+| ------------ | ------ | 
+| C# Single-line Comment | // |
+| C# Multi-line Comment | /* \*/ |
+| XML Single-line Comment | /\*\* \*\*/ |
+| XML Multi-line Comment | /// |
+
 ## Non-Primitive Data Types
 ### Arrays
 ```C#
