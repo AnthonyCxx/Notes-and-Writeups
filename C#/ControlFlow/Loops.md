@@ -42,9 +42,16 @@ for(int i=0, j=0; i < 6; i += 1, j += 2 )
 ```
  
 ## While Statement
-The _while_ statment continues to execute the body of the loop until the given condition is false.
+The _while_ statment continues to execute the body of the loop until the given condition is false. <br />
+If the given condition is false from the start, then the loop will not execute at all.
 
 ### Format
+```C#
+while (condition)
+{
+    //Body
+}
+```
 
 ### Example
 ```C#
