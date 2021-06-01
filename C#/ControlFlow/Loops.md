@@ -81,6 +81,7 @@ do
 ```C#
 int input;
 
+//Input loop: prompts for input until an integer greater than 5 is given
 do
 {
     System.Console.Write("Enter a number more than 5: ");       //Prompt the user
