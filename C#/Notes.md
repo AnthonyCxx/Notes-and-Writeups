@@ -42,6 +42,12 @@ dotnet run <Application Name>
 dotnet run HelloWorld
 ```
 
+## Publishing the Project
+```
+dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
+```
+> Replace _win-x64_ with the appropriate [runtime identifier](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog) (RID)
+
 # C# Program Structure
 ```C#
 //Class
