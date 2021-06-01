@@ -14,6 +14,8 @@ mono hello.exe
 > Note: you can apparently also do `./<executable>`; however, this has resulted in some runtime errors for me. Always use _mono_.
 
 # Building Self-Contained Executables with dotnet (.NET)
+Self-contained executables can be run on other computers without needing typical external dependencies.
+
 ## Creating a Project
 ```
 //Format 
