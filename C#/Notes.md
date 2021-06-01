@@ -92,18 +92,3 @@ string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "th
 > Note: To make an array of different datetypes, set the datatype to _object[]_ <br />
 > Note: Arrays are dynamic in C# unless a size limit is set. <br />
 > Note: Add a comma inbetween the \[ \] to add another dimension to the array
-
-# I/O Operations
-## Printing
-```C#
-//Print (without implicit \n)
-System.Console.Write("");
-
-//Print (with implicit \n)
-System.Console.WriteLine("");
-
-//Using variables with Print Statements
-System.Console.Write("Enter your name: ");
-string name = System.Console.ReadLine();
-System.Console.WriteLine("Hello, " + name); 
-```
