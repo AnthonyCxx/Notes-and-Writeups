@@ -52,5 +52,20 @@ switch (choice)
 ## Console.Beep()
 Plays a [bell character](https://en.wikipedia.org/wiki/Bell_character), which is often used to indicate some error or prohibited action.
 ```C#
-System.Console.Beep();
+int number;
+
+do
+{
+  Console.Write("Enter a number less than 10: ");
+  number = Convert.ToInt32( Console.ReadLine() );
+
+  if (number >= 10)
+  {
+    Console.WriteLine("\nError: number is not less than 10");
+    Console.Beep();
+  }
+
+} while(number >= 10);
+
+Console.WriteLine("\nNumber: " + number); 
 ```
