@@ -14,7 +14,7 @@ Console.WriteLine("Console.WriteLine implicitly ends the line");
 
 ## Formatting Strings with Variables
 Strings can be formatted with the contents of variables by providing the variables (set off by commas) after the string. <br />
-Put the ordinal position of the variable inside of curly braces (_{ }_) to replace said expression with the variable's content.
+Put the ordinal position of the variable inside of curly braces (_{ }_) to replace said expression with the variable's content. <br />
 Alternatively, you can use [interpolated strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/Strings.md). <br />
 ```C#
 string name = "human";
