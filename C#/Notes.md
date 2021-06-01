@@ -11,6 +11,7 @@ mcs -out:hello.exe hello.cs
 ```bash
 mono hello.exe
 ```
+> Note: you can apparently also do `./<executable>`; however, this has resulted in some runtime errors for me. Always use _mono_.
 
 # Building Self-Contained Executables with dotnet (.NET)
 ## Creating a Project
