@@ -1,8 +1,9 @@
-# Variables in C#
+# Identifiers in C#
+An identifier is the name you assign to a type (a variable, constant, class, etc.)
 
-## Naming Variables after Keywords
-Keywords are reserved, and a variable cannot have the same name as a keyword by default; <br />
-however, it is possible to name a variable after a keyword if you prepend a _@_ in the variable declaration.
+## Naming Identifiers after Keywords
+Keywords are reserved, and an identifier cannot have the same name as a keyword by default; <br />
+however, it is possible to name an identifier after a keyword if you prepend a _@_ during declaration.
 ```#C
 string @event = "Displaying Main Menu";
 ```
