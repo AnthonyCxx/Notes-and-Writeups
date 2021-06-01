@@ -66,7 +66,7 @@ else if (1 == 2)
 }
 else
 {
-    //IS executed, because 'isBook' is false and the else if statement failed
+    //IS executed, because 'isBook' is false and the else if statement above failed
     Sysmtem.Console.WriteLine("The item is NOT a book!");
 }
 ```
