@@ -40,6 +40,7 @@ for(int i=0, j=0; i < 6; i += 1, j += 2 )
   System.Console.WriteLine(i + " " + j);
 }
 ```
+> Note: this works in other languages such as C++ as well
  
 ## While Statement
 The _while_ statment continues to execute the body of the loop until the given condition is false. <br />
