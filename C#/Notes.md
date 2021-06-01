@@ -99,4 +99,4 @@ Console.WriteLine("Hello, " + name);
 ```C#
 Console.ReadLine();
 ```
-
+> Note: Data may be read as a string? Similarly to Python...
