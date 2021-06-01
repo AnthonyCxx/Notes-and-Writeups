@@ -69,3 +69,4 @@ do
 
 Console.WriteLine("\nNumber: " + number); 
 ```
+> Note: [type-casting](https://www.w3schools.com/cs/cs_type_casting.asp) is done in C# with the [Convert Object](https://docs.microsoft.com/en-us/dotnet/api/system.convert?view=net-5.0). The _ToInt32_ method translates the string gotten from console into an integer.
