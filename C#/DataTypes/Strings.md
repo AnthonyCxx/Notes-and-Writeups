@@ -5,9 +5,11 @@
 Prefixing a string with a _@_ will make the string raw (disables metacharacters, such as escape characters). <br />
 This comes in extremely handy with Windows as Windows uses backslashes as a delimiter to separate files and folders.
 ```C#
+//Declaring a filepath
 string filepath = @"C:\Program Files";
 
-System.Console.WriteLine("And they said "Next time, be more careful"");
+//Quoting someone
+Console.WriteLine("And they said "Next time, be more careful"");
 ```
 
 ### Interpolated Strings ($, { })
