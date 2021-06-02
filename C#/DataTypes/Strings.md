@@ -59,7 +59,7 @@ Console.WriteLine( string.Concat(phrase, phrase, phrase) );
 > Prints "hellohellohello"
 
 ### .Compare
-The _Compare()_ method compares two strings by sort order and returns an integer based on the result. Including a _true_ as the final parameter will make
+The _Compare(**_string_**, **_string_**)_ method compares two strings by sort order and returns an integer based on the result. Including a _true_ as the final parameter will make
 the comparison case-insensitive. Note, however, that this means that both the individual and total comparison will take longer.
 
 | Result | Indicator |
@@ -147,7 +147,7 @@ Console.WriteLine( fillerText.TrimEnd() );
 > Prints " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   this string is unnecessarily long"
 
 ### .Replace()
-The _.Replace()_ method replaces all instances of the first string with the second string.
+The _.Replace(**_string_**, **_string_**)_ method replaces all instances of the first string with the second string.
 ```C#
 string text = "This is an example sentence to show this concept";
 
