@@ -193,3 +193,4 @@ string[] IPAddressFields = someIPAddress.Split('.');
 
 Console.WriteLine($"The beginning of the IP Address is {IPAddressFields[0]} ");
 ```
+> Prints "The beginning of the IP Address is 192"
