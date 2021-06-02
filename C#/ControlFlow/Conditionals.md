@@ -14,7 +14,7 @@ if (condition)   //If the condition is true, then
 }
 ```
 
-## If 
+## If Statement
 The _if_ keyword is the heart of conditional statements - you cannot have a conditional statement without first have an _if_ statement. <br />
 An _if_ statement evaluates a condition and executes some code if the condition is true.
 
@@ -30,7 +30,7 @@ if (isBook)   //'isBook' is replaced by its value (true)
 ```
 > This snippet prints "The item is a book!"
 
-## Else
+## Else Statement
 An _else_ statement always directly follows either an _if_ or _else if_ statement. An _else_ statement executes when the preceeding condition is false. <br />
 An _else_ statement must always come at the end of a conditional structure.
 ```C#
@@ -48,7 +48,7 @@ else
 }
 ```
 
-## Else if
+## Else If Statement
 Like the _else_ statement, an _else if_ statement must follow an _if_ statement. An _else if_ statement executes if both the preceeding statement _and_ the given
 condition are true. You can use an _else if_ statement without using an _else_ statement.
 ```C#
@@ -70,3 +70,5 @@ else
     Sysmtem.Console.WriteLine("The item is NOT a book!");
 }
 ```
+
+## Switch Statment
