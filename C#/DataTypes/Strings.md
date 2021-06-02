@@ -34,12 +34,13 @@ The _Join(**_separator_**, **_collection_**)_ method converts all the elements o
 by a separator
 ```C#
 //Declare and initialize an array of students
-string[] students = {"Henry", "Charlie", "Seth"};
+string[] students = {"Henry", "Charlie", "Seth"}; 
 
 //Print the students in a comma-separated string
 Console.WriteLine(string.Join(", ", students));
 ```
-> Prints "Henry, Charlie, Seth"
+> Prints "Henry, Charlie, Seth" <br />
+> Reference: [C# Documentation: What is a Collection?](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)
 
 ### .Format()
 The _Format(**_string_**, **_variable_**, ...)_ method replaces portions of the string the the result of an expression or value of a variable
