@@ -157,13 +157,22 @@ Console.WriteLine( text.Replace("this", "that") );
 > Prints "That is an example sentence to show that concept"
 
 ### .IndexOf()
-The _IndexOf(**_string_**)_ method returns the index of the first instance of the given character as an integer.
+The _IndexOf(**_string_**)_ method returns the index of the first instance of the given character/string as an integer.
 ```C#
 string dialogue = "And that's when...";
 
 Console.WriteLine( dialogue.IndexOf(' ') );
 ```
 > Prints "3" (remember, [computers are 0-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering))
+
+### .LastIndexOf()
+The _.LastIndexOf(**_string_**)_ method returns the index of the last instance of a character/string as an integer.
+```C#
+string text = "...Dr. Quillen is here to see you.";
+
+Console.WriteLine( text.LastIndexOf(".") );
+```
+> Prints the index: 33
 
 ### .Substring
 The _.Substring(**_string_**)_ method returns a snippet of the original text, from the index of the provided integer to the end of the string.
