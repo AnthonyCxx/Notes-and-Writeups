@@ -23,3 +23,4 @@
 ## Notes
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
 -  Instead of commas, C# uses underscores to separate digits (Ex. 1_000_000 == 1000000)
+- Strings use double quotation marks, and chars use single quotation marks
