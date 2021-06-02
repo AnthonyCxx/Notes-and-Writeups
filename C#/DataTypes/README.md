@@ -22,4 +22,4 @@
 
 ## Notes
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
--  Instead of commas, C# uses underscores (_\__) to separate digits
+-  Instead of commas, C# uses underscores, _\__, to separate digits
