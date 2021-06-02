@@ -1,4 +1,5 @@
 # Strings
+Note: _..._ is used to indicate a varying amount of parameters.
 
 ## Quotations
 ### Raw Strings (@)
