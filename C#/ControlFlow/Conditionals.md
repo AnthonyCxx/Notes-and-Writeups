@@ -87,7 +87,7 @@ switch (expression)
             //Statements
             break;
             
-    /Values someValue2, someValue2, and someValue3 all execute the same block
+    //Values someValue2, someValue2, and someValue3 all execute the same block
     case someValue2:      
     case someValue3:
     case someValeu4:
