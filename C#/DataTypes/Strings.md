@@ -135,7 +135,7 @@ string fillerText = "            this string is unnecessarily long              
 
 Console.WriteLine( fillerText.TrimStart() );
 ```
-> Prints "this string is unnecessarily long  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    "
+> Prints "this string is unnecessarily long  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    "
 
 ### .TrimEnd()
 The _.TrimEnd()_ method removes excess whitespace from the beginning of a  string.
@@ -144,7 +144,7 @@ string fillerText = "            this string is unnecessarily long              
 
 Console.WriteLine( fillerText.TrimEnd() );
 ```
-> Prints " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   this string is unnecessarily long"
+> Prints " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   this string is unnecessarily long"
 
 ### .Replace()
 The _.Replace()_ method replaces all instances of the first string with the second string.
