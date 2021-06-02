@@ -33,6 +33,8 @@ if (isBook)   //'isBook' is replaced by its value (true)
 ## Else Statement
 An _else_ statement always directly follows either an _if_ or _else if_ statement. An _else_ statement executes when the preceeding condition is false. <br />
 An _else_ statement must always come at the end of a conditional structure.
+
+### Example
 ```C#
 bool isBook = false;
 
@@ -51,6 +53,8 @@ else
 ## Else If Statement
 Like the _else_ statement, an _else if_ statement must follow an _if_ statement. An _else if_ statement executes if both the preceeding statement _and_ the given
 condition are true. You can use an _else if_ statement without using an _else_ statement.
+
+### Example
 ```C#
 bool isBook = false;
 
@@ -72,3 +76,46 @@ else
 ```
 
 ## Switch Statment
+The _switch_ statment allows for evaluating a variable or expression in a clear and structured manner. By default, _switch_ statements support [fall-through behavior](https://www.learncpp.com/cpp-tutorial/switch-fallthrough-and-scoping/), meaning that when the expression matches a case, it executes that statement block _and_
+all the statement blocks that follow - this is avoided by ending statement blocks with the _break_ statement.
+
+### Format
+```C#
+switch (expression)
+{
+    case someValue1:
+            //Statements
+            break;
+            
+    /Values someValue2, someValue2, and someValue3 all execute the same block
+    case someValue2:      
+    case someValue3:
+    case someValeu4:
+            //Statements
+            break;
+    default:
+            //Statements
+            break;                           
+}
+```
+
+### Example
+```C#
+string request;
+
+switch (request)
+{
+    case "--decode":
+        Console.WriteLine($"Decoded Text: {decoder.Decode(text)}");
+        break;
+    case "--encode":
+        Console.WriteLine($"Encoded Text: {encoder.Encode(text)}");
+        break;
+    default:
+        Console.WriteLine("Error: unknown request. Exiting...");
+        System.Environment.Exit(1);
+        break;                             
+}
+```
+
+### Example
