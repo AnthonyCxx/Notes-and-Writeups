@@ -147,6 +147,29 @@ Console.WriteLine( fillerText.TrimEnd() );
 ```
 > Prints " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   this string is unnecessarily long"
 
+### .PadLeft()
+The _.PadLeft(**_int_**, **_char_**) method [pads](https://www.computerhope.com/jargon/p/padding.htm) the string with **_char_** until it reaches length **_int_**. <br />
+If the string is already longer than **_int_**, then the string is not padded.
+```C#
+int[] numbers = {1, 2, 3, 10, 11, 12, 100, 101, 102};
+char pad = '0';
+
+foreach (int num in numbers)
+{
+  Console.WriteLine( num.ToString().PadLeft(3, pad) );   //zero-fills the number to length 3
+}
+```
+> Prints: <br />
+> 001 <br />
+> 002 <br /> 
+> 003 <br />
+> 010 <br />
+> 011 <br />
+> 012 <br />
+> 100 <br />
+> 101 <br />
+> 102 <br />
+
 ### .Replace()
 The _.Replace(**_string_**, **_string_**)_ method replaces all instances of the first string with the second string.
 ```C#
@@ -182,7 +205,7 @@ int index = textToSearch.IndexOf("-") + 2;      //Add 2 to start at 'l' instead 
 
 Console.WriteLine( textToSearch.Substring(index) );
 ```
-> Prints "let'ts cut it down to size"
+> Prints "let's cut it down to size"
 
 ### .Contains()
 The _.Contains(**_string_**)_ method returns true if the string contains the given substring.
