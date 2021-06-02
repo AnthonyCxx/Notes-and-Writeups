@@ -58,7 +58,9 @@ Console.WriteLine( string.Concat(phrase, phrase, phrase) );
 > Prints "hellohellohello"
 
 ### .Compare
-The _string.Compare()_ method compares two strings by sort order and returns an integer based on the result. Here is a chart of the results:
+The _string.Compare()_ method compares two strings by sort order and returns an integer based on the result. Including a _true_ as the final parameter will make
+the comparison case-insensitive. Note, however, that this means that both the individual and total comparison will take longer.
+
 | Result | Indicator |
 | ------ | --------- |
 | Less than 0 | the first substring precedes the second substring in the sort order |
