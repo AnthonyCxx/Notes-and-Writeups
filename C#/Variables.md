@@ -3,6 +3,10 @@ An identifier is the name you assign to a type (a variable, constant, class, etc
 
 ## Nullable Value Types
 Standard types can be assigned null if a _?_ is appended to the datatype at declaration.
+```C#
+bool  isTall = null;    //Illegal
+bool? isTall = null;   //Legal
+```
 > Reference: [C# Documentation: Nullable Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 > Reference: [C# Documentation: Null Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null)
 
