@@ -76,8 +76,9 @@ else
 ```
 
 ## Switch Statment
-The _switch_ statment allows for evaluating a variable or expression in a clear and structured manner. By default, _switch_ statements support [fall-through behavior](https://www.learncpp.com/cpp-tutorial/switch-fallthrough-and-scoping/), meaning that when the expression matches a case, it executes that statement block _and_
-all the statement blocks that follow - this is avoided by ending statement blocks with the _break_ statement.
+The _switch_ statment allows for evaluating a variable or expression in a clear and structured manner. By default, _switch_ statements support 
+[fall-through behavior](https://www.learncpp.com/cpp-tutorial/switch-fallthrough-and-scoping/), meaning that when the expression matches a case, it 
+executes that statement block _and_ all the statement blocks that follow - this is avoided by ending statement blocks with the _break_ statement.
 
 ### Format
 ```C#
