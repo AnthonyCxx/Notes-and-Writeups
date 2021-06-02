@@ -86,6 +86,31 @@ Comment Styles in C#
 | XML Single-line Comment | /\*\* \*\*/ |
 | XML Multi-line Comment | /// |
 
+## Declaring a Namespace
+
+C# allows you to declare a namespace using the _using_ keyword.
+```C#
+using System;
+
+//Shortcut instead of having to write "System.Console.WriteLine()"
+Console.WriteLine("some text");
+```
+If you want to use individual members of a namespace, add _static_ after the _using_ keyword
+```C#
+using System;
+using static System.Math; 
+//Allows for writing "Sqrt()" instead of "System.Math.Sqrt()"
+
+Console.WriteLine( Sqrt(9) );
+```
+Furthermore, you can alias namespace declarations with the _=_ operator.
+```C#
+using System;
+using static mth = System.Math;  //'mth' is an alias for 'System.Math'
+
+Console.WriteLine( mth.Sqrt(9) );
+```
+
 ## Non-Primitive Data Types
 ### Arrays
 ```C#
