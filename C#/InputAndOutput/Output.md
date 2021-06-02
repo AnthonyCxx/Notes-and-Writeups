@@ -13,6 +13,7 @@ _Console.WriteLine()_ writes the given string/vaue to the console, ending the li
 //Print "Console.WriteLine implicitly ends the line" and then end the line
 Console.WriteLine("Console.WriteLine implicitly ends the line");
 ```
+> Note: Use a _Console.WriteLine("")_ as [the newline character behaves differently on different operating systems](https://softwareengineering.stackexchange.com/questions/29075/difference-between-n-and-r-n)
 
 ## Formatting Strings with Variables
 Strings can be formatted with the contents of variables by providing the variables (set off by commas) after the string. <br />
