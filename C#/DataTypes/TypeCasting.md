@@ -25,7 +25,7 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 
 ## .ToChar()
 _.ToChar()_ converts an integer value into a valid UTF-16 character. <br />
-_.ToChar()_ throws an exception when converting a _Single_ (float), _Double_, _Decimal_, _DateTime_, or _Boolean_ variable.
+_.ToChar()_ throws an exception when converting a _Single_, _Double_, _Decimal_, _DateTime_, or _Boolean_ variable.
 
 ### Conversion Requirements
 - Integral Types: the integer must be between U+0000 and U+FFFF (0 to 65535)
