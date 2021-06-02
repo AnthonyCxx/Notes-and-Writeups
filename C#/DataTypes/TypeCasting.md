@@ -42,17 +42,34 @@ Console.WriteLine( Convert.ToDateTime(date) );
 > Prints '07/06/2008 07:32:47'
 
 ## .ToDecmial()
-_.ToDecimal()_ throws an exception when converting a _DateTime_ or _Char_. <br />
+_.ToDecimal(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
 Booleans are converted to 1 (true) or 0 (false). <br />
 
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a decimal (±1.0 × 10^−28	to ±7.9 × 10^28)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a decimal (±1.0 × 10^−28 to	±7.9 × 10^28)
 
-## .ToDouble()
-_.ToDouble()_ throws an exception when converting a _DateTime_ or _Char_. <br />
+## .ToSingle()
+_.ToSingle(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
 Booleans are converted to 1 (true) or 0 (false). <br />
 
 ### Conversion Requirements
-- Numeric Types: throws an overflow error if the number is out of the range of a decimal (-1.79769313486232 x 10^308 to	1.79769313486232 x 10^308)
-- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a decimal (-1.79769313486232 x 10^308 to 1.79769313486232 x 10^308)
+- Numeric Types: throws an overflow error if the number is out of the range of a float (-3.402823 x 10^38	3.402823 x 10^38)
+- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a float (-3.402823 x 10^38	3.402823 x 10^38)
+
+## .ToDouble()
+_.ToDouble(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
+Booleans are converted to 1 (true) or 0 (false). <br />
+
+### Conversion Requirements
+- Numeric Types: throws an overflow error if the number is out of the range of a double (-1.79769313486232 x 10^308 to	1.79769313486232 x 10^308)
+- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a double (-1.79769313486232 x 10^308 to 1.79769313486232 x 10^308)
+
+## .ToInt16()
+_.ToDouble(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
+Booleans are converted to 1 (true) or 0 (false). <br />
+Unicode characters are translated to the proper integer <br />
+
+### Conversion Requirements
+- Numeric Types: throws an overflow error if the number is out of the range of a short (-32,768 to 32,767)
+- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a short (-32,768 to	32,767)
