@@ -67,7 +67,6 @@ the comparison case-insensitive. Note, however, that this means that both the in
 | Less than 0 | the first substring precedes the second substring in the sort order |
 | Exactly 0 | the substrings occur in the same position in the sort order, or length is zero. |
 | Greater than 0 | the first substring follows the second substring in the sort order. |
-> Reference: [Microsoft C# Documentation: String.Compare()](https://docs.microsoft.com/en-us/dotnet/api/system.string.compare?view=net-5.0)
 
 ```C#
 string thing1 = "Hammer";
@@ -75,7 +74,8 @@ string thing2 = "hammmer";
 
 Console.WriteLine( string.Compare(thing1, thing2) );   
 ```
-> Prints '-1' (the first substring precedes the second substring in the sort order)
+> Prints '-1' (the first substring precedes the second substring in the sort order) <br />
+> > Reference: [Microsoft C# Documentation: String.Compare()](https://docs.microsoft.com/en-us/dotnet/api/system.string.compare?view=net-5.0)
 
 ### .StartsWith()
 The _StartWith(**_string_**)_ method returns true if the string begins with the provided string/character.
@@ -135,7 +135,7 @@ string fillerText = "            this string is unnecessarily long              
 
 Console.WriteLine( fillerText.TrimStart() );
 ```
-> Prints "this string is unnecessarily long               "
+> Prints "this string is unnecessarily long  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    "
 
 ### .TrimEnd()
 The _.TrimEnd()_ method removes excess whitespace from the beginning of a  string.
@@ -144,7 +144,7 @@ string fillerText = "            this string is unnecessarily long              
 
 Console.WriteLine( fillerText.TrimEnd() );
 ```
-> Prints "            this string is unnecessarily long"
+> Prints " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   this string is unnecessarily long"
 
 ### .Replace()
 The _.Replace()_ method replaces all instances of the first string with the second string.
