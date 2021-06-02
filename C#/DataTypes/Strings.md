@@ -41,7 +41,7 @@ Console.WriteLine(string.Join(", ", students));
 > Prints "Henry, Charlie, Seth"
 
 ### .Format()
-The _string.Format(**_string_**, **_variable_**)_ method replaces portions of the string the the result of an expression or value of a variable
+The _string.Format(**_string_**, **_variable_**, ...)_ method replaces portions of the string the the result of an expression or value of a variable
 ```C#
 string animal = "squirrel";
 //The {0} is replaced by the value of 'animal'. If you added another variable, you'd do {1}
@@ -56,3 +56,20 @@ string phrase = "hello";
 Console.WriteLine( string.Concat(phrase, phrase, phrase) ); 
 ```
 > Prints "hellohellohello"
+
+### .Compare
+The _string.Compare()_ method compares two strings by sort order and returns an integer based on the result. The following is a chart of the results:
+| Result | Indicator |
+| ------ | --------- |
+| Less than 0 | the first substring precedes the second substring in the sort order |
+| Exactly 0 | the substrings occur in the same position in the sort order, or length is zero. |
+| Greater than 0 | the first substring follows the second substring in the sort order. |
+> Reference: [Microsoft C# Documentation: String.Compare()](https://docs.microsoft.com/en-us/dotnet/api/system.string.compare?view=net-5.0)
+
+```C#
+string thing1 = "Hammer";
+string thing2 = "hammmer";
+
+Console.WriteLine( string.Compare(thing1, thing2) );   
+```
+> Prints '-1' (the first substring precedes the second substring in the sort order)
