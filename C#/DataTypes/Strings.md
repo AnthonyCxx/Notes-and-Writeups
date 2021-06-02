@@ -29,7 +29,8 @@ Console.WriteLine($"Hello, {name}";
 ## Methods
 
 ### .Join()
-The _string.Join(**_separator_**, **_iterable object_**)_
+The _string.Join(**_separator_**, **_collection_**)_ method converts all the elements of a collection into a single string, separated
+by a separator
 ```C#
 //Declare and initialize an array of students
 string[] students = {"Henry", "Charlie", "Seth"};
@@ -39,4 +40,9 @@ Console.WriteLine(string.Join(", ", students));
 ```
 
 ### .Format()
- 
+The _string.Format(**_string_**, **_variable_**) method replaces sections of the string the the result of an expression or value of a variable
+```C#
+string animal = "squirrel";
+//The {0} is replaced by the value of 'animal'. If you added another variable, you'd do {1}
+Console.WriteLine( string.Format("That\'s a cute {0}", animal) );
+```
