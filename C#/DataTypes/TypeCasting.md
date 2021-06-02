@@ -12,11 +12,11 @@ Console.WriteLine($"The first value of pi is { (int) pi }");
 _.ToBoolean()_ throws an exception when converting _Char_ or _DateTime_ variables.
 
 ### Conversion Requirements
-- Numeric Types: _.ToBoolean()_ will return false if the number is 0, otherwise true
-- Strings: _.ToBoolean()_ returns true if the string is "true" (case insensitive)
+- Numeric Types: _.ToBoolean(var)_ will return false if the number is 0, otherwise true
+- Strings: _.ToBoolean(var)_ returns true if the string is "true" (case insensitive)
 
 ## .ToByte()
-_.ToByte()_ throws an exception when converting _DateTime_ variables. <br />
+_.ToByte(var)_ throws an exception when converting _DateTime_ variables. <br />
 Booleans are converted to 1 (true) or 0 (false). <br />
 
 ### Conversion Requirements
@@ -24,8 +24,18 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a byte (-128 to 127)
 
 ## .ToChar()
-_.ToChar()_ converts an integer value into a valid UTF-16 character. <br />
-_.ToChar()_ throws an exception when converting a _Single_, _Double_, _Decimal_, _DateTime_, or _Boolean_ variable.
+_.ToChar(var)_ converts an integer value into a valid UTF-16 character. <br />
+_.ToChar(var)_ throws an exception when converting a _Single_, _Double_, _Decimal_, _DateTime_, or _Boolean_ variable.
 
 ### Conversion Requirements
 - Integral Types: the integer must be between U+0000 and U+FFFF (0 to 65535)
+
+## .ToDateTime()
+_.ToDataTime(var)_ throws an exception when convert everything **_except_** a string. <br />
+There are many different date formats that can be converted into a _DateTime_ variable. Go under examples on [the C# Documentation for _.ToDateTime()_](https://docs.microsoft.com/en-us/dotnet/api/system.convert.todatetime?view=net-5.0#System_Convert_ToDateTime_System_String_) for all of them.
+```C#
+string date = "06 July 2008 7:32:47 AM";   //yes, I took this straight from the documentation
+
+Console.WriteLine( Convert.ToDateTime(date) );
+```
+> Prints '07/06/2008 07:32:47'
