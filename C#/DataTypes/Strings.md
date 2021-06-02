@@ -75,7 +75,7 @@ string thing2 = "hammmer";
 Console.WriteLine( string.Compare(thing1, thing2) );   
 ```
 > Prints '-1' (the first substring precedes the second substring in the sort order) <br />
-> > Reference: [Microsoft C# Documentation: String.Compare()](https://docs.microsoft.com/en-us/dotnet/api/system.string.compare?view=net-5.0)
+> Reference: [Microsoft C# Documentation: String.Compare()](https://docs.microsoft.com/en-us/dotnet/api/system.string.compare?view=net-5.0)
 
 ### .StartsWith()
 The _StartWith(**_string_**)_ method returns true if the string begins with the provided string/character.
