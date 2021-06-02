@@ -56,6 +56,8 @@ dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
 
 # C# Program Structure
 ```C#
+using System;    //This part is optional -- it's 'using namespace std;' in C++
+
 //Class
 class HelloWorld
 {
