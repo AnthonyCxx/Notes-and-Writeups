@@ -13,7 +13,8 @@ Console.WriteLine("And they said "Next time, be more careful"");
 ```
 
 ### Interpolated Strings ($, { })
-Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result.
+Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result. <br />
+String interpolation is a shorthand for calling the _String.Format()_ method. <br />
 ```C#
 //Promp the user for their name
 Console.Write("Enter your name: ");  //No implicit \n
