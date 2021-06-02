@@ -37,3 +37,6 @@ string[] students = {"Henry", "Charlie", "Seth"};
 //Print the students in a comma-separated string
 Console.WriteLine(string.Join(", ", students));
 ```
+
+### .Format()
+ 
