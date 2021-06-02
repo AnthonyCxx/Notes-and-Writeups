@@ -32,7 +32,8 @@ _.ToChar(var)_ throws an exception when converting a _Single_, _Double_, _Decima
 
 ## .ToDateTime()
 _.ToDataTime(var)_ throws an exception when convert everything **_except_** a string. <br />
-There are many different date formats that can be converted into a _DateTime_ variable. Go under examples on [the C# Documentation for _.ToDateTime()_](https://docs.microsoft.com/en-us/dotnet/api/system.convert.todatetime?view=net-5.0#System_Convert_ToDateTime_System_String_) for all of them.
+There are many different date formats that can be converted into a _DateTime_ variable. <br />
+Go under examples on [the C# Documentation for _.ToDateTime()_](https://docs.microsoft.com/en-us/dotnet/api/system.convert.todatetime?view=net-5.0#System_Convert_ToDateTime_System_String_) for all of them.
 ```C#
 string date = "06 July 2008 7:32:47 AM";   //yes, I took this straight from the documentation
 
