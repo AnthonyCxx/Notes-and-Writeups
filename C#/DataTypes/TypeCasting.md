@@ -8,6 +8,9 @@ double pi = 3.14;
 Console.WriteLine($"The first value of pi is { (int) pi }");
 ```
 
+## .ToString()
+_.ToString(var)_ works with all datatypes.
+
 ## .ToBoolean()
 _.ToBoolean(var)_ throws an exception when converting _Char_ or _DateTime_ variables.
 
@@ -66,10 +69,28 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a double (-1.79769313486232 x 10^308 to 1.79769313486232 x 10^308)
 
 ## .ToInt16()
-_.ToDouble(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
+_.ToInt16(var)_ throws an exception when converting a _DateTime_ variable. <br />
 Booleans are converted to 1 (true) or 0 (false). <br />
 Unicode characters are translated to the proper integer <br />
 
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a short (-32,768 to 32,767)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a short (-32,768 to	32,767)
+
+## .ToInt32()
+_.ToInt32(var)_ throws an exception when converting a _DateTime_ variable_. <br />
+Booleans are converted to 1 (true) or 0 (false). <br />
+Unicode characters are translated to the proper integer <br />
+
+### Conversion Requirements
+- Numeric Types: throws an overflow error if the number is out of the range of an int (-2,147,483,648 to 2,147,483,647)
+- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of an int (	-2,147,483,648 to 2,147,483,647)
+
+## .ToInt64()
+_.ToInt64(var)_ throws an exception when converting a _DateTime_ variable_. <br />
+Booleans are converted to 1 (true) or 0 (false). <br />
+Unicode characters are translated to the proper integer <br />
+
+### Conversion Requirements
+- Numeric Types: throws an overflow error if the number is out of the range of a long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
