@@ -35,9 +35,9 @@ Tuple< Tuple<string, int>, string > PersonAndProfession = new Tuple< Tuple<strin
 Console.WriteLine($"Name: {PersonAndProfession.Item1.Item1}");
 Console.WriteLine($"Occupation: {PersonAndProfession.Item2}");
 ```
-> Prints: 
-> Name: Jeremy
-> Occupation: Construction Worker
+> Prints: <br />
+> Name: Jeremy <br />
+> Occupation: Construction Worker <br />
 
 ## Examples of Use Cases of Tuples
 
