@@ -22,5 +22,7 @@ if (result is not null)
 {
     Console.WriteLine(result.ToString());
 }
+//This example is taken straight from the C# documentation referenced below 
 ```
 > _result_ cannot be null, because invoking a method on a null value results in a [NullReferenceException](https://docs.microsoft.com/en-us/dotnet/api/system.nullreferenceexception?view=net-5.0)
+> Reference: [C# Documentation: is Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/is)
