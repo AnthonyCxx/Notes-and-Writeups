@@ -35,8 +35,12 @@ int[,] ticTacToeBoard = new int[3, 3];
 //  ^ Add another comma for each dimension of the array
 
 //Declare and initialize a two-dimensional array
-string[,] nameAndGrade = new string[3, 2] { { "Lucian", "100" }, { "Ella", "97" }, { "Garret", "62 } };
+string[,] nameAndGrade = new string[3, 2] { { "Lucian", "100" }, { "Ella", "97" }, { "Garret", "62" } };
+
+//Get the name and score of the first student
+Console.WriteLine($"Student {nameAndGrade[0, 0]} recieved a {nameAndGrade[0, 1]}");
 ```
+> Prints: "Student Lucian recieved a 100" <br />
 > Note: the above could be better written as an array of tuples: <br />
 >  _Tuple<string, int>[] nameAndGrade = new Tuple<string, int>[3];_
 
