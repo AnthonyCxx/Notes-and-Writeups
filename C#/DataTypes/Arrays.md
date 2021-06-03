@@ -10,7 +10,6 @@ int[] exampleArray = new int[10];
 //Declare an array with the given elements
 int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 ```
-> Note: Arrays are dynamic in C# unless a size limit is set. <br />
 
 ## Accessing Array Elements
 ```C#
