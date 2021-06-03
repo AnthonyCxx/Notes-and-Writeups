@@ -48,3 +48,35 @@ object[] exampleArray = {"name", 10.5, 100};
 Console.WriteLine( string.Join(", ", exampleArray) );
 ```
 > Prints "name, 10.5, 100"
+
+## Printing Out All the Elements of an Array
+There are two main ways to print out all the values of an array: 
+1. Using a _for_ or _foreach_ loop
+2. Using the _string.Join()_ method
+
+### Using a for/foreach Loop
+```C#
+//With a for loop
+int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            
+for(int i = 0; i < exampleArray.Length; i++)
+{
+    Console.Write(i + " ");
+}
+
+//With a foreach loop
+foreach (int element in exampleArray)
+{
+    Console.Write(element + " ");
+}
+```
+
+### Using the _string.Join()_ Method\
+```
+//Using the string.Join method
+int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+//Here, string is an anoymous variable (not an anonymous type)
+Console.WriteLine( string.Join(" ", exampleArray) );
+```
+> Prints: "1 2 3 4 5 6 7 8 9 10"
