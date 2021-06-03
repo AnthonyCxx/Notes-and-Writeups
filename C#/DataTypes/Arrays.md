@@ -44,6 +44,17 @@ Console.WriteLine($"Student {nameAndGrade[0, 0]} recieved a {nameAndGrade[0, 1]}
 > Note: the above could be better written as an array of tuples: <br />
 >  _Tuple<string, int>[] nameAndGrade = new Tuple<string, int>[3];_
 
+## Array Slicing
+```C#
+//This example code has been taken from the C# documentation linked below
+var array = new int[] { 1, 2, 3, 4, 5 };
+var slice1 = array[2..^3];    // array[new Range(2, new Index(3, fromEnd: true))]
+var slice2 = array[..^3];     // array[Range.EndAt(new Index(3, fromEnd: true))]
+var slice3 = array[2..];      // array[Range.StartAt(2)]
+var slice4 = array[..];       // array[Range.All]
+```
+> Reference: [C# Documentation: Ranges and Indices](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)
+
 ## Arrays with Values of Different Types
 Since C# has a [_unified type system_](https://stackoverflow.com/questions/4233112/what-is-a-unified-type-system), all datatypes, including primitive datetypes, have an underlying _object_ datatype that they inherit from. Using the _object_ type as the datatype for the array allows an array to have varying datatypes.
 ```C#
