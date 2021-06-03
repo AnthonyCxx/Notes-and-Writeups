@@ -25,3 +25,15 @@ Console.Write(HelloWorldTuple.Item1);
 Console.Write(HelloWorldTuple.Item2);
 ```
 > Prints "Hello, World!"
+
+## Examples of Use Cases of Tuples
+
+### Swapping Variables
+```C#
+int x = 10, y = 20;
+Console.WriteLine($"Values before swapping: x = {x}, y = {y} ");
+
+(x, y) = (y, x);   //Now, x = 20, y = 10
+            
+Console.WriteLine($"Values after swapping: x = {x}, y = {y} ");
+```
