@@ -32,12 +32,11 @@ Console.Write(HelloWorldTuple.Item2);
 ```
 > Prints "Hello, World!"
 
-## Assigning the Values of a Tuple
+## Declaring Variables as the Values of a Tuple
+It's possible to declare variables of varying type, directly taking on the datatype of the element in the tuple. 
 
-### Format
-
-### Example
 ```C#
+//Declare three variables of type var, which all become strings (they can be different types)
 var(name, signInTime, signOutTime) = ("Eren", "10:40 AM", "8:00 PM");
                 
 Console.WriteLine($"Name: {name}");  
@@ -59,7 +58,6 @@ Console.WriteLine($"Occupation: {PersonAndProfession.Item2}");
 > Name: Jeremy <br />
 > Age: 32 <br />
 > Occupation: Construction Worker <br />
-> Please, for the love of god, just use a struct or class for this. I'm just doing this as an example.
 
 ## Examples of Use Cases of Tuples
 
