@@ -20,3 +20,4 @@ Tuple<string, string> HelloWorldTuple = Tuple.Create("Hello,", " world!");
 Console.Write(HelloWorldTuple.Item1);
 Console.Write(HelloWorldTuple.Item2);
 ```
+> Prints "Hello, World!"
