@@ -36,7 +36,7 @@ For reference, a 1D array is called a vector (caution, this is also the name of 
 int[,] ticTacToeBoard = new int[3, 3];
 
 //Declare and initialize a two-dimensional array
-string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "three", "3" } };
+string[,] nameAndHobby = new string[3, 2] { { "Lucian", "Painting" }, { "Ella", "Woodworking" }, { "Garret", "Tripping" } };
 ```
 
 ## Arrays with Values of Different Types
