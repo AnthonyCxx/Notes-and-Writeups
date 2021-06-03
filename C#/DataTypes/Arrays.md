@@ -36,8 +36,9 @@ For reference, a 1D array is called a vector (caution, this is also the name of 
 int[,] ticTacToeBoard = new int[3, 3];
 
 //Declare and initialize a two-dimensional array
-string[,] nameAndHobby = new string[3, 2] { { "Lucian", "Painting" }, { "Ella", "Woodworking" }, { "Garret", "Tripping" } };
+string[,] nameAndGrade = new string[3, 2] { { "Lucian", "100" }, { "Ella", "97" }, { "Garret", "62 } };
 ```
+> Note: the above could be better written as _Tuple<string, int>[] nameAndGrade = new Tuple<string, int>[3];_
 
 ## Arrays with Values of Different Types
 Since C# has a [_unified type system_](https://stackoverflow.com/questions/4233112/what-is-a-unified-type-system), all datatypes, including primitive datetypes, have an underlying _object_ datatype that they inherit from. Using the _object_ type as the datatype for the array allows an array to have varying datatypes.
