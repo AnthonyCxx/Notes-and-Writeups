@@ -6,7 +6,7 @@ The most common use of a tuple is to [return multiple values from a function](ht
 ## Declaring a Tuple
 ### Format
 ```C#
-Tuple<datatype, datatype> identifer = new Tuple<datatype, datatype>(value1, value2);
+Tuple<datatype, datatype> name = new Tuple<datatype, datatype>(value1, value2);
 ```
 
 ### Example
