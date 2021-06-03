@@ -4,6 +4,12 @@ The most common use of a tuple is to [return multiple values from a function](ht
 > [Mutable](https://www.merriam-webster.com/dictionary/mutable), opposite of _immutable_: abled to be changed (think _mut_- as in _mutate_)
 
 ## Declaring a Tuple
+### Format
+```C#
+Tuple<datatype, datatype> [identifer] = new Tuple<datatype, datatype>(value1, value2);
+```
+
+### Example
 ```C#
 //Default method
 Tuple<int, int, int> exampleTuple = Tuple<int, int, int>(1, 2, 3);
