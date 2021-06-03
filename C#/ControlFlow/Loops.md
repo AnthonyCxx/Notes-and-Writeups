@@ -19,7 +19,7 @@ for(delcaration; condition; update)
 //Prints "Hello, World!" five times
 for (int iterator = 0; iterator < 5; iterator++)  /Declaration, condition, and update statements
 {
-  System.Console.WriteLine("Hello, World!");     //Body
+  Console.WriteLine("Hello, World!");     //Body
 }
 ```
 > Note: It is commonplace to use just _i_ as a shorthand 'iterator'
@@ -37,7 +37,7 @@ Counter _j_ counts by twos.
 //Prints two counters simultaneously
 for(int i=0, j=0; i < 6; i += 1, j += 2 )
 {
-  System.Console.WriteLine(i + " " + j);
+  Console.WriteLine(i + " " + j);
 }
 ```
 > Note: this works in other languages such as C++ as well
@@ -58,7 +58,7 @@ while (condition)
 ```C#
 while (1 == 1)
 {
-    System.Console.WriteLine("this is an infinite loop");
+    Console.WriteLine("this is an infinite loop");
 }
 ```
 > Note: this is actually an infinte loop (1 _always_ equals 1), please do not run this. <br />
@@ -84,8 +84,8 @@ int input;
 //Input loop: prompts for input until an integer greater than 5 is given
 do
 {
-    System.Console.Write("Enter a number more than 5: ");       //Prompt the user
-    input = System.Int32.Parse( System.Console.ReadLine() );    //Store the input as an integer (converted from a string)
+    Console.Write("Enter a number more than 5: ");       //Prompt the user
+    input = Int32.Parse( System.Console.ReadLine() );    //Store the input as an integer (converted from a string)
 } while (input <= 5);
 ```
 > Reference: [Converting Strings to Integers in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
@@ -108,8 +108,8 @@ string[] backpack = { "Pencil", "Spellbook", "Lobster" };
 
 foreach(string item in backpack)
 {
-    System.Console.Write(item + " ");   //Print out each item
+    Console.Write(item + " ");   //Print out each item
 }
-System.Console.WriteLine("");     //End the line
+Console.WriteLine("");     //End the line
 ```
 > Note: if the items are of different types, use [the _var_ keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
