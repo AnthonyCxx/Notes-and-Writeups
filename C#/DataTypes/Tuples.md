@@ -32,8 +32,21 @@ Console.Write(HelloWorldTuple.Item2);
 ```
 > Prints "Hello, World!"
 
+## Assigning the Values of a Tuple
+
+### Format
+
+### Example
+```C#
+var(name, signInTime, signOutTime) = ("Eren", "10:40 AM", "8:00 PM");
+                
+Console.WriteLine($"Name: {name}");  
+Console.WriteLine($"Clock-in Time: {signInTime}");   
+Console.WriteLine($"Clock-out Time: {signOutTime}")
+```
+
 ## Nesting Tuples
-Tuples can even hold other tuples
+Tuples can even hold other tuples.
 ```C#
 Tuple<string, int> NameAndAge = new Tuple<string, int>("Jeremy", 32);
 Tuple< Tuple<string, int>, string > PersonAndProfession = new Tuple< Tuple<string, int>, string >(NameAndAge, "Construction Worker");
