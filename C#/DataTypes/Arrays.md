@@ -44,14 +44,25 @@ Console.WriteLine($"Student {nameAndGrade[0, 0]} recieved a {nameAndGrade[0, 1]}
 > Note: the above could be better written as an array of tuples: <br />
 >  _Tuple<string, int>[] nameAndGrade = new Tuple<string, int>[3];_
 
-## Array Slicing
+## Accessing by Range and Negative Index
+### Accessing by Range
+The range operator _.._ allows for referencing sections of the array by index.
+```C#
+//An array of 7 integers
+int[] array = { 1, 2, 3, 4, 5, 6, 7 }
+
+//Start at index 0 and gets 7 (all) elements
+Console.WriteLine( String.Join(", ", array[0..7]) );
+```
+
+### Accessing by Range and Negative Indexing
 ```C#
 //This example code has been taken from the C# documentation linked below
-var array = new int[] { 1, 2, 3, 4, 5 };
-var slice1 = array[2..^3];    // array[new Range(2, new Index(3, fromEnd: true))]
-var slice2 = array[..^3];     // array[Range.EndAt(new Index(3, fromEnd: true))]
-var slice3 = array[2..];      // array[Range.StartAt(2)]
-var slice4 = array[..];       // array[Range.All]
+var array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+var slice1 = array[2..^3];    //Index 2 to 3rd to last: (3, 4)
+var slice2 = array[..^3];     //Index 0 to 3rd to last: (1, 2, 3, 4)
+var slice3 = array[2..];      //Index 2 to last element:  (3, 4, 5, 6, 7)
+var slice4 = array[..];       //Index 0 to last index: (1, 2, 3, 4, 5, 6, 7)
 ```
 > Reference: [C# Documentation: Ranges and Indices](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)
 
