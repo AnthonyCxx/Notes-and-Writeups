@@ -120,4 +120,21 @@ switch (request)
 }
 ```
 
+## The Ternary Operator (? :)
+The ternary operator (as opposed to binary or unary operators) takes a condition and evaluates it; if the condition is true, it returns the first expression; if not,
+it returns the second expression.
+
+### Format
+```C#
+expression ? value1 : value2
+```
+
 ### Example
+```C#
+decimal pi = 3.14;
+decimal sqrt5 = Math.Sqrt(5);
+string result = (pi > sqrt5) ? "Pi is greater than the square root of 5" : "Pi is less than the square root of 5";
+
+Console.WriteLine(result);
+```
+> Prints "Pi is greater than the square root of 5", as 3.14 is greater than 2.24
