@@ -1,4 +1,6 @@
-# Identifiers in C#
+# Variables in C#
+
+## Identifiers
 An identifier is the name you assign to a type (a variable, constant, class, etc.)
 
 ## Value, Reference and Pointer Types
