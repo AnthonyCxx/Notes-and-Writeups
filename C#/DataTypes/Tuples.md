@@ -43,6 +43,10 @@ Console.WriteLine($"Name: {name}");
 Console.WriteLine($"Clock-in Time: {signInTime}");   
 Console.WriteLine($"Clock-out Time: {signOutTime}")
 ```
+> Prints: <br />
+> Name: Eren <br />
+> Clock-in Time: 10:40 AM <br />
+> Clock-out Time: 8:00 PM <br />
 
 ## Nesting Tuples
 Tuples can even hold other tuples.
