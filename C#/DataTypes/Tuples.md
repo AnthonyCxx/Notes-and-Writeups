@@ -5,7 +5,7 @@ A tuple is a mutable data structure that contains two or literals or variables, 
 ## Declaring a Tuple
 ```C#
 //Default method
-Tuple<int, int, int> exampleTuple = Tuple<int, int, int>(1, 2, 3);' also works
+Tuple<int, int, int> exampleTuple = Tuple<int, int, int>(1, 2, 3);
 
 //Using the .Create() method
 Tuple<int, int, int> exampleTuple = Tuple.Create(1, 2, 3);
