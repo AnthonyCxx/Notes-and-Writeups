@@ -2,7 +2,8 @@
 
 ## Var
 The _var_ keyword is a variable 'type' that makes the compiler infer the datatype of the variable. <br />
-The variable will still be strongly typed, but using the _var_ keyword allows you to avoid having to write out long type names.
+The variable will still be strongly typed, but using the _var_ keyword allows you to avoid having to write out long type names. <br />
+You may recognize _var_ as the C# equivalent of C++'s [_auto_](https://www.learncpp.com/cpp-tutorial/the-auto-keyword/) keyword.
 
 ### Format
 ```C#
