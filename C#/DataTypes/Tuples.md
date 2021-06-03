@@ -92,5 +92,5 @@ public static Tuple<int, int> findMinMax(int[] array)
      return Tuple.Create(min, max);
 }
 ```
-
+> Prints "Minimum = -10, Maximum = 221" <br />
 > Reference: [_foreach_ loop](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ControlFlow/Loops.md#foreach-statement)
