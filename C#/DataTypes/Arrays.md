@@ -4,7 +4,7 @@ These values can be accessed individually, but the [index](https://www.pcmag.com
 
 ## Declaring an Array
 ```C#
-//Declare an integer array that holds 10 integers
+//Declare an integer array that holds 10 elements
 int[] exampleArray = new int[10];
 
 //Declare an array with the given elements
