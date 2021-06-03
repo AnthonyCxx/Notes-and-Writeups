@@ -7,8 +7,8 @@ Standard types can be assigned null if a _?_ is appended to the datatype at decl
 bool  isTall = null;    //Illegal
 bool? isTall = null;   //Legal
 ```
-> Reference: [C# Documentation: Nullable Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
-> Reference: [C# Documentation: Null Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null)
+> Reference: [C# Documentation: Nullable Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) <br />
+> Reference: [C# Documentation: Null Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null) <br />
 
 ## Naming Identifiers after Keywords
 Keywords are reserved, and an identifier cannot have the same name as a keyword by default; <br />
