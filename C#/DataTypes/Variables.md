@@ -12,10 +12,17 @@ When passing value types as a parameter, the variable itself is not passed, only
 the original variable. This is not true for reference nor pointer types as they pass the address in memory.
 
 ## Nullable Value Types
-Standard types can be assigned null if a _?_ is appended to the datatype at declaration.
+Standard types can be assigned null if a _?_ is appended to the datatype at declaration. The value null should be reserved to indicate an invalid or unknown value.
 ```C#
+//Assigning a value to null
 bool  isTall = null;    //Illegal
 bool? isTall = null;   //Legal
+
+//Checking for null
+if (isTall is null)
+{
+    isTall = false;
+}
 ```
 > Reference: [C# Documentation: Nullable Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) <br />
 > Reference: [C# Documentation: Null Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null) <br />
