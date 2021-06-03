@@ -54,7 +54,7 @@ There are two main ways to print out all the values of an array:
 1. Using a _for_ or _foreach_ loop
 2. Using the _string.Join()_ method
 
-### Using a for/foreach Loop
+### Using a _for_/_foreach_ Loop
 ```C#
 //With a for loop
 int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
