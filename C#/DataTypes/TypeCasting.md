@@ -83,7 +83,7 @@ Unicode characters are translated to the proper integer <br />
 contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToInt32()
-_.ToInt32(var)_ throws an exception when converting a _DateTime_ variable_. <br />
+_.ToInt32(var)_ throws an exception when converting a _DateTime_ variable. <br />
 Booleans are converted to 1 (true) or 0 (false). <br />
 Unicode characters are translated to the proper integer <br />
 
