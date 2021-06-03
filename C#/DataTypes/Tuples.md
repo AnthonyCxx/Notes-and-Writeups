@@ -46,6 +46,7 @@ Console.WriteLine($"Occupation: {PersonAndProfession.Item2}");
 > Name: Jeremy <br />
 > Age: 32 <br />
 > Occupation: Construction Worker <br />
+> Please, for the love of god, just use a struct or class for this. I'm just doing this as an example.
 
 ## Examples of Use Cases of Tuples
 
