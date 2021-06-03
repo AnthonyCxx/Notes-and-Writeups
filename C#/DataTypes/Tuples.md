@@ -39,10 +39,12 @@ Tuple<string, int> NameAndAge = new Tuple<string, int>("Jeremy", 32);
 Tuple< Tuple<string, int>, string > PersonAndProfession = new Tuple< Tuple<string, int>, string >(NameAndAge, "Construction Worker");
             
 Console.WriteLine($"Name: {PersonAndProfession.Item1.Item1}");
+Console.WriteLine($"Age: {PersonAndProfession.Item1.Item2}");
 Console.WriteLine($"Occupation: {PersonAndProfession.Item2}");
 ```
 > Prints: <br />
 > Name: Jeremy <br />
+> Age: 32 <br />
 > Occupation: Construction Worker <br />
 
 ## Examples of Use Cases of Tuples
