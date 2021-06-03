@@ -25,7 +25,7 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a byte (-128 to 127)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a byte (-128 to 127). If the string contains non-numbers,
-use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToChar()
 _.ToChar(var)_ converts an integer value into a valid UTF-16 character. <br />
@@ -52,7 +52,7 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a decimal (±1.0 × 10^−28	to ±7.9 × 10^28)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a decimal (±1.0 × 10^−28 to	±7.9 × 10^28). If the string 
-contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToSingle()
 _.ToSingle(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
@@ -61,7 +61,7 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a float (-3.402823 x 10^38	3.402823 x 10^38)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a float (-3.402823 x 10^38	3.402823 x 10^38). If the string 
-contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToDouble()
 _.ToDouble(var)_ throws an exception when converting a _DateTime_ or _Char_. <br />
@@ -70,7 +70,7 @@ Booleans are converted to 1 (true) or 0 (false). <br />
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a double (-1.79769313486232 x 10^308 to	1.79769313486232 x 10^308)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a double (-1.79769313486232 x 10^308 to 1.79769313486232 x 10^308).
--  If the string contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+-  If the string contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToInt16()
 _.ToInt16(var)_ throws an exception when converting a _DateTime_ variable. <br />
@@ -80,7 +80,7 @@ Unicode characters are translated to the proper integer <br />
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a short (-32,768 to 32,767)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a short (-32,768 to	32,767). If the string 
-contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToInt32()
 _.ToInt32(var)_ throws an exception when converting a _DateTime_ variable_. <br />
@@ -90,7 +90,7 @@ Unicode characters are translated to the proper integer <br />
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of an int (-2,147,483,648 to 2,147,483,647)
 - Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of an int (	-2,147,483,648 to 2,147,483,647). If the string 
-contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
 
 ## .ToInt64()
 _.ToInt64(var)_ throws an exception when converting a _DateTime_ variable_. <br />
@@ -99,4 +99,4 @@ Unicode characters are translated to the proper integer <br />
 
 ### Conversion Requirements
 - Numeric Types: throws an overflow error if the number is out of the range of a long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
-- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807). If the string contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) method
+- Strings: throws a runtime error if the string contains non-numbers or the number is out of the range of a long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807). If the string contains non-numbers, use the [_.Parse()_](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) or [_.TryParse()_](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-5.0) method
