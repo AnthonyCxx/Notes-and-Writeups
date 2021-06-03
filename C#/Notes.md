@@ -112,19 +112,3 @@ using static mth = System.Math;  //'mth' is an alias for 'System.Math'
 
 Console.WriteLine( mth.Sqrt(9) );
 ```
-
-## Non-Primitive Data Types
-### Arrays
-```C#
-//Declare an array of students
-string[] students = {"Henry", "Charlie", "Seth"};
-
-//Declare a two-dimensional array (3 x 3)
-int[,] ticTacToeBoard = new int[3, 3];
-
-//Declare and initialize a two-dimensional array
-string[,] numberNames = new string[3, 2] { { "one", "1" }, { "two", "2" }, { "three", "3" } };
-```
-> Note: To make an array of different datetypes, set the datatype to _object[]_ <br />
-> Note: Arrays are dynamic in C# unless a size limit is set. <br />
-> Note: Add a comma inbetween the \[ \] to add another dimension to the array
