@@ -33,7 +33,42 @@ Console.Write(HelloWorldTuple.Item2);
 int x = 10, y = 20;
 Console.WriteLine($"Values before swapping: x = {x}, y = {y} ");
 
+//Swap variables
 (x, y) = (y, x);   //Now, x = 20, y = 10
             
 Console.WriteLine($"Values after swapping: x = {x}, y = {y} ");
 ```
+
+### Returning Multiple Values from a Function
+```C#
+int minimum, maximum;
+            
+int[] array = {6, -10, 9, 15, 221};
+            
+(minimum, maximum) = findMinMax(array);
+            
+Console.WriteLine($"Minimum = {minimum}, Maximum = {maximum}");            
+
+        
+public static Tuple<int, int> findMinMax(int[] array)
+{
+    int min = 0, max = 0;
+            
+    foreach(int value in array)
+    {
+        if (min > value)
+        {
+            min = value;
+        }
+                
+        if (max < value)
+         {
+            max = value;
+         }
+     }
+            
+     return Tuple.Create(min, max);
+}
+```
+
+> Reference: [_foreach_ loop](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ControlFlow/Loops.md#foreach-statement)
