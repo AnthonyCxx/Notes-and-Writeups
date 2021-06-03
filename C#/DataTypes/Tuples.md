@@ -13,3 +13,10 @@ Tuple<int, int, int> exampleTuple = Tuple.Create(1, 2, 3);
 > Tip: consider using the [_var keyword_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/Keywords.md#var) when declaring a tuple.
 
 ## Accessing Data Members of a Tuple
+Data members of a tuple are public and can be accessed in the format _.Item[index]_.
+```C#
+Tuple<string, string> HelloWorldTuple = Tuple.Create("Hello,", " world!");
+            
+Console.Write(HelloWorldTuple.Item1);
+Console.Write(HelloWorldTuple.Item2);
+```
