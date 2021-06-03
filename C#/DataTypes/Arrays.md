@@ -11,7 +11,6 @@ int[] exampleArray = new int[10];
 int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 ```
 > Note: Arrays are dynamic in C# unless a size limit is set. <br />
-> Note: Add a comma inbetween the \[ \] to add another dimension to the array
 
 ## Accessing Array Elements
 ```C#
@@ -34,6 +33,7 @@ For reference, a 1D array is called a vector (caution, this is also the name of 
 ```C#
 //Declare a two-dimensional array (3 x 3)
 int[,] ticTacToeBoard = new int[3, 3];
+//  ^ Add another comma for each dimension of the array
 
 //Declare and initialize a two-dimensional array
 string[,] nameAndGrade = new string[3, 2] { { "Lucian", "100" }, { "Ella", "97" }, { "Garret", "62 } };
