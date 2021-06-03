@@ -122,7 +122,7 @@ switch (request)
 
 ## The Ternary Operator (? :)
 The ternary operator (as opposed to binary or unary operators) takes a condition and evaluates it; if the condition is true, it returns the first expression; if not,
-it returns the second expression.
+it returns the second expression. Think of the ternary operator as a simplified version of a standard _if_-_else_ conditional structure.
 
 ### Format
 ```C#
