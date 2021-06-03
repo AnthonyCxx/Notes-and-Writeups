@@ -26,6 +26,19 @@ Console.Write(HelloWorldTuple.Item2);
 ```
 > Prints "Hello, World!"
 
+## Nesting Tuples
+Tuples can even hold other tuples
+```C#
+Tuple<string, int> NameAndAge = new Tuple<string, int>("Jeremy", 32);
+Tuple< Tuple<string, int>, string > PersonAndProfession = new Tuple< Tuple<string, int>, string >(NameAndAge, "Construction Worker");
+            
+Console.WriteLine($"Name: {PersonAndProfession.Item1.Item1}");
+Console.WriteLine($"Occupation: {PersonAndProfession.Item2}");
+```
+> Prints: 
+> Name: Jeremy
+> Occupation: Construction Worker
+
 ## Examples of Use Cases of Tuples
 
 ### Swapping Variables
