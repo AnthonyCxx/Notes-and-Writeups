@@ -1,6 +1,11 @@
 # Identifiers in C#
 An identifier is the name you assign to a type (a variable, constant, class, etc.)
 
+## Value, Reference and Pointer Types
+Variables all belong to one of the categories, based on how the data is stored in memory and whether the CLR automatically manages it via [garbage collection](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals). All primitive types (except for strings) are value types, which means that the 
+value of the variable is directly stored in the variable. Reference and pointer types, on the other hand, store the memory address of the object in the variable.
+The difference between reference and pointer types is that reference types are automatically managed by the garbage collector, while pointer types are not.
+
 ## Nullable Value Types
 Standard types can be assigned null if a _?_ is appended to the datatype at declaration.
 ```C#
