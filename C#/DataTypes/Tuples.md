@@ -37,12 +37,13 @@ It's possible to declare variables of varying type, directly taking on the datat
 
 ```C#
 //Declare three variables of type var, which all become strings (they can be different types)
-var(name, signInTime, signOutTime) = ("Eren", "10:40 AM", "8:00 PM");
+var(name, signInTime, signOutTime, _) = ("Eren", "10:40 AM", "8:00 PM", "0bba2e0a-0212-4a88-977d-10eddab87cae");
                 
 Console.WriteLine($"Name: {name}");  
 Console.WriteLine($"Clock-in Time: {signInTime}");   
 Console.WriteLine($"Clock-out Time: {signOutTime}")
 ```
+> Note: The _\__ (underscore) was used to discard a part of the tuple - the record number. <br />
 > Prints: <br />
 > Name: Eren <br />
 > Clock-in Time: 10:40 AM <br />
