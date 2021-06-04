@@ -248,7 +248,7 @@ static bool isPalindrome(string word)
 > Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome). <br />
 
 ## .Reverse()
-The _Array.Reverse(**_array_**)_ method reverse an array. This takes O(n) time where _n_ is the length of the array.
+The _Array.Reverse(**_array_**)_ method reverse an array. This takes [O(n) time](https://docs.microsoft.com/en-us/dotnet/api/system.array.reverse?view=net-5.0) where _n_ is the length of the array.
 ```C#
 string[] sentence = new string[] { "this", "is", "a", "sentence" };
 
@@ -261,3 +261,4 @@ Console.WriteLine($"Array AFTER being reversed: {string.Join(" ", sentence)}");
 > Prints: <br />
 > Array BEFORE being reversed: this is a sentence <br />
 > Array AFTER being reversed: sentence a is this  <br />
+> Reference: [What is O(n)?](https://en.wikipedia.org/wiki/Time_complexity)
