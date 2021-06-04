@@ -262,3 +262,6 @@ Console.WriteLine($"Array AFTER being reversed: {string.Join(" ", sentence)}");
 > Array BEFORE being reversed: this is a sentence <br />
 > Array AFTER being reversed: sentence a is this  <br />
 > Reference: [What is O(n)?](https://en.wikipedia.org/wiki/Time_complexity)
+
+## .Clear()
+The _.Array.Clear(**_array_**, **_starting\_index_**, **_length_**)_ method
