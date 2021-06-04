@@ -50,7 +50,7 @@ is another array. That way, each row has its own amount of columns. <br />
 
 The following example has been taken directly from Microsoft's C# Documentation, which is linked below.
 ```C#
-//Declare an array of arrays
+//Declare an array of 3 arrays
 int[][] jaggedArray = new int[3][];
 
 //Declare and initialize the individual arrays
