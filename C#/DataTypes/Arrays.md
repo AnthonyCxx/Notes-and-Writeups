@@ -183,7 +183,7 @@ else
 
 ## .Sort()
 The _.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
-Portions of the array and the comparer can be manually specified. Refere to the [C# Documentation for Array.Sort()](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
+Portions of the array and the comparer can be manually specified. Refer to the [C# Documentation for _Array.Sort()_](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
 ```C#
 int[] exampleArray = { 7, 4, 2, 9, 1, 3, 10, 6, 8, 5 };
 
