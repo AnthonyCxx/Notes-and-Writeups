@@ -279,6 +279,6 @@ Array.Clear(exampleArray, 0, exampleArray.Length);
 
 Console.WriteLine($"Array AFTER being cleared: {string.Join(" ", exampleArray)}");
 ```
-> Prints: 
-> "Array BEFORE being cleared: 1, 2, 3, 4, 5"
-> "Array AFTER being cleared: 0, 0, 0, 0, 0"
+> Prints: <br />
+> "Array BEFORE being cleared: 1, 2, 3, 4, 5" <br />
+> "Array AFTER being cleared: 0, 0, 0, 0, 0"  <br />
