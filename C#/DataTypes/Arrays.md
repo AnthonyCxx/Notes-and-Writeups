@@ -264,4 +264,21 @@ Console.WriteLine($"Array AFTER being reversed: {string.Join(" ", sentence)}");
 > Reference: [What is O(n)?](https://en.wikipedia.org/wiki/Time_complexity)
 
 ## .Clear()
-The _.Array.Clear(**_array_**, **_starting\_index_**, **_length_**)_ method
+The _.Array.Clear(**_array_**, **_starting\_index_**, **_length_**)_ (where _length_ is the amount of elements to clear) method resets the specified elements of
+an array to their initial value (0, for example, with numeric types).
+```C#
+int[] exampleArray = new int[] { 1, 2, 3, 4, 5 };
+
+Console.WriteLine($"Array BEFORE being cleared: {string.Join(" ", exampleArray)}");
+
+//Clear only the first three elements
+Array.Clear(exampleArray, 0, exampleArray.Length);
+
+//Clear all the elements
+Array.Clear(exampleArray, 0, exampleArray.Length);
+
+Console.WriteLine($"Array AFTER being cleared: {string.Join(" ", exampleArray)}");
+```
+> Prints: 
+> "Array BEFORE being cleared: 1, 2, 3, 4, 5"
+> "Array AFTER being cleared: 0, 0, 0, 0, 0"
