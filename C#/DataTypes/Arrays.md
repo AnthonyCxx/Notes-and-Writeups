@@ -196,3 +196,9 @@ Array.Sort(exampleArray);
 //Prints: '1, 2, 3, 4, 5, 6, 7, 8, 9, 10'
 Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArray)}");
 ```
+## .TrueForAll()
+  <br />
+```C#
+
+```
+> Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome).
