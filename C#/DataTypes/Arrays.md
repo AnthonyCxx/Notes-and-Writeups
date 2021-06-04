@@ -197,7 +197,8 @@ Array.Sort(exampleArray);
 Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArray)}");
 ```
 ## .TrueForAll()
-  <br />
+Test  <br />
+
 ```C#
 //An array of 4 palindromes, and one non (nonchalant)
 string[] palindromes = new string[5] { "kayak", "rotator", "sagas", "aibohphobia", "nonchalant" };
