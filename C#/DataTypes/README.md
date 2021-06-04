@@ -4,7 +4,7 @@
 | Data Type | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
 | bool | System.Boolean | 1 | true | false | false | N/A 
-| char | System.Char | 2 | 0 | 65,535 | \0 | N/A |
+| char | System.Char | 2 | 0 | 65,535 | \0 (U+0000) | N/A |
 | string | System.String | N/A | 0 / null | 2,048 bytes | null | N/A |
 | sbyte | System.SByte | 1 | -128 | 127 | 0 | N/A |
 | byte | System.Byte | 1 | 0 | 255 | 0 | N/A |
@@ -19,6 +19,7 @@
 | decimal | System.Decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 | _M_ or _m_ |
 > Note: Always use the uppercase literal suffixes, as they are clearer. <br />
 > Reference: [C# Documentation: Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) <br />
+> Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values)
 > Reference: [Literal Suffixes in C#](https://www.c-sharpcorner.com/article/data-type-suffixes-in-c-sharp/) <br />
 
 
