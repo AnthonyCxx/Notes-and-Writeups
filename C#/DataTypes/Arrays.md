@@ -48,12 +48,25 @@ Console.WriteLine($"Student {nameAndGrade[0, 0]} recieved a {nameAndGrade[0, 1]}
 ### Accessing by Range
 The range operator _.._ allows for referencing sections of the array by index.
 ```C#
-//An array of 7 integers
+//An array of 7 integers, 1-7
 int[] array = { 1, 2, 3, 4, 5, 6, 7 }
 
-//Start at index 0 and gets 7 (all) elements
-Console.WriteLine( String.Join(", ", array[0..7]) );
+//Start at index 0 and stops before index 7 (grabs 7 items)
+Console.WriteLine( String.Join(", ", array[0..7]) );   //prints '1, 2, 3, 4, 5, 6, 7'
+
+//Start at index 2 and stop before index 5
+Console.WriteLine(String.Join(", ", array[2..5]));  //prints '3, 4, 5'
+
+//Start at index 0 (implied) and stop at the final index (implied)
+Console.WriteLine(String.Join(", ", array[..]));    //prints '1, 2, 3, 4, 5, 6, 7'
+
+//Start at index 0 (implied) and stop at index 4
+Console.WriteLine(String.Join(", ", array[..4]));  //prints '1, 2, 3, 4'
+
+//Start at index 3 and stop at the final index (implied)
+Console.WriteLine(String.Join(", ", array[3..]));    //prints '4, 5, 6, 7'
 ```
+> The last index is exclusive, which allows for statements such as _array[0..array.Length]_, which grabs all values
 
 ### Accessing by Range and Negative Indexing
 ```C#
