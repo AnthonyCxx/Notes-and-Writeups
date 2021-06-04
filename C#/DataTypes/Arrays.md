@@ -168,7 +168,14 @@ int[] exampleArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 int indexOf7 = Array.BinarySearch(exampleArray, 7);
 
-Console.WriteLine($"The index of the number \'7\' is: {indexOf7}");
+if (indexOf7 < 0)
+{
+    Console.WriteLine("The element \'7\' was not found in the array");
+}
+else
+{
+    Console.WriteLine($"The index of the number \'7\' is: {indexOf7}");
+}
 ```
 > Prints: "The index of the number '7' is: 6" <br />
 > IMPORTANT: a binary search can only be performed on sorted arrays. <br />
