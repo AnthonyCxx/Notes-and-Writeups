@@ -159,3 +159,5 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 
 
 ## Array Methods
+
+### .BinarySearch()
