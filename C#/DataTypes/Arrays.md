@@ -45,8 +45,8 @@ Console.WriteLine($"Student {nameAndGrade[0, 0]} recieved a {nameAndGrade[0, 1]}
 >  _Tuple<string, int>[] nameAndGrade = new Tuple<string, int>[3];_
 
 ## Jagged Arrays
-In a standard array, each row _must_ have the same amount of columns; however, this can be worked around if you make a 1-dimensional array where each index
-is another array. That way, each row has its own amount of columns. <br />
+In a standard array, each row _must_ have the same amount of columns; however, this can be worked around if you make an array where each index
+is another array. That way, each row has its own amount of columns. And yes, you can make both of the arrays multi-dimensional. Try wrapping your head around that.<br />
 
 The following example has been taken directly from Microsoft's C# Documentation, which is linked below.
 ```C#
