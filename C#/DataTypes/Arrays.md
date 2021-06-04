@@ -66,16 +66,32 @@ Console.WriteLine(String.Join(", ", array[..4]));  //prints '1, 2, 3, 4'
 //Start at index 3 and stop at the final index (implied)
 Console.WriteLine(String.Join(", ", array[3..]));    //prints '4, 5, 6, 7'
 ```
-> The last index is exclusive, which allows for statements such as _array[0..array.Length]_, which grabs all values
+> Note: the last index is exclusive, not inclusive.
+
+### Accessing by Negative Index
+The negative index refers to the element **n**th element from the end of the array and is denoted by [the _^_ unary operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges#systemindex). Unlike normal indicies, negative indices are not zero-indexed. _^1_ refers to the
+final index of an array.
+```C#
+var array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+
+//prints '7', the last element
+Console.WriteLine( array[^1] );
+
+//prints '1', the first element
+Console.WriteLine( ^array.Length );
+```
+> To refer to the final index, use _^array.Length_
 
 ### Accessing by Range and Negative Indexing
 ```C#
 //This example code has been taken from the C# documentation linked below
 var array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-var slice1 = array[2..^3];    //Index 2 to 3rd to last: (3, 4)
-var slice2 = array[..^3];     //Index 0 to 3rd to last: (1, 2, 3, 4)
-var slice3 = array[2..];      //Index 2 to last element:  (3, 4, 5, 6, 7)
-var slice4 = array[..];       //Index 0 to last index: (1, 2, 3, 4, 5, 6, 7)
+
+//Start at index 2 and stop at the third to last 
+Console.WriteLine(String.Join(", ", array[2..^3]))   //prints '3, 4'
+
+//Start at index 0 (implied) and end at the 5th to last
+Console.WriteLine(String.Join(", ", array[..^5]))   //prints '1, 2'
 ```
 > Reference: [C# Documentation: Ranges and Indices](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)
 
