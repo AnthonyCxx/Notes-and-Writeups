@@ -162,7 +162,23 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 
 
 ## Array Methods
-> Note: Many of these methods only work on one-dimensional arrays.
+> Note: Many of these methods only work on one-dimensional arrays. If the method only works with one-dimensional arrays, you will get a [_RankException_](https://docs.microsoft.com/en-us/dotnet/api/system.rankexception?view=net-5.0) when passing in an array with more than one dimension. 
+
+## .Sort()
+The _Array.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
+Portions of the array and the comparer can be manually specified. Refer to the [C# Documentation for _Array.Sort()_](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
+```C#
+int[] exampleArray = { 7, 4, 2, 9, 1, 3, 10, 6, 8, 5 };
+
+//Prints: '7, 4, 2, 9, 1, 3, 10, 6, 8, 5'
+Console.WriteLine($"Array contents BEFORE sorting: {string.Join(", ", exampleArray)}");
+
+//Sort the array
+Array.Sort(exampleArray);
+
+//Prints: '1, 2, 3, 4, 5, 6, 7, 8, 9, 10'
+Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArray)}");
+```
 
 ### .BinarySearch()
 The _Array.BinarySearch(**_array_**, **_search_element_**)_ performs a [binary search](https://www.geeksforgeeks.org/binary-search/), looking for the provided item. 
@@ -200,21 +216,6 @@ Console.WriteLine(string.Join(", ", intArray));
 ```
 > Prints: '1, 2, 3'
 
-## .Sort()
-The _Array.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
-Portions of the array and the comparer can be manually specified. Refer to the [C# Documentation for _Array.Sort()_](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
-```C#
-int[] exampleArray = { 7, 4, 2, 9, 1, 3, 10, 6, 8, 5 };
-
-//Prints: '7, 4, 2, 9, 1, 3, 10, 6, 8, 5'
-Console.WriteLine($"Array contents BEFORE sorting: {string.Join(", ", exampleArray)}");
-
-//Sort the array
-Array.Sort(exampleArray);
-
-//Prints: '1, 2, 3, 4, 5, 6, 7, 8, 9, 10'
-Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArray)}");
-```
 ## .TrueForAll()
 The _Array.TrueForAll(**_array_**, **_function_**)_ method returns true if the given function returns true for _every_ element in the given array. <br />
 
