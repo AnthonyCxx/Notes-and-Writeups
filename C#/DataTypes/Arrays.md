@@ -159,6 +159,7 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 
 
 ## Array Methods
+> Note: Many of these methods only work on one-dimensional arrays.
 
 ### .BinarySearch()
 The _.BinarySearch(**_array_**, **_search_element_**)_ performs a [binary search](https://www.geeksforgeeks.org/binary-search/), looking for the provided item. 
@@ -179,3 +180,18 @@ else
 ```
 > Prints: "The index of the number '7' is: 6" <br />
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
+
+## .Sort()
+The _.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w).
+```C#
+int[] exampleArray = { 7, 4, 2, 9, 1, 3, 10, 6, 8, 5 };
+
+//Prints: '7, 4, 2, 9, 1, 3, 10, 6, 8, 5'
+Console.WriteLine($"Array contents BEFORE sorting: {string.Join(", ", exampleArray)}");
+
+//Sort the array
+Array.Sort(exampleArray);
+
+//Prints: '1, 2, 3, 4, 5, 6, 7, 8, 9, 10'
+Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArray)}");
+```
