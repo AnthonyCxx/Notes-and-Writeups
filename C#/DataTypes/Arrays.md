@@ -246,3 +246,18 @@ static bool isPalindrome(string word)
 ```
 > Note: It is common use to [_lambda expressions_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) as one-time functions. <br />
 > Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome). <br />
+
+## .Reverse()
+The _Array.Reverse(**_array_**)_ method reverse an array. This takes O(n) time where _n_ is the length of the array.
+```C#
+string[] sentence = new string[] { "this", "is", "a", "sentence" };
+
+Console.WriteLine($"Array BEFORE being reversed: {string.Join(" ", sentence)}");
+
+Array.Reverse(sentence);
+
+Console.WriteLine($"Array AFTER being reversed: {string.Join(" ", sentence)}");
+```
+> Prints: <br />
+> Array BEFORE being reversed: this is a sentence <br />
+> Array AFTER being reversed: sentence a is this  <br />
