@@ -162,7 +162,7 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 > Note: Many of these methods only work on one-dimensional arrays.
 
 ### .BinarySearch()
-The _.BinarySearch(**_array_**, **_search_element_**)_ performs a [binary search](https://www.geeksforgeeks.org/binary-search/), looking for the provided item. 
+The _Array.BinarySearch(**_array_**, **_search_element_**)_ performs a [binary search](https://www.geeksforgeeks.org/binary-search/), looking for the provided item. 
 If found, the index of the search item is returned; otherwise, a negative number is returned.
 ```C#
 int[] exampleArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -182,7 +182,7 @@ else
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
 
 ## .Sort()
-The _.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
+The _Array.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
 Portions of the array and the comparer can be manually specified. Refer to the [C# Documentation for _Array.Sort()_](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
 ```C#
 int[] exampleArray = { 7, 4, 2, 9, 1, 3, 10, 6, 8, 5 };
@@ -197,7 +197,7 @@ Array.Sort(exampleArray);
 Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArray)}");
 ```
 ## .TrueForAll()
-Test  <br />
+The _Array.TrueForAll(**_array_**, **_function_**)_ method returns true if the given function returns true for _every_ element in the given array. <br />
 
 ```C#
 //An array of 4 palindromes, and one non (nonchalant)
