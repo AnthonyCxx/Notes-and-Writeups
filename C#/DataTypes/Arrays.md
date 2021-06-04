@@ -62,6 +62,7 @@ jaggedArray[2] = new int[] { 11, 22 };
 Console.WriteLine($"The second element in the third array is: {jaggedArray[2][1]}");
 ```
 > Note: Instead of using standard multi-dimensional array syntax _\[2, 1\]_, here the sets of brackets are separate since they are different arrays. <br />
+> Note: For jagged arrays, the _.Length_ member returns the amount of arrays. <br />
 > Reference: [C# Documentation: Jagged Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/jagged-arrays)
 
 ## Accessing by Range and Negative Index
