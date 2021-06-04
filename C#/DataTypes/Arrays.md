@@ -44,6 +44,26 @@ Console.WriteLine($"Student {nameAndGrade[0, 0]} recieved a {nameAndGrade[0, 1]}
 > Note: the above could be better written as an array of tuples: <br />
 >  _Tuple<string, int>[] nameAndGrade = new Tuple<string, int>[3];_
 
+## Jagged Arrays
+In a standard array, each row _must_ have the same amount of columns; however, this can be worked around if you make a 1-dimensional array where each index
+is another array. That way, each row has its own amount of columns. <br />
+
+The following example has been taken directly from Microsoft's C# Documentation, which is linked below.
+```C#
+//Declare an array of arrays
+int[][] jaggedArray = new int[3][];
+
+//Declare and initialize the individual arrays
+jaggedArray[0] = new int[] { 1, 3, 5, 7, 9 };
+jaggedArray[1] = new int[] { 0, 2, 4, 6 };
+jaggedArray[2] = new int[] { 11, 22 };
+
+//Access the second element of the third array
+Console.WriteLine($"The second element in the third array is: {jaggedArray[2][1]}");
+```
+> Note: Instead of using standard multi-dimensional array syntax _\[2, 1\]_, here the sets of brackets are separate since they are different arrays. <br />
+> Reference: [C# Documentation: Jagged Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/jagged-arrays)
+
 ## Accessing by Range and Negative Index
 ### Accessing by Range
 The range operator _.._ allows for referencing sections of the array by index.
