@@ -199,6 +199,29 @@ Console.WriteLine($"Array contents AFTER sorting: {string.Join(", ", exampleArra
 ## .TrueForAll()
   <br />
 ```C#
+//An array of 4 palindromes, and one non (nonchalant)
+string[] palindromes = new string[5] { "kayak", "rotator", "sagas", "aibohphobia", "nonchalant" };
 
+//Return false, since 'nonchalant' is not a palindrome
+if (Array.TrueForAll(palindromes, isPalindrome))
+     Console.WriteLine("The array \'palindromes\' exclusively conatins palindromes");
+else
+     Console.WriteLine("The array \'palindromes\' does not exclusively contain palindromes");
+
+
+static bool isPalindrome(string word)
+{
+    //Iterate over the string, comparing the nth and nth-from-last characters
+    for (int i = 0; i < word.Length / 2; i++)
+     {
+         //If the two characters do not match, return false
+         if (word[i] != word[^(i+1)])
+             return false;            
+     }
+
+     //If all match, return true
+     return true;
+}
 ```
-> Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome).
+> Note: It is common use to [_lambda expressions_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) as one-time functions. <br />
+> Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome). <br />
