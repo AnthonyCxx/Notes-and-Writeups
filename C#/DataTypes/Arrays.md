@@ -283,7 +283,9 @@ Console.WriteLine($"Array AFTER being cleared: {string.Join(" ", exampleArray)}"
 > "Array BEFORE being cleared: 1, 2, 3, 4, 5" <br />
 > "Array AFTER being cleared: 0, 0, 0, 0, 0"  <br />
 
-## LastIndexOf()
+
+
+## .LastIndexOf()
 The _Array.LastIndexOf(**_array_**, **_value_**)_ method returns the last index of the given value. If the value is not in the array, a _-1_ will be returned.
 ```C#
 int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
