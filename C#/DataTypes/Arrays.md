@@ -178,4 +178,4 @@ else
 }
 ```
 > Prints: "The index of the number '7' is: 6" <br />
-> IMPORTANT: a binary search can only be performed on sorted arrays. <br />
+> **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
