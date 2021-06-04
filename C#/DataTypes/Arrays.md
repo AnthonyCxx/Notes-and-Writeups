@@ -161,3 +161,14 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 ## Array Methods
 
 ### .BinarySearch()
+The _.BinarySearch(**_array_**, **_search_element_**)_ performs a [binary search](https://www.geeksforgeeks.org/binary-search/), looking for the provided item. 
+If found, the index of the search item is returned; otherwise, a negative number is returned.
+```C#
+int[] exampleArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+int indexOf7 = Array.BinarySearch(exampleArray, 7);
+
+Console.WriteLine($"The index of the number \'7\' is: {indexOf7}");
+```
+> Prints: "The index of the number '7' is: 6" <br />
+> IMPORTANT: a binary search can only be performed on sorted arrays. <br />
