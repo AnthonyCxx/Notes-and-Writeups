@@ -181,6 +181,22 @@ else
 > Prints: "The index of the number '7' is: 6" <br />
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
 
+## .SetValue()
+The _.SetValue(**_value_**, **_index_**)_ method sets the value of an index. <br />
+```C#
+//Declare an uninitialized array of 3 integers
+int[] intArray = new int[3];
+
+//Set the values of the array to 1, 2, and 3
+intArray.SetValue(1, 0);
+intArray.SetValue(2, 1);
+intArray.SetValue(3, 2);
+
+//Print the array
+Console.WriteLine(string.Join(", ", intArray));
+```
+> Prints: '1, 2, 3'
+
 ## .Sort()
 The _Array.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
 Portions of the array and the comparer can be manually specified. Refer to the [C# Documentation for _Array.Sort()_](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
