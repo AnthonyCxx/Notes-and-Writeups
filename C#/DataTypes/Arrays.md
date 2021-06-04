@@ -69,7 +69,7 @@ Console.WriteLine(String.Join(", ", array[3..]));    //prints '4, 5, 6, 7'
 > Note: the last index is exclusive, not inclusive.
 
 ### Accessing by Negative Index
-The negative index refers to the element **n**th element from the end of the array and is denoted by [the _^_ unary operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges#systemindex). Unlike normal indicies, negative indices are not zero-indexed. _^1_ refers to the
+The negative index refers to the element **n**th element from the end of the array and is denoted by the [_^_ unary operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges#systemindex). Unlike normal indicies, negative indices are not zero-indexed. _^1_ refers to the
 final index of an array.
 ```C#
 var array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
