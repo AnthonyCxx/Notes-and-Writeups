@@ -7,11 +7,12 @@ Naturally, these notes are in no way comprehensive. <br />
 
 &nbsp; &nbsp; Some guides to watch: <br />
 &nbsp; &nbsp; ===============
-\1. [Setting up Visual Studio](https://www.youtube.com/watch?v=5AOp8zFu4Vg&list=PLdo4fOcmZ0oWxvt87h9r3uq3uU6pUlCq8)
-\2. [An Introduction to .NET](https://www.youtube.com/watch?v=eIHKZfgddLM&list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80)
-\3. [C# 101](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN), an introduction to C#
-\4. [A Guide to NuGet](https://www.youtube.com/watch?v=WW3bO1lNDmo&list=PLdo4fOcmZ0oVLvfkFk8O9h6v2Dcdh2bh_) ([C# Package Manager](https://www.nuget.org/))
-\5. [C# Language Highlights](https://www.youtube.com/watch?v=xY4EhUdBMbo&list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O)
-\6. [Advanced C#](https://www.youtube.com/watch?v=p5myHVOtmiU&list=PLdo4fOcmZ0oXzJ3FC-ApBes-0klFN9kr9)
+1. [Setting up Visual Studio](https://www.youtube.com/watch?v=5AOp8zFu4Vg&list=PLdo4fOcmZ0oWxvt87h9r3uq3uU6pUlCq8)
+2. [An Introduction to .NET](https://www.youtube.com/watch?v=eIHKZfgddLM&list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80)
+3. [C# 101](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN), an introduction to C#
+4. [A Guide to NuGet](https://www.youtube.com/watch?v=WW3bO1lNDmo&list=PLdo4fOcmZ0oVLvfkFk8O9h6v2Dcdh2bh_) ([C# Package Manager](https://www.nuget.org/))
+5. [Using APIs with C#](https://www.youtube.com/watch?v=ojuWwsWJbzQ&list=PLdo4fOcmZ0oVjOKgzsWqdFVvzGL2_d72v&index=2)
+6. [C# Language Highlights](https://www.youtube.com/watch?v=xY4EhUdBMbo&list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O)
+7. [Advanced C#](https://www.youtube.com/watch?v=p5myHVOtmiU&list=PLdo4fOcmZ0oXzJ3FC-ApBes-0klFN9kr9)
 
 [Other .NET Videos](https://www.youtube.com/c/dotNET/playlists)
