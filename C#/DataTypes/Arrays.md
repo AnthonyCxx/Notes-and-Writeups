@@ -327,6 +327,22 @@ static bool isPalindrome(string word)
 > Note: It is common use to [_lambda expressions_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) as one-time functions. <br />
 > Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome). <br />
 
+## .Resize()
+The _Array.Resize(ref **_array_**, **_size_**)_ methods resizes an array to the given size.
+```C#
+int[] exampleArray = new int[3] { 1, 2, 3 };
+
+Console.WriteLine($"The array is {exampleArray.GetUpperBound(0) + 1} elements long");
+
+//Increase the size of the array by 2 (total: 5)
+Array.Resize(ref exampleArray, exampleArray.Length + 2);
+
+Console.WriteLine($"The array is {exampleArray.GetUpperBound(0) + 1} elements long");
+```
+> Prints: <br />
+> The array is 3 elements long <br />
+> The array is 5 elements long <br />
+
 ## .Reverse()
 The _Array.Reverse(**_array_**)_ method reverse an array. This takes [O(n) time](https://docs.microsoft.com/en-us/dotnet/api/system.array.reverse?view=net-5.0) where _n_ is the length of the array.
 ```C#
