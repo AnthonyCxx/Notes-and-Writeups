@@ -13,3 +13,5 @@ Naturally, these notes are in no way comprehensive. <br />
 - [A Guide to NuGet](https://www.youtube.com/watch?v=WW3bO1lNDmo&list=PLdo4fOcmZ0oVLvfkFk8O9h6v2Dcdh2bh_) ([C# Package Manager](https://www.nuget.org/))
 - [C# Language Highlights](https://www.youtube.com/watch?v=xY4EhUdBMbo&list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O)
 - [Advanced C#](https://www.youtube.com/watch?v=p5myHVOtmiU&list=PLdo4fOcmZ0oXzJ3FC-ApBes-0klFN9kr9)
+
+[Other .NET Videos](https://www.youtube.com/c/dotNET/playlists)
