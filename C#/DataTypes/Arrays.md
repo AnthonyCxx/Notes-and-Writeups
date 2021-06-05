@@ -349,6 +349,7 @@ onsole.WriteLine($"The lowest bound of the second array is: {jaggedArray[1].GetU
 > Prints: <br />
 > "The lowest bound of the first array is:  0" <br />
 > "The lowest bound of the second array is: 5" <br /> <br />
-> Note: Remember, spacing does not matter in C#, so try to line up the rows and columns when initializing a matrix (this is practically impossible for tensors).
+> Note: Remember, spacing does not matter in C#, so try to line up the rows and columns when initializing a matrix <br />
+> (this is practically impossible for tensors).
 
 ## .GetUpperBound
