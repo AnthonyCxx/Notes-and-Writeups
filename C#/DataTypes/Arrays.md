@@ -164,6 +164,64 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 ## Array Methods
 > Note: Many of these methods only work on one-dimensional arrays. If the method only works with one-dimensional arrays, you will get a [_RankException_](https://docs.microsoft.com/en-us/dotnet/api/system.rankexception?view=net-5.0) when passing in an array with more than one dimension. 
 
+## .GetValue()
+The _.GetValue(**_index_**)_ method returns the element at the given index.
+```C#
+int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
+
+for (int index = 0; i < exampleArray.Length; i++)
+{
+    Console.WriteLine($"Index = {index}, Element = {exampleArray.GetValue(index)}");
+}
+```
+> Prints: <br />
+> Index = 0, Element = 1 <br />
+> Index = 1, Element = 2 <br />
+> Index = 2, Element = 3 <br />
+> Index = 3, Element = 4 <br />
+> Index = 4, Element = 5 <br />
+> Index = 5, Element = 1 <br />
+
+## .SetValue()
+The _.SetValue(**_value_**, **_index_**)_ method sets the value of an index. <br />
+```C#
+//Declare an uninitialized array of 3 integers
+int[] intArray = new int[3];
+
+//Set the values of the array to 1, 2, and 3
+intArray.SetValue(1, 0);
+intArray.SetValue(2, 1);
+intArray.SetValue(3, 2);
+
+//Print the array
+Console.WriteLine(string.Join(", ", intArray));
+```
+> Prints: '1, 2, 3'
+
+## .IndexOf()
+The _Array.IndexOf(**_array_**, **_value_**)_ returns the index of the first instance of the given value. If the value is not in the array, a _-1_ will be returned.
+```C#
+int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
+
+int searchValue = 1;
+int index = Array.IndexOf(exampleArray, searchValue);
+
+Console.WriteLine($"The first occurance of {searchValue} is at index {index}");
+```
+> Prints: "The first occurance of 1 is at index 0"
+
+## .LastIndexOf()
+The _Array.LastIndexOf(**_array_**, **_value_**)_ method returns the last index of the given value. If the value is not in the array, a _-1_ will be returned.
+```C#
+int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
+
+int lastIndexOf1 = Array.LastIndexOf(exampleArray , 1);    //returns 5
+int lastIndexOf6 = Array.LastIndexOf(exampleArray , 6);   //returns -1
+
+Console.WriteLine($"The last index of element 1 is: {lastIndexOf1}");
+```
+> Prints: "The last index of element 1 is: 5"
+
 ## .Sort()
 The _Array.Sort(**_array_**)_ method sorts an array in [ascending order](https://www.youtube.com/watch?v=jWBglsSb63w). <br />
 Portions of the array and the comparer can be manually specified. Refer to the [C# Documentation for _Array.Sort()_](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0)
@@ -199,40 +257,6 @@ else
 ```
 > Prints: "The index of the number '7' is: 6" <br />
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
-
-## .GetValue()
-The _.GetValue(**_index_**)_ method returns the element at the given index.
-```C#
-int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
-
-for (int index = 0; i < exampleArray.Length; i++)
-{
-    Console.WriteLine($"Index = {index}, Element = {exampleArray.GetValue(index)}");
-}
-```
-> Prints: <br />
-> Index = 0, Element = 1 <br />
-> Index = 1, Element = 2 <br />
-> Index = 2, Element = 3 <br />
-> Index = 3, Element = 4 <br />
-> Index = 4, Element = 5 <br />
-> Index = 5, Element = 1 <br />
-
-## .SetValue()
-The _.SetValue(**_value_**, **_index_**)_ method sets the value of an index. <br />
-```C#
-//Declare an uninitialized array of 3 integers
-int[] intArray = new int[3];
-
-//Set the values of the array to 1, 2, and 3
-intArray.SetValue(1, 0);
-intArray.SetValue(2, 1);
-intArray.SetValue(3, 2);
-
-//Print the array
-Console.WriteLine(string.Join(", ", intArray));
-```
-> Prints: '1, 2, 3'
 
 ## .TrueForAll()
 The _Array.TrueForAll(**_array_**, **_function_**)_ method returns true if the given function returns true for _every_ element in the given array. <br />
@@ -301,16 +325,11 @@ Console.WriteLine($"Array AFTER being cleared: {string.Join(" ", exampleArray)}"
 > "Array BEFORE being cleared: 1, 2, 3, 4, 5" <br />
 > "Array AFTER being cleared: 0, 0, 0, 0, 0"  <br />
 
-
-
-## .LastIndexOf()
-The _Array.LastIndexOf(**_array_**, **_value_**)_ method returns the last index of the given value. If the value is not in the array, a _-1_ will be returned.
+## .GetLowerBound()
+The _.GetLowerBound(**_dimension_**)_ returns the lowest index of the dimension specified. The lowest index is almost _always_ 0, but [there are some rare cases](https://stackoverflow.com/questions/17358139/getupperbound-and-getlowerbound-function-for-array)
+where the lowest index of an array is not 0.
 ```C#
-int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
 
-int lastIndexOf1 = Array.LastIndexOf(exampleArray , 1);    //returns 5
-int lastIndexOf6 = Array.LastIndexOf(exampleArray , 6);   //returns -1
-
-Console.WriteLine($"The last index of element 1 is: {lastIndexOf1}");
 ```
-> Prints: "The last index of element 1 is: 5"
+
+## .GetUpperBound
