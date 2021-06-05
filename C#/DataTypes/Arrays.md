@@ -327,6 +327,21 @@ static bool isPalindrome(string word)
 > Note: It is common use to [_lambda expressions_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) as one-time functions. <br />
 > Aibohphobia, noun: the fear of palindromes (yes, it's a palindrome). <br />
 
+## .Fill()
+The _Array.Fill(**_array_**, **_value_**)_ method sets every element in the array to the given values. This is especially helpful when initializing an array.
+```C#
+int[] intArray = new int[30];
+
+Console.WriteLine($"Array values: {string.Join(", ", intArray)}");
+
+Array.Fill(intArray, 5);
+
+Console.WriteLine($"Array values: {string.Join(", ", intArray)}");
+```
+> Prints: <br />
+> Array values: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 <br />
+> Array values: 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 <br />
+
 ## .Resize()
 The _Array.Resize(ref **_array_**, **_size_**)_ methods resizes an array to the given size.
 ```C#
