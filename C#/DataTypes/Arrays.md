@@ -200,6 +200,24 @@ else
 > Prints: "The index of the number '7' is: 6" <br />
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
 
+## .GetValue()
+The _.GetValue(**_index_**)_ method returns the element at the given index.
+```C#
+int[] exampleArray = new int[] { 1, 2, 3, 4, 5, 1 };
+
+for (int index = 0; i < exampleArray.Length; i++)
+{
+    Console.WriteLine($"Index = {index}, Element = {exampleArray.GetValue(index)}");
+}
+```
+> Prints: <br />
+> Index = 0, Element = 1 <br />
+> Index = 1, Element = 2 <br />
+> Index = 2, Element = 3 <br />
+> Index = 3, Element = 4 <br />
+> Index = 4, Element = 5 <br />
+> Index = 5, Element = 1 <br />
+
 ## .SetValue()
 The _.SetValue(**_value_**, **_index_**)_ method sets the value of an index. <br />
 ```C#
