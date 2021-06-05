@@ -161,6 +161,12 @@ Console.WriteLine( string.Join(" ", exampleArray) );
 ```
 > Prints: "1 2 3 4 5 6 7 8 9 10"
 
+## Array Properties
+| Property | Contains |
+| -------- | -------- |
+| .Length | the number of elements |
+| .Rank | the number of dimensions |
+> This is not comprehensive, but [this list](https://docs.microsoft.com/en-us/dotnet/api/system.array.isfixedsize?view=net-5.0) is.
 
 ## Array Methods
 > Note: Many of these methods only work on one-dimensional arrays. If the method only works with one-dimensional arrays, you will get a [_RankException_](https://docs.microsoft.com/en-us/dotnet/api/system.rankexception?view=net-5.0) when passing in an array with more than one dimension. 
