@@ -329,7 +329,7 @@ Console.WriteLine($"Array AFTER being cleared: {string.Join(" ", exampleArray)}"
 The _.GetLowerBound(**_dimension_**)_ returns the lowest index of the dimension specified. The lowest index is almost _always_ 0, but [there are some rare cases](https://stackoverflow.com/questions/17358139/getupperbound-and-getlowerbound-function-for-array)
 where the lowest index of an array is not 0.
 ```C#
-//A jagged array that stores 2, 2-dimensional arrays.
+//A jagged array that stores two, 2-dimensional arrays.
 int[][,] jaggedArray = new int[2][,];
 
 //A 2-dimensional array with two rows and 4 columns each
@@ -353,3 +353,18 @@ onsole.WriteLine($"The lowest bound of the second array is: {jaggedArray[1].GetU
 > (this is practically impossible for tensors).
 
 ## .GetUpperBound
+The _.GetUpperBound(**_dimension_**) returns the highest index of the dimension specified (which is always 1 less than the amount of elements).
+```C#
+//A jagged array that stores two, 1-dimensional arrays.
+int[][] jaggedArray = new int[2][];
+
+//Declare and initialize the individual arrays
+jaggedArray[0] = new int[] { 1, 2, 3};
+jaggedArray[1] = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+
+Console.WriteLine($"The upper bound of the first array is:  {jaggedArray[0].GetUpperBound(0)}");
+Console.WriteLine($"The upper bound of the second array is: {jaggedArray[1].GetUpperBound(0)}");
+```
+> Prints: <br />
+> The upper bound of the first array is:  2 <br />
+> The upper bound of the second array is: 6 <br />
