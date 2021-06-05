@@ -5,8 +5,8 @@ All I've done is synthesize the most relevant aspects of C# and provide some cod
 I fill the notes out as a I learn concepts and am not completely filling them out section by section. <br /> 
 Naturally, these notes are in no way comprehensive. <br />
 
-&nbsp; &nbsp; Some guides to watch: <br />
-&nbsp; &nbsp; =============== <br />
+Some guides to watch: <br />
+=============== <br />
 [Setting up Visual Studio](https://www.youtube.com/watch?v=5AOp8zFu4Vg&list=PLdo4fOcmZ0oWxvt87h9r3uq3uU6pUlCq8) <br />
 [An Introduction to .NET](https://www.youtube.com/watch?v=eIHKZfgddLM&list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) <br />
 [C# 101](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN), an introduction to C# <br />
