@@ -258,6 +258,43 @@ else
 > Prints: "The index of the number '7' is: 6" <br />
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
 
+## .ForEach()
+The _Array.ForEach(**_array_**, **_function_**)_ method uses the given function on each member of the array individually.
+```C#
+//An array of 4 palindromes, and one non (nonchalant)
+string[] palindromes = new string[5] { "kayak", "rotator", "sagas", "aibohphobia", "nonchalant" };
+
+//Check each word in the array for palindromes. If it is, print it
+Array.ForEach(palindromes, printPalindrome);
+
+//Print the word if it's a palindrome
+static void printPalindrome(string word)
+{
+    if (isPalindrome(word))
+        Console.WriteLine($"Palindrome found: {word}");
+}
+
+//Check if the word is a palindrome
+static bool isPalindrome(string word)
+{
+    //Iterate over the string, comparing the nth and nth-from-last characters 
+    for (int i = 0; i < word.Length / 2; i++)
+    {
+         //If the two characters do not match, return false
+         if (word[i] != word[^(i + 1)])
+             return false;
+    }
+
+   //If all match, return true
+   return true;
+}
+```
+> Prints: <br />
+> Palindrome found: kayak       <br />
+> Palindrome found: rotator     <br />
+> Palindrome found: sagas       <br />
+> Palindrome found: aibohphobia <br />
+
 ## .TrueForAll()
 The _Array.TrueForAll(**_array_**, **_function_**)_ method returns true if the given function returns true for _every_ element in the given array. <br />
 
