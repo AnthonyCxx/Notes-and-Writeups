@@ -329,7 +329,26 @@ Console.WriteLine($"Array AFTER being cleared: {string.Join(" ", exampleArray)}"
 The _.GetLowerBound(**_dimension_**)_ returns the lowest index of the dimension specified. The lowest index is almost _always_ 0, but [there are some rare cases](https://stackoverflow.com/questions/17358139/getupperbound-and-getlowerbound-function-for-array)
 where the lowest index of an array is not 0.
 ```C#
+//A jagged array that stores 2, 2-dimensional arrays.
+int[][,] jaggedArray = new int[2][,];
 
+//A 2-dimensional array with two rows and 4 columns each
+jaggedArray[0] = new int[2, 4] { { 1, 2, 3, 4}, 
+                                 { 5, 6, 7, 8 } };
+
+//A 2-dimensional array with two rows and 6 columns each
+jaggedArray[1] = new int[2, 6] { { 1, 2, 3, 4, 5, 6 }, 
+                                 { 7, 8, 9, 10, 11, 12 } };
+
+//Get the lower bound of the first array in the first 2-dimensional array
+Console.WriteLine($"The lowest bound of the first array is:  {jaggedArray[0].GetLowerBound(0)}");
+
+//Get the lower bound of the second array in the second 2-dimensional array
+onsole.WriteLine($"The lowest bound of the second array is: {jaggedArray[1].GetUpperBound(1)}");
 ```
+> Prints: <br />
+> "The lowest bound of the first array is:  0" <br />
+> "The lowest bound of the second array is: 5" <br />
+> Note: Remember, spacing does not matter in C#, so try to line up the rows and columns when initializing a matrix (this is practically impossible for tensors).
 
 ## .GetUpperBound
