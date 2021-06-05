@@ -6,7 +6,10 @@ I fill the notes out as a I learn concepts and am not completely filling them ou
 Naturally, these notes are in no way comprehensive. <br />
 
 Some guides to watch:
+- [Setting up Visual Studio](https://www.youtube.com/watch?v=5AOp8zFu4Vg&list=PLdo4fOcmZ0oWxvt87h9r3uq3uU6pUlCq8)
+- [An Introduction to .NET](https://www.youtube.com/watch?v=eIHKZfgddLM&list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80)
+- [C# 101](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN), an introduction to C#
 - [A Guide to NuGet](https://www.youtube.com/watch?v=WW3bO1lNDmo&list=PLdo4fOcmZ0oVLvfkFk8O9h6v2Dcdh2bh_) ([C# Package Manager](https://www.nuget.org/))
--
--
--
+- [C# Language Highlights](https://www.youtube.com/watch?v=xY4EhUdBMbo&list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O)
+- [Advanced C#](https://www.youtube.com/watch?v=p5myHVOtmiU&list=PLdo4fOcmZ0oXzJ3FC-ApBes-0klFN9kr9)
+
