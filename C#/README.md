@@ -3,4 +3,10 @@ The majority of the information here comes straight from the [.NET Microsoft Off
 All I've done is synthesize the most relevant aspects of C# and provide some code snippets to make an easy reference for myself and others. <br />
 
 I fill the notes out as a I learn concepts and am not completely filling them out section by section. <br /> 
-Naturally, these notes are in no way comprehensive.
+Naturally, these notes are in no way comprehensive. <br />
+
+Some guides to watch:
+- [A Guide to NuGet](https://www.youtube.com/watch?v=WW3bO1lNDmo&list=PLdo4fOcmZ0oVLvfkFk8O9h6v2Dcdh2bh_) ([C# Package Manager](https://www.nuget.org/))
+-
+-
+-
