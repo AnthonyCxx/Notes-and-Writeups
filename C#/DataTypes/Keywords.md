@@ -20,7 +20,10 @@ var NameAndDigit = new Tuple<string, int, string, int, string, int>("one", 1, "t
 > Reference: [C# Documentation: Var Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
 
 ## Ref
-The _ref_ keyword 
+When passing [value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) as a parameter to a function, the actual variable
+itself is not passed, but only a copy of its contents. This means that anything that happens to the value passed will not affect the actual variable in main. To pass by 
+reference, you have to use the [_ref keyword_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) in both the function declaration and when calling
+the function.
 
 ```C#
 //Declare a integer, 10
@@ -39,7 +42,7 @@ Console.WriteLine("");
 //Calling by reference (affects the value in main)
 Console.WriteLine($"Integer value BEFORE calling by reference: {number}");
 
-IncrementIntegerByRef(ref number);
+IncrementIntegerByReference(ref number);
 
 Console.WriteLine($"Integer value AFTER calling by reference: {number}");
 
@@ -50,7 +53,7 @@ static void IncrementIntegerByValue(int integer)
    integer++;
 }
 
-static void IncrementIntegerByRef(ref int integer)
+static void IncrementIntegerByReference(ref int integer)
 {
    integer++;
 }
