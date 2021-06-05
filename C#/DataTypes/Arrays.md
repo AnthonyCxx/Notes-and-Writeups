@@ -1,6 +1,7 @@
 # Arrays in C#
 An array is a data structure that stores multiple values of the same type. <br />
 These values can be accessed individually, but the [index](https://www.pcmag.com/encyclopedia/term/index) must be known. <br />
+If you do not know the index, use the [_.IndexOf_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/Arrays.md#indexof) or [_.LastIndexOf()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/Arrays.md#lastindexof) methods. <br />
 
 ## Declaring an Array
 ```C#
