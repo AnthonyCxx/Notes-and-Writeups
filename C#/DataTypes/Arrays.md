@@ -259,7 +259,7 @@ else
 > **IMPORTANT**: a binary search can only be performed on sorted arrays. <br />
 
 ## .ForEach()
-The _Array.ForEach(**_array_**, **_function_**)_ method uses the given function on each member of the array individually.
+The _Array.ForEach(**_array_**, **_action_**)_ method performs the given actions on each member of the array individually.
 ```C#
 //An array of 4 palindromes, and one non (nonchalant)
 string[] palindromes = new string[5] { "kayak", "rotator", "sagas", "aibohphobia", "nonchalant" };
@@ -296,7 +296,7 @@ static bool isPalindrome(string word)
 > Palindrome found: aibohphobia <br />
 
 ## .TrueForAll()
-The _Array.TrueForAll(**_array_**, **_function_**)_ method returns true if the given function returns true for _every_ element in the given array. <br />
+The _Array.TrueForAll(**_array_**, **_predicate_**)_ method returns true if the [predicate](https://docs.microsoft.com/en-us/dotnet/api/system.predicate-1?view=net-5.0) is true for _every_ element in the given array. <br />
 
 ```C#
 //An array of 4 palindromes, and one non (nonchalant)
