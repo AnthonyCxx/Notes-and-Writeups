@@ -18,3 +18,46 @@ var NameAndDigit = new Tuple<string, int, string, int, string, int>("one", 1, "t
 > For a tuple like this, you really should use a [dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0). I am just using this as an example of when to not write the whole type. <br />
 > Reference: [What is a Tuple?](https://www.tutorialsteacher.com/csharp/csharp-tuple) <br />
 > Reference: [C# Documentation: Var Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
+
+## Ref
+The _ref_ keyword 
+
+```C#
+//Declare a integer, 10
+int number = 10;
+
+//Calling by value (does nothing)
+Console.WriteLine($"Integer value BEFORE calling by value: {number}");
+
+IncrementIntegerByValue(number);
+
+Console.WriteLine($"Integer value AFTER calling by value: {number}");
+
+//Separator: newline
+Console.WriteLine("");
+
+//Calling by reference (affects the value in main)
+Console.WriteLine($"Integer value BEFORE calling by reference: {number}");
+
+IncrementIntegerByRef(ref number);
+
+Console.WriteLine($"Integer value AFTER calling by reference: {number}");
+
+
+//Increment integers - same implementation, but parameters are different
+static void IncrementIntegerByValue(int integer)
+{
+   integer++;
+}
+
+static void IncrementIntegerByRef(ref int integer)
+{
+   integer++;
+}
+```
+> Prints: <br />
+> Integer value BEFORE calling by value: 10 <br /> 
+> Integer value AFTER calling by value:  10 <br />
+>
+> Integer value BEFORE calling by reference: 10 <br />
+> Integer value AFTER calling by reference:  11 <br />
