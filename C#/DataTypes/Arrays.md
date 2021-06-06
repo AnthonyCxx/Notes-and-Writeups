@@ -428,7 +428,7 @@ onsole.WriteLine($"The lowest bound of the second array is: {jaggedArray[1].GetU
 > (this is practically impossible for tensors).
 
 ## .GetUpperBound
-The _.GetUpperBound(**_dimension_**) returns the highest index of the dimension specified (which is always 1 less than the amount of elements).
+The _.GetUpperBound(**_dimension_**)_ returns the highest index of the dimension specified (which is always 1 less than the amount of elements).
 ```C#
 //A jagged array that stores two, 1-dimensional arrays.
 int[][] jaggedArray = new int[2][];
