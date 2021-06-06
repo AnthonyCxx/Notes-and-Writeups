@@ -1,0 +1,3 @@
+- [Newtonsoft.Json](https://www.nuget.org/packages/newtonsoft.json/) - .json parsing
+- [Serilog](https://www.nuget.org/packages/serilog/) - logging tool
+- 
