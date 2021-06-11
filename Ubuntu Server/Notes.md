@@ -34,7 +34,7 @@ network:
 The command `sudo netplan --debug generate` will make sure that your indentation is correct.
 
 ### Step 3: Apply the Netplan
-Apply the configured netplan with `sudo netplan apply`
+Apply the configured netplan with `sudo netplan apply`.
 
 ### Step 4: Reboot the System
-Reboot: `sudo reboot`
+Reboot: `sudo reboot`.
