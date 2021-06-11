@@ -4,3 +4,4 @@
 
 ### Step 1: Edit the Netplan
 1. Edit the network configuration file _50-cloud-init.yaml_ (Path: _/etc/netplan/50-cloud-init.yaml_)
+> Make sure you use sudo. Do `sudo vim /etc/netplan/50-cloud-init.yaml`
