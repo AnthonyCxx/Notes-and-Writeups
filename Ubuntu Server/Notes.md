@@ -27,7 +27,14 @@ network:
                         password: "WiFi password goes here"
                 dhcp4: true
 ```
-> This the the proper setup most of the time, but sometimes it's not. Check [_here_](https://huobur.medium.com/how-to-setup-wifi-on-raspberry-pi-4-with-ubuntu-20-04-lts-64-bit-arm-server-ceb02303e49b) if it's not working for you.
+> YAML files are _heavily_ indent-based. Each indent here must be 4 spaces, not a tab. <br />
+> This the the proper setup most of the time, but sometimes it's not. Click [_here_](https://huobur.medium.com/how-to-setup-wifi-on-raspberry-pi-4-with-ubuntu-20-04-lts-64-bit-arm-server-ceb02303e49b) if it's not working for you.
 
-### Debug the Netplan
-The command ```sudo netplan --debug generate``` will make sure that your indentation is correct.
+### Step 2: Debug the Netplan
+The command `sudo netplan --debug generate` will make sure that your indentation is correct.
+
+### Step 3: Apply the Netplan
+Apply the configured netplan with `sudo netplan apply`
+
+### Step 4: Reboot the System
+Reboot: `sudo reboot`
