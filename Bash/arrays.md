@@ -8,7 +8,7 @@ ${#arr[@]}	     #Calculate array size
 arr[0]=3	       #Overwrite 1st element
 arr+=(4)	       #Append value(s)
 str=$(ls)	       #Save ls output as a string
-arr=( $(ls) )	   #Save ls output as an array of files
+arr=( `ls` )	   #Save ls output as an array of files
 ${arr[@]:s:n}	   #Retrieve n elements starting at index s
 ```
 > Shamelessly stolen from [Intro to Bash Arrays](https://opensource.com/article/18/5/you-dont-know-bash-intro-bash-arrays)
