@@ -59,7 +59,7 @@ These operators return a byte which is the result of the following manipulation.
 | /= | 2 | divides the value by itself and stores the result and then stores the result |
 | %= | 2 | takes the remainder of division by itself and the value and then stores the result |
 | &= | 2 | performs a bitwise _and_ and then stores the result |
-| |= | 2 | performs a bitwise _or_ and then stores the result |
+| \|= | 2 | performs a bitwise _or_ and then stores the result |
 | ^= | 2 | performs a bitwise _xor_ and then stores the result  |
 | >>= | 2 | performs a left shift and then stores the result |
 | <<= | 2 | performs a right shift and then stores the result |
