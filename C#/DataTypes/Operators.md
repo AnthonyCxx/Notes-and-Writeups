@@ -1,5 +1,5 @@
 # Operators in C#
-A list of the operators in C#, taken from [_The C# Language Reference: Operators_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/) amd [_TutorialsPoint: C# Operators_](https://www.tutorialspoint.com/csharp/csharp_operators.htm)
+A list of the operators in C#, taken from [_The C# Language Reference: Operators_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/) and [_TutorialsPoint: C# Operators_](https://www.tutorialspoint.com/csharp/csharp_operators.htm)
 
 ## Arithmetic Operators
 | Operator | Operands | Function |
