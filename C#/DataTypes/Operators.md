@@ -11,7 +11,7 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 | - (prefix) | 1 | returns the numeric negation of the number |
 | + | 2 | adds two numbers |
 | - | 2 | subtracts two numbers |
-| * | 2 | multiplies two numbers |
+| \* | 2 | multiplies two numbers |
 | / | 2 | divides two numbers |
 | % | 2 | returns the remainder of division |
 > Overloading an arithmetic operator implicitly overloads the corresponding compound assignment operator. You cannot explictly overload a compound assignment operator. ([reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators#operator-overloadability)) <br /> <br />
@@ -50,7 +50,22 @@ These operators return a byte which is the result of the following manipulation.
 | << | 2 | shifts the bits to the right by the amount of places of the left value |
 
 ## Assignment Operators
-> The _&_, _\|_, and _^_ operators affect each bit in the byte sequentially.
+| Operator | Operands | Function |
+| -------- | -------- | -------- | 
+| = | 2 | stores the right r-value into the left l-value ([lvalues vs rvalues](https://docs.microsoft.com/en-us/cpp/cpp/lvalues-and-rvalues-visual-cpp?view=msvc-160)) |
+| += | 2 | adds the value to itself and the value and then stores the result |
+| -= | 2 | subtracts the value from itself and the value and then stores the result |
+| \*= | 2 | multiplies the value by itself and the value and then stores the result |
+| /= | 2 | divides the value by itself and stores the result and then stores the result |
+| %= | 2 | takes the remainder of division by itself and the value and then stores the result |
+| &= | 2 | performs a bitwise _and_ and then stores the result |
+| |= | 2 | performs a bitwise _or_ and then stores the result |
+| ^= | 2 | performs a bitwise _xor_ and then stores the result  |
+| >>= | 2 | performs a left shift and then stores the result |
+| <<= | 2 | performs a right shift and then stores the result |
+> Even though it's C++, the article on lvalues and rvalues is still worth reading.
+
+## Miscellaneous Operators
 
 ## The Range Operator
 The range operator, _.._ , allows for referencing sections of collections by index.
