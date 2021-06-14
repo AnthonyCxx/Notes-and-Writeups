@@ -35,6 +35,7 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 | -------- | -------- | -------- |
 | && | 2 | returns true if both operands are true |
 | \|\| | 2 | returns true if at least one operand is true |
+| ^ | 2 | returns true if only 1 expression is true |
 | ! | 1 | negates the result of an expression |
 
 ## Bitwise and Shift Operators
