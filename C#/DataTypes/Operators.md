@@ -67,6 +67,8 @@ These operators return a byte which is the result of the following manipulation.
 > Even though it's C++, the article on lvalues and rvalues is still worth reading.
 
 ## Null Operators
+Often, these operators are used to avoid a [_NullReferenceException_](https://docs.microsoft.com/en-us/dotnet/api/system.nullreferenceexception?view=net-5.0).
+
 | Operator | Operands | Function |
 | -------- | -------- | -------- | 
 | ?? | binary | returns the first expression, unless it is [_null_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null) |
