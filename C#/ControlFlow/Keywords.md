@@ -71,3 +71,10 @@ begin_loop:
     for (int i = 0; i < 10; i++)   //print the numbers 0-9
     {
         Console.WriteLine(i);
+        
+        if (i == 5)
+            goto begin_loop;  //restart the loop
+    }
+```
+> Note: Spacing doesn't matter, so indenting the 'block' is irrelevant; however, you should still do it for sake of clarity as _goto_ statements can be difficult to read/find.
+
