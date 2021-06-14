@@ -121,7 +121,7 @@ Console.WriteLine(String.Join(", ", array[..^5]))   //prints '1, 2'
 > Reference: [C# Documentation: Ranges and Indices](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)
 
 ## Arrays with Values of Different Types
-Since C# has a [_unified type system_](https://stackoverflow.com/questions/4233112/what-is-a-unified-type-system), all datatypes, including primitive datetypes, have an underlying _object_ datatype that they inherit from. Using the _object_ type as the datatype for the array allows an array to have varying datatypes.
+Since C# has a [_unified type system_](https://stackoverflow.com/questions/4233112/what-is-a-unified-type-system), all datatypes, including primitive datatypes, have an underlying _object_ class that they inherit from. Using the _object_ type as the datatype for the array allows an array to have varying datatypes.
 ```C#
 object[] exampleArray = {"name", 10.5, 100};
             
