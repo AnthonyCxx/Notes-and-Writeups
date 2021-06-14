@@ -19,11 +19,11 @@
 | decimal | System.Decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 | _M_ or _m_ |
 > Note: Always use the uppercase literal suffixes, as they are clearer. <br />
 > Reference: [C# Documentation: Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) <br />
-> Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values)
+> Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values) <br />
 > Reference: [Literal Suffixes in C#](https://www.c-sharpcorner.com/article/data-type-suffixes-in-c-sharp/) <br />
 
 
 ## Notes
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
--  Instead of commas, C# uses underscores to separate digits (Ex. 1_000_000 == 1000000)
+-  Instead of commas, C# uses underscores to separate digits (Ex. 1_000_000 == 1000000) 
 - Strings use double quotation marks, and chars use single quotation marks
