@@ -17,7 +17,7 @@ for(delcaration; condition; update)
 ### Example
 ```C#
 //Prints "Hello, World!" five times
-for (int iterator = 0; iterator < 5; iterator++)  /Declaration, condition, and update statements
+for (int iterator = 0; iterator < 5; iterator++)  //Declaration, condition, and update statements
 {
   Console.WriteLine("Hello, World!");     //Body
 }
