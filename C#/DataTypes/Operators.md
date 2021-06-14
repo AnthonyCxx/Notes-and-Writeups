@@ -1,5 +1,5 @@
 # Operators in C#
-A list of the operators in C#, taken from [_The C# Language Reference: Operators_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/)
+A list of the operators in C#, taken from [_The C# Language Reference: Operators_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/) amd [_TutorialsPoint: C# Operators_](https://www.tutorialspoint.com/csharp/csharp_operators.htm)
 
 ## Arithmetic Operators
 | Operator | Operands | Function |
@@ -18,7 +18,7 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 > For [_floor division_](https://www.pythontutorial.net/advanced-python/python-floor-division/), just divide two integers (truncates the decimal). <br />
 > For exponents, use [_Math.Pow()_](https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=net-5.0). <br />
 
-## Comparison Operators
+## Relational Operators
 | Operator | Operands | Function |
 | -------- | -------- | -------- |
 | == | 2 | returns true if two values are equal |
@@ -33,22 +33,24 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 ## Boolean Logic Operators
 | Operator | Operands | Function |
 | -------- | -------- | -------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| && | 2 | returns true if both operands are true |
+| || | 2 | returns true if at least one operand is true |
+| ! | 1 | negates the result of an expression |
 
 ## Bitwise and Shift Operators
+These operators return a byte which is the result of the following manipulation.
+
 | Operator | Operands | Function |
 | -------- | -------- | -------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| & | 2 | for each bit, returns 1 if both bits are 1 |
+| | | 2 | for each bit, returns 1 if either or both bits are 1|
+| ^ | 2 | for each bit, returns 1 if and only if 1 bit is one, but not both |
+| ~ | 1 | performs a [1's complement](https://www.youtube.com/watch?v=lKTsv6iVxV4) (inverts the bits) |
+| >> | 2 | shifts the bits to the right by the amount of places of the right value |
+| << | 2 | shifts the bits to the right by the amount of places of the left value |
 
+## Assignment Operators
+> The _&_, _\|_, and _^_ operators affect each bit in the byte sequentially.
 
 ## The Range Operator
 The range operator, _.._ , allows for referencing sections of collections by index.
