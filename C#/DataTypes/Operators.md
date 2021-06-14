@@ -71,7 +71,7 @@ These operators return a byte which is the result of the following manipulation.
 | -------- | -------- | -------- | 
 | ?? | 2 | returns the first expression, unless it is [_null_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null) |
 | ?. | 1 | return null if null, otherwise returns the result of the expression |
-| ?\[\] | 1 | returns null if null, otherwise returns the value |
+| ?\[ \] | 1 | returns null if null, otherwise returns the value |
 | ??= | 2 | assign a value to the variable _if_ it is null |
 
 ## Miscellaneous Operators
