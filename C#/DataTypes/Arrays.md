@@ -62,7 +62,7 @@ jaggedArray[0] = new int[] { 1, 3, 5, 7, 9 };
 jaggedArray[1] = new int[] { 0, 2, 4, 6 };
 jaggedArray[2] = new int[] { 11, 22 };
 
-//Access the second element of the third array
+//Access the second element of the third array (22)
 Console.WriteLine($"The second element in the third array is: {jaggedArray[2][1]}");
 ```
 > Note: Instead of using standard multi-dimensional array syntax _\[2, 1\]_, here the sets of brackets are separate since they are different arrays. <br />
