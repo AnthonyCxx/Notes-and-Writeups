@@ -34,7 +34,7 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 | Operator | Operands | Function |
 | -------- | -------- | -------- |
 | && | 2 | returns true if both operands are true |
-| || | 2 | returns true if at least one operand is true |
+| \|\| | 2 | returns true if at least one operand is true |
 | ! | 1 | negates the result of an expression |
 
 ## Bitwise and Shift Operators
@@ -43,7 +43,7 @@ These operators return a byte which is the result of the following manipulation.
 | Operator | Operands | Function |
 | -------- | -------- | -------- |
 | & | 2 | for each bit, returns 1 if both bits are 1 |
-| | | 2 | for each bit, returns 1 if either or both bits are 1|
+| \| | 2 | for each bit, returns 1 if either or both bits are 1|
 | ^ | 2 | for each bit, returns 1 if and only if 1 bit is one, but not both |
 | ~ | 1 | performs a [1's complement](https://www.youtube.com/watch?v=lKTsv6iVxV4) (inverts the bits) |
 | >> | 2 | shifts the bits to the right by the amount of places of the right value |
