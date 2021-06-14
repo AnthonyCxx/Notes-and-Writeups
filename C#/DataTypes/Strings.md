@@ -9,9 +9,6 @@ This comes in extremely handy with Windows as Windows uses backslashes as a deli
 ```C#
 //Declaring a filepath
 string filepath = @"C:\Program Files";
-
-//Quoting someone
-Console.WriteLine("And they said "Next time, be more careful"");
 ```
 
 ### Interpolated Strings ($, { })
