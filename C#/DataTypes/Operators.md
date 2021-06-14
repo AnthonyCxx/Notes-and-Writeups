@@ -66,6 +66,11 @@ These operators return a byte which is the result of the following manipulation.
 > Even though it's C++, the article on lvalues and rvalues is still worth reading.
 
 ## Miscellaneous Operators
+| Operator | Operands | Function |
+| -------- | -------- | -------- | 
+| ? : | 3 | returns the first value if true and the second if false |
+> There are more operators that belong here. Refer to [this section](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#operator-precedence) of the C# documentation.
+
 
 ## The Range Operator
 The range operator, _.._ , allows for referencing sections of collections by index.
