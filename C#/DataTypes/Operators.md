@@ -6,21 +6,28 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 | -------- | -------- | -------- |
 | ++ (prefix) | 1 | increments by 1 _before_ the expression is evaluated |
 | ++ (postfix) | 1 | increments by 1 _after_ the expression is evaluated  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| -- (prefix) | 1 | decrements by 1 _before_ the expression is evaluated |
+| -- (postfix) | 1 | decrements by 1 _after_ the expression is evaluated |
+| - (prefix) | 1 | returns the numeric negation of the number |
+| + | 2 | adds two numbers |
+| - | 2 | subtracts two numbers |
+| * | 2 | multiplies two numbers |
+| / | 2 | divides two numbers |
+| % | 2 | returns the remainder of division |
+> For [_floor division_](https://www.pythontutorial.net/advanced-python/python-floor-division/), just divide two integers (truncates the decimal). <br />
+> For exponents, use [_Math.Pow()_](https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=net-5.0). <br />
 
 ## Comparison Operators
 | Operator | Operands | Function |
 | -------- | -------- | -------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| == | 2 | returns true if two values are equal |
+| != | 2 | returns true of the true values are not equal |
+| > | 2 | returns true if the left value is greater |
+| < | 2 | returns true if the right value is greater |
+| >= | 2 | returns true if the left value is greater or equal to right |
+| <= | 2 | returns true if the right value is greater or equal to the left |
+> You can remember the order of _>=_ and _<=_ by remembering that how you write them is how you read them. The symbol and then the equal sign. <br />
+> If you overload overload _>_, then you must also overload _<_. The same goes for _>=_ and _<=_ ([reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators#operator-overloadability)). <br />
 
 ## Boolean Logic Operators
 | Operator | Operands | Function |
