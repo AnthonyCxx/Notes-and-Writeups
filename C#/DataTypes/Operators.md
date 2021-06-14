@@ -27,8 +27,8 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 | < | 2 | returns true if the right value is greater |
 | >= | 2 | returns true if the left value is greater or equal to right |
 | <= | 2 | returns true if the right value is greater or equal to the left |
+> If you overload overload _>_, then you must also overload _<_. The same goes for _>=_ and _<=_ ([reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators#operator-overloadability)). <br /> <br />
 > You can remember the order of _>=_ and _<=_ by remembering that how you write them is how you read them. The symbol and then the equal sign. <br />
-> If you overload overload _>_, then you must also overload _<_. The same goes for _>=_ and _<=_ ([reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators#operator-overloadability)). <br />
 
 ## Boolean Logic Operators
 | Operator | Operands | Function |
