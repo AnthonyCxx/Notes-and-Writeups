@@ -150,11 +150,14 @@ for (int i = 0; i <= 20; i++)
 ## Goto
 The _goto_ keyword moves the [instruction pointer](https://en.wikipedia.org/wiki/Program_counter) to another section of code on the stack. _Goto_ statements can jump
 _anywhere_ in the code, provided that it has been labeled (implicitly or explicitly). Because they can jump anywhere, _goto_ statements can quickly make code convoluted 
-and very difficult to read. It is generally advised not to use _goto_ statements only when necessary, if at all. Now, there is still some debate about how they should
+and very difficult to read. It is generally advised to use _goto_ statements only when necessary, if at all. Now, there is still some debate about how they should
 be used, but I argue that _goto_ statements should be used circumstantially, as there are times when they can improve code clarity or improve the efficiency of an 
-algorithm (source: [Donald Knuth: Structured Programming with _goto_ Statements](https://www.scribd.com/document/38873257/Knuth-1974-Structured-Programming-With-Go-to-Statements)
+algorithm (source: [Donald Knuth: Structured Programming with _goto_ Statements](https://www.scribd.com/document/38873257/Knuth-1974-Structured-Programming-With-Go-to-Statements)).
+> As you should always have both sides, here is a [A Case Against Goto Statements](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF).
 
 ### Fall-through Behavior with _goto_
+_Goto_ statements are often used to allow for [fall-through behavior](https://stackoverflow.com/questions/6545720/does-anyone-still-use-goto-in-c-sharp-and-if-so-why) (the ability for a _switch_ statement to trigger multiple cases).
+
 ```C#
 int integer = 0;
 
