@@ -1,4 +1,46 @@
 # Operators in C#
+A list of the operators in C#, taken from [_The C# Language Reference: Operators_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/)
+
+## Arithmetic Operators
+| Operator | Operands | Function |
+| -------- | -------- | -------- |
+| ++ (prefix) | 1 | increments by 1 _before_ the expression is evaluated |
+| ++ (postfix) | 1 | increments by 1 _after_ the expression is evaluated  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+## Comparison Operators
+| Operator | Operands | Function |
+| -------- | -------- | -------- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+## Boolean Logic Operators
+| Operator | Operands | Function |
+| -------- | -------- | -------- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+## Bitwise and Shift Operators
+| Operator | Operands | Function |
+| -------- | -------- | -------- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
 
 ## The Range Operator
 The range operator, _.._ , allows for referencing sections of collections by index.
