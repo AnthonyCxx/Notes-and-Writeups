@@ -19,5 +19,5 @@ Naturally, these notes are in no way comprehensive. <br />
 [Other .NET Videos](https://www.youtube.com/c/dotNET/playlists) <br />
 
 ## Other Good Resouces
-- [Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264)
-- [Caleb Curry's C# Tutorial for Beginners](https://www.youtube.com/watch?v=qOruiBrXlAw&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC)
+[Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264) <br />
+[Caleb Curry's C# Tutorial for Beginners](https://www.youtube.com/watch?v=qOruiBrXlAw&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC) <br />
