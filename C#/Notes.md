@@ -63,7 +63,7 @@ class HelloWorld
 {
     //Main Function
     static void Main(string[] args)   //'Main' method is static, so you do not have to have an
-    {                                //instanceoof the 'HelloWorld' class to be able to call it
+    {                                //instanceo of the 'HelloWorld' class to be able to call it
         //Program
         GreetUser("Jason");
     }
