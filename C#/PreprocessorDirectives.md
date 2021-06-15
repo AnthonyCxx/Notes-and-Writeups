@@ -52,7 +52,7 @@ The _#error_ and _#warning_ directives allow the user to manually create errors 
 
 ### Errors
 ```C#
-#error This program is not finished. Do not attempt to compile it
+#error This program is not finished. This warning prevents compilation.
 using System;
 
 namespace Main
@@ -84,7 +84,64 @@ namespace Main
 }
 ```
 
-## Miscellaneous Directives
+## Setting the Line
 
-### Line
-https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives
+### Manually Setting Lines
+The _#line \<integer\>_ directives manually sets the line number. All lines after that count from that number.
+```C#
+namespace Main
+{
+    class Program
+    {
+        static void Main()
+        {
+            #line 200
+            int integer = ;
+        }
+    }
+}
+```
+> Fails to compile. Error on line 200.
+
+### Hiding Lines
+Sections of code can be discounted by using the _#line hidden_ directive. <br /> <br />
+Note that "a #line hidden directive doesn't affect file names or line numbers in error reporting. That is, if the compiler finds an error in a hidden block, the compiler will report the current file name and line number of the error." (Reference: [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives))
+```C#
+namespace Main
+{
+    class Program
+    {
+        static void Main()
+        {
+            #line 200
+            int integer = 10;
+            #line hidden
+            double val = 20;
+            double val2 = 20;
+            double val3 = 20;
+            #line default
+            const decimal PI = 3.14M;
+        }
+    }
+}
+```
+> Here, the lines for the doubles are not counted.
+
+### Restoring Default Numbering
+Normal numbering can be resumed using the _#line default_ directive.
+```C#
+namespace Main
+{
+    class Program
+    {
+        static void Main()
+        {
+            #line 200
+            int integer = 10;
+            #line default
+            double val = ;
+        }
+    }
+}
+```
+> Fails to compile. Error on line 10 (double val = ;).
