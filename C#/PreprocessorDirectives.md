@@ -84,7 +84,7 @@ namespace Main
 }
 ```
 
-## Setting the Line
+## Editing Line Numbers
 
 ### Manually Setting Lines
 The _#line \<integer\>_ directives manually sets the line number. All lines after that count from that number.
