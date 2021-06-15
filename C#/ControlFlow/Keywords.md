@@ -36,7 +36,7 @@ _anywhere_ in the code, provided that it has been labeled (implicitly or explici
 and very difficult to read. It is generally advised to use _goto_ statements only when necessary, if at all. Now, there is still some debate about how they should
 be used, but I argue that _goto_ statements should be used circumstantially, as there are times when they can improve code clarity or improve the efficiency of an 
 algorithm.
-> Here is an article worth reading, regardless of its age: [Donald Knuth: Structured Programming with _goto_ Statements](https://www.scribd.com/document/38873257/Knuth-1974-Structured-Programming-With-Go-to-Statements) <br />
+> Here is an article worth reading, regardless of its age: [Donald Knuth: Structured Programming with _goto_ Statements](https://www.scribd.com/document/38873257/Knuth-1974-Structured-Programming-With-Go-to-Statements). Keep in mind that this was written in a time when programming languages lacked good structure, and _goto_ statements were often the only option for unconditional jumps. Nowadays, this is not true. <br />
 > As you should always have both sides, here is a [A Case Against Goto Statements](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF).
 
 ### Fall-through Behavior with _goto_
