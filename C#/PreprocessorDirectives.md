@@ -46,3 +46,45 @@ namespace Main_Function
 #endif      //End the 'if' block
 ```
 > In this case, it doesn't make much sense to include the guards since this snippet contains the main function; normally, it would be used in other files.
+
+## Errors/Warnings
+The _#error_ and _#warning_ directives allow the user to manually create errors and warnings.
+
+### Errors
+```C#
+#error This program is not finished. Do not attempt to compile it
+using System;
+
+namespace Main
+{
+    class Program
+    {
+        static void Main()
+        {
+           //Code
+        }
+    }
+}
+```
+
+### Warnings
+```C#
+#warning I have not finished the exception handling for this section. Careful.
+using System;
+
+namespace Main
+{
+    class Program
+    {
+        static void Main()
+        {
+           //Code
+        }
+    }
+}
+```
+
+## Miscellaneous Directives
+
+### Line
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives
