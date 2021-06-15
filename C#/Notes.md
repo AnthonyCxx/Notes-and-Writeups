@@ -62,8 +62,8 @@ using System;    //This part is optional -- it's 'using namespace std;' in C++
 class HelloWorld
 {
     //Main Function
-    static void Main(string[] args)
-    {
+    static void Main(string[] args)   //'Main' method is static, so you do not have to have an
+    {                                //instanceoof the 'HelloWorld' class to be able to call it
         //Program
         GreetUser("Jason");
     }
