@@ -3,7 +3,7 @@ This is not a full list of preprocessor directives. I only intend to highlight t
 For a full list, look [here](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives).
 
 ## Conditionals
-The _#if_, _#elif_, _#else_, and _#endif_ preprocesor directives regulate whether code should be complied or not. 
+The _#if_, _#elif_, _#else_, and _#endif_ preprocesor directives regulate whether sections of code should be complied or not. 
 Often, an _#if !\<expression\>_, _#define \<expression\>_, _#endif_ structure is used to prevent code from being compiled more than once if it is included in multiple files.
 This technique has been replaced with _#prgama once_ nowadays.
 
