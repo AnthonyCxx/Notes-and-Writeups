@@ -44,7 +44,8 @@ namespace Main
 
 
 // ******************* ITEM CLASS ************************ \\
-class Item
+//Access modifier, 'class' keyword, and then the class name (identifier)
+public class Item
 { 
     //Fields (date members), should always have a prepended underscore
     private string _name { get; set; }     //a private string which can be read and written
@@ -88,7 +89,18 @@ class Item
 ```
 
 # Fields
-A field is a 
+A field is a data member of a class. Data members are often private (only accessible internally) and are always denoted with a prepended underscore when private.
+```C#
+public class HouseAddress
+{
+    //These data members are public to avoid needing a property to access it
+    public string street;
+    public string town;
+    public string state;
+    public int zipcode;
+}
+```
+> These data members (treetName, town, do not have values yet. Values are typically assigned by a [onstructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)
 
 ## Default Values
 
@@ -99,7 +111,7 @@ A field is a
 # Events
 
 # Access Modifiers
-### Public
+## Public
 
 ## Private
 
