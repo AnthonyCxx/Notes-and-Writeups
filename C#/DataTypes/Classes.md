@@ -16,8 +16,8 @@ class ClassName
 class Item
 {
     //Data Members
-    public int ItemID;
-    public string Name;
+    public int ItemID { get; set; }
+    public string Name { get; set; }
     
     //Constructor (a special member function, shares the name of the class)
     public Item(int id, string itemName)
