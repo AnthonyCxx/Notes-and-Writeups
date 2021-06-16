@@ -203,7 +203,10 @@ static void Main(string[] args)
 
 public class Package
 {
+    //Private fields: the length, width, and height of the package
     private double _length, _width, _height;
+
+    //** Public Properties **\\
 
     public double Length
     {
@@ -225,15 +228,23 @@ public class Package
 
     public double Area
     {
-        get => _height * _width * _length;
+        get => FindArea();
     }
 
-    public Package(double length, double width, double height)
+    //Constructor (default and parameterized)
+    public Package(double length = 0, double width = 0, double height = 0)
     {
         _length = length;
         _width = width;
         _height = height;
     }
+    
+    //An unnecessary private method - used to show how 'get' accessors can use expressions
+    private double FindArea()
+    {
+        return _length * _width * _height;  //calculates and returns the area
+    }
+   
 }
 ```
 
