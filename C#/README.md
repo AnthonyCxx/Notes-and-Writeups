@@ -1,4 +1,4 @@
-# Reference Notes for C#
+# Reference Notes for C# 9.0
 The majority of the information here comes straight from the [.NET Microsoft Official Documentation](https://docs.microsoft.com/en-us/dotnet/api/system?view=net-5.0) and [Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264). <br />
 All I've done is synthesize the most relevant aspects of C# and provide some code snippets to make an easy reference for myself and others. <br />
 
