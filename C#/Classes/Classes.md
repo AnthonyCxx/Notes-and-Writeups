@@ -108,13 +108,69 @@ A property allows for accessing/changing private or protected data members. Alth
 it's best if you think of them as public data members that give guided access to a class's private data members by  regulating how other code interacts with them.
 Properties should share the same datatype as the private data member they regulate.
 ```C#
+using System;
+
+namespace Project
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            //Declare a new house address
+            var address = new HouseAddress();
+
+            //Set all the members
+            address.Street = "7198 W. Southampton St.";
+            address.City = "Cleveland";
+            address.State = "Tennessee";
+            address.Zipcode = 37312;
+
+            //Print the full address
+            Console.WriteLine(address.FullAddress);
+        }
+    }
+}
 public class HouseAddress
 {
-    //These data members are public to avoid needing a property to access it
-    public string street; 
-    public string town;
-    public string state; 
-    public int zipcode;
+    //These data members are private (so they have an underscore)
+    private string _street;
+    private string _city;
+    private string _state;
+    private int _zipcode;
+
+    //Property for _street
+    public string Street
+    {
+        get { return _street; }
+        set { _street = value; }
+    }
+
+    //Property for _city
+    public string City
+    {
+        get { return _city; }
+        set { _city = value; }
+    }
+
+    //Property for _state
+    public string State
+    {
+        get { return _state; }
+        set { _state = value; }
+    }
+
+    //Property for _zipcode
+    public int Zipcode
+    {
+        get { return _zipcode; }
+        set { _zipcode = value; }
+    }
+
+    //A  custom read-only property - returns the full address
+    public string FullAddress
+    { 
+        get { return $"{_street}, {_city}, {_state} {_zipcode}"; }
+    }
 }
 ```
 
