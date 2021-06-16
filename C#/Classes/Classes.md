@@ -249,7 +249,34 @@ public class Package
 ```
 
 ## Auto-Implemented Properties
-The keywords _get_, _set_, and _init_ can be used to modify how a ...
+Since fields and their accessors always come in pairs, C# has a feature named 'auto-implented properties' that allows you to declare a property and imply both
+the accessors and the private field. Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. <br /> <br />
+
+Though convenient, auto-implemented properties may not always be the way to go because they also eliminate the ability to access the private fields outside 
+of the public properties and prevent any doing anything out of a simple _get_, _set_, or _init_ method.
+
+```C#
+static void Main(string[] args)
+{
+    var iPhone = new Phone("Apple iPhone 7 Plus", "+1-202-555-0188");
+
+    Console.WriteLine($"Phone Model: {iPhone.Model}");
+    Console.WriteLine($"Phone Number: {iPhone.Number}");
+}
+
+public class Phone
+{
+    //Auto-implemented properties -- imply the private fields
+    public string Model { get; init; }
+    public string Number { get; set; }
+
+    public Phone(string phone_model = "unknown", string phone_number = "unknown")
+    {
+        Model  = phone_model;
+        Number = phone_number;
+    }
+}
+```
 
 ## Access Modifiers and Property Accessors
 
