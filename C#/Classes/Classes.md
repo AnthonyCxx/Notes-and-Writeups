@@ -99,37 +99,31 @@ public class Shoes
 ### _Set_ Property Accessor
 
 ```C#
-using System;
-
-namespace Project
+static void Main(string[] args)
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            //Declare a new house address (street address, city, state, and zipcode)
-            var address = new HouseAddress("7198 W. Southampton St.", "Cleveland", "Tennessee", "37312");
+    //Declare a new house address (street address, city, state, and zipcode)
+    var address = new HouseAddress("7198 W. Southampton St.", "Cleveland", "Tennessee", "37312");
 
-            //Access the private data members using public properties
-            Console.WriteLine($"Street address: {address.Street}");
-            Console.WriteLine($"City: {address.City}");
-            Console.WriteLine($"State: {address.State}");
-            Console.WriteLine($"Zipcode: {address.Zipcode}");
+    //Access the private data members using public properties
+    Console.WriteLine($"Street address: {address.Street}");
+    Console.WriteLine($"City: {address.City}");
+    Console.WriteLine($"State: {address.State}");
+    Console.WriteLine($"Zipcode: {address.Zipcode}");
 
-            //Print the full address (7198 W. Southampton St., Cleveland, Tennessee 37312)
-            Console.WriteLine(address.FullAddress);
+    //Print the full address (7198 W. Southampton St., Cleveland, Tennessee 37312)
+    Console.WriteLine(address.FullAddress);
                       
-            //Changing the house address (via public accessors)
-            address.Street = "4217 Roane Avenue";
-            address.City = "Hughesville";
-            address.State = "Maryland";
-            address.Zipcode = "20637";
+    //Changing the house address (via public accessors)
+    address.Street = "4217 Roane Avenue";
+    address.City = "Hughesville";
+    address.State = "Maryland";
+    address.Zipcode = "20637";
 
-            //Print the new full address (4217 Roane Avenue, Hughesville, Maryland 20637)
-            Console.WriteLine(address.FullAddress);
-        }
-    }
+    //Print the new full address (4217 Roane Avenue, Hughesville, Maryland 20637)
+    Console.WriteLine(address.FullAddress);
 }
+
+
 public class HouseAddress
 {
     //These data members are private (so they have an underscore)
