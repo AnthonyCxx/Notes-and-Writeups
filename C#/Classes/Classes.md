@@ -256,7 +256,7 @@ public class HouseAddress
 ```
 > Reference: [C# Documentation: Value Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) <br />
 > Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
-> > Note: 7198 W. Southampton St., Cleveland, Tennessee 37312 is a made-up address. <br />
+> Note: 7198 W. Southampton St., Cleveland, Tennessee 37312 is a made-up address. <br />
 
 ### _Init_ Property Accessor
 An _init_ accessor performs the same function as a _set_ accessor, except the value can only be set during initialization. After that,
