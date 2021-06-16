@@ -48,8 +48,8 @@ namespace Main
 public class Item
 { 
     //Fields (date members), should always have a prepended underscore
-    private string _name { get; set; }     //a private string which can be read and written
-    private int _id { get; set; }          //a private integer which can be read and written
+    private string _name;    //a private string, accessible through the 'Name' property
+    private int _id;         //a private integer, accessible through the 'ID' property
 
     //A public-facing property, used to define how the 'name' variable is read and written
     public string Name
