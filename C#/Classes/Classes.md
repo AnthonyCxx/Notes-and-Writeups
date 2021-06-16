@@ -119,7 +119,7 @@ namespace Project
             //Declare a new house address
             var address = new HouseAddress();
 
-            //Set all the members
+            //Set all the members using the public properties
             address.Street = "7198 W. Southampton St.";
             address.City = "Cleveland";
             address.State = "Tennessee";
@@ -138,28 +138,28 @@ public class HouseAddress
     private string _state;
     private int _zipcode;
 
-    //Property for _street
+    //Property for _street (read and write)
     public string Street
     {
         get { return _street; }
         set { _street = value; }
     }
 
-    //Property for _city
+    //Property for _city (read and write)
     public string City
     {
         get { return _city; }
         set { _city = value; }
     }
 
-    //Property for _state
+    //Property for _state (read and write)
     public string State
     {
         get { return _state; }
         set { _state = value; }
     }
 
-    //Property for _zipcode
+    //Property for _zipcode (read and write)
     public int Zipcode
     {
         get { return _zipcode; }
