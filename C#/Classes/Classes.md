@@ -13,6 +13,7 @@ class ClassName
 
 ### Example
 ```C#
+// **************  MAIN CLASS ***************** \\
 using System;
 
 namespace Main
@@ -36,12 +37,13 @@ namespace Main
     }
 }
 
-//'Item' class declaration
+
+// ******************* ITEM CLASS ************************ \\
 class Item
 { 
     //Data members (should always have a prepended underscore)
     private string _name { get; set; }     //a private string which can be read and written
-    private int _id { get; set; }          //a private string which can be read and written
+    private int _id { get; set; }          //a private integer which can be read and written
 
     //A public-facing property, used to define how the 'name' variable is read and written
     public string Name
@@ -62,7 +64,7 @@ class Item
     {
         //Set both data members to blank
         _name = "";
-        _id   = 0;
+        _id   = -1;
     }
 
     //Parameterized constructor
