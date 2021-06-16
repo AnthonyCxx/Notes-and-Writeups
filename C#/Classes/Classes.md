@@ -185,28 +185,20 @@ An _init_ accessor performs the same function as a _set_ accessor, except the va
 the variable becomes read-only.
 
 ```C#
-using System;
-
-namespace Example
+static void Main(string[] args)
 {
-    class ExampleClass
-    {
-        static void Main(string[] args)
-        {
-            //Declare a new 'Package' object
-            var package = new Package(5, 4, 8);
+    //Declare a new 'Package' object
+    var package = new Package(5, 4, 8);  // (length, width, height)
 
-            //Testing the public accessors
-            Console.WriteLine($"Package Length: {package.Length}");
-            Console.WriteLine($"Package Width: {package.Width}");
-            Console.WriteLine($"Package Height: {package.Height}");
+    //Testing the public accessors
+    Console.WriteLine($"Package Length: {package.Length}");
+    Console.WriteLine($"Package Width: {package.Width}");
+    Console.WriteLine($"Package Height: {package.Height}");
 
-            //Testing the read-only 'Area' 
-            Console.WriteLine($"Area of the Package: {package.Area}");
+    //Testing the read-only 'Area' 
+    Console.WriteLine($"Area of the Package: {package.Area}");
 
-            package.Length = 10;  //Error! _length can only be set during 
-        }
-    }
+    package.Length = 10;  //Error! _length can only be set during 
 }
 
 public class Package
