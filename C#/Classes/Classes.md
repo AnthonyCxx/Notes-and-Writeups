@@ -198,7 +198,7 @@ static void Main(string[] args)
     //Testing the read-only 'Area' 
     Console.WriteLine($"Area of the Package: {package.Area}");
 
-    package.Length = 10;  //Error! _length can only be set during 
+    package.Length = 10;  //Error! _length can only be set during initialization
 }
 
 public class Package
