@@ -105,7 +105,15 @@ public class HouseAddress
 
 # Properties
 A property allows for accessing/changing private or protected data members. Although properties are technically special methods (similarly to how lambdas are functors), 
-it's best if you think of them as public data members that give guided access to a class's private data members by regulating how other code interacts with them.
+it's best if you think of them as public data members that give guided access to a class's private data members by regulating how other code interacts with them. <br /> <br />
+
+## The _get_, _set_, and _init_ methods
+
+### _Get_ Methods
+
+### _Set_ Methods
+
+### _Init_ Methods
 
 ```C#
 using System;
