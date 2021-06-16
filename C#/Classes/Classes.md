@@ -173,6 +173,7 @@ public class HouseAddress
     }
 }
 ```
+> Note: 7198 W. Southampton St., Cleveland, Tennessee 37312 is a made-up address.
 
 # Methods
 
