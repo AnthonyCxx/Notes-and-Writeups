@@ -166,7 +166,7 @@ public class HouseAddress
         set { _zipcode = value; }
     }
 
-    //A  custom read-only property - returns the full address
+    //A custom read-only property - returns the full address
     public string FullAddress
     { 
         get { return $"{_street}, {_city}, {_state} {_zipcode}"; }
