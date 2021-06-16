@@ -7,23 +7,66 @@ class ClassName
 {
     //Data members
     
-    //Function members
+    //Function members (methods)
 }
 ```
 
 ### Example
 ```C#
-class Item
+using System;
+
+namespace Main
 {
-    //Data Members
-    public int ItemID { get; set; }
-    public string Name { get; set; }
-    
-    //Constructor (a special member function, shares the name of the class)
-    public Item(int id, string itemName)
+    class Program
     {
-        this.ItemID = id;
-          this.Name = itemName;
+        static void Main()
+        {
+            Item backpack = new Item("Backpack", 100);
+            backpack.Info();
+
+            backpack.ID = 2000;
+
+            backpack.Info();
+        }
+    }
+}
+
+class Item
+{ 
+    //Data members
+    private string name { get; set; }
+    private int id { get; set; }
+
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    public int ID
+    {
+        get { return id; }
+        set { id = value; }
+    }
+
+    //Default Constructor
+    public Item()
+    {
+        name = "";
+        id   = 0;
+    }
+
+    //Parameterized constructor
+    public Item(string item_name, int item_id)
+    {
+        name = item_name;
+        id   = item_id;
+    }
+
+    //Example method -- no return value (void)
+    public void Info()
+    {
+        Console.WriteLine($"Item: {name}, ID: {id}");
     }
 }
 ```
