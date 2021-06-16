@@ -112,7 +112,10 @@ The _get_, _set_, and _init_ property accessors.
 
 ### Property Accessor Format
 ```C#
-public <datatype>
+public <dataType> <name>
+{
+    //accessors
+}
 ```
 
 ### Property Accessor Example
