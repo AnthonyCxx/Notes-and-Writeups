@@ -5,9 +5,13 @@ A class is a custom data type, which is composed of fields, properties, methods,
 ```C#
 class ClassName
 {
-    //Data members
+    //Fields
     
-    //Function members (methods)
+    //Properties
+    
+    //Methods
+    
+    //Events
 }
 ```
 > For C++ devs: note the lack of a semi-colon after the class declaration.
