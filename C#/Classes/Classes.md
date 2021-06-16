@@ -132,6 +132,8 @@ static void Main(string[] args)
 {
     var shoes = new Shoes("black", "Nike");
     Console.WriteLine($"The {shoes.Brand} shoes are {shoes.Color}.");
+    
+    shoes.Color = "Blue";   //Error! The 'Color' accessor only supports 'get' functions
 }
 
 public class Shoes
