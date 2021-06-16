@@ -89,7 +89,7 @@ public class Item
 ```
 
 # Fields
-A field is a data member of a class. Data members are often private (only accessible internally) and are always denoted with a prepended underscore when private.
+A field is a data member of a class. Data members are almost always private (only accessible internally) and are always denoted with a prepended underscore when private.
 ```C#
 public class HouseAddress
 {
