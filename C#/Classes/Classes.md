@@ -125,7 +125,7 @@ namespace Project
             address.State = "Tennessee";
             address.Zipcode = 37312;
 
-            //Print the full address
+            //Print the full address (7198 W. Southampton St., Cleveland, Tennessee 37312)
             Console.WriteLine(address.FullAddress);
         }
     }
