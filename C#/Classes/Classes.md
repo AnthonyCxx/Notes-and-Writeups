@@ -88,6 +88,7 @@ class Item
 ```
 
 ## Fields
+A field is a 
 
 ### Default Values
 
@@ -96,4 +97,11 @@ class Item
 ## Methods
 
 ## Events
+
+## Access Modifiers
+### Public
+
+### Private
+
+### Protected
 
