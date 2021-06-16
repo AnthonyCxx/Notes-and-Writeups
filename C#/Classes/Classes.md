@@ -108,6 +108,7 @@ A property allows for accessing/changing private or protected data members. Alth
 it's best if you think of them as public data members that give guided access to a class's private data members by regulating how other code interacts with them. <br /> <br />
 
 ## The _get_, _set_, and _init_ methods
+The _get_, _set_, and _init_ property accessors
 
 ### _Get_ Methods
 
