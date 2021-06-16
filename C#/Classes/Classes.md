@@ -105,8 +105,8 @@ public class HouseAddress
 
 # Properties
 A property allows for accessing/changing private or protected data members. Although properties are technically special methods (similarly to how lambdas are functors), 
-it's best if you think of them as public data members that give guided access to a class's private data members by  regulating how other code interacts with them.
-Properties should share the same datatype as the private data member they regulate.
+it's best if you think of them as public data members that give guided access to a class's private data members by regulating how other code interacts with them.
+
 ```C#
 using System;
 
