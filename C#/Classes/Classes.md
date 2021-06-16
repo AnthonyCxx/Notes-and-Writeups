@@ -94,19 +94,21 @@ A field is a data member of a class. Data members are often private (only access
 public class HouseAddress
 {
     //These data members are public to avoid needing a property to access it
-    public string street;
+    public string street; 
     public string town;
-    public string state;
+    public string state; 
     public int zipcode;
 }
 ```
-> These data members (treetName, town, do not have values yet. Values are typically assigned by a [onstructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors)
-
-## Default Values
+> These data members (treetName, town, etc.) do not have values yet. Values are typically assigned by a [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors). <br /> <br />
+> Any member (field, property, method, or event) can be accessed by putting a period after the object name and then putting the name of the member.
 
 # Properties
 
+
 # Methods
+
+## Static Methods
 
 # Events
 
