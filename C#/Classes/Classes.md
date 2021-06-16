@@ -1,5 +1,5 @@
 # Classes in C#
-A class is a custom data type, which is composed of fields, properties, methods, . All classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) and thus heap-allocated.
+A class is a custom data type, which is composed of fields, properties, methods, and events. All classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) and thus heap-allocated.
 
 ## Format
 ```C#
