@@ -42,7 +42,7 @@ namespace Main
 // ******************* ITEM CLASS ************************ \\
 class Item
 { 
-    //Data members (should always have a prepended underscore)
+    //Fields (date members), should always have a prepended underscore
     private string _name { get; set; }     //a private string which can be read and written
     private int _id { get; set; }          //a private integer which can be read and written
 
@@ -60,7 +60,7 @@ class Item
         set { _id = value; }
     }
 
-    //Default Constructor
+    //Default Constructor (a special method)
     public Item()
     {
         //Set both data members to blank
@@ -68,7 +68,7 @@ class Item
         _id   = -1;
     }
 
-    //Parameterized constructor
+    //Parameterized constructor (a special method)
     public Item(string item_name, int item_id)
     {
         _name = item_name;
@@ -100,5 +100,13 @@ class DummyClass      //Name classes using PascalCase
 ```
 > Note: [What is PascalCase/camelCase?](https://techterms.com/definition/pascalcase)
 
+## Fields
 
-## Default Values
+### Default Values
+
+## Properties
+
+## Methods
+
+## Events
+
