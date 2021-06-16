@@ -242,7 +242,7 @@ public class Package
         _height = height;
     }
     
-    //An unnecessary private method - used to show how 'get' accessors can use expressions
+    //An unnecessary private method - used to show how accessors can use expressions
     private double FindArea()
     {
         return _length * _width * _height;  //calculates and returns the area
