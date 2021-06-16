@@ -33,7 +33,7 @@ namespace Main
             //Print the name and ID
             backpack.Info();
 
-            //Set the ID to 2000 using the public 'ID' property
+            //Set _id to 2000 using the public 'ID' property
             backpack.ID = 2000;
             
             //Show name and ID AFTER change
