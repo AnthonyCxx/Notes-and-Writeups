@@ -60,6 +60,7 @@ class Item
     //Default Constructor
     public Item()
     {
+        //Set both data members to blank
         _name = "";
         _id   = 0;
     }
@@ -74,7 +75,7 @@ class Item
     //Example method -- no return value (void)
     public void Info()
     {
-        Console.WriteLine($"Item: {_name}, ID: {_id}");
+        Console.WriteLine($"Item: {_name}, ID: {_id}");   //Prints "Item: <item>, ID: <id>"
     }
 }
 ```
