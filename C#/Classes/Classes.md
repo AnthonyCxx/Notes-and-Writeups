@@ -174,6 +174,8 @@ public class
 
 }
 ```
+> Refernce: [C# Documentation: Value Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) <br />
+> Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
 
 ### _Init_ Property Accessor
 
