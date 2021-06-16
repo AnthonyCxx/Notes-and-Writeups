@@ -129,23 +129,36 @@ The _get_ accessor returns a value when the property is called/accessed.
 ```C#
 static void Main(string[] args)
 {
-    var shoes = new Shoes("brown");
-    Console.WriteLine($"The shoes are {shoes.Color}.");
+    var shoes = new Shoes("black", "Nike");
+    Console.WriteLine($"The {shoes.Brand} shoes are {shoes.Color}.");
 }
 
 class Shoe
 {
     //private data member: the color of the shoes
     private string _color;  
+    private string _brand;
     
     //public accessor: returns the value of the private data member
-    public string Color { get { return _color; } }  
+    public string Color 
+    { 
+        get { return _color; } 
+    }  
+    
+    public string Brand
+    {
+        get => _brand;
+    }
     
     //Constructor
-    public Shoe(string color) { _color = color; }
+    public Shoe(string color, string brand) 
+    { 
+        _color = color; 
+        _brand = brand;
+    }
 }
 ```
-> Prints: "The shoes are brown."
+> Prints: "The Nike shoes are black."
 
 ### _Set_ Property Accessor
 
