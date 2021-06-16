@@ -1,7 +1,7 @@
 # Classes in C#
-A class is a custom data type, which is composed of data members member functions (methods).
+A class is a custom data type, which is composed of fields, properties, methods, . All classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) and thus heap-allocated.
 
-### Format
+## Format
 ```C#
 class ClassName
 {
@@ -10,8 +10,9 @@ class ClassName
     //Function members (methods)
 }
 ```
+> For C++ devs: note the lack of a semi-colon after the class declaration.
 
-### Example
+## Example
 ```C#
 // **************  MAIN CLASS ***************** \\
 using System;
@@ -82,7 +83,7 @@ class Item
 }
 ```
 
-### Conventions
+## Conventions
 Per [Microsoft's C# Coding Convention Guidelines](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions), always do the following:
 ```C#
 class DummyClass      //Name classes using PascalCase
@@ -98,3 +99,6 @@ class DummyClass      //Name classes using PascalCase
 }
 ```
 > Note: [What is PascalCase/camelCase?](https://techterms.com/definition/pascalcase)
+
+
+## Default Values
