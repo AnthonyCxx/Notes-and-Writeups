@@ -3,7 +3,7 @@ A class is a custom data type, which is composed of fields, properties, methods,
 
 ## Format
 ```C#
-class ClassName
+public class ClassName    //Note: Classes can be private or protected too
 {
     //Fields
     
