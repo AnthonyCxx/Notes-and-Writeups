@@ -104,7 +104,8 @@ public class HouseAddress
 > Any member (field, property, method, or event) can be accessed by putting a period after the object name and then putting the name of the member.
 
 # Properties
-
+A property allows for accessing/changing private or protected data members. Although properties are technically special methods (similarly to how lambdas are functors), 
+it's best if you think of them as public data members that regulate how other code interacts with the private data members of the class.
 
 # Methods
 
