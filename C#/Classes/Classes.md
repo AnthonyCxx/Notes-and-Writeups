@@ -100,7 +100,7 @@ public class HouseAddress
     public int zipcode;
 }
 ```
-> These data members (treetName, town, etc.) do not have values yet. Values are typically assigned by a [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors). <br /> <br />
+> These data members (street, town, etc.) do not have values yet. Values are typically assigned by a [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors). <br /> <br />
 > Any member (field, property, method, or event) can be accessed by putting a period after the object name and then putting the name of the member.
 
 # Properties
