@@ -175,6 +175,9 @@ public class HouseAddress
 ```
 > Note: 7198 W. Southampton St., Cleveland, Tennessee 37312 is a made-up address.
 
+## Auto-Implemented Properties
+The keywords _get_, _set_, and _init_ can be used to modify how a ...
+
 # Methods
 
 ## Static Methods
