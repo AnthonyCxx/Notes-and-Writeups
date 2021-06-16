@@ -21,52 +21,60 @@ namespace Main
     {
         static void Main()
         {
+            //Instantiate a backpack
             Item backpack = new Item("Backpack", 100);
+            
+            //Print the name and ID
             backpack.Info();
 
+            //Set the ID to 2000 using the public 'ID' property
             backpack.ID = 2000;
-
+            
+            //Show name and ID AFTER change
             backpack.Info();
         }
     }
 }
 
+//'Item' class declaration
 class Item
 { 
-    //Data members
-    private string name { get; set; }
-    private int id { get; set; }
+    //Data members (should always have a prepended underscore)
+    private string _name { get; set; }     //a privatestring which can be read and written
+    private int _id { get; set; }          //a private string which can be read and written
 
+    //A public-facing property, used to define how the 'name' variable is read and written
     public string Name
     {
-        get { return name; }
-        set { name = value; }
+        get { return _name; }
+        set { _name = value; }
     }
 
+    //A public-facing property, used to define how the 'id' variable is read and written
     public int ID
     {
-        get { return id; }
-        set { id = value; }
+        get { return _id; }
+        set { _id = value; }
     }
 
     //Default Constructor
     public Item()
     {
-        name = "";
-        id   = 0;
+        _name = "";
+        _id   = 0;
     }
 
     //Parameterized constructor
     public Item(string item_name, int item_id)
     {
-        name = item_name;
-        id   = item_id;
+        _name = item_name;
+        _id   = item_id;
     }
 
     //Example method -- no return value (void)
     public void Info()
     {
-        Console.WriteLine($"Item: {name}, ID: {id}");
+        Console.WriteLine($"Item: {_name}, ID: {_id}");
     }
 }
 ```
