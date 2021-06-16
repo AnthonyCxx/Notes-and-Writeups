@@ -133,7 +133,7 @@ static void Main(string[] args)
     Console.WriteLine($"The {shoes.Brand} shoes are {shoes.Color}.");
 }
 
-class Shoe
+public class Shoes
 {
     //private data member: the color of the shoes
     private string _color;  
@@ -145,13 +145,14 @@ class Shoe
         get { return _color; } 
     }  
     
+    //public accessor: returns the value of the private data member
     public string Brand
     {
-        get => _brand;
+        get => _brand;     //Using the 'body definition' operator (returns _brand)
     }
     
     //Constructor
-    public Shoe(string color, string brand) 
+    public Shoes(string color, string brand) 
     { 
         _color = color; 
         _brand = brand;
@@ -161,6 +162,18 @@ class Shoe
 > Prints: "The Nike shoes are black."
 
 ### _Set_ Property Accessor
+
+```C#
+static void Main(string[] args)
+{
+
+}
+
+public class
+{
+
+}
+```
 
 ### _Init_ Property Accessor
 
@@ -244,6 +257,8 @@ public class HouseAddress
 
 ## Auto-Implemented Properties
 The keywords _get_, _set_, and _init_ can be used to modify how a ...
+
+## Access Modifiers and Property Accessors
 
 # Methods
 
