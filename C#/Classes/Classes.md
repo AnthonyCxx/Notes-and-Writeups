@@ -189,6 +189,15 @@ namespace Project
 
             //Print the full address (7198 W. Southampton St., Cleveland, Tennessee 37312)
             Console.WriteLine(address.FullAddress);
+                      
+            //Changing the house address (via public accessors)
+            address.Street = "4217 Roane Avenue";
+            address.City = "Hughesville";
+            address.State = "Maryland";
+            address.Zipcode = "20637";
+
+            //Print the new full address (4217 Roane Avenue, Hughesville, Maryland 20637)
+            Console.WriteLine(address.FullAddress);
         }
     }
 }
