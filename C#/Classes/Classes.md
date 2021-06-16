@@ -116,14 +116,14 @@ namespace Project
     {
         static void Main(string[] args)
         {
-            //Declare a new house address
-            var address = new HouseAddress();
+            //Declare a new house address (street address, city, state, and zipcode)
+            var address = new HouseAddress("7198 W. Southampton St.", "Cleveland", "Tennessee", "37312");
 
-            //Set all the members using the public properties
-            address.Street = "7198 W. Southampton St.";
-            address.City = "Cleveland";
-            address.State = "Tennessee";
-            address.Zipcode = 37312;
+            //Access the private data members using public properties
+            Console.WriteLine($"Street address: {address.Street}");
+            Console.WriteLine($"City: {address.City}");
+            Console.WriteLine($"State: {address.State}");
+            Console.WriteLine($"Zipcode: {address.Zipcode}");
 
             //Print the full address (7198 W. Southampton St., Cleveland, Tennessee 37312)
             Console.WriteLine(address.FullAddress);
@@ -136,7 +136,7 @@ public class HouseAddress
     private string _street;
     private string _city;
     private string _state;
-    private int _zipcode;
+    private string _zipcode;
 
     //Property for _street (read and write)
     public string Street
@@ -160,7 +160,7 @@ public class HouseAddress
     }
 
     //Property for _zipcode (read and write)
-    public int Zipcode
+    public string Zipcode
     {
         get { return _zipcode; }
         set { _zipcode = value; }
@@ -168,8 +168,17 @@ public class HouseAddress
 
     //A custom read-only property - returns the full address
     public string FullAddress
-    { 
+    {
         get { return $"{_street}, {_city}, {_state} {_zipcode}"; }
+    }
+
+    //Constructor
+    public HouseAddress(string street, string city, string state, string zipcode)
+    {
+        _street = street;
+        _city = city;
+        _state = state;
+        _zipcode = zipcode;
     }
 }
 ```
