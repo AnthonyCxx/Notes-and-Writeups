@@ -40,7 +40,7 @@ namespace Main
 class Item
 { 
     //Data members (should always have a prepended underscore)
-    private string _name { get; set; }     //a privatestring which can be read and written
+    private string _name { get; set; }     //a private string which can be read and written
     private int _id { get; set; }          //a private string which can be read and written
 
     //A public-facing property, used to define how the 'name' variable is read and written
