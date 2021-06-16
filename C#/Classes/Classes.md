@@ -108,7 +108,21 @@ A property allows for accessing/changing private or protected data members. Alth
 it's best if you think of them as public data members that give guided access to a class's private data members by regulating how other code interacts with them. <br /> <br />
 
 ## Property Accessors
-The _get_, _set_, and _init_ property accessors
+The _get_, _set_, and _init_ property accessors.
+
+### Property Accessor Format
+```C#
+public <datatype>
+```
+
+### Property Accessor Example
+```C#
+public double Speed
+{
+    get => _speed;
+    set => _speed;
+}
+```
 
 ### _Get_ Property Accessor
 The _get_ accessor returns a value when the property is called/accessed.
