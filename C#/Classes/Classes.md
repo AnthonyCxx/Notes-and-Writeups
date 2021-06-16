@@ -170,89 +170,6 @@ public class Shoes
 ### _Set_ Property Accessor
 
 ```C#
-static void Main(string[] args)
-{
-
-}
-
-public class
-{
-
-}
-```
-> Reference: [C# Documentation: Value Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) <br />
-> Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
-
-### _Init_ Property Accessor
-An _init_ accessor performs the same function as a _set_ accessor, except the value can only be set during initialization. After that,
-the variable becomes read-only.
-
-```C#
-static void Main(string[] args)
-{
-    //Declare a new 'Package' object
-    var package = new Package(5, 4, 8);  // (length, width, height)
-
-    //Testing the public accessors
-    Console.WriteLine($"Package Length: {package.Length}");
-    Console.WriteLine($"Package Width: {package.Width}");
-    Console.WriteLine($"Package Height: {package.Height}");
-
-    //Testing the read-only 'Area' 
-    Console.WriteLine($"Area of the Package: {package.Area}");
-
-    package.Length = 10;  //Error! _length can only be set during initialization
-}
-
-public class Package
-{
-    //Private fields: the length, width, and height of the package
-    private double _length, _width, _height;
-
-    //** Public Properties **\\
-
-    public double Length
-    {
-        get { return _length; }
-        init { _length = value; }
-    }
-
-    public double Width
-    {
-        get { return _width;  }
-        init { _width = value; }
-    }
-
-    public double Height
-    {
-        get => _height;    //Using the 'body expression' operator
-        init => _height = value;
-    }
-
-    public double Area
-    {
-        get => FindArea();
-    }
-
-    //Constructor (default and parameterized)
-    public Package(double length = 0, double width = 0, double height = 0)
-    {
-        _length = length;
-        _width = width;
-        _height = height;
-    }
-    
-    //An unnecessary private method - used to show how accessors can use expressions
-    private double FindArea()
-    {
-        return _length * _width * _height;  //calculates and returns the area
-    }
-   
-}
-```
-
-### Example
-```C#
 using System;
 
 namespace Project
@@ -327,7 +244,77 @@ public class HouseAddress
     }
 }
 ```
-> Note: 7198 W. Southampton St., Cleveland, Tennessee 37312 is a made-up address.
+> Reference: [C# Documentation: Value Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) <br />
+> Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
+> > Note: 7198 W. Southampton St., Cleveland, Tennessee 37312 is a made-up address. <br />
+
+### _Init_ Property Accessor
+An _init_ accessor performs the same function as a _set_ accessor, except the value can only be set during initialization. After that,
+the variable becomes read-only.
+
+```C#
+static void Main(string[] args)
+{
+    //Declare a new 'Package' object
+    var package = new Package(5, 4, 8);  // (length, width, height)
+
+    //Testing the public accessors
+    Console.WriteLine($"Package Length: {package.Length}");
+    Console.WriteLine($"Package Width: {package.Width}");
+    Console.WriteLine($"Package Height: {package.Height}");
+
+    //Testing the read-only 'Area' 
+    Console.WriteLine($"Area of the Package: {package.Area}");
+
+    package.Length = 10;  //Error! _length can only be set during initialization
+}
+
+public class Package
+{
+    //Private fields: the length, width, and height of the package
+    private double _length, _width, _height;
+
+    //** Public Properties **\\
+
+    public double Length
+    {
+        get { return _length; }
+        init { _length = value; }
+    }
+
+    public double Width
+    {
+        get { return _width;  }
+        init { _width = value; }
+    }
+
+    public double Height
+    {
+        get => _height;    //Using the 'body expression' operator
+        init => _height = value;
+    }
+
+    public double Area
+    {
+        get => FindArea();
+    }
+
+    //Constructor (default and parameterized)
+    public Package(double length = 0, double width = 0, double height = 0)
+    {
+        _length = length;
+        _width = width;
+        _height = height;
+    }
+    
+    //An unnecessary private method - used to show how accessors can use expressions
+    private double FindArea()
+    {
+        return _length * _width * _height;  //calculates and returns the area
+    }
+   
+}
+```
 
 ## Auto-Implemented Properties
 The keywords _get_, _set_, and _init_ can be used to modify how a ...
