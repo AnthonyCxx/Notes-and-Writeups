@@ -181,6 +181,69 @@ public class
 > Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
 
 ### _Init_ Property Accessor
+An _init_ accessor performs the same function as a _set_ accessor, except the value can only be set during initialization. After that,
+the variable becomes read-only.
+
+```C#
+using System;
+
+namespace Example
+{
+    class ExampleClass
+    {
+        static void Main(string[] args)
+        {
+            //Declare a new 'Package' object
+            var package = new Package(5, 4, 8);
+
+            //Testing the public accessors
+            Console.WriteLine($"Package Length: {package.Length}");
+            Console.WriteLine($"Package Width: {package.Width}");
+            Console.WriteLine($"Package Height: {package.Height}");
+
+            //Testing the read-only 'Area' 
+            Console.WriteLine($"Area of the Package: {package.Area}");
+
+            package.Length = 10;  //Error! _length can only be set during 
+        }
+    }
+}
+
+public class Package
+{
+    private double _length, _width, _height;
+
+    public double Length
+    {
+        get { return _length; }
+        init { _length = value; }
+    }
+
+    public double Width
+    {
+        get { return _width;  }
+        init { _width = value; }
+    }
+
+    public double Height
+    {
+        get => _height;    //Using the 'body expression' operator
+        init => _height = value;
+    }
+
+    public double Area
+    {
+        get => _height * _width * _length;
+    }
+
+    public Package(double length, double width, double height)
+    {
+        _length = length;
+        _width = width;
+        _height = height;
+    }
+}
+```
 
 ### Example
 ```C#
