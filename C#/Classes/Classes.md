@@ -107,14 +107,35 @@ public class HouseAddress
 A property allows for accessing/changing private or protected data members. Although properties are technically special methods (similarly to how lambdas are functors), 
 it's best if you think of them as public data members that give guided access to a class's private data members by regulating how other code interacts with them. <br /> <br />
 
-## The _get_, _set_, and _init_ methods
+## Property Accessors
 The _get_, _set_, and _init_ property accessors
 
-### _Get_ Methods
+### _Get_ Property Accessor
+The _get_ accessor returns a value when the property is called/accessed.
+```C#
+static void Main(string[] args)
+{
+    var shoes = new Shoes("brown");
+    Console.WriteLine($"The shoes are {shoes.Color}.");
+}
 
-### _Set_ Methods
+class Shoe
+{
+    //private data member: the color of the shoes
+    private string _color;  
+    
+    //public accessor: returns the value of the private data member
+    public string Color { get { return _color; } }  
+    
+    //Constructor
+    public Shoe(string color) { _color = color; }
+}
+```
+> Prints: "The shoes are brown."
 
-### _Init_ Methods
+### _Set_ Property Accessor
+
+### _Init_ Property Accessor
 
 ### Example
 ```C#
