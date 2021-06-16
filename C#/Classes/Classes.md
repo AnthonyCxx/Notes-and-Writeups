@@ -120,9 +120,10 @@ public <datatype>
 public double Speed
 {
     get => _speed;
-    set => _speed;
+    set => _speed = value;
 }
 ```
+> Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
 
 ### _Get_ Property Accessor
 The _get_ accessor returns a value when the property is called/accessed.
