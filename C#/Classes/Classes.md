@@ -253,7 +253,7 @@ Since fields and their accessors always come in pairs, C# has a feature named 'a
 the accessors and the private field. Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. <br /> <br />
 
 Though convenient, auto-implemented properties may not always be the way to go because they also eliminate the ability to access the private fields outside 
-of the public properties and prevent any doing anything out of a simple _get_, _set_, or _init_ method.
+of the public properties and prevent doing anything out of a simple _get_, _set_, or _init_ method.
 
 ```C#
 static void Main(string[] args)
