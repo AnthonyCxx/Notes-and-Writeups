@@ -302,7 +302,7 @@ public class TemperatureConverter
    //Uses decimal datatype to ensure accuracy.
    public static decimal ToCelsius(decimal temp)
     {
-        return (temp - 32) * (5M/9M);
+        return (temp - 32) * (5M/9M);  //'M' literal suffix makes it a decimal literal
     }
 
     public static decimal ToFahrenheit(decimal temp)
