@@ -14,3 +14,5 @@ This process is called [data sanitization](https://www.lifewire.com/data-sanitiz
 as not only is it more efficient than overwriting with random characters, but it is also easy to verify that the data has been erased. <br />
 
 Strange no one at Microsoft made a class to streamline this process. Oh, wait, [they did](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring?view=net-5.0).
+The _SecureString.Dispose()_ method "writes binary zeroes to the allocated memory that contains the value of this SecureString object, then frees the allocated memory."  <br />
+Reference: [C# Documentation: _SecureString.Dispose()_](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring.dispose?view=net-5.0)
