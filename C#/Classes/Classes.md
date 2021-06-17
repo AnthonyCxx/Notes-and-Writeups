@@ -282,7 +282,7 @@ public class Phone
 
 ## Static Methods
 A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
-method for example. You don't need a _Console_ object _.WriteLine(**_string_**)_
+method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_.
 
 # Events
 
