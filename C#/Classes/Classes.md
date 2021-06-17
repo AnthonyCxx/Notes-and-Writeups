@@ -280,6 +280,26 @@ public class Phone
 ```
 
 # Methods
+A method is a function that is associated with a class, record, or struct. Since all C# code is in the context of a class, record, or struct, functions and methods are
+synonymous in C#. Methods are blocks of code that can be invoked by name, executing the body of the method (its code). There are two types of methods: instance and static.
+By default, methods are instance, which means that they can only be called from an instance of the method's respective class.
+```C#
+static void Main(string[] args)
+{
+    //The method 'Bark' can now be called from another class (Main)
+    var puppy = new Dog();  
+    puppy.Bark();
+}
+
+public class Dog
+{
+    //A method 'Bark' in the 'Dog' class, prints 'Woof!'
+    public void Bark()   
+    {
+        Console.WriteLine("Woof!");
+    }
+}
+```
 
 ## Static Methods
 A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
@@ -315,7 +335,10 @@ public class TemperatureConverter
 > 90 degrees in Celius (from Farenheit) is: 32.22 <br />
 > 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
 
+## Constructors
+
 # Events
+Don't worry about this for now :)
 
 # Access Modifiers
 
