@@ -251,7 +251,8 @@ public class Package
 
 ## Auto-Implemented Properties
 Since fields and their accessors always come in pairs, C# has a feature named 'auto-implented properties' that allows you to declare a property and imply both
-the accessors and the private field. Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. <br /> <br />
+the accessor's methods and the private field. In some cases, Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. 
+<br /> <br />
 
 Though convenient, auto-implemented properties may not always be the way to go because they also eliminate the ability to access the private fields outside 
 of the public properties and prevent doing anything out of a simple _get_, _set_, or _init_ method.
