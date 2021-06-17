@@ -403,6 +403,7 @@ public class Book
 }
 ```
 Functions can share the same name as long as they have different parameters. The computer can discern which function to call based on the data types of the paramters.
+This is called [operator overloading](https://www.geeksforgeeks.org/c-sharp-operator-overloading/).
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
 # Events
