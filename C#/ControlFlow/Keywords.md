@@ -27,8 +27,8 @@ for (int i = 0; i <= 20; i++)
     Console.WriteLine(i);
 }
 ```
-> Note: This could be done better without a _continue_ statement, but I am using it here to illustrate the concept. As a general rule of thumb, try to limit
-> anything that breaks that standard flow of the program. Simple is always better.
+> Note: This could be done better without a _continue_ statement, but I am using it here to illustrate the concept. <br />
+> As a general rule of thumb, try to limit anything that breaks that standard flow of the program. Simple is always better.
 
 ## Goto
 The _goto_ keyword moves the [instruction pointer](https://en.wikipedia.org/wiki/Program_counter) to another section of code on the stack. _Goto_ statements can jump
