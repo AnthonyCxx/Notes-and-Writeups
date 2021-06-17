@@ -410,10 +410,16 @@ This is called [operator overloading](https://www.geeksforgeeks.org/c-sharp-oper
 Don't worry about this for now :)
 
 # Access Modifiers
+Access modifiers regulate how a member of a class (a field, property, method, event, or even the function itself) can be accessed in relation to external or internal code.
+There are three types of access: public, private, and protected. By default, classes are public and class members are private; however, you should still always 
+
+There are more access modifiers ([6 in total](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)), but these are the three you will use most often.
 
 ## Public
+Public 
 
 ## Private
+
 
 ## Protected
 
