@@ -76,10 +76,11 @@ else
 ```
 
 ## Switch Statment
-The _switch_ statment allows for evaluating a variable or expression in a clear and structured manner. By default, _switch_ statements support 
-[fall-through behavior](https://www.learncpp.com/cpp-tutorial/switch-fallthrough-and-scoping/), meaning that when the expression matches a case, it 
-executes that statement block _and_ all the statement blocks that follow - this is avoided by ending statement blocks with the _break_ statement.
-An example of a use for a switch statement would be [NPC dialogue](https://learn.unity.com/tutorial/switch-statements#5c8a6f91edbc2a067d4753d4) that is based on an in-game value, such as the intelliegence of the player character.
+The _switch_ statment allows for evaluating a variable or expression in a clear and structured manner. Switch statements can execute multiple cases, but only [using _goto_
+statements](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ControlFlow/Keywords.md#fall-through-behavior-with-goto). An example of a use for a switch statement 
+would be [NPC dialogue](https://learn.unity.com/tutorial/switch-statements#5c8a6f91edbc2a067d4753d4) that is based on an in-game value, such as the intelliegence of the 
+player character.
+
 
 ### Format
 ```C#
