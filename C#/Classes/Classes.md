@@ -55,6 +55,7 @@ public double Speed
     set => _speed = value;
 }
 ```
+> Reference: [What is the '=>' Operator?](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator) <br />
 > Reference: [What is the contextual 'value' Keyword?](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
 
 ### _Get_ Property Accessor
