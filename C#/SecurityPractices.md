@@ -1,4 +1,4 @@
-# Best Security Practices in C#
+# Security Practices in C#
 
 ## Handling Sensitive Information (Passwords, SSNs, etc.)
 Any time you would store sensitive information as a string, store it in a char array instead. 
