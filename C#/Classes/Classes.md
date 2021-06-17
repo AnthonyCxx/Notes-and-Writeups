@@ -272,6 +272,7 @@ public class Phone
     public string Model { get; init; }
     public string Number { get; set; }
 
+    //Parameterized constructor with default values
     public Phone(string phone_model = "unknown", string phone_number = "unknown")
     {
         Model  = phone_model;
