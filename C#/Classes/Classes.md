@@ -289,7 +289,7 @@ Static methods are extremely useful for creating functional classes - classes th
 ```C#
 static void Main(string[] args)
 {
-    decimal celsius = TemperatureConverter.ToCelsius(90M);    //'M' suffix denotes a literal of type decimal
+    decimal celsius = TemperatureConverter.ToCelsius(90M);
     decimal farenheit = TemperatureConverter.ToFahrenheit(13M);
 
     //Show the results with 2 decimal places
