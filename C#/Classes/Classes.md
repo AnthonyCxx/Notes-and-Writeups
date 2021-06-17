@@ -257,7 +257,7 @@ The => operator allows for writing succinct method bodies by directly connecting
 => operator may imply parts of the body, such as the _return_ keyword.
 ```C#
 //A succinct function, written with the => operator
-public void DummyFunction() => Console.WriteLine("Hello, World!");
+public void DummyFunction() => Console.WriteLine("Hello, World!");  //implied 'return'
 ```
 
 ## The _value_ Keyword
