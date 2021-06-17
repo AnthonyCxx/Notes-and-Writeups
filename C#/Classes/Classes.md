@@ -282,7 +282,37 @@ public class Phone
 
 ## Static Methods
 A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
-method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_.
+method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_. <br /> <br />
+
+Static methods are extremely useful for creating functional classes - classes that only perform some sort of function.
+```C#
+static void Main(string[] args)
+{
+    decimal celsius = TemperatureConverter.ToCelsius(90M);    //'M' suffix denotes a literal of type decimal
+    decimal farenheit = TemperatureConverter.ToFahrenheit(13M);
+
+    //Show the results with 2 decimal places
+    Console.WriteLine($"90 degrees in Celius (from Farenheit) is: { Math.Round(celsius, 2) }");
+    Console.WriteLine($"13 degrees in Farenheit (from Celsius) is: { Math.Round(farenheit, 2) }");
+}
+
+public class TemperatureConverter
+{  
+   //Uses decimal datatype to ensure accuracy.
+   public static decimal ToCelsius(decimal temp)
+    {
+        return (temp - 32) * (5M/9M);
+    }
+
+    public static decimal ToFahrenheit(decimal temp)
+    {
+        return  (9M/5M) * temp + 32;
+    }
+}
+```
+> Prints: <br />
+> 90 degrees in Celius (from Farenheit) is: 32.22 <br />
+> 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
 
 # Events
 
