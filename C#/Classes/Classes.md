@@ -458,7 +458,7 @@ public class PublicExample
 
 public class otherClass : PublicExample
 {
-    public static void Print() =>  Console.WriteLine($"Accessing through derived class's method: {PublicExample.field}"); 
+    public static void Print() => Console.WriteLine($"Accessing through derived class's method: {PublicExample.field}"); 
 }
 ```
 > Reference: [C# Documentation: Public Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) <br />
