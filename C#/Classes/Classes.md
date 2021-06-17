@@ -344,7 +344,8 @@ would automatically start when I loaded up the game. Similarly, in a video game 
 <br />
 
 
-There are two types of constructors: default and parameterized. The default constructor is called when no values are provided to initialize the 
+There are two types of constructors: default and parameterized. The default constructor is called when no values are provided to initialize the new object with, and the
+parameterized constructor is called when values are provided. See the example below.
 ```C#
 static void Main(string[] args)
 {
