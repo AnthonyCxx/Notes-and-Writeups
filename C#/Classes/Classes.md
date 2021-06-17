@@ -439,14 +439,42 @@ There are more access modifiers ([6 in total](https://docs.microsoft.com/en-us/d
 
 ## Public
 Public members have no restrictions and can be accessed by any code, inside and outside of the class. Things such as classes, properties, and methods are often public.
+```C#
+
+static void Main(string[] args)
+{
+    //Accessing 'Field' directly
+    Console.WriteLine($"Accessing through Main function: {PublicExample.field}");
+
+    //Accessing 'Field' through the derived class
+    otherClass.Print();
+}
+
+
+public class PublicExample
+{
+    public static string field = "public field";   //static, so an instance is not necessary
+}
+
+public class otherClass : PublicExample
+{
+    public static void Print() =>  Console.WriteLine($"Accessing through derived class's method: {PublicExample.field}"); 
+}
+```
 > Reference: [C# Documentation: Public Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) <br />
 
 ## Private
 Private members can only be accessed and modified from within the class itself. External code has no access to private members. Things like fields are often private.
+```C#
+
+```
 > Reference: [C# Documentation: Private Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) <br />
 
 ## Protected
 Protected members are similar to private members in that they are only interally accessable; however, protected members are also accessible to derived classes.
+```C#
+
+```
 > Reference: [C# Documentation: Protected Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected) <br />
 
 ## Access Modifiers and Property Accessors
