@@ -412,8 +412,8 @@ To add default parameters, simple put an equals sign followed by a [literal](htt
 ```C#
 static void Main(string[] args)
 {
-    Console.WriteLine($"Calling the \'Add\' method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
-    Console.WriteLine($"Calling the \'Add\' method with no parameters: {DummyClass.Add()}"); //prints 2
+    Console.WriteLine($"Calling the Add method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
+    Console.WriteLine($"Calling the Add method with no parameters: {DummyClass.Add()}"); //prints 2
 }
         
 public class DummyClass
@@ -425,8 +425,8 @@ public class DummyClass
 }
 ```
 > Prints: <br />
-> Calling the 'Add' method with the integers 7 and 8 as parameters: 15 <br />
-> Calling the 'Add' method with no parameters: 2 <br />
+> Calling the Add method with the integers 7 and 8 as parameters: 15 <br />
+> Calling the Add method with no parameters: 2 <br />
 
 # Events
 Don't worry about this for now :)
