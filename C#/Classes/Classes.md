@@ -278,18 +278,20 @@ public class Phone
 }
 ```
 
-## Access Modifiers and Property Accessors
-
 # Methods
 
 ## Static Methods
+A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
+method for example. To call the 
 
 # Events
 
 # Access Modifiers
+
 ## Public
 
 ## Private
 
 ## Protected
 
+## Access Modifiers and Property Accessors
