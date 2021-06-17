@@ -66,8 +66,7 @@ switch(integer)
 }
 ```
 > In most languages (e.g. C and C++), you can simply remove the _break_ statement to cause fall-through behavior. <br />
-> However, in C#, leaving out the _break_ statement causes a syntax error; thus, the only option is using a <br />
-> _goto_ statement.
+> However, in C#, leaving out the _break_ statement causes a syntax error; thus, the only option is using a _goto_ statement.
 
 ### Restarting Loops with _goto_
 An infinite loop in C# using _goto_.
