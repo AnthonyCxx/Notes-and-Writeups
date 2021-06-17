@@ -406,6 +406,10 @@ Functions can share the same name as long as they have different parameters. The
 This is called [operator overloading](https://www.geeksforgeeks.org/c-sharp-operator-overloading/).
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
+## Default Parameters
+In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
+To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) (some value). That way, the parameter will take on that value if and only if no other value is provided.
+
 # Events
 Don't worry about this for now :)
 
