@@ -67,7 +67,7 @@ while (1 == 1)
 
 ## Do...While Statement
 The _do...while_ loop acts similarly to a while loop, repeating until the given condition is false; however, unlike a normal _while_ loop, a _do...while_ loop will
-always execute at least once.
+always execute at least once. _Do...while_ loops are exceptionally useful for validating user input.
 
 ### Format
 ```C#
