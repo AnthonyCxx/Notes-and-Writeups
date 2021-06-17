@@ -249,6 +249,17 @@ public class Package
 }
 ```
 
+## The => Operator
+The => operator allows for writing succinct method bodies by directly connecting the function name to its body. With special methods (such as the _get_ accessor), the
+=> operator may imply parts of the body, such as the _return_ keyword.
+```C#
+//A succinct function, written with the => operator
+public void DummyFunction() => Console.WriteLine("Hello, World!");
+```
+
+## The _value_ Keyword
+The _value_ keyword is used with the _set_ and _init_ property accessors to represent the value being assigned to the variable.
+
 ## Auto-Implemented Properties
 Since fields and their accessors always come in pairs, C# has a feature named 'auto-implented properties' that allows you to declare a property and imply both
 the accessor's methods and the private field. In some cases, Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. 
