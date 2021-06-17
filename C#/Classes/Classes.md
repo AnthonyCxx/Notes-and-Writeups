@@ -338,10 +338,55 @@ public class TemperatureConverter
 > 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
 
 ## Constructors
-Constructors are a special method that are automatically run when an instance of the class is created. Constructors _must_ share the name of their class and are often
+A constructors is a special public method that are automatically run when an instance of the class is created. Constructors _must_ share the name of their class and are often
 used to initialize the data members of said class. Constructors can be used for more than just initializing data members; for example, in my [Hangman Game](https://github.com/EthanC2/Hangman/blob/main/header-files/GameClass.hpp) (C++), I put the _run()_ function in the constructor of my _Game_ class so the game
 would automatically start when I loaded up the game. Similarly, in a video game constructors may call things like spawn animations or set the coordinates of the character.
+<br />
 
+
+There are two types of constructors: default and parameterized. The default constructor is called when no values are provided to initialize the 
+```C#
+static void Main(string[] args)
+{
+    //Invoking the default constructor
+    var randomBook = new Book();
+            
+    //Invoking the parameterized constructor
+    var aBookYouShouldRead = new Book("Un Mundo sin Fin", 1179);
+}
+
+public class Book
+{
+    private string _title;
+    private int _totalPages;
+    
+    public string Title
+    {
+        get => _title;
+        set => _title = value;
+    }
+
+    public int PageCount
+    {
+        get => _totalPages;
+        set => _totalPages = value;
+    }
+
+    //Default Constructor
+    public Book()      //constructors do not have a return type!
+    {
+        _title = "Unknown";
+        _totalPages = 0;
+    }
+
+    //Parameterized contructor
+    public Book(string title, int pageCount)
+    {
+        _title = title;
+        _totalPages = pageCount;
+    }
+}
+```
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
 # Events
