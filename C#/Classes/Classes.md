@@ -453,7 +453,7 @@ static void Main(string[] args)
 
 public class PublicExample
 {
-    public static string field = "public field";   //static, so an instance is not necessary
+    public static string field = "public field";   //static, so an instance of the class is not necessary
 }
 
 public class otherClass : PublicExample
