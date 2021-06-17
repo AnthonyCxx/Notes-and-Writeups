@@ -44,6 +44,7 @@ Console.WriteLine($"Clock-in Time: {signInTime}");
 Console.WriteLine($"Clock-out Time: {signOutTime}")
 ```
 > Note: The _\__ (underscore) was used to discard a part of the tuple - the record number. <br />
+> 
 > Prints: <br />
 > Name: Eren <br />
 > Clock-in Time: 10:40 AM <br />
