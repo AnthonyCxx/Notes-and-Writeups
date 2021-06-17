@@ -409,6 +409,24 @@ This is called [operator overloading](https://www.geeksforgeeks.org/c-sharp-oper
 ## Default Parameters
 In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
 To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) (some value). That way, the parameter will take on that value if and only if no other value is provided.
+```C#
+static void Main(string[] args)
+{
+    Console.WriteLine($"Calling the \'Add\' method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
+    Console.WriteLine($"Calling the \'Add\' method with no parameters: {DummyClass.Add()}"); //prints 2
+}
+        
+public class DummyClass
+{
+    public static int Add(int param1 = 1, int param2 = 1)  //both parameters have a default value of 1
+    {
+        return param1 + param2;    
+    }
+}
+```
+> Prints: <br />
+> Calling the 'Add' method with the integers 7 and 8 as parameters: 15 <br />
+> Calling the 'Add' method with no parameters: 2 <br />
 
 # Events
 Don't worry about this for now :)
