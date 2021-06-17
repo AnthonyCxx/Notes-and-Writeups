@@ -438,11 +438,15 @@ There are three types of access: public, private, and protected. By default, cla
 There are more access modifiers ([6 in total](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)), but these are the three you will use most often.
 
 ## Public
-Public 
+Public members have no restrictions and can be accessed by any code, inside and outside of the class. Things such as classes, properties, and methods are often public.
+> Reference: [C# Documentation: Public Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) <br />
 
 ## Private
-
+Private members can only be accessed and modified from within the class itself. External code has no access to private members. Things like fields are often private.
+> Reference: [C# Documentation: Private Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) <br />
 
 ## Protected
+Protected members are similar to private members in that they are only interally accessable; however, protected members are also accessible to derived classes.
+> Reference: [C# Documentation: Protected Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected) <br />
 
 ## Access Modifiers and Property Accessors
