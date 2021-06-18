@@ -492,7 +492,23 @@ public class otherClass : PrivateExample
 ## Protected
 Protected members are similar to private members in that they are only interally accessable; however, protected members are also accessible to derived classes.
 ```C#
+static void Main(string[] args)
+{
+    Console.WriteLine($"Accessing through Main function: {ProtectedExample.field}");  //Illegal, 'field' is protected
 
+    //Accessing 'Field' through the derived class
+    otherClass.Print();    //Legal, protected members are accessible to derived classes!
+}
+ 
+ public class ProtectedExample
+{
+    protected static string field = "private field";   //static, so an instance of the class is not necessary
+}
+
+public class otherClass : ProtectedExample
+{
+    public static void Print() => Console.WriteLine($"Accessing through derived class's method: {ProtectedExample.field}");
+}
 ```
 > Reference: [C# Documentation: Protected Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected) <br />
 
