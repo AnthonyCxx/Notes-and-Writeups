@@ -513,3 +513,15 @@ public class otherClass : ProtectedExample
 > Reference: [C# Documentation: Protected Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected) <br />
 
 ## Access Modifiers and Property Accessors
+Access modifiers can be applied to an accessor method, but only to one. Accessors are public and so at least one accessor method must be public.
+```C#
+public class Item
+{ 
+    public string Name { get; protected set; }
+    public int Durability { get; protected set; }
+    
+    //Error: accessors are public, so at least one accessor must be public!
+    public int ID { protected get; protected init; } 
+}
+````
+> Reference: [C# Docuemtation: Compiler Error CS0274: Both Accessor Methods Restricted](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0274)
