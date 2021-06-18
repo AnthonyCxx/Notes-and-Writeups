@@ -65,7 +65,7 @@ if (isBook)   //'isBook' is replaced by its value (false)
 }
 else if (1 == 2)
 {
-    //Not executed even though the if statement is false, because 1 does not equal 2
+    //Not executed even though the first if statement is false, because 1 does not equal 2
     System.Console.WriteLine("Hmm, the item may be a book...");
 }
 else
