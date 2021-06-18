@@ -467,7 +467,25 @@ public class otherClass : PublicExample
 ## Private
 Private members can only be accessed and modified from within the class itself. External code has no access to private members. Things like fields are often private.
 ```C#
+static void Main(string[] args)
+{
+    Console.WriteLine($"Accessing through Main function: {PrivateExample.field}");  //Error! 'field' is private
 
+    //Accessing 'field' through the derived class
+    otherClass.Print(); //Error! 'field' is private
+}
+
+
+public class PrivateExample
+{
+    private static string field = "private field";   //static, so an instance of the class is not necessary
+}
+
+//A class derived from class 'PrivateExample' (will not have access to PrivateExample's private members)
+public class otherClass : PrivateExample
+{
+    public static void Print() => Console.WriteLine($"Accessing through derived class's method: {PrivateExample.field}");  //Error! 'field' is private
+}
 ```
 > Reference: [C# Documentation: Private Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) <br />
 
