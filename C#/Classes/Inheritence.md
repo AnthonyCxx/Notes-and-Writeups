@@ -5,7 +5,8 @@
 
 ## Simple Inheritence
 ```C#
-//Main function
+
+//****************** Main Function *********************\\
 static void Main(string[] args)
 {
   //Testing the 'Item' class
@@ -30,7 +31,8 @@ static void Main(string[] args)
   Console.WriteLine(sword.Stats);
 }
     
-//Item class (base class)
+    
+//****************** Item class (base class) *********************\\
 class Item   //Abstract class, cannot be instantiated!
 {
   public string Name { get; init; }
@@ -53,7 +55,8 @@ class Item   //Abstract class, cannot be instantiated!
   }
 }
 
-//Sword class (derived from item)
+
+//****************** Sword class (derived class) *********************\\
 class Sword: Item
 {
     public int Damage { get; private set; }
