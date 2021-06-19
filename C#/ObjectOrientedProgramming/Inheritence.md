@@ -61,7 +61,7 @@ class Sword: Item
 {
     public int Damage { get; private set; }
 
-    public Sword(string name = "Sword", int durability = 100, int damage = 5)
+    public Sword(string name, int durability, int damage = 5): base(name, durability)    //calls the base constructor
     {
         Name = name;
         Durability = durability;
