@@ -4,6 +4,9 @@
 \- Bobby Davis, Jr. (from Coder Foundry)
 > Reference: [Coder Foundry: C# Interview Questions and Answers Technique](https://www.youtube.com/watch?v=_zCR1Rq7qB0)
 
+Essentially, an interface is a contract that states that any class that inherits from it must implement all of the members of the interface. However, it does not 
+specify how.
+
 
 ### Conventions
 - Identifiers should have a prepended 'I'
