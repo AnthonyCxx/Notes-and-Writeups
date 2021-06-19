@@ -11,7 +11,7 @@ specify how.
 ## Built-In Interfaces
 
 ### IEquatable<T>
-Defines a method _Equals(**<T> other**)_ that compares two objects of the same type.
+Defines a method _Equals(**\<T\> other**)_ that compares two objects of the same type.
 
 ### Conventions
 - Identifiers should have a prepended letter 'I' (for interface) to distinguish them from classes
