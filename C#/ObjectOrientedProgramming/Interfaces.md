@@ -6,4 +6,4 @@
 
 
 ### Conventions
-- Identifiers should have a prepended _I_
+- Identifiers should have a prepended '_I_'
