@@ -404,7 +404,7 @@ public class Book
 }
 ```
 Functions can share the same name as long as they have different parameters. The computer can discern which function to call based on the data types of the paramters.
-This is called [operator overloading](https://www.geeksforgeeks.org/c-sharp-operator-overloading/).
+This is called [method overloading](https://www.geeksforgeeks.org/c-sharp-method-overloading/#:~:text=Method%20Overloading%20is%20the%20common,methods%20with%20different%20method%20signatures.).
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
 ## Default Parameters
