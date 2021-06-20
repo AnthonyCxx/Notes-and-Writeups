@@ -193,6 +193,7 @@ static void Main(string[] args)
 {
     //Declare a new 'Package' object
     var package = new Package(5, 4, 8);  // (length, width, height)
+    var otherPackage = new Package { Length = 5, Width = 3, Height = 7 };  //Also legal; would be illegal using 'private set'
 
     //Testing the public accessors
     Console.WriteLine($"Package Length: {package.Length}");
