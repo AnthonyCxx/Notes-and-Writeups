@@ -189,5 +189,8 @@ namespace InheritencePractice
     }
 }
 ```
+> Prints: <br />
+> Chest Items: wood, stone, brimstone, nails <br />
+> Max Chest Capacity: 10 <br /> <br />
 > Reference: [GeeksForGeeks: Inheritence in C#](https://www.geeksforgeeks.org/c-sharp-interface/) <br />
 > Reference: [GeeksForGeeks: Multiple Inheritence in C# using Interfaces](https://www.geeksforgeeks.org/c-sharp-multiple-inheritance-using-interfaces/) <br />
