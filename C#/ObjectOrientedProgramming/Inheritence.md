@@ -28,7 +28,7 @@ static void Main(string[] args)
   Console.WriteLine(sword.Stats);
 }
     
-    
+//****************** Tool class (base class) *********************\\
 class Tool
 {
   public string Name { get; init; }
