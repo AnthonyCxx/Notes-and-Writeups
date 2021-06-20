@@ -80,6 +80,8 @@ C# is a single-inheritence, so a class can only have one base class. If you want
 ```C#
 using System;
 
+namespace InheritencePractice
+{
     class Program
     {
         public static void Main(string[] args)
@@ -179,6 +181,7 @@ using System;
             Capacity = capacity;
         }
     }
+}
 ```
 > Reference: [GeeksForGeeks: Inheritence in C#](https://www.geeksforgeeks.org/c-sharp-interface/) <br />
 > Reference: [GeeksForGeeks: Multiple Inheritence in C# using Interfaces](https://www.geeksforgeeks.org/c-sharp-multiple-inheritance-using-interfaces/) <br />
