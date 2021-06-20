@@ -27,4 +27,7 @@ string creature = "person";
 //Print a string, replacing the {num} with the variable contents
 Console.WriteLine("Hello, my name is {0}, and I am a {1}", name, creature);
 Console.WriteLine("Hello, I am a {1} and my name is {0}", name, creature)
+
+//Using interpolated strings
+Console.WriteLine($"Hello, my name is {name} and I am a {creature}");
 ```
