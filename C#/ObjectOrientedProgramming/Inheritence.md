@@ -1,8 +1,5 @@
 # Inheritence in C#
 
-## Interfaces
-- Can contain: properties, methods, events, or indexers 
-
 ## Simple Inheritence
 ```C#
 
