@@ -55,7 +55,7 @@ class Tool
 
 
 //****************** Sword class (derived class) *********************\\
-class Sword : Tool
+class Sword : Tool   //Inherit from the 'Tool' class
 {
   public int Damage { get; private set; }
 
@@ -71,6 +71,14 @@ class Sword : Tool
   }
 }
 ```
+> Prints: <br />
+> Pickaxe: 100 <br />
+> Swinging...  <br />
+> Pickaxe: 99  <br />
+
+> A Sharp Sword: 100 <br />
+> Swinging the Sword <br />
+> A Sharp Sword: 99  <br />
 
 ## Multiple Inheritence using Interfaces
 C# is a single-inheritence, so a class can only have one base class. If you want multiple inheritence, you must use interfaces. 
