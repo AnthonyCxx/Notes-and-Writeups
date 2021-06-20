@@ -29,5 +29,5 @@ Console.WriteLine("Hello, my name is {0}, and I am a {1}", name, creature);
 Console.WriteLine("Hello, I am a {1} and my name is {0}", name, creature)
 
 //Using interpolated strings
-Console.WriteLine($"Hello, my name is {name} and I am a {creature}");
+Console.WriteLine($"Hello, my name is {name} and I am a {creature}");  //Note the $ at the beginning of the string
 ```
