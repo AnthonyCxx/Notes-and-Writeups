@@ -9,8 +9,8 @@
 //****************** Main Function *********************\\
 static void Main(string[] args)
 {
-  //Testing the 'Item' class
-  var pickaxe = new Item("Pickaxe", 100);
+  //Testing the 'Tool' class
+  var pickaxe = new Tool("Pickaxe", 100);
 
   Console.WriteLine(pickaxe.Stats);
 
@@ -32,8 +32,7 @@ static void Main(string[] args)
 }
     
     
-//****************** Item class (base class) *********************\\
-class Item 
+class Tool
 {
   public string Name { get; init; }
   public int Durability { get; protected set; }
@@ -41,31 +40,35 @@ class Item
   public string Stats { get { return Name + ": " + Durability; } }
 
   //Constructor
-  public Item(string name = "Item", int durability = 100)
+  public Tool(string name = "Tool", int durability = 100)
   {
     Name = name;
     Durability = durability;
   }
 
-  public void Swing()  //Use (swing) the sword
+  public virtual void Swing()  //Use (swing) the sword
   {
-    Console.WriteLine("Swinging");
-    this.Durability--;
+    Console.WriteLine("Swinging...");
+    Durability--;
   }
 }
 
 
 //****************** Sword class (derived class) *********************\\
-class Sword: Item
+class Sword : Tool
 {
-    public int Damage { get; private set; }
+  public int Damage { get; private set; }
 
-    public Sword(string name, int durability, int damage = 5): base(name, durability)    //calls the base constructor
-    {
-        Name = name;
-        Durability = durability;
-        Damage = damage;
-    }
+  public Sword(string name, int durability, int damage = 5) : base(name, durability)    //calls the base constructor
+  {
+    Damage = damage;
+  }
+
+  public override void Swing()
+  {
+    Console.WriteLine($"Swinging the {this.GetType().Name}");  //prints 'Swinging the sword'
+    Durability--;
+  }
 }
 ```
 
