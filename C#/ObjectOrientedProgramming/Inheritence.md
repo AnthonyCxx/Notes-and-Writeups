@@ -75,7 +75,7 @@ class Sword : Tool   //Inherit from the 'Tool' class
 > Pickaxe: 100 <br />
 > Swinging...  <br />
 > Pickaxe: 99  <br />
-
+> -----------
 > A Sharp Sword: 100 <br />
 > Swinging the Sword <br />
 > A Sharp Sword: 99  <br />
