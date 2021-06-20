@@ -77,5 +77,108 @@ class Sword: Item
 
 ## Multiple Inheritence using Interfaces
 C# is a single-inheritence, so a class can only have one base class. If you want multiple inheritence, you must use interfaces. 
+```C#
+using System;
+
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            //Create a chest that contains the following items (with a max of 10 items)
+            var chest = new Chest<string>(10, new string[] { "wood", "stone", "brimstone", "nails" });
+
+            Console.WriteLine($"Chest Items: {chest.ItemList}");
+            Console.WriteLine($"Max Chest Capacity: {chest.Capacity}");
+            
+        }
+    }
+
+    interface IPlaceable
+    {
+        public void Place();
+    }
+
+    interface IDestroyable
+    {
+        public void Destroy();
+    }
+
+    class Block: IPlaceable, IDestroyable
+    { 
+        //Name of the block
+        public string Name { get; init; }
+
+        //Block ID
+        public int ID { get; init; }
+
+        public void Place()
+        {
+            Console.WriteLine("Placed the block");
+        }
+
+        public void Destroy()
+        {
+            Console.WriteLine("Destroyed the block");
+        }
+    }
+
+
+    interface IContainer<T>
+    {
+        //The amount of items the container can hold
+        public int Capacity { get; init; }
+
+        //The array of items the container has
+        public T[] Items { get; set; }
+
+        public string ItemList { get; }
+
+        //An indexer to access the items 
+        T this[int index] { get; set;}
+    }
+
+    class Chest<T> : Block, IContainer<T>  //A chest is a block which contains items.
+    {
+        //************* Inherited Properties from 'Block' ****************\\
+        //public string Name { get; init; }
+
+        //public int ID { get; init; }
+
+        //public void Place();  
+
+        //public void Destroy(); 
+
+        //************* Container<T> Implementation *****************\\
+
+        //The max amount of items
+        public int Capacity { get; init; }  //capacity is immutable
+
+        //The array of items
+        public T[] Items { get; set; }
+
+        //Returns all the items as a CS (comma-separated) string
+        public string ItemList
+        {
+            get
+            {
+                return string.Join(", ", Items);
+            }
+        }
+
+        //Defines how 'T[] Items' should be accessed ( [] Overload )
+        public T this[int index]
+        {
+            get => Items[index];
+            set => Items[index] = value;
+        }
+
+        //************* Chest Implementation *****************\\
+        public Chest(int capacity, T[] items)
+        {
+            Items = items;
+            Capacity = capacity;
+        }
+    }
+```
 > Reference: [GeeksForGeeks: Inheritence in C#](https://www.geeksforgeeks.org/c-sharp-interface/) <br />
 > Reference: [GeeksForGeeks: Multiple Inheritence in C# using Interfaces](https://www.geeksforgeeks.org/c-sharp-multiple-inheritance-using-interfaces/) <br />
