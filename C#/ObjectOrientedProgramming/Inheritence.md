@@ -14,7 +14,7 @@ static void Main(string[] args)
 
   Console.WriteLine(pickaxe.Stats);
 
-  pickaxe--;
+  pickaxe.Swing();
 
   Console.WriteLine(pickaxe.Stats);
 
@@ -33,7 +33,7 @@ static void Main(string[] args)
     
     
 //****************** Item class (base class) *********************\\
-class Item   //Abstract class, cannot be instantiated!
+class Item 
 {
   public string Name { get; init; }
   public int Durability { get; protected set; }
@@ -47,11 +47,10 @@ class Item   //Abstract class, cannot be instantiated!
     Durability = durability;
   }
 
-  //Overloaded  '-' operator
-  public static Item operator --(Item item)
+  public void Swing()  //Use (swing) the sword
   {
-    item.Durability--;
-    return item;
+    Console.WriteLine("Swinging");
+    this.Durability--;
   }
 }
 
@@ -66,11 +65,6 @@ class Sword: Item
         Name = name;
         Durability = durability;
         Damage = damage;
-    }
-
-    public void Swing()  //Use (swing) the sword
-    {
-        this.Durability--;
     }
 }
 ```
