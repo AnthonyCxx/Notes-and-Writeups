@@ -105,7 +105,7 @@ namespace InheritencePractice
         public void Destroy();
     }
 
-    class Block: IPlaceable, IDestroyable
+    class Block: IPlaceable, IDestroyable   //a block is an object which can be created and destroyed
     { 
         //Name of the block
         public string Name { get; init; }
@@ -125,7 +125,7 @@ namespace InheritencePractice
     }
 
 
-    interface IContainer<T>
+    interface IContainer<T>  //a generic container
     {
         //The amount of items the container can hold
         public int Capacity { get; init; }
@@ -139,7 +139,7 @@ namespace InheritencePractice
         T this[int index] { get; set;}
     }
 
-    class Chest<T> : Block, IContainer<T>  //A chest is a block which contains items.
+    class Chest<T> : Block, IContainer<T>  //A chest is a block that contains items.
     {
         //************* Inherited Properties from 'Block' ****************\\
         //public string Name { get; init; }
