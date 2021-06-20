@@ -92,7 +92,8 @@ namespace InheritencePractice
         public static void Main(string[] args)
         {
             //Create a chest that contains the following items (with a max of 10 items)
-            var chest = new Chest<string>(10, new string[] { "wood", "stone", "brimstone", "nails" });
+            var chest = new Chest<string>("Small chest", 641, 10, new string[] { "wood", "stone", "brimstone", "nails" });
+
 
             Console.WriteLine($"Chest Items: {chest.ItemList}");
             Console.WriteLine($"Max Chest Capacity: {chest.Capacity}");
@@ -118,6 +119,13 @@ namespace InheritencePractice
 
         //Block ID
         public int ID { get; init; }
+        
+        //Constructor
+        public Block(string name, int id)
+        {
+            Name = name;
+            ID = id;
+        }
 
         public void Place()
         {
@@ -181,7 +189,7 @@ namespace InheritencePractice
         }
 
         //************* Chest Implementation *****************\\
-        public Chest(int capacity, T[] items)
+        public Chest(string name, int id, int capacity, T[] items): base(name, id)   //call the base class constructor
         {
             Items = items;
             Capacity = capacity;
