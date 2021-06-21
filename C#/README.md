@@ -22,3 +22,6 @@ Naturally, these notes are in no way comprehensive. <br />
 [Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264) <br />
 [Caleb Curry's C# Tutorial for Beginners](https://www.youtube.com/watch?v=qOruiBrXlAw&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC) (6 hours, free) <br />
 [tutorialEU's C# Tutorial for Beginners](https://www.youtube.com/watch?v=UKaZ2S4AJAA&list=PLwhVruPHD9rxZ9U5K6vqUFkfrjaRhwEsV) (4.5 hours, free)
+
+## Videos Worth Watching
+[WinForm vs WPF vs UWP vs Console](https://www.youtube.com/watch?v=yq0dSkA1vpM) <br />
