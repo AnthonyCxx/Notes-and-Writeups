@@ -151,6 +151,41 @@ Functions can share the same name as long as they have different parameters. The
 This is called [method overloading](https://www.geeksforgeeks.org/c-sharp-method-overloading/#:~:text=Method%20Overloading%20is%20the%20common,methods%20with%20different%20method%20signatures.).
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
+## Destructors
+Destructors (called _Finalizers_ these days) are the opposite of constructors. A c
+```C#
+public static void Main(string[] args)
+{
+    //Create a new book with 300 pages, starting at page 0
+    var tome = new MagicBook(300 , 0);
+    
+    //'tome' object goes out of scope at the end of the program (main function)
+} 
+
+class MagicBook
+{ 
+    public int PageCount { get; init; }
+    public int CurrentPage { get; private set; }
+
+    public void CastHex()
+    {
+        Console.WriteLine("Casting hex!");
+    }
+
+    public MagicBook(int pageCount = 100, int currentPage = 0)
+    {
+        PageCount = pageCount;
+        CurrentPage = currentPage;
+    }
+
+    ~MagicBook()
+    {
+        Console.WriteLine("The book vanishes into thin air!");
+    }
+}
+```
+> Reference: [What is Scope?](https://www.pluralsight.com/guides/understanding-scope-and-visibility-in-c) <br />
+
 ## Static Methods
 A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
 method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_. <br />
