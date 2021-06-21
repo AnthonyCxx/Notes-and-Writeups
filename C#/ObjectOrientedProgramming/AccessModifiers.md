@@ -68,7 +68,7 @@ static void Main(string[] args)
     otherClass.Print();    //Legal, protected members are accessible to derived classes!
 }
  
- public class ProtectedExample
+public class ProtectedExample
 {
     protected static string field = "protected field";   //static, so an instance of the class is not necessary
 }
