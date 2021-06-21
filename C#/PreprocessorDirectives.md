@@ -77,7 +77,9 @@ public class Box
 > Note: The _Box_ class is now collapsable as is its constructor, BoxConstructor.
 
 ## Enabling/Disabling Null
-Refer [here](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#nullable-context).
+There are three directive for allowing/disallowing [nullable reference types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references): _#nullable enable_, _#nullable disable_, and _#nullable restore_.
+
+> Reference: [C# Documentation: _#nullable_ Preprocessor Directive](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#nullable-context).
 
 ## Errors/Warnings
 The _#error_ and _#warning_ directives allow the user to manually create errors and warnings.
