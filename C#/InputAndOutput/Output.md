@@ -18,14 +18,17 @@ Console.WriteLine("Console.WriteLine implicitly ends the line");
 ## Console.Clear()
 _Console.Clear()_ clears the screen.
 ```C#
+using System.Threading;
+
 Console.WriteLine("Some text...");
-Thread.Sleep(1000);  //wait
+Thread.Sleep(1000);  //wait for 1s
 
 Console.WriteLine("Clearing the screen!");
-Thread.Sleep(1000);  //wait
+Thread.Sleep(1000);  //wait for 1s
 
 Console.Clear();   //clear the screen
 ```
+> The _Sleep()_ method is under the _System.Threading_. The time is measured in milliseconds, so 1000 is 1 second, 2000 is 2 seconds, etc.
 
 ## Formatting Strings with Variables
 Strings can be formatted with the contents of variables by providing the variables (set off by commas) after the string. <br />
