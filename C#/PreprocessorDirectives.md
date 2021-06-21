@@ -47,6 +47,35 @@ namespace Main_Function
 ```
 > In this case, it doesn't make much sense to include the guards since this snippet contains the main function; normally, it would be used in other files.
 
+## Regions
+_Regions_ define sections of collapsable code within the [Visual Studio](https://visualstudio.microsoft.com/) IDE. Regions are often used in larger projects
+with large files so the developer can focus on the relevant sections. Regions start with a _#region \<Name\>_ directive and end with an _#endregion_ directive.
+You can nest regions by putting one inside the other. The _#endregion_ directives will figure themselves out.
+```C#
+#region BoxClass
+public class Box
+{
+    public double Length { get; init; }
+    public double Width { get; init; }
+    public double Height { get; init; }
+
+    public double Area { get { return Length * Width * Height; } }
+
+    public double SurfaceArea { get { return 2 * ( Length * Width + Length * Height + Height * Width); } }
+
+    #region BoxConstructor
+    public Box(double length, double width, double height)
+    {
+        Length = length;
+        Width = width;
+        Height = height;
+    }
+    #endregion
+}
+#endregion
+```
+> Note: The _Box_ class is now collapsable as is its constructor.
+
 ## Enabling/Disabling Null
 Refer [here](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#nullable-context).
 
