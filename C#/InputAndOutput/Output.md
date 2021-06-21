@@ -15,6 +15,18 @@ Console.WriteLine("Console.WriteLine implicitly ends the line");
 ```
 > Note: Use a _Console.WriteLine("")_ as a newline as [the newline character behaves differently on different operating systems](https://support.nesi.org.nz/hc/en-gb/articles/218032857-Converting-from-Windows-style-to-UNIX-style-line-endings)
 
+## Console.Clear()
+_Console.Clear()_ clears the screen.
+```C#
+Console.WriteLine("Some text...");
+Thread.Sleep(1000);  //wait
+
+Console.WriteLine("Clearing the screen!");
+Thread.Sleep(1000);  //wait
+
+Console.Clear();   //clear the screen
+```
+
 ## Formatting Strings with Variables
 Strings can be formatted with the contents of variables by providing the variables (set off by commas) after the string. <br />
 Put the ordinal position of the variable inside of curly braces (_{ }_) to replace said expression with the variable's content. <br />
