@@ -47,6 +47,9 @@ namespace Main_Function
 ```
 > In this case, it doesn't make much sense to include the guards since this snippet contains the main function; normally, it would be used in other files.
 
+## Enabling/Disabling Null
+Refer [here](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#nullable-context).
+
 ## Errors/Warnings
 The _#error_ and _#warning_ directives allow the user to manually create errors and warnings.
 
@@ -160,5 +163,3 @@ public static void Main(string[] args)
 ```
 > Note: notice how errors related to C# begin with '_CS_' and errors related to C++ start with '_C_' <br />
 > Reference: [C# Documentation: Master List of Compiler Warnings/Errors](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/)
-
-### Generate Checksum
