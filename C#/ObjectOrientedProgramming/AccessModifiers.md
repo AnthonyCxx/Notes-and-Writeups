@@ -26,7 +26,10 @@ public class PublicExample
 
 public class otherClass : PublicExample
 {
-    public static void Print() => Console.WriteLine($"Accessing through derived class's method: {PublicExample.field}"); 
+    public static void Print() 
+    {
+        Console.WriteLine($"Accessing through derived class's method: {PublicExample.field}"); 
+    }
 }
 ```
 > Reference: [C# Documentation: Public Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) <br />
@@ -52,7 +55,10 @@ public class PrivateExample
 //A class derived from class 'PrivateExample' (will not have access to PrivateExample's private members)
 public class otherClass : PrivateExample
 {
-    public static void Print() => Console.WriteLine($"Accessing through derived class's method: {PrivateExample.field}");  //Error! 'field' is private
+    public static void Print()
+    {
+        Console.WriteLine($"Accessing through derived class's method: {PrivateExample.field}");  //Error! 'field' is private
+    }
 }
 ```
 > Reference: [C# Documentation: Private Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) <br />
@@ -75,7 +81,10 @@ public class ProtectedExample
 
 public class otherClass : ProtectedExample
 {
-    public static void Print() => Console.WriteLine($"Accessing through derived class's method: {ProtectedExample.field}");
+    public static void Print()
+    {
+        Console.WriteLine($"Accessing through derived class's method: {ProtectedExample.field}");
+    }
 }
 ```
 > Reference: [C# Documentation: Protected Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected) <br />
