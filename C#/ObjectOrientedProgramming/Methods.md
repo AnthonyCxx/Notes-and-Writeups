@@ -41,7 +41,7 @@ of the value that will be returned must be declared as a part of the method decl
 public static void Main(string[] args)
 {
     int num = return5();
-    Console.WriteLine($"Value of 'num': {num}");
+    Console.WriteLine($"Value of num: {num}");
 }
 
 //Method 'return5' returns the integer 5
@@ -50,7 +50,7 @@ public static int return5()
     return 5;
 }
 ```
-> Prints: 'Value of 'num': 5'
+> Prints: 'Value of num: 5'
 
 ## Parameters
 A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values as variables.
