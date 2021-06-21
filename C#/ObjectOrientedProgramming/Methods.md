@@ -21,8 +21,13 @@ public class Dog
 ```
 
 ## Anatomy of a Method
-```C#
+The implementation of a method requires all of the following: an [access modifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ObjectOrientedProgramming/AccessModifiers.md), a return type, a name, a parameter list, and a body
 
+```C#
+public void printHello()    //Access modifier, return type, name, parameter list
+{
+    Console.WriteLine("Hello!");  //The code to be executed in { }
+}
 ```
 
 ## Static Methods
