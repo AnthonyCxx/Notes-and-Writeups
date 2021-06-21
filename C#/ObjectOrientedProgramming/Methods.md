@@ -53,8 +53,8 @@ public static int return5()
 > Prints: 'Value of num: 5'
 
 ## Parameters
-A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values as variables.
-A simple method '_Add_' could take two numbers as parameters and return their sum.
+A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values as variables. When
+declaring parameters, be sure to declare their type as well. A simple method '_Add_' could take two numbers as parameters and return their sum.
 ```C#
 public static void Main(string[] args)
 {
@@ -76,21 +76,22 @@ To add default parameters, simple put an equals sign followed by a [literal](htt
 ```C#
 static void Main(string[] args)
 {
-    Console.WriteLine($"Calling the Add method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
-    Console.WriteLine($"Calling the Add method with no parameters: {DummyClass.Add()}"); //prints 2
+    Console.WriteLine($"Calling the Add method with the integers 7 and 8 as parameters: {Add(7, 8)}");   //prints 15
+    Console.WriteLine($"Calling the Add method with one parameter: {Add(1)}"); //prints 1  (second parameter is implicitly 0)
+    Console.WriteLine($"Calling the Add method with no parameters: {Add()}");  //prints 0 (both parameters are implictly 0)
 }
         
-public class DummyClass
+//'Add' function
+public static int Add(int param1 = 0, int param2 = 0)  //both parameters have a default value of 0
 {
-    public static int Add(int param1 = 1, int param2 = 1)  //both parameters have a default value of 1
-    {
-        return param1 + param2;    
-    }
+    return param1 + param2;    
 }
+
 ```
 > Prints: <br />
 > Calling the Add method with the integers 7 and 8 as parameters: 15 <br />
-> Calling the Add method with no parameters: 2 <br />
+> Calling the Add method with one parameter: 1 <br />
+> Calling the Add method with no parameters: 0 <br />
 
 ## Constructors
 A constructors is a special public method that are automatically run when an instance of the class is created. Constructors do not have a return type and _must_ 
