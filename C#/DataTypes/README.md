@@ -27,3 +27,4 @@
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
 -  Instead of commas, C# uses underscores to separate digits (Ex. 1_000_000 == 1000000) 
 - Strings use double quotation marks, and chars use single quotation marks
+- Although the _decimal_ type is larger than _single_ and _double_, it also stores the decimals exactly. Use the _decimal_ type when the exact figure is important.
