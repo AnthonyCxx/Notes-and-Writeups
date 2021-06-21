@@ -158,7 +158,7 @@ public static void Main(string[] args)
     var unusedVariable = "this would normally generate a warning";   //typically error no. CS0219
 }
 ```
-> Note: Notice how errors related to C# begin with '_CS_' and errors related to C++ start with '_C_' <br />
+> Note: notice how errors related to C# begin with '_CS_' and errors related to C++ start with '_C_' <br />
 > Reference: [C# Documentation: Master List of Compiler Warnings/Errors](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/)
 
 ### Generate Checksum
