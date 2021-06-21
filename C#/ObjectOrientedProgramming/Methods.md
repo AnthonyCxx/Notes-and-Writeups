@@ -37,6 +37,8 @@ public void printHello()    //Access modifier (public), return type (void), name
 Methods can return a value to wherever it was called. The _return_ keyword returns that value, which could be a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b), a variable, or an expression. Once the _return_ statement is executed, the function ends, regardless of whether there was code after
 the _return_ statement. Any good compiler should warn you that the code after the _return_ statement is 'dead code' (code that cannot and will not be executed). The datatype
 of the value that will be returned must be declared as a part of the method declaration (following the access modifier). Here, the _return5()_ method returns an integer, 5.
+If a method does not return any value, then its return type is [_void_](https://www.geeksforgeeks.org/void-keyword-in-c-sharp/). 
+
 ```C#
 public static void Main(string[] args)
 {
@@ -53,12 +55,13 @@ public static int return5()
 > Prints: 'Value of num: 5'
 
 ## Parameters
-A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values as variables. When
-declaring parameters, be sure to declare their type as well. A simple method '_Add_' could take two numbers as parameters and return their sum.
+A function can take [parameters](https://www.thoughtco.com/definition-of-parameters-958124) (also called arguments), which are values that are passed into the function. 
+The function can then use these values as variables. When declaring parameters, be sure to declare their type as well. A simple method '_Add_' could take two numbers 
+as parameters and return their sum.
 ```C#
 public static void Main(string[] args)
 {
-    int num = Add(5, 10);
+    int num = Add(5, 10);     //Instead of literals, you could pass variables
     Console.WriteLine(num);
 }
 
