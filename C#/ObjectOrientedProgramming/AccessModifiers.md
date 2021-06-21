@@ -1,5 +1,5 @@
 # Access Modifiers in C#
-Access modifiers regulate how a member of a class (a field, property, method, event, or even the function itself) can be accessed in relation to external or internal code.
+Access modifiers regulate how a member of a class (a field, property, method, event, or even the class itself) can be accessed in relation to external or internal code.
 There are three types of access: public, private, and protected. By default, classes are public and class members are private; however, you should still always explicitly 
 write out the accessor to maintain clean, readable code.
 
