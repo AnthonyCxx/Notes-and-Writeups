@@ -32,7 +32,8 @@ public class otherClass : PublicExample
 > Reference: [C# Documentation: Public Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) <br />
 
 ## Private
-Private members can only be accessed and modified from within the class itself. External code has no access to private members. Things like fields are often private.
+Private members can only be accessed and modified from within the class itself. External code, including classes derived from the class, has no access to private members. 
+Things like fields are often private.
 ```C#
 static void Main(string[] args)
 {
