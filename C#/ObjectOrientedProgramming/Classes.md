@@ -303,7 +303,7 @@ By default, methods are instance, which means that they can only be called from 
 ```C#
 static void Main(string[] args)
 {
-    //The method 'Bark' can now be called from another class (Main)
+    //The method 'Bark' can now be called from any 'Dog' object
     var puppy = new Dog();  
     puppy.Bark();
 }
