@@ -164,25 +164,24 @@ public static void Main(string[] args)
     //'tome' object goes out of scope at the end of the program (main function)
 } 
 
+//'MagicBook' class
 class MagicBook
 { 
+    //Properties
     public int PageCount { get; init; }
     public int CurrentPage { get; private set; }
 
-    public void CastHex()
-    {
-        Console.WriteLine("Casting hex!");
-    }
-
-    public MagicBook(int pageCount = 100, int currentPage = 0)
+    //Constructor
+    MagicBook(int pageCount = 100, int currentPage = 0)   //The 'public' can be omitted. When omitted, public is assumed.
     {
         PageCount = pageCount;
         CurrentPage = currentPage;
     }
 
+    //Destructor
     ~MagicBook()
     {
-        Console.WriteLine("The book vanishes into thin air!");
+        Console.WriteLine("The book vanishes into thin air!");   //This message is displayed upon destruction
     }
 }
 ```
