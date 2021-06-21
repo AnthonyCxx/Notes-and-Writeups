@@ -76,7 +76,7 @@ public class Box
 ```
 > Note: The _Box_ class is now collapsable as is its constructor, BoxConstructor.
 
-## Enabling/Disabling Null
+## Enabling/Disabling Nullable Reference Types
 There are three directive for allowing/disallowing [nullable reference types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references): _#nullable enable_, _#nullable disable_, and _#nullable restore_.
 
 | Command | Result |
