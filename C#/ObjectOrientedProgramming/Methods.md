@@ -53,7 +53,22 @@ public static int return5()
 > Prints: 'Value of 'num': 5'
 
 ## Parameters
-A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values 
+A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values as variables.
+A simple method '_Add_' could take two numbers as parameters and return their sum.
+```C#
+public static void Main(string[] args)
+{
+    int num = Add(5, 10);
+    Console.WriteLine(num);
+}
+
+//Method 'Add' adds two numbers
+public static int Add(int num1, int num2)  
+{
+    return num1 + num2;    //The 'return' keyword is always evaluated last
+}
+```
+> Prints: '15'
 
 ## Default Parameters
 In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
