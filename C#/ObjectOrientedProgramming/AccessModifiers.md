@@ -6,7 +6,7 @@ write out the accessor to maintain clean, readable code.
 There are more access modifiers ([6 in total](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)), but these are the three you will use most often.
 
 ## Public
-Public members have no restrictions and can be accessed by any code, inside and outside of the class. Things such as classes, properties, and methods are often public.
+Public members have no restrictions and can be accessed by any code, inside and outside of the class. Members such as classes, properties, and methods are often public.
 ```C#
 
 static void Main(string[] args)
