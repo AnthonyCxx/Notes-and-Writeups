@@ -1,0 +1,132 @@
+# Methods in C#
+A method is a function that is associated with a class, record, or struct. Since all C# code is in the context of a class, record, or struct, functions and methods are
+synonymous in C#. Methods are blocks of code that can be invoked by name, executing the body of the method (its code). There are two types of methods: instance and static.
+By default, methods are instance, which means that they can only be called from an instance of the method's respective class.
+```C#
+static void Main(string[] args)
+{
+    //The method 'Bark' can now be called from any 'Dog' object
+    var puppy = new Dog();  
+    puppy.Bark();
+}
+
+public class Dog
+{
+    //A method 'Bark' in the 'Dog' class, prints 'Woof!'
+    public void Bark()   
+    {
+        Console.WriteLine("Woof!");
+    }
+}
+```
+
+## Static Methods
+A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
+method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_. <br />
+
+Static methods are extremely useful for creating functional classes - classes that only perform some sort of function.
+```C#
+static void Main(string[] args)
+{
+    decimal celsius = TemperatureConverter.ToCelsius(90M);
+    decimal farenheit = TemperatureConverter.ToFahrenheit(13M);
+
+    //Show the results with 2 decimal places
+    Console.WriteLine($"90 degrees in Celius (from Farenheit) is: { Math.Round(celsius, 2) }");
+    Console.WriteLine($"13 degrees in Farenheit (from Celsius) is: { Math.Round(farenheit, 2) }");
+}
+
+public class TemperatureConverter
+{  
+   //Uses decimal datatype to ensure accuracy.
+   public static decimal ToCelsius(decimal temp)
+    {
+        return (temp - 32) * (5M/9M);  //'M' literal suffix makes it a decimal literal
+    }
+
+    public static decimal ToFahrenheit(decimal temp)
+    {
+        return  (9M/5M) * temp + 32;
+    }
+}
+```
+> Prints: <br />
+> 90 degrees in Celius (from Farenheit) is: 32.22 <br />
+> 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
+
+## Constructors
+A constructors is a special public method that are automatically run when an instance of the class is created. Constructors _must_ share the name of their class and are often
+used to initialize the data members of said class. Constructors can be used for more than just initializing data members; for example, in [my Hangman Game](https://github.com/EthanC2/Hangman/blob/main/header-files/GameClass.hpp) (C++), I put the _run()_ function in the constructor of my _Game_ class so the game
+would automatically start when I loaded up the game. Similarly, in a video game constructors may call things like spawn animations or set the coordinates of the character.
+<br />
+
+
+There are two types of constructors: default and parameterized. The default constructor is called when no values are provided to initialize the new object with, and the
+parameterized constructor is called when values are provided. See the example below.
+```C#
+static void Main(string[] args)
+{
+    //Invoking the default constructor
+    var randomBook = new Book();
+            
+    //Invoking the parameterized constructor
+    var aBookYouShouldRead = new Book("Un Mundo sin Fin", 1179);
+}
+
+public class Book
+{
+    private string _title;
+    private int _totalPages;
+    
+    public string Title
+    {
+        get => _title;
+        set => _title = value;
+    }
+
+    public int PageCount
+    {
+        get => _totalPages;
+        set => _totalPages = value;
+    }
+
+    //Default Constructor
+    public Book()      //constructors do not have a return type!
+    {
+        _title = "Unknown";
+        _totalPages = 0;
+    }
+
+    //Parameterized contructor
+    public Book(string title, int pageCount)
+    {
+        _title = title;
+        _totalPages = pageCount;
+    }
+}
+```
+Functions can share the same name as long as they have different parameters. The computer can discern which function to call based on the data types of the paramters.
+This is called [method overloading](https://www.geeksforgeeks.org/c-sharp-method-overloading/#:~:text=Method%20Overloading%20is%20the%20common,methods%20with%20different%20method%20signatures.).
+> Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
+
+## Default Parameters
+In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
+To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) (some value). That way, the parameter will take on that value if and only if no other value is provided.
+```C#
+static void Main(string[] args)
+{
+    Console.WriteLine($"Calling the Add method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
+    Console.WriteLine($"Calling the Add method with no parameters: {DummyClass.Add()}"); //prints 2
+}
+        
+public class DummyClass
+{
+    public static int Add(int param1 = 1, int param2 = 1)  //both parameters have a default value of 1
+    {
+        return param1 + param2;    
+    }
+}
+```
+> Prints: <br />
+> Calling the Add method with the integers 7 and 8 as parameters: 15 <br />
+> Calling the Add method with no parameters: 2 <br />
