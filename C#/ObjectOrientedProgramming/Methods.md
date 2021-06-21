@@ -32,7 +32,24 @@ public void printHello()    //Access modifier (public), return type (void), name
 ```
 
 ## The Return Keyword and Return Types
-Methods can return a value, which means that 
+Methods can return a value to wherever it was called. The _return_ keyword returns that value, which could be a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b), a variable, or an expression. Once the _return_ statement is executed, the function ends, regardless of whether there was code after
+the _return_ statement. Good compiler should warn you that the code after the _return_ statement is 'dead code' (code that cannot and will not be executed).
+
+```C#
+public static void Main(string[] args)
+{
+    int num = return5();
+    Console.WriteLine($"Value of 'num': {num}");
+}
+
+
+//Method 'return5' returns the integer 5
+public int return5()  
+{
+    return 5;
+}
+```
+> Prints: 'Value of 'num': 5'
 
 ## Default Parameters
 In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
