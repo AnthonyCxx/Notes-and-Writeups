@@ -34,40 +34,27 @@ public void printHello()    //Access modifier (public), return type (void), name
 ## The Return Keyword and Return Types
 Methods can return a value, which means that 
 
-## Static Methods
-A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
-method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_. <br />
-
-Static methods are extremely useful for creating functional classes - classes that only perform some sort of function.
+## Default Parameters
+In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
+To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) (some value). That way, the parameter will take on that value if and only if no other value is provided.
 ```C#
 static void Main(string[] args)
 {
-    decimal celsius = TemperatureConverter.ToCelsius(90M);   //'M' literal suffix makes it a decimal literal
-    decimal farenheit = TemperatureConverter.ToFahrenheit(13M);
-
-    //Show the results with 2 decimal places
-    Console.WriteLine($"90 degrees in Celius (from Farenheit) is: { Math.Round(celsius, 2) }");
-    Console.WriteLine($"13 degrees in Farenheit (from Celsius) is: { Math.Round(farenheit, 2) }");
+    Console.WriteLine($"Calling the Add method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
+    Console.WriteLine($"Calling the Add method with no parameters: {DummyClass.Add()}"); //prints 2
 }
-
-public class TemperatureConverter
-{  
-   //Uses decimal datatype to ensure accuracy.
-   public static decimal ToCelsius(decimal temp)
+        
+public class DummyClass
+{
+    public static int Add(int param1 = 1, int param2 = 1)  //both parameters have a default value of 1
     {
-        return (temp - 32) * (5M/9M); 
-    }
-
-    public static decimal ToFahrenheit(decimal temp)
-    {
-        return  (9M/5M) * temp + 32;
+        return param1 + param2;    
     }
 }
 ```
 > Prints: <br />
-> 90 degrees in Celius (from Farenheit) is: 32.22 <br />
-> 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
-> Reference: [Literal Suffixes in C#](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/README.md#primitive-data-types) <br />
+> Calling the Add method with the integers 7 and 8 as parameters: 15 <br />
+> Calling the Add method with no parameters: 2 <br />
 
 ## Constructors
 A constructors is a special public method that are automatically run when an instance of the class is created. Constructors do not have a return type and _must_ 
@@ -124,24 +111,37 @@ Functions can share the same name as long as they have different parameters. The
 This is called [method overloading](https://www.geeksforgeeks.org/c-sharp-method-overloading/#:~:text=Method%20Overloading%20is%20the%20common,methods%20with%20different%20method%20signatures.).
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
-## Default Parameters
-In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
-To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) (some value). That way, the parameter will take on that value if and only if no other value is provided.
+## Static Methods
+A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
+method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_. <br />
+
+Static methods are extremely useful for creating functional classes - classes that only perform some sort of function.
 ```C#
 static void Main(string[] args)
 {
-    Console.WriteLine($"Calling the Add method with the integers 7 and 8 as parameters: {DummyClass.Add(7, 8)}");   //prints 15
-    Console.WriteLine($"Calling the Add method with no parameters: {DummyClass.Add()}"); //prints 2
+    decimal celsius = TemperatureConverter.ToCelsius(90M);   //'M' literal suffix makes it a decimal literal
+    decimal farenheit = TemperatureConverter.ToFahrenheit(13M);
+
+    //Show the results with 2 decimal places
+    Console.WriteLine($"90 degrees in Celius (from Farenheit) is: { Math.Round(celsius, 2) }");
+    Console.WriteLine($"13 degrees in Farenheit (from Celsius) is: { Math.Round(farenheit, 2) }");
 }
-        
-public class DummyClass
-{
-    public static int Add(int param1 = 1, int param2 = 1)  //both parameters have a default value of 1
+
+public class TemperatureConverter
+{  
+   //Uses decimal datatype to ensure accuracy.
+   public static decimal ToCelsius(decimal temp)
     {
-        return param1 + param2;    
+        return (temp - 32) * (5M/9M); 
+    }
+
+    public static decimal ToFahrenheit(decimal temp)
+    {
+        return  (9M/5M) * temp + 32;
     }
 }
 ```
 > Prints: <br />
-> Calling the Add method with the integers 7 and 8 as parameters: 15 <br />
-> Calling the Add method with no parameters: 2 <br />
+> 90 degrees in Celius (from Farenheit) is: 32.22 <br />
+> 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
+> Reference: [Literal Suffixes in C#](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/README.md#primitive-data-types) <br />
