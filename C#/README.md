@@ -7,7 +7,7 @@ Naturally, these notes are in no way comprehensive. <br />
 
 # Guides
 
-## Microsoft Tutorials (free)
+## Microsoft Tutorials 
 [Setting up Visual Studio](https://www.youtube.com/watch?v=5AOp8zFu4Vg&list=PLdo4fOcmZ0oWxvt87h9r3uq3uU6pUlCq8) <br />
 [An Introduction to .NET](https://www.youtube.com/watch?v=eIHKZfgddLM&list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) <br />
 [C# 101](https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN), an introduction to C# <br />
@@ -19,9 +19,9 @@ Naturally, these notes are in no way comprehensive. <br />
 [Other .NET Videos](https://www.youtube.com/c/dotNET/playlists) <br />
 
 ## Other Good Resouces
-[Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264) <br />
-[Caleb Curry's C# Tutorial for Beginners](https://www.youtube.com/watch?v=qOruiBrXlAw&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC) (6 hours, free) <br />
-[tutorialEU's C# Tutorial for Beginners](https://www.youtube.com/watch?v=UKaZ2S4AJAA&list=PLwhVruPHD9rxZ9U5K6vqUFkfrjaRhwEsV) (4.5 hours, free)
+[Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264) (paid, free for ACM members) <br />
+[Caleb Curry's C# Tutorial for Beginners](https://www.youtube.com/watch?v=qOruiBrXlAw&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC) (6 hours) <br />
+[tutorialEU's C# Tutorial for Beginners](https://www.youtube.com/watch?v=UKaZ2S4AJAA&list=PLwhVruPHD9rxZ9U5K6vqUFkfrjaRhwEsV) (4.5 hours)
 
 ## Videos Worth Watching
 [WinForm vs WPF vs UWP vs Console](https://www.youtube.com/watch?v=yq0dSkA1vpM) <br />
