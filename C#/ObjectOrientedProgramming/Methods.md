@@ -25,7 +25,7 @@ The implementation of a method requires all of the following: an [access modifie
 you will not need to supply a body for the method.
 
 ```C#
-public void printHello()    //Access modifier, return type, name, parameter list
+public void printHello()    //Access modifier (public), return type (void), name (printHello), parameter list ( () )
 {
     Console.WriteLine("Hello!");  //The code to be executed in { }
 }
