@@ -1,6 +1,5 @@
 # Preprocessor Directives in C#
-This is not a full list of preprocessor directives. I only intend to highlight the major ones. <br />
-For a full list, look [here](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives).
+This is not a full list of preprocessor directives. I did exclude the [_#pragma checksum_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#pragma-checksum) directive because of my ignorance.
 
 ## Defining Symbols
 The following conditional directives take parameters in the form of symbols. Symbols are defined in the format `#define <symbol>`. After a symbol has been defined, 
