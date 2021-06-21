@@ -147,3 +147,16 @@ namespace Main
 > Fails to compile. Error on line 10 (double val = ;).
 
 ## Pragmas
+
+### Enable/Disable Warnings
+```C#
+#pragma warning disable CS0219    //Disables warnings for unused variables
+
+public static void Main(string[] args)
+{
+    var unusedVariable = "this would normally generate a warning";   //typically error no. CS0219
+}
+```
+> Reference: [C# Documentation: Master List of Compiler Warnings/Errors](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/)
+
+### Generate Checksum
