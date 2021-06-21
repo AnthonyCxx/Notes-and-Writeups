@@ -20,4 +20,5 @@ The _SecureString.Dispose()_ method "writes binary zeroes to the allocated memor
 ## Checking for Null
 When checking for null, always use _is null_ instead of _== null_ because _== null_ has more overhead (is less efficient) and is susceptible to being overloaded,
 which could result in unexpected behavior and by extent incorrect results.
-> Reference: [Jax's Code Hole: "is null" Versus "== null" in C# ](https://www.gullberg.tk/blog/is-null-versus-null-in-c/) <== Read this, seriously.
+> Reference: [Jax's Code Hole: "is null" Versus "== null" in C# ](https://www.gullberg.tk/blog/is-null-versus-null-in-c/) <== Read this, seriously. <br />
+> Note: The '_IL_' he refers to in the article is [_Microsoft Intermediate Language_](https://en.wikipedia.org/wiki/Common_Intermediate_Language), which is the byte-code that C# compiles to.
