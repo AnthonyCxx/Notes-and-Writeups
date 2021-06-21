@@ -1,7 +1,9 @@
 # Methods in C#
 A method is a function that is associated with a class, record, or struct. Since all C# code is in the context of a class, record, or struct, functions and methods are
 synonymous in C#. Methods are blocks of code that can be invoked by name, executing the body of the method (its code). There are two types of methods: instance and static.
-By default, methods are instance, which means that they can only be called from an instance of the method's respective class.
+By default, methods are instance, which means that they can only be called from an instance of the method's respective class. In these examples, I use the _static_ keyword
+a lot; the static keyword just means that the method can be called without needed an [object](https://en.wikipedia.org/wiki/Instance_(computer_science)) (instance of a class)
+to call it from.
 ```C#
 static void Main(string[] args)
 {
@@ -43,12 +45,15 @@ public static void Main(string[] args)
 }
 
 //Method 'return5' returns the integer 5
-public int return5()  
+public static int return5()  
 {
     return 5;
 }
 ```
 > Prints: 'Value of 'num': 5'
+
+## Parameters
+A function can take parameters (also called arguments), which are values that are passed into the function. The function can then use these values 
 
 ## Default Parameters
 In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
