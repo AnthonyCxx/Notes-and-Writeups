@@ -79,6 +79,17 @@ public class Box
 ## Enabling/Disabling Null
 There are three directive for allowing/disallowing [nullable reference types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references): _#nullable enable_, _#nullable disable_, and _#nullable restore_.
 
+| Command | Result |
+| _#nullable enable_ | sets the nullable annotation context and nullable warning context to enabled |
+| _#nullable disable_ | sets the nullable annotation context and nullable warning context to disabled |
+| _#nullable restore_ | restores the nullable annotation context and nullable warning context to the project settings |
+| _#nullable disable warnings_ | set the nullable warning context to disabled |
+| _#nullable enable warnings_ | set the nullable warning context to enabled |
+| _#nullable restore warnings_ | restores the nullable warning context to the project settings |
+| _#nullable disable annotations_ | set the nullable annotation context to disabled |
+| _#nullable enable annotations_ | set the nullable annotation context to enabled |
+| _#nullable restore annotations_ | restores the annotation warning context to the project settings |
+> This table has been directly taken from the [C# Documentation: Nullable Contexts] <br />
 > Reference: [C# Documentation: _#nullable_ Preprocessor Directive](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#nullable-context).
 
 ## Errors/Warnings
