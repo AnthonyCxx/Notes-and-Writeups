@@ -1,7 +1,7 @@
 # Best Practices in C#
 
 ## Handling Sensitive Information (Passwords, SSNs, etc.)
-Any time you would store sensitive information as a string, store it in a char array instead. 
+Any time you would store sensitive information as a string, store it in a SecureString or char array instead. 
 To understand why strings are a security threat, you have to understand the underlying implementation. 
 Strings are immutable, which means they cannot be changed after they have been declared. 
 Every time you perform some string-altering process on a string, C# just creates a new string and returns that. 
