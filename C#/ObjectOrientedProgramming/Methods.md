@@ -28,7 +28,7 @@ Static methods are extremely useful for creating functional classes - classes th
 ```C#
 static void Main(string[] args)
 {
-    decimal celsius = TemperatureConverter.ToCelsius(90M);
+    decimal celsius = TemperatureConverter.ToCelsius(90M);   //'M' literal suffix makes it a decimal literal
     decimal farenheit = TemperatureConverter.ToFahrenheit(13M);
 
     //Show the results with 2 decimal places
@@ -41,7 +41,7 @@ public class TemperatureConverter
    //Uses decimal datatype to ensure accuracy.
    public static decimal ToCelsius(decimal temp)
     {
-        return (temp - 32) * (5M/9M);  //'M' literal suffix makes it a decimal literal
+        return (temp - 32) * (5M/9M); 
     }
 
     public static decimal ToFahrenheit(decimal temp)
@@ -53,6 +53,7 @@ public class TemperatureConverter
 > Prints: <br />
 > 90 degrees in Celius (from Farenheit) is: 32.22 <br />
 > 13 degrees in Farenheit (from Celsius) is: 55.4 <br />
+> Reference: [Literal Suffixes in C#](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/README.md#primitive-data-types) <br />
 
 ## Constructors
 A constructors is a special public method that are automatically run when an instance of the class is created. Constructors _must_ share the name of their class and are often
