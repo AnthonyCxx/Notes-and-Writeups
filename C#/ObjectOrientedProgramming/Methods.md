@@ -21,7 +21,8 @@ public class Dog
 ```
 
 ## Anatomy of a Method
-The implementation of a method requires all of the following: an [access modifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ObjectOrientedProgramming/AccessModifiers.md), a return type, a name, a parameter list, and a body
+The implementation of a method requires all of the following: an [access modifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ObjectOrientedProgramming/AccessModifiers.md), a return type, a name, a parameter list, and a body. In some cases, such as with [interfaces](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ObjectOrientedProgramming/Interfaces.md), you will only be asked to declare a method, in which case 
+you will not need to supply a body for the method.
 
 ```C#
 public void printHello()    //Access modifier, return type, name, parameter list
