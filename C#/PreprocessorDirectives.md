@@ -80,6 +80,7 @@ public class Box
 There are three directive for allowing/disallowing [nullable reference types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references): _#nullable enable_, _#nullable disable_, and _#nullable restore_.
 
 | Command | Result |
+| ------- | ------ |
 | _#nullable enable_ | sets the nullable annotation context and nullable warning context to enabled |
 | _#nullable disable_ | sets the nullable annotation context and nullable warning context to disabled |
 | _#nullable restore_ | restores the nullable annotation context and nullable warning context to the project settings |
