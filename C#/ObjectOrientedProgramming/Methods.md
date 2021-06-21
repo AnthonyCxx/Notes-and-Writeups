@@ -7,7 +7,7 @@ static void Main(string[] args)
 {
     //The method 'Bark' can now be called from any 'Dog' object
     var puppy = new Dog();  
-    puppy.Bark();
+    puppy.Bark();           //prints 'Woof!'
 }
 
 public class Dog
