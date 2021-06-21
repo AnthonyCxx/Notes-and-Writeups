@@ -56,11 +56,11 @@ public class TemperatureConverter
 > Reference: [Literal Suffixes in C#](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/README.md#primitive-data-types) <br />
 
 ## Constructors
-A constructors is a special public method that are automatically run when an instance of the class is created. Constructors _must_ share the name of their class and are often
-used to initialize the data members of said class. Constructors can be used for more than just initializing data members; for example, in [my Hangman Game](https://github.com/EthanC2/Hangman/blob/main/header-files/GameClass.hpp) (C++), I put the _run()_ function in the constructor of my _Game_ class so the game
-would automatically start when I loaded up the game. Similarly, in a video game constructors may call things like spawn animations or set the coordinates of the character.
-<br />
-
+A constructors is a special public method that are automatically run when an instance of the class is created. Constructors do not have a return type and _must_ 
+share the name of their class and are often used to initialize the data members of said class. Constructors can be used for more than just initializing data members;
+for example, in [my Hangman Game](https://github.com/EthanC2/Hangman/blob/main/header-files/GameClass.hpp) (C++), I put the _run()_ function in the constructor of my
+_Game_ class so the game would automatically start when I loaded up the game. Similarly, in a video game constructors may call things like spawn animations or set 
+the coordinates of the character. <br />
 
 There are two types of constructors: default and parameterized. The default constructor is called when no values are provided to initialize the new object with, and the
 parameterized constructor is called when values are provided. See the example below.
