@@ -54,7 +54,50 @@ public static void Main(string[] args)
 If you do not know the type of exception, use the generic [_Exception_](https://docs.microsoft.com/en-us/dotnet/api/system.exception?view=net-5.0) exception, which will catch any errors.
 
 ## Throw
-Sometimes, 
+The _throw_ keyword allows the programmer to manually raise an exception, which is especially useful for .
+```C#
+public static void Main(string[] args)
+        {
+            var backpack = new string[] { "Pencil", "Paper", "Scissors", "Strange Relic from the 4th Age...?" };
+
+            try
+            {
+                if (!Array.Exists(backpack, str => str == "a non-existant item"))
+                    throw new ItemNotFoundException("The item does not exist");
+            }
+            catch(ItemNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+ 
+        }
+        
+//Custom error class 'ItemNotFoundException'
+class ItemNotFoundException : Exception    //Custom exception inherits from the 'Exception' class
+{
+  public ItemNotFoundException()
+  { 
+
+  }
+
+  public ItemNotFoundException(string message) : base(message)
+  { 
+
+  }
+
+  public ItemNotFoundException(string message, Exception inner) : base(message, inner)
+  { 
+
+  }
+}
+```
+In this example, I used a [_lambda expression_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) as the [_predicate delegate_](https://www.tutorialsteacher.com/csharp/csharp-predicate#:~:text=Predicate%20is%20the%20delegate%20like,a%20boolean%20%2D%20true%20or%20false.) for the _Array.Exists(**_array_**, **_predicate_**)_ method. A predicate delegate is just a simple expression that returns true or false based on whether the given criteria. Here,
+I used a lambda expression as the criteria instead of declaring a whole function. Together, the lambda expression and predicate just take the string at the current index
+(str) and check whether it is equal to the string 'a non-existant item'. Since no item is equal to 'a non-existant item', the _Array.Exists()_ method returns false, which
+then throws the custom 'ItemNotFoundException' exception.
+
+> Reference: [C# Documentation: _Array.Exists(**_array_**, **_predicate_**)_ Method](https://docs.microsoft.com/en-us/dotnet/api/system.array.exists?view=net-5.0) <br />
+> Reference: [C# Documentation: Creating User-defined Exceptoins](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions) <br />
 
 ## Finally
 
