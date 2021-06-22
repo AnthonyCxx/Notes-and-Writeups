@@ -32,6 +32,7 @@ public void printHello()    //Access modifier (public), return type (void), name
     Console.WriteLine("Hello!");  //The code to be executed in { }
 }
 ```
+> Use [PascalCase](https://techterms.com/definition/pascalcase) for method names
 
 ## The Return Keyword and Return Types
 Methods can return a value to wherever it was called. The _return_ keyword returns that value, which could be a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b), a variable, or an expression. Once the _return_ statement is executed, the function ends, regardless of whether there was code after
@@ -71,7 +72,9 @@ public static int Add(int num1, int num2)
     return num1 + num2;    //The 'return' keyword is always evaluated last
 }
 ```
-> Prints: '15'
+> Prints: '15' <br />
+>
+> Use [camelCase](https://techterms.com/definition/camelcase) for parameters
 
 ## Default Parameters
 In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
