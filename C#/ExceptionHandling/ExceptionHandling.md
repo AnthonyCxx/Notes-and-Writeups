@@ -102,17 +102,8 @@ class ItemNotFoundException : Exception    //Custom exception inherits from the 
 
 In this example, I used a [_lambda expression_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions) as the [_predicate delegate_](https://www.tutorialsteacher.com/csharp/csharp-predicate#:~:text=Predicate%20is%20the%20delegate%20like,a%20boolean%20%2D%20true%20or%20false.) for the _Array.Exists(**_array_**, **_predicate_**)_ method. A predicate delegate is just a simple expression that returns true or false based on whether the given criteria. Here,
 I used a lambda expression as the criteria instead of declaring a whole function. Together, the lambda expression and predicate just take the string at the current index
-(str) and check whether it is equal to the string 'a non-existant item'. Since no item is equal to 'a non-existant item', the _Array.Exists()_ method returns false, which
+(_str_) and check whether it is equal to the string 'a non-existant item'. Since no item is equal to 'a non-existant item', the _Array.Exists()_ method returns false, which
 then throws the custom 'ItemNotFoundException' exception.
-
-
 
 ## Finally
 
-## Try...Catch Example
-
-## Try...Throw...Catch
-
-## Try...Finally Example
-
-### Try...Catch...Finally Example
