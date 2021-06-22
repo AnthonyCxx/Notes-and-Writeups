@@ -185,6 +185,7 @@ class MagicBook
     }
 }
 ```
+> Note: You can combine the default and parameterized constructors by making all of the values in the parameterized constructor default parameters.
 
 ## Static Methods
 A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
