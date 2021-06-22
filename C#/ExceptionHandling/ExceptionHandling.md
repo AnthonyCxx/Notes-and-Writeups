@@ -51,7 +51,7 @@ public static void Main(string[] args)
   }
 }
 ```
-If you do not know the type of exception, use the generic [_Exception_](https://docs.microsoft.com/en-us/dotnet/api/system.exception?view=net-5.0) exception, which will catch any errors.
+If you do not know the type of exception, use the generic [_Exception_](https://docs.microsoft.com/en-us/dotnet/api/system.exception?view=net-5.0) exception, which will catch any errors. Just as a final note, you can (and often should) have multiple _catch_ blocks for a single _try_ block, one for each possible error.
 
 ## Throw
 The _throw_ keyword allows the programmer to manually raise an exception, which is good for directly constrolling the flow of the program and is especially useful for throwing [user-defined exceptions](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions).
