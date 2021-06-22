@@ -19,7 +19,9 @@ var NameAndDigit = new Tuple<string, int, string, int, string, int>("one", 1, "t
 > Reference: [What is a Tuple?](https://www.tutorialsteacher.com/csharp/csharp-tuple) <br />
 > Reference: [C# Documentation: Var Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
 
-## Ref
+## Parameter Modifiers
+
+### Ref
 When passing [value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) as a parameter to a function, the actual variable
 itself is not passed, but only a copy of its contents. This means that anything that happens to the value passed will not affect the actual variable in main. To pass by 
 reference, you have to use the [_ref keyword_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) in both the function declaration and when calling
@@ -66,8 +68,6 @@ static void IncrementIntegerByReference(ref int integer)
 > Integer value AFTER calling by reference:  11 <br />
 > Reference: [C# Documentation: Passing by Reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref)
 
-## In and Out (as Parameter Modifiers)
-_In_ and _Out_ and both parameter modifiers.
 
 ### In
 _In_ is equivalent to _ref readonly_ (an immutable parameter which is passed by reference). Even though you cannot modifiy _in_ parameters, it is important that
