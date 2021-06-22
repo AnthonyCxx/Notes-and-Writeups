@@ -118,3 +118,33 @@ public static void Add(int a, int b, out int result)
 }
 ```
 > Prints: '50'
+
+### Params
+_Params_ allows a function to take a varying amount of parameters. Functions of differing [arity](https://en.wikipedia.org/wiki/Arity) are called 
+[variadic functions](https://en.wikipedia.org/wiki/Variadic_function). Variadic functions are exceedingly useful in writing flexable code. This 
+flexability can be extended even further by using [generics](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics) or the
+_object[]_ parameter type.
+
+```C#
+public static void Main(string[] args)
+{
+   Console.WriteLine($"The sum of 5, 7, and 9 is: {Sum(5, 7, 9)}");
+   Console.WriteLine($"The sum of 1 and 2 is: {Sum(1, 2)}");
+}
+
+public static int Sum(params int[] intList)
+{
+   int result = 0;
+
+   //Add up all the parameters
+   foreach (int integer in intList)
+   {
+      result += integer;
+   }
+
+   return result;
+}
+```
+> Prints: <br />
+> The sum of 5, 7, and 9 is: 21 <br />
+> The sum of 1 and 2 is: 3 <br />
