@@ -107,7 +107,25 @@ I used a lambda expression as the criteria instead of declaring a whole function
 then throws the custom 'ItemNotFoundException' exception.
 
 ## Finally
+> Note: The following text and example were both taken from the Microsoft C# Documentation cited below as 'C# Documentation: Finally Keyword'.
 "A finally block enables you to clean up actions that are performed in a try block. If present, the finally block executes last, after the try block and any matched catch block. A finally block always runs, whether an exception is thrown or a catch block matching the exception type is found. <br />
 
 The finally block can be used to release resources such as file streams, database connections, and graphics handles without waiting for the garbage collector in the runtime to finalize the objects." <br />
-- [C# Documentation: Finally Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-finally) <br />
+
+```C#
+FileStream? file = null;
+FileInfo fileinfo = new System.IO.FileInfo("./file.txt");
+try
+{
+    file = fileinfo.OpenWrite();    
+    file.WriteByte(0xF);  //The number '15' in hexadecimal
+}
+finally
+{
+    //Check for null because OpenWrite might have failed (unauthorized access, invalid path format, etc.)
+    file?.Close();
+}
+```
+> [_File.OpenWrite()_ Exceptions](https://docs.microsoft.com/en-us/dotnet/api/system.io.file.openwrite?view=net-5.0#exceptions) <br />
+> [_?. Operator_](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling#finally-blocks) <br />
+> [C# Documentation: Finally Blocks](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling#finally-blocks) <br />
