@@ -47,7 +47,8 @@ public static void Main(string[] args)
   }
   catch (IndexOutOfRangeException)   //Identifier goes here, like 'IndexOutOfRangeException e', where 'e' is the name of the object
   {
-    Console.WriteLine("Error: the given index does not exist");       //Console.WriteLine(e);  would display the message
+    //'Console.WriteLine(e);'  would display the compiler message,  'Console.WriteLine(e.Message);' would display a human-readable message
+    Console.WriteLine("Error: the given index does not exist");
   }
 }
 ```
