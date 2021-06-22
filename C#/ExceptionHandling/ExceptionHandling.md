@@ -63,6 +63,7 @@ public static void Main(string[] args)
 
   try
   {
+    //Refer to the notes below the code for an explanation on this behemoth
     if (!Array.Exists(backpack, str => str == "a non-existant item"))  //If no item in the backpack is 'a non-existant item'
       throw new ItemNotFoundException("The item does not exist");     //Then, throw 'ItemNotFoundException' with the message 'The item does not exist'
   }
