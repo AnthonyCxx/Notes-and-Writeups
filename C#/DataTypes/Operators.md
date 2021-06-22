@@ -17,6 +17,8 @@ A list of the operators in C#, taken from [_The C# Language Reference: Operators
 > Overloading an arithmetic operator implicitly overloads the corresponding compound assignment operator. You cannot explictly overload a compound assignment operator. ([reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/assignment-operator#operator-overloadability)) <br /> <br />
 > For [_floor division_](https://www.pythontutorial.net/advanced-python/python-floor-division/), just divide two integers (truncates the decimal). <br />
 > For exponents, use [_Math.Pow()_](https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=net-5.0). <br />
+>
+> [Applications of Modulus (%)](https://betterexplained.com/articles/fun-with-modular-arithmetic/)
 
 ## Relational Operators
 | Operator | Type | Function |
