@@ -96,6 +96,7 @@ class ItemNotFoundException : Exception    //Custom exception inherits from the 
 }
 ```
 > Note: the '[_new_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/new-operator)' operator after the '_throw_' is necessary because it creates the exception. Without the _new_ keyword, the object would not exist. <br />
+> 
 > Reference: [C# Documentation: _Array.Exists(**_array_**, **_predicate_**)_ Method](https://docs.microsoft.com/en-us/dotnet/api/system.array.exists?view=net-5.0) <br />
 > Reference: [C# Documentation: InnerException Property](https://docs.microsoft.com/en-us/dotnet/api/system.exception.innerexception?view=net-5.0) <br />
 
