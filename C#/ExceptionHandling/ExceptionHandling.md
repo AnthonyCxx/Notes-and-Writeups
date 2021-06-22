@@ -128,6 +128,6 @@ finally
     file?.Close();
 }
 ```
-> [_File.OpenWrite()_ Exceptions](https://docs.microsoft.com/en-us/dotnet/api/system.io.file.openwrite?view=net-5.0#exceptions) <br />
-> [_?. Operator_](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling#finally-blocks) <br />
-> [C# Documentation: Finally Blocks](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling#finally-blocks) <br />
+> Reference: [_File.OpenWrite()_ Exceptions](https://docs.microsoft.com/en-us/dotnet/api/system.io.file.openwrite?view=net-5.0#exceptions) <br />
+> Reference: [_?. Operator_](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling#finally-blocks) <br />
+> Reference: [C# Documentation: Finally Blocks](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling#finally-blocks) <br />
