@@ -24,7 +24,7 @@ public static void Main(string[] args)
 ```
 
 ## Try and Catch
-Exception handling is built upon three keywords: _try_, _throw_, and _catch_. The _try_ keyword denotes a block of code that the programmer suspects an error
+Basic exception handling is built upon two keywords: _try_ and _catch_. The _try_ keyword denotes a block of code that the programmer suspects an error
 may occur in. In the example above, the error may occur when displaying the contents of the index, because it may access a non-existent index. So, the statment
 _Console.WriteLine($"Index {index} contains {array\[index\]}");_ should be put in a _try_ block. Follwing the _try_ block should be a _catch_ block to catch the
 exception. The parameter of the _catch_ block should be the expected exception. If you want to know the exception message, put an [identifier](https://docs.microsoft.com/en-us/cpp/c-language/c-identifiers?view=msvc-160) after the expected exception (remember, the exception name is a class) and then write the object to console.
