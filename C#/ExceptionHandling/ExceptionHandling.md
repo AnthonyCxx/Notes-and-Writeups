@@ -53,6 +53,9 @@ public static void Main(string[] args)
 ```
 If you do not know the type of exception, use the generic [_Exception_](https://docs.microsoft.com/en-us/dotnet/api/system.exception?view=net-5.0) exception, which will catch any errors.
 
+## Throw
+Sometimes, 
+
 ## Finally
 
 ## Try...Catch Example
