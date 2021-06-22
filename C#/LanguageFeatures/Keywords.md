@@ -24,7 +24,7 @@ string defaultStr = default;
 
 Console.WriteLine($"The default value of an integer (and any numeric type) is: {defaultInt}");
 Console.WriteLine($"The default value of a bool is: {defaultBool}");
-Console.WriteLine($"The default value of a char is: {(defaultChar == '\u0000' ? "\\0" : "not \\0")}");
+Console.WriteLine($"The default value of a char is: {(defaultChar == '\u0000' ? "\\0" : "not \\0")}"); 
 Console.WriteLine($"The default value of a string is: {(defaultStr is null ? "null" : "not null")}");
 ```
 > Prints: <br />
@@ -32,6 +32,8 @@ Console.WriteLine($"The default value of a string is: {(defaultStr is null ? "nu
 > The default value of a bool is: False <br />
 > The default value of a char is: \0 <br /> 
 > The default value of a string is: null <br />
+> 
+> The ternary operators are necessary because printing null (the default value of chars and strings) prints blank space
 
 ## Const
 
