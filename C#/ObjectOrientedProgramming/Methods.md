@@ -104,7 +104,8 @@ A constructors is a special public method that are automatically run when an ins
 share the name of their class and are often used to initialize the data members of said class. Constructors can be used for more than just initializing data members;
 for example, in [my Hangman Game](https://github.com/EthanC2/Hangman/blob/main/header-files/GameClass.hpp) (C++), I put the _run()_ function in the constructor of my
 _Game_ class so the game would automatically start when I loaded up the game. Similarly, in a video game constructors may call things like spawn animations or set 
-the coordinates of the character. <br />
+the coordinates of the character. It is possible to combine the default and parameterized constructors by writing a parameterized constructors where each parameter has
+a default value. <br />
 
 There are two types of constructors: default and parameterized. The default constructor is called when no values are provided to initialize the new object with, and the
 parameterized constructor is called when values are provided. See the example below.
