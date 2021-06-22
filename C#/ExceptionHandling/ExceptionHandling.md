@@ -68,7 +68,7 @@ public static void Main(string[] args)
   }
   catch(ItemNotFoundException e)
   {
-    Console.WriteLine(e.Message);
+    Console.WriteLine(e.Message);   //Call the 'Message' property to access the string 'The item does not exist'
   }
  
 }
