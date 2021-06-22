@@ -12,10 +12,9 @@ The best way to avoid this problem is to simple overwrite the contents of the st
 The only real option to securely handle sensitive information is to use a mutable datatype and then _immediately_ overwrite its contents after you're done using it.
 This process is called [data sanitization](https://www.lifewire.com/data-sanitization-methods-2626133). Out of all the techniques, personally I recommend [zero-writing](https://www.lifewire.com/data-sanitization-methods-2626133#write-zero)
 as not only is it more efficient than overwriting with random characters, but it is also easy to verify that the data has been erased. <br />
-
-Strange no one at Microsoft made a class to streamline this process. Oh, wait, [they did](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring?view=net-5.0).
-The _SecureString.Dispose()_ method "writes binary zeroes to the allocated memory that contains the value of this SecureString object, then frees the allocated memory."  <br />
-> Reference: [C# Documentation: _SecureString.Dispose()_](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring.dispose?view=net-5.0#remarks)
+> [C# Documentation: SecureString](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring?view=net-5.0). <br />
+> The _SecureString.Dispose()_ method "writes binary zeroes to the allocated memory that contains the value of this SecureString object, then frees the allocated mem ory."  <br />
+> Reference: [C# Documentation: _SecureString.Dispose()_](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring.dispose?view=net-5.0#remarks) <br />
 
 ## Checking for Null
 When checking for null, always use '_is null_' instead of '_== null_' because '_== null_' has more overhead (is less efficient) and is susceptible to being overloaded,
