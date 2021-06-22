@@ -74,11 +74,14 @@ _In_ is equivalent to _ref readonly_ (an immutable parameter which is passed by 
 the _in_ keyword exists because it allows you to pass large values to functions without creating unnecessary copies. Because _in_ parameters are immutable, they 
 must be initialized before being passed.
 
-**WARNING: DO NOT RUN THIS CODE**
+**WARNING: DO NOT RUN THIS CODE** <br />
 This code easily ate 16 GB of RAM. Do _not_ run this.
 ```C#
 public static void Main(string[] args)
 {
+   // WARNING: DO NOT RUN THIS CODE //
+   #error this manual error will prevent code compilation. Do not run this code.
+
    //Declare an array of 100,000,000 unsigned long integers
    ulong[] array = new ulong[100_000_000];
 
