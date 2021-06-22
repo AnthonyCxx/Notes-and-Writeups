@@ -51,7 +51,7 @@ PI = 4913784713M;  //Illegal! PI is constant!
 Like the _const_ keyword, _readonly_ prevents a value from being changed; however, there are some notable differentces. The _readonly_ keyword can only be applied
 to [fields](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields) (specific data members of a class) and do not need to be known
 at compile time (unlike constants). Because of this, _readonly_ fields can be initialized by the constructor of the class or struct it is a part of. However, after 
-the constructor has exited, the _readonly_ field is not longer modifiable.
+the constructor has exited, the _readonly_ field is no longer modifiable.
 ```C#
 public static void Main(string[] args)
 {
