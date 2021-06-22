@@ -15,7 +15,7 @@ var NameAndDigit = new Tuple<string, int, string, int, string, int>("one", 1, "t
 
 ## Default
 The _default_ keyword initializes a variable to [the default value of its datatype](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/README.md), which 
-could be false, \0, 0, or null depending on the type.
+could be false, \0 ([the null character](https://www.rapidtables.com/code/text/ascii-table.html)), 0, or null depending on the type.
 ```C#
 int defaultInt = default;
 bool defaultBool = default;
