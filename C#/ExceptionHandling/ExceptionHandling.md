@@ -108,7 +108,7 @@ I used a lambda expression as the criteria instead of declaring a whole function
 then throws the custom 'ItemNotFoundException' exception.
 
 ## Finally
-> External Citation: the following was taken from the Microsoft C# Documentation cited below as 'C# Documentation: Finally Blocks'. <br />
+> **External Citation**: the following was taken from the Microsoft C# Documentation cited below as 'C# Documentation: Finally Blocks'. <br />
 
 "A finally block enables you to clean up actions that are performed in a try block. If present, the finally block executes last, after the try block and any matched catch block. A finally block always runs, whether an exception is thrown or a catch block matching the exception type is found. <br />
 
