@@ -121,33 +121,23 @@ static void Main(string[] args)
 
 public class Book
 {
-    private string _title;
-    private int _totalPages;
     
-    public string Title
-    {
-        get => _title;
-        set => _title = value;
-    }
+    public string Title { get; set; }
 
-    public int PageCount
-    {
-        get => _totalPages;
-        set => _totalPages = value;
-    }
+    public int PageCount { get; set; }
 
     //Default Constructor
     public Book()      //constructors do not have a return type!
     {
-        _title = "Unknown";
-        _totalPages = 0;
+        Title = "A Nameless Book";
+        PageCount = 0;
     }
 
     //Parameterized contructor
     public Book(string title, int pageCount)
     {
-        _title = title;
-        _totalPages = pageCount;
+        Title = title;
+        PageCount = pageCount;
     }
 }
 ```
