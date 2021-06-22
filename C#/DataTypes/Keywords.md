@@ -123,7 +123,7 @@ public static void Add(int a, int b, out int result)
 _Params_ allows a function to take a varying amount of parameters. Functions of differing [arity](https://en.wikipedia.org/wiki/Arity) are called 
 [variadic functions](https://en.wikipedia.org/wiki/Variadic_function). Variadic functions are exceedingly useful in writing flexable code. This 
 flexability can be extended even further by using [generics](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics) or the
-_object[ ]_ parameter type.
+_object\[\]_ parameter type.
 
 ```C#
 public static void Main(string[] args)
