@@ -266,7 +266,7 @@ static void IncrementIntegerByReference(ref int integer)
 
 ### In
 _In_ passes a paramter by reference and also makes it [immutable](https://www.vocabulary.com/dictionary/immutable). Even though you cannot modifiy _in_ parameters, it is important that
-the _in_ keyword exists because it allows you to pass large values to functions without creating unnecessary copies. Because _in_ parameters are immutable, they 
+the _in_ keyword exists because it allows you to immutably pass large values to functions without creating unnecessary copies. Because _in_ parameters are immutable, they 
 must be initialized before being passed.
 
 **WARNING: DO NOT RUN THIS CODE** <br />
