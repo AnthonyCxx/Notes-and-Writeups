@@ -65,3 +65,53 @@ static void IncrementIntegerByReference(ref int integer)
 > Integer value BEFORE calling by reference: 10 <br />
 > Integer value AFTER calling by reference:  11 <br />
 > Reference: [C# Documentation: Passing by Reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref)
+
+## In and Out (as Parameter Modifiers)
+_In_ and _Out_ and both parameter modifiers.
+
+### In
+_In_ is equivalent to _ref readonly_ (an immutable parameter which is passed by reference). Even though you cannot modifiy _in_ parameters, it is important that
+the _in_ keyword exists because it allows you to pass large values to functions without creating unnecessary copies. Because _in_ parameters are immutable, they 
+must be initialized before being passed.
+
+**WARNING: DO NOT RUN THIS CODE**
+This code easily ate 16 GB of RAM. Do _not_ run this.
+```C#
+public static void Main(string[] args)
+{
+   //Declare an array of 100,000,000 unsigned long integers
+   ulong[] array = new ulong[100_000_000];
+
+   //Fill the array with the max value of an unsigned long (18_446_744_073_709_551_615 -- ~18.5 quintillion)
+   Array.Fill(array, ulong.MaxValue);
+
+   //Print the array as a comma-separated (cs) string
+   PrintArray(array);
+}
+        
+public static void PrintArray(in ulong[] aMassiveArray)  //pass the array by reference and as read-only 
+{
+   Console.WriteLine( string.Join(", ", aMassiveArray) );
+}
+```
+
+### Out
+_Out_ performs the exact same function as the _ref_ keyword, but _out_ allows you to pass uninitialized variables.
+
+```C#
+public static void Main(string[] args)
+{
+   int num1 = 20, num2 = 30, result;   //notice that 'result' isn't initialized
+
+   Add(num1, num2, out result);   //have to pass 'result' with the 'out' keyword
+
+   Console.WriteLine(result);    
+}
+
+//'Add' function
+public static void Add(int a, int b, out int result)
+{
+   result = a + b; 
+}
+```
+> Prints: '50'
