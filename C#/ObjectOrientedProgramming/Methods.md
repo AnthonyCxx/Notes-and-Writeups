@@ -220,10 +220,7 @@ public class TemperatureConverter
 ## Parameter Modifiers
 
 ### Ref
-When passing [value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) as a parameter to a function, the actual variable
-itself is not passed, but only a copy of its contents. This means that anything that happens to the value passed will not affect the actual variable in main. To pass by 
-reference, you have to use the [_ref keyword_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) in both the function declaration and when calling
-the function.
+When passing values as a parameter to a function, the actual variable itself is not passed, but only a copy of its contents. This means that anything that happens to the value passed will not affect the actual variable in main. To pass by reference (and avoid using a copy), you have to use the [_ref keyword_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) in both the function declaration and when calling the function.
 
 ```C#
 //Declare a integer, 10
