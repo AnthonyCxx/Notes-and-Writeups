@@ -91,7 +91,7 @@ Console.WriteLine($"Minimum = {minimum}, Maximum = {maximum}");
 //Function: findMinMax - finds the minimum and maximum value of an array
 public static Tuple<int, int> findMinMax(int[] array)
 {
-    int min = 0, max = 0;
+    int min = array[0], max = array[0];
             
     foreach(int value in array)
     {
