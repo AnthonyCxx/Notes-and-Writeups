@@ -74,7 +74,7 @@ public static int Add(int num1, int num2)
 ```
 > Prints: '15' <br />
 >
-> Use [camelCase](https://techterms.com/definition/camelcase) for parameters
+> Note: se [camelCase](https://techterms.com/definition/camelcase) for parameters
 
 ## Default Parameters
 In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
