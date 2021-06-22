@@ -54,7 +54,7 @@ public static void Main(string[] args)
 If you do not know the type of exception, use the generic [_Exception_](https://docs.microsoft.com/en-us/dotnet/api/system.exception?view=net-5.0) exception, which will catch any errors. Just as a final note, you can (and often should) have multiple _catch_ blocks for a single _try_ block, one for each possible error.
 
 ## Throw
-The _throw_ keyword allows the programmer to manually raise an exception, which is good for directly constrolling the flow of the program and is especially useful for throwing [user-defined exceptions](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions).
+The _throw_ keyword allows the programmer to manually raise an exception, which is good for directly controlling the flow of the program and is especially useful for throwing [user-defined exceptions](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions) (as opposed to compiler-generated exceptions).
 ```C#
 public static void Main(string[] args)
 {
@@ -107,4 +107,7 @@ I used a lambda expression as the criteria instead of declaring a whole function
 then throws the custom 'ItemNotFoundException' exception.
 
 ## Finally
+"A finally block enables you to clean up actions that are performed in a try block. If present, the finally block executes last, after the try block and any matched catch block. A finally block always runs, whether an exception is thrown or a catch block matching the exception type is found. <br />
 
+The finally block can be used to release resources such as file streams, database connections, and graphics handles without waiting for the garbage collector in the runtime to finalize the objects." <br />
+- [C# Documentation: Finally Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-finally) <br />
