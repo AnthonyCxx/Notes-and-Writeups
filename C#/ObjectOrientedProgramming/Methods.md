@@ -146,7 +146,7 @@ This is called [method overloading](https://www.geeksforgeeks.org/c-sharp-method
 > Reference: [Overloading Methods in C#](https://www.pluralsight.com/guides/overload-methods-invoking-overload-methods-csharp) <br />
 
 ## Destructors
-Destructors (called _Finalizers_ these days) are the opposite of constructors. Destructors are called when the object [goes out of scope](https://www.pluralsight.com/guides/understanding-scope-and-visibility-in-c). Like constructors, destructors must share the name of the class; however,
+Destructors (called _Finalizers_ in C#) are the opposite of constructors. Destructors are called when the object [goes out of scope](https://www.pluralsight.com/guides/understanding-scope-and-visibility-in-c). Like constructors, destructors must share the name of the class; however,
 destructors have a single '~' before the class name to differentiate them from constructors. <br />
 
 Finalizers have a number of things you need to pay close attention to, which are as follows:
