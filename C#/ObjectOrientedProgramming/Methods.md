@@ -220,7 +220,8 @@ public class TemperatureConverter
 ## Parameter Modifiers
 
 ### Ref
-When passing values as a parameter to a function, the actual variable itself is not passed, but only a copy of its contents. This means that anything that happens to the value passed will not affect the actual variable in main. To pass by reference (and avoid using a copy), you have to use the [_ref keyword_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) in both the function declaration and when calling the function.
+When passing values as a parameter to a function, the actual variable itself is not passed, but only a copy of its contents. This means that anything that happens to the value passed will not affect the actual variable in main. To pass by reference (and avoid using a copy), you have to use the [_ref keyword_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref) in both the function declaration and when calling the function. It's worth noting that the _ref_, _in_, and _out_
+keywords do not apply to class properties since they cannot be passed by reference.
 
 ```C#
 //Declare a integer, 10
