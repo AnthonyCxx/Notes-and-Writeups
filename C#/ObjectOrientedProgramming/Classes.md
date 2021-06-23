@@ -106,7 +106,7 @@ public class Shoes
 > Prints: "The Nike shoes are black."
 
 ### _Set_ Property Accessor
-
+The _set_ keyword sets the value of the field related to the property. The [_value_] keyword represents the value being assigned to the property.
 ```C#
 static void Main(string[] args)
 {
