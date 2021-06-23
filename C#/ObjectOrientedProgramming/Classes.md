@@ -273,7 +273,7 @@ The _value_ keyword is used with the _set_ and _init_ property accessors to repr
 ## Auto-Implemented Properties
 Since fields and their accessors often come in pairs, C# has a feature named 'auto-implented properties' that allows you to declare a property and imply both
 the accessor's methods and the private field. In some cases, Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. 
-<br /> <br />
+<br />
 
 Though convenient, auto-implemented properties may not always be the way to go because they also eliminate the ability to access the private fields outside 
 of the public properties and prevent doing anything out of a simple _get_, _set_, or _init_ method.
