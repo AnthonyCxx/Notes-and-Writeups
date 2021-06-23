@@ -73,7 +73,7 @@ These operators are used to avoid a [_NullReferenceException_](https://docs.micr
 
 | Operator | Operands | Function |
 | -------- | -------- | -------- | 
-| ?? | binary | returns the first expression, unless it is [_null_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null) |
+| ?? | binary | returns the first expression if non-[_null_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null), otherwise returns the right expression |
 | ?. | unary postfix | return null if null, otherwise returns the result of the expression |
 | ?\[ \] | unary postfix | returns null if null, otherwise returns the value |
 | ??= | binary | assign a value to the variable _if_ it is null |
