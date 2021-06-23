@@ -270,6 +270,9 @@ public void DummyFunction() => Console.WriteLine("Hello, World!");
 ## The _value_ Keyword
 The _value_ keyword is used with the _set_ and _init_ property accessors to represent the value being assigned to the variable.
 
+## The _new_ Keyword
+The _new_ operator (yes, operator -- not keyword) is used to declare a new instance of an object, calling the constructor.
+
 ## Auto-Implemented Properties
 Since fields and their accessors often come in pairs, C# has a feature named 'auto-implented properties' that allows you to declare a property and imply both
 the accessor's methods and the private field. In some cases, Auto-implemented properties can even eliminate the need for constructors if there are no explicit fields. 
