@@ -147,7 +147,13 @@ This is called [method overloading](https://www.geeksforgeeks.org/c-sharp-method
 
 ## Destructors
 Destructors (called _Finalizers_ these days) are the opposite of constructors. Destructors are called when the object [goes out of scope](https://www.pluralsight.com/guides/understanding-scope-and-visibility-in-c). Like constructors, destructors must share the name of the class; however,
-destructors have a single '~' before the class name to differentiate them from constructors.
+destructors have a single '~' before the class name to differentiate them from constructors. <br />
+
+Finalizers have a number of things you need to pay close attention to, which are as follows:
+- Implementing a finalizer (_~Class_ method) puts the [the finalization queue](https://www.dotnettricks.com/learn/netframework/net-garbage-collection-and-finalization-queue)
+- "The exact time when the finalizer executes is undefined. To ensure deterministic release of resources for instances of your class, implement a Close method or provide a [IDisposable.Dispose](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose?view=net-5.0) implementation."
+- "The finalizers of two objects are not guaranteed to run in any specific order, even if one object refers to the other. That is, if Object A has a reference to Object B and both have finalizers, Object B might have already been finalized when the finalizer of Object A starts."
+> Quotes & Reference: [C# Documentation: How Finalization Works](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize?view=net-5.0#how-finalization-works)
 
 ```C#
 public static void Main(string[] args)
