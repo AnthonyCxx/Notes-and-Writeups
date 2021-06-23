@@ -279,7 +279,8 @@ the accessor's methods and the private field. In some cases, Auto-implemented pr
 <br />
 
 Though convenient, auto-implemented properties may not always be the way to go because they also eliminate the ability to access the private fields outside 
-of the public properties and prevent doing anything out of a simple _get_, _set_, or _init_ method.
+of the public properties and prevent doing anything out of a simple _get_, _set_, or _init_ method. Still, you should favor auto-implemented methods in most 
+cases as they significantly reduce code clutter.
 
 ```C#
 static void Main(string[] args)
