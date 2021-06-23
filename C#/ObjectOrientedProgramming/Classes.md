@@ -3,9 +3,8 @@ Classes are the heart of C#. A class is essentially a custom datatype that serve
 For example, a class 'Player' would contain a string for their name, an integer for their health, and then a [dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0) of the player's stats (here, a dictionary would map the name of the stat to its value). These three datatypes
 together would allow us to create variables of type 'Player' that would have all of these properties. In addition to data, classes can have [methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ObjectOrientedProgramming/Methods.md) which allow to class to perform actions. These actions don't have to
 affect other data; in fact, many methods are entirely internal. For example, if we extended the definition of a string, we could define a method 'isPalindrome' which
-return true if the word was a palindrome and false if the word wasn't.
-
-A class is a custom data type, which is composed of fields, properties, methods, and events. All classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) and thus [heap-allocated](https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/).
+return true if the word was a palindrome and false if the word wasn't. Classes have 4 categories of members: fields, properties, methods, and events, some of which are 
+explained here and some of which have entire articles dedicated to them. Finally, all classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) and so are also [heap-allocated](https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/).
 
 ## Format
 ```C#
