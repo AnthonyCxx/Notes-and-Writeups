@@ -250,6 +250,53 @@ class TimeKeeper
 ```
 > Prints 'Program started at 6/25/2021 4:46:17 PM'
 
+## Class Extensions
+```C#
+using System;
+using ExtensionsImplementation;   //Have to include the namespace of the extension
+
+// DRIVER CODE \\
+namespace ExtensionExample
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            string word = "kayak";
+            
+            //Custom method 'isPalindrome()' is now callable
+            Console.WriteLine($"The word '{word}' is a Palindrome: {word.isPalindrome()}");  
+        }
+    }   
+}
+
+//Extensions should have a separate namespace
+namespace ExtensionsImplementation
+{
+     //A class dedicated to string extensions (you cannot delclare a method directly in a namespace;
+    //a method must be a part of a class
+    public static class StringExtensions
+    {
+        //Extension 'isPalindrome' returns true if the string is a palindrome
+        public static bool isPalindrome(this String word)    //Argument format: this keyword, data/class type, then a name
+        {
+            
+            //Iterate over the string, comparing the nth and nth-from-last characters
+            for (int i = 0; i < word.Length / 2; i++)
+            {
+                //If the two characters do not match, return false
+                if (word[i] != word[^(i + 1)])
+                    return false;
+            }
+
+            //If all match, return true
+            return true;
+ 
+        }
+    }
+}
+```
+
 ## Parameter Modifiers
 
 ### Ref
