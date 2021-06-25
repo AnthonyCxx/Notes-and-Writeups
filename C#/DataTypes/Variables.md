@@ -31,6 +31,11 @@ class SystemInfo   //Callable with the 'systeminfo' command in Powershell
     public static int RAM { get; } = 32_614;   //in MB
 }
 ```
+> Prints: <br />
+> OS: Microsoft Windows 10 Home <br />
+> Model: GP63 Leopard 8RE <br />
+> Architecture: x86_64 <br />
+> RAM: 32614 <br />
 
 ## Nullable Value Types
 Standard types can be assigned null if a _?_ is appended to the datatype at declaration. The value null should be reserved to indicate an invalid or unknown value.
