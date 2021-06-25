@@ -244,7 +244,7 @@ class TimeKeeper
 
     static TimeKeeper()
     {
-        InitializationTime = DateTime.Now;
+        StartTime = DateTime.Now;
     }
 }
 ```
