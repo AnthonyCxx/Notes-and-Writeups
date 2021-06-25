@@ -11,6 +11,27 @@ The difference between reference and pointer types is that reference types are a
 When passing value types as a parameter, the variable itself is not passed, only the value stored in it. Any changes to the copied value will not affect
 the original variable. This is not true for reference nor pointer types as they pass the address in memory.
 
+## Global Variables
+There are no global variables in C#. However, a public static field in a class is essentially the same thing.
+```C#
+public static void Main(string[] args)
+{
+    Console.WriteLine($"OS: {SystemInfo.OSName}");
+    Console.WriteLine($"Model: {SystemInfo.Model}");
+    Console.WriteLine($"Architecture: {SystemInfo.Architecture}");
+    Console.WriteLine($"RAM: {SystemInfo.RAM}");
+}
+
+//Class 'SystemInfo' is composed entirely of 'global' variables
+class SystemInfo   //Callable with the 'systeminfo' command in Powershell
+{
+    public static string OSName { get; } = "Microsoft Windows 10 Home";
+    public static string  Model { get; } = "GP63 Leopard 8RE";
+    public static string Architecture { get; } = "x86_64";    //x86_64 Assembly
+    public static int RAM { get; } = 32_614;   //in MB
+}
+```
+
 ## Nullable Value Types
 Standard types can be assigned null if a _?_ is appended to the datatype at declaration. The value null should be reserved to indicate an invalid or unknown value.
 ```C#
