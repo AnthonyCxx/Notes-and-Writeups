@@ -225,6 +225,31 @@ public class TemperatureConverter
 > 
 > Reference: [Literal Suffixes in C#](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/DataTypes/README.md#primitive-data-types) <br />
 
+## Static Constructors
+Now that you understand constructors and static methods, you can use static constructors. "A static constructor is used to initialize any static data, or 
+to perform a particular action that needs to be performed only once. It is called automatically before the first instance is created or any static members are referenced."
+([C# Documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors).) Because static 
+constructors are only callable by the runtime, they cannot have access modifiers such as _public_ or _private_. Moreover, static constructors cannot have parameters
+(this means that a class can only have one static constructor!). Last, there is no such thing as a static destructor.
+```C#
+public static void Main(string[] args)
+{
+    Console.WriteLine($"Program started at {TimeKeeper.StartTime}");
+}
+
+//Class 'TimeKeeper' keeps a rough estimate of when the program started and ended
+class TimeKeeper
+{
+    public static DateTime StartTime { get; }   //The time the program started
+
+    static TimeKeeper()
+    {
+        InitializationTime = DateTime.Now;
+    }
+}
+```
+> Prints 'Program started at 6/25/2021 4:46:17 PM'
+
 ## Parameter Modifiers
 
 ### Ref
