@@ -84,8 +84,8 @@ Just as a note, underscores are considered letters, not symbols. <br />
 ## Searching
 | Key | Action |
 | --- | -------- |
-| /_**text/pattern**_ | forward search |
-| ?_**text/pattern**_  | backwards search |
+| /{_**text/pattern**_} | forward search |
+| ?{_**text/pattern**_}  | backwards search |
 | n | move cursor to next search result |
 | N | move cursor to previous search result |
 
