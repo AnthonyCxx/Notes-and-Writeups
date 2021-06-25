@@ -190,7 +190,8 @@ class MagicBook
 
 ## Static Methods
 A static method (the opposite of an instance method) is a method that does not require an object of that class in order to be called. Take the _.WriteLine(**_string_**)_ 
-method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**)_. <br />
+method for example. You don't need a _System_ nor a _Console_ object to be able to use _.WriteLine(**_string_**). Because static methods and data members are not 
+associated with any object (instance of the class), the _this_ keyword cannot be used with them. <br />
 
 Static methods are extremely useful for creating functional classes - classes that only perform some sort of function.
 ```C#
