@@ -297,8 +297,8 @@ namespace Extensions
         //The initial parameter for any extension must be the object itself (preceeded by the 'this' keyword)
         public static string Reverse(this String str)
         {
-            //Since strings are immutable, using a temporary char array (mutable) 
-            //is a better solution than reversing the individual members
+              //Since strings are immutable, using a temporary char array (mutable) 
+             //is a better solution than reversing the individual members
             //of the string since it would create a lot of unnecessary garbage.
             var charArray = str.ToCharArray();
             Array.Reverse(charArray);
