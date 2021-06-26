@@ -320,6 +320,9 @@ namespace Extensions
     }
 }
 ```
+> Notice how instead of _.IsReverseOf()_ and _IsPalindrome()_ directly, I wrote out the underlying principle (_Reverse()_) and used it to write two other functions
+> in a single, elegant line. <br />
+> 
 > Note: There is a ['.Reverse()' method under _System.Linq_](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.reverse?view=net-5.0), but it's good not to rely too heavily on libraries as a beginner. <br />
 > Reference: [C# Documentation: Extension Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) <br />
 
