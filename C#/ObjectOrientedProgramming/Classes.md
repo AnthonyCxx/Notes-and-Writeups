@@ -305,8 +305,10 @@ public class Phone
     }
 }
 ```
-# Partial Classes
-Class declarations (and implementations) can be split accross multiple files using the _partial_ keyword.
+## Partial Classes
+Class declarations (and implementations) can be split accross multiple files using the _partial_ keyword. This is useful when working on a large project with multiple people.
+This way, you can declare that a method exists without having to worry about how/where it's implemented. Think of the _partial_ keyword as similar to, but not the same as,
+C++'s [_extern_](https://docs.microsoft.com/en-us/cpp/cpp/extern-cpp?view=msvc-160) keyword.
 ```C#
 public static void Main(string[] args)
 {
@@ -321,6 +323,9 @@ public partial class Triangle
 {
     public decimal Base { get; init; }   //In cm
     public decimal Height { get; init; }   //In cm
+    
+    //A partial method
+        public partial void GetStats();
 
     public Triangle(decimal @base = 0M, decimal height = 0M)
     {
@@ -339,6 +344,13 @@ public partial class Triangle
             return (Base * Height) / 2M;
         }
     }
+    
+     public partial void GetStats()
+     {
+            Console.WriteLine($"Base: {Base}");
+            Console.WriteLine($"Height: {Height}");
+            Console.WriteLine($"Area: {Area}");
+     }
 }
 ```
 > Note: it's poor practice to name variable after keywords.
