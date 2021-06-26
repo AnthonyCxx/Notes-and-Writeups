@@ -317,7 +317,7 @@ namespace Extensions
     }
 }
 ```
-> Note: There is a ['.Reverse()' method under _System.Linq_](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.reverse?view=net-5.0), but it's good not to rely too heavily on libraries as a beginner <br />
+> Note: There is a ['.Reverse()' method under _System.Linq_](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.reverse?view=net-5.0), but it's good not to rely too heavily on libraries as a beginner. <br />
 > Reference: [C# Documentation: Extension Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) <br />
 
 ## Parameter Modifiers
