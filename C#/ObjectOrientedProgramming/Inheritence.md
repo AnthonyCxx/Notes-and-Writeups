@@ -1,10 +1,12 @@
 # Inheritence in C#
 Inheritance is the ability of a class to be able to adopt the attributes (fields, properties, methods, and events) of another class, extending and 
-building off of the base class. 
+building off of the base class. The class that the new class inherits from is called the base class and the class inheriting the properties is called the derived class.
+Unlike in some other languages such as Perl and C++, C# does not support [multiple inheritance](https://docstore.mik.ua/orelly/perl4/porm/ch11_06.htm) 
+(the ability for a derived class to have more than one base class). If you need to 'inherit' from multiple base classes, you have to use [interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces) instead.
 
 ## Key Points
 - Inheritance allows for [D.R.Y. coding](https://dzone.com/articles/is-your-code-dry-or-wet) by increasing [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
-- Classes can only inherit from one class. If you need to inherit from
+- Multiple inheritance in C# can be achieved through the use of interfaces.
 
 ## Simple Inheritence
 ```C#
@@ -21,10 +23,7 @@ static void Main(string[] args)
 
   Console.WriteLine(pickaxe.Stats);
 
-
-  Console.WriteLine("");   //Endline
-
-  //Testing the 'Sword' class
+  //Testing the 'Sword' class (derived from the 'Tool' class)
   var sword = new Sword("A Sharp Sword", 100);
 
   Console.WriteLine(sword.Stats);
