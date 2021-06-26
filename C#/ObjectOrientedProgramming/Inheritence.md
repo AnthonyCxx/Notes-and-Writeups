@@ -1,13 +1,15 @@
 # Inheritence in C#
 Inheritance is the ability of a class to be able to adopt the attributes (fields, properties, methods, and events) of another class, extending and 
 building off of the base class. The class that the new class inherits from is called the base class and the class inheriting the properties is called the derived class.
-Unlike in some other languages such as Perl and C++, C# does not support [multiple inheritance](https://docstore.mik.ua/orelly/perl4/porm/ch11_06.htm) 
-(the ability for a derived class to have more than one base class). If you need to 'inherit' from multiple base classes, you have to use [interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces) instead. Although, C# does not support multiple inheritance, it does support
-[multilevel (chain) inheritance](https://www.geeksforgeeks.org/c-sharp-multilevel-inheritance/), allowing you use a derived class as a base class for another class;
-Multilevel inheritance is different from multiple inheritance in that multiple inheritance allows a new class to inherit from two unrelated classes, whereas 
-multilevel inheritance allows a class to inherit from a class that is itself a derived class.
+For example, if you created a _furniture_ class with some attributes for the color, weight, and material, you could create a new class _chair_ that inherited from the the
+_furniture_ class and only have to implement a few new attributes such as number of legs and chair model. Unlike in some other languages such as Perl and C++, 
+C# does not support [multiple inheritance](https://docstore.mik.ua/orelly/perl4/porm/ch11_06.htm)  (the ability for a derived class to have more than one base class).
+If you need to 'inherit' from multiple base classes, you have to use [interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces) instead. Although, C# does not support multiple inheritance, it does support [multilevel (chain) inheritance](https://www.geeksforgeeks.org/c-sharp-multilevel-inheritance/), 
+allowing you use a derived class as a base class for another class; Multilevel inheritance is different from multiple inheritance in that multiple inheritance 
+allows a new class to inherit from two unrelated classes, whereas  multilevel inheritance allows a class to inherit from a class that is itself a derived class.
 
 ## Key Points
+- Inheritance is the ability for a class to inherit the attributes of a pre-existing class.
 - Inheritance allows for [D.R.Y. coding](https://dzone.com/articles/is-your-code-dry-or-wet) by increasing [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
 - C# supports multilevel inheritance, but not multiple inheritance (but can achieve a similar effect through interfaces).
 
