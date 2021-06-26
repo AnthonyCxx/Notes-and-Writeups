@@ -91,8 +91,10 @@ namespace InheritencePractice
             //Create a chest that contains the following items (with a max of 10 items)
             var chest = new Chest<string>("Small chest", 641, 10, new string[] { "wood", "stone", "brimstone", "nails" });
 
-
+            //Prints: Chest Items: wood, stone, brimstone, nails
             Console.WriteLine($"Chest Items: {chest.ItemList}");
+            
+            //Prints: Max Chest Capacity: 10
             Console.WriteLine($"Max Chest Capacity: {chest.Capacity}");
             
         }
@@ -194,8 +196,5 @@ namespace InheritencePractice
     }
 }
 ```
-> Prints: <br />
-> Chest Items: wood, stone, brimstone, nails <br />
-> Max Chest Capacity: 10 <br /> <br />
 > Reference: [GeeksForGeeks: Inheritence in C#](https://www.geeksforgeeks.org/c-sharp-interface/) <br />
 > Reference: [GeeksForGeeks: Multiple Inheritence in C# using Interfaces](https://www.geeksforgeeks.org/c-sharp-multiple-inheritance-using-interfaces/) <br />
