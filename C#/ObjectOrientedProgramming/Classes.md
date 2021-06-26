@@ -305,6 +305,43 @@ public class Phone
     }
 }
 ```
+# Partial Classes
+Class declarations (and implementations) can be split accross multiple files using the _partial_ keyword.
+```C#
+public static void Main(string[] args)
+{
+    var triangle = new Triangle { Base = 30M, Height = 50M };
+
+    //Prints: The area of the triangle is: 750 cm
+    Console.WriteLine($"The area of the triangle is: {triangle.Area} cm");
+}
+
+//File 1
+public partial class Triangle
+{
+    public decimal Base { get; init; }   //In cm
+    public decimal Height { get; init; }   //In cm
+
+    public Triangle(decimal @base = 0M, decimal height = 0M)
+    {
+        Base = @base;    //Variable can be named after keyword using the '@' prefix
+        Height = height;
+    }
+}
+
+//File 2
+public partial class Triangle
+{
+    public decimal Area
+    {
+        get
+        {
+            return (Base * Height) / 2M;
+        }
+    }
+}
+```
+> Note: it's poor practice to name variable after keywords.
 
 # Events
 Don't worry about this for now :)
