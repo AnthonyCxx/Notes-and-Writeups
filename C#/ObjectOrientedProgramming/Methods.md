@@ -250,8 +250,9 @@ class TimeKeeper
 ```
 > Prints 'Program started at 6/25/2021 4:46:17 PM'
 
-## Class Extensions
-Sometimes, it is convenient
+## Extension Methods
+Generally, it is better to add methods to a pre-existing class than to derive a new class from it and add extensions to the derived class. Extension methods
+allow you to extend the functionality of a pre-existing class, which includes the fundamental datatypes (int, string, DateTime) since C# has a [Unified Type System](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#the-common-type-system). In this example, I added a few methods that are useful for reversing strings.
 
 ```C#
 using System;
@@ -316,6 +317,8 @@ namespace Extensions
     }
 }
 ```
+> Note: There is a ['.Reverse()' method under _System.Linq_](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.reverse?view=net-5.0), but it's good not to rely too heavily on libraries as a beginner <br />
+> Reference: [C# Documentation: Extension Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) <br />
 
 ## Parameter Modifiers
 
