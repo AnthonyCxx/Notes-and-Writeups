@@ -1,4 +1,10 @@
 # Inheritence in C#
+Inheritance is the ability of a class to be able to adopt the attributes (fields, properties, methods, and events) of another class, extending and 
+building off of the base class. 
+
+## Key Points
+- Inheritance allows for [D.R.Y. coding](https://dzone.com/articles/is-your-code-dry-or-wet) by increasing [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
+- Classes can only inherit from one class. If you need to inherit from
 
 ## Simple Inheritence
 ```C#
