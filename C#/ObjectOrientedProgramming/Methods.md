@@ -251,47 +251,67 @@ class TimeKeeper
 > Prints 'Program started at 6/25/2021 4:46:17 PM'
 
 ## Class Extensions
+Sometimes, it is convenient
+
 ```C#
 using System;
-using ExtensionsImplementation;   //Have to include the namespace of the extension
+using Extensions;  //Namespace for string extensions
 
 // DRIVER CODE \\
-namespace ExtensionExample
+namespace ExtensionsPracticeMain
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            string word = "kayak";
-            
-            //Custom method 'isPalindrome()' is now callable
-            Console.WriteLine($"The word '{word}' is a Palindrome: {word.isPalindrome()}");  
+            string word = "kayak", game = "Minecraft";
+
+            //Prints: The reverse of the word 'Minecraft' is: 'tfarceniM'
+            Console.WriteLine($"The reverse of the word '{game}' is: '{game.Reverse()}'");
+
+            //Prints: 'Minecraft' is the reverse of 'Mortal Kombat': False
+            Console.WriteLine($"'{game}' is the reverse of 'Mortal Kombat': {game.IsReverseOf("Mortal Kombat")}");
+
+            //Prints: 'kayak' is a palindrome: True
+            Console.WriteLine($"'{word}' is a palindrome: {word.IsPalindrome()}");
+
+            //Prints: 'Mortal Kombat' is a palindrome: False
+            Console.WriteLine($"'Mortal Kombat' is a palindrome: {"Mortal Kombat".IsPalindrome()}");
         }
     }   
 }
 
+// STRING CLASS EXTENSIONS \\
+
 //Extensions should have a separate namespace
-namespace ExtensionsImplementation
+namespace Extensions
 {
-     //A class dedicated to string extensions (you cannot delclare a method directly in a namespace;
-    //a method must be a part of a class
+     //A class dedicated to string extensions (you cannot delclare a method directly in a namespace).
+    //A method must be a part of a class
     public static class StringExtensions
     {
-        //Extension 'isPalindrome' returns true if the string is a palindrome
-        public static bool isPalindrome(this String word)    //Argument format: this keyword, data/class type, then a name
+        //The initial parameter for any extension must be the object itself (preceeded by the 'this' keyword)
+        public static string Reverse(this String str)
         {
-            
-            //Iterate over the string, comparing the nth and nth-from-last characters
-            for (int i = 0; i < word.Length / 2; i++)
-            {
-                //If the two characters do not match, return false
-                if (word[i] != word[^(i + 1)])
-                    return false;
-            }
+            //Since strings are immutable, using a temporary char array (mutable) 
+            //is a better solution than reversing the individual members
+            //of the string since it would create a lot of unnecessary garbage.
+            var charArray = str.ToCharArray();
+            Array.Reverse(charArray);
 
-            //If all match, return true
-            return true;
- 
+            return new string(charArray);
+        }
+
+        //Only the first paramter (the object itself) needs the 'this' keyword
+        public static bool IsReverseOf(this String str, string other)
+        {
+            return str.Reverse() == other;
+        }
+
+        //Extension 'IsPalindrome' returns true if the string is a palindrome
+        public static bool IsPalindrome(this String str)
+        {
+            return str == str.Reverse();
         }
     }
 }
