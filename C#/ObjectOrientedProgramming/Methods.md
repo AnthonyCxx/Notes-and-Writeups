@@ -251,8 +251,11 @@ class TimeKeeper
 > Prints 'Program started at 6/25/2021 4:46:17 PM'
 
 ## Extension Methods
-Generally, it is better to add methods to a pre-existing class than to derive a new class from it and add extensions to the derived class. Extension methods
-allow you to extend the functionality of a pre-existing class, which includes the fundamental datatypes (int, string, DateTime) since C# has a [Unified Type System](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#the-common-type-system). In this example, I added a few methods that are useful for reversing strings.
+In the event that you do not want to derive a new class from a new class, but still want to add to a pre-existing class, you can add methods to the pre-existing
+class using extension methods. Extension methods allow you to extend the functionality of a pre-existing class, which includes the fundamental datatypes (int, string, DateTime) since C# has a [Unified Type System](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/#the-common-type-system). Unless you are adding to the fundamental
+datatypes or pre-existing C# objects, you should try to avoid using extension methods. More often than not, creating a derived/static class is better than creating an 
+extension method because classes provide coherent organization, replacing the otherwise unavoidable amalgamation of unrelated methods. Before using extension methods,
+you should read [_Why I don't link C# Extension Methods_](https://daedtech.com/why-i-dont-like-c-extension-methods/) and [_Extension Methods and the Decline of Traditional Object-Oriented Programming_](https://blog.ndepend.com/extension-methods-decline-oop/) (If you read one, read both. His opinion changes somewhat in the second in an important way).
 
 ```C#
 using System;
