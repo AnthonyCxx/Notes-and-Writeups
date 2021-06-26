@@ -11,7 +11,7 @@ multilevel inheritance allows a class to inherit from a class that is itself a d
 - Inheritance allows for [D.R.Y. coding](https://dzone.com/articles/is-your-code-dry-or-wet) by increasing [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
 - C# supports multilevel inheritance, but not multiple inheritance (but can achieve a similar effect through interfaces).
 
-## Simple Inheritence
+## Simple (Standard) Inheritence
 ```C#
 
 //****************** Main Function *********************\\
