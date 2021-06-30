@@ -1,4 +1,3 @@
-# 'Hello, World!' in C
 ```C
 #include <stdio.h>        // C version of <iostream>
 
