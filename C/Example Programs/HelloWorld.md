@@ -1,10 +1,11 @@
 # 'Hello, World!' in C
 ```C
-#include <stdio.h>
-int main(void)
+#include <stdio.h>        // C version of <iostream>
+
+int main(void)           //'void' is not necessary, but good practice in C
 {
-  // %s is the string format conversion specifier
-  printf("%s", "Hello, world!\n");
+  // %s is the string format conversion specifier, replaced by 'Hello, World!\n'
+  printf("%s", "Hello, world!\n");           
 
   return 0;
 }
