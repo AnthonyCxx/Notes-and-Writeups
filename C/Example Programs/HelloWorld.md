@@ -1,6 +1,6 @@
 # 'Hello, World!' in C
 ```C
-#include <stdio.h>                                                                                                                                                                                               2
+#include <stdio.h>
 int main(void)
 {
   // %s is the string format conversion specifier
