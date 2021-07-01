@@ -70,6 +70,3 @@ void sayHello(void)
 
 #endif                 // End the conditional (creates a boundary for '#ifndef'
 ```
-
-## Parameterized Macros
-Macros defined with the _#define_ directive can be taken a step further by using [parameterized macros]()
