@@ -54,6 +54,30 @@ int main(void)
 ```
 > Prints: The square root of 5 is: 25
 
+## Pre-defined Macros
+There are a number of macros that are predefined by the compiler such as __DATE__ (the date the program was compiled on), __TIME__ (the time the program was compiled),
+and __FILE__ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    /* PRE-DEFINED MACROS */
+
+    // __DATE__ and __TIME__
+    printf("This program was compiled on %s at %s\n", __DATE__, __TIME__);
+
+    // __FILE__ (filename)
+    printf("The name of this file is %s\n", __FILE__);
+
+    return 0;
+}
+```
+> Prints: <br />
+> This program was compiled on Jun 30 2021 at 21:08:55 <br />
+> The path of this file is Macros.c <br />
+
+
 ## _#ifndef_, _#define_, and _#endif_
 The _#ifndef_, _#define_,  and _#endif_ trio are typically used to prevent the compiler from including the same code multiple times (via the _#include_ directive). 
 Code that is inbetween an _#ifndef_ and _#endif_ will not be executed if the macro (definition/pattern) is not defined (is false). The _#define_ (definition/pattern)
