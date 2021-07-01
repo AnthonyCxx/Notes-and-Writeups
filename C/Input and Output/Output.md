@@ -16,7 +16,7 @@ Because of its simpler implementation, [_puts()_ is faster and more efficient th
 int main(void)
 {
     char* str = "testing the puts function";    //a char pointer is basically a read-only string
-    puts(str);
+    puts(str);    //implicit \n
 
     return 0;
 }
@@ -33,7 +33,7 @@ int main(void)
 {
     float total = 10.50;
 
-    printf("Your total comes out to $%.2f\n", total);
+    printf("Your total comes out to $%.2f\n", total);  
 
     return 0;
 }
