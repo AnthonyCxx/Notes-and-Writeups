@@ -1,3 +1,8 @@
+# Macros in C
+Macros define patterns that input that are replaced by patterns of output. Macros are similar to functions, but are directly substituted into the text during the 
+preprocessing stage and thus avoid function overhead (just like inline functions). However, macros are much more dangerous as they cannot be debugged (do not have
+typechecking) and may expand in unexpected ways. [Here](https://programmersought.com/article/98051903921/) is a good summary of macros. Read this
+
 ## _#define_ \<input pattern\> \<output pattern\>
 The _#define_ directive defines a pattern for the compiler such that whenever it encounters the pattern of input (the first item), it will be replaced by the output 
 (the second item). These patterns of input which are transformed into patterns of output are called [macros](https://en.wikipedia.org/wiki/Macro_(computer_science)). 
