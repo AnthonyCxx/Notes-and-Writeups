@@ -16,7 +16,7 @@ Because of its simpler implementation, [_puts()_ is faster and more efficient th
 int main(void)
 {
     char* str = "testing the puts function";    //a char pointer is basically a read-only string
-    puts(str);    //implicit \n
+    puts(str);    //implicit '\n'
 
     return 0;
 }
