@@ -32,6 +32,9 @@ int main(void)
         Some types, such as characters and integers, do not need to be explicitly
         converted because of their relationship. For example, characters and integers
         can be used interchangably because characters are an integral type at heart.
+        On the other hand, forgetting to typecast things like integers into floats
+        or doubles into integers can cause some heinous errors.
+        
         Typecasting does not affect the original variable, just the expression
         it's being used in. Doing '(float) number' will not permanantly change
         the value of 'number'.
