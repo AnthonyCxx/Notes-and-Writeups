@@ -14,6 +14,8 @@ int main(void)
 
         Note: converting between floats and doubles will give you the closest possible
         equivalent, which will likely not be exactly accurate.
+        
+        *** SEE BELOW FOR PROGRAM OUTPUT ***
     */
 
     //A simple integer, float, and double
