@@ -23,3 +23,20 @@ int main(void)
 ```
 
 ## printf(__*str*__, __*formatting variables*__)
+_printf()_ is the generic C print function and is especially good for [formatting strings](https://www.geeksforgeeks.org/format-specifiers-in-c/) with values.
+_printf()_ is slower than _puts()_ and does not automatically append a newline character (\n). Be very careful when using _printf()_ (especially when printing
+strings provided by the user) as _printf()_ has a well-known [string formatting vulnerability](https://owasp.org/www-community/attacks/Format_string_attack).
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    float total = 10.50;
+
+    printf("Your total comes out to $%.2f\n", total);
+
+    return 0;
+}
+```
+> Prints: Your total comeso out to $10.50 <br />
+> Note: the '.2' between the standard _%f_ determines the amount of decimal places in the float <br />
