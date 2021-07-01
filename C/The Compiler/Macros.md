@@ -66,7 +66,7 @@ int main(void)
 ### Unexpected Expansion
 Macros take their parameters quite literally. The _SQUARE(x)_ function used earlier to show parameterized macros breaks when you give it an expression (2+3) instead of a 
 literal (5). This is because the parameter _x_  is 2+3 and the macro does not know to include parthenses; so, the macro really expands to 2 + 3 * 2 + 3, which
-equals 11, not 25 as we expect. This can be easily fixed by putting parentheses around the parameters in the definition of _SQUARE()_ like so:
+equals 11, not 25 as we would expect. This can be easily fixed by putting parentheses around the parameters in the definition of _SQUARE()_ like so:
 _#define SQUARE(x) ( (x)\*(x) )_; now, it should work fine. Alternatively, you could use parentheses when passing the parameter, but that's impractical.
 ```C
 #include <stdio.h>
