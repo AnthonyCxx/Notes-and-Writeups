@@ -8,7 +8,7 @@ int main(void)
                                   =====
         Do not implicitly convert incompatible types WITHOUT typecasting:
         ================================================================
-        - Integers to doubles or floats (they are stored fundamentally differently)
+        - Integers to doubles or floats (or vice versa; they are stored fundamentally differently)
         - Negative numeric types (ints, floats...) to unsigned integers (ex. -1000 to an unsigned integer)
         ^^ Even if you typecast a negative number to an unsigned number, it will still cause integer overflow
 
