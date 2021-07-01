@@ -93,5 +93,5 @@ void sayHello(void)
     printf("Hello, world!");
 }
 
-#endif                 // End the conditional (creates a boundary for '#ifndef'
+#endif                 // End the conditional (creates a boundary for '#ifndef')
 ```
