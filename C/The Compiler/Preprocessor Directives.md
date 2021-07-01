@@ -83,6 +83,32 @@ int main(void)
 > The float 1 incremented is: 0.000000 <br />
 
 ### Unexpected Expansion
+> Citation notice: the following example is inspired by the GeeksforGeeks article '[Macros vs Functions](https://www.geeksforgeeks.org/macros-vs-functions/)'. <br />
+Macros take their parameters quite literally. The _SQUARE(x)_ function used to show parameterized macros breaks when you give it an expression (2+3) instead of a 
+literal (5). This is because the parameter _x_  is _2+3_ and the macro does not know to include parthenses; so, the macro really expands to _2 + 3 * 2 + 3_, which
+reduces to 11, not 25 as we expect. This can be easily fixed by putting _2+3_ in parentheses when passing it, but it still shows that you really should be careful 
+when using macros.
+```C
+#include <stdio.h>
+#define SQUARE(x) (x*x)
+
+int main(void)
+{
+       // x * x
+      // 2 + 3 * 2 + 3
+     // 2 + 6 + 3
+    // 11
+    printf("2+3 squared is: %d\n", SQUARE(2+3));       //Prints 11
+
+       // x * x
+      // (2 + 3) * (2 + 3)
+     // 5 * 5
+    // 25
+    printf("2+3 squared is: %d\n", SQUARE( (2+3) ));  //Prints 25
+
+    return 0;
+}
+```
 
 ## Pre-defined Macros 
 There are a number of macros that are predefined by the compiler such as _\_\_DATE\_\__ (the date the program was compiled on), _\_\_TIME\_\__ (the time the program was compiled), and _\_\_FILE\_\__ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list (note:
