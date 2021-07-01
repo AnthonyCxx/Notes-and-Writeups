@@ -1,7 +1,8 @@
 # Datatypes in C
 
 ## Primitive Data Types
-Anything in parentheses can be left to be implied.
+Anything in parentheses can be left to be implied. The actual size of the datatypes (in bytes) and their min/max values may vary from system to system.
+Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commit/077c0d23312f66cd8209683c639516e56b06eb47) to find correct values for your system.
 | Datatype | Size (in bytes) | Minimum Value | Maximum Value | Format Specifier |
 | -------- | --------------- | ------------- | ------------- | ---------------- |
 | (signed) char | 1 | -128 | 127 | %c |
