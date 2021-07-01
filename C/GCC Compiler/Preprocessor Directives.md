@@ -55,8 +55,7 @@ int main(void)
 > Prints: The square root of 5 is: 25
 
 ## Pre-defined Macros
-There are a number of macros that are predefined by the compiler such as \_\_DATE\_\_ (the date the program was compiled on), \_\_TIME\_\_ (the time the program was compiled),
-and \_\_FILE\_\_ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list.
+There are a number of macros that are predefined by the compiler such as _\_\_DATE\_\__ (the date the program was compiled on), _\_\_TIME\_\__ (the time the program was compiled), and _\_\_FILE\_\__ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list.
 ```C
 #include <stdio.h>
 
