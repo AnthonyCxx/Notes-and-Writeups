@@ -40,7 +40,8 @@ int main(void)
 Macros can be taken a step further with [parameterized macros](https://en.wikipedia.org/wiki/Macro_(computer_science)#Parameterized_macro), patterns that can take parameters.
 Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. <br />
 
-Here, we can write a simple macro to calculate a square root, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use a single function.
+Here, we can write a simple macro to calculate a square root, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use a single function. See [this article](https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm)
+for more information on macros.
 ```C
 #include <stdio.h>
 #define SQUARE(x) (x * x)    // Parameterized 
