@@ -43,7 +43,7 @@ Often, parameterized macros are used to write simple functions and eliminate [fu
 Here, we can write a simple macro to calculate a square root, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use a single function.
 ```C
 #include <stdio.h>
-#define SQUARE(x) (x *x)    // Parameterized 
+#define SQUARE(x) (x * x)    // Parameterized 
 
 int main(void)
 {
