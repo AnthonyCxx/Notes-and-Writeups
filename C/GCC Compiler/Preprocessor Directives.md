@@ -36,7 +36,7 @@ int main(void)
 ```
 > Prints: Pi is equal to 3.14159
 
-## Parameterized Macros (_#define_)
+## Parameterized Macros
 Macros can be taken a step further with [parameterized macros](https://en.wikipedia.org/wiki/Macro_(computer_science)#Parameterized_macro), patterns that can take parameters.
 Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. <br />
 
@@ -55,7 +55,7 @@ int main(void)
 ```
 > Prints: The square root of 5 is: 25
 
-## Pre-defined Macros
+## Pre-defined Macros 
 There are a number of macros that are predefined by the compiler such as _\_\_DATE\_\__ (the date the program was compiled on), _\_\_TIME\_\__ (the time the program was compiled), and _\_\_FILE\_\__ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list.
 ```C
 #include <stdio.h>
