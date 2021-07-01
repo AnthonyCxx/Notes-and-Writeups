@@ -44,7 +44,7 @@ Here, we can write a simple macro to calculate a square root, preventing us from
 for more information on macros.
 ```C
 #include <stdio.h>
-#define SQUARE(x) (x * x)    // Parameterized 
+#define SQUARE(x) (x*x)    // Parameterized 
 
 int main(void)
 {
