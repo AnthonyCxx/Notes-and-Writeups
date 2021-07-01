@@ -9,7 +9,7 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 | (signed) char | 1 | -128 | 127 | %c |
 | unsigned char | 1 | 0 | 255 | %c |
 | (signed) short (int) | 2 | −32,768 | 32,767 | %hi |
-| unsigned short (int) | 2 | 0 | 65,535 | %hi |
+| unsigned short (int) | 2 | 0 | 65,535 | %hu |
 | (signed) int | 4 | -2,147,483,648 | 2,147,483,647 | %d |
 | unsigned int | 4 | 0 | 4,294,967,295  | %u |
 | (signed) long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %ld |
