@@ -2,7 +2,7 @@
 
 ## Primitive Data Types
 Anything in parentheses can be left to be implied (i.e. you can declare an unsigned short int using '_signed short int_','_short int_' or just '_short_').
-The actual size of the datatypes (in bytes) and their min/max values may vary from system to system.
+The actual size of the datatypes (in bytes) and their min/max values may vary from system to system (especially 32- vs 64-bit systems).
 Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commit/077c0d23312f66cd8209683c639516e56b06eb47) to find correct values for your system.
 | Datatype | Size (in bytes) | Minimum Value | Maximum Value | Format Specifier |
 | -------- | --------------- | ------------- | ------------- | ---------------- |
@@ -16,11 +16,13 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 | unsigned long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %lu |
 | (signed) long long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %lld |
 | unsigned long long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %lld |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| float | 4 | 3.4E-38 | 3.4E+38 | %f |
+| double | 8 | 1.7E-308 | 1.7E+308 | %lf |
+| long double | 16 | 1.7E-308 | 1.7E+308 | %Lf |
 > Sources: <br />
-> [Microsoft: Integer Limits (C/C++)](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160)
-> [Javatpoint: Datatypes in C](https://www.javatpoint.com/data-types-in-c) <br />
+> [Microsoft: Integer Limits (C/C++)](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160) <br />
+> [Microsoft: Datatype Limits (C++)](https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160) (still relevant) <br />
 > [GeeksforGeeks: Datatypes in C](https://www.geeksforgeeks.org/data-types-in-c/) <br />
 > [TutorialsPoint: C - Data Types](https://www.tutorialspoint.com/cprogramming/c_data_types.htm) <br />
 > [TutorialsPoint: Format Specifiers in C](https://www.tutorialspoint.com/format-specifiers-in-c)
+> [Wikipedia: IEEE Standard for Floating-point Types](https://en.wikipedia.org/wiki/IEEE_754-1985)
