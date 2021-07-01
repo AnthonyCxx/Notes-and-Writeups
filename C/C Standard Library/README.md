@@ -4,4 +4,4 @@
 | ------- | --------- | -------- |
 | [\<stdio.h\>](https://en.cppreference.com/w/c/io)| Standard Input/Output (I/O) | contains functions related to input and output (for console, files, etc.) |
 | [\<stdbool.h\>](https://en.wikibooks.org/wiki/C_Programming/stdbool.h) | Standard Bool | contains the [\_Bool](https://c-for-dummies.com/blog/?p=2956) datatype (post-[C99](https://en.wikipedia.org/wiki/C99)) |
-| [\<math.h\>] | Math | contains a number of math-related functions for logarithms, square roots, sin, cos, tan, modulus for floats, etc. |
+| [\<math.h\>](https://www.tutorialspoint.com/c_standard_library/math_h.htm) | Math | contains math-related functions for logarithms, square roots, modulus for floats, etc. |
