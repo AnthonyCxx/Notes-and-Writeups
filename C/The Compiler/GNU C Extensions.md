@@ -5,7 +5,8 @@ as they are specific to [the GNU C Compiler](https://gcc.gnu.org/) (GCC) and you
 That being said, if you are building with GCC (and especially if you are building for Linux) these extensions are incredibly handy, almost [to the point of magic](https://radek.io/2012/11/10/magical-container_of-macro/).
 
 ## Statements Within Expressions
-GNU C allows you to declare statements within expressions using the `({ })` structure. Here, we can print 'Hello, world!' and return the amount of times all in a single
+GNU C allows you to declare statements within expressions using the `({ })` structure. The result of the last expression is implicitly returned.
+Here, we can print 'Hello, world!' and return the amount of times all in a single
 variable declaration. In this context, it is poor practice, but there are many circumstances where it is convenient to evaluate a complex expression and store the result.
 ```C
 #include <stdio.h>
@@ -13,7 +14,7 @@ variable declaration. In this context, it is poor practice, but there are many c
 int main(void)
 {
 
-    // times = 5
+    // times = 5 (returned by i, the last statement).
     int times = ({int i = 0; for (i; i < 5; i++) { puts("Hello, World!"); } i; });
 
     // Prints: "Hello, World!" was printed a total of %d times.
