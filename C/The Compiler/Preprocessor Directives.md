@@ -40,20 +40,20 @@ int main(void)
 Macros can be taken a step further with [parameterized macros](https://en.wikipedia.org/wiki/Macro_(computer_science)#Parameterized_macro), patterns that can take parameters.
 Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. <br />
 
-Here, we can write a simple macro to calculate the square of a number, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use a single function. See [this article](https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm)
-for more information on macros.
+Here, we can write a simple macro to calculate the square of a number, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use the [_pow()_](https://www.tutorialspoint.com/c_standard_library/c_function_pow.htm) function a single
+time. See [this article](https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm) for more information on macros.
 ```C
 #include <stdio.h>
 #define SQUARE(x) (x*x)    // Parameterized 
 
 int main(void)
 {
-    printf("The square root of 5 is: %d\n", SQUARE(5));
+    printf("The square of 5 is: %d\n", SQUARE(5));
 
     return 0;
 }
 ```
-> Prints: The square root of 5 is: 25
+> Prints: The square of 5 is: 25
 
 ## Pre-defined Macros 
 There are a number of macros that are predefined by the compiler such as _\_\_DATE\_\__ (the date the program was compiled on), _\_\_TIME\_\__ (the time the program was compiled), and _\_\_FILE\_\__ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list.
