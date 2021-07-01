@@ -19,8 +19,10 @@ int main(void)
 
 ## _#define_ \<input pattern\> \<output pattern\>
 The _#define_ directive defines a pattern for the compiler such that whenever it encounters the pattern of input (the first item), it will be replaced by the output 
-(the second item). In its simplest form, the _#define_ macro is used to define constants that will be substituted throughout the program. For example, a directive
-_#define PI 3.14159_ would replace all instances of 'PI' (but not pi, pI, or Pi) with '3.14159'.
+(the second item). These patterns of input which are transformed into patterns of output are called [macros](https://en.wikipedia.org/wiki/Macro_(computer_science)). 
+In its simplest form, the _#define_ macro is used to define constants that will be substituted throughout the program. For example, a directive
+_#define PI 3.14159_ would replace all instances of 'PI' (but not pi, pI, or Pi) with '3.14159'. Per convention, macro identifiers (names) should always be fully 
+capitalized.
 ```C
 #include <stdio.h>
 #define PI 3.14159
@@ -34,7 +36,22 @@ int main(void)
 ```
 > Prints: Pi is equal to 3.14159
 
-As
+Macros can be taken a step further with [parameterized macros](https://en.wikipedia.org/wiki/Macro_(computer_science)#Parameterized_macro), patterns that can take parameters.
+Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. <br />
+
+Here, we can write a simple macro to calculate a square root, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use a single function.
+```C
+#include <stdio.h>
+#define SQUARE(x) (x *x)    // Parameterized 
+
+int main(void)
+{
+    printf("The square root of 5 is: %d\n", SQUARE(5));
+
+    return 0;
+}
+```
+> Prints: The square root of 5 is: 25
 
 ## _#ifndef_, _#define_, and _#endif_
 The _#ifndef_, _#define_,  and _#endif_ trio are typically used to prevent the compiler from including the same code multiple times (via the _#include_ directive). 
