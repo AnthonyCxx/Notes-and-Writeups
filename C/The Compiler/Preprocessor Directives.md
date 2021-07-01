@@ -90,7 +90,7 @@ is included as a trigger, so that same code won't be included  more than once.
 
 void sayHello(void)
 {
-    printf("Hello, world!");
+    printf("%s", "Hello!");
 }
 
 #endif                 // End the conditional (creates a boundary for '#ifndef')
