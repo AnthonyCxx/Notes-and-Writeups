@@ -2,4 +2,4 @@
 
 # Characters
 
-## getchar(__*char*__)
+## getchar()
