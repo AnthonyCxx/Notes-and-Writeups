@@ -55,6 +55,35 @@ int main(void)
 ```
 > Prints: The square of 5 is: 25
 
+## Macro Pitfalls
+Macros are not typechecked; Additionally, they may not expand in the same way that you might expect.
+
+### Lack of Type-checking
+Macros cannot be debugged, and thus their type cannot be checked. This means that the computer cannot implicitly convert the datatypes to the same type and ends up adding 
+two values of different types (which a computer **_cannot_** do properly). Here, the _INCREMENT()_ macro adds an integer literal (1) to the passed parameter and then assigns
+it to the paramter. Because _int\_num_ is an integer, this does not cause any problems; however, since _float\_num_ is a float, the computer ends up adding an integer literal
+to a float and the result is the value of _float\_num_ becoming 0.000000 (a clear error).
+```C
+#include <stdio.h>
+#define INCREMENT(x) (x = x + 1)
+
+int main(void)
+{
+    int int_num = 1;
+    int float_num = 1.0;
+
+    printf("The integer 1 incremented is: %d\n", INCREMENT(int_num));
+    printf("The float 1 incremented is: %f\n", INCREMENT(float_num));  
+
+    return 0;
+}
+```
+> Prints: <br />
+> The integer 1 incremented is: 2 <br />
+> The float 1 incremented is: 0.000000 <br />
+
+### Unexpected Expansion
+
 ## Pre-defined Macros 
 There are a number of macros that are predefined by the compiler such as _\_\_DATE\_\__ (the date the program was compiled on), _\_\_TIME\_\__ (the time the program was compiled), and _\_\_FILE\_\__ (the name of the file being compiled). [Here](https://gcc.gnu.org/onlinedocs/cpp/Predefined-Macros.html) is a more comprehensive list (note:
 some of these macros are specific to the GCC compiler).
