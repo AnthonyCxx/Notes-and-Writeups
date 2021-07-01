@@ -86,7 +86,7 @@ is included as a trigger, so that same code won't be included  more than once.
 ```C
 // In customFile.h
 #ifndef CUSTOM_FILE      // If 'CUSTOM_FILE' is not defined, define everything until '#endif'
-#define CUSTOM_FILE      // Prvents this body from being included multiple times (by defined 'CUSTOM_FILE'
+#define CUSTOM_FILE      // Prvents this body from being included multiple times (by defining 'CUSTOM_FILE')
 
 void sayHello(void)
 {
