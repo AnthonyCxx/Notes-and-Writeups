@@ -75,7 +75,7 @@ int main(void)
 ```
 > Prints: <br />
 > This program was compiled on Jun 30 2021 at 21:08:55 <br />
-> The path of this file is Macros.c <br />
+> The name of this file is Macros.c <br />
 
 
 ## _#ifndef_, _#define_, and _#endif_
