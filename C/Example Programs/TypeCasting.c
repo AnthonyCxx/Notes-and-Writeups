@@ -144,5 +144,4 @@ The float 12.3456 as a double (with typecasting) is: 12.345600 (careful, implied
 The float 12.3456 as a double (without typecasting) is: 12.345600 (careful, implied zeros)
 The double 12.34567891011 as a float (with typecasting) is: 12.345679 (careful, notice the rounding .345679 instead of .345678)
 The double 12.34567891011 as a float (without typecasting) is: 12.345679 (careful, notice the rounding .345679 instead of .345678)              
-
 */
