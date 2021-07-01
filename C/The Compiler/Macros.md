@@ -71,28 +71,16 @@ _#define SQUARE(x) ( (x)\*(x) )_; now, it should work fine. Alternatively, you c
 ```C
 #include <stdio.h>
 #define SQUARE(x) ( (x)*(x) )    // <== Correct
-// #define SQUARE(x) (x*x)  <== Error, expands improperly
+// #define SQUARE(x) (x*x)  // <== Error, expands improperly
 
 int main(void)
 {
-       // x * x
-      // 2 + 3 * 2 + 3
-     // 2 + 6 + 3
-    // 11
-    printf("2+3 squared is: %d\n", SQUARE(2+3));       //Prints 11
-
-       // x * x
-      // (2 + 3) * (2 + 3)
-     // 5 * 5
-    // 25
-    printf("(2+3) squared is: %d\n", SQUARE( (2+3) ));  //Prints 25
+    printf("2+3 squared is: %d\n", SQUARE(2+3));  //Prints 25
 
     return 0;
 }
 ```
-> Prints: <br />
-> 2+3 squared is: 11 <br />
-> (2+3) squared is: 25 <br />
+> Prints: 2+3 squared is: 25 <br />
 > 
 > Citation notice: the example above is inspired by the GeeksforGeeks article '[Macros vs Functions](https://www.geeksforgeeks.org/macros-vs-functions/)'. <br />
 
