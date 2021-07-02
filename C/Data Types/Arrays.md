@@ -25,6 +25,27 @@ int main(void)
 }
 ```
 
+## Array Trick: Calculating Size on the Fly
+Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
+over any array, you would need to know the size of said array; however, there is no [_Array.Length_](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-5.0) method like in C#. To solve this problem, you have to resort to some pretty neat tricks. Assuming that all the elements of the array are the same size in bytes (which
+is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
+first element in the array. This could be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    int hugeArray[100000];
+
+    int arraySize = sizeof(hugeArray) / sizeof(hugeArray[0]);
+    //              ^ size of the array        ^ size of the first element
+
+    printf("The size of the huge array is %d\n", arraySize);
+
+    return 0;
+}
+```
+
 ## Passing Arrays as Parameters
 Arrays are always [passed by reference](https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm), not [by value](https://www.tutorialspoint.com/cprogramming/c_function_call_by_value.htm), this is beacuse "the name of the array itself is just a pointer to the first element"
 (via notes from [Florida State University](https://www.cs.fsu.edu/~myers/c++/notes/pointers2.html)). Passing an array as a parameter is exactly the same as passing 
@@ -81,27 +102,6 @@ int main(void)
 >
 > AFTER zero-filling the array... <br />
 > Array values: 0 0 0 <br />
-
-## Array Trick: Calculating Size on the Fly
-Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
-over any array, you would need to know the size of said array; however, there is no [_Array.Length_](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-5.0) method like in C#. To solve this problem, you have to resort to some pretty neat tricks. Assuming that all the elements of the array are the same size in bytes (which
-is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
-first element in the array. This could be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
-```C
-#include <stdio.h>
-
-int main(void)
-{
-    int hugeArray[100000];
-
-    int arraySize = sizeof(hugeArray) / sizeof(hugeArray[0]);
-    //              ^ size of the array        ^ size of the first element
-
-    printf("The size of the huge array is %d\n", arraySize);
-
-    return 0;
-}
-```
 
 ## Jagged Arrays
 [article](https://thispointer.com/allocating-and-deallocating-2d-arrays-dynamically-in-c-and-c/)
