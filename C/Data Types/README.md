@@ -30,7 +30,7 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 > [Wikipedia: IEEE Standard for Floating-point Types](https://en.wikipedia.org/wiki/IEEE_754-1985) <br />
 
 ## Non-primitive Data Types
-- Arrays
+- [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md)
 - Structs
 - Unions
 - Enums
