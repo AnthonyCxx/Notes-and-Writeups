@@ -28,3 +28,9 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 > [TutorialsPoint: C - Data Types](https://www.tutorialspoint.com/cprogramming/c_data_types.htm) <br />
 > [TutorialsPoint: Format Specifiers in C](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
 > [Wikipedia: IEEE Standard for Floating-point Types](https://en.wikipedia.org/wiki/IEEE_754-1985) <br />
+
+## Non-primitive Data Types
+- Arrays
+- Structs
+- Unions
+- Enums
