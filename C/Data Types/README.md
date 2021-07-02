@@ -16,9 +16,9 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 | unsigned long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %lu |
 | (signed) long long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %lld |
 | unsigned long long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %lld |
-| float | 4 | 3.4E-38 | 3.4E+38 | %f |
-| double | 8 | 1.7E-308 | 1.7E+308 | %lf |
-| long double | 16 | 1.7E-308 | 1.7E+308 | %Lf |
+| float (6 dec. places) | 4 | 3.4E-38 | 3.4E+38 | %f |
+| double (15 dec. places) | 8 | 1.7E-308 | 1.7E+308 | %lf |
+| long double (19  dec. places) | 16 | 1.7E-308 | 1.7E+308 | %Lf |
 > Sources: <br />
 > [Microsoft: Integer Limits (C/C++)](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160) <br />
 > [Microsoft: Datatype Limits (C++)](https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160) (still relevant) <br />
