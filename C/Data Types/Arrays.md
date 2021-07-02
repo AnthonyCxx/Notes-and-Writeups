@@ -24,6 +24,7 @@ int main(void)
     return 0;
 }
 ```
+> Leaving the array uninitialized gave me the following output: 0, 0, 873242784, 32692, -524434688
 
 ## Array Trick: Calculating Size on the Fly
 Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
