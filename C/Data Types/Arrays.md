@@ -25,6 +25,26 @@ int main(void)
 }
 ```
 
+## Array Trick: Calculating Size on the Fly
+Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
+over any array, you would need to know the size of said array; however, there is no [_Array.Length_](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-5.0) method like in C#. To solve this problem, you have to resort to some pretty neat tricks. Assuming that all the elements of the array are the same size in bytes (which
+is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
+first element in the array.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    int hugeArray[100000];
+
+    int arraySize = sizeof(hugeArray) / sizeof(hugeArray[0]);
+    //              ^ size of the array        ^ size of the first element
+
+    printf("The size of the huge array is %d\n", arraySize);
+
+    return 0;
+}
+```
 
 ## Jagged Arrays
 [article](https://thispointer.com/allocating-and-deallocating-2d-arrays-dynamically-in-c-and-c/)
