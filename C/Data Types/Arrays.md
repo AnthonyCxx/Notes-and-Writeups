@@ -12,7 +12,7 @@ int main(void)
     int simple_array[5] = {0, 0, 0, 0, 0};
 
     // Print the values of the array
-    printf("Array contents: ");
+    printf("%s", "Array contents: ");
 
     // Loop over the array
     for(int index=0; index < 5; index++)  // 5 is the size of the array
