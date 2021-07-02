@@ -5,7 +5,6 @@ typechecking) and may expand in unexpected ways. [Here](https://programmersought
 that provide a good summary of when and when not to use macros. As a rule of thumb, if you don't know: don't. <br />
 
 Articles:
-========
 [_How to Properly Use Macros in C_](https://pmihaylov.com/macros-in-c/) <br />
 [_What are Macros Useful For?_](https://stackoverflow.com/questions/653839/what-are-c-macros-useful-for) <br />
 
