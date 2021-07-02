@@ -32,5 +32,5 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 ## Non-primitive Data Types
 - [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md)
 - Structs
-- Unions
 - Enums
+- Unions
