@@ -142,7 +142,7 @@ int main(void)
     printf("Array elements: ");
     for(int i=0; i < 5; i++)  //i++ = i += i + 1 * sizeof(type)
     {
-        printf("%d ", *(scoreboard + i));
+        printf("%d ", *(scoreboard + i));   // 'scoreboard[i]' also works
     }
     putchar('\n');
 
