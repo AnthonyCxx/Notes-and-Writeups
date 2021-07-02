@@ -105,7 +105,7 @@ int main(void)
 
 ## Multi-dimensional Arrays
 [Multi-dimensional arrays](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm) are arrays that themselves contain arrays. These contained arrays
-are uniform in size and can even store other arrays. Anything beyond a two-dimensional array can be [quite confusing](https://www.youtube.com/watch?v=dQw4w9WgXcQ). When
+are uniform in size and can even store other arrays to create 3-dimensional arrays and so on. Anything beyond a two-dimensional array can be [quite confusing](https://www.youtube.com/watch?v=dQw4w9WgXcQ). When
 you access a multi-dimensional array, you have to specify the row and column like so: `array[row][column]`. Passing a multi-dimensional array as a parameter requires
 putting a set of _\[\]_ for each dimension and [putting the amount of dimensions (excluding the first) in the corresponding bracket](https://stackoverflow.com/questions/2828648/how-to-pass-a-multidimensional-array-to-a-function-in-c-and-c). See below for an example.
 
