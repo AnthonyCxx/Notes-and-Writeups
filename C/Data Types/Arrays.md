@@ -119,7 +119,7 @@ returns a new array (so it must be allocated on the heap). Here, I used _calloc(
 int* createScoreboard(int playerCount)
 {
     // Declare a new array on the heap (filled with 0s by calloc)
-    int* array =  calloc(playerCount, sizeof(int));
+    int* array =  calloc(playerCount, sizeof(int));   // (amount of elements, size of each element)
 
     // Array is NULL if not enough space on the heap for a new array
     if (array == NULL)
