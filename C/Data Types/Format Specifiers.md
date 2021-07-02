@@ -6,6 +6,7 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 
 ## Master List of Format Specifiers
 | Specifier | Datatype/Purpose | 
+| --------- | ---------------- |
 | %c | char | 
 |  |  |
 |  |  |
