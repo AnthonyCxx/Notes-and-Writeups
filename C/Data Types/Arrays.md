@@ -27,7 +27,8 @@ int main(void)
 
 ## Passing Arrays as Parameters
 Arrays are always [passed by reference](https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm), not [by value](https://www.tutorialspoint.com/cprogramming/c_function_call_by_value.htm), this is beacuse "the name of the array itself is just a pointer to the first element"
-(via notes from [Florida State University](https://www.cs.fsu.edu/~myers/c++/notes/pointers2.html)).
+(via notes from [Florida State University](https://www.cs.fsu.edu/~myers/c++/notes/pointers2.html)). Passing an array as a parameter is exactly the same as passing 
+a variable, except you need to put _\[\]_ (brackets) after the array name to indicate that it's an array (do not include the size of the array in the brackets). 
 ```C
 #include <stdio.h>
 #define SIZE(array) sizeof(array) / sizeof(array[0])
