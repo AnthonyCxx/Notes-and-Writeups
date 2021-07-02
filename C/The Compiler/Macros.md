@@ -1,8 +1,9 @@
 # Macros in C
 Macros define patterns that input that are replaced by patterns of output. Macros are similar to functions, but are directly substituted into the text during the 
 preprocessing stage and thus avoid function overhead (just like inline functions). However, macros are much more dangerous as they cannot be debugged (do not have
-typechecking) and may expand in unexpected ways. [Here](https://programmersought.com/article/98051903921/) is a short summary of macros. Below I have some articles 
-that provide a good summary of macros as well as when and when not to use them. As a rule of thumb, if you don't know: _don't_. Use functions instead. <br />
+typechecking), have no sense of scope, and may expand in unexpected ways. [Here](https://programmersought.com/article/98051903921/) is a short summary of macros. 
+Below I have some articles that provide a good summary of macros as well as when and when not to use them. As a rule of thumb, if you don't know: _don't_. 
+Use functions instead. <br />
 
 Articles: <br />
 [_How to Properly Use Macros in C_](https://pmihaylov.com/macros-in-c/) <br />
