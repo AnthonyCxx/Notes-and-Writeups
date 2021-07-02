@@ -25,6 +25,62 @@ int main(void)
 }
 ```
 
+## Passing Arrays as Parameters
+Arrays are always [passed by reference](https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm), not [by value](https://www.tutorialspoint.com/cprogramming/c_function_call_by_value.htm), this is beacuse "the name of the array itself is just a pointer to the first element"
+(via notes from [Florida State University](https://www.cs.fsu.edu/~myers/c++/notes/pointers2.html)).
+```C
+#include <stdio.h>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+
+void printArray(int array[], int size)
+{
+    // Header
+    printf("Array values: ");
+
+    // Loop over values
+    for(int i = 0; i < size; i++)
+    {
+        printf("%d ", array[i]);
+    }
+
+    // Ending
+    putchar('\n');
+}
+
+void zeroFill(int array[], int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = 0;
+    }
+}
+
+int main(void)
+{
+    // An array with three sequential values
+    int array[3] = {1, 2, 3};
+
+    // Before
+    puts("BEFORE zero-filling the array...");
+    printArray(array, SIZE(array));
+
+    // Zero-fill
+    zeroFill(array, SIZE(array));
+
+    // After
+    puts("\nAFTER zero-filling the array...");
+    printArray(array, SIZE(array));
+
+    return 0;
+}
+```
+> Prints: <br />
+> BEFORE zero-filling the array... <br />
+> Array values: 1 2 3 <br />
+>
+> AFTER zero-filling the array... <br />
+> Array values: 0 0 0 <br />
+
 ## Array Trick: Calculating Size on the Fly
 Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
 over any array, you would need to know the size of said array; however, there is no [_Array.Length_](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-5.0) method like in C#. To solve this problem, you have to resort to some pretty neat tricks. Assuming that all the elements of the array are the same size in bytes (which
