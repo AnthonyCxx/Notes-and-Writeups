@@ -68,7 +68,7 @@ These functions are included in the `<string.h>` header file
 | Function | Function |
 | -------- | -------- |
 | strlen(_**str**_) | returns the length of the string |
-| strcmp(_**str**_, _**str**_) | compares the two strings; **returns 0 is equal** |
+| strcmp(_**str**_, _**str**_) | compares the two strings; **returns 0 if equal** |
 | strchr(_**str**_, _**int**_) | returns a pointer to the first instance of some character in the string - [guide](https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm) |
 | strrchr(_**str**_, _**int**_) | returns a pointer to the last instance of some character in a string - [guide](https://www.tutorialspoint.com/c_standard_library/c_function_strrchr.htm) |
 | strcat(_**str**_, _**str**_) | [concatonates](https://www.programmingsimplified.com/c-program-concatenate-strings) the second string to the first |
