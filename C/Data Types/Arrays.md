@@ -152,6 +152,13 @@ int main(void)
     return 0;
 }
 ```
+> References: <br />
+> [_CodeVault (Youtuber): How to Use Dynamically-allocated Arrays in C_](https://www.youtube.com/watch?v=6Ir4l0VuI7Y) <br />
+> [_Wikipedia: Dynamic Memory Allocation in C_](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) <br />
+> [_TutorialsPoint: Pointer to Array in C_](https://www.tutorialspoint.com/cprogramming/c_pointer_to_an_array.htm) <br />
+> [_TutorialsPoint: Return Array from Function in C_](https://www.tutorialspoint.com/cprogramming/c_return_arrays_from_function.htm) <br />
+> [_TutorialsPoint: calloc() function_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) <br />
+> [_TutorialsPoint: malloc() function_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) <br />
 
 ## Multi-dimensional Arrays
 [Multi-dimensional arrays](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm) are arrays that themselves contain arrays. These contained arrays
