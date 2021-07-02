@@ -154,4 +154,5 @@ int main(void)
 ```
 
 ## Jagged Arrays
-[article](https://thispointer.com/allocating-and-deallocating-2d-arrays-dynamically-in-c-and-c/)
+Not going to touch on this here, but you can create a multi-dimensional array with dimenisions of different sizes by dynamically allocating the arrays, but that is 
+beyond the scope of these notes for now. Use [this article](https://thispointer.com/allocating-and-deallocating-2d-arrays-dynamically-in-c-and-c/) as a reference
