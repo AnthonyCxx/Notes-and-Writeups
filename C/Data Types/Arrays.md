@@ -103,6 +103,56 @@ int main(void)
 > AFTER zero-filling the array... <br />
 > Array values: 0 0 0 <br />
 
+## Returning an Array from a Function
+Arrays can be returned from a function with `return array;`. Remember that the name of the array is just a pointer to the first element, so you will need to catch
+the array with a pointer of the same type as the array. If you declare the array in the function _without_ declaring it on the heap (using [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) or [_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm),
+the array will be deallocated when the function [goes out of scope](https://stackoverflow.com/questions/34586141/what-does-going-out-of-scope-means-in-c-objects/34587544#34587544) and you will have a [dangling pointer](https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/). Below, the function _createScoreboard()_
+returns a new array (so it must be allocated on the heap). Here, I used _calloc()_ instead of _malloc()_ because _calloc()_ automatically fills the array with 0s
+(just like declaring it globally would).
+
+```C
+#include <stdio.h>      // For I/O Operations
+#include <stdlib.h>    // Contains malloc(), calloc() and free()
+
+// Creates an integer array that represents the players scores
+int* createScoreboard(int playerCount)
+{
+    // Declare a new array on the heap (filled with 0s by calloc)
+    int* array =  calloc(playerCount, sizeof(int));
+
+    // Array is NULL if not enough space on the heap for a new array
+    if (array == NULL)
+    {   //fprintf means print to file: stderr is a 'file' in UNIX
+        fprintf(stderr, "Failed to allocate a new array. Returns NULL.\n");
+    }
+
+    // Return the array to main
+    return array;
+}
+
+int main(void)
+{
+    // Declare a pointer to catch the scoreboard
+    int* scoreboard;
+
+    // Create and catch a new scoreboard
+    scoreboard = createScoreboard(5);
+
+    // Print all the elements of the array
+    printf("Array elements: ");
+    for(int i=0; i < 5; i++)  //i++ = i += i + 1 * sizeof(type)
+    {
+        printf("%d ", *(scoreboard + i));
+    }
+    putchar('\n');
+
+    // Free the memory of the scoreboard on the heap (prevents memory leak)
+    free(scoreboard);
+
+    return 0;
+}
+```
+
 ## Multi-dimensional Arrays
 [Multi-dimensional arrays](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm) are arrays that themselves contain arrays. These contained arrays
 are uniform in size and can even store other arrays to create 3-dimensional arrays and so on. Anything beyond a two-dimensional array can be [quite confusing](https://www.youtube.com/watch?v=dQw4w9WgXcQ). When
