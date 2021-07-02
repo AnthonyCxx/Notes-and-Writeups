@@ -19,7 +19,7 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 | float (6 dec. places) | 4 | 3.4E-38 | 3.4E+38 | %f |
 | double (15 dec. places) | 8 | 1.7E-308 | 1.7E+308 | %lf |
 | long double (19  dec. places) | 16 | 1.7E-308 | 1.7E+308 | %Lf |
-> Note: Floats have about 7 decimal places, doubles have about 15, and long doubles have about 19. <br />
+> Note: floats have about 7 decimal places, doubles have about 15, and long doubles have about 19. <br />
 >
 > Sources: <br />
 > [Microsoft: Integer Limits (C/C++)](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160) <br />
