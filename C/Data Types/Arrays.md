@@ -1,6 +1,6 @@
 # Arrays in C
 An array is a data structure that stores a set of elements, each of which has to be of the same datatype. Arrays are not limited to primitive types, so you can make an
-array of arrays (a matrix), and an array of arrays of arrays (a tensor). Declaring an array uses the following format `datatype name[size];`.
+array of arrays (a matrix), and an array of arrays of arrays (a tensor). Declaring an array uses the following format <br /> `datatype name[size];`.
 ```C
 #include <stdio.h>
 
