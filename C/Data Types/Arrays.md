@@ -103,5 +103,53 @@ int main(void)
 > AFTER zero-filling the array... <br />
 > Array values: 0 0 0 <br />
 
+## Multi-dimensional Arrays
+[Multi-dimensional arrays](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm) are arrays that themselves contain arrays. These contained arrays
+can even store other arrays. Anything beyond a two-dimensional array can be [quite confusing](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+```C
+#include <stdio.h>
+
+// Print multi-array
+void printMultiArray(int array[][3], int x, int y)
+{
+    // General header
+    puts("Array Contents:");
+
+    // For each row
+    for(int row=0; row < x; row++)
+    {
+        // Print the header for the row
+        printf("Row %d contents: ", row);
+
+        // Print all the elements in the row
+        for(int element=0; element < y; element++)
+        {
+            // Print the element, follow by a space
+            printf("%d ", array[row][element]);
+        }
+
+        // Newline at the end of each row
+        putchar('\n');
+    }
+}
+
+/* DRIVER CODE */
+int main(void)
+{
+    // 3x3 Array
+    int multiArray[3][3] =  {
+                                {1, 2, 3},
+                                {4, 5, 6},
+                                {7, 8, 9},
+                            };
+
+    // Print multi-array
+    printMultiArray(multiArray, 3, 3);
+
+    return 0;
+}
+```
+
 ## Jagged Arrays
 [article](https://thispointer.com/allocating-and-deallocating-2d-arrays-dynamically-in-c-and-c/)
