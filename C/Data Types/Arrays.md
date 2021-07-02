@@ -29,7 +29,7 @@ int main(void)
 Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
 over any array, you would need to know the size of said array; however, there is no [_Array.Length_](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-5.0) method like in C#. To solve this problem, you have to resort to some pretty neat tricks. Assuming that all the elements of the array are the same size in bytes (which
 is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
-first element in the array. This could be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
+first element in the array. This can be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
 ```C
 #include <stdio.h>
 
