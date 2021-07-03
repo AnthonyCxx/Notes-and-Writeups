@@ -30,6 +30,10 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 ### Format Specifiers
 | Specifier | Function |
 | --------- | -------- |
+| %s | placeholder for a string literal (e.g. "Hello, World!") |
+| %p | memory address (and pointer) placeholder (do not use %d) |
+| %n | prints nothing; used to return the amount of character read until %n is read/written |
+| %% | prints a percent sign (the '%' sign cannot be escaped with a backslash) |
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
 | %g | becomes the shorter of %f and %e |
@@ -39,5 +43,5 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 | %X | converts an unsigned integer into hexadecimal (uppercase A-F) |
 > Sources: <br />
 > [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
-> [_Wikipedia: _](https://en.wikipedia.org/wiki/Printf_format_string) <br />
+> [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
 > [_StackOverflow: %f vs %g and %G](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
