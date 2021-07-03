@@ -26,8 +26,8 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | i | signed int (can detect octal (base 8) & hexadecimal (base 16) with [_scanf()_](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm) |
 | u | unsigned int |
 | o | converts an unsigned int to [octal](https://www.tutorialspoint.com/octal-number-system) |
-| x | converts an unsigned int to [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (lowercase a-f) |
-| X | converts an unsigned int to [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase A-F) |
+| x | converts an unsigned int to [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (lowercase 0x, a-f) |
+| X | converts an unsigned int to [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase 0X, A-F) |
 | f | float (uses lowercase for [_inf_, _infinity_, and _nan_](https://www.gnu.org/software/libc/manual/html_node/Infinity-and-NaN.html)) | 
 | F | float (uses uppercase for [_INF_, _INFINITY_, and _NAN_](https://www.gnu.org/software/libc/manual/html_node/Infinity-and-NaN.html)) | 
 | a | [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) float (lowercase xc and fep) |
