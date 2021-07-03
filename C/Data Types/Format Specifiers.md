@@ -43,3 +43,16 @@ in [scientific notation](https://www.merriam-webster.com/dictionary/scientific%2
 > [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
 > [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
 > [_StackOverflow: %f vs %g and %G_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
+
+## Formatting Tricks
+Replace anything in curly braces, _{ }_, with the appropriate item.
+
+Use [https://en.wikipedia.org/wiki/Printf_format_string](https://en.wikipedia.org/wiki/Printf_format_string)
+
+| Specifier | Example | Function |
+| --------- | ------- | -------- |
+| %0d |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
