@@ -36,8 +36,8 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 | %% | prints a percent sign (the '%' sign cannot be escaped with a backslash) |
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
-| %g | becomes the shorter of %f and %e |
-| %G | becomes the shorter of %f and %E |
+| %g | returns the shorter of %f and %e |
+| %G | returns the shorter of %f and %E |
 | %o | converts an unsigned integer to the [octal](https://www.tutorialspoint.com/octal-number-system) system |
 | %x | converts an unsigned integer into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (lowercase a-f) |
 | %X | converts an unsigned integer into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase A-F) |
