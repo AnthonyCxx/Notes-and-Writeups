@@ -83,8 +83,8 @@ altering the string itself. <br /> I've listed them in order of how often I find
 | Escape Sequence | Character |
 | --------------- | ------ | 
 | \n | [newline character](https://en.wikipedia.org/wiki/Newline) |
-| \t | tab character |
 | \0 | [null-terminating character](http://www.cs.ecu.edu/karl/2530/spr17/Notes/C/String/nullterm.html) (often used in [C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)) |
+| \t | tab character |
 | \' | apostrophe character |
 | \" | quotation mark character |
 | \\ | backslash character |
