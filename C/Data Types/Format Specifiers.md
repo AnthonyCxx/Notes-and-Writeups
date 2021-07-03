@@ -78,7 +78,7 @@ Flags alter the standard formatting specifications.
 
 ## Escape Sequences
 Escape sequences are [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) that perform some action when the string is printed, which may involve
-altering the string itself. I've listed them in order of how often I find myself using them.
+altering the string itself. <br /> I've listed them in order of how often I find myself using them.
 
 | Escape Sequence | Character |
 | --------------- | ------ | 
