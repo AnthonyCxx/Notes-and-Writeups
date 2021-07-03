@@ -91,7 +91,7 @@ altering the string itself.
 |  |  |
 |  |  |
 |  |  |
-| \? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) |
+| \\? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) |
 
 
 ## Sources
