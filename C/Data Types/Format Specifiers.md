@@ -28,7 +28,6 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | p | memory/pointer address | 
 | n | none, prints nothing; used to [return the amount of character read until %n is read/written](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) |
 | % | none, prints a percent sign (the '%' sign cannot be escaped with a backslash) |
-> Sources listed at the end of the page.
 
 ## Length Specifiers
 The length specifier indicates the size of the datatype. This list is not comprehensive, see [here](https://en.wikipedia.org/wiki/Printf_format_string#Length_field).
@@ -40,7 +39,6 @@ The length specifier indicates the size of the datatype. This list is not compre
 | ll | long long |
 | L | long (long double only) |
 | z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
-> Sources listed at the end of the page.
 
 ## Flag Specifiers
 Flags alter the standard formatting specifications.
