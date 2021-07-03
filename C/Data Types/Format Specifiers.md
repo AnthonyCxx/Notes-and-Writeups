@@ -43,7 +43,7 @@ The length specifier indicates the size of the datatype. This list is not compre
 > Sources listed at the end of the page.
 
 ## Flag Specifiers
-Flags do stuff.
+Flags alter the standard formatting specifications.
 
 | Flag | Action | 
 | ---- | ------ |
@@ -53,9 +53,16 @@ Flags do stuff.
 | 0 | [zero-pads](https://stackoverflow.com/questions/153890/printing-leading-0s-in-c) the number to fit the specified width |
 | # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers, and keeps trailing zeros for floating-point numbers (decimal point) |
 
-## Formatting Tricks
+## Examples
 Replace anything in curly braces, _{ }_, with the appropriate item.
+
+| Example | Result |
+| ------- | ------ |
+| %03d | prints a zero-padded integer with a width of three (001, 012, 100) |
+
+
 Use [https://en.wikipedia.org/wiki/Printf_format_string](https://en.wikipedia.org/wiki/Printf_format_string)
+
 
 ## Sources
 This was so much research. Barely any of the websites were comprehensive. Here are the websites I didn't link in the text:
