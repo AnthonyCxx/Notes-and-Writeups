@@ -84,7 +84,7 @@ altering the string itself. I've listed them in order of how often I find myself
 | --------------- | ------ | 
 | \n | [newline character](https://en.wikipedia.org/wiki/Newline) |
 | \t | tab character |
-| \0 | [null-terminating character](http://www.cs.ecu.edu/karl/2530/spr17/Notes/C/String/nullterm.html) |
+| \0 | [null-terminating character](http://www.cs.ecu.edu/karl/2530/spr17/Notes/C/String/nullterm.html) (often used in [C-strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)) |
 | \' | apostrophe character |
 | \" | quotation mark character |
 | \\ | backslash character |
