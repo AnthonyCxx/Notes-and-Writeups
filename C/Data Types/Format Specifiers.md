@@ -67,7 +67,8 @@ Replace anything in curly braces, _{ }_, with the appropriate item.
 | Example | Result |
 | ------- | ------ |
 | %03d | prints a zero-padded integer with a width of three (001, 012, 100) |
-
+| %+.2f | prints a float with 2 decimal places and a prefixed '+' or '-' |
+|  |  |
 
 Use [https://en.wikipedia.org/wiki/Printf_format_string](https://en.wikipedia.org/wiki/Printf_format_string)
 
