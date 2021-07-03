@@ -25,6 +25,29 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
 |  |  |  |\
 </tr> </table>
 
+## Table 2
+
+<table>
+  <tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
+<tr><td>
+
+|Table 1| Middle | Table 2|
+|--|--|--|
+|a| not b|and c |
+
+</td><td>
+
+|b|1|2|3| 
+|--|--|--|--|
+|a|s|d|f|
+
+</td><td>
+  
+| a | b | c |
+| - | - | - |
+|  |  |  |\
+</tr> </table>
+
 ## List of Common Format Specifiers
 
 ### Datatype Placeholders
