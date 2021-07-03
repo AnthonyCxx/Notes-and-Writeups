@@ -25,7 +25,7 @@ in [scientific notation](https://www.merriam-webster.com/dictionary/scientific%2
 > [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
 > [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
 
-### Format Specifiers
+### Other Format Specifiers
 | Specifier | Function |
 | --------- | -------- |
 | %s | placeholder for a string literal (e.g. "Hello, World!") |
