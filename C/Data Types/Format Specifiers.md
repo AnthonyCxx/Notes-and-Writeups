@@ -58,4 +58,4 @@ This was so much research. Barely any of the websites were comprehensive. Here a
 - [_StackOverflow: %f vs %F in C_](https://stackoverflow.com/questions/51908513/difference-between-f-and-f-in-printf/51908594) <br />
 - [_GeeksforGeeks: %d vs %i in C_](https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/) <br />
 - [_GeeksforGeeks: %n in C_](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) <br />
-- [_armKIEL: Hexadecimal_ floating-point numbers in C99](https://www.keil.com/support/man/docs/armcc/armcc_chr1359124238525.htm)
+- [_armKIEL: Hexadecimal_ floating-point numbers (%a, %A) in C99](https://www.keil.com/support/man/docs/armcc/armcc_chr1359124238525.htm)
