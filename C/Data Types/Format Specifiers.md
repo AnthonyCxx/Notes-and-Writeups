@@ -15,6 +15,7 @@ Replace anything in curly braces, _{ }_, with the appropriate item.
 | %ld | print a long integer |
 | %03d | prints a zero-padded integer with a width of three (001, 012, 100) |
 | %+.2f | prints a float with 2 decimal places and a prefixed '+' or '-' |
+| %#x | print a hexadecimal number with the '0x' prefix |
 
 ## Type Specifiers
 The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-types-in-c/) of the variable.
