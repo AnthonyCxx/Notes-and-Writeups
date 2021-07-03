@@ -5,12 +5,14 @@ allow you to [format a string](https://www.cprogramming.com/tutorial/printf-form
 specifiers should be in the order `%[parameter][flags][width][.precision][length]<type>` (only the % followed by the datatype is necessary.
 
 <table>
-  <tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
+  <tr><th> Type </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
 <tr><td>
 
-|Table 1| Middle | Table 2|
-|--|--|--|
-|a| not b|and c |
+| Datatype| Specifier |
+| unsigned int (base 10) | %d |
+| unsigned int (auto-detect radix) | %i ( |
+| a | not b | 
+> Refereneces
 
 </td><td>
 
