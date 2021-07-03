@@ -11,7 +11,7 @@ developer respectively.
 
 int main(void)
 {
-    printf("Hello, world!\n");
+    // Code
 
     return 0;
 }
