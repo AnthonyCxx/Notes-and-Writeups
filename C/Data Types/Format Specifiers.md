@@ -7,8 +7,8 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 ## Master List of Format Specifiers
 
 ### Datatype Placeholders
-| Specifier | Datatype | 
-| --------- | -------- |
+| Datatype | Specifier | 
+| -------- | --------- |
 | char | %c |
 | strings | %s |
 | short | %hi |
@@ -26,3 +26,8 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 > [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
 > [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
 > [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
+
+### Format Specifiers
+| Specifier | Function |
+| --------- | -------- |
+|  |  |
