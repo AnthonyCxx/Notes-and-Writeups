@@ -44,4 +44,4 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 > Sources: <br />
 > [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
 > [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
-> [_StackOverflow: %f vs %g and %G](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
+> [_StackOverflow: %f vs %g and %G_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
