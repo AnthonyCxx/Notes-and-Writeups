@@ -32,7 +32,7 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 | --------- | -------- |
 | %s | placeholder for a string literal (e.g. "Hello, World!") |
 | %p | memory address (and pointer) placeholder (do not use %d) |
-| %n | prints nothing; used to return the amount of character read until %n is read/written |
+| %n | prints nothing; used to [return the amount of character read until %n is read/written](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) |
 | %% | prints a percent sign (the '%' sign cannot be escaped with a backslash) |
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
