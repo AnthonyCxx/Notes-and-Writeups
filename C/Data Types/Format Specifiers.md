@@ -47,7 +47,7 @@ Replace anything in curly braces, _{ }_, with the appropriate item.
 Use [https://en.wikipedia.org/wiki/Printf_format_string](https://en.wikipedia.org/wiki/Printf_format_string)
 
 ## Sources
-Dear god, this was so much research. Barely any of the websites were comprehensive. Here are the websites I didn't link in the text:
+This was so much research. Barely any of the websites were comprehensive. Here are the websites I didn't link in the text:
 - [_C PLus PLus reference: cstdio: printf()_](https://www.cplusplus.com/reference/cstdio/printf/)
 - [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
 - [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
