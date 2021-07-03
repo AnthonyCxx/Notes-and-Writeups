@@ -5,7 +5,7 @@ allow you to [format a string](https://www.cprogramming.com/tutorial/printf-form
 specifiers should be in the order %\[parameter\]\[flags\]\[width\]\[.precision\]\[length\]<type> (only the % followed by the datatype is necessary.
 
 <table>
-<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+  <tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
 <tr><td>
 
 |Table 1| Middle | Table 2|
@@ -18,31 +18,12 @@ specifiers should be in the order %\[parameter\]\[flags\]\[width\]\[.precision\]
 |--|--|--|--|
 |a|s|d|f|
 
-</td></tr> </table>
-
-
-<table>
-<tr>
-<th>Table 1 Heading 1 </th> <th>Table 1 Heading 2</th>
-</tr>
-
-<tr>
-
-<td>
-|Table 1| Middle | Table 2|
-|--|--|--|
-|a| not b|and c |
-</td>
+</td><td>
   
-<td>
-|b|1|2|3| 
-|--|--|--|--|
-|a|s|d|f|
-</td>
-  
-</tr> 
-</table>
-
+| a | b | c |
+| - | - | - |
+|  |  |  |\
+</tr> </table>
 
 ## List of Common Format Specifiers
 
