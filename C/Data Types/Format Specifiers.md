@@ -40,6 +40,7 @@ The length specifier indicates the size of the datatype. This list is not compre
 | ll | long long |
 | L | long (long double only) |
 | z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
+> Sources listed at the end of the page.
 
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
