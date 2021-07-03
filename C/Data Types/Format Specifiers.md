@@ -22,7 +22,7 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 | float | %f |
 | double | %lf |
 | long double | %Lf |
-> Sources:
+> Sources: <br />
 > [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
 > [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
 > [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
@@ -30,4 +30,14 @@ in scientific notation. Neat as this all is, format specifiers are usually just 
 ### Format Specifiers
 | Specifier | Function |
 | --------- | -------- |
-|  |  |
+| %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
+| %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
+| %g | becomes the shorter of %f and %e |
+| %G | becomes the shorter of %f and %E |
+| %o | converts an unsigned integer to the octal system |
+| %x | converts an unsigned integer into hexadecimal (lowercase a-f) |
+| %X | converts an unsigned integer into hexadecimal (uppercase A-F) |
+> Sources: <br />
+> [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
+> [_Wikipedia: _](https://en.wikipedia.org/wiki/Printf_format_string) <br />
+> [_StackOverflow: %f vs %g and %G](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
