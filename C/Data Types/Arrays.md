@@ -106,7 +106,7 @@ int main(void)
 
 ## Returning an Array from a Function
 Arrays can be returned from a function with `return array;`. Remember that the name of the array is just a pointer to the first element, so you will need to catch
-the array with a pointer of the same type as the array. If you declare the array in the function _without_ declaring it on the heap (using [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) or [_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm),
+the array with a pointer of the same type as the array. If you declare the array in the function _without_ declaring it on the heap (using [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) or [_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm)),
 the array will be deallocated when the function [goes out of scope](https://stackoverflow.com/questions/34586141/what-does-going-out-of-scope-means-in-c-objects/34587544#34587544) and you will have a [dangling pointer](https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/). Below, the function _createScoreboard()_
 returns a new array (so it must be allocated on the heap). Here, I used _calloc()_ instead of _malloc()_ because _calloc()_ automatically fills the array with 0s
 (just like declaring it globally would).
