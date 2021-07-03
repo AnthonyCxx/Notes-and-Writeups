@@ -54,11 +54,15 @@ The length specifier indicates the size of the datatype. This list is not compre
 | z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
 
 ## Width Specifier
+The width specifier indicates the minimum amount of characters that the string/number must come out to.
+
 | Specifier | Result |
 | --------- | ------ |
-| (integer) | specifies the minimum amount of character that need to be printed (prints spaces if needed to match the amount) |
+| (integer) | specifies the minimum amount of characters that need to be printed (prints spaces if needed to match the amount) |
 
 ## Precision Specifier
+The precision specifier changes the amount of decimal places shown when a float is printed.
+
 | Specifier | Result |
 | --------- | ------ |
 | .(integer) | specifies the amount of decimal places to show for floating-point numbers |
@@ -74,6 +78,9 @@ Flags alter the standard formatting specifications.
 | 0 | [zero-pads](https://stackoverflow.com/questions/153890/printing-leading-0s-in-c) the number to fit the specified width |
 | # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers, and keeps trailing zeros for floating-point numbers (decimal point) |
 
+## Escape Sequences
+Escape sequences are [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) that perform some action when the string is printed, which may involve
+altering the string itself.
 
 ## Sources
 This was so much research. Barely any of the websites were comprehensive. Here are the websites I didn't link in the text:
@@ -89,3 +96,6 @@ This was so much research. Barely any of the websites were comprehensive. Here a
 - [_GeeksforGeeks: %d vs %i in C_](https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/)
 - [_GeeksforGeeks: %n in C_](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) 
 - [_armKIEL: Hexadecimal_ floating-point numbers (%a, %A) in C99](https://www.keil.com/support/man/docs/armcc/armcc_chr1359124238525.htm)
+- [_Data Flair: 15 Types of Escape Sequence in C that Make your Coding Better_](https://data-flair.training/blogs/escape-sequence-in-c/)
+- [_Wikipedia: Escape Sequences in C_](https://en.wikipedia.org/wiki/Escape_sequences_in_C#Non-standard_escape_sequences)
+- [Javatpoint: Escape Sequences in C](https://www.javatpoint.com/escape-sequence-in-c)
