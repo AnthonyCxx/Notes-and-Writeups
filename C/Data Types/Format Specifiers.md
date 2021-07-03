@@ -4,7 +4,7 @@ functions are used to read input/write output that is formatted using [format sp
 allow you to [format a string](https://www.cprogramming.com/tutorial/printf-format-strings.html), control the amount of decimal places in a float, change the [radix](https://en.wikipedia.org/wiki/Radix) of a number (allowing for [octal](https://www.tutorialspoint.com/octal-number-system)/[hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) representation), and even represent a number in [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation). Format specifiers start with a _%_ sign and are alphanumeric (with the exception of _%%_). Modifiers for format
 specifiers should be in the order `%[parameter][flags][width][.precision][length]<type>` (only the % followed by the datatype is necessary.
 
-## Type Specifier
+## Type Specifiers
 The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-types-in-c/) of the variable.
 
 | Specifier | Datatype |
@@ -30,7 +30,7 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | % | none, prints a percent sign (the '%' sign cannot be escaped with a backslash) |
 > Sources listed at the end of the page.
 
-## Length Specifier
+## Length Specifiers
 The length specifier indicates the size of the datatype. This list is not comprehensive, see [here](https://en.wikipedia.org/wiki/Printf_format_string#Length_field).
 
 | Specifier | Size |
@@ -41,6 +41,9 @@ The length specifier indicates the size of the datatype. This list is not compre
 | L | long (long double only) |
 | z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
 > Sources listed at the end of the page.
+
+## Flag Specifiers
+Flags 
 
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
@@ -53,6 +56,7 @@ This was so much research. Barely any of the websites were comprehensive. Here a
 - [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
 - [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
 - [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
+- [_Laboratoire d'informatique de l'École Polytechnique: printf format identifiers_](https://www.lix.polytechnique.fr/~liberti/public/computing/prog/c/C/FUNCTIONS/format.html)
 - [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
 - [_StackOverflow: %f vs %g and %G in C_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
 - [_StackOverflow: %f vs %F in C_](https://stackoverflow.com/questions/51908513/difference-between-f-and-f-in-printf/51908594) <br />
