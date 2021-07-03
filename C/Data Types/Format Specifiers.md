@@ -11,9 +11,8 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
 | Datatype | Specifier |
 | -------- | --------- |
 | unsigned int (base 10) | %d |
-| unsigned int (auto-detect radix) | %i ( |
+| unsigned int (auto-detect radix) | %i (detects octal & hex with [_scanf()_](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm) |
 | a | not b | 
-> Refereneces
 
 </td><td>
 
@@ -27,6 +26,14 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
 | - | - | - |
 |  |  |  |\
 </tr> </table>
+> Sources: <br />
+> [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
+> [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
+> [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
+> [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
+> [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
+> [_StackOverflow: %f vs %g and %G_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
+> [_GeeksforGeeks: %d vs %i in C_](https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/) <br />
 
 ## Table 2
 
@@ -87,10 +94,6 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
 | %o | converts an unsigned integer to the [octal](https://www.tutorialspoint.com/octal-number-system) system |
 | %x | converts an unsigned integer into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (lowercase a-f) |
 | %X | converts an unsigned integer into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase A-F) |
-> Sources: <br />
-> [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
-> [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
-> [_StackOverflow: %f vs %g and %G_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
 
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
