@@ -43,7 +43,15 @@ The length specifier indicates the size of the datatype. This list is not compre
 > Sources listed at the end of the page.
 
 ## Flag Specifiers
-Flags 
+Flags do stuff.
+
+| Flag | Action | 
+| ---- | ------ |
+| - | [left-justifies](https://en.wikipedia.org/wiki/Typographic_alignment#Justified) the text (right is the default) |
+| + | puts a '+' in front of positive numbers |
+| (space) | puts a space in front of positive numbers to keep alignment with negative numbers |
+| 0 | [zero-pads](https://stackoverflow.com/questions/153890/printing-leading-0s-in-c) the number to fit the specified width |
+| # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers, and keeps trailing zeros for floating-point numbers (decimal point) |
 
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
@@ -52,14 +60,14 @@ Use [https://en.wikipedia.org/wiki/Printf_format_string](https://en.wikipedia.or
 ## Sources
 This was so much research. Barely any of the websites were comprehensive. Here are the websites I didn't link in the text:
 - [_C PLus PLus reference: cstdio: printf()_](https://www.cplusplus.com/reference/cstdio/printf/)
-- [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
-- [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
-- [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
-- [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
+- [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) 
+- [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) 
+- [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) 
+- [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) 
 - [_Laboratoire d'informatique de l'École Polytechnique: printf format identifiers_](https://www.lix.polytechnique.fr/~liberti/public/computing/prog/c/C/FUNCTIONS/format.html)
-- [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
-- [_StackOverflow: %f vs %g and %G in C_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
-- [_StackOverflow: %f vs %F in C_](https://stackoverflow.com/questions/51908513/difference-between-f-and-f-in-printf/51908594) <br />
-- [_GeeksforGeeks: %d vs %i in C_](https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/) <br />
-- [_GeeksforGeeks: %n in C_](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) <br />
+- [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) 
+- [_StackOverflow: %f vs %g and %G in C_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) 
+- [_StackOverflow: %f vs %F in C_](https://stackoverflow.com/questions/51908513/difference-between-f-and-f-in-printf/51908594)
+- [_GeeksforGeeks: %d vs %i in C_](https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/)
+- [_GeeksforGeeks: %n in C_](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) 
 - [_armKIEL: Hexadecimal_ floating-point numbers (%a, %A) in C99](https://www.keil.com/support/man/docs/armcc/armcc_chr1359124238525.htm)
