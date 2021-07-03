@@ -28,42 +28,22 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | p | memory/pointer address | 
 | n | none, prints nothing; used to [return the amount of character read until %n is read/written](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) |
 | % | none, prints a percent sign (the '%' sign cannot be escaped with a backslash) |
+> Sources listed at the end of the page.
 
-## Table 2
+## Length Specifier
+The length specifier indicates the size of the datatype. This list is not comprehensive, see [here](https://en.wikipedia.org/wiki/Printf_format_string#Length_field).
 
-<table>
-  <tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
-<tr><td>
-
-|Table 1| Middle | Table 2|
-|--|--|--|
-|a| not b|and c |
-
-</td><td>
-
-|b|1|2|3| 
-|--|--|--|--|
-|a|s|d|f|
-
-</td><td>
-  
-| a | b | c |
-| - | - | - |
-|  |  |  |\
-</tr> </table>
+| Specifier | Size |
+| -------- | ----- |
+| h | short |
+| l | long |
+| ll | long long |
+| L | long (long double only) |
+| z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
 
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
-
 Use [https://en.wikipedia.org/wiki/Printf_format_string](https://en.wikipedia.org/wiki/Printf_format_string)
-
-| Specifier | Example | Function |
-| --------- | ------- | -------- |
-| %0d |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
 
 ## Sources
 Dear god, this was so much research. Barely any of the lists were comprehensive.
