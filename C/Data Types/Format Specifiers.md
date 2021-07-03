@@ -8,7 +8,8 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
   <tr><th> Type </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
 <tr><td>
 
-| Datatype| Specifier |
+| Datatype | Specifier |
+| -------- | --------- |
 | unsigned int (base 10) | %d |
 | unsigned int (auto-detect radix) | %i ( |
 | a | not b | 
