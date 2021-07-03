@@ -9,7 +9,6 @@ in [scientific notation](https://www.merriam-webster.com/dictionary/scientific%2
 | Datatype | Specifier | 
 | -------- | --------- |
 | char | %c |
-| strings | %s |
 | short | %hi |
 | unsigned short | %hu |
 | int | %d |
