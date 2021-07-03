@@ -5,14 +5,24 @@ allow you to control the amount of decimal places in a float, change the [radix]
 in scientific notation. Neat as this all is, format specifiers are usually just used for [string formatting](https://en.wikipedia.org/wiki/Printf_format_string).
 
 ## Master List of Format Specifiers
-| Specifier | Datatype/Purpose | 
-| --------- | ---------------- |
-| %c | char | 
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  | 
-|  |  |
-|  |  |
+
+### Datatype Placeholders
+| Specifier | Datatype | 
+| --------- | -------- |
+| char | %c |
+| strings | %s |
+| short | %hi |
+| unsigned short | %hu |
+| int | %d |
+| unsigned int | %u |
+| long | %uld | 
+| unsigned long | %uld |
+| long long | %lld |
+| unsigned long long | %llu |
+| float | %f |
+| double | %lf |
+| long double | %Lf |
+> Sources:
+> [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
+> [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
+> [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
