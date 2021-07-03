@@ -17,6 +17,11 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | X | converts an unsigned int into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase A-F) |
 | f | float (uses lowercase for [_inf_, _infinity_, and _nan_](https://www.gnu.org/software/libc/manual/html_node/Infinity-and-NaN.html)) | 
 | F | float (uses uppercase for [_INF_, _INFINITY_, and _NAN_](https://www.gnu.org/software/libc/manual/html_node/Infinity-and-NaN.html)) | 
+| e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
+| e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
+| g | returns the shorter of %f and %e |
+| G | returns the shorter of %f and %E |
+
 |  |  | 
 |  |  | 
 |  |  | 
@@ -74,11 +79,6 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | %p | memory address (and pointer) placeholder (do not use %d) |
 | %n | prints nothing; used to [return the amount of character read until %n is read/written](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) |
 | %% | prints a percent sign (the '%' sign cannot be escaped with a backslash) |
-| %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
-| %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
-| %g | returns the shorter of %f and %e |
-| %G | returns the shorter of %f and %E |
-
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
 
