@@ -4,29 +4,21 @@ functions are used to read input/write output that is formatted using [format sp
 allow you to [format a string](https://www.cprogramming.com/tutorial/printf-format-strings.html), control the amount of decimal places in a float, change the [radix](https://en.wikipedia.org/wiki/Radix) of a number (allowing for [octal](https://www.tutorialspoint.com/octal-number-system)/[hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) representation), and even represent a number in [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation). Format specifiers start with a _%_ sign and are alphanumeric (with the exception of _%%_). Modifiers for format
 specifiers should be in the order `%[parameter][flags][width][.precision][length]<type>` (only the % followed by the datatype is necessary.
 
-<table>
-  <tr><th> Type </th><th>Table 1 Heading 2</th><th>Table 1 Heading 3</th></tr>
-<tr><td>
+## Type Specifier
+The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-types-in-c/) of the variable.
 
 | Datatype | Specifier |
 | -------- | --------- |
-| unsigned int (base 10) | %d |
-| unsigned int (auto-detect radix) | %i (detects octal & hex with [_scanf()_](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm) |
-| a | not b | 
-
-</td><td>
-
-|b|1|2|3| 
-|--|--|--|--|
-|a|s|d|f|
-
-</td><td>
-  
-| a | b | c |
-| - | - | - |
-|  |  |  |\
-</tr> </table>
-> Sources: <br />
+| d  | ([base 10](https://www.thoughtco.com/definition-of-base-10-2312365)) signed int |
+| i | signed int (detects octal (base 10) & hexadecimal (base 16) with [_scanf()_](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm) |
+| u | unsigned int |
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  |
+> [_C PLus PLus reference: cstdio: printf()_](https://www.cplusplus.com/reference/cstdio/printf/)
 > [_TutorialsPoint: Format Specifiers in C_](https://www.tutorialspoint.com/format-specifiers-in-c) <br />
 > [_TutorialsBookmarks: All 19 C Format Specifiers_](https://tutorialsbookmarks.com/format-specifiers-in-c/) <br />
 > [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
