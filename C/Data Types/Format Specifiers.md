@@ -74,11 +74,25 @@ Flags alter the standard formatting specifications.
 | + | puts a '+' in front of positive numbers |
 | (space) | puts a space in front of positive numbers to keep alignment with negative numbers |
 | 0 | [zero-pads](https://stackoverflow.com/questions/153890/printing-leading-0s-in-c) the number to fit the specified width |
-| # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers, and keeps trailing zeros for floating-point numbers (decimal point) |
+| # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers and keeps trailing zeros for floating-point numbers (decimal point) |
 
 ## Escape Sequences
 Escape sequences are [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) that perform some action when the string is printed, which may involve
 altering the string itself.
+
+| Escape Sequence | Action |
+| --------------- | ------ | 
+| \n | [newline character](https://en.wikipedia.org/wiki/Newline) |
+| \0 | [null-terminating character](http://www.cs.ecu.edu/karl/2530/spr17/Notes/C/String/nullterm.html) |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+| \? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) |
+
 
 ## Sources
 This was so much research. Barely any of the websites were comprehensive. Here are the websites I didn't link in the text:
