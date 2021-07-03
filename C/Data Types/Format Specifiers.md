@@ -7,13 +7,16 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
 ## Type Specifier
 The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-types-in-c/) of the variable.
 
-| Datatype | Specifier |
+| Specifier | Datatype |
 | -------- | --------- |
 | d  | ([base 10](https://www.thoughtco.com/definition-of-base-10-2312365)) signed int |
 | i | signed int (detects octal (base 10) & hexadecimal (base 16) with [_scanf()_](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm) |
 | u | unsigned int |
-|  |  | 
-|  |  | 
+| o | converts an unsigned int to the [octal](https://www.tutorialspoint.com/octal-number-system) system |
+| x | converts an unsigned int into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (lowercase a-f) |
+| X | converts an unsigned int into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase A-F) |
+| f | float (uses lowercase for [_inf_, _infinity_, and _nan_](https://www.gnu.org/software/libc/manual/html_node/Infinity-and-NaN.html)) | 
+| F | float (uses uppercase for [_INF_, _INFINITY_, and _NAN_](https://www.gnu.org/software/libc/manual/html_node/Infinity-and-NaN.html)) | 
 |  |  | 
 |  |  | 
 |  |  | 
@@ -24,7 +27,8 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 > [_University of Illinois Chicago: Summary of C Datatypes_](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/DataTypesSummary.pdf) <br />
 > [_Linux Man. Pages: Printf() Format Specifiers_](https://linux.die.net/man/3/printf) <br />
 > [_Wikipedia: Printf() String Formatting_](https://en.wikipedia.org/wiki/Printf_format_string) <br />
-> [_StackOverflow: %f vs %g and %G_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
+> [_StackOverflow: %f vs %g and %G in C_](https://stackoverflow.com/questions/5913102/what-is-the-difference-between-g-and-f-in-c) <br />
+> [_StackOverflow: %f vs %F in C_](https://stackoverflow.com/questions/51908513/difference-between-f-and-f-in-printf/51908594) <br />
 > [_GeeksforGeeks: %d vs %i in C_](https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/) <br />
 
 ## Table 2
@@ -83,9 +87,6 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | %e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
 | %g | returns the shorter of %f and %e |
 | %G | returns the shorter of %f and %E |
-| %o | converts an unsigned integer to the [octal](https://www.tutorialspoint.com/octal-number-system) system |
-| %x | converts an unsigned integer into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (lowercase a-f) |
-| %X | converts an unsigned integer into [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) (uppercase A-F) |
 
 ## Formatting Tricks
 Replace anything in curly braces, _{ }_, with the appropriate item.
