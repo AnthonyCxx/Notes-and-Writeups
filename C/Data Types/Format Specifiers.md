@@ -4,6 +4,8 @@ functions are used to read input/write output that is formatted using [format sp
 allow you to [format a string](https://www.cprogramming.com/tutorial/printf-format-strings.html), control the amount of decimal places in a float, change the [radix](https://en.wikipedia.org/wiki/Radix) of a number (allowing for [octal](https://www.tutorialspoint.com/octal-number-system)/[hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) representation), and even represent a number in [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation). Format specifiers start with a _%_ sign and are alphanumeric (with the exception of _%%_). Modifiers for format
 specifiers should be in the order `%[parameter][flags][width][.precision][length]<type>` (only the % followed by the datatype is necessary.
 
+All sources are linked in the text or listed at the bottom.
+
 ## Examples
 Replace anything in curly braces, _{ }_, with the appropriate item.
 
