@@ -7,8 +7,6 @@ specifiers should be in the order `%[parameter][flags][width][.precision][length
 All sources are linked in the text or listed at the bottom.
 
 ## Examples
-Replace anything in curly braces, _{ }_, with the appropriate item.
-
 | Example | Result |
 | ------- | ------ |
 | %d | print a simple signed integer |
