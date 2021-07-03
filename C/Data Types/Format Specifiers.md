@@ -40,6 +40,16 @@ The length specifier indicates the size of the datatype. This list is not compre
 | L | long (long double only) |
 | z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
 
+## Width Specifier
+| Specifier | Result |
+| --------- | ------ |
+| (integer) | specifies the minimum amount of character that need to be printed (prints spaces if needed to match the amount) |
+
+## Precision Specifier
+| Specifier | Result |
+| --------- | ------ |
+| .(integer) | specifies the amount of decimal places to show for floating-point numbers |
+
 ## Flag Specifiers
 Flags alter the standard formatting specifications.
 
