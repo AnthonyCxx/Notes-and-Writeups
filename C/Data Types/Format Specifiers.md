@@ -92,7 +92,7 @@ altering the string itself. <br /> I've listed them in order of how often I find
 | \r | [carriage return character](https://www.quora.com/How-does-the-carriage-return-work-in-C) (manually resets writing to the beginning of the line, overwriting the current one) |
 | \b | backspace character |
 | \v | [vertical tab character](https://stackoverflow.com/questions/3380538/what-is-a-vertical-tab) |
-| \f | form feed (page break) character, starts a new page |
+| \f | [form feed (page break) character](https://en.wikipedia.org/wiki/Page_break#:~:text=Form%20feed%20is%20a%20page,control%2BL%20or%20%5EL%20.), starts a new page |
 | \\? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) |
 
 
