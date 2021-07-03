@@ -160,6 +160,7 @@ int main(void)
 > [_TutorialsPoint: Return Array from Function in C_](https://www.tutorialspoint.com/cprogramming/c_return_arrays_from_function.htm) <br />
 > [_TutorialsPoint: calloc() function_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) <br />
 > [_TutorialsPoint: malloc() function_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) <br />
+> [_TecMint: Explanation of “Everything is a File” and Types of Files in Linux_](https://www.tecmint.com/explanation-of-everything-is-a-file-and-types-of-files-in-linux/) <br />
 
 ## Multi-dimensional Arrays
 [Multi-dimensional arrays](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm) are arrays that themselves contain arrays. These contained arrays
