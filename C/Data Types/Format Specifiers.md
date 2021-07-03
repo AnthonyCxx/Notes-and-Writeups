@@ -78,19 +78,21 @@ Flags alter the standard formatting specifications.
 
 ## Escape Sequences
 Escape sequences are [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) that perform some action when the string is printed, which may involve
-altering the string itself.
+altering the string itself. I've listed them in order of how often I find myself using them.
 
-| Escape Sequence | Action |
+| Escape Sequence | Character |
 | --------------- | ------ | 
 | \n | [newline character](https://en.wikipedia.org/wiki/Newline) |
+| \t | tab character |
 | \0 | [null-terminating character](http://www.cs.ecu.edu/karl/2530/spr17/Notes/C/String/nullterm.html) |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| \' | apostrophe character |
+| \" | quotation mark character |
+| \\ | backslash character |
+| \a | plays the [bel (bell) character](https://rosettacode.org/wiki/Terminal_control/Ringing_the_terminal_bell) |
+| \r | [carriage return character](https://www.quora.com/How-does-the-carriage-return-work-in-C) (manually resets writing to the beginning of the line, overwriting the current one) |
+| \b | backspace character |
+| \v | [vertical tab character](https://stackoverflow.com/questions/3380538/what-is-a-vertical-tab) |
+| \f | form feed (page break) character, starts a new page |
 | \\? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) |
 
 
