@@ -52,7 +52,7 @@ int main(void)
     return 0;
 }
 ```
-> Compile this program and then enter more than 50 characters. The program will automaticaly terminate with a warning: '\*\*\* stack smashing detected \*\*\*: terminated <br />
+> Compile this program and then enter more than 50 characters. The program will automaticaly terminate with a warning: <br /> '\*\*\* stack smashing detected \*\*\*: terminated <br />
 Aborted (core dumped)'
 
 ## fgets()
