@@ -52,8 +52,29 @@ int main(void)
     return 0;
 }
 ```
+> Reference: [_C++ Reference: gets()_](https://www.cplusplus.com/reference/cstdio/gets/) <br />
+> 
 > Compile this program and then enter more than 50 characters. The program will automaticaly terminate with a warning: <br /> 
 > \*\*\* stack smashing detected \*\*\*: terminated <br />
 > Aborted (core dumped) <br />
 
 ## fgets()
+The _fgets()_ function reads a set amount of characters from a _FILE*_ stream. Because the [standard streams](https://www.gnu.org/software/libc/manual/html_node/Standard-Streams.html) are 'files', you can use _fgets()_ to read from files _and_ from the standard input, output, and error streams. The 
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    char buffer[50];
+
+    printf("Enter a sentence: ");
+    fgets(buffer, sizeof(buffer), stdin);  // 'stdin' is the keyboard
+
+    printf("Input: %s", buffer);    // 'buffer' contains a '\n' from the user hitting enter
+
+    return 0;
+}
+```
+> This program will not crash if more than 50 characters are entered; however, if more than 50 characters are entered than the buffer will not contain the '\n' from
+> the user hitting enter like it would if they entered less than 50 characters.
+
