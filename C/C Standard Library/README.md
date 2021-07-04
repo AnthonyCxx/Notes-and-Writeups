@@ -10,4 +10,5 @@
 | [\<math.h\>](https://www.tutorialspoint.com/c_standard_library/math_h.htm) | Math | contains math-related functions; e.g. logarithms, square roots, modulus for floats, etc. |
 | [\<assert.h\>](https://www.tutorialspoint.com/c_standard_library/c_macro_assert.htm) | Assert | contains a macro [_assert()_](https://www.tutorialspoint.com/c_standard_library/c_macro_assert.htm) that stops the program if false |
 | [\<stdarg.h\>](https://www.tutorialspoint.com/c_standard_library/stdarg_h.htm) | Standard Argument | contains variables and macros for creating [variadic functions](https://www.gnu.org/software/libc/manual/html_node/Why-Variadic.html). [Here](https://www.gnu.org/software/libc/manual/html_node/Variadic-Example.html) is an example. |
+> This is not a comprehensive list in the slightest. <br />
 > Reference: [All C Libraries](https://doc.bccnsoft.com/docs/cppreference2015/en/c/header.html)
