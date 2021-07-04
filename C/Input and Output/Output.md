@@ -3,8 +3,8 @@
 # Charcters
 
 ## putchar(__*char*__)
-Outputs a single character to stdout (the console, unless otherwise redirected). _putchar()_ works with escape sequences as well as ASCII text. This function does 
-not add implicitly add a newline.
+Outputs a single character to stdout (the console, unless otherwise redirected). _putchar()_ works with escape sequences as well as ASCII text. <br />
+This function does not add implicitly add a newline.
 ```C
 #include <stdio.h>
 
