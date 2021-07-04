@@ -19,7 +19,7 @@ int main(void)
         printf("Progress: %d / %d", i, end);
 
         // Reset the cursor to the beginning of the line
-        putchar('\r');
+        putchar('\r');    // carriage return character
     }
 
     return 0;
