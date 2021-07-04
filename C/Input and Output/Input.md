@@ -76,7 +76,7 @@ int main(void)
     return 0;
 }
 ```
-> This program will not crash if more than 50 characters are entered; however, if more than 50 characters are entered than the buffer will not contain the '\n' from
+> This program will not crash if more than 50 characters are entered; however, if more than 50 characters are entered then the buffer will not contain the '\n' from
 > the user hitting enter like it would if they entered less than 50 characters. <br />
 >
 > Sources: <br />
