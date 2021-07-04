@@ -59,7 +59,8 @@ int main(void)
 > Aborted (core dumped) <br />
 
 ## fgets()
-The _fgets()_ function reads a set amount of characters from a _FILE*_ stream. Because the [standard streams](https://www.gnu.org/software/libc/manual/html_node/Standard-Streams.html) are 'files', you can use _fgets()_ to read from files _and_ from the standard input, output, and error streams. The 
+The _fgets()_ function reads a set amount of characters from a [_FILE*_](https://www.geeksforgeeks.org/data-type-file-c/) stream. Because the [standard streams](https://www.gnu.org/software/libc/manual/html_node/Standard-Streams.html) are 'files', you can use _fgets()_ to read from files _and_ from the standard input, output, and error streams. _fgets()_ takes three parameters: the buffer to store the characters read, the max amount of characters to read (typically the size of the buffer) and the 
+_FILE*_ to read from ('stdin' is the keyboard).
 ```C
 #include <stdio.h>
 
@@ -76,5 +77,9 @@ int main(void)
 }
 ```
 > This program will not crash if more than 50 characters are entered; however, if more than 50 characters are entered than the buffer will not contain the '\n' from
-> the user hitting enter like it would if they entered less than 50 characters.
+> the user hitting enter like it would if they entered less than 50 characters. <br />
+> t
+> Sources: <br />
+> [_Educative.io: How to use the fgets() function in C_](https://www.educative.io/edpresso/how-to-use-the-fgets-function-in-c) <br />
+> [_C++ Reference: \<cstdio\>, fgets()_](https://www.cplusplus.com/reference/cstdio/fgets/) <br />
 
