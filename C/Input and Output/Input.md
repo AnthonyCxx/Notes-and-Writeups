@@ -25,7 +25,7 @@ int main(void)
 }
 ```
 > Sources: <br />
-> [_TutorialsPoint: C Library Funtion - getchar() _](https://www.tutorialspoint.com/c_standard_library/c_function_getchar.htm) <br />
+> [_TutorialsPoint: C Library Funtion - getchar()_](https://www.tutorialspoint.com/c_standard_library/c_function_getchar.htm) <br />
 > [_Javatpoint: getchar() function in C_](https://www.javatpoint.com/getchar-function-in-c) <br />
 
 # Strings
