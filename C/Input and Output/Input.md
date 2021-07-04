@@ -28,6 +28,36 @@ int main(void)
 # Strings
 
 ## scanf()
+The _scanf()_ function reads input until it reaches a whitespace. _scanf()_ is good for getting general user input like numbers and words. _scanf()_ takes two parameters:
+the format of the input (as a [formatted string](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md), like with _printf()_) and the memory address of the variable to store the data read in. Remember that the name of an array is a pointer to the first element, so you do not need to
+use the [_&_ (address-of) operator](https://www.educba.com/address-operator-in-c/) with buffers (character arrays).
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    int number;
+    char word[50];
+
+    // Get input (an integer)
+    printf("Enter an integer: ");
+    scanf("%d", &number);       // '&' needed for non-pointers
+
+    // Get input (a string)
+    printf("Enter a word: ");
+    scanf("%s", word);         // '&' NOT needed for pointers (char arrays)
+
+    // Print input
+    printf("You entered the number: %d\n", number);
+    printf("You entered the word: %s\n", word);
+
+    return 0;
+}
+```
+> Sources: 
+> [_Study Tonight: Input and Output in C_](https://www.studytonight.com/c/c-input-output-function.php) <br />
+> [_Dummies.com: Basics of scanf() in C Programming_](https://www.dummies.com/programming/c/basics-of-the-scanf-function-in-c-programming/) <br />
+> [_Quora: What is Scanf()_ with \[^n\]?](https://www.quora.com/What-is-scanf-n) <br />
 
 ## gets()
 The _gets()_ function reads from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) until it encounters a newline (\n) or EOF character.
