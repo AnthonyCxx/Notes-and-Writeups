@@ -27,6 +27,8 @@ int main(void)
 
 # Strings
 
+## scanf()
+
 ## gets()
 The _gets()_ function reads from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) until it encounters a newline (\n) or EOF character.
 Though convenient, using the _gets()_ function is considered bad practice because it will continue to write characters even when your buffer runs out of memory 
@@ -50,4 +52,7 @@ int main(void)
     return 0;
 }
 ```
-## scanf()
+> Compile this program and then enter more than 50 characters. The program will automaticaly terminate with a warning: '\*\*\* stack smashing detected \*\*\*: terminated <br />
+Aborted (core dumped)'
+
+## fgets()
