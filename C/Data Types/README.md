@@ -2,7 +2,6 @@
 | File | Function | 
 | ---- | -------- |
 | [README.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/README.md) | cheat sheet; summarizes this folder |
-| [Formatting Input and Output.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Formatting%20Input%20and%20Output.md) | a reference for C format specifiers and escape characters, used to format input and output |
 | [Arrays.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md) | reference for arrays and multi-dimensional arrays, as well as working with them |
 
 ## Primitive Data Types
