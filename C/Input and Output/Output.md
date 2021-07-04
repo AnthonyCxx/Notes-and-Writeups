@@ -46,7 +46,7 @@ int main(void)
 ```
 
 ## printf(__*str*__, __*formatting variables*__)
-_printf()_ is the generic C print function and is especially good for [formatting strings](https://www.geeksforgeeks.org/format-specifiers-in-c/) with values.
+_printf()_ is the generic C print function and is especially good for [formatting strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Formatting%20Input%20and%20Output.md) with values.
 _printf()_ is slower than _puts()_ and does not automatically append a newline character (\n). Be very careful when using _printf()_ (especially when printing
 strings provided by the user) as _printf()_ has a well-known [string formatting vulnerability](https://owasp.org/www-community/attacks/Format_string_attack).
 ```C
