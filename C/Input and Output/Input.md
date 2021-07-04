@@ -54,7 +54,7 @@ int main(void)
     return 0;
 }
 ```
-> Sources: 
+> Sources: <br />
 > [_Study Tonight: Input and Output in C_](https://www.studytonight.com/c/c-input-output-function.php) <br />
 > [_Dummies.com: Basics of scanf() in C Programming_](https://www.dummies.com/programming/c/basics-of-the-scanf-function-in-c-programming/) <br />
 > [_Quora: What is Scanf()_ with \[^n\]?](https://www.quora.com/What-is-scanf-n) <br />
