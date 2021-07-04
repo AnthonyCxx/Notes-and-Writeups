@@ -25,6 +25,7 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 | double | 8 | 1.7E-308 | 1.7E+308 | %lf |
 | long double | 16 | 1.7E-308 | 1.7E+308 | %Lf |
 > Note: floats have about 7 decimal places, doubles have about 15, and long doubles have about 19. <br />
+> Note: to use Unicode characters, you must use [char8_t, char16_t, char32_t, or wchar_t](https://stackoverflow.com/questions/11287213/what-is-a-wide-character-string-in-c-language). <br />
 >
 > Sources: <br />
 > [Microsoft: Integer Limits (C/C++)](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160) <br />
