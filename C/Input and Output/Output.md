@@ -3,8 +3,29 @@
 # Charcters
 
 ## putchar(__*char*__)
-Outputs a single character to stdout (the console, unless otherwise redirected). _putchar()_ works with escape sequences and unicode characters, but you must 
-use [_setlocale()_](https://stackoverflow.com/questions/43834315/printing-a-unicode-symbol-in-c) before using Unicode; it does not add implicitly add a newline.
+Outputs a single character to stdout (the console, unless otherwise redirected). _putchar()_ works with escape sequences as well as ASCII text. This function does 
+not add implicitly add a newline.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    int end = 1000000;   // 1_000_000
+    
+    // A simple progress bar that races to 1 million
+    for(int i=0; i < end; i++)
+    {
+        // Print current progress
+        printf("Progress: %d / %d", i, end);
+
+        // Reset the cursor to the beginning of the line
+        putchar('\r');
+    }
+
+    return 0;
+}
+```
+> Best practice would just be to write 'printf("Progress: %d / %d\r", i, end);', combining the two functions.
 
 # Strings (Character Streams)
 
