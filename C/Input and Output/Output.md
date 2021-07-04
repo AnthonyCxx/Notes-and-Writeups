@@ -3,6 +3,8 @@
 # Charcters
 
 ## putchar(__*char*__)
+Outputs a single character to stdout (the console, unless otherwise redirected). _putchar()_ works with escape sequences and unicode characters, but you must 
+use [_setlocale()_](https://stackoverflow.com/questions/43834315/printing-a-unicode-symbol-in-c) before using Unicode; it does not add implicitly add a newline.
 
 # Strings (Character Streams)
 
