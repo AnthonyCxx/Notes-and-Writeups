@@ -33,7 +33,7 @@ int main(void)
 The _gets()_ function reads from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) until it encounters a newline (\n) or EOF character.
 Though convenient, using the _gets()_ function is considered bad practice because it will continue to write characters even when your buffer runs out of memory 
 (50 characters in this case). If _gets()_ writes more characters than the buffer can hold, the program will instantly crash because it will detect 
-[stack smashing](https://stackoverflow.com/questions/40416516/what-is-stack-smashing-c). If you want to use _gets()_, use [_fgets()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#fgets) instead.
+[stack smashing](https://stackoverflow.com/questions/40416516/what-is-stack-smashing-c). If you want to use _gets()_, use [_fgets()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#fgets) instead. Just don't use _gets()_.
 ```C
 #include <stdio.h>
 
