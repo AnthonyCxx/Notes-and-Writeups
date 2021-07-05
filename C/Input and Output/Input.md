@@ -33,7 +33,9 @@ int main(void)
 ## scanf()
 The _scanf()_ function reads input until it reaches a whitespace. _scanf()_ is good for getting general user input like numbers and words. _scanf()_ takes two parameters:
 the format of the input (as a [formatted string](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md), like with _printf()_) and the memory address of the variable to store the data read in. Remember that the name of an array is a pointer to the first element, so you do not need to
-use the [_&_ (address-of) operator](https://www.educba.com/address-operator-in-c/) with buffers (character arrays). You can scan for '_%\[^\\n\]s_' to emulate the
+use the [_&_ (address-of) operator](https://www.educba.com/address-operator-in-c/) with buffers (character arrays). <br />
+
+You can scan for '_%\[^\\n\]s_' to emulate the
 [_gets()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#gets) function, but you will run into the same problem of stack smashing.
 ```C
 #include <stdio.h>
