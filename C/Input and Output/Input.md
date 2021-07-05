@@ -115,8 +115,8 @@ int main(void)
     return 0;
 }
 ```
-> This program will not crash if more than 50 characters are entered; at that point, it will just stop reading characters. This means that the buffer
-> will not contain a newline (\n) character as 'enter' is the last character in the stream of characters. <br />
+> This program will not crash if more than 50 characters are entered; at that point, it will just stop reading characters. <br />
+>  This means that the buffer will not contain a newline (\n) character as 'enter' is the last character in the stream of characters. <br />
 >
 > Sources: <br />
 > [_Educative.io: How to use the fgets() function in C_](https://www.educative.io/edpresso/how-to-use-the-fgets-function-in-c) <br />
