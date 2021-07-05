@@ -36,7 +36,7 @@ first element in the array. This can be done in a single macro: `#define SIZE(ar
 
 int main(void)
 {
-    int hugeArray[100000];
+    int hugeArray[100000];   // 100_000
 
     int arraySize = sizeof(hugeArray) / sizeof(hugeArray[0]);
     //              ^ size of the array        ^ size of the first element
