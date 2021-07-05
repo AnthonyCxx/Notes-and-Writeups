@@ -90,7 +90,7 @@ int main(void)
 ```
 > Reference: [_C++ Reference: gets()_](https://www.cplusplus.com/reference/cstdio/gets/) <br />
 > 
-> Compile this program and then enter more than 50 characters. The program will automaticaly terminate with a warning: <br /> 
+> Compile this program and then enter more than 50 characters. The program will automaticaly terminate with a fatale error: <br /> 
 > \*\*\* stack smashing detected \*\*\*: terminated <br />
 > Aborted (core dumped) <br />
 
