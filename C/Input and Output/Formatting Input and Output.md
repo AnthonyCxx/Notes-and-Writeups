@@ -41,7 +41,7 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | % | none, prints a percent sign (the '%' sign cannot be escaped with a backslash) |
 
 ## Length Specifiers
-The length specifier indicates the size of the datatype. This list is not comprehensive, see [here](https://en.wikipedia.org/wiki/Printf_format_string#Length_field).
+The length specifier indicates the size of the datatype.
 
 | Specifier | Size |
 | -------- | ----- |
@@ -50,6 +50,7 @@ The length specifier indicates the size of the datatype. This list is not compre
 | ll | long long |
 | L | long (long double only) |
 | z | [size_t](https://www.geeksforgeeks.org/size_t-data-type-c-language/) |
+> [Here](https://en.wikipedia.org/wiki/Printf_format_string#Length_field) is a comprehensive list.
 
 ## Width Specifier
 The width specifier indicates the minimum amount of characters that the string/number must come out to.
