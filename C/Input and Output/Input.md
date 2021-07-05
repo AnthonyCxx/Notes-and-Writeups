@@ -36,7 +36,7 @@ the format of the input (as a [formatted string](https://github.com/EthanC2/Note
 use the [_&_ (address-of) operator](https://www.educba.com/address-operator-in-c/) with buffers (character arrays). <br />
 
 You can scan for '_%\[^\\n\]s_' to emulate the
-[_gets()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#gets) function, but you will run into the same problem of stack smashing.
+[_gets()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#gets) function, but you will run into the same problem of buffer overflows.
 ```C
 #include <stdio.h>
 
@@ -122,3 +122,5 @@ int main(void)
 > [_Educative.io: How to use the fgets() function in C_](https://www.educative.io/edpresso/how-to-use-the-fgets-function-in-c) <br />
 > [_C++ Reference: \<cstdio\>, fgets()_](https://www.cplusplus.com/reference/cstdio/fgets/) <br />
 
+## Miscellaneous
+[Here](https://stackoverflow.com/questions/7880141/how-do-i-check-length-of-user-input-in-c) is a good article on checking the length of user input.
