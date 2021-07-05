@@ -3,6 +3,7 @@
 | ---- | -------- |
 | [README.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/README.md) | cheat sheet; summarizes this folder |
 | [Arrays.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md) | reference for arrays and multi-dimensional arrays, as well as working with them |
+| [Structs.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structs.md) | a reference for structs |
 
 ## Primitive Data Types
 Anything in parentheses can be left to be implied (i.e. you can declare an unsigned short int using '_signed short int_','_short int_' or just '_short_').
