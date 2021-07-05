@@ -97,7 +97,7 @@ The _fgets()_ function reads a set amount of characters from a [_FILE*_](https:/
 _FILE*_ to read from ('stdin' is the keyboard).
 
 The _sizeof()_ operator (yes, operator) returns the size of the datatype (/variable/data structure) in bytes, right? And a char is only 1 byte, right? So it just happens
-to be the case that using the _sizeof()_ operator on the char array returns the exact amount of characters that can be stored in said array.
+to be the case that using the _sizeof()_ operator on the char array returns the exact amount of characters that _fgets()_ needs to read.
 ```C
 #include <stdio.h>
 
