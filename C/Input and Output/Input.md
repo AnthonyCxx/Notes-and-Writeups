@@ -123,4 +123,4 @@ int main(void)
 > [_C++ Reference: \<cstdio\>, fgets()_](https://www.cplusplus.com/reference/cstdio/fgets/) <br />
 
 ## Miscellaneous
-[Here](https://stackoverflow.com/questions/7880141/how-do-i-check-length-of-user-input-in-c) is a good article on checking the length of user input.
+[Here](https://stackoverflow.com/questions/7880141/how-do-i-check-length-of-user-input-in-c) is a good reading on checking the length of user input.
