@@ -31,7 +31,7 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | a | [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) float (lowercase xc and fep) |
 | A | [hexadecimal](https://www.tutorialspoint.com/hexadecimal-number-system) float (uppercase XC and FEP) |
 | e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation) (lowercase 'e') |
-| e | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
+| E | converts a float to [scientific notation](https://www.merriam-webster.com/dictionary/scientific%20notation)  (uppercase 'E') |
 | g | returns the shorter of %f and %e |
 | G | returns the shorter of %f and %E |
 | c | char | 
