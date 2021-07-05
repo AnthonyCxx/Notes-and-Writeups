@@ -78,8 +78,8 @@ Flags alter the standard formatting specifications.
 | # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers; keeps trailing zeros for floating-point numbers (decimal point) |
 
 ## Escape Sequences
-Escape sequences are [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) that perform some action when the string is printed, which may involve
-altering the string itself. <br /> I've listed them in order of how often I find myself using them.
+Escape sequences allow you to treat [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) literally, preventing their normal action. <br />
+I've tried to list them in the order that I find myself using them.
 
 | Escape Sequence | Character |
 | --------------- | ------ | 
