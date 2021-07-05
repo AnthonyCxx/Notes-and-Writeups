@@ -9,7 +9,7 @@ All sources are linked in the text or listed at the bottom.
 ## Examples
 | Example | Result |
 | ------- | ------ |
-| %d | print a simple signed integer |
+| %d | print a signed integer |
 | %ld | print a long integer |
 | %03d | prints a zero-padded integer with a width of three (001, 012, 100) |
 | %+.2f | prints a float with 2 decimal places and a prefixed '+' or '-' |
