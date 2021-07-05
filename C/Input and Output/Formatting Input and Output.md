@@ -75,7 +75,7 @@ Flags alter the standard formatting specifications.
 | + | puts a '+' in front of positive numbers |
 | (space) | puts a space in front of positive numbers to keep alignment with negative numbers |
 | 0 | [zero-pads](https://stackoverflow.com/questions/153890/printing-leading-0s-in-c) the number to fit the specified width |
-| # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers and keeps trailing zeros for floating-point numbers (decimal point) |
+| # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers; keeps trailing zeros for floating-point numbers (decimal point) |
 
 ## Escape Sequences
 Escape sequences are [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) that perform some action when the string is printed, which may involve
