@@ -3,7 +3,7 @@
 | ---- | -------- |
 | [README.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/README.md) | cheat sheet; summarizes this folder |
 | [Arrays.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md) | a data structure that stores a collection of elements of the same datatype |
-| [Structs.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structs.md) | a data structure that stores a collection of variables as a single unit |
+| [Structures.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md) | a data structure that stores a collection of variables as a single unit |
 
 ## Primitive Data Types
 Anything in parentheses can be left to be implied (i.e. you can declare an unsigned short int using '_signed short int_','_short int_' or just '_short_'). <br />
@@ -38,6 +38,6 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 
 ## Non-primitive Data Types
 - [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md)
-- [Structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structs.md)
+- [Structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md)
 - Enums
 - Unions
