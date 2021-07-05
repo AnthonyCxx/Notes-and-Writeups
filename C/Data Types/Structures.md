@@ -1,5 +1,8 @@
 # Structures in C
-Structures are a user-defined datatype that serve as a collection of variables. These 
+Structures are a user-defined datatype that serve as a collection of variables. 
+```C
+
+```
 
 
 ## 'Inheritance' of Structures
