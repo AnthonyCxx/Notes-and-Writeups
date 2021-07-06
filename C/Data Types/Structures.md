@@ -52,7 +52,7 @@ int main(void)
     return 0;
 }
 ```
-> Notice how the datatype is anonymous (has no name) - there is no name. <br />
+> Notice how the datatype is anonymous (has no name). <br />
 > This is acceptable because the anonymous struct is now mapped to the 'Person' alias. <br />
 
 ## 'Inheritance' with Structures
