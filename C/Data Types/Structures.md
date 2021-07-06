@@ -28,6 +28,31 @@ int main(void)
 >
 > 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/). <br />
 
+## Simplifying Definitions with Typedef
+The [_typedef_](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) keyword allows the programmer to create aliases for datatypes. If you make the definition of your
+struct an alias, you won't have to write _struct_ constantly when declaring or using structs. In larger programs, you should be careful when using _typedef_ because it tends
+to pollute the global namespace when overused; however, the _typedef_ keyword poses no harm in smaller programs and makes your code cleaner.
+```C
+// Format of typedef: 'typedef <datatype> <alias>'
+typedef struct
+{
+    char name[256];           // 256 is the max length of 'Display-Name' in Active Directory
+    char phone_number[15];   // 1 (country code) + 3 (area code) + 7 (telephone number) + 3 (dashes) + '\0'
+} Person;
+
+int main(void)
+{
+    // Declaring an instance of 'Person'
+    Person henry = {"Henry", "540-321-2080"};
+
+    printf("Name: %s\n", henry.name);
+    printf("Phone number: %s\n", henry.phone_number);
+
+    return 0;
+}
+```
+> Notice how the datatype is anonymous (has no name) - there is no name. This is acceptable because the anonymous struct is now mapped to the 'Person' alias.
+
 ## 'Inheritance' with Structures
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
 (i.e. making one the the structure's fields another structure). Some people believe that composition is the only way that structs (and objects in object-oriented
