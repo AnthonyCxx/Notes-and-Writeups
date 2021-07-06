@@ -56,8 +56,11 @@ int main(void)
 > This is acceptable because the anonymous struct is now mapped to the 'Person' alias. <br />
 
 ## Structs within Structs
-Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, unlike true inheritance
-C does not have abstract structs nor virtual methods.
+Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, this only goes so far as
+C does not have abstract structs nor virtual methods (or methods at all for that matter). 
+```C
+
+```
 
 ## 'Inheritance' with Structs
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
