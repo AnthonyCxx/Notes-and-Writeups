@@ -2,7 +2,22 @@
 Structures (colloquially called a 'struct') are a user-defined datatype that serve as a collection of variables. They are defined as a block of code prefaced with the
 [_struct_ keyword](https://www.educative.io/edpresso/what-is-a-c-struct) and end with a semi-colon.
 ```C
+struct Person
+{
+    char name[256];           // 256 is the max length of 'Display-Name' in Active Directory
+    char phone_number[15];   // 1 (country code) + 3 (area code) + 7 (telephone number) + 3 (dashes) + '\0'
+};
 
+int main(void)
+{
+    // Declaring an instance of 'Person'
+    struct Person henry = {"Henry", "540-321-2080"};
+
+    printf("Name: %s\n", henry.name);
+    printf("Phone number: %s\n", henry.phone_number);
+
+    return 0;
+}
 ```
 > 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/).
 
