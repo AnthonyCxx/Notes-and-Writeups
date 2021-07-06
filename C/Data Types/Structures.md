@@ -101,9 +101,9 @@ int main(void)
 {
     // Declare and initialize a 'Car' struct
     Car tesla = {
-                    "Tesla",                              // brand
-                    {"General Motors", Off},             // Engine struct
-                    {"Michelin", New}                   // Wheels struct
+                    "Tesla",                              // Initialize brand
+                    {"General Motors", Off},             // Initialize 'Engine' struct
+                    {"Michelin", New}                   // Initialize 'Wheels' struct
                 };
 
     // Brand
