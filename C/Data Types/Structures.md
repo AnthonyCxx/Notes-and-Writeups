@@ -132,7 +132,9 @@ int main(void)
 Structs cannot define methods; however, they can point to existing methods via a [function pointer](https://www.codeproject.com/Tips/800474/Function-Pointer-in-C-Struct).
 Declaring a function pointer takes the format `return_type (*function_name)(parameters);` where the parameter list only contains the datatype of the arguments and not their
 name. Like any other data member, function pointers must be initialized by assigning it the memory location of the function (via `&function_name`). Since pointers can be
-reassigned throughout the program, function pointers can be changed during runtime, allowing a single function pointer to execute many different functions.
+reassigned throughout the program, function pointers can be changed during runtime, allowing a single function pointer to execute many different functions. After parsing
+through a number of articles, the best explanation I found on this was [_this video_](https://www.youtube.com/watch?v=cwvdT-4HT9o) by CodeVault.
+
 ```C
 #include <stdio.h>
 
