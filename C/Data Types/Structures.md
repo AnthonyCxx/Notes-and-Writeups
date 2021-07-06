@@ -13,12 +13,16 @@ struct Person
 int main(void)
 {
     // Declaring an instance of 'Person'
-    struct Person henry = {"Henry", "540-321-2080"};
+    struct Person henry;
+    
+    // Initializing data members
+    henry.name = "Henry";
+    henry.phone_number = "540-321-2080";
+     // ^ C does not name access modifiers (private, public, etc.) so everything is public
 
     // Print contents of struct 'henry'
     printf("Name: %s\n", henry.name);                 
     printf("Phone number: %s\n", henry.phone_number);
-    // ^ C does not name access modifiers (private, public, etc.) so everything is public
 
     return 0;
 }
@@ -28,6 +32,9 @@ int main(void)
 > Phone number: 540-321-2080 <br />
 >
 > 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/)). <br />
+
+## Intializing Structs
+
 
 ## Simplifying Struct Usage with _typedef_
 The [_typedef_](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) keyword allows the programmer to create aliases for datatypes. If you make the definition of your
