@@ -26,7 +26,7 @@ int main(void)
 > Name: Henry <br />
 > Phone number: 540-321-2080 <br />
 >
-> 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/). <br />
+> 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/)). <br />
 
 ## Simplifying Struct Usage with _typedef_
 The [_typedef_](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) keyword allows the programmer to create aliases for datatypes. If you make the definition of your
