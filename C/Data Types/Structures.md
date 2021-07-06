@@ -64,7 +64,7 @@ C does not have abstract structs nor virtual methods (or methods at all for that
 #include <stdio.h>
 
 // Typedef enumerated types, for ease of use
-typedef enum { Off, Idle, Running } State;
+typedef enum { Off, Idle, On } State;
 typedef enum { New, Good, Fair, Poor } Condition;
 // ^ Always have the safest state as the first (default)
 
@@ -137,7 +137,7 @@ reassigned throughout the program, function pointers can be changed during runti
 #include <stdio.h>
 
 // Typedef enumerated types, for ease of use
-typedef enum { Off, Idle, Running } State;
+typedef enum { Off, Idle, On } State;
 typedef enum { New, Good, Fair, Poor } Condition;
 // ^ Always have the safest state as the first (default)
 
