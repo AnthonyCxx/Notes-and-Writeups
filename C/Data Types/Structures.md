@@ -18,7 +18,7 @@ int main(void)
     // Initializing data members
     henry.name = "Henry";
     henry.phone_number = "540-321-2080";
-     // ^ C does not name access modifiers (private, public, etc.) so everything is public
+    // ^ C does not name access modifiers (private, public, etc.) so everything is public
 
     // Print contents of struct 'henry'
     printf("Name: %s\n", henry.name);                 
