@@ -13,16 +13,12 @@ struct Person
 int main(void)
 {
     // Declaring an instance of 'Person'
-    struct Person henry;
-    
-    // Initializing data members
-    henry.name = "Henry";
-    henry.phone_number = "540-321-2080";
-    // ^ C does not name access modifiers (private, public, etc.) so everything is public
+    struct Person henry = {"Henry", "540-321-2080"};
 
     // Print contents of struct 'henry'
     printf("Name: %s\n", henry.name);                 
     printf("Phone number: %s\n", henry.phone_number);
+    // ^ C does not name access modifiers (private, public, etc.) so everything is public
 
     return 0;
 }
