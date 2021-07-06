@@ -72,8 +72,7 @@ typedef enum { New, Good, Fair, Poor } Condition;
 typedef struct
 {
     char manufacturer[50];
-    State state;             // Engine state (Off, Idle, On)
-    
+    State state;             // Engine state (Off, Idle, On)   
 } Engine;
 
 // 'Wheels' struct
@@ -81,7 +80,6 @@ typedef struct
 {
     char brand[50];
     Condition condition;    // Tire condition (New, Good, Fair, Poor)
-
 } Wheels;
 
 // 'Car' struct
@@ -147,7 +145,6 @@ typedef struct
 {
     char manufacturer[50];
     State state;             // Engine state (Off, Idle, On)
-
 } Engine;
 
 // 'Wheels' struct
@@ -155,7 +152,6 @@ typedef struct
 {
     char brand[50];
     Condition condition;    // Tire condition (New, Good, Fair, Poor)
-
 } Wheels;
 
 // 'Car' struct
