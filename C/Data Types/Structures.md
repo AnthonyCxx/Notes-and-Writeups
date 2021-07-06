@@ -5,7 +5,7 @@ Unlike in C++, structs in C cannot contain methods (however they can contain fun
 ```C
 struct Person
 {
-    char name[256];           // 256 is the max length of 'Display-Name' in Active Directory
+    char name[257];           // 256 is the max length of 'Display-Name' in Active Directory (256 char + '\0')
     char phone_number[15];   // 1 (country code) + 3 (area code) + 7 (telephone number) + 3 (dashes) + '\0'
 };
 // ^ Note the semi-colon. A struct is a definition of a datatype and so needs a semi-colon
@@ -37,7 +37,7 @@ tends to pollute the global namespace when overused; however, using _typedef_ po
 // Format of typedef: 'typedef <datatype> <alias>'
 typedef struct
 {
-    char name[256];           // 256 is the max length of 'Display-Name' in Active Directory (255 char + '\0')
+    char name[257];           // 256 is the max length of 'Display-Name' in Active Directory (256 char + '\0')
     char phone_number[15];   // 1 (country code) + 3 (area code) + 7 (telephone number) + 3 (dashes) + '\0'
 } Person;
 
