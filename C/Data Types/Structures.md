@@ -1,5 +1,5 @@
 # Structures in C
-Structures (colloquially called a 'struct') are a user-defined datatype that serve as a collection of variables. <br />
+Structures (colloquially called a 'struct') are a user-defined datatype that serve as a collection of variables. 
 They are defined as a block of code prefaced with the [_struct_ keyword](https://www.educative.io/edpresso/what-is-a-c-struct) and end with a semi-colon.
 Unlike in C++, structs in C cannot contain methods (however they can contain function pointers, which emulate effectively emulate).
 ```C
