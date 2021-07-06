@@ -182,7 +182,7 @@ int main(void)
     // Declare and initialize a 'Car' struct (MUST be in order!)
     Car tesla = {
                     "Tesla",                       // Initialize brand
-                    {"General Motors", Off },     // Initialize 'Engine' struct
+                    {"General Motors", Off},     // Initialize 'Engine' struct
                     {"Michelin", New},           // Initialize 'Wheels' struct
                     &drive_car                  // 'drive' method references the 'drive_car' function
                 };
