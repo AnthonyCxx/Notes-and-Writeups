@@ -52,6 +52,9 @@ int main(void)
     return 0;
 }
 ```
+> Notice how the struct is anonymous (has no name). <br />
+> This is acceptable because it is mapped to the identifier 'Person'. <br />
+> In errors, the struct will be referenced as 'struct <anonymous>'. <br />
 
 ## Structs within Structs
 Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, this only goes so far as
