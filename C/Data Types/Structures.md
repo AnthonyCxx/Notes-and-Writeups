@@ -51,7 +51,8 @@ int main(void)
     return 0;
 }
 ```
-> Notice how the datatype is anonymous (has no name) - there is no name. This is acceptable because the anonymous struct is now mapped to the 'Person' alias.
+> Notice how the datatype is anonymous (has no name) - there is no name. <br />
+> This is acceptable because the anonymous struct is now mapped to the 'Person' alias. <br />
 
 ## 'Inheritance' with Structures
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
