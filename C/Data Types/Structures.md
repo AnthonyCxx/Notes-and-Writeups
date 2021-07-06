@@ -4,7 +4,7 @@ Structures (colloquially called a 'struct') are a user-defined datatype that ser
 ```C
 
 ```
-> 'phone_number' is of type _char_ so you can regulate the length easily.
+> 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/).
 
 ## 'Inheritance' with Structures
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
