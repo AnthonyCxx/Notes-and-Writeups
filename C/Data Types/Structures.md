@@ -129,6 +129,11 @@ int main(void)
 > Wheel brand: Michelin <br />
 > Wheel condition: 0 (New) <br />
 
+## Struct 'Methods' via Function Pointers
+```C
+    
+```
+    
 ## 'Inheritance' with Structs
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
 (i.e. making one the the structure's fields another structure). Some people believe that composition is the only way that structs (and objects in object-oriented
