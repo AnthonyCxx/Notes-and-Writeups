@@ -60,8 +60,74 @@ int main(void)
 Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, this only goes so far as
 C does not have abstract structs nor virtual methods (or methods at all for that matter). 
 ```C
+#include <stdio.h>
 
+// Typedef enumerated types, for ease of use
+typedef enum { Off, Idle, Running } State;
+typedef enum { New, Good, Fair, Poor } Condition;
+// ^ Always have the safest state as the first (default)
+
+// 'Engine' struct
+typedef struct
+{
+    char manufacturer[50];
+    State state;
+    
+} Engine;
+
+// 'Wheels' struct
+typedef struct
+{
+    char brand[50];
+    Condition condition;
+
+} Wheels;
+
+// 'Car' struct
+typedef struct
+{
+    // Name
+    char brand[50];
+
+    // Nested structs as composition
+    Engine engine;
+    Wheels wheels;
+} Car;
+
+
+// DRIVER CODE \\
+
+int main(void)
+{
+    // Declare and initialize a 'Car' struct
+    Car tesla = {
+                    "Tesla",                              // brand
+                    {"General Motors", Off},             // Engine struct
+                    {"Michelin", New}                   // Wheels struct
+                };
+
+    // Brand
+    printf("Car brand: %s\n\n", tesla.brand);
+
+    // Engine
+    printf("Engine manufacturer: %s\n", tesla.engine.manufacturer);
+    printf("Engine state: %d (Off)\n\n", tesla.engine.state);
+
+    // Wheels
+    printf("Wheel brand: %s\n", tesla.wheels.brand);
+    printf("Wheel condition: %d (New)\n", tesla.wheels.condition);
+
+    return 0;
+}
 ```
+> Prints: <br />
+> Car brand: Tesla <br />
+>
+> Engine manufacturer: General Motors <br />
+> Engine state: 0 (Off) <br />
+>
+> Wheel brand: Michelin <br />
+> Wheel condition: 0 (New) <br />
 
 ## 'Inheritance' with Structs
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
