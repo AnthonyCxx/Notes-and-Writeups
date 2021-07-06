@@ -131,8 +131,92 @@ int main(void)
 
 ## Struct 'Methods' via Function Pointers
 ```C
-    
+#include <stdio.h>
+
+// Typedef enumerated types, for ease of use
+typedef enum { Off, Idle, Running } State;
+typedef enum { New, Good, Fair, Poor } Condition;
+// ^ Always have the safest state as the first (default)
+
+// 'Engine' method declaration
+void drive_car();
+
+// 'Engine' struct
+typedef struct
+{
+    char manufacturer[50];
+    State state;             // Engine state (Off, Idle, On)
+
+} Engine;
+
+// 'Wheels' struct
+typedef struct
+{
+    char brand[50];
+    Condition condition;    // Tire condition (New, Good, Fair, Poor)
+
+} Wheels;
+
+// 'Car' struct
+typedef struct
+{
+    // Car name
+    char brand[50];
+
+    // Nested structs as composition
+    Engine engine;
+    Wheels wheels;
+
+    // 'Methods'
+    void (*drive)();    // Return type, pointer followed by name, then the (empty) parameter list.
+    // ^ If the parameter list were not empty, then you would only put the datatype (without the names; e.g. '(int, int)')
+
+} Car;
+
+
+// *** DRIVER CODE *** \\
+
+int main(void)
+{
+    // Declare and initialize a 'Car' struct (MUST be in order!)
+    Car tesla = {
+                    "Tesla",                       // Initialize brand
+                    {"General Motors", Off },     // Initialize 'Engine' struct
+                    {"Michelin", New},           // Initialize 'Wheels' struct
+                    &drive_car                  // 'drive' method references the 'drive_car' function
+                };
+
+    // Brand
+    printf("Car brand: %s\n\n", tesla.brand);
+
+    // Engine
+    printf("Engine manufacturer: %s\n", tesla.engine.manufacturer);
+    printf("Engine state: %d (Off)\n", tesla.engine.state);
+    tesla.drive();
+
+    // Wheels
+    printf("Wheel brand: %s\n", tesla.wheels.brand);
+    printf("Wheel condition: %d (New)\n", tesla.wheels.condition);
+
+    return 0;
+}
+
+
+// 'drive_car' method implementation
+void drive_car()
+{
+    puts("Driving the car!\n");
+}
 ```
+> Prints: <br />
+> Car brand: Tesla <br />
+>
+> Engine manufacturer: General Motors <br />
+> Engine state: 0 (Off) <br />
+> Driving the car! <br />
+> 
+> Wheel brand: Michelin <br />
+> Wheel condition: 0 (New) <br />
     
 ## 'Inheritance' with Structs
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
