@@ -71,7 +71,7 @@ typedef enum { New, Good, Fair, Poor } Condition;
 typedef struct
 {
     char manufacturer[50];
-    State state;
+    State state;             // Engine state (Off, Idle, On)
     
 } Engine;
 
@@ -79,14 +79,14 @@ typedef struct
 typedef struct
 {
     char brand[50];
-    Condition condition;
+    Condition condition;    // Tire condition (New, Good, Fair, Poor)
 
 } Wheels;
 
 // 'Car' struct
 typedef struct
 {
-    // Name
+    // Car name
     char brand[50];
 
     // Nested structs as composition
