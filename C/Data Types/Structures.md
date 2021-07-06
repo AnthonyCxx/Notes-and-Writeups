@@ -20,7 +20,11 @@ int main(void)
     return 0;
 }
 ```
-> 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/).
+> Prints: <br />
+> Name: Henry <br />
+> Phone number: 540-321-2080 <br />
+>
+> 'phone_number' is of type _char_ so you can regulate the length easily (source: [random phone number generator](https://www.randomphonenumbers.com/). <br />
 
 ## 'Inheritance' with Structures
 Structures do not support inheritance, but you can effectively mimic the concept via [composition](https://www.codementor.io/@arpitbhayani/powering-inheritance-in-c-using-structure-composition-176sygr724) 
