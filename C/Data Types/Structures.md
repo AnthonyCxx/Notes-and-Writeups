@@ -30,8 +30,8 @@ int main(void)
 
 ## Simplifying Struct Usage with _typedef_
 The [_typedef_](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) keyword allows the programmer to create aliases for datatypes. If you make the definition of your
-struct an alias, you won't have to write _struct_ constantly when declaring or using structs. In larger programs, you should be careful when using _typedef_ because it tends
-to pollute the global namespace when overused; however, the _typedef_ keyword poses no harm in smaller programs and makes your code cleaner.
+struct an alias, you won't have to write _struct_ constantly when declaring or using the struct. In larger programs, you should be careful when using _typedef_ because it 
+tends to pollute the global namespace when overused; however, the _typedef_ keyword poses no harm in smaller programs and makes your code cleaner.
 ```C
 // Format of typedef: 'typedef <datatype> <alias>'
 typedef struct
