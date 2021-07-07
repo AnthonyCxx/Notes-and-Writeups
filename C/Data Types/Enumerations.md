@@ -58,7 +58,7 @@ struct Player
     int score;
     Team team;
 };
-typedef struct Player Player;
+typedef struct Player Player;   // Aliases 'struct Player' to 'Player'
 
 int main(void)
 {
