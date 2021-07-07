@@ -2,7 +2,7 @@
 An enumerated type (enum) is a user-defined type that can be one of a defined set of values, each of which is represented internally by an integer constant. Enums provide
 programmers with a clear way of representing the possible states/values of an object. For example, a simple machine may have an enum defining its state with two simple
 values, 'ON' and 'OFF' (by convention, enum values are typically fully capitalized). By default, the first value of an enum is 0, the second is 1, the third is 2, and so on;
-however, this can be overwritten by manually assigning the values inside of the enum declaration. 
+however, this can be overwritten by manually assigning the values inside of the enum declaration. A good summary can be found [_here_](https://www.youtube.com/watch?v=lWzZ2l5n81c). (yes, CodeVault again - he's just so good at explaining stuff).
 
 ## Declaring an Enum
 An enum is declared like so `enum enum_name { list_of_possible_values };`.
