@@ -31,7 +31,7 @@ int main(void)
 
     // Initialize int
     nums.i = 100;
-    printf("Union int: %d\n", nums.i);
+    printf("Union int: %d\n\n", nums.i);
 
     // Initialize float
     nums.fl = 25.67;                          // 'nums.i' is overwritten here
@@ -43,6 +43,7 @@ int main(void)
 ```
 > Prints: <br />
 > Union int: 100 <br /> 
+> 
 > Union float: 25.670000 <br /> 
 > Union int: 1103977513 <br />
 
@@ -65,7 +66,7 @@ int main(void)
 
     // Initialize int
     nums.i = 100;
-    printf("Union int: %d\n", nums.i);
+    printf("Union int: %d\n\n", nums.i);
 
     // Initialize float
     nums.fl = 25.67;
@@ -77,6 +78,7 @@ int main(void)
 ```
 > Prints: <br />
 > Union int: 100 <br /> 
+> 
 > Union float: 25.670000 <br /> 
 > Union int: 1103977513 <br />
 
