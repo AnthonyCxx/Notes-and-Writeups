@@ -11,7 +11,7 @@ An enum is declared like so `enum enum_name { list_of_possible_values };`.
 #include <stdio.h>
 
 // An enum 'Team' which can be one of four teams
-enum Team { RED, YELLOW, BLUE, GREEN};
+enum Team { RED, YELLOW, BLUE, GREEN};   // Yes, these are the team colors from Mario Party 8
 
 struct Player
 {
