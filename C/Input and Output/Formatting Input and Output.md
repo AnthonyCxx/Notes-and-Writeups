@@ -35,7 +35,7 @@ The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-t
 | g | returns the shorter of %f and %e |
 | G | returns the shorter of %f and %E |
 | c | char | 
-| s | char string literal (e.g. "Hello!") | 
+| s | 'string' literal or char array (e.g. "Hello!") | 
 | p | memory/pointer address | 
 | n | none, prints nothing; used to [return the amount of character read until %n is read/written](https://www.geeksforgeeks.org/n-in-scanf-in-c-with-example/) |
 | % | none, prints a percent sign (the '%' sign cannot be escaped with a backslash) |
