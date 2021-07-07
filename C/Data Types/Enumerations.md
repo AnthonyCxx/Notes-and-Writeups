@@ -78,7 +78,7 @@ int main(void)
 > Score: 0 <br />
 > Team: 0 <br />
 
-### Complex Usage
+### Anonyomus Usage
 Though a bit more complicated, you can combine the declaration of the enum with the declaration of the alias; however, this requires you to map the enum to the alias as an
 [_anonymous object_](https://docs.microsoft.com/en-us/cpp/cpp/anonymous-class-types?view=msvc-160), which may cause confusion as it will show up as _\<anonymous\>_ in the 
 error log of the compiler.
