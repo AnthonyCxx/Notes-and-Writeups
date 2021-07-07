@@ -2,6 +2,31 @@
 Unions are a data structure that allows multiple variables to share the same space in memory (unlike a struct, in which the variables are independent of each other)
 
 ## Simplifying Union Usage with _typedef_
+```C
+#include <stdio.h>
+
+union test_union
+{
+    int i;
+    float fl;
+};
+
+int main(void)
+{
+    union test_union nums;
+
+    // Initialize int
+    nums.i = 100;
+    printf("Union int: %d\n", nums.i);
+
+    // Initialize float
+    nums.fl = 25.67;
+    printf("Union float: %f\n", nums.fl);
+    printf("Union int: %d\n", nums.i);
+
+    return 0;
+}
+```
 [link](https://www.tutorialspoint.com/cprogramming/c_typedef.htm)
 
 ## Sources
