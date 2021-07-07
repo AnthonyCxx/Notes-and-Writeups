@@ -41,4 +41,4 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 - [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md)
 - [Structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md)
 - [Enumerations](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md)
-- Unions
+- [Unions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md)
