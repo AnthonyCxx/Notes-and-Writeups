@@ -118,7 +118,7 @@ int main(void)
 
 ## Manually Setting the Internal Values
 Each possible value of an enum is mapped to an integer constant that is always one greater than the last (starting at 0). If you assign the values manually,
-then the values of the enum will take on said integer value. If you assign one value manually, and do not assign the ones that follow it, then the following 
+then the values of the enum will take on said integer value. If you assign one value manually and do not assign the ones that follow it, then the following 
 values will just follow the pattern of adding one to the previous value.
 
 ```C
