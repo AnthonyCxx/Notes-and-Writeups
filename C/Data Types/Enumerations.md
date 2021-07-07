@@ -73,6 +73,10 @@ int main(void)
     return 0;
 }
 ```
+> Prints: <br />
+> Health: 10 <br />
+> Score: 0 <br />
+> Team: 0 <br />
 
 ### Complex Usage
 Though a bit more complicated, you can combine the declaration of the enum with the declaration of the alias; however, this requires you to map the enum to the alias as an
@@ -106,3 +110,7 @@ int main(void)
     return 0;
 }
 ```
+> Prints: <br />
+> Health: 10 <br />
+> Score: 0 <br />
+> Team: 0 <br />
