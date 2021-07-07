@@ -35,7 +35,7 @@ struct an alias, you won't have to write _struct_ constantly when declaring or u
 tends to pollute the global namespace when overused; however, using _typedef_ poses no harm in smaller programs and makes your code cleaner.
 ```C
 // Format of typedef: 'typedef <datatype> <alias>'
-typedef struct
+typedef struct Person
 {
     char name[257];           // 256 is the max length of 'Display-Name' in Active Directory (256 char + '\0')
     char phone_number[15];   // 1 (country code) + 3 (area code) + 7 (telephone number) + 3 (dashes) + '\0'
