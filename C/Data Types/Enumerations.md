@@ -50,7 +50,7 @@ also combine the declaration and alias.
 
 // An enum 'Team' which can be one of four teams
 enum Team { RED, YELLOW, BLUE, GREEN};
-typedef enum Team Team;
+typedef enum Team Team;        // Aliases 'enum Team' to 'Team'
 
 struct Player
 {
