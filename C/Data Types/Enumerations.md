@@ -24,6 +24,7 @@ int main(void)
 {
     // Initialize a player
     struct Player player_one = { 10, 0, RED };    // Health, score, team ('Team' enum)
+                                      // ^ 'RED' is 0, as it is the first value
 
     // Print stats
     printf("Health: %d\n", player_one.health);
@@ -37,3 +38,6 @@ int main(void)
 > Health: 10 <br />
 > Score: 0 <br />
 > Team: 0 <br />
+
+## Simplifying Enum Usage with _typedef_
+Normally, you have to put _enum_ in front of any declaration or implementation of an enumerated type. To avoid this, you can use the [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm).
