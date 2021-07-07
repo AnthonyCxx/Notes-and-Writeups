@@ -154,6 +154,9 @@ int main(void)
     return 0;
 }
 ```
+> Prints: <br />
+> Friday is a lucky day~! <br />
+> Monday is not a lucky day... <br />
 
 ## Sources
 - [_Microsoft Documentation: C Enumaration Declarations_](https://docs.microsoft.com/en-us/cpp/c-language/c-enumeration-declarations?view=msvc-160)
