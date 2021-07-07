@@ -5,7 +5,7 @@ values, 'ON' and 'OFF' (by convention, enum values are typically fully capitaliz
 however, this can be overwritten by manually assigning the values inside of the enum declaration. A good summary can be found [_here_](https://www.youtube.com/watch?v=lWzZ2l5n81c) (yes, CodeVault again - he's just so good at explaining stuff).
 
 ## Declaring an Enum
-An enum is declared like so `enum enum_name { list_of_possible_values };`.
+An enum is declared like so `enum enum_name { list_of_possible_values };`. The list of possible values is comma-separated.
 
 ```C
 #include <stdio.h>
