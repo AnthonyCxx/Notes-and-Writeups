@@ -146,7 +146,7 @@ int main(void)
     today = MONDAY;
 
     // Is today a lucky day?1
-    if (today) // if 1 (true)
+    if (today)  // if 1 (true)
         puts("Monday is a lucky day~!");
     else
         puts("Monday is not a lucky day...");
