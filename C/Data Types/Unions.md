@@ -2,6 +2,14 @@
 Unions are a data structure that allows multiple variables to share the same space in memory (unlike a struct, in which the variables are independent of each other)
 
 ## Declaring a Union in C
+Unions are declared in the format:
+```C
+union union_name 
+{ 
+    variable_list 
+};
+```
+
 ```C
 #include <stdio.h>
 
