@@ -7,9 +7,11 @@ Unions are declared in the format:
 union union_name 
 { 
     variable_list 
-};
+};    
+// ^ Notice the semi-colon. It's a datatype definition.
 ```
 
+### Example
 ```C
 #include <stdio.h>
 
