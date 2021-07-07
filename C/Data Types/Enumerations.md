@@ -1,5 +1,5 @@
 # Enumerations in C
-
+An enumerated type (enum) is a user-defined type that can be one of a defined set of values, each of which is internally represented by an integer constant.
 
 ## Declaring an Enum
 
