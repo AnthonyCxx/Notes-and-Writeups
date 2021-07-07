@@ -16,12 +16,14 @@ union union_name
 ```C
 #include <stdio.h>
 
+// union definition
 union test_union
 {
     int i;      // i(nt)
     float fl;  // fl(oat)
 };
 
+// Driver Code
 int main(void)
 {
     union test_union nums;
