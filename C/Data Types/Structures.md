@@ -45,7 +45,7 @@ int main(void)
 {
     // Declaring an instance of 'Person'
     Person henry = {"Henry", "540-321-2080"};
-    // ^ No 'struct' keyword before declaration
+    // ^ No 'struct' keyword before declaration (C++-like declaration)
 
     printf("Name: %s\n", henry.name);
     printf("Phone number: %s\n", henry.phone_number);
