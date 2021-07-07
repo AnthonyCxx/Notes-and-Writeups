@@ -1,6 +1,8 @@
 # Unions in C
 Unions are a data structure that allows multiple variables to share the same space in memory (unlike a struct, in which the variables are independent of each other).
-The size of a union is always the size of the largest data member of the union. Unions are especially useful for 
+The size of a union is always the size of the largest data member of the union. Unions are useful for saving memory by preventing the existance of extraneous variables.
+If you had a struct that 
+
 
 ## Declaring a Union in C
 
