@@ -31,9 +31,9 @@ int main(void)
     printf("Union int: %d\n", nums.i);
 
     // Initialize float
-    nums.fl = 25.67;             // 'nums.i' is overwritten here
+    nums.fl = 25.67;                          // 'nums.i' is overwritten here
     printf("Union float: %f\n", nums.fl);
-    printf("Union int: %d\n", nums.i);       // 'nums.i' is no longer 100
+    printf("Union int: %d\n", nums.i);      // 'nums.i' is no longer 100
 
     return 0;
 }
