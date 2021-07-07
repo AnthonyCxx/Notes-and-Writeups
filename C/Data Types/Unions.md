@@ -41,6 +41,10 @@ int main(void)
     return 0;
 }
 ```
+> Prints: <br />
+> Union int: 100 <br /> 
+> Union float: 25.670000 <br /> 
+> Union int: 1103977513 <br />
 
 ## Simplifying Union Usage with _typedef_
 The [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) allows you to write aliases for datatypes. Using _typedef_ lets you alias 
@@ -71,6 +75,10 @@ int main(void)
     return 0;
 }
 ```
+> Prints: <br />
+> Union int: 100 <br /> 
+> Union float: 25.670000 <br /> 
+> Union int: 1103977513 <br />
 
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
