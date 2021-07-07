@@ -41,7 +41,8 @@ int main(void)
 
 ## Simplifying Enum Usage with _typedef_
 Normally, you have to put _enum_ in front of any declaration or implementation of an enumerated type. To avoid this, you can use the [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) to write an alias, mapping `enum enum_name` to `enum_name` so you can just use the name of the enum
-directly. That way, you can just write the alias and stop writing _enum_ everywhere. <br />
+directly. That way, you can just write the alias and stop writing _enum_ everywhere. Done easily, you can write the alias as a separate statement; but, you can
+also combine the declaration and alias. 
 
 ### Simple Usage 
 ```C
