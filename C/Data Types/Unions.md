@@ -18,8 +18,8 @@ union union_name
 
 union test_union
 {
-    int i;
-    float fl;
+    int i;      // i(nt)
+    float fl;  // fl(oat)
 };
 
 int main(void)
