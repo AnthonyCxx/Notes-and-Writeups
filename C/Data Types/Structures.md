@@ -195,7 +195,7 @@ int main(void)
     // Engine
     printf("Engine manufacturer: %s\n", tesla.engine.manufacturer);
     printf("Engine state: %d (Off)\n", tesla.engine.state);
-    tesla.drive();
+    tesla.drive();      // Invoking the function pointer as if it were a method
 
     // Wheels
     printf("Wheel brand: %s\n", tesla.wheels.brand);
