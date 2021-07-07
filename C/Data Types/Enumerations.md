@@ -117,9 +117,38 @@ int main(void)
 
 
 ## Manually Setting the Internal Values
-Each possible value of an enum is mapped to an integer constant that is always one greater than the last (starting at 0).
-```C
+Each possible value of an enum is mapped to an integer constant that is always one greater than the last (starting at 0). If you assign the values manually,
+then the values of the enum will take on said integer value. If you assign one value manually, and do not assign the ones that follow it, then the following 
+values will just follow the pattern of adding one to the previous value.
 
+```C
+#include <stdio.h>
+
+// The days of the week, each mapped to a value (1 = lucky, 0 = not)
+typedef enum { SUNDAY = 1, MONDAY = 0, TUESDAY = 0, WEDNESDAY = 1, THURSDAY = 0, FRIDAY = 1, SATURDAY = 1 } lucky_days;
+
+int main(void)
+{
+    // Today is friday
+    lucky_days today = FRIDAY;
+
+    // Is today a lucky day?
+    if (today)
+        puts("Friday is a lucky day~!");
+    else
+        puts("Friday is not a lucky day...");
+
+    // Reassign today
+    today = MONDAY;
+
+    // Is today a lucky day?1
+    if (today)
+        puts("Monday is a lucky day~!");
+    else
+        puts("Monday is not a lucky day...");
+
+    return 0;
+}
 ```
 
 ## Sources
