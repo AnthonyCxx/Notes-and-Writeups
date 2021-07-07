@@ -65,26 +65,26 @@ be writing the project in C++.
 #include <stdio.h>
 
 // Typedef enumerated types, for ease of use
-typedef enum { Off, Idle, On } State;
-typedef enum { New, Good, Fair, Poor } Condition;
+typedef enum  State { Off, Idle, On } State;
+typedef enum Condition { New, Good, Fair, Poor } Condition;
 // ^ Always have the safest state as the first (default)
 
 // 'Engine' struct
-typedef struct
+typedef struct Engine
 {
     char manufacturer[50];
     State state;             // Engine state (Off, Idle, On)   
 } Engine;
 
 // 'Wheels' struct
-typedef struct
+typedef struct Wheels
 {
     char brand[50];
     Condition condition;    // Tire condition (New, Good, Fair, Poor)
 } Wheels;
 
 // 'Car' struct
-typedef struct
+typedef struct Car
 {
     // Car name
     char brand[50];
@@ -139,29 +139,29 @@ through a number of articles, the best explanation I found on this was [_this vi
 #include <stdio.h>
 
 // Typedef enumerated types, for ease of use
-typedef enum { Off, Idle, On } State;
-typedef enum { New, Good, Fair, Poor } Condition;
+typedef enum State { Off, Idle, On } State;
+typedef enum Condition { New, Good, Fair, Poor } Condition;
 // ^ Always have the safest state as the first (default)
 
 // 'Engine' method declaration
 void drive_car();
 
 // 'Engine' struct
-typedef struct
+typedef struct Engine
 {
     char manufacturer[50];
     State state;             // Engine state (Off, Idle, On)
 } Engine;
 
 // 'Wheels' struct
-typedef struct
+typedef struct Wheels
 {
     char brand[50];
     Condition condition;    // Tire condition (New, Good, Fair, Poor)
 } Wheels;
 
 // 'Car' struct
-typedef struct
+typedef struct Car
 {
     // Car name
     char brand[50];
