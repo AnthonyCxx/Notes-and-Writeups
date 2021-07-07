@@ -114,3 +114,16 @@ int main(void)
 > Health: 10 <br />
 > Score: 0 <br />
 > Team: 0 <br />
+
+
+## Manually Setting the Internal Values
+Each possible value of an enum is mapped to an integer constant that is always one greater than the last (starting at 0).
+```C
+
+```
+
+## Sources
+- [_Microsoft Documentation: C Enumaration Declarations_](https://docs.microsoft.com/en-us/cpp/c-language/c-enumeration-declarations?view=msvc-160)
+- [_GeeksforGeeks: Enumeration (or enum) in C_](https://www.geeksforgeeks.org/enumeration-enum-c/)
+- [_Programiz: C enum (Enumeration)_](https://www.programiz.com/c-programming/c-enumeration)
+- [_TutorialsPoint: Enum in C_](https://www.tutorialspoint.com/enum-in-c)
