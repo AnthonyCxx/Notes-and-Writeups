@@ -40,4 +40,37 @@ int main(void)
 > Team: 0 <br />
 
 ## Simplifying Enum Usage with _typedef_
-Normally, you have to put _enum_ in front of any declaration or implementation of an enumerated type. To avoid this, you can use the [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm).
+Normally, you have to put _enum_ in front of any declaration or implementation of an enumerated type. To avoid this, you can use the [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) to write an alias, mapping `enum enum_name` to `enum_name` so you can just use the name of the enum
+directly. That way, you can just write the alias and stop writing 'enum' everywhere.
+ 
+\an [_anonymous object_](https://docs.microsoft.com/en-us/cpp/cpp/anonymous-class-types?view=msvc-160)
+(an enum in this case) to an alias. That way, you can just write the alias and stop writing 'enum' everywhere.
+
+```C
+#include <stdio.h>
+
+// An enum 'Team' which can be one of four teams
+enum Team { RED, YELLOW, BLUE, GREEN};
+typedef enum Team Team;
+
+struct Player
+{
+    int health;
+    int score;
+    Team team;
+};
+typedef struct Player Player;
+
+int main(void)
+{
+    // Initialize a player
+    Player player_one = { 10, 0, RED };
+
+    // Print stats
+    printf("Health: %d\n", player_one.health);
+    printf("Score: %d\n", player_one.score);
+    printf("Team: %d (red)\n", player_one.team);
+
+    return 0;
+}
+```
