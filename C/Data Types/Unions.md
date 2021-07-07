@@ -43,7 +43,34 @@ int main(void)
 ```
 
 ## Simplifying Union Usage with _typedef_
-[link](https://www.tutorialspoint.com/cprogramming/c_typedef.htm)
+The [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) allows you to write aliases for datatypes. Using _typedef_ lets you alias 
+'union union_name' to the name of the union. That way, you don't have to write 'union' every time you declare or use the union.
+```C
+#include <stdio.h>
+
+typedef union test_union
+{
+    int i;
+    float fl;
+} test_union;
+
+int main(void)
+{
+    test_union nums;
+    // ^ No 'union' prefix ('test_union' = 'union test_union')
+
+    // Initialize int
+    nums.i = 100;
+    printf("Union int: %d\n", nums.i);
+
+    // Initialize float
+    nums.fl = 25.67;
+    printf("Union float: %f\n", nums.fl);
+    printf("Union int: %d\n", nums.i);
+
+    return 0;
+}
+```
 
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
