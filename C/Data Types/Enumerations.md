@@ -82,19 +82,17 @@ int main(void)
 > Score: 0 <br />
 > Team: 0 <br />
 
-### Anonyomus Usage
-Though a bit more complicated, you can combine the declaration of the enum with the declaration of the alias; however, this requires you to map the enum to the alias as an
-[_anonymous object_](https://docs.microsoft.com/en-us/cpp/cpp/anonymous-class-types?view=msvc-160), which may cause confusion as it will show up as _\<anonymous\>_ in the 
-error log of the compiler.
+### With _typedef_
+Though a bit more complicated, you can combine the declaration of the enum with the declaration of the alias.
+
 ```C
 #include <stdio.h>
 
 // An enum 'Team' which can be one of four teams
-typedef enum { RED, YELLOW, BLUE, GREEN} Team;
-//       ^ Anonymous (nameless) enum       ^ Alias (identifier)
+typedef enum Team { RED, YELLOW, BLUE, GREEN} Team;
 
 // Anonymous struct mapped to the 'Player' alias
-typedef struct
+typedef struct Player
 {
     int health;
     int score;
@@ -129,7 +127,7 @@ values will just follow the pattern of adding one to the previous value.
 #include <stdio.h>
 
 // The days of the week, each mapped to a value (1 = lucky, 0 = not)
-typedef enum { SUNDAY = 1, MONDAY = 0, TUESDAY = 0, WEDNESDAY = 1, THURSDAY = 0, FRIDAY = 1, SATURDAY = 1 } lucky_days;
+typedef enum lucky_days { SUNDAY = 1, MONDAY = 0, TUESDAY = 0, WEDNESDAY = 1, THURSDAY = 0, FRIDAY = 1, SATURDAY = 1 } lucky_days;
 
 int main(void)
 {
