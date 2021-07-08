@@ -8,7 +8,7 @@ The _break_ keyword breaks out of a loop, ending the current interation as well 
 int main(void)
 {
     // An infinite loop...
-    for (int i=1; i ; i++)   // 'i' is always true as it's non-zero
+    for (int i=1; i; i++)   // 'i' is always true as it's non-zero
     {
         printf("%d\n", i);
 
