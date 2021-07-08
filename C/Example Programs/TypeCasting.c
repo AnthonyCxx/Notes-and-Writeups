@@ -10,7 +10,7 @@ int main(void)
         ================================================================
         - Integers to doubles or floats (or vice versa; they are stored fundamentally differently)
         - Negative numeric types (ints, floats...) to unsigned integers (ex. -1000 to an unsigned integer)
-        ^^ Even if you typecast a negative number to an unsigned number, it will still cause integer overflow
+        ^^ Even if you typecast a negative number to an unsigned number, it will still result in an absurd number
 
         Note: converting between floats and doubles will give you the closest possible
         equivalent, which will likely not be exactly accurate.
