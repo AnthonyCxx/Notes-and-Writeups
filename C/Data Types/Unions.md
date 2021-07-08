@@ -52,7 +52,7 @@ int main(void)
 > Union int: 1103977513 <br />
 
 ## Simplifying Union Usage with _typedef_
-The [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) allows you to write aliases for datatypes. Using _typedef_ lets you alias 
+The [_typedef_](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) keyword allows you to write aliases for datatypes. Using _typedef_ lets you alias 
 'union union_name' to the name of the union. That way, you don't have to write 'union' every time you declare or use the union.
 ```C
 #include <stdio.h>
