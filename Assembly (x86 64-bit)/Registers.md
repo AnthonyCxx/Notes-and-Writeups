@@ -32,6 +32,7 @@ The storage range of a register holding a signed value is -9,223,372,036,854,775
 > [_Stanford: Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
 > [_University of Alaska Fairbanks: Full List of x86 Registers_](https://www.cs.uaf.edu/2015/fall/cs301/lecture/09_16_stack.html) <br />
 
+## Registers by Name
 | Register | Full Name |
 | -------- | --------- |
 | rax | register a extended |
@@ -52,13 +53,16 @@ The storage range of a register holding a signed value is -9,223,372,036,854,775
 | r15 | register 15 |
 > Sources: <br />
 > [_Harvard: Assembly 1: Basics_](https://cs61.seas.harvard.edu/site/2018/Asm1/) <br />
+> [_Seneca College: x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
 > [_TutorialsPoint: Assembly - Registers_](https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm) <br />
 
  Register Usage with Syscall (ID : rax)
  ===========================
  Order of Arguments for Syscall
  ------------------------------
-       rdi,      rsi,    rdx,   rcd,         r8d,                r9d
+       rdi,      rsi,    rdx,   rcx,         r8d,                r9d
  > destination, source, data, counter, general register 8, general register 9
  rax should store the syscall number
  the return value should also be in rax
+> Sources: <br />
+> > [_Seneca College: x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
