@@ -156,7 +156,7 @@ int main(void)
 > 'foreach' macro, but it didn't.
 
 ### A Look into the Preprocessor
-After running this program through the preprocessor (and only the preprocessor!) with the GCC `-E` option, I went to the bottom of the file and found the substitutions
+After running this program through the preprocessor (and only the preprocessor) with the GCC `-E` option, I went to the bottom of the file and found the substitutions
 the preprocessor did with our macros and lo and behold it works perfectly.
 ```C
 int main(void)
