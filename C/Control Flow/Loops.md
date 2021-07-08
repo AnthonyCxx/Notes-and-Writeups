@@ -154,3 +154,21 @@ int main(void)
 > 
 > Strange? Note: I expected the macro to break when I changed the parameter 'array' inside of the 'SIZE()' macro since it wouldn't share the same name as the 
 > 'foreach' macro, but it didn't.
+
+### A Look into the Preprocessor
+After running this program through the preprocessor (and only the preprocessor!) with the GCC `-E` option, I went to the bottom of the file and found the substitutions
+the preprocessor did with our macros and lo and behold it works perfectly.
+```C
+int main(void)
+{
+    int array[5] = {1, 2, 3, 4, 5};
+
+    // A look at our expanded macros
+    for(int i=0; i < sizeof(array) / sizeof(array[0]); i++)
+    {
+        printf("%d\n", array[i]);
+    }
+
+    return 0;
+}
+```
