@@ -36,7 +36,7 @@ int main(void)
 
     switch (coins)
     {
-        case 300 ... 999:
+        case 300 ... 999:     // 999 is the max amount of coins
             puts("You can buy a large health potion.");
 
         case 200 ... 299:
