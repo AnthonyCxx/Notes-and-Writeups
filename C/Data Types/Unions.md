@@ -87,9 +87,6 @@ int main(void)
 > Union float: 25.670000 <br /> 
 > Union int: 1103977513 <br />
 
-## Practical Use of Unions
-
-
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
 - [_TutorialsPoint: C - Unions_](https://www.tutorialspoint.com/cprogramming/c_unions.htm)
