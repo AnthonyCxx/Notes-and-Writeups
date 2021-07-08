@@ -164,7 +164,7 @@ int main(void)
     int array[5] = {1, 2, 3, 4, 5};
 
     // A look at our expanded macros
-    for(int i=0; i < sizeof(array) / sizeof(array[0]); i++)
+    for(int i=0; i < sizeof(array) / sizeof(array[0]); i++)  // <== The replaced line
     {
         printf("%d\n", array[i]);
     }
