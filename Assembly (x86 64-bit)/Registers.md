@@ -2,9 +2,12 @@
 Registers are a part of the processor (CPU) that temporarily hold memory. Registers are a not a part of RAM. <br />
 In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 
+## Max Capacity of a Register
 This means that each register can hold the values: <br />
-0 - 18,446,744,073,709,551,616 (unsigned) or -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807 (signed) <br />
+The storage range of a register holding an unsigned value is 0 - 18,446,744,073,709,551,616. <br />
+The storage range of a register holding a signed value is -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807 <br />
 
+## Table of Registers
 | 8-bit | 16-bit | 32-bit | 64-bit | Function |
 | ----- | ------ | ------ | ------ | -------- |
 |   al  |   ax   |   eax  |  rax   | Accumulator |
