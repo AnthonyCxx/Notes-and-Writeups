@@ -1,5 +1,6 @@
 # Unions in C
-Unions are a data structure that allows multiple variables to share the same space in memory (unlike a struct, in which the variables are independent of each other).
+Unions are a data structure that allows multiple variables to share the same space in memory (unlike a struct, in which the variables are independent of each other). Careful,
+this means that using any variable in a union will overwrite (corrupt) the others.
 The size of a union is always the size of the largest data member of the union. Unions are useful for saving memory by preventing the existance of extraneous variables
 that a struct would otherwise maintain. [Codeforwin](https://codeforwin.org/) has a really good example of real-world applications of unions in a blog post of his:
 [_Unions in C programming language, need and use_](https://codeforwin.org/2018/06/unions-in-c-programming-language-need-and-use.html). In his post, he talks about
@@ -85,6 +86,9 @@ int main(void)
 > 
 > Union float: 25.670000 <br /> 
 > Union int: 1103977513 <br />
+
+## Practical Use of Unions
+
 
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
