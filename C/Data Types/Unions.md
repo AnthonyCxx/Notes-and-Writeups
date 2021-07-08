@@ -4,7 +4,7 @@ The size of a union is always the size of the largest data member of the union. 
 that a struct would otherwise maintain. [Codeforwin](https://codeforwin.org/) has a really good example of real-world applications of unions in a blog post of his:
 [_Unions in C programming language, need and use_](https://codeforwin.org/2018/06/unions-in-c-programming-language-need-and-use.html). In his post, he talks about
 how an [embedded system](https://en.wikipedia.org/wiki/Embedded_system) can use unions to store color codes _without_ having to maintain the variables for each color
-system at once.
+system at once, allowing for better performance.
 
 ## Declaring a Union in C
 
