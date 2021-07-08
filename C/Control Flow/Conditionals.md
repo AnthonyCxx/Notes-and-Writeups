@@ -122,7 +122,7 @@ int main(void)
             break;
 
         case 100:
-            puts("You can buy a medium health potion.");
+            puts("You can buy a small health potion.");
             break;
 
         default:
@@ -136,6 +136,8 @@ int main(void)
 > Prints: You can buy a large health potion.  <br />
 
 ### Fall-through Behavior
+By disclusing the _break_ statement, you can allow the flow of execution to continue to the next case (and the next case, etc.) after a case is triggered.
+
 ```C
 #include <stdio.h>
 
@@ -152,7 +154,7 @@ int main(void)
             puts("You can buy a medium health potion.");
             
         case 100:
-            puts("You can buy a medium health potion.");
+            puts("You can buy a small health potion.");
             break;
 
         default:
@@ -165,7 +167,39 @@ int main(void)
 > Prints: <br />
 > You can buy a large health potion.  <br />
 > You can buy a medium health potion. <br />
+> You can buy a small health potion. <br />
+
+### Using GNU Range Expressions
+The GCC Compiler allows you to use [range expressions](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html) as a replacement for booleans.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    int coins = 255;
+
+    switch (coins)
+    {
+        case 300 ... 999:
+            puts("You can buy a large health potion.");
+
+        case 200 ... 299:
+            puts("You can buy a medium health potion.");
+
+        case 100 ... 199:
+            puts("You can buy a small health potion.");
+            break;
+
+        default:
+            puts("You have insufficient funds.");
+    }
+
+    return 0;
+}
+```
+> Prints: <br />
 > You can buy a medium health potion. <br />
+> You can buy a small health potion.  <br />
 
 ## The Ternary Operator (? :)
 The ternary operator (as opposed to binary or unary operators) takes a condition and evaluates it; if the condition is true, it returns the first expression; if not,
