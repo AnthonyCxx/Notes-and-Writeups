@@ -57,6 +57,35 @@ int main(void)
 > This is acceptable because it is mapped to the identifier 'Person'. <br />
 > In errors, the struct will be referenced as 'struct <anonymous>'. <br />
 
+## Designed Initializers
+Designed initializers all you to initialize specific members of the struct and/or initialize them in a specific order.
+    
+```C
+#include <stdio.h>
+
+// Format of typedef: 'typedef <datatype> <alias>'
+typedef struct Person
+{
+    char name[257];           // 256 is the max length of 'Display-Name' in Active Directory (256 char + '\0')
+    char phone_number[15];   // 1 (country code) + 3 (area code) + 7 (telephone number) + 3 (dashes) + '\0'
+} Person;
+
+int main(void)
+{
+    // Declaring an instance of 'Person'
+    Person henry = { .phone_number = "540-321-2080", .name = "Henry" };
+    // ^ No 'struct' keyword before declaration (C++-like declaration)
+
+    printf("Name: %s\n", henry.name);
+    printf("Phone number: %s\n", henry.phone_number);
+
+    return 0;
+}
+```
+> Prints: <br />
+> Name: Henry <br />
+> Phone number: 540-321-2080 <br />
+    
 ## Structs within Structs
 Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, this only goes so far as
 C does not have abstract structs nor virtual methods (or methods at all for that matter). If you find yourself using structs within structs constantly, you really should
