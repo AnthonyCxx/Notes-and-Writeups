@@ -120,3 +120,32 @@ int main(void)
 }
 ```
 > Reference: [_scanf()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#scanf)
+
+## Emulating _foreach_ with Macros
+Many languages (C++, C#, Java, Python) have a [_foreach_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement) 
+that allows you to easily loop over a data structure such as an array or linked list. C does not have a _foreach_ statement; however, one can be emulated with macros.
+
+```C
+#include <stdio.h>
+
+// Finds the size of an array
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+
+// Loops over an array
+#define foreach(i, array) \                  
+    for(int i=0; i < SIZE(array); i++)
+
+int main(void)
+{
+    // An array of 5 integers (1 -5)
+    int array[5] = {1, 2, 3, 4, 5};
+
+    foreach(i, array)    // Expands to 'for (int i=0; i < sizeof(array) / sizeof(array[0]); i++'
+    {
+        printf("%d\n", array[i]);
+    }
+
+    return 0;
+}
+```
+> Note: '\' extends the macro definition of _foreach_ to the next line
