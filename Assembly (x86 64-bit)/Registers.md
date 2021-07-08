@@ -10,7 +10,7 @@ The storage range of a register holding a signed value is -9,223,372,036,854,775
 ## Table of Registers
 | 8-bit | 16-bit | 32-bit | 64-bit | Function |
 | ----- | ------ | ------ | ------ | -------- |
-|   al  |   ax   |   eax  |  rax   | Accumulator |
+|   al  |   ax   |   eax  |  rax   | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) |
 |   bl  |   bx   |   ebx  |  rbx   | Base |
 |   cl  |   cx   |   ecx  |  rcx   | Counter |
 |   dl  |   dx   |   edx  |  rdx   | Data |
