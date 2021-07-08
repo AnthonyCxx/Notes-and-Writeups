@@ -5,21 +5,21 @@ Anything in parentheses can be left to be implied (i.e. you can declare an unsig
 The actual size of the datatypes (in bytes) and their min/max values may vary from system to system (especially 32- vs 64-bit systems). <br />
 Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commit/077c0d23312f66cd8209683c639516e56b06eb47) to find correct values for your system. <br />
 
-| Datatype | Size (in bytes) | Minimum Value | Maximum Value | [Format Specifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md) | Literal Suffix |
-| -------- | --------------- | ------------- | ------------- | ---------------- | -------------- |
-| (signed) char | 1 | -128 | 127 | %c |  |
-| unsigned char | 1 | 0 | 255 | %c |  |
-| (signed) short (int) | 2 | −32,768 | 32,767 | %hi |  |
-| unsigned short (int) | 2 | 0 | 65,535 | %hu |  |
-| (signed) int | 4 | -2,147,483,648 | 2,147,483,647 | %d |  |
-| unsigned int | 4 | 0 | 4,294,967,295  | %u |  |
-| (signed) long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %ld |  |
+| Datatype | Size (in bytes) | Minimum Value | Maximum Value | [Format Specifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md) | 
+| -------- | --------------- | ------------- | ------------- | ---------------- |
+| (signed) char | 1 | -128 | 127 | %c |  
+| unsigned char | 1 | 0 | 255 | %c |  
+| (signed) short (int) | 2 | −32,768 | 32,767 | %hi |  
+| unsigned short (int) | 2 | 0 | 65,535 | %hu |  
+| (signed) int | 4 | -2,147,483,648 | 2,147,483,647 | %d |  
+| unsigned int | 4 | 0 | 4,294,967,295  | %u |  
+| (signed) long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %ld |  
 | unsigned long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %lu |  |
-| (signed) long long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %lld |  |
-| unsigned long long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %llu |  |
-| float | 4 | 3.4E-38 | 3.4E+38 | %f |  |
-| double | 8 | 1.7E-308 | 1.7E+308 | %lf |  |
-| long double | 16 | 1.7E-308 | 1.7E+308 | %Lf |  |
+| (signed) long long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | %lld | 
+| unsigned long long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %llu |  
+| float | 4 | 3.4E-38 | 3.4E+38 | %f |
+| double | 8 | 1.7E-308 | 1.7E+308 | %lf |
+| long double | 16 | 1.7E-308 | 1.7E+308 | %Lf |
 > Note: floats have about 7 decimal places, doubles have about 15, and long doubles have about 19. <br />
 > Note: to use Unicode characters, you must use [char8_t, char16_t, char32_t, or wchar_t](https://stackoverflow.com/questions/11287213/what-is-a-wide-character-string-in-c-language). <br />
 >
