@@ -28,14 +28,21 @@ Prints: <br />
 
 ## Continue
 The _continue_ keyword skips the remaining content of the iteration of the loop (if placed at the beginning, that's all of the loop) and then begins the next iteration.
-```C#
-//Prints all even numbers between 0 and 20 (inclusive)
-for (int i = 0; i <= 20; i++)
-{
-    if (i % 2 == 1)   //If the number is odd, skip printing the number
-        continue;
+```C
+#include <stdio.h>
 
-    Console.WriteLine(i);
+int main(void)
+{
+    // Prints all even numbers 0-20
+    for (int i=0; i <= 20; i++)
+    {
+        if (i % 2 == 1)   // Skip odd numbers
+            continue;
+
+        printf("%d\n", i);
+    }
+
+    return 0;
 }
 ```
 > Note: This could be done better without a _continue_ statement, but I am using it here to illustrate the concept. <br />
