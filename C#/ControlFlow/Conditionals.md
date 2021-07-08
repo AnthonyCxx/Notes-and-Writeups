@@ -1,7 +1,6 @@
 # Conditional Statements in C#
 Conditionals are control structures that allow you to control the flow of a program based on certain (boolean) criteria. <br />
 If the condition is true, then the statments within the _{ }_ will be executed; otherwise, no code will be executed and the program will continue on. <br /> 
-Note that _If_, _else if_, and _else_ statements will only ever execute one statement without a statement block. <br /> 
 
 If you forget to include the _{ }_, then the _if_ statement will only affect the next statement that follows it. <br />
 Although it is syntactically correct to omit the _{ }_, you should always include them for sake of clarity.
