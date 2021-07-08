@@ -25,8 +25,8 @@ int main(void)
 ```
 
 ### Case Range
-The GCC Compiler allows you to use '...' to indicate a [case range expression](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html). The range expression will accept
-everything between the given low and high.
+The GCC Compiler allows you to use '...' to indicate a [case range expression](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html). <br />
+The range expression will accept everything between the given low and high.
 ```C
 #include <stdio.h>
 
