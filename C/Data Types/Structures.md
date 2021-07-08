@@ -159,7 +159,7 @@ int main(void)
 > Wheel condition: 0 (New) <br />
 
 ## Struct 'Methods' via Function Pointers
-Structs cannot define methods; however, they can contain pointers that point to existing methods via a [function pointer](https://www.codeproject.com/Tips/800474/Function-Pointer-in-C-Struct).
+Structs cannot define methods, only data; however, they can contain pointers that point to existing methods via a [function pointer](https://www.codeproject.com/Tips/800474/Function-Pointer-in-C-Struct).
 Declaring a function pointer takes the format `return_type (*function_name)(parameters);` where the parameter list only contains the datatype of the arguments and not their
 name. Like any other data member, function pointers must be initialized by assigning it the memory location of the function (via `&function_name`). Function pointers can be changed during runtime, allowing a single function pointer to execute many different functions. After parsing
 through a number of articles, the best explanation I found on this was [_this video_](https://www.youtube.com/watch?v=cwvdT-4HT9o) by CodeVault.
