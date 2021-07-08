@@ -35,17 +35,24 @@ int main(void)
 >> | ------------ | -------- |
 >> | int interator = 0 | declare an integer _iterator_ and set it to 0 |
 >> | iterator < 5 | as long as the iterator is less tha 5, execute the body |
->> | iterator++ | increment the iterator by 1 ([postfix operator](https://www.programiz.com/article/increment-decrement-operator-difference-prefix-postfix) |
+>> | iterator++ | increment the iterator by 1 ([postfix operator](https://www.programiz.com/article/increment-decrement-operator-difference-prefix-postfix)) |
 
 ### Advanced For Loops
 Both the declaration and update statements of a _for_ loop can contain more than one value, as long as they are separated by commas. If you need multiple conditions,
 just use the logical _&&_ and _| |_ operators. The following code snippet declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. 
 Counter _j_ counts by twos.
-```C#
-//Prints two counters simultaneously
-for(int i=0, j=0; i < 6; i += 1, j += 2 )
+```C
+#include <stdio.h>
+
+int main(void)
 {
-  Console.WriteLine(i + " " + j);
+    // Advanced for loop with two declaration and update statements
+    for (int i=0, j=0; i < 6; i += 1, j += 2)
+    {
+        printf("%d %d\n", i, j);
+    }
+
+    return 0;
 }
 ```
 > Note: this works in other languages such as C++ as well
