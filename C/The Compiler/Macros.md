@@ -82,7 +82,7 @@ _#define SQUARE(x) ( (x)\*(x) )_; now, it should work fine. Alternatively, you c
 ```C
 #include <stdio.h>
 #define SQUARE(x) ( (x)*(x) )    // <== Correct
-// #define SQUARE(x) (x*x)  // <== Error, expands improperly
+// #define SQUARE(x) (x*x)  // <== Wrong (logic error), expands improperly
 
 int main(void)
 {
