@@ -39,7 +39,7 @@ int main(void)
 
 ### Advanced For Loops
 Both the declaration and update statements of a _for_ loop can contain more than one value, as long as they are separated by commas. If you need multiple conditions,
-just use the logical _&&_ and _| |_ operators. The following code snippet declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. 
+just use the logical [_&&_](https://www.tutorialspoint.com/cprogramming/c_logical_operators.htm) and [_| |_](https://www.tutorialspoint.com/cprogramming/c_logical_operators.htm) operators. The following code snippet declares two counters, _i_ and _j_, which count from 0-5 and 0-10 respectively. 
 Counter _j_ counts by twos.
 ```C
 #include <stdio.h>
