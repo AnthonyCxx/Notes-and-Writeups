@@ -19,13 +19,20 @@ An _if_ statement evaluates a condition and executes some code if the condition 
 
 ### Example
 ```C
+#include <stdio.h>
 #include <stdbool.h>
-bool isBook = true;
 
-if (isBook)   //'isBook' is replaced by its value (true)
+int main(void)
 {
+    bool isBook = true;
+
+    if (isBook)   //'isBook' is replaced by its value (true)
+    {
     //Statements to be executed
     puts("The item is a book!");
+    }
+
+    return 0;
 }
 ```
 > This snippet prints "The item is a book!"
@@ -36,18 +43,25 @@ An _else_ statement must always come at the end of a conditional structure.
 
 ### Example
 ```C
+#include <stdio.h>
 #include <stdbool.h>
-bool isBook = false;
 
-if (isBook)   //'isBook' is replaced by its value (false)
+int main(void)
 {
-    //Not executed, because 'isBook' is false
-    puts("The item is a book!");
-}
-else
-{
-    //IS executed, because 'isBook' is false
-    puts("The item is NOT a book!");
+    bool isBook = false;
+
+    if (isBook)   //'isBook' is replaced by its value (false)
+    {
+        //Not executed, because 'isBook' is false
+        puts("The item is a book!");
+    }
+    else
+    {
+        //IS executed, because 'isBook' is false
+        puts("The item is NOT a book!");
+    }
+
+    return 0;
 }
 ```
 
@@ -57,23 +71,30 @@ condition are true. You can use an _else if_ statement without using an _else_ s
 
 ### Example
 ```C
+#include <stdio.h>
 #include <stdbool.h>
-bool isBook = false;
 
-if (isBook)   //'isBook' is replaced by its value (false)
+int main(void)
 {
-    //Not executed, because 'isBook' is false
-    puts("The item is a book!");
-}
-else if (1 == 2)
-{
-    //Not executed even though the first if statement is false, because 1 does not equal 2
-    puts("Hmm, the item may be a book...");
-}
-else
-{
-    //IS executed, because 'isBook' is false and the else if statement above failed
-   puts("The item is NOT a book!");
+    bool isBook = false;
+
+    if (isBook)   //'isBook' is replaced by its value (false)
+    {
+        //Not executed, because 'isBook' is false
+        puts("The item is a book!");
+    }
+    else if (1 == 2)
+    {
+        //Not executed even though the first if statement is false, because 1 does not equal 2
+        puts("Hmm, the item may be a book...");
+    }
+    else
+    {
+        //IS executed, because 'isBook' is false and the else if statement above failed
+        puts("The item is NOT a book!");
+    }
+
+    return 0;
 }
 ```
 
