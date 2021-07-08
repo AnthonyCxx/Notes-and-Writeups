@@ -88,8 +88,8 @@ int main(void)
     
 ## Structs within Structs
 Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, this only goes so far as
-C does not have abstract structs nor virtual methods (or methods at all for that matter). If you find yourself using structs within structs constantly, you really should
-be writing the project in C++.
+C does not have abstract structs nor virtual methods (or methods at all for that matter). If you find yourself using structs within structs constantly, you might want to
+consider writing the project in C++.
 ```C
 #include <stdio.h>
 
