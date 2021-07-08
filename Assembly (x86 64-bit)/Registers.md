@@ -50,6 +50,9 @@ The storage range of a register holding a signed value is -9,223,372,036,854,775
 | r13 | register 13 |
 | r14 | register 14 |
 | r15 | register 15 |
+> Sources: <br />
+> [_Harvard: Assembly 1: Basics_](https://cs61.seas.harvard.edu/site/2018/Asm1/)
+> [_TutorialsPoint: Assembly - Registers_](https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm) <br />
 
  Register Usage with Syscall (ID : rax)
  ===========================
