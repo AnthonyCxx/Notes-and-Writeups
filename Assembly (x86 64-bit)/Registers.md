@@ -1,2 +1,56 @@
 # Registers in x86 Assembly
 
+Notes on registers:
+Registers are a part of the processor that temporarily hold memory.
+In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
+
+This means that each register can hold the values:
+Unsigned:                        0   -   18,446,744,073,709,551,616
+Signed:   -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807
+
+8-bit | 16-bit | 32-bit | 64-bit | Function
+-------------------------------------------
+  al  |   ax   |   eax  |  rax   | Accumulator
+  bl  |   bx   |   ebx  |  rbx   | Base
+  cl  |   cx   |   ecx  |  rcx   | Counter
+  dl  |   dx   |   edx  |  rdx   | Data
+ sil  |   si   |   esi  |  rsi   | Source (source for data copies)
+ dil  |   di   |   edi  |  rdi   | Destination  (destination for data copies)
+ bpl  |   bp   |   ebp  |  rbp   | Stack Base Pointer (start of the stack)
+ spl  |   sp   |   esp  |  rsp   | Stack Pointer (current location in the stack, growing downwards)
+ r8b  |   r8w  |   r8d  |   r8   | General Purpose Register
+ r9b  |   r9w  |   r9d  |   r9   | General Purpose Register
+r10b  |  r10w  |  r10d  |  r10   | General Purpose Register
+r11b  |  r11w  |  r11d  |  r11   | General Purpose Register
+r12b  |  r12w  |  r12d  |  r12   | General Purpose Register
+r13b  |  r13w  |  r13d  |  r13   | General Purpose Register
+r14b  |  r14w  |  r14d  |  r14   | General Purpose Register
+r15b  |  r15w  |  r15d  |  r15   | General Purpose Register
+
+ Register Names:
+ ==============
+ rax - register a extended
+ rbx - register b extended
+ rcx - register c extended
+ rdx - register d extended
+ rbp - register base pointer
+ rsp - register stack pointer
+ rsi - register source index
+ rdi - register destination index
+  r8 - register 8
+  r9 - register 9
+ r10 - register 10
+ r11 - register 11
+ r12 - register 12
+ r13 - register 13
+ r14 - register 14
+ r15 - register 15
+
+ Register Usage with Syscall (ID : rax)
+ ===========================
+ Order of Arguments for Syscall
+ ------------------------------
+       rdi,      rsi,    rdx,   rcd,         r8d,                r9d
+ > destination, source, data, counter, general register 8, general register 9
+ rax should store the syscall number
+ the return value should also be in rax
