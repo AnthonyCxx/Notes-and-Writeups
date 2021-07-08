@@ -62,7 +62,7 @@ The _while_ statment continues to execute the body of the loop until the given c
 If the given condition is false from the start, then the loop will not execute at all.
 
 ### Format
-```C#
+```C
 while (condition)
 {
     //Body
@@ -70,10 +70,10 @@ while (condition)
 ```
 
 ### Example
-```C#
+```C
 while (1 == 1)
 {
-    Console.WriteLine("this is an infinite loop");
+    puts("This is an infinite loop");
 }
 ```
 > Note: this is actually an infinte loop (1 _always_ equals 1), please do not run this. <br />
@@ -84,7 +84,7 @@ The _do...while_ loop acts similarly to a while loop, repeating until the given 
 always execute at least once. _Do...while_ loops are exceptionally useful for validating user input.
 
 ### Format
-```C#
+```C
 do
 {
     //Body
@@ -93,38 +93,30 @@ do
 > Note: pay close attention to the _;_ at the end of the while statement. A _do...while_ loop is the only loop with a semi-colon.
 
 ### Example
-```C#
-int input;
+```C
+#include <stdio.h>
 
-//Input loop: prompts for input until an integer greater than 5 is given
-do
+int main(void)
 {
-    Console.Write("Enter a number more than 5: ");       //Prompt the user
-    input = Int32.Parse( System.Console.ReadLine() );    //Store the input as an integer (converted from a string)
-} while (input <= 5);
-```
-> Reference: [Converting Strings to Integers in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
+    int input;
 
-## Foreach Statement
-A _foreach_ loop executes the body of the loop for every item in a [container](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.container?view=net-5.0) (iterable object). The variable declared in the loop is updated to be the item at the current index in the loop for each item in the loop. In other words, the 
-variable takes on the value of the container at said index until all the items have been run through.
+    do
+    {
+        // Get input from user
+        printf("Enter an integer greater than 10: ");    // User prompt
+        scanf("%d", &input);                            // Scan a single integer from the keyboard
 
-### Format
-```C#
-foreach(datatype variableName in container)
-{
-   //Body
+        // If bad input, put a warning
+        if (input <= 10)
+            puts("Error: input not greater than 10\n");  // Extra '\n' for spacing
+
+    } while (input <= 10);   // Loop while the number is 10 or less
+
+
+    // Ending
+    printf("You entered the number: %d\n", input);
+
+    return 0;
 }
 ```
-
-### Example
-```C#
-string[] backpack = { "Pencil", "Spellbook", "Lobster" };
-
-foreach(string item in backpack)
-{
-    Console.Write(item + " ");   //Print out each item
-}
-Console.WriteLine("");     //End the line
-```
-> Note: if the items are of different types, use [the _var_ keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var)
+> Reference: [_scanf()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#scanf)
