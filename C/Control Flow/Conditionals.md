@@ -105,13 +105,67 @@ player character.
 
 ### Standard Behavior
 ```C
+#include <stdio.h>
 
+int main(void)
+{
+    int coins = 300;
+
+    switch (coins)
+    {
+        case 300:
+            puts("You can buy a large health potion.");
+            break;
+
+        case 200:
+            puts("You can buy a medium health potion.");
+            break;
+
+        case 100:
+            puts("You can buy a medium health potion.");
+            break;
+
+        default:
+            puts("You have insufficient funds.");
+            break;
+    }
+
+    return 0;
+}
 ```
+> Prints: You can buy a large health potion.  <br />
 
 ### Fall-through Behavior
 ```C
+#include <stdio.h>
 
+int main(void)
+{
+    int coins = 300;
+
+    switch (coins)
+    {
+        case 300:
+            puts("You can buy a large health potion.");
+
+        case 200:
+            puts("You can buy a medium health potion.");
+            
+        case 100:
+            puts("You can buy a medium health potion.");
+            break;
+
+        default:
+            puts("You have insufficient funds.");
+    }
+
+    return 0;
+}
 ```
+> Prints: <br />
+> You can buy a large health potion.  <br />
+> You can buy a medium health potion. <br />
+> You can buy a medium health potion. <br />
 
 ## The Ternary Operator (? :)
 The ternary operator (as opposed to binary or unary operators) takes a condition and evaluates it; if the condition is true, it returns the first expression; if not,
