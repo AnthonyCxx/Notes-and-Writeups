@@ -5,7 +5,7 @@
 | [Arrays.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md) | a data structure that stores a collection of independent elements of the same datatype |
 | [Structures.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md) | a data structure that stores a collection of variables as a single unit |
 | [Enumerations.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md) | a user-defined type that has a set of defined values (e.g. on/off or red/yellow/blue) |
-| [Unions.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md) | |
+| [Unions.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md) | a user-defined datatype that stores a number of variables in a single space in memory |
 
 ## Primitive Data Types
 Anything in parentheses can be left to be implied (i.e. you can declare an unsigned short int using '_signed short int_','_short int_' or just '_short_'). <br />
