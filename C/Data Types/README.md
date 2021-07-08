@@ -32,6 +32,8 @@ Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commi
 > [Wikipedia: IEEE Standard for Floating-point Types](https://en.wikipedia.org/wiki/IEEE_754-1985) <br />
 
 ## Non-primitive Data Types
+| Datatype | Function |
+| -------- | -------- |
 | [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md) | a data structure that stores a collection of independent elements of the same datatype |
 | [Structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md) | a data structure that stores a collection of variables as a single unit |
 | [Enums](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md) | a user-defined type that has a set of defined values (e.g. on/off or red/yellow/blue) |
