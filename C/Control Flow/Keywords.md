@@ -59,44 +59,23 @@ algorithm. Regardless, for the most part, _goto_ statements are a clear indicato
 > 
 > As you should always have both sides, here is a [A Case Against Goto Statements](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF).
 
-### Fall-through Behavior with _goto_
-_Goto_ statements are often used to allow for [fall-through behavior](https://stackoverflow.com/questions/6545720/does-anyone-still-use-goto-in-c-sharp-and-if-so-why) (the ability for a _switch_ statement to trigger multiple cases).
+```C
+#include <stdio.h>
 
-```C#
-int integer = 0;
-
-switch(integer)
+int main(void)
 {
-    case 0:
-        Console.WriteLine(0);
-        goto case 1;           
-        break;
-    case 1:
-        Console.WriteLine(1);
-        goto case 2;
-        break;
-    case 2:
-        Console.WriteLine(2);
-        break;
-    default:
-        System.Environment.Exit(1);
-        break;
-}
-```
-> In most languages (e.g. C and C++), you can simply remove the _break_ statement to cause fall-through behavior. <br />
-> However, in C#, leaving out the _break_ statement causes a syntax error; thus, the only option is using a _goto_ statement.
+    // An infinite loop
+    begin_loop:
+        for(int i=1; i < 10; i++)
+        {
+            printf("%d\n", i);
 
-### Restarting Loops with _goto_
-An infinite loop in C# using _goto_.
-```C#
-begin_loop:  
-    for (int i = 0; i < 10; i++)   //print the numbers 0-9
-    {
-        Console.WriteLine(i);
-        
-        if (i == 5)
-            goto begin_loop;  //restart the loop
-    }
+            if (i == 5)
+                goto begin_loop;
+        }
+
+    return 0;
+}
 ```
 > Note: Spacing doesn't matter, so indenting the 'block' is irrelevant; however, you should still do it for sake of clarity as _goto_ statements can be difficult to read/find.
 
