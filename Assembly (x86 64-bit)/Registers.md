@@ -24,9 +24,13 @@ Signed: -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807 <br />
 | r13b  |  r13w  |  r13d  |  r13   | General Purpose Register |
 | r14b  |  r14w  |  r14d  |  r14   | General Purpose Register |
 | r15b  |  r15w  |  r15d  |  r15   | General Purpose Register |
+> Note: chars are 8-bit, shorts are 16-bit, ints are 32-bit, and longs are 64-bit (generally) <br />
+>
+> Sources: <br />
+> [_Stanford: Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
+> [_University of Alaska Fairbanks: Full List of x86 Registers_](https://www.cs.uaf.edu/2015/fall/cs301/lecture/09_16_stack.html) <br />
 
- Register Names:
- ==============
+ | Register | 
  rax - register a extended
  rbx - register b extended
  rcx - register c extended
