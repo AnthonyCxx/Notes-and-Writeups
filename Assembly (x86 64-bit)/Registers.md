@@ -1,12 +1,10 @@
 # Registers in x86 Assembly
+Registers are a part of the processor (CPU) that temporarily hold memory. Registers are a not a part of RAM. <br />
+In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 
-Notes on registers:
-Registers are a part of the processor that temporarily hold memory.
-In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
-
-This means that each register can hold the values:
-Unsigned:                        0   -   18,446,744,073,709,551,616
-Signed:   -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807
+This means that each register can hold the values: <br />
+Unsigned: 0 - 18,446,744,073,709,551,616 <br />
+Signed: -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807 <br />
 
 8-bit | 16-bit | 32-bit | 64-bit | Function
 -------------------------------------------
