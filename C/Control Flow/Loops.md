@@ -151,6 +151,6 @@ int main(void)
 }
 ```
 > Note: '\' extends the macro definition of _foreach_ to the next line
-> t
+> 
 > Strange? Note: I expected the macro to break when I changed the parameter 'array' inside of the 'SIZE()' macro since it wouldn't share the same name as the 
 > 'foreach' macro, but it didn't.
