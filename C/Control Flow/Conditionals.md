@@ -99,49 +99,18 @@ int main(void)
 ```
 
 ## Switch Statment
-The _switch_ statment allows for evaluating a variable or expression in a clear and structured manner. Switch statements can execute multiple cases, but only [using _goto_
-statements](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ControlFlow/Keywords.md#fall-through-behavior-with-goto). An example of a use for a switch statement 
+The _switch_ statment allows for evaluating a variable or expression that may equal a variety of values a clear and structured manner. An example of a use for a switch statement 
 would be [NPC dialogue](https://learn.unity.com/tutorial/switch-statements#5c8a6f91edbc2a067d4753d4) that is based on an in-game value, such as the intelliegence of the 
 player character.
 
-
-### Format
+### Standard Behavior
 ```C
-switch (expression)
-{
-    case someValue1:
-            //Statements
-            break;
-            
-    //Values someValue2, someValue2, and someValue3 all execute the same block
-    case someValue2:      
-    case someValue3:
-    case someValeu4:
-            //Statements
-            break;
-    default:
-            //Statements
-            break;                           
-}
+
 ```
 
-### Example
-```C#
-string request;
+### Fall-through Behavior
+```C
 
-switch (request)
-{
-    case "--decode":
-        Console.WriteLine($"Decoded Text: {decoder.Decode(text)}");
-        break;
-    case "--encode":
-        Console.WriteLine($"Encoded Text: {encoder.Encode(text)}");
-        break;
-    default:
-        Console.WriteLine("Error: unknown request. Exiting...");
-        System.Environment.Exit(1);
-        break;                             
-}
 ```
 
 ## The Ternary Operator (? :)
@@ -161,7 +130,7 @@ expression ? value1 : value2
 
 int main()
 {
-    // Returns 'Pi is less than the square root of 5' because 'PI > sqrt(5)' is false
+    // Returns (and then prints) 'Pi is less than the square root of 5' because 'PI > sqrt(5)' is false
     puts( PI > sqrt(5) ? "Pi is greater than the square root of 5" : "Pi is less than the square root of 5" );
 
     return 0;
