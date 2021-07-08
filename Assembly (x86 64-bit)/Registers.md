@@ -29,23 +29,24 @@ This means that each register can hold the values: <br />
 > [_Stanford: Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
 > [_University of Alaska Fairbanks: Full List of x86 Registers_](https://www.cs.uaf.edu/2015/fall/cs301/lecture/09_16_stack.html) <br />
 
- | Register | 
- rax - register a extended
- rbx - register b extended
- rcx - register c extended
- rdx - register d extended
- rbp - register base pointer
- rsp - register stack pointer
- rsi - register source index
- rdi - register destination index
-  r8 - register 8
-  r9 - register 9
- r10 - register 10
- r11 - register 11
- r12 - register 12
- r13 - register 13
- r14 - register 14
- r15 - register 15
+| Register | Full Name |
+| -------- | --------- |
+| rax | register a extended |
+| rbx | register b extended |
+| rcx | register c extended |
+| rdx | register d extended |
+| rbp | register base pointer |
+| rsp | register stack pointer |
+| rsi | register source index |
+| rdi | register destination index |
+| r8 | register 8 |
+| r9 | register 9 |
+| r10 | register 10 |
+| r11 | register 11 |
+| r12 | register 12 |
+| r13 | register 13 |
+| r14 | register 14 |
+| r15 | register 15 |
 
  Register Usage with Syscall (ID : rax)
  ===========================
