@@ -125,7 +125,7 @@ int main(void)
 Many languages (C++, C#, Java, Python) have a [_foreach_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement) 
 that allows you to easily loop over a data structure such as an array or linked list. C does not have a _foreach_ statement; however, one can be emulated with macros.
 The only downside is that you have to write a different _foreach_ macro for each data structure, since their implementation is different. This macro, which works for arrays,
-would not come close to working for linked lists.
+would not come close to working for linked lists. At the end of the day, a _foreach_ macro in C is just a convenient shorthand for a _for_ loop.
 
 ```C
 #include <stdio.h>
