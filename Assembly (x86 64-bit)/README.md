@@ -1,5 +1,8 @@
 # A Reference for x86 Assembly (64-bit)
-x86 64-bit assembly
+Assembly is a platform-dependent, low-level programming language, which is directly converted into machine code by an assembler such as [NASM](https://en.wikipedia.org/wiki/Netwide_Assembler) or [GAS](https://en.wikipedia.org/wiki/GNU_Assembler).
+Assembly works directly with the memeory and registers of a machine and is very similar in style to machine code, and so is sometimes referred
+to as "symbolic machine code". Assembly makes use of system calls, or 'syscalls', to directly request actions from the kernal. The exact call
+is determined by the syscall ID, which goes in the rax register. The other registers will contain supporting information for the syscall (arguments).
 
 ## Books Used
 [_Modern X86 Assembly Language Programming, 2nd Edition_](https://www.amazon.com/Modern-X86-Assembly-Language-Programming/dp/1484240626/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Modern+X86+Assembly+Language+Programming&qid=1625776593&sr=8-3) by Daniel Kusswurm <br />
