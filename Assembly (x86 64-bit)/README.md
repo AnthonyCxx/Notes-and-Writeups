@@ -2,7 +2,9 @@
 Assembly is a platform-dependent, low-level programming language, which is directly converted into [machine code](https://whatis.techtarget.com/definition/machine-code-machine-language) by an [assembler](https://searchdatacenter.techtarget.com/definition/assembler) such as [NASM](https://en.wikipedia.org/wiki/Netwide_Assembler) or [GAS](https://en.wikipedia.org/wiki/GNU_Assembler). Assembly works directly with the memory and registers of a machine
 and is very similar in style to machine code, and so is sometimes referred to as 
 "symbolic machine code". Assembly makes use of [system calls](https://en.wikipedia.org/wiki/System_call) (syscalls) to directly request actions from the [kernel](https://www.engineersgarage.com/kernel-programming/). The exact call is determined by the syscall ID, which goes in the rax register. The other registers will contain 
-supporting information for the syscall (arguments).
+supporting information for the syscall (arguments). <br />
+
+I'm learning as I go and just using this as a form of documenting what I've learned. This is not meant to be an authority of any kind nor is it meant to be comprehensive.
 
 ## Books Used
 [_Modern X86 Assembly Language Programming, 2nd Edition_](https://www.amazon.com/Modern-X86-Assembly-Language-Programming/dp/1484240626/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Modern+X86+Assembly+Language+Programming&qid=1625776593&sr=8-3) by Daniel Kusswurm <br />
