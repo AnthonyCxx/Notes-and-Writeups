@@ -9,11 +9,11 @@ Standard variables are declared in the format `<name> <datatype> <value>`. For e
 
 ### Declaring Constants
 Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. Using _equ_ means that this variable is read-only.
-> Reference: [_StackOverflow: equ vs = in x86 Assembly_](https://stackoverflow.com/questions/28948274/x86-assembly-equ-vs) <br />
+> Reference: [_Posix.nl: Chapter 3, The NASM Language (Section 3.2.4 Equ: Defining Constants)_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
 
 ### _.data_ Datatypes
-| Pseudo-instructor | Full Name | Size (in bytes) | Size (in bits) | 
-| ---- | --------- | --------------- | -------------- |
+| Pseudo-instruction | Full Name | Size (in bytes) | Size (in bits) | 
+| ------------------ | --------- | --------------- | -------------- |
 | db | Define Byte | 1 | 8 |
 | dw | Define Word | 2 | 16 |
 | dd | Define Doubleword | 4 | 32 |
@@ -24,7 +24,12 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
 
 ### _.bss_ Datatypes
-
+| Pseudo-instruction | Full Name | Size (in bytes) | Size (in bits) | 
+| ------------------ | --------- | --------------- | -------------- |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 
 ## _.text_ Section
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
@@ -33,6 +38,7 @@ overwriting the _.data_ section.
 
 ## Sources
 [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
+[_Posix.nl: _](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
 [_Tortall.net: Chapter 3, Pseudo-instructions in the NASM Language_](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) <br />
 [_GeeksforGeeks: Memory Layout of a C Program_](https://www.geeksforgeeks.org/memory-layout-of-c-program/) <br />
 [_TutorialsPoint: Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
