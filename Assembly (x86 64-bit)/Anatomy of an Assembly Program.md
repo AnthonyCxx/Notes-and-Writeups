@@ -8,10 +8,10 @@ The _.data_ section contains modifiable, initialized data that can be accessed a
 ### _.data_ Datatypes
 | [Pseudo-instruction](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) | Full Name | Size (in bytes) | Size (in bits) | 
 | ------------------ | --------- | --------------- | -------------- |
-| db | Define Byte | 1 | 8 |
-| dw | Define Word | 2 | 16 |
-| dd | Define Doubleword | 4 | 32 |
-| dq | Define Quadword | 8 | 64 |
+| db | Define a Byte | 1 | 8 |
+| dw | Define a Word | 2 | 16 |
+| dd | Define a Doubleword | 4 | 32 |
+| dq | Define a Quadword | 8 | 64 |
 | dt | Define Ten Bytes | 10 | 80 |
 > Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br /> 
 
