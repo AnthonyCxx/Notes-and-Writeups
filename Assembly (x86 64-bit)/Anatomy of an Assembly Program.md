@@ -9,3 +9,8 @@ where all data is allocated for future use (unknown values)
 
 ## .text
 where the code will go
+
+
+## Sources
+[_TutorialsPoint: Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
+[_TutorialsPoint: Assembly - Basic Syntax_](https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm) <br />
