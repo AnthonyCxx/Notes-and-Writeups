@@ -1,6 +1,6 @@
 ;  **** BEGINNING OF PROGRAM ****
 ;
-;     ASSEMBLE INSTRUCTIONS:
+;     INSTRUCTIONS FOR ASSEMBLING:
 ;     nasm -f elf64 hello.asm 
 ;     ld -o hello hello.o
 ;     ./hello          
