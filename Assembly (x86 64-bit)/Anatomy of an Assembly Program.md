@@ -1,5 +1,5 @@
 # Anatomy of an Assembly Program
-An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.text_. Both the _.data_ and _.bss_ sections store data, while _.text_ contains the source code.
+An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.text_. Both the _.data_ and _.bss_ sections store data; _.text_ contains the source code.
 
 ## .data
 where all data is defined before compilation (known values)
