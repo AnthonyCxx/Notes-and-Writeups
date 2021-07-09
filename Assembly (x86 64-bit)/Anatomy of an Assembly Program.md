@@ -15,7 +15,8 @@ The _.data_ section contains modifiable, initialized data that can be accessed a
 > Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br /> 
 
 ### Declaring Variables
-Standard variables are declared in the format `<name> <datatype> <value>`. For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program, the text containing 'Hello, World!' is declared as `text db "Hello, World!"`.
+Standard variables are declared in the format `<name> <datatype> <value>`. <br />
+For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program, the text containing 'Hello, World!' is declared as `text db "Hello, World!"`.
 
 ### Declaring Constants
 Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. Using _equ_ prevents the variable from being changed throughout the program.
