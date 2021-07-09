@@ -4,13 +4,6 @@ An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.
 ## _.data_ Section
 The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program.
 
-### Declaring Variables
-Standard variables are declared in the format `<name> <datatype> <value>`. For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program, the text containing 'Hello, World!' is declared as `text db "Hello, World!"`.
-
-### Declaring Constants
-Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. Using _equ_ means that this variable is read-only.
-> Reference: [_Posix.nl: Chapter 3, The NASM Language (Section 3.2.4 Equ: Defining Constants)_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
-
 ### _.data_ Datatypes
 | Pseudo-instruction | Full Name | Size (in bytes) | Size (in bits) | 
 | ------------------ | --------- | --------------- | -------------- |
@@ -19,6 +12,13 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 | dd | Define Doubleword | 4 | 32 |
 | dq | Define Quadword | 8 | 64 |
 > Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br /> 
+
+### Declaring Variables
+Standard variables are declared in the format `<name> <datatype> <value>`. For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program, the text containing 'Hello, World!' is declared as `text db "Hello, World!"`.
+
+### Declaring Constants
+Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. Using _equ_ means that this variable is read-only.
+> Reference: [_Posix.nl: Chapter 3, The NASM Language (Section 3.2.4 Equ: Defining Constants)_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
 
 ## _.bss_ Section
 The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
