@@ -11,7 +11,7 @@ The _.data_ section contains modifiable, initialized data that can be accessed a
 | dw | Define Word | 2 | 16 |
 | dd | Define Doubleword | 4 | 32 |
 | dq | Define Quadword | 8 | 64 |
-> Note: a 'word' is a unit of size equal to 16 bits (2 bytes) (<br />
+> Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br />
 > 
 > Source: [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
 
