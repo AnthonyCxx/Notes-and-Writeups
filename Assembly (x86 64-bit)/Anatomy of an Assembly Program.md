@@ -12,6 +12,7 @@ The _.data_ section contains modifiable, initialized data that can be accessed a
 | dw | Define Word | 2 | 16 |
 | dd | Define Doubleword | 4 | 32 |
 | dq | Define Quadword | 8 | 64 |
+| dt | Define Ten Bytes | 10 | 80 |
 > Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br /> 
 
 ### Declaring Variables
@@ -29,10 +30,11 @@ The _.bss_ section contains uninitialized data. Typically, the memory set aside 
 ### _.bss_ Datatypes
 | [Pseudo-instruction](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) | Full Name | Size (in bytes) | Size (in bits) | 
 | ------------------ | --------- | --------------- | -------------- |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| resb | Reserve a Byte | 1 | 8 |
+| resw | Reserve a Word | 2 | 16 |
+| resd | Reserve a Doubleword | 4 | 32 |
+| resq | Reserve a Quadword | 8 | 64 |
+| rest | Reserve a Ten Bytes | 10 | 80 |
 
 ## _.text_ Section
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
