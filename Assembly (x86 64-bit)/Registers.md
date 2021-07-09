@@ -10,9 +10,9 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 
 
 ## Table of Registers
-| 8-bit | 16-bit | 32-bit | 64-bit | Function |
-| ----- | ------ | ------ | ------ | -------- |
-|   al  |   ax   |   eax  |  rax   | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) |
+| 8-bit | 16-bit | 32-bit | 64-bit | Full Name | Function |
+| ----- | ------ | ------ | ------ | --------- | -------- |
+|   al  |   ax   |   eax  |  rax   | register a extended | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) | 
 |   bl  |   bx   |   ebx  |  rbx   | Base |
 |   cl  |   cx   |   ecx  |  rcx   | Counter |
 |   dl  |   dx   |   edx  |  rdx   | Data |
@@ -34,9 +34,6 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 > [_Stanford: Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
 > [_University of Alaska Fairbanks: Full List of x86 Registers_](https://www.cs.uaf.edu/2015/fall/cs301/lecture/09_16_stack.html) <br />
 
-## Registers by Name
-| Register | Full Name |
-| -------- | --------- |
 | rax | register a extended |
 | rbx | register b extended |
 | rcx | register c extended |
