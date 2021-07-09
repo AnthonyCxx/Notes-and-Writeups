@@ -5,7 +5,7 @@ An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.
 The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program.
 
 ### _.data_ Datatypes
-| Pseudo-instruction | Full Name | Size (in bytes) | Size (in bits) | 
+| [Pseudo-instruction](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) | Full Name | Size (in bytes) | Size (in bits) | 
 | ------------------ | --------- | --------------- | -------------- |
 | db | Define Byte | 1 | 8 |
 | dw | Define Word | 2 | 16 |
@@ -24,7 +24,7 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
 
 ### _.bss_ Datatypes
-| Pseudo-instruction | Full Name | Size (in bytes) | Size (in bits) | 
+| [Pseudo-instruction](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) | Full Name | Size (in bytes) | Size (in bits) | 
 | ------------------ | --------- | --------------- | -------------- |
 |  |  |  |  |
 |  |  |  |  |
