@@ -5,14 +5,15 @@ An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.
 The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program. When you declare a variable in the _.data_ section, it is allocated
 
 ### _.data_ Datatypes
-| Datatype | Full Name | Size (in bytes) | Size (in bits) | 
+| Code | Full Name | Size (in bytes) | Size (in bits) | 
 | -------- | --------- | --------------- | -------------- |
-| db | Byte | 1 | 8 |
-| dw | Word | 2 | 16 |
-| dd | Doubleword | 4 | 32 |
-| dq | Quadword | 8 | 64 |
-> Source: <br />
-> [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
+| db | Define Byte | 1 | 8 |
+| dw | Define Word | 2 | 16 |
+| dd | Define Doubleword | 4 | 32 |
+| dq | Define Quadword | 8 | 64 |
+> Note: a 'word' is a unit of size equal to 16 bits (2 bytes) (<br />
+> 
+> Source: [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
 
 ## .bss
 The _.bss_ section contains uninitialized data (e.g. char text[50];). Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
