@@ -95,4 +95,4 @@ _start:                        ; label '_start' : an identifier which can be pla
 ; Argument Type  |  Proper Register  | Argument Description
 ; ---------------------------------------------------------
 ; Syscall ID      |        rax        | 60 (the syscall ID no.)
-; Exit Code       |        rdi        | 0 or 1 (EXIT_SUCESS or EXIT_FAILURE respectively)
+; Exit Code       |        rdi        | 0 or 1 (EXIT_SUCCESS or EXIT_FAILURE respectively)
