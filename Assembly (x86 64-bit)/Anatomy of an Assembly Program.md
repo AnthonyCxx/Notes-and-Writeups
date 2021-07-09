@@ -1,7 +1,7 @@
 # Anatomy of an Assembly Program
 An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.text_. Both the _.data_ and _.bss_ sections store data; _.text_ contains the source code.
 
-## .data
+## _.data_ Section
 The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program.
 
 ### Declaring Variables
@@ -22,13 +22,13 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 > 
 > Source: [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
 
-## .bss
+## _.bss_ Section
 The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
 
 ### _.bss_ Datatypes
 
 
-## .text
+## _.text_ Section
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
 overwriting the _.data_ section.
 
