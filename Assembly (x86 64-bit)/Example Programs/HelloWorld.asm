@@ -6,10 +6,16 @@
 ;     ./hello          
 ;
 
+; .data  :  where all data is defined before compilation (known values)
 section .data
         text db "Hello, World!",0      ; 'text' defines a byte (db) that points to the first character ('H') of the string. 
                                        ; The '0' is the null-terminating char ('\0') in ASCII
-        
+
+; .bss   :  where all data is allocated for future use (unknown values)
+section .bss
+; Empty section, used for uninitialized variables
+       
+; .text  :  where the code will go
 section .text
         global _start
 
@@ -26,15 +32,6 @@ _start:                        ; label '_start' : an identifier which can be pla
         syscall                ; sys_exit(0)  -- (exit code)
 
 ;  **** END OF PROGRAM ****
-
-
-
-;///////////////////////////////
-
-; Notes on Sections:
-; .data  :  where all data is defined before compilation (known values)
-; .bss   :  where all data is allocated for future use (unknown values)
-; .text  :  where the code will go
 
 ;//////////////////////////////
 
