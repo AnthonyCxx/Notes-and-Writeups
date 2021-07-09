@@ -2,7 +2,10 @@
 An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.text_. Both the _.data_ and _.bss_ sections store data; _.text_ contains the source code.
 
 ## .data
-The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program. When you declare a variable in the _.data_ section, it is allocated
+The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program. Data is declared in the format `<name> <datatype> <value>`.
+For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program,
+the text containing 'Hello, World!' is declared as `text db "Hello, World!"`. 
+> Reference: [Why does 'Hello World' use _db_?](https://www.tutorialspoint.com/assembly_programming/assembly_strings.htm)
 
 ### _.data_ Datatypes
 | Code | Full Name | Size (in bytes) | Size (in bits) | 
