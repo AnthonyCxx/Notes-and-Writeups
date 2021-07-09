@@ -16,37 +16,21 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 |   bl  |   bx   |   ebx  |  rbx   | register b extended | Base |
 |   cl  |   cx   |   ecx  |  rcx   | register c extended | Counter |
 |   dl  |   dx   |   edx  |  rdx   | register d extended | Data |
-|  sil  |   si   |   esi  |  rsi   | Source (source for data copies) |
-|  dil  |   di   |   edi  |  rdi   | Destination  (destination for data copies) |
-|  bpl  |   bp   |   ebp  |  rbp   | Stack Base Pointer (start of the stack) |
-|  spl  |   sp   |   esp  |  rsp   | Stack Pointer (current location in the stack, growing downwards) |
-|  r8b  |   r8w  |   r8d  |   r8   | General Purpose Register |
-|  r9b  |   r9w  |   r9d  |   r9   | General Purpose Register |
-| r10b  |  r10w  |  r10d  |  r10   | General Purpose Register |
-| r11b  |  r11w  |  r11d  |  r11   | General Purpose Register |
-| r12b  |  r12w  |  r12d  |  r12   | General Purpose Register |
-| r13b  |  r13w  |  r13d  |  r13   | General Purpose Register |
-| r14b  |  r14w  |  r14d  |  r14   | General Purpose Register |
-| r15b  |  r15w  |  r15d  |  r15   | General Purpose Register |
-> Note: chars are 8-bit, shorts are 16-bit, ints are 32-bit, and longs are 64-bit (generally) <br />
->
+|  sil  |   si   |   esi  |  rsi   | register source index | Source (source for data copies) |
+|  dil  |   di   |   edi  |  rdi   | register destination index | Destination  (destination for data copies) |
+|  bpl  |   bp   |   ebp  |  rbp   | register base pointer | Stack Base Pointer (start of the stack) |
+|  spl  |   sp   |   esp  |  rsp   | register stack pointer | Stack Pointer (current location in the stack, growing downwards) |
+|  r8b  |   r8w  |   r8d  |   r8   | register 8 | General Purpose Register |
+|  r9b  |   r9w  |   r9d  |   r9   | register 9 | General Purpose Register |
+| r10b  |  r10w  |  r10d  |  r10   | register 10 | General Purpose Register |
+| r11b  |  r11w  |  r11d  |  r11   | register 11 | General Purpose Register |
+| r12b  |  r12w  |  r12d  |  r12   | register 12 | General Purpose Register |
+| r13b  |  r13w  |  r13d  |  r13   | register 13 | General Purpose Register |
+| r14b  |  r14w  |  r14d  |  r14   | register 14 | General Purpose Register |
+| r15b  |  r15w  |  r15d  |  r15   | register 15 | General Purpose Register |
 > Sources: <br />
 > [_Stanford: Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
 > [_University of Alaska Fairbanks: Full List of x86 Registers_](https://www.cs.uaf.edu/2015/fall/cs301/lecture/09_16_stack.html) <br />
-
-| rbp | register base pointer |
-| rsp | register stack pointer |
-| rsi | register source index |
-| rdi | register destination index |
-| r8 | register 8 |
-| r9 | register 9 |
-| r10 | register 10 |
-| r11 | register 11 |
-| r12 | register 12 |
-| r13 | register 13 |
-| r14 | register 14 |
-| r15 | register 15 |
-> Sources: <br />
 > [_Harvard: Assembly 1: Basics_](https://cs61.seas.harvard.edu/site/2018/Asm1/) <br />
 > [_Seneca College: x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
 > [_TutorialsPoint: Assembly - Registers_](https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm) <br />
