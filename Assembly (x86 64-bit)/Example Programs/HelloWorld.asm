@@ -23,7 +23,7 @@ _start:                        ; label '_start' : an identifier which can be pla
 
         mov     rax, 60        ; move 60 (the num. ID of sys_exit) into the rax register
         mov     rdi, 0         ; move exit code 0 (EXIT_SUCCESS) into the rdi register
-        syscall                ; sys_exit(0)
+        syscall                ; sys_exit(0)  -- (exit code)
 
 ;  **** END OF PROGRAM ****
 
