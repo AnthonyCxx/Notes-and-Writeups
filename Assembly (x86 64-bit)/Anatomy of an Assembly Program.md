@@ -43,7 +43,8 @@ overwriting the _.data_ section.
 
 ## Sources
 [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
-[_Posix.nl: _](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
+[_TutorialsPoint: Assembly - Variables_](https://www.tutorialspoint.com/assembly_programming/assembly_variables.htm) <br />
+[_Posix.nl: Chapter 3, The NASM Language _](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
 [_Tortall.net: Chapter 3, Pseudo-instructions in the NASM Language_](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) <br />
 [_GeeksforGeeks: Memory Layout of a C Program_](https://www.geeksforgeeks.org/memory-layout-of-c-program/) <br />
 [_TutorialsPoint: Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
