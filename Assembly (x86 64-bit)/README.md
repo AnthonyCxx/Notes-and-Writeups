@@ -1,6 +1,6 @@
 # A Reference for x86 Assembly (64-bit)
 Assembly is a platform-dependent, low-level programming language, which is directly converted into machine code by an assembler such as [NASM](https://en.wikipedia.org/wiki/Netwide_Assembler) or [GAS](https://en.wikipedia.org/wiki/GNU_Assembler).
-Assembly works directly with the memory and registers of a machine and is very similar in style to machine code, and so is sometimes referred
+Assembly works directly with the memory and registers of a machine and is very similar in style to [machine code](https://whatis.techtarget.com/definition/machine-code-machine-language), and so is sometimes referred
 to as "symbolic machine code". Assembly makes use of system calls, or 'syscalls', to directly request actions from the kernal. The exact call
 is determined by the syscall ID, which goes in the rax register. The other registers will contain supporting information for the syscall (arguments).
 
