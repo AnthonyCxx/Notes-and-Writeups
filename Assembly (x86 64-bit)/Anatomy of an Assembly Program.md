@@ -18,9 +18,7 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 | dw | Define Word | 2 | 16 |
 | dd | Define Doubleword | 4 | 32 |
 | dq | Define Quadword | 8 | 64 |
-> Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br />
-> 
-> Source: [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
+> Note: a 'word' is a unit of size equal to 16 bits (2 bytes) <br /> 
 
 ## _.bss_ Section
 The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
