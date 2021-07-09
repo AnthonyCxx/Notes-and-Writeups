@@ -5,8 +5,9 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 ## Max Capacity of a Register
 | Datatype | Minimum Value | Maximum Value |
 | -------- | ------------- | ------------- |
-| Signed | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |
 | Unsigned | 0 | 18,446,744,073,709,551,616 |
+| Signed | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |
+
 
 ## Table of Registers
 | 8-bit | 16-bit | 32-bit | 64-bit | Function |
