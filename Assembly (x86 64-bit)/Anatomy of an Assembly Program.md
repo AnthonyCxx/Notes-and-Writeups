@@ -12,7 +12,7 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 > Reference: [_StackOverflow: equ vs = in x86 Assembly_](https://stackoverflow.com/questions/28948274/x86-assembly-equ-vs) <br />
 
 ### _.data_ Datatypes
-| Code | Full Name | Size (in bytes) | Size (in bits) | 
+| Pseudo-instructor | Full Name | Size (in bytes) | Size (in bits) | 
 | ---- | --------- | --------------- | -------------- |
 | db | Define Byte | 1 | 8 |
 | dw | Define Word | 2 | 16 |
@@ -33,6 +33,7 @@ overwriting the _.data_ section.
 
 ## Sources
 [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
+[_Tortall.net: Chapter 3, Pseudo-instructions in the NASM Language_](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) <br />
 [_GeeksforGeeks: Memory Layout of a C Program_](https://www.geeksforgeeks.org/memory-layout-of-c-program/) <br />
 [_TutorialsPoint: Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
 [_TutorialsPoint: Assembly - Basic Syntax_](https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm) <br />
