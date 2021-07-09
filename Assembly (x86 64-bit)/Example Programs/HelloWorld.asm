@@ -1,6 +1,6 @@
 ;  **** BEGINNING OF PROGRAM ****
 section .data
-        text db "Hello, World!",10    ;   text - variable to reference the string 'Hello, World,10' with (replaces instances of the word 'text' with the memeory address)
+        text db "Hello, World!",10    ;   text - variable to reference the string 'Hello, World!,10' with (replaces instances of the word 'text' with the memeory address)
                                       ;   | db = 'define bytes' - each char is its own byte | '10' is the newline character (its value) -- you cannot type the newline character
                                       ;   C-equivalent: "Hello, World!\n"
 section .text
@@ -9,10 +9,10 @@ section .text
                                ; '_start' tells the linker where to start. Consider it like the main functions
 _start:                        ; label '_start' : an identifier which can be placed at the beginning of a statement as an instruction operand - after compilation, the identifier is replaced with the value in memory
         mov     rax, 1         ; move 1 (the num. ID of sys_write) into the rax register
-        mov     rdi, 1         ; move 1 (the arg. ID of standard output) into the rdi register
-        mov     rsi, text      ; reference the text
+        mov     rdi, 1         ; move 1 (the arg. ID of standard output) into the rdi 
+        mov     rsi, text      ; reference the text (put 'text' from '.data' into the register source index register
         mov     rdx, 14        ; 14 is the total length of the string "Hello, World!" plus the newline character, '10'
-        syscall                ; sys_write(1, text, 14)
+        syscall                ; sys_write(1, text, 14)  -- (stdout, text, 14 characters)
 
         mov     rax, 60        ; move 60 (the num. ID of sys_exit) into the rax register
         mov     rdi, 0         ; move exit code 0 (EXIT_SUCCESS) into the rdi register
