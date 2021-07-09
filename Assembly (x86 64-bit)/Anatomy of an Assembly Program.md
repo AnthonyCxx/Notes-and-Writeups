@@ -20,7 +20,7 @@ Standard variables are declared in the format `<name> <datatype> <value>`. <br /
 For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program, the text containing 'Hello, World!' is declared as `text db "Hello, World!"`.
 
 ### Declaring Constants
-Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. <br />
+Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 7`. <br />
 Using _equ_ prevents the variable from being changed throughout the program.
 > Reference: [_Posix.nl: Chapter 3, The NASM Language (Section 3.2.4 Equ: Defining Constants)_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
 
