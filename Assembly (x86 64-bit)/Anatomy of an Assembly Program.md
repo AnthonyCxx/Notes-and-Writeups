@@ -25,7 +25,8 @@ Using _equ_ prevents the variable from being changed throughout the program.
 > Reference: [_Posix.nl: Chapter 3, The NASM Language (Section 3.2.4 Equ: Defining Constants)_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
 
 ## _.bss_ Section
-The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
+The _.bss_ section contains uninitialized data. When you declare variables in the _.bss_ section, you are effectively reserving the memory for them.
+Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
 
 ### _.bss_ Datatypes
 | [Pseudo-instruction](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) | Full Name | Size (in bytes) | Size (in bits) | 
