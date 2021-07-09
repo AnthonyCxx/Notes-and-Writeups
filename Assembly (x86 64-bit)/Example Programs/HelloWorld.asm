@@ -37,7 +37,7 @@ _start:                        ; label '_start' : an identifier which can be pla
 ;
 ; This means that each register can hold the values:
 ;
-; Unsigned:                        0   -   18,446,744,073,709,551,616
+; Unsigned:  0   -   18,446,744,073,709,551,616
 ; Signed:   -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807
 
 ; Register types:
