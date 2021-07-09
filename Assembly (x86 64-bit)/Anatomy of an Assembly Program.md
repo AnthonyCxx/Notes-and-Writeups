@@ -6,9 +6,15 @@ The _.data_ section contains modifiable, initialized data that can be accessed a
 For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program,
 the text containing 'Hello, World!' is declared as <br /> `text db "Hello, World!"`.
 
+### Declaring Variables
+
+### Declaring Constants
+Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. Using _equ_ means that this variable is read-only.
+> Reference: [_StackOverflow: equ vs = in x86 Assembly_](https://stackoverflow.com/questions/28948274/x86-assembly-equ-vs) <br />
+
 ### _.data_ Datatypes
 | Code | Full Name | Size (in bytes) | Size (in bits) | 
-| -------- | --------- | --------------- | -------------- |
+| ---- | --------- | --------------- | -------------- |
 | db | Define Byte | 1 | 8 |
 | dw | Define Word | 2 | 16 |
 | dd | Define Doubleword | 4 | 32 |
