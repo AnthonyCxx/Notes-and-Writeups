@@ -2,11 +2,10 @@
 An assembly source file (.asm) has three major sections: _.data_, _.bss_, and _.text_. Both the _.data_ and _.bss_ sections store data; _.text_ contains the source code.
 
 ## .data
-The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program. Data is declared in the format <br /> `<name> <datatype> <value>`.
-For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program,
-the text containing 'Hello, World!' is declared as <br /> `text db "Hello, World!"`.
+The _.data_ section contains modifiable, initialized data that can be accessed anywhere in the program.
 
 ### Declaring Variables
+Standard variables are declared in the format <br /> `<name> <datatype> <value>`. For example, in the [_HelloWorld.asm_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Example%20Programs/HelloWorld.asm) program, the text containing 'Hello, World!' is declared as <br /> `text db "Hello, World!"`.
 
 ### Declaring Constants
 Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luckynum equ 10`. Using _equ_ means that this variable is read-only.
@@ -24,7 +23,7 @@ Constants can be declared with _equ_. Declaring a lucky number 7 would be: `luck
 > Source: [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
 
 ## .bss
-The _.bss_ section contains uninitialized data (e.g. char text[50];). Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
+The _.bss_ section contains uninitialized data. Typically, the memory set aside for the _.bss_ section is initialized to all 0s.
 
 ### _.bss_ Datatypes
 
