@@ -1,4 +1,11 @@
 ;  **** BEGINNING OF PROGRAM ****
+;
+;     ASSEMBLE INSTRUCTIONS:
+;     nasm -f elf64 hello.asm 
+;     ld -o hello hello.o
+;     ./hello          
+;
+
 section .data
         text db "Hello, World!",10    ;   text - variable to reference the string 'Hello, World!,10' with (replaces instances of the word 'text' with the memeory address)
                                       ;   | db = 'define bytes' - each char is its own byte | '10' is the newline character (its value) -- you cannot type the newline character
