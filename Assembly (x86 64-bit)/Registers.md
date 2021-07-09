@@ -12,10 +12,10 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 ## Table of Registers
 | 8-bit | 16-bit | 32-bit | 64-bit | Full Name | Function |
 | ----- | ------ | ------ | ------ | --------- | -------- |
-|   al  |   ax   |   eax  |  rax   | register a extended | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) | 
-|   bl  |   bx   |   ebx  |  rbx   | register b extended | Base |
-|   cl  |   cx   |   ecx  |  rcx   | register c extended | Counter |
-|   dl  |   dx   |   edx  |  rdx   | register d extended | Data |
+|   al  |   ax   |   eax  |  rax   | register a | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) | 
+|   bl  |   bx   |   ebx  |  rbx   | register b | Base |
+|   cl  |   cx   |   ecx  |  rcx   | register c | Counter |
+|   dl  |   dx   |   edx  |  rdx   | register d | Data |
 |  sil  |   si   |   esi  |  rsi   | register source index | Source (source for data copies) |
 |  dil  |   di   |   edi  |  rdi   | register destination index | Destination  (destination for data copies) |
 |  bpl  |   bp   |   ebp  |  rbp   | register base pointer | Stack Base Pointer (start of the stack) |
