@@ -45,10 +45,16 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 | r15b  |  r15w  |  r15d  |  r15   | register 15 | General Purpose Register |
 
 
+
 ## Sources
+
+### Registers
 Stanford University: [_Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
 University of Alaska Fairbanks: [_Full List of x86 Registers_](https://www.cs.uaf.edu/2015/fall/cs301/lecture/09_16_stack.html) <br />
 Harvard University: [_Assembly 1: Basics_](https://cs61.seas.harvard.edu/site/2018/Asm1/) <br />
 Seneca College: [_x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
 TutorialsPoint: [_Assembly - Registers_](https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm) <br />
 Techdifference: [_Difference Between Registers and Memory_](https://techdifferences.com/difference-between-register-and-memory.html) <br />
+
+### Flags
+C-Jump: [_EFLAGS Bit Labels_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) and [_EFLAGS Individual Bit Flags_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) <br />
