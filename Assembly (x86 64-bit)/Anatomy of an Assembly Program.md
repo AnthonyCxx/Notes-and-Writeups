@@ -27,7 +27,7 @@ Using _equ_ prevents the variable from being changed throughout the program.
 ## _.bss_ Section
 The _.bss_ section contains uninitialized data. When you declare variables in the _.bss_ section, you are effectively reserving the memory for them.
 Typically, the memory set aside for the _.bss_ section is initialized to all 0s. Since variables in the _.bss_ sections do not have values, the 'value'
-section is replaced by the number to reserve. For example, `charArr resb 20` reserves a 20 bytes.
+section is replaced by the number to reserve. For example, `charArr resb 20` reserves 20 bytes.
 
 ### _.bss_ Datatypes
 | [Pseudo-instruction](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) | Full Name | Size (in bytes) | Size (in bits) | 
