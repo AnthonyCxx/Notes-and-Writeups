@@ -1,5 +1,5 @@
 # Registers in x86 Assembly
-Registers are a small part of the processor (CPU) that temporarily hold data that the CPU is currently working with/on. <br />
+Registers are a part of the processor (CPU) that temporarily hold data that the CPU is currently working with/on. <br />
 Registers can be accessed by the CPU _much_ faster than memory.
 
 ## Max Capacity of a Register
