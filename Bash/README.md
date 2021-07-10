@@ -1,4 +1,7 @@
-# Notes: Bash Scripting
+# INCOMPLETE Notes: Bash Scripting
+
+I do not intend on completing these for a while. I am working on other projects.
+
 This is a collection of notes on Bash Scripting, which is primarily meant to be a reference rather than a learning resource. <br />
 As per such, I do provide examples for reference, but do not explain them.
 
