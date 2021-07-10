@@ -29,5 +29,5 @@ main:
 
         ; sys_exit (ID: 60)
         mov     rax, 60         ; Move the ID of sys_exit (60) into rax
-        mov     rdi, 0          ; The ID of EXIT_SUCCESS (0)
+        mov     rdi, 0          ; The status code of EXIT_SUCCESS (0)
         syscall                 ; Make the syscall (exit with status code 0)
