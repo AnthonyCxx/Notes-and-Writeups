@@ -1,3 +1,12 @@
+; Syscall : sys_write (ID: 1)
+; ===========================
+; Arugment Type   |  Proper Register   | Argument Description
+; -----------------------------------------------------------
+; Syscall ID      |         rax        |  1 (the syscall ID no.)
+; File descriptor |         rdi        |  0, 1, or 2 (standard input, output, and error streams respectively)
+; Buffer          |         rsi        |  Location of string to write
+; Count           |         rdx        |  Length of string
+
 section .data
     text db "Hello, world!",0    ; Define a single-byte char pointer to 'H' (null-terminated str)
                                  ; 'text' length: 13
