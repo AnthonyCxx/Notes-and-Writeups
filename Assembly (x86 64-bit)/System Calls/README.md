@@ -1,7 +1,6 @@
 # System Calls in x86 Assembly
 
  ## Register Usage with Syscall (ID : rax)
-Order of Arguments for Syscall: <br />
 | Register | Name |
 | -------- | ---- |
 | rdi | register destination index |
