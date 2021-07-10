@@ -42,7 +42,7 @@ section is replaced by the number to reserve. For example, `charArr resb 20` res
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
 overwriting the _.data_ section.
 
-```x86
+```
 ; Example Assembly Program: Hello World
 
 ; .data  :  where all data is defined before compilation (known values)
