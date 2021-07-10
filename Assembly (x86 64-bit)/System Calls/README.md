@@ -6,3 +6,4 @@ blog.rchapman.org: [_LINUX SYSTEM CALL TABLE FOR X86 64_](http://blog.rchapman.o
 
 ## Sources
 University of Alaska Fairbanks: [_Direct Operating System Access via Syscalls_](https://www.cs.uaf.edu/2017/fall/cs301/lecture/11_17_syscall.html) <br />
+PackageCloud blog: [The Definitive guide to Linux System Calls](https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system-calls/) <br />
