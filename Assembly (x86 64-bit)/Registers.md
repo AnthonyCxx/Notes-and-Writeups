@@ -58,3 +58,6 @@ Techdifference: [_Difference Between Registers and Memory_](https://techdifferen
 
 ### Flags
 C-Jump: [_EFLAGS Bit Labels_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) and [_EFLAGS Individual Bit Flags_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) <br />
+University of Alaska Fairbanks: [_CS 301 Lecture: x86 "Flag" Bits_](https://www.cs.uaf.edu/2009/fall/cs301/lecture/12_07_flags.html) <br />
+osdev.org: [_CPU Registers x86_](https://wiki.osdev.org/CPU_Registers_x86) <br />
+Wikipedia: [_FLAGS register_](https://en.wikipedia.org/wiki/FLAGS_register) <br />
