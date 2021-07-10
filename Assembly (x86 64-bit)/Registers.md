@@ -44,9 +44,9 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 | Bit | Abbrev. | Description | If 1 | If 0 |
 | --- | ------- | ----------- | ---- | ---- |
 | 0   |   CF  | [Carry flag](https://en.wikipedia.org/wiki/Carry_flag) | Carry = True | Carry = False |
-| 2   |   PF  |  [Parity flag](https://en.wikipedia.org/wiki/Parity_flag) |  |  |
-| 4   |   AF  |  [Auxiliary carry flag](https://en.wikipedia.org/wiki/Adjust_flag) |  |  |
-| 6   |   ZF  |  [Zero flag](https://en.wikipedia.org/wiki/Zero_flag) |  |  |
+| 2   |   PF  |  [Parity flag](https://en.wikipedia.org/wiki/Parity_flag) | Parity = Even | Parity = Odd |
+| 4   |   AF  |  [Auxiliary carry flag](https://en.wikipedia.org/wiki/Adjust_flag) | Auxillary Carry = True | Auxillary Carry = False |
+| 6   |   ZF  |  [Zero flag](https://en.wikipedia.org/wiki/Zero_flag) | Last calculation = Zero |  |
 | 7   |   SF  |  [Sign flag](https://en.wikipedia.org/wiki/Negative_flag) |  |  |
 | 8   |   TF  |  [Trap flag](https://en.wikipedia.org/wiki/Trap_flag) |  |  |
 | 9   |   IF  |  [Interrupt enable flag](https://en.wikipedia.org/wiki/Interrupt_flag) |  |  |
