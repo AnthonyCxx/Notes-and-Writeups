@@ -20,7 +20,7 @@ section .text
         global main
         
 main:
-        ; sys_write (ID: 1)
+        ; write (ID: 1)
         mov     rax, 1          ; Move the ID of sys_write (1) into rax
         mov     rdi, 1          ; Write to stream 1 (stdout, the screen)
         mov     rsi, text       ; Use the 'text' pointer as the source of the text
@@ -28,7 +28,7 @@ main:
         syscall                 ; Make the syscall (print 'Hello, world!')
 
 
-        ; sys_exit (ID: 60)
+        ; exit (ID: 60)
         mov     rax, 60         ; Move the ID of sys_exit (60) into rax
         mov     rdi, 0          ; The status code of EXIT_SUCCESS (0)
         syscall                 ; Make the syscall (exit with status code 0)
