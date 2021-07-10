@@ -42,7 +42,8 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 ## Flags
 Flags are indicators 
 
-> Citation: The following table was taken directly from [_c-jump.com_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0060_eflags_labels.htm), except the table did
+> Citation: <br /> 
+> The following table was taken directly from [_c-jump.com_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0060_eflags_labels.htm), except the table did
 > not originally include the links for definition - they explained the flags in [_this article_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) of theirs. All credits to them.
 
 | Bit | Abbrev. | Description |
