@@ -1,8 +1,10 @@
 # Registers in x86 Assembly
-Registers are a part of the processor (CPU) that temporarily hold data. <br />
-In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
+Registers are a small part of the processor (CPU) that temporarily hold data that the CPU is currently working with/on. <br />
+Registers can be accessed by the CPU _much_ faster than memory.
 
 ## Max Capacity of a Register
+In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). 
+
 | Datatype | Minimum Value | Maximum Value |
 | -------- | ------------- | ------------- |
 | Unsigned | 0 | 18,446,744,073,709,551,616 |
@@ -26,6 +28,7 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 
 > Image via Wikiepdia: [_x86 Assembly/X86 Architecture_](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture#General-Purpose_Registers_(GPR)_-_16-bit_naming_conventions)
 
+
 ## General Registers
 | 8-bit | 16-bit | 32-bit | 64-bit | Full Name | Function |
 | ----- | ------ | ------ | ------ | --------- | -------- |
@@ -45,3 +48,4 @@ University of Alaska Fairbanks: [_Full List of x86 Registers_](https://www.cs.ua
 Harvard University: [_Assembly 1: Basics_](https://cs61.seas.harvard.edu/site/2018/Asm1/) <br />
 Seneca College: [_x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
 TutorialsPoint: [_Assembly - Registers_](https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm) <br />
+Techdifference: [_Difference Between Registers and Memory_](https://techdifferences.com/difference-between-register-and-memory.html) <br />
