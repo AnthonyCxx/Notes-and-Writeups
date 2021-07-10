@@ -14,14 +14,17 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 ## Special Registers
 | 8-bit | 16-bit | 32-bit | 64-bit | Full Name (64-bit) | Function |
 | ----- | ------ | ------ | ------ | --------- | -------- |
-|   al  |   ax   |   eax  |  rax   | register a extended | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) | 
-|   bl  |   bx   |   ebx  |  rbx   | register b  extended| Base |
-|   cl  |   cx   |   ecx  |  rcx   | register c extended | Counter |
-|   dl  |   dx   |   edx  |  rdx   | register d extended | Data |
+|  ah/al  |   ax   |   eax  |  rax   | register a extended | [Accumulator](https://www.computerhope.com/jargon/a/accumulator.htm) (computation) | 
+|   bh/bl  |   bx   |   ebx  |  rbx   | register b  extended| Base |
+|   ch/cl  |   cx   |   ecx  |  rcx   | register c extended | Counter |
+|   dh/dl  |   dx   |   edx  |  rdx   | register d extended | Data |
 |  sil  |   si   |   esi  |  rsi   | register source index | Source (source for data copies) |
 |  dil  |   di   |   edi  |  rdi   | register destination index | Destination  (destination for data copies) |
 |  bpl  |   bp   |   ebp  |  rbp   | register base pointer | Stack Base Pointer (start of the stack) |
 |  spl  |   sp   |   esp  |  rsp   | register stack pointer | Stack Pointer (current location in the stack, growing downwards) |
+> The 'ah/al' refer to how the [8-bit registers can either be can either be low or high](https://riptutorial.com/x86/example/6973/8-bit-registers) <br />
+>
+> Reference: [When shoul I use low vs high registers?](https://stackoverflow.com/questions/53562739/if-i-have-an-8-bit-value-is-there-any-advantage-to-using-an-8-bit-register-inst)
 
 ### Visualization
 <img src="https://user-images.githubusercontent.com/70488531/125147735-1776b200-e0fb-11eb-8a21-46af83ae5cb7.png" width="1200" height="150"/>
