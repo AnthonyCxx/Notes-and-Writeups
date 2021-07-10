@@ -1,5 +1,5 @@
 # Registers in x86 Assembly
-Registers are a part of the processor (CPU) that temporarily hold memory. <br />
+Registers are a part of the processor (CPU) that temporarily hold data. <br />
 In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 
 ## Max Capacity of a Register
