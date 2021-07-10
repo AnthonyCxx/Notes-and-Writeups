@@ -43,25 +43,25 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 
 > Citation
 
-| Bit | Label | Description |
-| --- | ----- | ----------- |
-| 0   |   CF  |   Carry flag
-| 2   |   PF  |   Parity flag
-| 4   |   AF  |   Auxiliary carry flag
-| 6   |   ZF  |   Zero flag
-| 7   |   SF  |   Sign flag
-| 8   |   TF  |   Trap flag
-| 9   |   IF  |   Interrupt enable flag
-| 10  |   DF  |   Direction flag
-| 11  |   OF  |   Overflow flag
-| 12-13 | IOPL |  I/O Priviledge level
-| 14  |   NT  |   Nested task flag
-| 16  |   RF  |   Resume flag
-| 17  |   VM  |   Virtual 8086 mode flag
-| 18  |   AC  |   Alignment check flag (486+)
-| 19  |   VIF |   Virutal interrupt flag
-| 20  |   VIP |   Virtual interrupt pending flag
-| 21  |   ID  |   ID flag
+| Bit | Label | Full Name |
+| --- | ----- | --------- |
+| 0   |   CF  |   Carry flag |
+| 2   |   PF  |   Parity flag |
+| 4   |   AF  |   Auxiliary carry flag |
+| 6   |   ZF  |   Zero flag |
+| 7   |   SF  |   Sign flag |
+| 8   |   TF  |   Trap flag |
+| 9   |   IF  |   Interrupt enable flag |
+| 10  |   DF  |   Direction flag |
+| 11  |   OF  |   Overflow flag |
+| 12-13 | IOPL |  I/O Priviledge level |
+| 14  |   NT  |   Nested task flag |
+| 16  |   RF  |   Resume flag |
+| 17  |   VM  |   Virtual 8086 mode flag |
+| 18  |   AC  |   Alignment check flag (486+) |
+| 19  |   VIF |   Virutal interrupt flag |
+| 20  |   VIP |   Virtual interrupt pending flag |
+| 21  |   ID  |   ID flag |
 > Citation
 
 ## Sources
