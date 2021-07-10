@@ -28,6 +28,7 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 | r13b  |  r13w  |  r13d  |  r13   | register 13 | General Purpose Register |
 | r14b  |  r14w  |  r14d  |  r14   | register 14 | General Purpose Register |
 | r15b  |  r15w  |  r15d  |  r15   | register 15 | General Purpose Register |
+
 ![image](https://user-images.githubusercontent.com/70488531/125147716-02018800-e0fb-11eb-93a8-25f0807d010e.png)
 > Sources: <br />
 > [_Stanford: Guide to x86-64_](https://web.stanford.edu/class/archive/cs/cs107/cs107.1216/guide/x86-64.html) <br />
