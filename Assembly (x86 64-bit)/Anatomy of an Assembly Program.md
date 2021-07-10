@@ -42,6 +42,35 @@ section is replaced by the number to reserve. For example, `charArr resb 20` res
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
 overwriting the _.data_ section.
 
+```
+; Example Assembly Program: Hello World
+
+; .data  :  where all data is defined before compilation (known values)
+section .data
+        text db "Hello, World!",0      ; 'text' defines a byte (db) that points to the first character ('H') of the string. 
+                                       ; The '0' is the null-terminating char ('\0') in ASCII
+
+; .bss   :  where all data is allocated for future use (unknown values)
+section .bss
+; Empty section, used for uninitialized variables
+       
+; .text  :  where the code will go
+section .text
+        global main
+
+                               ; '_start' tells the linker where to start. Think of it like the main functions
+main:                          ; label '_start' : an identifier which can be placed at the beginning of a statement as an instruction operand
+        mov     rax, 1         ; move 1 (the num. ID of sys_write) into the rax register
+        mov     rdi, 1         ; move 1 (the arg. ID of standard output) into the rdi 
+        mov     rsi, text      ; reference the text (put 'text' from '.data' into the register source index register
+        mov     rdx, 13        ; 13 is the size of "Hello, World!"(don't count null terminating char). Needed because 'text' only points to the first char.
+        syscall                ; sys_write(1, text, 13)  -- (stdout, text, 13 characters)
+
+        mov     rax, 60        ; move 60 (the num. ID of sys_exit) into the rax register
+        mov     rdi, 0         ; move exit code 0 (EXIT_SUCCESS) into the rdi register
+        syscall                ; sys_exit(0)  -- (exit code)
+```
+
 
 ## Sources
 [_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
