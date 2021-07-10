@@ -42,6 +42,7 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 ## Flags
 
 > Citation
+
 | Bit | Label | Description |
 | --- | ----- | ----------- |
 | 0   |   CF  |   Carry flag
