@@ -54,8 +54,8 @@ Flags are indicators
 | 10  |   DF  |  [Direction flag](https://en.wikipedia.org/wiki/Direction_flag) |
 | 11  |   OF  |  [Overflow flag](https://en.wikipedia.org/wiki/Overflow_flag) |
 | 12-13 | IOPL |  [I/O Priviledge level](https://en.wikipedia.org/wiki/Protection_ring#IOPL) |
-| 14  |   NT  |   Nested task flag |
-| 16  |   RF  |   Resume flag |
+| 14  |   NT  |   [Nested task flag](http://www.logix.cz/michal/doc/i386/chp04-01.htm) |
+| 16  |   RF  |   [Resume flag](http://www.logix.cz/michal/doc/i386/chp04-01.htm) |
 | 17  |   VM  |   [Virtual 8086 mode flag](https://en.wikipedia.org/wiki/Virtual_8086_mode) |
 | 18  |   AC  |   Alignment check flag (486+) |
 | 19  |   VIF |   Virutal interrupt flag |
