@@ -1,5 +1,5 @@
 
-; Syscall : sys_write (ID: 1)
+; Syscall : write (ID: 1)
 ; ===========================
 ; Arugment Type   |  Proper Register   | Argument Description
 ; -----------------------------------------------------------
