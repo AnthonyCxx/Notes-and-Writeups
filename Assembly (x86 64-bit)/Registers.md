@@ -39,7 +39,7 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 
 > Image via Wikiepdia: [_x86 Assembly/X86 Architecture_](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture#General-Purpose_Registers_(GPR)_-_16-bit_naming_conventions)
 
-## Flag Registers
+## Status/Flag Registers
 
 | Bit | Abbrev. | Description |
 | --- | ----- | --------- |
