@@ -11,7 +11,7 @@ parameters necessary to call _sys\_write_.
 | Buffer          |         rsi        |  Location of string to write | 
 | Count           |         rdx        |  Length of string |
 
-## Resources
+## References for Linux Syscalls
 Filippo.io: [_Searchable Linux Syscall Table for x86 and x86_64P_](https://filippo.io/linux-syscall-table/) <br />
 blog.rchapman.org: [_LINUX SYSTEM CALL TABLE FOR X86 64_](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/) <br />
 
