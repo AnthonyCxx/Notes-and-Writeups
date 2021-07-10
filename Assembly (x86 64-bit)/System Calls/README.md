@@ -1,5 +1,5 @@
 # System Calls in x86 Assembly
-System calls (syscalls) are the request for the [kernel](https://www.engineersgarage.com/kernel-programming/) to perform an action. When a syscall is made, the 
+
 
 ## Resources
 Filippo.io: [_Searchable Linux Syscall Table for x86 and x86_64P_](https://filippo.io/linux-syscall-table/) <br />
