@@ -21,6 +21,7 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 |  bpl  |   bp   |   ebp  |  rbp   | register base pointer | Stack Base Pointer (start of the stack) |
 |  spl  |   sp   |   esp  |  rsp   | register stack pointer | Stack Pointer (current location in the stack, growing downwards) |
 
+### Visualization
 <img src="https://user-images.githubusercontent.com/70488531/125147735-1776b200-e0fb-11eb-8a21-46af83ae5cb7.png" width="1200" height="150"/>
 
 > Image via Wikiepdia: [_x86 Assembly/X86 Architecture_](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture#General-Purpose_Registers_(GPR)_-_16-bit_naming_conventions)
