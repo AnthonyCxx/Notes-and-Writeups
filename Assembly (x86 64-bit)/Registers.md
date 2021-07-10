@@ -52,14 +52,6 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 | 9   |   IF  |  [Interrupt enable flag](https://en.wikipedia.org/wiki/Interrupt_flag) | Interruptable = True | Interruptable = False |
 | 10  |   DF  |  [Direction flag](https://en.wikipedia.org/wiki/Direction_flag) | Direction = Down (right -> left) | Direction = Up (left -> right) |
 | 11  |   OF  |  [Overflow flag](https://en.wikipedia.org/wiki/Overflow_flag) | Overflow = True | Overflow = False |
-| 12-13 | IOPL |  [I/O Priviledge level](https://en.wikipedia.org/wiki/Protection_ring#IOPL) |  |  |
-| 14  |   NT  |   [Nested task flag](http://www.logix.cz/michal/doc/i386/chp04-01.htm) |  |  |
-| 16  |   RF  |   [Resume flag](http://www.logix.cz/michal/doc/i386/chp04-01.htm) |  |  |
-| 17  |   VM  |   [Virtual 8086 mode flag](https://en.wikipedia.org/wiki/Virtual_8086_mode) |  |  |
-| 18  |   AC  |   Alignment check flag (486+) |  |  |
-| 19  |   VIF |   Virutal interrupt flag |  |  |
-| 20  |   VIP |   Virtual interrupt pending flag |  |  |
-| 21  |   ID  |   ID flag |  |  |
 > Citation: <br /> 
 > The table above was taken directly from [_c-jump.com_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0060_eflags_labels.htm), except the table did
 > not originally include the links for definitions - they explained the flags in [_this article_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) of theirs. All credits to them.
