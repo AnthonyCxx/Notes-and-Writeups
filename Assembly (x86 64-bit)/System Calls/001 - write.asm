@@ -12,10 +12,9 @@ section .data
     text db "Hello, world!",0    ; Define a single-byte char pointer to 'H' (the first character in the char array)
                                  ; ',0' null-terminates the string
                                  ; 'text' length: 13
-
-
+                                 
 section .bss
-; empty!
+; Empty! No unknown variables.
 
 section .text
         global main
