@@ -5,7 +5,7 @@ Registers can be accessed by the CPU _much_ faster than memory.
 ## Max Capacity of a Register
 In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). 
 
-| Datatype | Minimum Value | Maximum Value |
+| Data Type | Minimum Value | Maximum Value |
 | -------- | ------------- | ------------- |
 | Unsigned | 0 | 18,446,744,073,709,551,616 |
 | Signed | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |
