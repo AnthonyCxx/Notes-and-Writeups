@@ -40,20 +40,22 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 > Image via Wikiepdia: [_x86 Assembly/X86 Architecture_](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture#General-Purpose_Registers_(GPR)_-_16-bit_naming_conventions)
 
 ## Flags
+Flags are indicators 
 
-> Citation
+> Citation: The following table was taken directly from [_c-jump.com_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0060_eflags_labels.htm), except the table did
+> not originally include the links for definition - they explained the flags in [_this article_](http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm) of theirs. All credits to them.
 
-| Bit | Label | Full Name |
+| Bit | Abbrev. | Description |
 | --- | ----- | --------- |
-| 0   |   CF  |   Carry flag |
-| 2   |   PF  |   Parity flag |
-| 4   |   AF  |   Auxiliary carry flag |
-| 6   |   ZF  |   Zero flag |
-| 7   |   SF  |   Sign flag |
-| 8   |   TF  |   Trap flag |
-| 9   |   IF  |   Interrupt enable flag |
-| 10  |   DF  |   Direction flag |
-| 11  |   OF  |   Overflow flag |
+| 0   |   CF  | [Carry flag](https://en.wikipedia.org/wiki/Carry_flag) |
+| 2   |   PF  |  [Parity flag](https://en.wikipedia.org/wiki/Parity_flag) |
+| 4   |   AF  |  [Auxiliary carry flag](https://en.wikipedia.org/wiki/Adjust_flag) |
+| 6   |   ZF  |  [Zero flag](https://en.wikipedia.org/wiki/Zero_flag) |
+| 7   |   SF  |  [Sign flag](https://en.wikipedia.org/wiki/Negative_flag) |
+| 8   |   TF  |  [Trap flag](https://en.wikipedia.org/wiki/Trap_flag) |
+| 9   |   IF  |  Interrupt enable flag |
+| 10  |   DF  |  Direction flag |
+| 11  |   OF  |  Overflow flag |
 | 12-13 | IOPL |  I/O Priviledge level |
 | 14  |   NT  |   Nested task flag |
 | 16  |   RF  |   Resume flag |
@@ -62,7 +64,6 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 | 19  |   VIF |   Virutal interrupt flag |
 | 20  |   VIP |   Virtual interrupt pending flag |
 | 21  |   ID  |   ID flag |
-> Citation
 
 ## Sources
 
