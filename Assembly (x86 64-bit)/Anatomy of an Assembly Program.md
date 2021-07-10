@@ -59,7 +59,7 @@ section .text
         global main
 
                                ; '_start' tells the linker where to start. Think of it like the main functions
-main:                          ; label 'main' : an identifier which can be placed at the beginning of a statement as an instruction operand
+main:                          ; label 'main' : an identifier which can be placed before a statement as an instruction operand
         mov     rax, 1         ; move 1 (the num. ID of sys_write) into the rax register
         mov     rdi, 1         ; move 1 (the arg. ID of standard output) into the rdi 
         mov     rsi, text      ; reference the text (put 'text' from '.data' into the register source index register
