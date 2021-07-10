@@ -1,5 +1,15 @@
 # System Calls in x86 Assembly
+A system call (syscall) is a request to the [kernel](https://www.engineersgarage.com/kernel-programming/) to perform an action. When you make a syscall, the request is determined
+by the numeric ID in the rax register and the other registers are used as the parameters for the syscall. See the chart below for all the parameters necessary to call _sys\_write_.
 
+### Syscall : sys_write (ID: 1)
+
+| Arugment Type | Proper Register | Argument Description
+; -----------------------------------------------------------
+; Syscall ID      |         rax        |  1 (the syscall ID no.)
+; File descriptor |         rdi        |  0, 1, or 2 (standard input, output, and error streams respectively)
+; Buffer          |         rsi        |  Location of string to write
+; Count           |         rdx        |  Length of string
 
 ## Resources
 Filippo.io: [_Searchable Linux Syscall Table for x86 and x86_64P_](https://filippo.io/linux-syscall-table/) <br />
