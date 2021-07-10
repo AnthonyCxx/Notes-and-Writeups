@@ -34,16 +34,3 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). <br />
 > [_Harvard: Assembly 1: Basics_](https://cs61.seas.harvard.edu/site/2018/Asm1/) <br />
 > [_Seneca College: x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
 > [_TutorialsPoint: Assembly - Registers_](https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm) <br />
-
- ## Register Usage with Syscall (ID : rax)
-Order of Arguments for Syscall: <br />
-| Register | Name |
-| -------- | ---- |
-| rdi | register destination index |
-| rsi | register source index |
-| rdx | register d extended |
-| rcx | register c extended |
-| r8d | register 8 |
-| r9d | register 9 |
-> Sources: <br />
-> [_Seneca College: x86-64 Register and Instruction Quick Start_](https://wiki.cdot.senecacollege.ca/wiki/X86_64_Register_and_Instruction_Quick_Start) <br />
