@@ -36,7 +36,7 @@ section is replaced by the number to reserve. For example, `charArr resb 20` res
 | resw | Reserve a Word | 2 | 16 |
 | resd | Reserve a Doubleword | 4 | 32 |
 | resq | Reserve a Quadword | 8 | 64 |
-| rest | Reserve a Ten Bytes | 10 | 80 |
+| rest | Reserve Ten Bytes | 10 | 80 |
 
 ## _.text_ Section
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
