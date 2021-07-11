@@ -82,7 +82,7 @@ int main(void)
 > Score: 0 <br />
 > Team: 0 <br />
 
-### With _typedef_
+### As a Single Line
 Though a bit more complicated, you can combine the declaration of the enum with the declaration of the alias.
 
 ```C
