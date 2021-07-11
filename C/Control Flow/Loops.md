@@ -90,7 +90,7 @@ do
     //Body
 } while (condition);
 ```
-> Note: pay close attention to the _;_ at the end of the while statement. A _do...while_ loop is the only loop with a semi-colon.
+> Note: pay close attention to the '_;_' at the end of the while statement. A _do...while_ loop is the only loop with a semi-colon.
 
 ### Example
 ```C
