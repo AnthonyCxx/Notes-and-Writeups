@@ -91,7 +91,7 @@ Though a bit more complicated, you can combine the declaration of the enum with 
 // An enum 'Team' which can be one of four teams
 typedef enum Team { RED, YELLOW, BLUE, GREEN} Team;
 
-// Anonymous struct mapped to the 'Player' alias
+// Struct mapped to the 'Player' alias
 typedef struct Player
 {
     int health;
