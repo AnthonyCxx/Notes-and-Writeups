@@ -55,7 +55,7 @@ int main(void)
     return 0;
 }
 ```
-> Note: this works in other languages such as C++ as well
+> Note: this works in other languages such as C++ and C# as well
  
 ## While Statement
 The _while_ statment continues to execute the body of the loop until the given condition is false. <br />
