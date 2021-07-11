@@ -156,6 +156,61 @@ int main(void)
 > Friday is a lucky day~! <br />
 > Monday is not a lucky day... <br />
 
+## Getting the Value of an Enum as a String
+The values of an enum are internally stored as strings, and there is no way to convert the name of a value of an enum into a string. If you want to use the value
+as a string, you have to write a _switch_ statement that returns the proper value.
+
+```C
+#include <stdio.h>
+
+// An enum 'Team' which can be one of four teams
+typedef enum Team { RED, YELLOW, BLUE, GREEN } Team;
+
+// Struct mapped to the 'Player' alias
+typedef struct Player
+{
+    int health;
+    int score;
+    Team team;
+} Player;
+
+// Function delcaration
+const char* get_team(Player* player);
+
+// Driver code //
+int main(void)
+{
+    // Initialize a player (using a designed initializer)
+    Player player_one = { .health = 10, .score = 0, .team = RED };
+
+    // Print stats
+    printf("Health: %d\n", player_one.health);
+    printf("Score: %d\n", player_one.score);
+    printf("Team: %s\n", get_team(&player_one) );
+
+    return 0;
+}
+
+// get_team implementation
+const char* get_team(Player* player)
+{
+    switch (player->team)   // Eval team
+    {
+        case RED:
+            return "RED";
+        case YELLOW:
+            return "YELLOW";
+        case BLUE:
+            return "BLUE";
+        case GREEN:
+            return "GREEN";
+
+        default:
+            return "UNKNOWN";
+    }   // ^ Implicit 'break' in the 'return' statement
+}
+```
+
 ## Sources
 - [_Microsoft Documentation: C Enumaration Declarations_](https://docs.microsoft.com/en-us/cpp/c-language/c-enumeration-declarations?view=msvc-160)
 - [_GeeksforGeeks: Enumeration (or enum) in C_](https://www.geeksforgeeks.org/enumeration-enum-c/)
