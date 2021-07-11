@@ -41,7 +41,7 @@ int main(void)
 > Prints: <br />
 > Health: 10 <br />
 > Score: 0 <br />
-> Team: 0 <br />
+> Team: 0 (red) <br />
 
 ## Simplifying Enum Usage with _typedef_
 Normally, you have to put _enum_ in front of any declaration or implementation of an enumerated type. To avoid this, you can use the [_typedef_ keyword](https://www.tutorialspoint.com/cprogramming/c_typedef.htm) to write an alias, mapping `enum enum_name` to `enum_name` so you can just use the name of the enum
@@ -80,7 +80,7 @@ int main(void)
 > Prints: <br />
 > Health: 10 <br />
 > Score: 0 <br />
-> Team: 0 <br />
+> Team: 0 (red) <br />
 
 ### As a Single Line
 Though a bit more complicated, you can combine the declaration of the enum with the declaration of the alias.
@@ -115,7 +115,7 @@ int main(void)
 > Prints: <br />
 > Health: 10 <br />
 > Score: 0 <br />
-> Team: 0 <br />
+> Team: 0 (red) <br />
 
 
 ## Manually Setting the Internal Values
