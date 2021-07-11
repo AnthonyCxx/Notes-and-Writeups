@@ -186,7 +186,7 @@ int main(void)
     // Print stats
     printf("Health: %d\n", player_one.health);
     printf("Score: %d\n", player_one.score);
-    printf("Team: %s\n", get_team(&player_one) );
+    printf("Team: %s\n", get_team(&player_one) );  // Note the '&' in '&player_one'
 
     return 0;
 }
