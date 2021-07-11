@@ -1,6 +1,6 @@
 # Command Reference for GDB
 
-### q(uit)
+### quit
 Entering _quit_ (shortcut: _q_) exits GDB. _ctrl_ + _C_ does not work.
 
 ### disassemble
