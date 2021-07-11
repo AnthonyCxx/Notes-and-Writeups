@@ -210,6 +210,10 @@ const char* get_team(Player* player)
     }   // ^ Implicit 'break' in the 'return' statement
 }
 ```
+> Prints: <br />
+> Health: 10 <br />
+> Score: 0 <br />
+> Team: RED <br />
 
 ## Sources
 - [_Microsoft Documentation: C Enumaration Declarations_](https://docs.microsoft.com/en-us/cpp/c-language/c-enumeration-declarations?view=msvc-160)
