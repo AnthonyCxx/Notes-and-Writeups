@@ -142,7 +142,7 @@ int main(void)
     // An array of 5 integers (1 -5)
     int array[5] = {1, 2, 3, 4, 5};
 
-    foreach(i, array)    // Expands to 'for (int i=0; i < sizeof(array) / sizeof(array[0]); i++'
+    foreach(i, array)    // Expands to 'for(int i=0; i < sizeof(array) / sizeof(array[0]); i++)'
     {
         printf("%d\n", array[i]);
     }
