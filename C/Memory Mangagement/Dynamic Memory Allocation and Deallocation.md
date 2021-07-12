@@ -58,7 +58,7 @@ position of the element you want to access as an integer (this is called the off
 int main(void)
 {
     // Allocate memory for a single integer and typecast the memory to an integer pointer
-    int* ptr = (int*) malloc(15 * sizeof(int));      // An ptray of 15 integers
+    int* ptr = (int*) malloc(15 * sizeof(int));      // An array of 15 integers
 
     // Always check for errors
     if (ptr == NULL)
