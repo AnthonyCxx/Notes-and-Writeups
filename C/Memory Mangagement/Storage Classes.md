@@ -2,6 +2,9 @@
 A storage class is a modifier for a variable that determines how the variable is stored in memory.
 
 ## auto
+I'll be honest, _auto_ is a useless keyword; in fact, it was so useless that [C++ repurposed it](https://docs.microsoft.com/en-us/cpp/cpp/auto-cpp?view=msvc-160#remarks).
+_auto_ just specifies that the variable being declared is local (not global). Because of this, it can only be used within functions, whose variables are automatically
+local. You see the problem.
 
 ## extern
 The _extern_ keyword (short for 'external') provides an alternative to _#include_, allowing you to use variables and functions declared in other files without including the
