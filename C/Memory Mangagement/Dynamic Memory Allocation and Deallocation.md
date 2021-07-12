@@ -7,3 +7,11 @@ Dynamic memory is declared and managed using four C functions within the [_\<std
 These four functions allow you to delcare, resize, and free memory. Always remember to free dynamically-allocated memory after you are done with it, as the computer does not
 free it for you (unlike stack-allocated memory); if you forget to free dynamically-allocated memory, it will remain allocated. This problem is known as 
 [memory leak](https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/) and can debilitate a system.
+
+## Allocating Memory with _malloc()_
+
+## Allocating and Initializing Memory with _calloc()_
+
+## Resizing Memory with _realloc()_
+
+## Freeing Memory with _free()_
