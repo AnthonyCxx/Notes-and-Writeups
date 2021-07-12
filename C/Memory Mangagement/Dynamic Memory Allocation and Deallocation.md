@@ -48,7 +48,7 @@ int main(void)
 ### Allocating Arrays with _malloc()_
 Arrays are easy to allocate with _malloc()_, just multiply the amount of elements you want to allocate by the size of the datatype. <br />
 The only hard part is accessing the array elements. To access the elements, add point to the beginning of the array ('ptr' in this case) and add the 
-position of the element you want to access as an integer.
+position of the element you want to access as an integer (this is called the offset).
 
 
 ```C
