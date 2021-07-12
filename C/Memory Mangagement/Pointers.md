@@ -2,18 +2,21 @@
 A pointer is a variable that points to some location in memory in order to keep track of [dynamically-allocated memory](https://www.programiz.com/c-programming/c-dynamic-memory-allocation). Like any variable, pointers are [strongly-typed](https://www.cs.cornell.edu/courses/cs1130/2012sp/1130selfpaced/module1/module1part4/strongtyping.html); however, they can also be [type-casted](https://ecomputernotes.com/what-is-c/function-a-pointer/type-casting-of-pointers) easily.
 
 ## Declaring a Pointer
-Pointers are declared like a normal variable, but include a '\*' after the datatype. If not given a value, 
+Pointers are declared like a normal variable, but include a '\*' after the datatype. If not given a value, the pointer will point to [NULL](https://www.tutorialspoint.com/null-pointer-in-c).
 ```C
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void)
 {
     int* ptr;     // 'ptr' is short for 'pointer'
 
+    printf("The memory address of 'ptr' is: %p\n", ptr);
+
     return 0;
 }
 ```
+> Prints: <br />
+> The memory address of 'ptr' is: (nil)
 
 ## The & Operator
 
