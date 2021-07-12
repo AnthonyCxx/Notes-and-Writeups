@@ -11,7 +11,9 @@ free it for you (unlike stack-allocated memory); if you forget to free dynamical
 [memory leak](https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/) and can debilitate a system.
 
 ## Allocating Memory with _malloc()_
-The [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) function allocates _n_ bytes where _n_ is an integer provides as the function argument.
+The [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) function allocates _n_ bytes where _n_ is an integer provided as the function argument.
+Memory allocated with _malloc()_ **does not have a datatype** by default and must be typecasted via `(datatype*)`. Any memory allocated with _malloc()_ must be freed with 
+[_free()_]().
 
 ## Allocating and Initializing Memory with _calloc()_
 
