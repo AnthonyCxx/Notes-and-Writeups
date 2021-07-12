@@ -56,7 +56,7 @@ be used, but I argue that _goto_ statements can be used in very rare circumstanc
 algorithm. Regardless, for the most part, _goto_ statements are a clear indicator of poor code structure and make maintaining codebases exceptionally difficult. <br />
 
 Here is an article worth reading, regardless of its age: [Donald Knuth: Structured Programming with _goto_ Statements](https://www.scribd.com/document/38873257/Knuth-1974-Structured-Programming-With-Go-to-Statements). <br /> Keep in mind that this was written in a time when programming languages lacked good structure, 
- and _goto_ statements were often the only option for unconditional jumps. Nowadays, this is not true. <br />
+ and _goto_ statements were often the only option for unconditional jumps. Nowadays, this is not true, so take the arguments with a grain of salt. <br />
 
 As you should always have both sides, here is a [A Case Against Goto Statements](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF).
 
