@@ -15,6 +15,8 @@ The [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_ma
 Memory allocated with _malloc()_ **does not have a datatype** by default and must be typecasted via `(datatype*)`. Any memory allocated with _malloc()_ must be freed with 
 [_free()_](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm). You could memorize the size of every datatype, or you could just use the [_sizeof() operator_](https://www.geeksforgeeks.org/sizeof-operator-c/). Really though, use the _sizeof()_ operator because the size of a given datatype may vary from system to system.
 
+Finally, if _malloc()_ cannot allocate memory (because there is not enough room), then it will return NULL.
+
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,6 +25,10 @@ int main(void)
 {
     // Allocate memory for a single integer and typecast the memory to an integer pointer
     int* ptr = (int*) malloc( sizeof(int) );
+
+    // Always check for errors
+    if (ptr == NULL)
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
 
     // Set the value of the dynamically-allocated memory
     *ptr = 5;
