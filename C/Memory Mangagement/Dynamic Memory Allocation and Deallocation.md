@@ -45,6 +45,49 @@ int main(void)
 > Prints: <br />
 > The dynamically-allocated memory holds the integer value '5' <br />
 
+### Allocating Arrays with _malloc()_
+Arrays are easy to allocate with _malloc()_, just multiply the amount of elements you want to allocate by the size of the datatype. <br />
+The only hard part is accessing the array elements. To access the elements, add point to the beginning of the array ('ptr' in this case) and add the 
+position of the element you want to access as an integer.
+
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    // Allocate memory for a single integer and typecast the memory to an integer pointer
+    int* ptr = (int*) malloc(15 * sizeof(int));      // An ptray of 15 integers
+
+    // Always check for errors
+    if (ptr == NULL)
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive ptray
+
+
+    // Initialize array values to 1-15
+    for(int i=0; i < 15; i++)
+    {
+        *(ptr + i) = i + 1;    // '*(ptr + i)' is the pointer to the array + the offset
+    }
+
+    // Print array values
+    for(int i=0; i < 15; i++)
+    {
+        printf("%d ", *(ptr + i));
+    }
+    putchar('\n');
+
+
+    // Free the heap-allocated memory
+    free(ptr);      // You can only free pointers, so you do not need to add the '*'
+
+    return 0;
+}
+```
+> Prints: <br />
+> 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
 ## Allocating and Initializing Memory with _calloc()_
 
 ## Resizing Memory with _realloc()_
