@@ -53,7 +53,7 @@ Remember that pointers only
 
 ```
 
-## Deferencing Non-primitive Pointers
+## Deferencing Non-primitive Pointers with the -> Operator
 
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
