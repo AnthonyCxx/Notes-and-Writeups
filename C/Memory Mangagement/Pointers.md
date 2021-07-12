@@ -95,6 +95,48 @@ trying to access the data member of an arbitrary address in memory and then dere
 `(*pointer_to_struct).data_member)` is a bit verbose, so the `->` operator was invented as a shorthand. That way, you can simple write `pointer_to_struct->data_member` 
 and be done.
 
+```C
+#include <stdio.h>
+
+// 'Player' structure
+typedef struct Player
+{
+    int health;
+    int attack;
+    int exp;
+
+} Player;
+
+
+int main(void)
+{
+    // A 'Player' with 10 health, 7 attack, and 300 exp
+    Player player1 = { .health = 10, .attack = 7, .exp = 300 };
+
+    // A pointer to 'player1'
+    Player* ptr = &player1;     // a pointer of datatype 'Player' pointing to player1;
+
+    // Using (*ptr).member to access members
+    printf("Health: %d\n", (*ptr).health );
+    printf("Attack: %d\n", (*ptr).attack );
+    printf("EXP: %d\n\n",  (*ptr).exp );
+
+    // Using ptr->member to access members
+    printf("Health: %d\n", ptr->health);   // Lot simpler, huh?
+    printf("Attack: %d\n", ptr->attack);
+    printf("EXP: %d\n",    ptr->exp);
+
+    return 0;
+}
+```
+> Health: 10 <br />
+> Attack: 7  <br />
+> EXP: 300   <br />
+>
+> Health: 10 <br />
+> Attack: 7  <br />
+> EXP: 300   <br />
+
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
 TutorialsPoint: [_C - Pointers_](https://www.tutorialspoint.com/cprogramming/c_pointers.htm) <br />
