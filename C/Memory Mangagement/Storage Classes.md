@@ -63,9 +63,9 @@ void loop(int times)
 
 int main()
 {
-    loop(3);      // Loop 3 times
-    loop(5);     // Loop 5 times
-    loop(12);   // Loop 12 times
+    loop(3);        // Loop 3 times
+    loop(5);       // Loop 5 times
+    loop(12);     // Loop 12 times
 
     return 0;
 }
