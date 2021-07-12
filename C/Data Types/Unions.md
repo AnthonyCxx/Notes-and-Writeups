@@ -88,6 +88,10 @@ int main(void)
 > Union int: 1103977513 <br />
 
 ## An Example of Unions
+Here, a surface pro (a kind of tablet) has the choice to either use the touchscreen or a mouse as the source of input - the union saves memory by only reserving enough
+memory for one struct (touchscreen/mouse) at a time. Although this example is not accurate (a real computer would be able to use both at the same time), it does
+serve to illustrate function of unions and how to use them.
+
 ```C
 #include <stdio.h>
 #include <stdbool.h>
