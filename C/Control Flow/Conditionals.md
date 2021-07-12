@@ -170,7 +170,7 @@ int main(void)
 > You can buy a small health potion. <br />
 
 ### Using GNU Range Expressions
-The GCC Compiler allows you to use [range expressions](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html) as a replacement for booleans.
+The GCC Compiler allows you to use [range expressions](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html) as a replacement for single cases.
 ```C
 #include <stdio.h>
 
