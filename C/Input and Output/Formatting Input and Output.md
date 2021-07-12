@@ -89,7 +89,7 @@ I've tried to list them in the order that I find myself using them.
 | \t | tab character |
 | \\' | apostrophe character |
 | \\" | quotation mark character |
-| \\ | backslash character |
+| \\\\ | backslash character |
 | \a | plays the [bel (bell) character](https://rosettacode.org/wiki/Terminal_control/Ringing_the_terminal_bell) |
 | \r | [carriage return character](https://www.quora.com/How-does-the-carriage-return-work-in-C) (manually resets writing to the beginning of the line, overwriting the current one) |
 | \b | backspace character |
