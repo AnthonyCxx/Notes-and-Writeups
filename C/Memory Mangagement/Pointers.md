@@ -22,7 +22,7 @@ int main(void)
 
 ## The & Operator
 The [& operator](https://fresh2refresh.com/c-programming/c-interview-questions-answers/what-is-ampersand-and-star-operators-in-c/) yields the memory address of a variable.
-The '&' operator can be used to assign pointers a value
+The '&' operator can be used to assign pointers a value (either an existing variable or memory allocated with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm)).
 
 ```C
 
