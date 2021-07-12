@@ -47,9 +47,6 @@ int main(void)
 
 ### Allocating Arrays with _malloc()_
 Arrays are easy to allocate with _malloc()_, just multiply the amount of elements you want to allocate by the size of the datatype. <br />
-The only hard part is accessing the array elements. To access the elements, add point to the beginning of the array ('ptr' in this case) and add the 
-position of the element you want to access as an integer (this is called the offset).
-
 
 ```C
 #include <stdio.h>
@@ -57,8 +54,8 @@ position of the element you want to access as an integer (this is called the off
 
 int main(void)
 {
-    // Allocate memory for a single integer and typecast the memory to an integer pointer
-    int* ptr = (int*) malloc(15 * sizeof(int));      // An array of 15 integers
+    // Allocate memory for an array of 15 integers, typecasting to 'int*'
+    int* ptr = (int*) malloc(15 * sizeof(int));      
 
     // Always check for errors
     if (ptr == NULL)
@@ -68,13 +65,13 @@ int main(void)
     // Initialize array values to 1-15
     for(int i=0; i < 15; i++)
     {
-        *(ptr + i) = i + 1;    // '*(ptr + i)' is the pointer to the array + the offset
+        ptr[i] = i + 1;
     }
 
     // Print array values
     for(int i=0; i < 15; i++)
     {
-        printf("%d ", *(ptr + i));
+        printf("%d ", ptr[i]);
     }
     putchar('\n');
 
@@ -89,6 +86,39 @@ int main(void)
 > 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
 ## Allocating and Initializing Memory with _calloc()_
+_calloc()_ makes initializing arrays much easier as it combines the alloccation and initialization by giving each element a default value (0). All _calloc()_ needs
+is the amount of elements and the size of each of them. If you do not need to use _calloc()_, use _malloc()_ instead as it's far more efficient.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+   // Allocate memory for an array of 15 integers, typecasting to 'int*' (each value = 0)
+    int* ptr = (int*) calloc(15, sizeof(int));   
+
+    // Always check for errors
+    if (ptr == NULL)
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive ptray
+
+
+    // Print array values
+    for(int i=0; i < 15; i++)
+    {
+        printf("%d ", ptr[i]);
+    }
+    putchar('\n');
+
+
+    // Free the heap-allocated memory
+    free(ptr);      // You can only free pointers, so you do not need to add the '*'
+
+    return 0;
+}
+```
+> Prints: <br />
+> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 ## Resizing Memory with _realloc()_
 
