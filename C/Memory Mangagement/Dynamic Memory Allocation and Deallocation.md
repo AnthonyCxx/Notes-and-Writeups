@@ -13,8 +13,7 @@ free it for you (unlike stack-allocated memory); if you forget to free dynamical
 ## Allocating Memory with _malloc()_
 The [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) function allocates _n_ bytes where _n_ is an integer provided as the function argument.
 Memory allocated with _malloc()_ **does not have a datatype** by default and must be typecasted via `(datatype*)`. Any memory allocated with _malloc()_ must be freed with 
-[_free()_](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm). You could memorize the size of every datatype, or you could just use the [_sizeof() operator_]().
-
+[_free()_](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm). You could memorize the size of every datatype, or you could just use the [_sizeof() operator_](https://www.geeksforgeeks.org/sizeof-operator-c/). Really though, use the _sizeof()_ operator because the size of a given datatype may vary from system to system.
 
 ```C
 #include <stdio.h>
