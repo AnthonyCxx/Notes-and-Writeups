@@ -1,12 +1,12 @@
 # Storage Classes in C
 A storage class is a modifier for a variable that determines how the variable is stored in memory.
 
-## auto
+## _auto_
 I'll be honest, _auto_ is a useless keyword; in fact, it was so useless that [C++ repurposed it](https://docs.microsoft.com/en-us/cpp/cpp/auto-cpp?view=msvc-160#remarks).
 _auto_ just specifies that the variable being declared is local (not global). Because of this, it can only be used within functions, whose variables are automatically local. 
 You see the problem.
 
-## extern
+## _extern_
 The _extern_ keyword (short for 'external') provides an alternative to _#include_, allowing you to use variables and functions declared in other files without including the
 other file.
 
@@ -42,7 +42,7 @@ void ascii(char character)
 }
 ```
 
-## static
+## _static_
 Static variables do not go out of scope, unlike local variables. Static variables can be used to maintain values even between function calls.
 The default value of a static variable is 0.
 
@@ -76,7 +76,7 @@ int main()
 > The loop has been run a total of 8 times <br />
 > The loop has been run a total of 20 times <br />
 
-## register
+## _register_
 The _register_ keyword stores a variable in a [CPU register](https://whatis.techtarget.com/definition/register) rather than [RAM](https://www.studytonight.com/computer-architecture/random-access-memory) (like it normally would). Using the _register_ keyword provides far faster access to the variable than if it were stored in RAM.
 These days, the compiler is generally better at deciding which variables should be stored in the register than people, so they tend to take the _regsiter_ keyword
 as more of a suggestion than a command (See [_"register" Keyword in C_](https://stackoverflow.com/questions/578202/register-keyword-in-c) and [_Death of the register keyword may be greatly exaggerated_](https://blog.bytellect.com/software-development/c-cplusplus/death-of-the-register-keyword-may-be-exaggerated/)).
