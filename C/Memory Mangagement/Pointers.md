@@ -9,7 +9,7 @@ Pointers are declared like a normal variable, but include a '\*' after the datat
 int main(void)
 {
     // A pointer that can point to an integer
-    int* ptr;     // 'ptr' is short for 'pointer'
+    int* ptr;   // int* pointer is not given a value
 
     // Print what 'ptr' points to (NULL)
     printf("The memory address of 'ptr' is: %p\n", ptr);
