@@ -8,6 +8,7 @@ The _extern_ keyword (short for 'external') allows you to use variables and func
 
 File 1
 ```C
+// Compile with 'gcc *.c' ('*' wildcard matches with all C source code files)
 #include <stdio.h>
 
 extern void ascii(char);     // There is a void function that accepts a char in another file
