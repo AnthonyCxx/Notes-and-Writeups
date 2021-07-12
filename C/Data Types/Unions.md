@@ -87,6 +87,54 @@ int main(void)
 > Union float: 25.670000 <br /> 
 > Union int: 1103977513 <br />
 
+## An Example of Unions
+```C
+#include <stdio.h>
+#include <stdbool.h>
+
+// Touchscreen
+typedef struct Touchscreen
+{
+    int sensitivity;
+    bool gesturesEnabled;
+
+} Touchscreen;
+
+// Mouse
+typedef struct Mouse
+{
+    int sensitivity;
+    bool middleClickEnabled;
+
+} Mouse;
+
+// SurfacePro (a kind of tablet)
+typedef struct SurfacePro
+{
+    // Union, so 'touchscreen' and 'mouse' cannot co-exist.
+    union   // Members of an anonymous union can be accessed directly, as if ther was no union
+    {
+        Touchscreen touchscreen;
+        Mouse mouse;
+    };
+
+} SurfacePro;
+
+// Driver code
+int main(void)
+{
+    SurfacePro tablet = { .touchscreen = {5, false} };   // Sensitivity of 5, gestures disabled
+
+    printf("Touchscreen sensitivity: %d\n", tablet.touchscreen.sensitivity);
+    printf("Gestures are %s enabled\n", (tablet.touchscreen.gesturesEnabled ? "" : "not"));
+
+    return 0;
+}
+```
+> Prints: <br />
+> Touchscreen sensitivity: 5
+> Gestures are not enabled
+
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
 - [_TutorialsPoint: C - Unions_](https://www.tutorialspoint.com/cprogramming/c_unions.htm)
