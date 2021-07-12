@@ -4,7 +4,8 @@ A storage class is a modifier for a variable that determines how the variable is
 ## auto
 
 ## extern
-The _extern_ keyword (short for 'external') allows you to use variables and functions declared in other files.
+The _extern_ keyword (short for 'external') provides an alternative to _#include_, allowing you to use variables and functions declared in other files without including the
+other file.
 
 File 1
 ```C
