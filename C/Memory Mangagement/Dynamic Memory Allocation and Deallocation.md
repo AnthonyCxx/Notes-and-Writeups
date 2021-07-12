@@ -10,6 +10,7 @@ free it for you (unlike stack-allocated memory); if you forget to free dynamical
 
 ## Allocating Memory with _malloc()_
 
+
 ## Allocating and Initializing Memory with _calloc()_
 
 ## Resizing Memory with _realloc()_
