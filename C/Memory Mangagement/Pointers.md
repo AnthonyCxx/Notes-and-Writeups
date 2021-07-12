@@ -47,13 +47,38 @@ int main(void)
 > The value of 'var' is: 10 <br />
 
 ## Dereferencing (accessing) Pointers
-Remember that pointers store the memory address of a variable, not the contents itself. Pointers are not a mirror image of another variable;'ptr' in the previous examples 
+Remember that pointers store the memory address of a variable, not the contents itself. Pointers are not a mirror image of another variable; 'ptr' in the previous examples 
 is the actual address in memory. If you want to access the variable at the memory address pointed to by the pointer, then you have to use the [indirection/dereferencing
-operator, '*'](https://www.computerhope.com/jargon/d/dereference-operator.htm).
+operator, '\*'](https://www.computerhope.com/jargon/d/dereference-operator.htm). Putting '\*' before the pointer will access the contents stored at the pointer's location
+in memory.
 
+To clarify, putting '\*' before a pointer while declaring a pointer is what indicates it is a pointer. Putting '\*' before an existing pointer references the contents
+at the memory address of the pointer.
 ```C
+#include <stdio.h>
 
+int main(void)
+{
+    // Declaring an integer and an integer pointer
+    int  var = 5;
+    int* ptr = &var;   // Assign the pointer to the memory address of 'var'
+
+    // Accessing memory addresses
+    printf("The memory address of 'var' is: %p\n", ptr);      // 'ptr' is the address stored in the pointer
+    printf("The memory address of 'ptr' is: %p\n\n", &ptr);   // '&ptr' is the address of the pointer
+
+    // Dereferecning a pointer
+    printf("The value pointed to by the pointer is: %d\n", *ptr);
+
+    return 0;
+}
 ```
+> Prints: <br />
+> The memory address of 'var' is: 0x7ffff9162afc <br />
+> The memory address of 'ptr' is: 0x7ffff9162b00 <br />
+>
+> The value pointed to by the pointer is: 5 <br />
+
 
 ## Deferencing Non-primitive Pointers with the -> Operator
 
