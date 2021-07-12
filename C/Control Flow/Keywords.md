@@ -23,8 +23,8 @@ int main(void)
 }
 ```
 Prints: <br />
-> (1 - 100,000)
-> Breaking loop at 100,001!
+> (1 - 100,000) <br />
+> Breaking loop at 100,001! <br />
 
 ## Continue
 The _continue_ keyword skips the remaining content of the iteration of the loop (if placed at the beginning, that's all of the loop) and then begins the next iteration.
