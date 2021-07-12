@@ -136,8 +136,8 @@ int main(void)
 }
 ```
 > Prints: <br />
-> Touchscreen sensitivity: 5
-> Gestures are not enabled
+> Touchscreen sensitivity: 5 <br />
+> Gestures are not enabled <br />
 
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
