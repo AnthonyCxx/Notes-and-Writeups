@@ -44,6 +44,7 @@ void ascii(char character)
 
 ## static
 Static variables do not go out of scope, unlike local variables. Static variables can be used to maintain values even between function calls.
+The default value of a static variable is 0.
 
 ```C
 #include <stdio.h>
@@ -51,7 +52,7 @@ Static variables do not go out of scope, unlike local variables. Static variable
 // Loop X number of times, keeping track of how many total times
 void loop(int times)
 {
-    static int total;
+    static int total;   // Default value is 0, not garbage.
 
     for(int i = 0; i < times; i++)
     {
