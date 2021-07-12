@@ -15,3 +15,10 @@ free it for you (unlike stack-allocated memory); if you forget to free dynamical
 ## Resizing Memory with _realloc()_
 
 ## Freeing Memory with _free()_
+
+## Sources
+Edpresso: [_How to Use "malloc" in C_](https://www.educative.io/edpresso/how-to-use-malloc-in-c) (good for beginners) <br />
+TutorialsPoint: [_C - Malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) <br />
+JavaTPoint: [_Dynamic Memory Allocation in C_](https://www.javatpoint.com/dynamic-memory-allocation-in-c) <br />
+Wikibooks: [_C Programming/stdlib.h/malloc_](https://en.wikibooks.org/wiki/C_Programming/stdlib.h/malloc) <br />
+Wikipedia: [_C Dynamic Memory Allocation_](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) <br />
