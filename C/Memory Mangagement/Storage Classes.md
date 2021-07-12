@@ -85,4 +85,4 @@ as more of a suggestion than a command (See [_"register" Keyword in C_](https://
 GeeksforGeeks: [_Storage Classes in C_])(https://www.geeksforgeeks.org/storage-classes-in-c/) <br />
 Guru99: [_Storage Classes in C: auto, extern, static, register class in C_](https://www.guru99.com/c-storage-classes.html) <br />
 TutorialsPoint: [_C - Storage Classes_](https://www.tutorialspoint.com/cprogramming/c_storage_classes.htm) <br />
-[_Learn C Programming_](https://www.barnesandnoble.com/w/learn-c-programming-jeff-szuhay/1137258930) <br />
+[_Learn C Programming_](https://www.barnesandnoble.com/w/learn-c-programming-jeff-szuhay/1137258930) by Jeff Szuhay <br />
