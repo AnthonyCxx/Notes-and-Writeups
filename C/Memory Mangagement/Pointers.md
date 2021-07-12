@@ -22,11 +22,29 @@ int main(void)
 
 ## The & Operator
 The [& operator](https://fresh2refresh.com/c-programming/c-interview-questions-answers/what-is-ampersand-and-star-operators-in-c/) yields the memory address of a variable.
-The '&' operator can be used to assign pointers a value (either an existing variable or memory allocated with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm)).
+The '&' operator can be used to assign pointers a value (either an existing variable or memory allocated with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm)). <br />
 
+Here is a demonstration of how a pointer can be used to create aliases to existing variables.
 ```C
+#include <stdio.h>
 
+int main(void)
+{
+    int  var = 5;       // Declare
+    int* ptr = &var;   // Assign the pointer to the memory address of 'var'.
+
+    printf("The value of 'var' is: %d\n", var);
+
+    *ptr = 10;   // 'ptr' is the memory address, '*ptr' is the value stored in 'ptr'
+
+    printf("The value of 'var' is: %d\n", var);
+
+    return 0;
+}
 ```
+> Prints: <br />
+> The value of 'var' is: 5  <br />
+> The value of 'var' is: 10 <br />
 
 ## Dereferencing (accessing) Pointers
 
