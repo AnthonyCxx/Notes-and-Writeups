@@ -65,6 +65,7 @@ The precision specifier changes the amount of decimal places shown when a float 
 | Specifier | Result |
 | --------- | ------ |
 | .(integer) | specifies the amount of decimal places to show for floating-point numbers |
+> You can also use this to truncate strings after a certain amount of characters
 
 ## Flag Specifiers
 Flags alter the standard formatting specifications.
