@@ -86,7 +86,7 @@ int main(void)
 > 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
 ## Allocating and Initializing Memory with _calloc()_
-_calloc()_ makes initializing arrays much easier as it combines the alloccation and initialization by giving each element a default value (0). All _calloc()_ needs
+_calloc()_ makes initializing arrays even easier as it combines the alloccation and initialization by giving each element a default value (0). All _calloc()_ needs
 is the amount of elements and the size of each of them. If you do not need to use _calloc()_, use _malloc()_ instead as it's far more efficient.
 
 ```C
