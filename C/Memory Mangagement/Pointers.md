@@ -63,6 +63,12 @@ int main(void)
     int  var = 5;
     int* ptr = &var;   // Assign the pointer to the memory address of 'var'
 
+    /*
+        ptr  = the memory address stored in 'ptr'
+        &ptr = the memory address of 'ptr'
+        *ptr = the data of the address being pointed to by 'ptr'
+    */
+
     // Accessing memory addresses
     printf("The memory address of 'var' is: %p\n", ptr);      // 'ptr' is the address stored in the pointer
     printf("The memory address of 'ptr' is: %p\n\n", &ptr);   // '&ptr' is the address of the pointer
