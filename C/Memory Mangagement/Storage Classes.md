@@ -77,6 +77,8 @@ int main()
 > The loop has been run a total of 20 times <br />
 
 ## register
-
+The _register_ keyword stores a variable in a [CPU register](https://whatis.techtarget.com/definition/register) rather than [RAM](https://www.studytonight.com/computer-architecture/random-access-memory) (like it normally would). Using the _register_ keyword provides far faster access to the variable than if it were stored in RAM.
+These days, the compiler is generally better at deciding which variables should be stored in the register than people, so they tend to take the _regsiter_ keyword
+as more of a suggestion than a command (See [_"register" Keyword in C_](https://stackoverflow.com/questions/578202/register-keyword-in-c) and [_Death of the register keyword may be greatly exaggerated_](https://blog.bytellect.com/software-development/c-cplusplus/death-of-the-register-keyword-may-be-exaggerated/)).
 
 ## Sources
