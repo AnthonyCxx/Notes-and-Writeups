@@ -3,8 +3,8 @@ A storage class is a modifier for a variable that determines how the variable is
 
 ## auto
 I'll be honest, _auto_ is a useless keyword; in fact, it was so useless that [C++ repurposed it](https://docs.microsoft.com/en-us/cpp/cpp/auto-cpp?view=msvc-160#remarks).
-_auto_ just specifies that the variable being declared is local (not global). Because of this, it can only be used within functions, whose variables are automatically
-local. You see the problem.
+_auto_ just specifies that the variable being declared is local (not global). Because of this, it can only be used within functions, whose variables are automatically and
+already local. You see the problem.
 
 ## extern
 The _extern_ keyword (short for 'external') provides an alternative to _#include_, allowing you to use variables and functions declared in other files without including the
@@ -43,6 +43,37 @@ void ascii(char character)
 ```
 
 ## static
+Static variables do not go out of scope, unlike local variables. Static variables can be used to maintain values even between function calls.
+
+```C
+#include <stdio.h>
+
+// Loop X number of times, keeping track of how many total times
+void loop(int times)
+{
+    static int total;
+
+    for(int i = 0; i < times; i++)
+    {
+        total++;
+    }
+
+    printf("The loop has been run a total of %d times\n", total);
+}
+
+int main()
+{
+    loop(3);      // Loop 3 times
+    loop(5);     // Loop 5 times
+    loop(12);   // Loop 12 times
+
+    return 0;
+}
+```
+> Prints: <br />
+> The loop has been run a total of 3 times <br />
+> The loop has been run a total of 8 times <br />
+> The loop has been run a total of 20 times <br />
 
 ## register
 
