@@ -143,7 +143,7 @@ int main(void)
 
     // Print all the elements of the array
     printf("Array elements: ");
-    for(int i=0; i < 5; i++)  //i++ = i += i + 1 * sizeof(type)
+    for(int i=0; i < 5; i++)
     {
         printf("%d ", *(scoreboard + i));   // 'scoreboard[i]' also works
     }
