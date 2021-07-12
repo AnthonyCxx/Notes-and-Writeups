@@ -47,8 +47,9 @@ int main(void)
 > The value of 'var' is: 10 <br />
 
 ## Dereferencing (accessing) Pointers
-Remember that pointers store the memory address of a variable, not the contents itself. Thus, 'ptr' in the previous examples is the actual address in memory. 
-If you want to access
+Remember that pointers store the memory address of a variable, not the contents itself. Pointers are not a mirror image of another variable; hus, 'ptr' in the previous examples 
+is the actual address in memory. If you want to access the variable at the memory address pointed to by the pointer, then you have to use the [indirection/dereferencing
+operator, '*'](https://www.computerhope.com/jargon/d/dereference-operator.htm).
 
 ```C
 
