@@ -143,10 +143,10 @@ int main(void)
 
     // Print all the elements of the array
     printf("Array elements: ");
-    for(int i=0; i < 5; i++)
+    for(int i=0; i < 5; i++) 
     {
         printf("%d ", *(scoreboard + i));   // 'scoreboard[i]' also works
-    }
+    }                  ^  // is essentially dereferencing 'sizeof(scoreboard) + sizeof(i)'
     putchar('\n');
 
     // Free the memory of the scoreboard on the heap (prevents memory leak)
