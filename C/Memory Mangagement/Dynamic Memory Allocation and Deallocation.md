@@ -13,7 +13,31 @@ free it for you (unlike stack-allocated memory); if you forget to free dynamical
 ## Allocating Memory with _malloc()_
 The [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) function allocates _n_ bytes where _n_ is an integer provided as the function argument.
 Memory allocated with _malloc()_ **does not have a datatype** by default and must be typecasted via `(datatype*)`. Any memory allocated with _malloc()_ must be freed with 
-[_free()_]().
+[_free()_](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm).
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    // Allocate memory for a single integer and typecast the memory to an integer pointer
+    int* ptr = (int*) malloc( sizeof(int) );
+
+    // Set the value of the dynamically-allocated memory
+    *ptr = 5;
+
+    // Use the value
+    printf("The dynamically-allocated memory holds the integer value \'%d\'\n", *ptr);
+
+    // Free the heap-allocated memory
+    free(ptr);      // You can only free pointers, so you do not need to add the '*'
+
+    return 0;
+}
+```
+> Prints: <br />
+> The dynamically-allocated memory holds the integer value '5' <br />
 
 ## Allocating and Initializing Memory with _calloc()_
 
