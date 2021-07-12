@@ -85,8 +85,9 @@ int main(void)
 >
 > The value pointed to by the pointer is: 5 <br />
 
-
 ## Deferencing Non-primitive Pointers with the -> Operator
+Pointers can also be used with [non-primitive datatypes](https://www.wikitechy.com/step-by-step-tutorials/c-programming/c-non-primitive-data-types), such as [structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md).
+However, it becomes a bit more complex due to a problem with [operator precedence](https://www.tutorialspoint.com/cprogramming/c_operators_precedence.htm#:~:text=Advertisements,precedence%20than%20the%20addition%20operator.).
 
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
