@@ -47,10 +47,13 @@ int main(void)
 > The value of 'var' is: 10 <br />
 
 ## Dereferencing (accessing) Pointers
+Remember that pointers only 
 
 ```C
 
 ```
+
+## Deferencing Non-primitive Pointers
 
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
