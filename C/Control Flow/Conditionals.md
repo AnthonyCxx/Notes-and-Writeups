@@ -180,13 +180,13 @@ int main(void)
 
     switch (coins)
     {
-        case 300 ... 999:
+        case 300 ... 999:    // case 300 - case 999
             puts("You can buy a large health potion.");
 
-        case 200 ... 299:
+        case 200 ... 299:    // case 200 - case 299
             puts("You can buy a medium health potion.");
 
-        case 100 ... 199:
+        case 100 ... 199:   // case 100 - case 199
             puts("You can buy a small health potion.");
             break;
 
