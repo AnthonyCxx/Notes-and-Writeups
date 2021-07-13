@@ -61,7 +61,7 @@ int main(void)
     // Always check for errors
     if (ptr == NULL)
     {
-        puts("Error: No memory available");      // This should almost never happen unless asking for a massive ptray
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
         assert(0);
     }
 
@@ -107,7 +107,7 @@ int main(void)
     // Always check for errors
     if (ptr == NULL)
     {
-        puts("Error: No memory available");      // This should almost never happen unless asking for a massive ptray
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
         assert(0);
     }
 
@@ -130,11 +130,50 @@ int main(void)
 
 ## Resizing Memory with _realloc()_
 [_realloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_realloc.htm) allows you to resize a chunk of allocated memory. You can downsize a block of memory
-using _realloc()_ and if you set it to 0 then the memory will be deallocated. Like _malloc()_ and _calloc()_, _realloc()_ returns NULL if it fails.
+using _realloc()_ and if you set it to 0 then the memory will be deallocated. Note that _realloc()_ does NOT initialize any new memory it allocates. Like _malloc()_ and
+_calloc()_, _realloc()_ returns NULL if it fails.
 
 ```C
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void)
+{
+    // Allocate memory for a single integer and typecast the memory to an integer pointer
+    int* ptr = (int*) calloc(15, sizeof(int));      // An array of 15 integers
+
+    // Always check for errors
+    if (ptr == NULL)
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
+
+
+    // Print array values
+    for(int i=0; i < 15; i++)
+    {
+        printf("%d ", ptr[i]);
+    }
+    putchar('\n');
+
+    // Resize array to 20 elements
+    ptr = (int*) realloc(ptr, 20);          // Does not initialize the new 5 elements!
+
+    // Print array values
+    for(int i=0; i < 20; i++)
+    {
+        printf("%d ", ptr[i]);
+    }
+    putchar('\n');
+
+
+    // Free the heap-allocated memory
+    free(ptr);      // You can only free pointers, so you do not need to add the '*'
+
+    return 0;
+}
 ```
+> Prints: <br />
+> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+> 0 0 0 0 0 0 49 0 0 0 -785997808 32767 0 0 0 0 0 0 4113 0
 
 ## Freeing Memory with _free()_
 
