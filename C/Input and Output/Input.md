@@ -87,6 +87,7 @@ int main()
 ```
 > Prints: <br />
 > Your phone number is 719-381-9920 <br />
+> 
 > Note: the phone number was randomly generated using [this website](https://www.randomphonenumbers.com/) <br />
 
 ## gets()
