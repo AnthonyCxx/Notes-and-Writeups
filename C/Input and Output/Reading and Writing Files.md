@@ -45,6 +45,10 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 >
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
+## Reading from Files
+
+## Writing to Files
+
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
 Study.com [_Declaring, Opening & Closing File Streams in C Programming_](https://study.com/academy/lesson/declaring-opening-closing-file-streams-in-c-programming.html) <br />
