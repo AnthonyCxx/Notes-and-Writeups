@@ -71,7 +71,7 @@ int main(void)
     */
 
     // Accessing memory addresses
-    printf("The memory address of 'var' is: %p\n", ptr);      // 'ptr' is the address stored in the pointer
+    printf("The memory address of 'var' is: %p\n", ptr);       // 'ptr' is the address stored in the pointer
     printf("The memory address of 'ptr' is: %p\n\n", &ptr);   // '&ptr' is the address of the pointer
 
     // Dereferecning a pointer
