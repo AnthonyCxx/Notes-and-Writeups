@@ -1,4 +1,6 @@
 # Control Flow in C
+[Control flow](https://www.softprayog.in/programming/c-programming-tutorial-control-flow-and-functions) is the ability to make logical decisions in your code that 
+alter the [flow of execution](https://en.wikipedia.org/wiki/Control_flow#:~:text=In%20computer%20science%2C%20control%20flow,from%20a%20declarative%20programming%20language.).
 
 | File | Function |
 | ---- | -------- |
