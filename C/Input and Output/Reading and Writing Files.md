@@ -34,8 +34,8 @@ int main()
 ### File Modes
 | Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | -------------- | ---------------------- |
-| r | reads file | - | returns NULL |
-| rb | reads binary file | - | returns NULL |
+| r | reads file | N/A | returns NULL |
+| rb | reads binary file | N/A | returns NULL |
 | w | writes to file | overwrites file | creates file |
 | wb | writes to binary file | overwrites file | creates file |  
 | a | append to file | adds to the end of the file | creates file |  
