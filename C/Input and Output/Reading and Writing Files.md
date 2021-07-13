@@ -23,7 +23,7 @@ int main()
     }
 
     // Close the file
-    fclose(readfile);
+    fclose(readfile);    // If 'readfile' is NULL, fclose() causes a segmentation fault
 
     return 0;
 }
