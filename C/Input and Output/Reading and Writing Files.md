@@ -49,12 +49,14 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 
 ## Reading from Files
 
+
 ## Writing to Files
 
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
 JavaTPoint: [_File Handling in C_](https://www.javatpoint.com/file-handling-in-c) <br />
 JavaTPoint: [_C fprintf() and fscanf()_](https://www.javatpoint.com/fprintf-fscanf-in-c) <br />
+DelftStack: [_Read File Line by Line Using fscanf in C_](https://www.delftstack.com/howto/c/fscanf-line-by-line-in-c/) <br />
 JavaTPoint: [_C fputc() and fgetc()_](https://www.javatpoint.com/fputc-fgetc-in-c) <br />
 JavaTPoint: [_C fputs() and fgets()_](https://www.javatpoint.com/fputs-fgets-in-c) <br />
 Fresh2Refresh: [_C - File Handling_](https://fresh2refresh.com/c-programming/c-file-handling/) <br />
