@@ -181,7 +181,7 @@ int main(void)
 
 ## Freeing Memory with _free()_
 The [_free()_](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm) function deallocates any memory allocated with _malloc()_, _calloc()_ or _realloc()_.
-You *must* ues _free()_ every time you finish using some variable that was declared using any of the three prior functions.
+You **must** ues _free()_ every time you finish using some variable that was declared using any of the three prior functions.
 
 ```C
 #include <stdio.h>
