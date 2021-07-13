@@ -34,12 +34,12 @@ int main()
 ### File Modes
 | Mode | Full Name | If File Exists | If File Does Not Exist |
 | ---- | --------- | -------------- | ---------------------- |
-| r | read | | returns NULL |
-| rb | read (binary mode) |  |returns NULL |
-| w |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| r | read | - | returns NULL |
+| rb | read (binary mode) | - | returns NULL |
+| w | write | overwrites file | creates file |
+| wb | write (binary mode) | overwrites file | creates file |  
+|  |  |  |  |  
+|  |  |  |  | 
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
 ## Sources: 
