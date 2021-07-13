@@ -86,3 +86,27 @@ int main(void)
     return 0;
 }
 ```
+
+## sprintf(__*char\* str*__, __*const char\* str*__, __*formatting variables*__)
+_sprintf()_ allows you to format a string with variables and store the result in a char*/char\[\]. <br />
+The arguments in order are a char*/char\[\], a string that can be formatted, and the variables to format the string with.
+
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    // Declare a char*
+    char date[50];       // __DATE__ is 41 / 50 bytes
+
+    // Format the date
+    sprintf(date, "This program was compiled on %s", __DATE__);
+
+    // Print the date
+    puts(date);
+
+    return 0;
+}
+```
+> Prints: <br />
+> This program was compiled on Jul 12 2021
