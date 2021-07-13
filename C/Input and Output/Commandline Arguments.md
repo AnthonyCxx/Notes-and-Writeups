@@ -1,6 +1,6 @@
 # Using Commandline Arguments in C
 Commandline arguments are [function arguments](http://www.trytoprogram.com/c-programming/c-programming-function-arguments/#:~:text=C%20programming%20function%20arguments%20also,carry%20out%20the%20specified%20task.) that are passed to the main function at the commandline when the 
-program is run. To use commandline arguments,
+program is run. To use commandline arguments, change the parameters of the _main_ function from '_void_' to '_int argc, char* argv[]_'
 
 ```C
 #include <stdio.h>
