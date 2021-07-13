@@ -100,7 +100,7 @@ int main(void)
     char date[50];       // __DATE__ is 41 / 50 bytes
 
     // Format the date
-    sprintf(date, "This program was compiled on %s", __DATE__);
+    sprintf(date, "This program was compiled on %s", __DATE__);    // __DATE__ macro only available with GCC compilers
 
     // Print the date
     puts(date);
