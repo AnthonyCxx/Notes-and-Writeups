@@ -23,7 +23,7 @@ int main()
 
 ### File Modes
 
-
+> Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
