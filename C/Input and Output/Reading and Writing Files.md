@@ -31,7 +31,7 @@ int main()
 ```
 
 ### File Modes
-| Mode | Full Name | If File Exists | If File does not Exist |
+| Mode | Full Name | If File Exists | If File Does Not Exist |
 | ---- | --------- | -------------- | ---------------------- |
 | r | read | | returns NULL |
 | rb | read (binary mode) |  |returns NULL |
