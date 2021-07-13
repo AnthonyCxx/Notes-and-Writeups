@@ -88,8 +88,8 @@ int main(void)
 ```
 
 ## sprintf(__*char\* str*__, __*const char\* str*__, __*formatting variables*__)
-_sprintf()_ allows you to format a string with variables and store the result in a char*/char\[\]. <br />
-The arguments in order are a char*/char\[\], a string that can be formatted, and the variables to format the string with.
+_sprintf()_ allows you to format a string with variables and store the result in a char\[\]. <br />
+The arguments in order are a char\[\], a string that can be formatted, and the variables to format the string with.
 
 ```C
 #include <stdio.h>
