@@ -20,6 +20,7 @@ Finally, if _malloc()_ cannot allocate memory (because there is not enough room)
 ```C
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>   // for 'assert(0)'
 
 int main(void)
 {
@@ -189,6 +190,7 @@ You **must** ues _free()_ every time you finish using some variable that was dec
 ```C
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>   // for 'assert(0)'
 
 int main(void)
 {
