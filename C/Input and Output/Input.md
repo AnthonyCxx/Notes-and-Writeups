@@ -35,8 +35,6 @@ The _scanf()_ function reads input until it reaches a whitespace. _scanf()_ is g
 the format of the input (as a [formatted string](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md), like with _printf()_) and the memory address of the variable to store the data read in. Remember that the name of an array is a pointer to the first element, so you do not need to
 use the [_&_ (address-of) operator](https://www.educba.com/address-operator-in-c/) with buffers (character arrays). <br />
 
-You can scan for '_%\[^\\n\]s_' to emulate the
-[_gets()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#gets) function, but you will run into the same problem of buffer overflows.
 ```C
 #include <stdio.h>
 
@@ -64,6 +62,32 @@ int main(void)
 > [_Study Tonight: Input and Output in C_](https://www.studytonight.com/c/c-input-output-function.php) <br />
 > [_Dummies.com: Basics of scanf() in C Programming_](https://www.dummies.com/programming/c/basics-of-the-scanf-function-in-c-programming/) <br />
 > [_Quora: What is Scanf()_ with \[^n\]?](https://www.quora.com/What-is-scanf-n) <br />
+
+### Scansets
+_scanf()_ can be formatted using [scansets](https://www.geeksforgeeks.org/scansets-in-c/) so it only processes certain characters; scansets are a type of [format specifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md).
+You can put ranges of characters by using hyphens; `a-z` is all the characters a through z and `A-Z` is all the characters A through Z; `a-zA-Z` is all letters, lowercase and 
+uppercase. Here, the set `%[0-9-]s` is a scanset composed of the digits 0-9 and a hyphen. <br />
+
+Keep in mind that _scanf()_ will stop when it gets to a character not in the scanset. If you did only `%[0-9]`, _scanf()_ would stop reading at the first hyphen.
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char phoneNumber[50];
+
+    printf("Enter your phone number: ");
+    scanf("%[0-9-]d", phoneNumber);       // scanset accepts digits 0-9 and hyphens
+
+    printf("Your phone number is %s\n", phoneNumber);
+
+    return 0;
+}
+```
+> Prints: <br />
+> Your phone number is 719-381-9920
+> Note: the phone number was randomly generated using [this website](https://www.randomphonenumbers.com/)
 
 ## gets()
 The _gets()_ function reads from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) until it encounters a newline (\n) or EOF character.
