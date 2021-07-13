@@ -7,7 +7,7 @@ Otherwise, you will have [memory leak](https://www.geeksforgeeks.org/what-is-mem
 
 ## Opening and Closing Files
 
-## File Modes
+### File Modes
 
 
 
