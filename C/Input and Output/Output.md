@@ -79,7 +79,7 @@ int main(void)
 
     if (ptr == NULL)
     {
-        fprintf(stderr, "Error, no memory left");
+        fprintf(stderr, "Error, no memory left");  //stderr is a standard FILE* stream
         exit(1);   // Exit with minor error code
     }
 
