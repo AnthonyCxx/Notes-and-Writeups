@@ -176,10 +176,40 @@ int main(void)
 }
 ```
 > Prints: <br />
-> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-> 0 0 0 0 0 0 49 0 0 0 -785997808 32767 0 0 0 0 0 0 4113 0
+> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 <br />
+> 0 0 0 0 0 0 49 0 0 0 -785997808 32767 0 0 0 0 0 0 4113 0 <br />
 
 ## Freeing Memory with _free()_
+The [_free()_](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm) function deallocates any memory allocated with _malloc()_, _calloc()_ or _realloc()_.
+You *must* ues _free()_ every time you finish using some variable that was declared using any of the three prior functions.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    // Allocate memory for a single integer and typecast the memory to an integer pointer
+    int* ptr = (int*) malloc( sizeof(int) );
+
+    // Always check for errors
+    if (ptr == NULL)
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
+
+    // Set the value of the dynamically-allocated memory
+    *ptr = 5;
+
+    // Use the value
+    printf("The dynamically-allocated memory holds the integer value \'%d\'\n", *ptr);
+
+    // Free the heap-allocated memory
+    free(ptr);      // You can only free pointers, so you do not need to add the '*'
+
+    return 0;
+}
+```
+> Prints: <br />
+> The dynamically-allocated memory holds the integer value '5' <br />
 
 ## Sources
 Edpresso: [_How to Use "malloc" in C_](https://www.educative.io/edpresso/how-to-use-malloc-in-c) (good for beginners) <br />
