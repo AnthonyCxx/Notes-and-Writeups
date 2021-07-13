@@ -61,7 +61,6 @@ int main(void)
 > Sources: <br />
 > [_Study Tonight: Input and Output in C_](https://www.studytonight.com/c/c-input-output-function.php) <br />
 > [_Dummies.com: Basics of scanf() in C Programming_](https://www.dummies.com/programming/c/basics-of-the-scanf-function-in-c-programming/) <br />
-> [_Quora: What is Scanf()_ with \[^n\]?](https://www.quora.com/What-is-scanf-n) <br />
 
 ### Scansets
 _scanf()_ can be formatted using [scansets](https://www.geeksforgeeks.org/scansets-in-c/) so it only processes certain characters; scansets are a type of [format specifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md).
@@ -89,6 +88,8 @@ int main()
 > Your phone number is 719-381-9920 <br />
 > 
 > Note: the phone number was randomly generated using [this website](https://www.randomphonenumbers.com/) <br />
+> [_Quora: What is Scanf()_ with \[^\\n\]?](https://www.quora.com/What-is-scanf-n) <br />
+
 
 ## gets()
 The _gets()_ function reads from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) until it encounters a newline (\n) or EOF character.
