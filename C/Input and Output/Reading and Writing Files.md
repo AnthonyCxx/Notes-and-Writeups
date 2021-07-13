@@ -29,7 +29,7 @@ int main()
     return 0;
 }
 ```
-> Reference: [_What is a Segementation Fault?_](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/#:~:text=Core%20Dump%2FSegmentation%20fault%20is,an%20error%20indicating%20memory%20corruption.)
+> Reference: [_What is a Segementation Fault?_](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/#:~:text=Core%20Dump%2FSegmentation%20fault%20is,an%20error%20indicating%20memory%20corruption.) <br />
 
 ### File Modes
 _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file if it does.
