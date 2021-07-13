@@ -49,6 +49,41 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 
 ## Reading from Files
 
+### fscanf()
+[_fscanf()_](https://www.javatpoint.com/fprintf-fscanf-in-c) works like [_scanf()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#scanf) for files, reading until it reaches whitespace. Like with _scanf()_, you can use scansets with _fscanf()_
+
+```C
+#include <stdio.h>
+#include <stdlib.h>    // include 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in read (r) mode
+    FILE* readfile = fopen("other.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
+    char text[256];                           // A buffer to store the file
+
+    // If opening the file succeeded
+    if (readfile != NULL)
+    {
+        // Read a single word from the file
+        fscanf(readfile, "%s", text);    // file to read from, format, where to store the content
+
+        // Print the line
+        printf("The first word of the file is: \'%s\'\n", text);
+
+        // Close the file
+        fclose(readfile);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+
+    return 0;
+}
+```
 
 ## Writing to Files
 
