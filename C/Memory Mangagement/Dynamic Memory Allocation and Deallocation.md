@@ -90,8 +90,9 @@ int main(void)
 > 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
 ## Allocating and Initializing Memory with _calloc()_
-_calloc()_ makes initializing arrays even easier as it combines the alloccation and initialization by giving each element a default value (0). All _calloc()_ needs
-is the amount of elements and the size of each of them. If you do not need to use _calloc()_, use _malloc()_ instead as it's far more efficient.
+[_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) makes initializing arrays even easier as it combines the alloccation and 
+initialization by giving each element a default value (0). All _calloc()_ needs is the amount of elements and the size of each of them. If you do not need to use 
+_calloc()_, use _malloc()_ instead as it's far more efficient.
 
 ```C
 #include <stdio.h>
@@ -128,6 +129,12 @@ int main(void)
 > 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 ## Resizing Memory with _realloc()_
+[_realloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_realloc.htm) allows you to resize a chunk of allocated memory. You can downsize a block of memory
+using _realloc()_ and if you set it to 0 then the memory will be deallocated. Like _malloc()_ and _calloc()_, _realloc()_ returns NULL if it fails.
+
+```C
+
+```
 
 ## Freeing Memory with _free()_
 
