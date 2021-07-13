@@ -96,7 +96,7 @@ The arguments in order are a char*/char\[\], a string that can be formatted, and
 
 int main(void)
 {
-    // Declare a char*
+    // Declare a buffer
     char date[50];       // __DATE__ is 41 / 50 bytes
 
     // Format the date
