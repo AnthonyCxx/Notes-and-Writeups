@@ -29,6 +29,7 @@ int main()
     return 0;
 }
 ```
+> Reference: [_What is a Segementation Fault?_](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/#:~:text=Core%20Dump%2FSegmentation%20fault%20is,an%20error%20indicating%20memory%20corruption.)
 
 ### File Modes
 | Mode | Full Name | If File Exists | If File Does Not Exist |
