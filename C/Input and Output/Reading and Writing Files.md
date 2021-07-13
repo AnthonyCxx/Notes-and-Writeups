@@ -12,7 +12,7 @@ Otherwise, you will have [memory leak](https://www.geeksforgeeks.org/what-is-mem
 int main()
 {
     // Open a file 'textfile.txt' in read (r) mode
-    FILE* readfile = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
+    FILE* readfile = fopen("textfile.txt", "r"); 
 
     // Check for errors
     if (readfile != NULL) {
