@@ -136,15 +136,19 @@ _calloc()_, _realloc()_ returns NULL if it fails.
 ```C
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>   // for 'assert(0)'
 
 int main(void)
 {
     // Allocate memory for a single integer and typecast the memory to an integer pointer
     int* ptr = (int*) calloc(15, sizeof(int));      // An array of 15 integers
 
-    // Always check for errors
+   // Always check for errors
     if (ptr == NULL)
+    {
         puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
+        assert(0);
+    }
 
 
     // Print array values
