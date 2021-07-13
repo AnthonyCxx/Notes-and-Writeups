@@ -4,13 +4,7 @@
 
 ## File Modes
 
-| Mode | Meaning | If the file does not exist |
-| ---- | ------- |
-| r | read |
-| w | write |
-| a | [append](https://www.quora.com/What-is-append-mode-in-C) |
-| r+ | read and write |
-|  |  |
+
 
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
