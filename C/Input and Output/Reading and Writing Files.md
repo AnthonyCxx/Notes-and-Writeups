@@ -32,13 +32,16 @@ int main()
 > Reference: [_What is a Segementation Fault?_](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/#:~:text=Core%20Dump%2FSegmentation%20fault%20is,an%20error%20indicating%20memory%20corruption.)
 
 ### File Modes
-| Mode | Full Name | If File Exists | If File Does Not Exist |
+| Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | -------------- | ---------------------- |
-| r | read | - | returns NULL |
-| rb | read (binary mode) | - | returns NULL |
-| w | write | overwrites file | creates file |
-| wb | write (binary mode) | overwrites file | creates file |  
-|  |  |  |  |  
+| r | reads file | - | returns NULL |
+| rb | reads binary file | - | returns NULL |
+| w | writes to file | overwrites file | creates file |
+| wb | writes to binary file | overwrites file | creates file |  
+| a | append to file | adds to the end of the file | creates file |  
+|  |  |  |  | 
+|  |  |  |  | 
+|  |  |  |  | 
 |  |  |  |  | 
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
