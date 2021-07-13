@@ -65,3 +65,5 @@ int main(void)
 > Note: the '.2' between the standard _%f_ determines the amount of decimal places in the float. <br />
 > 
 > Extra reading: [here are some notes](https://web.ecs.syr.edu/~wedu/Teaching/cis643/LectureNotes_New/Format_String.pdf) from Syracruse University on the format string vulnerability. <br />
+
+## fprintf(__*FILE\**__,__*str*__)
