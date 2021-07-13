@@ -42,7 +42,9 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 | w+ | read and write to file | overwrites file | creates file | 
 | a+ | read and append to file | same as function | creates file | 
 > To work with [binary files](https://en.wikipedia.org/wiki/Binary_file) (.bin), add a 'b' (for binary) after the first letter (rb, wb, ab, rb+, wb+, ab+) <br />
->
+
+
+> https://www.javatpoint.com/file-handling-in-c
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
 ## Reading from Files
@@ -51,4 +53,6 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
+JavaTPoint: [_File Handling in C_](https://www.javatpoint.com/file-handling-in-c) <br />
+Fresh2Refresh: [_C - File Handling_](https://fresh2refresh.com/c-programming/c-file-handling/) <br />
 Study.com [_Declaring, Opening & Closing File Streams in C Programming_](https://study.com/academy/lesson/declaring-opening-closing-file-streams-in-c-programming.html) <br />
