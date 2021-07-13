@@ -35,17 +35,11 @@ int main()
 | Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | ------------- | ---------------------- |
 | r | reads file | N/A | returns NULL |
-| rb | reads binary file | N/A | returns NULL |
-| w | writes to file | overwrites file | creates file |
-| wb | writes to binary file | overwrites file | creates file |  
+| w | writes to file | overwrites file | creates file | 
 | a | append to file | appends to file | creates file |  
-| ab | append to binary file | appends to binary file | creates file | 
 | r+ | read and write to file | can read and write to file (r + w) | returns NULL | 
-| rb+ | read and write to file | can read and write to file (rb + w) | returns NULL | 
 | w+ | read and write to file | overwrites file | creates file | 
-| wb+ | read and write to binary file | overwrites file | creates file | 
 | a+ | read and append to file |  | creates file | 
-| ab+ | read and append to binary file |  | creates file | 
 > To work with [binary files](https://en.wikipedia.org/wiki/Binary_file) (.bin), add a 'b' (for binary) after the first letter (e.g. rb, wb, ab, rb+, wb+, ab+) <br />
 >
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
