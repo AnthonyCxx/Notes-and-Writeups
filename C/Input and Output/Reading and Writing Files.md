@@ -31,7 +31,7 @@ int main()
 ```
 > Reference: [_What is a Segementation Fault?_](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/#:~:text=Core%20Dump%2FSegmentation%20fault%20is,an%20error%20indicating%20memory%20corruption.)
 
-### Standard File Modes
+### File Modes
 | Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | ------------- | ---------------------- |
 | r | reads file | same as function | returns NULL |
