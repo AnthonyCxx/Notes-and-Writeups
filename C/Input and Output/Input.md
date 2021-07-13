@@ -94,6 +94,32 @@ int main(void)
 > \*\*\* stack smashing detected \*\*\*: terminated <br />
 > Aborted (core dumped) <br />
 
+## fscanf()
+The _fscanf()_ function works as _scanf()_ for [_FILE*_](https://www.geeksforgeeks.org/data-type-file-c/) streams. _fscanf()_ takes three parameters: the _FILE\*_ pointer,
+the format of the input, and the list of variables to store the input. Like _scanf()_, you have to use '&' for non-pointers.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char month[20];
+    int day, year;
+
+    // Open a file 'date.txt' in read mode
+    FILE* readfile = fopen("date.txt", "r");
+
+    // Scan the date from the file
+    fscanf(readfile, "%s %d %d", month, &day, &year);
+
+    // Print the date
+    printf("Today's date is %s %dth, %d\n", month, day, year);
+}
+```
+> Prints: <br />
+> Today's date is January 100th, 1984 <br />
+
 ## fgets()
 The _fgets()_ function reads a set amount of characters from a [_FILE*_](https://www.geeksforgeeks.org/data-type-file-c/) stream. Because the [standard streams](https://www.gnu.org/software/libc/manual/html_node/Standard-Streams.html) are 'files', you can use _fgets()_ to read from files _and_ from the standard input, output, and error streams. _fgets()_ takes three parameters: the buffer to store the characters read, the max amount of characters to read (typically the size of the buffer) and the 
 _FILE*_ to read from ('stdin' is the keyboard).
