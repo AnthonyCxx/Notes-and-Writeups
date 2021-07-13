@@ -77,7 +77,7 @@ int main()
     char phoneNumber[50];
 
     printf("Enter your phone number: ");
-    scanf("%[0-9-]d", phoneNumber);       // scanset accepts digits 0-9 and hyphens
+    scanf("%[0-9-]s", phoneNumber);       // scanset accepts digits 0-9 and hyphens
 
     printf("Your phone number is %s\n", phoneNumber);
 
