@@ -31,11 +31,11 @@ int main()
 ```
 
 ### File Modes
-| Mode | Function | If the file Does Not Exist |
+| Mode | Function | If the File If the file Does Not Exist |
 | ---- | -------- | -------------------------- |
 | r | read | returns NULL |
 | rb | read (binary mode) | returns NULL |
-|  |  |  |
+| w |  |  |
 |  |  |  |
 |  |  |  |
 |  |  |  |
