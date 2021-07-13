@@ -34,7 +34,7 @@ int main()
 ### Standard File Modes
 | Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | ------------- | ---------------------- |
-| r | reads file | N/A | returns NULL |
+| r | reads file | same as function | returns NULL |
 | w | writes to file | overwrites file | creates file | 
 | a | append to file | same as function | creates file |  
 | r+ | read and write to file | same as function | returns NULL | 
