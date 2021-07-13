@@ -86,8 +86,8 @@ int main()
 }
 ```
 > Prints: <br />
-> Your phone number is 719-381-9920
-> Note: the phone number was randomly generated using [this website](https://www.randomphonenumbers.com/)
+> Your phone number is 719-381-9920 <br />
+> Note: the phone number was randomly generated using [this website](https://www.randomphonenumbers.com/) <br />
 
 ## gets()
 The _gets()_ function reads from [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) until it encounters a newline (\n) or EOF character.
