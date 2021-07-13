@@ -51,6 +51,7 @@ Arrays are easy to allocate with _malloc()_, just multiply the amount of element
 ```C
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>   // for 'assert(0)'
 
 int main(void)
 {
@@ -59,7 +60,10 @@ int main(void)
 
     // Always check for errors
     if (ptr == NULL)
+    {
         puts("Error: No memory available");      // This should almost never happen unless asking for a massive ptray
+        assert(0);
+    }
 
 
     // Initialize array values to 1-15
@@ -92,6 +96,7 @@ is the amount of elements and the size of each of them. If you do not need to us
 ```C
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>   // for 'assert(0)'
 
 int main(void)
 {
@@ -100,8 +105,10 @@ int main(void)
 
     // Always check for errors
     if (ptr == NULL)
+    {
         puts("Error: No memory available");      // This should almost never happen unless asking for a massive ptray
-
+        assert(0);
+    }
 
     // Print array values
     for(int i=0; i < 15; i++)
