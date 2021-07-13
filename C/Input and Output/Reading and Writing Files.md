@@ -6,6 +6,20 @@ Yes, this means that if you open a file with [_fopen()_](https://www.geeksforgee
 Otherwise, you will have [memory leak](https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/).
 
 ## Opening and Closing Files
+```C
+#include <stdio.h>
+
+int main()
+{
+    // Open the file
+    FILE* readfile = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
+
+    // Close the file
+    fclose(readfile);
+
+    return 0;
+}
+```
 
 ### File Modes
 
