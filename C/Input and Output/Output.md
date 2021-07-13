@@ -66,4 +66,23 @@ int main(void)
 > 
 > Extra reading: [here are some notes](https://web.ecs.syr.edu/~wedu/Teaching/cis643/LectureNotes_New/Format_String.pdf) from Syracruse University on the format string vulnerability. <br />
 
-## fprintf(__*FILE\**__,__*str*__)
+## fprintf(__*FILE\**__, __*str*__, __*formatting variables*__)
+_fprintf()_ is _printf()_ but for [_FILE*_](https://www.geeksforgeeks.org/data-type-file-c/) streams. Because the [standard streams](https://www.gnu.org/software/libc/manual/html_node/Standard-Streams.html) are 'files', you can use _fprintf()_ to read from files _and_ from the standard input, output, and error streams. Here is an example of writing an error to the _stderr_.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int* ptr = (int*) malloc(sizeof(int));
+
+    if (ptr == NULL)
+    {
+        fprintf(stderr, "Error, no memory left");
+        exit(1);   // Exit with minor error code
+    }
+
+    return 0;
+}
+```
