@@ -28,7 +28,10 @@ int main(void)
 
     // Always check for errors
     if (ptr == NULL)
+    {
         puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
+        assert(0);
+    }
 
     // Set the value of the dynamically-allocated memory
     *ptr = 5;
@@ -194,7 +197,10 @@ int main(void)
 
     // Always check for errors
     if (ptr == NULL)
+    {
         puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
+        assert(0);
+    }
 
     // Set the value of the dynamically-allocated memory
     *ptr = 5;
