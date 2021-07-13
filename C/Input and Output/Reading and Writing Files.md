@@ -22,7 +22,13 @@ int main()
 ```
 
 ### File Modes
-
+| Mode | Function | If the file Does Not Exist |
+| r | read | returns NULL |
+| rb | read (binary mode) | returns NULL |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
 ## Sources: 
