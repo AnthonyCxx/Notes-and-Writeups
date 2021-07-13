@@ -54,13 +54,13 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 
 ```C
 #include <stdio.h>
-#include <stdlib.h>    // include 'exit()'
+#include <stdlib.h>    // includes 'exit()'
 
 int main()
 {
     // Open a file 'textfile.txt' in read (r) mode
-    FILE* readfile = fopen("other.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
-    char text[256];                           // A buffer to store the file
+    FILE* readfile = fopen("textfile.txt", "r");   // Open 'textfile.txt' in 'r' (read) mode
+    char text[256];                               // A buffer to store the file
 
     // If opening the file succeeded
     if (readfile != NULL)
@@ -84,6 +84,8 @@ int main()
     return 0;
 }
 ```
+
+
 
 ## Writing to Files
 
