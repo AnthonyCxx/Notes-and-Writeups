@@ -31,7 +31,7 @@ int main()
 ```
 > Reference: [_What is a Segementation Fault?_](https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/#:~:text=Core%20Dump%2FSegmentation%20fault%20is,an%20error%20indicating%20memory%20corruption.)
 
-### File Modes
+### Standard File Modes
 | Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | ------------- | ---------------------- |
 | r | reads file | N/A | returns NULL |
@@ -42,10 +42,12 @@ int main()
 | ab | append to binary file | appends to binary file | creates file | 
 | r+ | read and write to file | can read and write to file (r + w) | returns NULL | 
 | rb+ | read and write to file | can read and write to file (rb + w) | returns NULL | 
-|  |  |  |  | 
-|  |  |  |  | 
-|  |  |  |  | 
-|  |  |  |  | 
+| w+ | read and write to file | overwrites file | creates file | 
+| wb+ | read and write to binary file | overwrites file | creates file | 
+| a+ | read and append to file |  | creates file | 
+| ab+ | read and append to binary file |  | creates file | 
+> To work with [binary files](https://en.wikipedia.org/wiki/Binary_file) (.bin), add a 'b' (for binary) after the first letter (e.g. rb, wb, ab, rb+, wb+, ab+) <br />
+>
 > Citation: this chart belongs to [Programiz](https://www.programiz.com/) and is from their article [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output).
 
 ## Sources: 
