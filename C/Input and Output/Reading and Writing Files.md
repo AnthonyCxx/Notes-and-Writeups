@@ -11,8 +11,16 @@ Otherwise, you will have [memory leak](https://www.geeksforgeeks.org/what-is-mem
 
 int main()
 {
-    // Open the file
+    // Open a file 'textfile.txt' in read (r) mode
     FILE* readfile = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
+
+    // Check for errors
+    if (readfile != NULL) {
+        puts("File exists and was opened successfully");
+    }
+    else {
+        puts("Error: files does not exist. Could not open the file.");
+    }
 
     // Close the file
     fclose(readfile);
