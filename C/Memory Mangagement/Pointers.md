@@ -89,8 +89,8 @@ int main(void)
 ## Deferencing Non-primitive Pointers with the -> Operator
 Pointers can also be used with [non-primitive datatypes](https://www.wikitechy.com/step-by-step-tutorials/c-programming/c-non-primitive-data-types), such as [structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md).
 However, it becomes a bit more complex due to a problem with [operator precedence](https://www.tutorialspoint.com/cprogramming/c_operators_precedence.htm#:~:text=Advertisements,precedence%20than%20the%20addition%20operator.). 
-The ['.' operator](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160) has a higher
-precedence than the ['\*' operator](https://www.computerhope.com/jargon/d/dereference-operator.htm); so, if you don't put parentheses around the '\*', you end up 
+The ['.' (member access) operator](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160) has a higher
+precedence than the ['\*' (dereferencing) operator](https://www.computerhope.com/jargon/d/dereference-operator.htm); so, if you don't put parentheses around the '\*', you end up 
 trying to access the data member of an arbitrary address in memory and then dereference that, which is a clear error. Needless to say the structure 
 `(*pointer_to_struct).data_member)` is a bit verbose, so the `->` operator was invented as a shorthand. That way, you can simple write `pointer_to_struct->data_member` 
 and be done.
