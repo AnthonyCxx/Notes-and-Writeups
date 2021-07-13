@@ -51,7 +51,7 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 
 # Reading from Files
 
-### fscanf()
+## fscanf()
 [_fscanf()_](https://www.javatpoint.com/fprintf-fscanf-in-c) works like [_scanf()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md#scanf) for files, reading until it reaches whitespace. Like with _scanf()_, you can use scansets with _fscanf()_
 
 ```C
@@ -86,10 +86,6 @@ int main()
     return 0;
 }
 ```
-
-
-
-## Writing to Files
 
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
