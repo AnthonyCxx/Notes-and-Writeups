@@ -23,7 +23,9 @@ int main()
     }
 
     // Close the file
-    fclose(readfile);    // If 'readfile' is NULL, fclose() causes a segmentation fault
+    
+    if (readfile != NULL)
+        fclose(readfile);    // If 'readfile' is NULL, fclose() causes a segmentation fault
 
     return 0;
 }
