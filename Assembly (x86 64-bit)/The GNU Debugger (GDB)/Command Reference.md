@@ -57,7 +57,7 @@ End of assembler dump.
 > A dump of a "Hello, World!" C program
 
 ### info registers
-_info registers_
+_info registers_ can be used to 
 
 ```nasm
 Breakpoint 2, __printf (format=0x8002004 "Hello, world!") at printf.c:28
