@@ -43,7 +43,7 @@ The _.text_ section contains the source code. The _.bss_ and _.data_ sections ar
 overwriting the _.data_ section.
 
 ## Prefixes
-The following symbols
+The following symbols denote registers and constants.
 
 | Symbol | Meaning |
 | ------ | ------- |
