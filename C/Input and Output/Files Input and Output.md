@@ -12,10 +12,10 @@ Otherwise, you will have [memory leak](https://www.geeksforgeeks.org/what-is-mem
 int main()
 {
     // Open a file 'textfile.txt' in read (r) mode
-    FILE* readfile = fopen("textfile.txt", "r"); 
+    FILE* file = fopen("textfile.txt", "r"); 
 
     // Check for errors
-    if (readfile != NULL) {
+    if (file != NULL) {
         puts("File exists and was opened successfully");
     }
     else {
@@ -23,8 +23,8 @@ int main()
     }
 
     // Close the file
-    if (readfile != NULL)
-        fclose(readfile);    // If 'readfile' is NULL, fclose() causes a segmentation fault
+    if (file != NULL)
+        fclose(readfile);    // If 'file' is NULL, fclose() causes a segmentation fault
 
     return 0;
 }
@@ -57,20 +57,20 @@ _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file i
 int main()
 {
     // Open a file 'textfile.txt' in read (r) mode
-    FILE* readfile = fopen("textfile.txt", "r");   // Open 'textfile.txt' in 'r' (read) mode
+    FILE* file = fopen("textfile.txt", "r");   // Open 'textfile.txt' in 'r' (read) mode
     char text[256];                               // A buffer to store the file
 
     // If opening the file succeeded
-    if (readfile != NULL)
+    if (file != NULL)
     {
         // Read a single word from the file
-        fscanf(readfile, "%s", text);    // file to read from, format, where to store the content
+        fscanf(file, "%s", text);    // file to read from, format, where to store the content
 
         // Print the line
         printf("The first word of the file is: \'%s\'\n", text);
 
         // Close the file
-        fclose(readfile);
+        fclose(file);
     }
     else   // Otherwise
     {
@@ -78,10 +78,12 @@ int main()
         exit(1);
     }
 
-
     return 0;
 }
 ```
+
+## fgetc
+[_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_] for files, reading a single character from the file
 
 # Writing to Files
 
@@ -94,16 +96,48 @@ int main()
 int main()
 {
     // Open a file 'textfile.txt' in write (w) mode
-    FILE* readfile = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
+    FILE* file = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
 
     // If opening the file succeeded
-    if (readfile != NULL)
+    if (file != NULL)
     {
         // Write to file
-        fprintf(readfile, "The word of the day is: %s\n", "synecdoche");
+        fprintf(file, "The word of the day is: %s\n", "synecdoche");  // file to write to, string, formatting variables
 
         // Close the file
-        fclose(readfile);
+        fclose(file);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
+## fputc()
+[_fputc_](https://www.tutorialspoint.com/c_standard_library/c_function_fputc.htm) is [_putchar()_](https://www.tutorialspoint.com/c_standard_library/c_function_putchar.htm) for
+files, writing a single character to the file.
+
+```
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in write (w) mode
+    FILE* file = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
+
+    // If opening the file succeeded
+    if (file != NULL)
+    {
+        // Write to file
+        fputc('A', file);
+
+        // Close the file
+        fclose(file);
     }
     else   // Otherwise
     {
