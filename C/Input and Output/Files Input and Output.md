@@ -83,7 +83,39 @@ int main()
 ```
 
 ## fgetc
-[_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_] for files, reading a single character from the file
+[_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_] for files, reading a single character from the file.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in write (w) mode
+    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'w' (write) mode
+    char letter;
+
+    // If opening the file succeeded
+    if (file != NULL)
+    {
+        // Read from file
+        letter = fgetc(file);
+
+        // Print read character
+        printf("The first letter of the file is: %c\n", letter);
+
+        // Close the file
+        fclose(file);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
 
 # Writing to Files
 
@@ -121,7 +153,7 @@ int main()
 [_fputc_](https://www.tutorialspoint.com/c_standard_library/c_function_fputc.htm) is [_putchar()_](https://www.tutorialspoint.com/c_standard_library/c_function_putchar.htm) for
 files, writing a single character to the file.
 
-```
+```C
 #include <stdio.h>
 #include <stdlib.h>    // includes 'exit()'
 
