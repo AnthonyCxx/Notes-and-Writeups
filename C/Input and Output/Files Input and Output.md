@@ -284,6 +284,7 @@ int main()
 
 ## putw()
 [_putw()_](https://www.w3schools.in/c-tutorial/file-handling/putw/) writes an integer to a file. <br />
+
 Warning: upon inspecting the file, it wrote the '100' in binary. I used a [hexdump](https://opensource.com/article/19/8/dig-binary-files-hexdump) to confirm that the written
 data was actually '100'.
 
