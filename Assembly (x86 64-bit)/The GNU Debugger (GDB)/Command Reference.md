@@ -54,7 +54,6 @@ The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to 
 | s | string (text) |
 | a | memory address |
 | i | instruction |
-> `x/s` will
 
 ```nasm
 (gdb) disas main
