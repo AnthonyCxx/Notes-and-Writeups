@@ -35,12 +35,12 @@ int main()
 _r_ mode returns NULL if the file does not exist; _w_ mode overwrites the file if it does.
 | Mode | Function | If File Exists | If File Does Not Exist |
 | ---- | --------- | ------------- | ---------------------- |
-| r | reads file | same as function | returns NULL |
+| r | reads file | N/A | returns NULL |
 | w | writes to file | overwrites file | creates file | 
-| a | append to file | same as function | creates file |  
-| r+ | read and write to file | same as function | returns NULL | 
+| a | append to file | N/A | creates file |  
+| r+ | read and write to file | N/A | returns NULL | 
 | w+ | read and write to file | overwrites file | creates file | 
-| a+ | read and append to file | same as function | creates file | 
+| a+ | read and append to file | N/A | creates file | 
 > To work with [binary files](https://en.wikipedia.org/wiki/Binary_file) (.bin), add a 'b' (for binary) after the first letter (rb, wb, ab, rb+, wb+, ab+) <br />
 
 # Reading from Files
