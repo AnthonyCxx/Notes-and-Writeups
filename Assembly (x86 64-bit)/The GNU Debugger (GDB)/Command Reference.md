@@ -1,4 +1,5 @@
 # Command Reference for GDB
+You can use _ctrl_ + _l_ to clear the terminal. You're welcome.
 
 ### quit
 Entering _quit_ (shortcut: _q_) exits GDB. _ctrl_ + _C_ does not work.
