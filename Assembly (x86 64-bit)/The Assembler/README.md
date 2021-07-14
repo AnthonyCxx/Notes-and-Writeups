@@ -8,6 +8,6 @@ gcc -o hello hello.o
 or 
 
 ```shell
-nasm -f elf64 -g alive.asm -l alive.lst 
+nasm -f elf64 -g alive.asm 
 gcc -o alive alive.o -no-pie
 ```
