@@ -42,6 +42,19 @@ The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to 
 `x/s 0x2004` gets the memory stored at 0x2004 (which is the text "Hello, World!". The output for the _x_ command can be formatted via `x/<format>` using 
 [output formats](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_54.html). Formats include hex, binary, decimal, octal, etc.
 
+| Specifier | Format |
+| --------- | ------ |
+| t | binary |
+| o | octal |
+| d | decimal |
+| u | unsigned decimal | 
+| x | hexadecimal |
+| f | float |
+| c | char |
+| s | string (text) |
+| a | memory address |
+| i | instruction |
+> `x/s` will
 
 ```nasm
 (gdb) disas main
@@ -122,3 +135,6 @@ _enable_ and _disable_ allow you to enable or disable breakpoints using `enable/
 
 ### delete
 _delete_ (shortcut: _d_) deletes the specific breakpoint. If no breakpoint is given, it will prompt you to delete all breakpoints (y/n).
+
+## Sources
+VisualGDB Reference: [_Commands_](https://visualgdb.com/gdbreference/commands/) <br />
