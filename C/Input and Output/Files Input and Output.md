@@ -80,6 +80,43 @@ int main()
 }
 ```
 
+## fgets()
+The _fgets()_ function reads a set amount of characters from a FILE* stream. _fgets()_ takes three parameters: the buffer to store the characters read, the max amount of characters to read (typically the size of the buffer) and the FILE* to read from ('stdin' is the keyboard).
+
+The sizeof() operator (yes, operator) returns the size of the datatype (/variable/data structure) in bytes, right? And a char is only 1 byte, right? So it just happens to be the case that using the sizeof() operator on the char array returns the exact amount of characters that fgets() needs to read. Neat.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in read (r) mode
+    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
+    char buffer[256];
+
+    // If opening the file succeeded
+    if (file != NULL)
+    {
+        // Read from file
+        fgets(buffer, sizeof(buffer), file);   // The buffer to store data in, the amount of chars to read, and FILE* stream
+
+        // Print the file contents (256 chars max)
+        printf("File contents: %s", buffer);
+
+        // Close the file
+        fclose(file);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
 ## fgetc()
 [_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_] for files, reading a single character from the file.
 
@@ -115,10 +152,8 @@ int main()
 }
 ```
 
-## fgets()
-The _fgets()_ function reads a set amount of characters from a FILE* stream. _fgets()_ takes three parameters: the buffer to store the characters read, the max amount of characters to read (typically the size of the buffer) and the FILE* to read from ('stdin' is the keyboard).
-
-The sizeof() operator (yes, operator) returns the size of the datatype (/variable/data structure) in bytes, right? And a char is only 1 byte, right? So it just happens to be the case that using the sizeof() operator on the char array returns the exact amount of characters that fgets() needs to read. Neat.
+## getw()
+[_getw()_](https://www.tutorialspoint.com/explain-the-functions-putw-and-getw-in-c-language) reads an integer from a file. <br />
 
 ```C
 #include <stdio.h>
@@ -128,16 +163,16 @@ int main()
 {
     // Open a file 'textfile.txt' in read (r) mode
     FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
-    char buffer[256];
+    int integer;
 
     // If opening the file succeeded
     if (file != NULL)
     {
-        // Read from file
-        fgets(buffer, sizeof(buffer), file);   // The buffer to store data in, the amount of chars to read, and FILE* stream
+        // Read single integer from file
+        integer = getw(file);
 
-        // Print the file contents (256 chars max)
-        printf("File contents: %s", buffer);
+        // Print contents of the file
+        printf("The first integer in the file is: %d\n", integer);
 
         // Close the file
         fclose(file);
@@ -184,6 +219,37 @@ int main()
 }
 ```
 
+## fputs()
+[_fputs()_](https://www.tutorialspoint.com/c_standard_library/c_function_fputs.htm) is [_puts()_](https://www.tutorialspoint.com/c_standard_library/c_function_puts.htm) for files, writing an unformatted string to a file. If you can, use this over _fprintf()_, as it is faster.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in write (w) mode
+    FILE* file = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
+
+    // If opening the file succeeded
+    if (file != NULL)
+    {
+        // Overwrite the file contents
+        fputs("Overwriting your file :D!", file);  // String to write, FILE* to write to
+
+        // Close the file
+        fclose(file);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
 ## fputc()
 [_fputc_](https://www.tutorialspoint.com/c_standard_library/c_function_fputc.htm) is [_putchar()_](https://www.tutorialspoint.com/c_standard_library/c_function_putchar.htm) for
 files, writing a single character to the file.
@@ -216,8 +282,10 @@ int main()
 }
 ```
 
-## fputs()
-[_fputs()_](https://www.tutorialspoint.com/c_standard_library/c_function_fputs.htm) is [_puts()_](https://www.tutorialspoint.com/c_standard_library/c_function_puts.htm) for files, writing an unformatted string to a file. If you can, use this over _fprintf()_, as it is faster.
+## putw()
+[_putw()_] writes an integer to a file. <br />
+Warning: upon inspecting the file, it wrote the '100' in binary. I used a [hexdump](https://opensource.com/article/19/8/dig-binary-files-hexdump) to confirm that the written
+data was actually '100'.
 
 ```C
 #include <stdio.h>
@@ -231,8 +299,8 @@ int main()
     // If opening the file succeeded
     if (file != NULL)
     {
-        // Overwrite the file contents
-        fputs("Overwriting your file :D!", file);  // String to write, FILE* to write to
+        // Overwrite the file contents with '100'
+        putw(100, file);
 
         // Close the file
         fclose(file);
