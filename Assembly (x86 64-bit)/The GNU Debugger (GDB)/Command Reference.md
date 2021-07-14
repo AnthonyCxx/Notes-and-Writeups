@@ -96,12 +96,23 @@ gs             0x0                 0
 ```
 > The value of the registers at the breakpoint before the function _printf()_ in a "Hello, World!" C program.
 
-## Breakpoints
-The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
-Breakpoints allow you to pause and monitor the state of the program. Use _info breakpoints_ (shortcut: _i b_) to list all breakpoints and their information.
+## Running Programs and their Flow
 
 ### run
 _run_ (shortcut: _r_) runs the program, stopping at any breakpoints
+
+### continue
+_continue_ (shortcut: _c_) resumes normal execution after reaching a breakpoint.
+
+### step
+_step_ (shortcut: _s_) executes the current line. If the line is a function, it stops at the first line of the function.
+
+### next
+_next_ (shortcut: _n_) executes the current line. If the line is a function, it executes the whole function.
+
+## Breakpoints
+The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
+Breakpoints allow you to pause and monitor the state of the program. Use _info breakpoints_ (shortcut: _i b_) to list all breakpoints and their information.
 
 ### break
 _break_ (shortcut: _b_) puts a breakpoint at the specified line number or function.
