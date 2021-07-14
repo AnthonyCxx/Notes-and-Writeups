@@ -10,6 +10,8 @@ int main(void)
 {
     // A pointer that can point to an integer
     int* ptr;   // int* pointer is not given a value
+    
+    // Declare multiple points like: 'int *ptr, *ptr2, *ptr3;'
 
     // Print what 'ptr' points to (NULL)
     printf("The memory address of 'ptr' is: %p\n", ptr);
