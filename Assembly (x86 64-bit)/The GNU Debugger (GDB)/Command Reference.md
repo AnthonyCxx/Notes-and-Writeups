@@ -39,7 +39,9 @@ End of assembler dump.
 
 ### x
 The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to "display the memory contents at a given address using the specified format". Here,
-`x/s 0x2004` gets the memory stored at 0x2004 (which is the text "Hello, World!".
+`x/s 0x2004` gets the memory stored at 0x2004 (which is the text "Hello, World!". The output for the _x_ command can be formatted via `x/<format>` using 
+[output formats](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_54.html)
+
 
 ```nasm
 (gdb) disas main
