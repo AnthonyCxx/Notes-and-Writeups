@@ -96,7 +96,7 @@ gs             0x0                 0
 
 ## Breakpoints
 The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
-Breakpoints allow you to pause and monitor the state of the program. Use _info breakpoints_ (shortcut: _i b_) to list all breakpoints.
+Breakpoints allow you to pause and monitor the state of the program. Use _info breakpoints_ (shortcut: _i b_) to list all breakpoints and their information.
 
 ### run
 _run_ (shortcut: _r_) runs the program, stopping at any breakpoints
