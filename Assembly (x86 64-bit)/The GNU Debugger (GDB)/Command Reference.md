@@ -22,6 +22,24 @@ disassemble a section of the machine code. You should start debugging by running
 ### x
 The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to "display the memory contents at a given address using the specified format". 
 
+```nasm
+(gdb) disas main
+Dump of assembler code for function main:
+   0x0000000000001149 <+0>:     endbr64
+   0x000000000000114d <+4>:     push   %rbp
+   0x000000000000114e <+5>:     mov    %rsp,%rbp
+   0x0000000000001151 <+8>:     lea    0xeac(%rip),%rdi        # 0x2004
+   0x0000000000001158 <+15>:    mov    $0x0,%eax
+   0x000000000000115d <+20>:    callq  0x1050 <printf@plt>
+   0x0000000000001162 <+25>:    mov    $0x0,%eax
+   0x0000000000001167 <+30>:    pop    %rbp
+   0x0000000000001168 <+31>:    retq
+End of assembler dump.
+(gdb) x/s 0x2004
+0x2004: "Hello, world!"
+```
+> An excerpt from a "Hello, World!" C program
+
 ## Breakpoints
 The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
 Breakpoints allow you to pause and monitor the state of the program.
