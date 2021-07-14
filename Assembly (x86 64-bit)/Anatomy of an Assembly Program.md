@@ -42,13 +42,14 @@ section is replaced by the number to reserve. For example, `charArr resb 20` res
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
 overwriting the _.data_ section.
 
-## Symbols
+## Prefixes
 The following symbols
 
 | Symbol | Meaning |
 | ------ | ------- |
-|  |  |
-|  |  |
+| % | prefix for registers |
+| $ | prefix for constants |
+> Source: Wikibooks: [_AT&T/GAS Syntax_](https://en.wikibooks.org/wiki/X86_Assembly/GAS_Syntax#Prefixes)
 
 ## Example Program (Hello, World!)
 
