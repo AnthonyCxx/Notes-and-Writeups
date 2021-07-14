@@ -95,7 +95,7 @@ int main(void)
 
 ## Initializing Memory with _memset()_
 Unlike the other functions here, [_memset()_](https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm) does not belong to [_\<stdlib.h\>_](https://www.tutorialspoint.com/c_standard_library/stdlib_h.htm); instead, it's a part of the [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) 
-header file. _memset()_ allows you to set the bytes in memory to a specific value.
+header file. _memset()_ allows you to set each byte in memory to a specific value.
 
 **WARNING:** _memset()_ belongs under _\<string.h\>_ for a reason. _memset()_ sets each individual byte to the given value; if you try to set an integer array to 100, 
 it will set each of the 4 bytes in the int to 100, giving your 0x64646464 (1,684,300,900). _memset()_ is only suitable for setting char array and setting and integer 
