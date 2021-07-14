@@ -118,7 +118,7 @@ int main()
 ```
 
 ## fgetc()
-[_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_] for files, reading a single character from the file.
+[_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_](https://www.tutorialspoint.com/c_standard_library/c_function_getchar.htm) for files, reading a single character from the file.
 
 ```C
 #include <stdio.h>
