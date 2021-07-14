@@ -34,7 +34,10 @@ over any array, you would need to know the size of said array; however, there is
 is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
 first element in the array. This can be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
 
-Be careful, as this trick does not work with arrays created with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) ([ref.](https://stackoverflow.com/questions/671790/how-does-sizeofarray-work)) and may have different implementations on different architechtures (32-bit vs 64-bit); ([ref.](https://pvs-studio.com/en/docs/warnings/v511/))
+Be careful, as this trick does not work with pointers (it just returns the size of the pointer); that means that this trick will not work for arrays passed as 
+paramters nor arrays created with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm). If you want to use this trick in a function, 
+pass the size of the array as a separate parameter.
+
 ```C
 #include <stdio.h>
 
