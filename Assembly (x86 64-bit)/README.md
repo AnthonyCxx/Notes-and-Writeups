@@ -5,6 +5,7 @@ and is very similar in style to machine code, and so is sometimes referred to as
 supporting information for the syscall (arguments). <br />
 
 I'm learning as I go and just using this as a form of documenting what I've learned. This is not meant to be an authority of any kind nor is it meant to be comprehensive.
+Finally, since I am programming on Linux, I use AT&T syntax and not Intel.
 
 ## Books Used
 [_Modern x86 Assembly Language Programming, 2nd Edition_](https://www.amazon.com/Modern-X86-Assembly-Language-Programming/dp/1484240626/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Modern+X86+Assembly+Language+Programming&qid=1625776593&sr=8-3) by Daniel Kusswurm <br />
