@@ -38,7 +38,8 @@ End of assembler dump.
 > A dump of a "Hello, World!" C program
 
 ### x
-The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to "display the memory contents at a given address using the specified format". 
+The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to "display the memory contents at a given address using the specified format". Here,
+`x/s 0x2004` gets the memory stored at 0x2004 (which is the text "Hello, World!".
 
 ```nasm
 (gdb) disas main
@@ -59,7 +60,7 @@ End of assembler dump.
 > A dump of a "Hello, World!" C program
 
 ### info registers
-_info registers_ can be used to 
+_info registers_ (shortcut: _i r_) can be used to get the value of one or all of the registers.
 
 ```nasm
 Breakpoint 2, __printf (format=0x8002004 "Hello, world!") at printf.c:28
@@ -91,6 +92,7 @@ fs             0x0                 0
 gs             0x0                 0
 (gdb)
 ```
+> The value of the registers at the breakpoint before the function _printf()_ in a "Hello, World!" C program.
 
 ## Breakpoints
 The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
