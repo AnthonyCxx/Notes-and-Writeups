@@ -43,9 +43,10 @@ The _.text_ section contains the source code. The _.bss_ and _.data_ sections ar
 overwriting the _.data_ section.
 
 ## Symbols
+The following symbols
 
 | Symbol | Meaning |
-|  |  |
+| ------ | ------- |
 |  |  |
 |  |  |
 
