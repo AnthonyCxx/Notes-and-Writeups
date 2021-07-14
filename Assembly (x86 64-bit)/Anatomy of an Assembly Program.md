@@ -42,6 +42,13 @@ section is replaced by the number to reserve. For example, `charArr resb 20` res
 The _.text_ section contains the source code. The _.bss_ and _.data_ sections are stored inbetween the stack & heap and the _.text_ section to prevent them from
 overwriting the _.data_ section.
 
+## Symbols
+
+| Symbol | Meaning |
+|  |  |
+|  |  |
+|  |  |
+
 ## Example Program (Hello, World!)
 
 ```nasm
@@ -75,11 +82,13 @@ main:                          ; label 'main' : an identifier which can be place
 
 
 ## Sources
-[_Tuts: x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
-[_TutorialsPoint: Assembly - Variables_](https://www.tutorialspoint.com/assembly_programming/assembly_variables.htm) <br />
-[_Posix.nl: Chapter 3, The NASM Language_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
-[_Tortall.net: Chapter 3, Pseudo-instructions in the NASM Language_](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) <br />
-[_GeeksforGeeks: Memory Layout of a C Program_](https://www.geeksforgeeks.org/memory-layout-of-c-program/) <br />
-[_TutorialsPoint: Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
-[_TutorialsPoint: Assembly - Basic Syntax_](https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm) <br />
-[_Wikipedia: Data Segments_](https://en.wikipedia.org/wiki/Data_segment) <br />
+Tuts: [_x86 Assembly Datatypes_](https://www.assemblylanguagetuts.com/x86-assembly-data-types/) <br />
+TutorialsPoint: [_Assembly - Variables_](https://www.tutorialspoint.com/assembly_programming/assembly_variables.htm) <br />
+Posix.nl: [_Chapter 3, The NASM Language_](http://www.posix.nl/linuxassembly/nasmdochtml/nasmdoc3.html) <br />
+Tortall.net: [_Chapter 3, Pseudo-instructions in the NASM Language_](https://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html) <br />
+GeeksforGeeks: [_Memory Layout of a C Program_](https://www.geeksforgeeks.org/memory-layout-of-c-program/) <br />
+TutorialsPoint: [_Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
+TutorialsPoint: [_Assembly - Basic Syntax_](https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm) <br />
+Wikipedia: [_Data Segments_](https://en.wikipedia.org/wiki/Data_segment) <br />
+StackOverflow: [_What do the dollar ($) and percentage (%) signs represent in x86 assembly?
+_](https://stackoverflow.com/questions/9196655/what-do-the-dollar-and-percentage-signs-represent-in-x86-assembly) <br />
