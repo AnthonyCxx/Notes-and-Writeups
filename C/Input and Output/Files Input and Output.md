@@ -91,8 +91,8 @@ int main()
 
 int main()
 {
-    // Open a file 'textfile.txt' in write (w) mode
-    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'w' (write) mode
+    // Open a file 'textfile.txt' in read (r) mode
+    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
     char letter;
 
     // If opening the file succeeded
@@ -128,8 +128,8 @@ The sizeof() operator (yes, operator) returns the size of the datatype (/variabl
 
 int main()
 {
-    // Open a file 'textfile.txt' in write (w) mode
-    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'w' (write) mode
+    // Open a file 'textfile.txt' in read (r) mode
+    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'r' (read) mode
     char buffer[256];
 
     // If opening the file succeeded
@@ -204,6 +204,37 @@ int main()
     {
         // Write to file
         fputc('A', file);
+
+        // Close the file
+        fclose(file);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
+## fputs()
+[_fputs()_](https://www.tutorialspoint.com/c_standard_library/c_function_fputs.htm) is [_puts()_](https://www.tutorialspoint.com/c_standard_library/c_function_puts.htm) for files, writing an unformatted string to a file. If you can, use this over _fprintf()_, as it is faster.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in write (w) mode
+    FILE* file = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
+
+    // If opening the file succeeded
+    if (file != NULL)
+    {
+        // Overwrite the file contents
+        fputs("Overwriting your file :D!", file);  // String to write, FILE* to write to
 
         // Close the file
         fclose(file);
