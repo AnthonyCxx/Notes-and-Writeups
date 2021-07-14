@@ -56,6 +56,40 @@ End of assembler dump.
 ```
 > A dump of a "Hello, World!" C program
 
+### info registers
+_info registers_
+
+```nasm
+Breakpoint 2, __printf (format=0x8002004 "Hello, world!") at printf.c:28
+28      printf.c: No such file or directory.
+(gdb) info registers
+rax            0x0                 0
+rbx            0x8001170           134222192
+rcx            0x8001170           134222192
+rdx            0x7ffffffee458      140737488282712
+rsi            0x7ffffffee448      140737488282696
+rdi            0x8002004           134225924
+rbp            0x7ffffffee350      0x7ffffffee350
+rsp            0x7ffffffee348      0x7ffffffee348
+r8             0x0                 0
+r9             0x7fffff7c1d50      140737479712080
+r10            0xb                 11
+r11            0x2                 2
+r12            0x8001060           134221920
+r13            0x7ffffffee440      140737488282688
+r14            0x0                 0
+r15            0x0                 0
+rip            0x7fffff604e10      0x7fffff604e10 <__printf>
+eflags         0x246               [ PF ZF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb)
+```
+
 ## Breakpoints
 The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
 Breakpoints allow you to pause and monitor the state of the program.
