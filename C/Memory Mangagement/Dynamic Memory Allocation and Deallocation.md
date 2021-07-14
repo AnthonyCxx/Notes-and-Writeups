@@ -93,6 +93,10 @@ int main(void)
 > Prints: <br />
 > 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
+## Initializing Memory with _memset()_
+Unlike the other functions here, [_memset()_](https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm) does not belong to [_\<stdlib.h\>_](https://www.tutorialspoint.com/c_standard_library/stdlib_h.htm); instead, it's a part of the [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) 
+header file.
+
 ## Allocating and Initializing Memory with _calloc()_
 [_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) makes initializing arrays even easier as it combines the alloccation and 
 initialization by giving each element a default value (0). All _calloc()_ needs is the amount of elements and the size of each of them. If you do not need to use 
