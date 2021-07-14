@@ -85,6 +85,38 @@ int main()
 }
 ```
 
+# Writing to Files
+
+## fprintf()
+[_fprintf()_](https://www.geeksforgeeks.org/fprintf-in-c/) works like [_printf()_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Output.md#printfstr-formatting-variables) for files, allowing you to write formatted strings to a file.
+```C
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in write (w) mode
+    FILE* readfile = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
+
+    // If opening the file succeeded
+    if (readfile != NULL)
+    {
+        // Write to file
+        fprintf(readfile, "The word of the day is: %s\n", "synecdoche");
+
+        // Close the file
+        fclose(readfile);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
 ## Sources: 
 Programiz: [_C File Handling_](https://www.programiz.com/c-programming/c-file-input-output) <br />
 JavaTPoint: [_File Handling in C_](https://www.javatpoint.com/file-handling-in-c) <br />
