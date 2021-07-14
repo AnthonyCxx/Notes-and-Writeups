@@ -90,5 +90,4 @@ GeeksforGeeks: [_Memory Layout of a C Program_](https://www.geeksforgeeks.org/me
 TutorialsPoint: [_Assembly - Memory Segments_](https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm) <br />
 TutorialsPoint: [_Assembly - Basic Syntax_](https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm) <br />
 Wikipedia: [_Data Segments_](https://en.wikipedia.org/wiki/Data_segment) <br />
-StackOverflow: [_What do the dollar ($) and percentage (%) signs represent in x86 assembly?
-_](https://stackoverflow.com/questions/9196655/what-do-the-dollar-and-percentage-signs-represent-in-x86-assembly) <br />
+StackOverflow: [_What do the dollar ($) and percentage (%) signs represent in x86 assembly?_](https://stackoverflow.com/questions/9196655/what-do-the-dollar-and-percentage-signs-represent-in-x86-assembly) <br />
