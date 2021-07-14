@@ -17,4 +17,10 @@ disassemble a section of the machine code. You should start debugging by running
 
 ## Breakpoints
 The _break_ command (shortcut: _b_) puts a [breakpoint](https://en.wikipedia.org/wiki/Breakpoint) in the program, stopping the flow of execution until resumed maually.
-Breakpoints allow you to pause and monitor the state of the program
+Breakpoints allow you to pause and monitor the state of the program.
+
+### run
+_run_ (shortcut: _r_) runs the program, stopping at any breakpoints
+
+### delete
+_delete_ (shortcut: _d_) deletes the specific breakpoint. If no breakpoint is given, it will prompt you to delete all breakpoints (y/n).
