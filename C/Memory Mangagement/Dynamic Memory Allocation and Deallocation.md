@@ -95,7 +95,48 @@ int main(void)
 
 ## Initializing Memory with _memset()_
 Unlike the other functions here, [_memset()_](https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm) does not belong to [_\<stdlib.h\>_](https://www.tutorialspoint.com/c_standard_library/stdlib_h.htm); instead, it's a part of the [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) 
-header file. _memset()_ allows you to initialize allocated memory
+header file. _memset()_ allows you to set the bytes in memory to a specific value.
+
+**WARNING:** _memset()_ belongs under _\<string.h\>_ for a reason. _memset()_ sets each individual byte; if you try to set an integer array to 100, it will set each
+of the 4 bytes in the int to 100, giving your 0x64646464 (1,684,300,900). _memset()_ is only suitable for setting char array and setting and integer array to 0 (because
+all bytes are 0, a special case). If you want to initialize an integer array, do it manually with a for loop.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>    // includes 'memset()'
+#include <assert.h>   // includes 'assert()'
+
+int main(void)
+{
+    // Allocate an array of 10 chars on the heap
+    char* arr = (char*) malloc( 10 * sizeof(char) );
+
+    // Always check for errors BEFORE working with the memory
+    if (arr == NULL)
+    {
+        puts("Error: No memory available");      // This should almost never happen unless asking for a massive array
+        assert(0);
+    }
+
+        // If the memory is good, initialize it
+        memset(arr, 'A', 10 * sizeof(char));      // Pointer to the array, value to set the bytes to, and the size in bytes
+
+        // Print the values of the array
+        for(int i=0; i < 10; i++)
+        {
+                printf("%c ", arr[i]);
+        }
+        putchar('\n');
+
+    // Free the heap-allocated memory
+    free(arr);      // You can only free pointers, so you do not need to add the '*'
+
+    return 0;
+}
+```
+> Prints: <br />
+> A A A A A A A A A A <br />
 
 ## Allocating and Initializing Memory with _calloc()_
 [_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) makes initializing arrays even easier as it combines the alloccation and 
