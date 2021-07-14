@@ -4,11 +4,11 @@ You can use _ctrl_ + _l_ to clear the terminal. You're welcome.
 ### quit
 Entering _quit_ (shortcut: _q_) exits GDB. _ctrl_ + _C_ does not work.
 
-## help
+### help
 _help_ (shortcut: _h_) prints the commands related to a topic (breakpoints, data, aliases, etc.) along with a short summary of each command.
 If you do not provide a topic, it will list the topics.
 
-## info
+### info
 The _info_ command (shortcut: _i_) provides information about gdb, the current program, and the platform (os, macros, GDB settings).
 
 ### disassemble
