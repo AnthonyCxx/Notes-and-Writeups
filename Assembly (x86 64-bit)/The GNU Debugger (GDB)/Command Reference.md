@@ -96,7 +96,7 @@ gs             0x0                 0
 ```
 > The value of the registers at the breakpoint before the function _printf()_ in a "Hello, World!" C program.
 
-## Running Programs and their Flow
+## Running Programs and Controlling their Flow
 
 ### run
 _run_ (shortcut: _r_) runs the program, stopping at any breakpoints
