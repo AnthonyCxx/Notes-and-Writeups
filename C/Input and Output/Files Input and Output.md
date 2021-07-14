@@ -82,7 +82,7 @@ int main()
 }
 ```
 
-## fgetc
+## fgetc()
 [_fgetc_](https://www.tutorialspoint.com/c_standard_library/c_function_fgetc.htm) is [_getchar()_] for files, reading a single character from the file.
 
 ```C
@@ -103,6 +103,43 @@ int main()
 
         // Print read character
         printf("The first letter of the file is: %c\n", letter);
+
+        // Close the file
+        fclose(file);
+    }
+    else   // Otherwise
+    {
+        puts("Error: files does not exist. Could not open the file.");
+        exit(1);
+    }
+
+    return 0;
+}
+```
+
+## fgets()
+The _fgets()_ function reads a set amount of characters from a FILE* stream. _fgets()_ takes three parameters: the buffer to store the characters read, the max amount of characters to read (typically the size of the buffer) and the FILE* to read from ('stdin' is the keyboard).
+
+The sizeof() operator (yes, operator) returns the size of the datatype (/variable/data structure) in bytes, right? And a char is only 1 byte, right? So it just happens to be the case that using the sizeof() operator on the char array returns the exact amount of characters that fgets() needs to read. Neat.
+
+```C
+#include <stdio.h>
+#include <stdlib.h>    // includes 'exit()'
+
+int main()
+{
+    // Open a file 'textfile.txt' in write (w) mode
+    FILE* file = fopen("textfile.txt", "r");  // Open 'textfile.txt' in 'w' (write) mode
+    char buffer[256];
+
+    // If opening the file succeeded
+    if (file != NULL)
+    {
+        // Read from file
+        fgets(buffer, sizeof(buffer), file);   // The buffer to store data in, the amount of chars to read, and FILE* stream
+
+        // Print the file contents (256 chars max)
+        printf("File contents: %s", buffer);
 
         // Close the file
         fclose(file);
