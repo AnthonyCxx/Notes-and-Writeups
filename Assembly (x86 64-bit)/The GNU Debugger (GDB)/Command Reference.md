@@ -102,7 +102,7 @@ Breakpoints allow you to pause and monitor the state of the program. Use _info b
 _run_ (shortcut: _r_) runs the program, stopping at any breakpoints
 
 ### break
-_break_ (shortcut: _b_) puts a breakpoint at the specified line number or function. _info break_ will list all breakpoints.
+_break_ (shortcut: _b_) puts a breakpoint at the specified line number or function.
 
 ### enable/disable
 _enable_ and _disable_ allow you to enable or disable breakpoints using `enable/disable breakpoint <breakpoint_number>`.
