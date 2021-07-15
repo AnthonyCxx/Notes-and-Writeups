@@ -11,4 +11,6 @@
 | double | 8 | 1.7e−308 | 1.7e+308 | 0.00d |  |  
 | boolean | 1/8 (1 bit) | 0 | 1 | false |  |  
 | char | 2 | 0 | 65,535 | '\u0000' |  | 
-> Source: docs.oracle.com: [_Primitive Datatypes_](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) <br />
+> Sources: <br />
+> docs.oracle.com: [_Primitive Datatypes_](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) <br />
+> W3Schools: [_Java Data Types_](https://www.w3schools.com/java/java_data_types.asp) <br />
