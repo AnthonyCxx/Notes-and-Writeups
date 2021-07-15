@@ -1,6 +1,11 @@
 # Operators in Java
 
-'=' = assignment operator
+## Miscellaneous Operators
+| Operator | Type | Function |
+| -------- | ---- | -------- |
+| = | variable assignment |
+| instanceof() | true if class or subclass of |
+> Reference: [_instanceof() Operator_](https://www.javatpoint.com/downcasting-with-instanceof-operator)
 
 ## Arithmetic Operators
 | Operator | Type | Function |
