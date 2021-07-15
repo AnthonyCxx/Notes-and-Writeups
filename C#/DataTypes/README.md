@@ -3,7 +3,7 @@
 ## Primitive Data Types
 | Data Type | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
-| bool | System.Boolean | 1 | true | false | false | N/A 
+| bool | System.Boolean | 1 | false | true | false | N/A 
 | char | System.Char | 2 | 0 | 65,535 | \0 (U+0000) | N/A |
 | string | System.String | N/A | 0 / null | 2,048 bytes | null | N/A |
 | sbyte | System.SByte | 1 | -128 | 127 | 0 | N/A |
