@@ -16,7 +16,6 @@ public class arrays
 
         // An array of 5 integers, 1-5
         int[] arr = {1, 2, 3, 4, 5};
-
     }
 }
 ```
