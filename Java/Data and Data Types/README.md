@@ -20,7 +20,7 @@
 | Datatype | Function | 
 | -------- | -------- |
 | Class |  |
-| Array |  |
+| Array | data structure that stores a collection of elements of the same type |
 | String |  |
 
 ## Operators
