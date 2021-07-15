@@ -1,11 +1,10 @@
 # Operators in Java
 
-## Miscellaneous Operators
+## Assignment Operator
 | Operator | Type | Function |
 | -------- | ---- | -------- |
-| = | variable assignment |
-| instanceof() | true if class or subclass of |
-> Reference: [_instanceof() Operator_](https://www.javatpoint.com/downcasting-with-instanceof-operator)
+| = | binary |variable assignment |
+
 
 ## Arithmetic Operators
 | Operator | Type | Function |
@@ -37,6 +36,8 @@
 | > | binary | greater than |
 | <= | binary | less than or equal to |
 | >= | binary | greater than or equal to |
+| instanceof | binary | true if class or subclass of |
+> Reference: [_instanceof() Operator_](https://www.javatpoint.com/downcasting-with-instanceof-operator)
 
 ### Conditional Operators
 | Operator | Type | Function |
