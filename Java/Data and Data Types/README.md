@@ -53,4 +53,3 @@
 | >> | binary | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
 | << | binary | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
 | >>> | binary | [unsigned right bit-shift](https://www.javatpoint.com/unsigned-right-shift-operator-in-java) |
-> Reference: [_What are Bitwise Operators?_](https://www.geeksforgeeks.org/bitwise-operators-in-java/)
