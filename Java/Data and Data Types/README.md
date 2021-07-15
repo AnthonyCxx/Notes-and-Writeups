@@ -20,7 +20,7 @@
 | Datatype | Function | 
 | -------- | -------- |
 | Class |  |
-| Array | data structure that stores a collection of elements of the same type |
+| [Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Java/Data%20and%20Data%20Types/Arrays.md) | data structure that stores a collection of elements of the same type |
 | String |  |
 
 ## Operators
