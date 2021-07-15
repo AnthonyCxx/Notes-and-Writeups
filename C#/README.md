@@ -1,7 +1,5 @@
 # Reference Notes for C# 9.0
 
-**NOTICE**: These notes will likely go unfinished for some time as I am learning Java so I can do embedded systems.
-
 The majority of the information here comes straight from the [C# Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/api/system?view=net-5.0) and the rest is from [Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264). <br />
 All I've done is synthesize the most relevant aspects of C# and provide some code snippets to make an easy reference for myself and others. <br />
 
