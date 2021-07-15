@@ -5,34 +5,34 @@
 ## Arithmetic Operators
 | Operator | Type | Function |
 | -------- | ---- | -------- |
-| + | addition |
-| - | subtraction |
-| * | multiplication |
-| / | division |
-| % | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
+| + | binary | addition |
+| - | binary | subtraction |
+| * | binary | multiplication |
+| / | binary | division |
+| % | binary | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
 
 ## Unary Operators
 Unary operators are operators that take only one operand
 
 | Operator | Type | Function |
 | -------- | ---- | -------- |
-| ! |  |
-| ++ |  |
-| -- |  |
-| ++ |  |
-| -- |  |
+| ! | unary prefix | logical not | 
+| ++ | unary prefix |  |
+| -- | unary prefix |  | 
+| ++ | unary postfix |  |
+| -- | unary postfix |  |
 
 ## Logical Operators
 
 ### Relational Operators
 | Operator | Type | Function |
 | -------- | ---- | -------- |
-| == | equality |
-| != | inequality |
-| < | less than|
-| > | greater than |
-| <= | less than or equal to |
-| >= | greater than or equal to |
+| == | binary | equality |
+| != | binary | inequality |
+| < | binary | less than|
+| > | binary | greater than |
+| <= | binary | less than or equal to |
+| >= | binary | greater than or equal to |
 
 ### Conditional Operators
 | Operator | Type | Function |
