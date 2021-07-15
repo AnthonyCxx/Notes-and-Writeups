@@ -1,5 +1,7 @@
 # Operators in Java
 
+'=' = assignment operator
+
 ## Arithmetic Operators
 | Operator | Function |
 | -------- | -------- |
@@ -24,7 +26,6 @@
 ### Conditional Operators
 | Operator | Function |
 | -------- | -------- |
-| ! | logical not |
 | && | logical and |
 | \|\| | logical or |
 | ? : | [ternary operator](https://www.geeksforgeeks.org/java-ternary-operator-with-examples/) |
@@ -37,6 +38,7 @@
 | ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
 | >> | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
 | << | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
+| >>> | [unsigned right bit-shift](https://www.javatpoint.com/unsigned-right-shift-operator-in-java) |
 > Reference: [_What are Bitwise Operators?_](https://www.geeksforgeeks.org/bitwise-operators-in-java/)
 
 ## Sources
