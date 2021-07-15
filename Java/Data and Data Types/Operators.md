@@ -10,6 +10,8 @@
 | % | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
 
 ## Logical Operators
+
+### Relational Operators
 | Operator | Function |
 | -------- | -------- |
 | == | equality |
@@ -18,6 +20,14 @@
 | > | greater than |
 | <= | less than or equal to |
 | >= | greater than or equal to |
+
+### Conditional Operators
+| Operator | Function |
+| -------- | -------- |
+| ! | logical not |
+| && | logical and |
+| \|\| | logical or |
+| ? : | [ternary operator](https://www.geeksforgeeks.org/java-ternary-operator-with-examples/) |
 
 ## Bitwise Operators
 | Operator | Function |
