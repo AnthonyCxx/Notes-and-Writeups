@@ -37,11 +37,15 @@ End of assembler dump.
 ```
 > A dump of a "Hello, World!" C program
 
-### x
-The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to "display the memory contents at a given address using the specified format". Here,
-`x/s 0x2004` gets the memory stored at 0x2004 (which is the text "Hello, World!". The output for the _x_ command can be formatted via `x/<format>` using 
-[output formats](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_54.html). Formats include hex, binary, decimal, octal, etc.
+### print
+The _print_ command (shortcut: _p_) can print the contents of a variable
+```nasm
+(gdb) p/d &text_length
+$5 = 14
+```
+> _p/d_ prints the lenght of _text\_length_ as an integer
 
+Both print (and x, see below) can be formatted with the following format specifiers.
 | Specifier | Format |
 | --------- | ------ |
 | t | binary |
@@ -54,6 +58,11 @@ The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to 
 | s | string (text) |
 | a | memory address |
 | i | instruction |
+
+### x
+The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to display the contents of a memory address. Here,
+`x/s 0x2004` gets the memory stored at 0x2004 (which is the text "Hello, World!". The output for the _x_ command can be formatted via `x/<format>` using 
+[output formats](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_54.html). Formats include hex, binary, decimal, octal, etc.
 
 ```nasm
 (gdb) disas main
