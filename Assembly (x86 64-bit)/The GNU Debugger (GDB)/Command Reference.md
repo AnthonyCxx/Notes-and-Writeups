@@ -39,11 +39,6 @@ End of assembler dump.
 
 ### print
 The _print_ command (shortcut: _p_) can print the contents of a variable. Here, _text\_length_ is a variable declared in the _.data_ section.
-```nasm
-(gdb) p/d &text_length
-$5 = 14
-```
-> _p/d_ prints the lenght of _text\_length_ as an integer
 
 Both print (and x, see below) can be formatted with the following format specifiers.
 | Specifier | Format |
@@ -58,6 +53,12 @@ Both print (and x, see below) can be formatted with the following format specifi
 | s | string (text) |
 | a | memory address |
 | i | instruction |
+
+```nasm
+(gdb) p/d &text_length
+$5 = 14
+```
+> _p/d_ prints the lenght of _text\_length_ as an integer
 
 ### x
 The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to display the contents of a memory address. Here,
