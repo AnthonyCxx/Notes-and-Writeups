@@ -15,7 +15,28 @@ public class arrays
         String[] names = new String[10];
 
         // An array of 5 integers, 1-5
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4, 5};
+    }
+}
+```
+
+## Accessing Array Elements
+```Java
+import java.util.Arrays;
+
+public class arrays
+{
+    public static void main(String[] args)
+    {
+        // An array of 5 integers, 1-5
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Print each element in the array using a range-based for loop (foreach)
+        for (int num : numbers)
+        {
+            System.out.print(num + " ");
+        }
+        System.out.print( System.lineSeparator() );    // System-independent line separator
     }
 }
 ```
