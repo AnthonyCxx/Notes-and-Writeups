@@ -137,3 +137,4 @@ _delete_ (shortcut: _d_) deletes the specific breakpoint. If no breakpoint is gi
 
 ## Sources
 VisualGDB Reference: [_Commands_](https://visualgdb.com/gdbreference/commands/) <br />
+StackOverflow: [_What is the Difference between x and p in GDB?_](https://stackoverflow.com/questions/21058681/difference-between-x-and-p-in-gdb/21058810) <br />
