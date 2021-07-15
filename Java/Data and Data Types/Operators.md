@@ -7,15 +7,15 @@
 | - | subtraction |
 | * | multiplication |
 | / | division |
-| % | [modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic) |
+| % | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
 
 ## Logical Operators
 | Operator | Function |
 | -------- | -------- |
-| == | equality opreator |
-| != | inequality opreator |
-| < | less than opreator |
-| > | greater than opreator |
+| == | equality |
+| != | inequality |
+| < | less than|
+| > | greater than |
 | <= | less than or equal to |
 | >= | greater than or equal to |
 
@@ -25,8 +25,8 @@
 | & | bitwise and |
 | \| | bitwise or |
 | ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
-| >> | left bit-shift |
-| << | right bit-shift |
+| >> | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
+| << | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
 > Reference: [_What are Bitwise Operators?_](https://www.geeksforgeeks.org/bitwise-operators-in-java/) <br/ >
 
 ## Sources
