@@ -9,6 +9,6 @@
 | long | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |  |  |  
 | float |  |  |  |  |  |  
 | double |  |  |  |  |  |  
-| boolean |  |  |  |  | false |  
-| char |  |  |  |  | '\u0000' | 
+| boolean |  |  |  | false |  |  
+| char |  |  |  | '\u0000' |  | 
 > Source: docs.oracle.com: [_Primitive Datatypes_](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) <br />
