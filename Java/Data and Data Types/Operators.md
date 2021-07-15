@@ -27,7 +27,7 @@
 | ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
 | >> | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
 | << | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
-> Reference: [_What are Bitwise Operators?_](https://www.geeksforgeeks.org/bitwise-operators-in-java/) <br/ >
+> Reference: [_What are Bitwise Operators?_](https://www.geeksforgeeks.org/bitwise-operators-in-java/)
 
 ## Sources
 docs.oracle.com [_Summary of Operators_](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html) <br />
