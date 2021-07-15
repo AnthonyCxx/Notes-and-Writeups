@@ -12,15 +12,14 @@
 | % | binary | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
 
 ## Unary Operators
-Unary operators are operators that take only one operand
-
 | Operator | Type | Function |
 | -------- | ---- | -------- |
 | ! | unary prefix | logical not | 
-| ++ | unary prefix |  |
-| -- | unary prefix |  | 
-| ++ | unary postfix |  |
-| -- | unary postfix |  |
+| ++ | unary prefix | increment by 1 |
+| -- | unary prefix | decrement by 1 | 
+| ++ | unary postfix | increment by 1 |
+| -- | unary postfix | decrement by 1 |
+> Reference: [_Increment/Decrement Prefix vs Postfix Operators_](https://www.programiz.com/article/increment-decrement-operator-difference-prefix-postfix)
 
 ## Logical Operators
 
