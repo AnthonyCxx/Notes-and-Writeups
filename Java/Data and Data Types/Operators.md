@@ -22,8 +22,8 @@
 ## Bitwise Operators
 | Operator | Function |
 | -------- | -------- |
-| & | bitwise and |
-| \| | bitwise or |
+| & | [bitwise and](https://www.programiz.com/java-programming/bitwise-operators#and) |
+| \| | [bitwise or](https://www.programiz.com/java-programming/bitwise-operators#or) |
 | ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
 | >> | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
 | << | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
