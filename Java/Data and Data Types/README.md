@@ -23,21 +23,34 @@
 | String |  |
 
 ## Operators
-| Operator | Function |
-| -------- | -------- |
-| + | addition |
-| - | subtraction |
-| * | multiplication |
-| / | division |
-| % | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
-| == | equality |
-| != | inequality |
-| < | less than|
-| > | greater than |
-| <= | less than or equal to |
-| >= | greater than or equal to |
-| & | [bitwise and](https://www.programiz.com/java-programming/bitwise-operators#and) |
-| \| | [bitwise or](https://www.programiz.com/java-programming/bitwise-operators#or) |
-| ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
-| >> | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
-| << | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
+| Operator | Type | Function |
+| -------- | ---- | -------- |
+| = | binary |variable assignment |
+| + | binary | addition |
+| - | binary | subtraction |
+| * | binary | multiplication |
+| / | binary | division |
+| % | binary | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
+| ! | unary prefix | logical not | 
+| ++ | unary prefix | increment by 1 |
+| -- | unary prefix | decrement by 1 | 
+| ++ | unary postfix | increment by 1 |
+| -- | unary postfix | decrement by 1 |
+| == | binary | equality |
+| != | binary | inequality |
+| < | binary | less than|
+| > | binary | greater than |
+| <= | binary | less than or equal to |
+| >= | binary | greater than or equal to |
+| instanceof | binary | true if class or subclass of |
+| && | binary | logical and |
+| \|\| | binary | logical or |
+| ? : | ternary | [ternary operator](https://www.geeksforgeeks.org/java-ternary-operator-with-examples/) |
+| ~ | unary prefix | [bitwise complement](https://www.javatpoint.com/bitwise-operator-in-java) |
+| & | binary | [bitwise and](https://www.programiz.com/java-programming/bitwise-operators#and) |
+| \| | binary | [bitwise or](https://www.programiz.com/java-programming/bitwise-operators#or) |
+| ^ | binary | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
+| >> | binary | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
+| << | binary | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
+| >>> | binary | [unsigned right bit-shift](https://www.javatpoint.com/unsigned-right-shift-operator-in-java) |
+> Reference: [_What are Bitwise Operators?_](https://www.geeksforgeeks.org/bitwise-operators-in-java/)
