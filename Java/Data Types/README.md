@@ -14,3 +14,10 @@
 > Sources: <br />
 > docs.oracle.com: [_Primitive Datatypes_](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) <br />
 > W3Schools: [_Java Data Types_](https://www.w3schools.com/java/java_data_types.asp) <br />
+
+## Non-primitive Datatypes
+| Datatype | Function | 
+| -------- | -------- |
+| Class |  |
+| Array |  |
+| String |  |
