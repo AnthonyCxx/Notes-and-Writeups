@@ -33,6 +33,7 @@
 ## Bitwise Operators
 | Operator | Function |
 | -------- | -------- |
+| ~ | [bitwise complement](https://www.javatpoint.com/bitwise-operator-in-java) |
 | & | [bitwise and](https://www.programiz.com/java-programming/bitwise-operators#and) |
 | \| | [bitwise or](https://www.programiz.com/java-programming/bitwise-operators#or) |
 | ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
