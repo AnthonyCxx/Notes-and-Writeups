@@ -21,3 +21,23 @@
 | Class |  |
 | Array |  |
 | String |  |
+
+## Operators
+| Operator | Function |
+| -------- | -------- |
+| + | addition |
+| - | subtraction |
+| * | multiplication |
+| / | division |
+| % | [modulus](https://en.wikipedia.org/wiki/Modular_arithmetic) |
+| == | equality |
+| != | inequality |
+| < | less than|
+| > | greater than |
+| <= | less than or equal to |
+| >= | greater than or equal to |
+| & | [bitwise and](https://www.programiz.com/java-programming/bitwise-operators#and) |
+| \| | [bitwise or](https://www.programiz.com/java-programming/bitwise-operators#or) |
+| ^ | [xor](https://en.wikipedia.org/wiki/Exclusive_or) (exclusive or) |
+| >> | [left bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
+| << | [right bit-shift](https://www.interviewcake.com/concept/java/bit-shift) |
