@@ -38,7 +38,7 @@ End of assembler dump.
 > A dump of a "Hello, World!" C program
 
 ### print
-The _print_ command (shortcut: _p_) can print the contents of a variable
+The _print_ command (shortcut: _p_) can print the contents of a variable. Here, _text\_length_ is a variable declared in the _.data_ section.
 ```nasm
 (gdb) p/d &text_length
 $5 = 14
