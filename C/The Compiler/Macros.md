@@ -117,3 +117,5 @@ int main(void)
 > Prints: <br />
 > This program was compiled on Jun 30 2021 at 21:08:55 <br />
 > The name of this file is Macros.c <br />
+
+## Generics with _\_Generic_ (C11+)
