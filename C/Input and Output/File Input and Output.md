@@ -228,13 +228,13 @@ int main()
 
 int main()
 {
-    // Open a file 'textfile.txt' in write (w) mode
+    // Open a file 'textfile.txt' in write (w) mode (overwrites existing file)
     FILE* file = fopen("textfile.txt", "w");  // Open 'textfile.txt' in 'w' (write) mode
 
     // If opening the file succeeded
     if (file != NULL)
     {
-        // Overwrite the file contents
+        // Overwrite the file contents 
         fputs("Overwriting your file :D!", file);  // String to write, FILE* to write to
 
         // Close the file
