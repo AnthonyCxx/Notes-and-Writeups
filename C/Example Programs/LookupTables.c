@@ -12,7 +12,7 @@ LICENSE: This program is free for anyone to use for any purpose by any person gi
          do not hold the distributer liable for any results of code the use of this code.
 */
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>     // for 'exit()'
 
 // A custom 'Tuple' of two ints
 typedef struct Tuple
