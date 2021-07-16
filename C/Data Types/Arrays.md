@@ -77,7 +77,7 @@ void printArray(int array[], int size)
     putchar('\n');
 }
 
-void zeroFill(int array[], int size)  // <== Notice that 'int array[]' does not have a '*' nor '&'
+void zeroFill(int array[], int size)  // 'int array[]' is converted to 'int* array' by the compiler
 {
     for(int i = 0; i < size; i++)
     {
