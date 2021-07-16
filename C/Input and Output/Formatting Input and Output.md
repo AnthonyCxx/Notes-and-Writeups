@@ -15,6 +15,7 @@ All sources are linked in the text or listed at the bottom.
 | %+.2f | prints a float with 2 decimal places and a prefixed '+' or '-' |
 | %#x | print a hexadecimal number with the '0x' prefix |
 
+
 ## Type Specifiers
 The type specifier specifies the [datatype](https://www.geeksforgeeks.org/data-types-in-c/) of the variable.
 
