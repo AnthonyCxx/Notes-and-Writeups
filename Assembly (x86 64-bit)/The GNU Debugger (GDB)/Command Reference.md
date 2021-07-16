@@ -57,7 +57,8 @@ Both print (and x, see below) can be formatted with the following format specifi
 (gdb) p/d &text_length
 $5 = 14
 ```
-> _p/d_ prints the lenght of _text\_length_ as an integer
+> _p/d_ prints the lenght of _text\_length_ as an integer <br />
+
 
 ### x
 The [_x_ command](https://visualgdb.com/gdbreference/commands/x) can be used to display the contents of a memory address. Here,
