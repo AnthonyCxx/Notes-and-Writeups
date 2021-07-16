@@ -14,6 +14,7 @@ All sources are linked in the text or listed at the bottom.
 | %03d | prints a zero-padded integer with a width of three (001, 012, 100) |
 | %+.2f | prints a float with 2 decimal places and a prefixed '+' or '-' |
 | %#x | print a hexadecimal number with the '0x' prefix |
+| %zu | prints a size_t integer | 
 
 
 ## Type Specifiers
