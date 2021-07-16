@@ -38,16 +38,18 @@ void calculate(int operation, int a, int b);    // Get two ints and calculate
 int main(void)
 {
     // Get operation from user
-    int oper = displayMenu();     // oper(ation)
+    int operation = displayMenu();
 
     // Get the two numbers from the user
     Tuple nums = getNums();
 
     // Calculate the results of the numbers with the given operation
-    calculate(oper, nums.a, nums.b);
+    calculate(operation, nums.a, nums.b);
 
     return 0;
 }
+
+
 
 // ****** FUNCTION IMPLEMENTATION ****** //
 
@@ -75,7 +77,7 @@ int displayMenu()
 
     } while (choice < 1 || choice > 5);  // while (choice is less than 1 OR greater than 5)
 
-    return choice - 1;   // Sub. 1 to align with the indicies of the LUT (lookup tables)
+    return choice - 1;   // Subtract 1 to align with the indicies of the zero-based LUTs (lookup tables)
 }
 
 // Get user input
@@ -90,7 +92,7 @@ Tuple getNums()
     // Error handling, if not 2 numbers
     if (scanf("%d %d", &nums.a, &nums.b) == 1)   // 'scanf()' implicitly returns the amount of numbers scanned
     {
-        puts("\n\nMinor fatal error: less than 2 numbers entered");
+        puts("\n\nFatal error: less than 2 numbers entered");
         puts("Exiting with status code 1");
         exit(1);
     }
