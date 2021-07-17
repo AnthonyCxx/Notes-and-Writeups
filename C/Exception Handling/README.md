@@ -9,8 +9,9 @@ _errno_ is a integer that corrosponds to an error message in a  hard-coded looku
 
 ## strerror()
 _strerror()_ is a function under [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) that searches the system's error lookup table for
-the given error code (as an integer) and returns the appropriate error message as a string literal.
+the given error code (as an integer) and returns the appropriate error message as a string literal. <br />
 
+Here, I forced a printing error by closing [stdout](https://stackoverflow.com/questions/16430108/what-does-it-mean-to-write-to-stdout-in-c).
 ```C
 #include <stdio.h>      // I/O operations
 #include <string.h>    // contains 'strerror()'
