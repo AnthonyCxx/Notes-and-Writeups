@@ -8,6 +8,37 @@ to deal with errors.
 _errno_ is a integer that corrosponds to an error message in a  hard-coded lookup table. This table varies by system, but for our purposes you should use [this Linux table](https://www.thegeekstuff.com/2010/10/linux-error-codes/). To use _errno_ in your program, declare it globally via `extern int errno;`.
 
 ## strerror()
+_strerror()_ is a function under [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) that searches the system's error lookup table for
+the given error code (as an integer) and returns the appropriate error message as a string literal.
+
+```C
+#include <stdio.h>      // I/O operations
+#include <string.h>    // contains 'strerror()'
+#include <errno.h>    // contains 'errno'
+
+// Macro from 'errno.h', receives error codes from operations
+extern int errno;
+
+int main(void)
+{
+    // 'stdout' is a file, so you can close it
+    fclose(stdout);
+
+    // Won't work because 'stdout' is closed
+    puts("This won\'t print");
+
+    // Error message
+    if (errno)         // If an error occured (error will be non-zero)
+    {
+        // Printing to 'stderr' will still work, because 'stdout' is a separate FILE* stream
+        fprintf(stderr, "An error occured: %s (Error code: %d)\n", strerror(errno), errno);
+    }
+
+    return 0;
+}
+```
+> Prints: <br />
+> An error occured: Bad file descriptor (Error code: 9)
 
 ## perror()
 
@@ -19,3 +50,4 @@ GeeksforGeeks: [_Error Handling in C Programs_](https://www.geeksforgeeks.org/er
 StackOverflow: [_Error Handling in C Code_](https://stackoverflow.com/questions/385975/error-handling-in-c-code) <br />
 Wikibooks: [_C Programming/Error handling_](https://en.wikibooks.org/wiki/C_Programming/Error_handling) <br />
 TheGeekStuff: [_131 Linux Error Codes for C Programming Language using errno_](https://www.thegeekstuff.com/2010/10/linux-error-codes/) <br />
+CPPReference: [_strerrr()_](https://en.cppreference.com/w/cpp/string/byte/strerror) <br />
