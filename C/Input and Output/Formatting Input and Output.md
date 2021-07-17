@@ -97,7 +97,7 @@ I've tried to list them in the order that I find myself using them.
 | \b | backspace character |
 | \v | [vertical tab character](https://stackoverflow.com/questions/3380538/what-is-a-vertical-tab) |
 | \f | [form feed (page break) character](https://en.wikipedia.org/wiki/Page_break#:~:text=Form%20feed%20is%20a%20page,control%2BL%20or%20%5EL%20.), starts a new page |
-| \\? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) |
+| \\? | used to avoid [trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) (ANSI C) |
 > Note: the carriage return character is pretty useful in writing progress bars
 
 ## Sources
