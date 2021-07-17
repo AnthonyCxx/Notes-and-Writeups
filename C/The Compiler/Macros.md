@@ -131,4 +131,4 @@ principles like function overloading and templating.
 > IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
 > Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
 > Rob's Programming Blog: [_C11 - Generic Selections_](http://www.robertgamble.net/2012/01/c11-generic-selections.html) <br />
-> StackOverflow: [_Syntax and Sample Usage of _Generic in C11_](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11) <br />
+> StackOverflow: [_Syntax and Sample Usage of \_Generic in C11_](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11) <br />
