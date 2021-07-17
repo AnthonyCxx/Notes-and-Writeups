@@ -1,1 +1,11 @@
 # Exception Handling in C
+
+
+## Sources
+TutorialsPoint: [_C - Error Handling_](https://www.tutorialspoint.com/cprogramming/c_error_handling.htm) <br />
+TutorialsPoint: [_C Library Macro: Errno_](https://www.tutorialspoint.com/c_standard_library/c_macro_errno.htm) <br />
+Study Tonight: [_Error Handling in C_](https://www.studytonight.com/c/error-handling-in-c.php) <br />
+GeeksforGeeks: [_Error Handling in C Programs_](https://www.geeksforgeeks.org/error-handling-c-programs/) <br />
+StackOverflow: [_Error Handling in C Code_](https://stackoverflow.com/questions/385975/error-handling-in-c-code) <br />
+Wikibooks: [_C Programming/Error handling_](https://en.wikibooks.org/wiki/C_Programming/Error_handling) <br />
+: [__]() <br />
