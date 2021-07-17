@@ -82,7 +82,7 @@ These days, the compiler is generally better at deciding which variables should 
 as more of a suggestion than a command (See [_"register" Keyword in C_](https://stackoverflow.com/questions/578202/register-keyword-in-c) and [_Death of the register keyword may be greatly exaggerated_](https://blog.bytellect.com/software-development/c-cplusplus/death-of-the-register-keyword-may-be-exaggerated/)).
 
 ## Sources
-GeeksforGeeks: [_Storage Classes in C_])(https://www.geeksforgeeks.org/storage-classes-in-c/) <br />
+GeeksforGeeks: [_Storage Classes in C_](https://www.geeksforgeeks.org/storage-classes-in-c/) <br />
 Guru99: [_Storage Classes in C: auto, extern, static, register class in C_](https://www.guru99.com/c-storage-classes.html) <br />
 TutorialsPoint: [_C - Storage Classes_](https://www.tutorialspoint.com/cprogramming/c_storage_classes.htm) <br />
 [_Learn C Programming_](https://www.barnesandnoble.com/w/learn-c-programming-jeff-szuhay/1137258930) by Jeff Szuhay <br />
