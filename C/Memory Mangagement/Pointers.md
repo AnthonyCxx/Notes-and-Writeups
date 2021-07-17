@@ -147,6 +147,25 @@ writing is `*(array + 3)` -- the compiler just substitutes the expression. You s
 array (`array`) and then adding the amount of bytes needed to reach the right location in memory. Assuming that the earlier example `*(array + 3)` is an int array, the 
 computer would just take the address of the beginning of the array (`array`) and adds _3 \* sizeof(int)_ (a total of 12 bytes), and then dereference the result.
 
+```C
+#include <stdio.h>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+
+int main(void)
+{
+    int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    for(int i=0; i < SIZE(array); i++)
+    {
+        // '*(array + i)' means 'take the beginning of the array and access the 'i'th element
+        printf("%d ", *(array + i));
+    }
+    putchar('\n');
+
+    return 0;
+}
+```
+
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
 TutorialsPoint: [_C - Pointers_](https://www.tutorialspoint.com/cprogramming/c_pointers.htm) <br />
