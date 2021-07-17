@@ -150,8 +150,8 @@ int main(void)
     printf("Array elements: ");
     for(int i=0; i < 5; i++) 
     {
-        printf("%d ", *(scoreboard + i));   // 'scoreboard[i]' also works
-    }                  ^  // is essentially dereferencing the beginning of the array + (i * sizeof(array_type))
+        printf("%d ", scoreboard[i]); 
+    }  
     putchar('\n');
 
     // Free the memory of the scoreboard on the heap (prevents memory leak)
