@@ -176,7 +176,7 @@ void print_int(int);
 void print_float(float);
 void print_double(double);
 
-// Pseudo-polymorphism
+// Pseudo-polymorphism, works by replacing 'print' with the appropriate function
 #define print(x) _Generic((x), char: print_char, char*: print_str, int: print_int, float: print_float, double: print_double)(x)
 
 int main(void)
