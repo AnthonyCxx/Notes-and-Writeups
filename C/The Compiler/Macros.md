@@ -47,34 +47,7 @@ int main(void)
 ```
 > Prints: The square of 5 is: 25
 
-## Macro Pitfalls
-Macros are not typechecked; Additionally, they may not expand in the same way that you might expect.
-
-### Lack of Type-checking
-Macros cannot be debugged, and thus their type cannot be checked. This means that the computer cannot implicitly convert the datatypes to the same type and ends up adding 
-two values of different types (which a computer **_cannot_** do properly). Here, the _INCREMENT()_ macro adds an integer literal (1) to the passed parameter and then assigns
-it to the paramter. Because _int\_num_ is an integer, this does not cause any problems; however, since _float\_num_ is a float, the computer ends up adding an integer literal
-to a float and the result is the value of _float\_num_ becoming 0.000000 (a clear error).
-```C
-#include <stdio.h>
-#define INCREMENT(x) (x = x + 1)
-
-int main(void)
-{
-    int int_num = 1;
-    int float_num = 1.0;
-
-    printf("The integer 1 incremented is: %d\n", INCREMENT(int_num));
-    printf("The float 1 incremented is: %f\n", INCREMENT(float_num));  
-
-    return 0;
-}
-```
-> Prints: <br />
-> The integer 1 incremented is: 2 <br />
-> The float 1 incremented is: 0.000000 <br />
-
-### Unexpected Expansion
+## Macro Pitfalls: Unexpected Expansion
 Macros take their parameters quite literally. The _SQUARE(x)_ function used earlier to show parameterized macros breaks when you give it an expression (2+3) instead of a 
 literal (5). This is because the parameter _x_  is 2+3 and the macro does not know to include parthenses; so, the macro really expands to 2 + 3 * 2 + 3, which
 equals 11, not 25 as we would expect. This can be easily fixed by putting parentheses around the parameters in the definition of _SQUARE()_ like so:
@@ -125,6 +98,28 @@ them with types it wasn't intended for; in addition to providing some type-safet
 principles like function overloading and templating.
 
 ### Simple Usage
+Here is a simple generic macro that increments different datatypes differently.
+
+```C
+#include <stdio.h>
+
+#define INCREMENT(X) _Generic((X), int: X += 1, float: X += 2.0f, double: X += 3.0)
+
+int main(void)
+{
+        int int_num = 1;
+    float float_num = 1.0;
+
+    printf("The integer 1 incremented is: %d\n", INCREMENT(int_num));
+    printf("The float 1 incremented is: %f\n", INCREMENT(float_num));
+
+    return 0;
+
+    return 0;
+}
+```
+
+### Evaluating Datatypes
 ```C
 #include <stdio.h>
 
@@ -161,9 +156,13 @@ int main(void)
     return 0;
 }
 ```
-> Sources: <br />
-> IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
-> Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
-> WikiChip: [_Generic Selection - C_](https://en.wikichip.org/wiki/c/generic_selection) <br />
-> Rob's Programming Blog: [_C11 - Generic Selections_](http://www.robertgamble.net/2012/01/c11-generic-selections.html) <br />
-> StackOverflow: [_Syntax and Sample Usage of \_Generic in C11_](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11) <br />
+> Prints: <br />
+> Type name: char pointer
+> Type name: unsigned long long
+
+### Sources:
+IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
+Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
+WikiChip: [_Generic Selection - C_](https://en.wikichip.org/wiki/c/generic_selection) <br />
+Rob's Programming Blog: [_C11 - Generic Selections_](http://www.robertgamble.net/2012/01/c11-generic-selections.html) <br />
+StackOverflow: [_Syntax and Sample Usage of \_Generic in C11_](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11) <br />
