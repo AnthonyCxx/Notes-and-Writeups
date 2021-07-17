@@ -162,9 +162,17 @@ int main(void)
 > Type name: char pointer <br />
 > Type name: unsigned long long <br />
 
+### Complex Usage
+Generic macros can be used to achieve pseudo-polymorphism, mapping varying functions to a single 'function' call.
+```C
+
+```
+
 ### Sources:
 IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
 Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
 WikiChip: [_Generic Selection - C_](https://en.wikichip.org/wiki/c/generic_selection) <br />
 Rob's Programming Blog: [_C11 - Generic Selections_](http://www.robertgamble.net/2012/01/c11-generic-selections.html) <br />
 StackOverflow: [_Syntax and Sample Usage of \_Generic in C11_](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11) <br />
+GitHub Gist: [_Fun with C11 \_Generic()_](https://gist.github.com/ThirteenFish/8253ab3a55101bd86455) <br />
+Andrew Bissel: [_C11’s \_Generic Keyword: Macro Applications and Performance Impacts_](https://abissell.com/2014/01/16/c11s-_generic-keyword-macro-applications-and-performance-impacts/) <br />
