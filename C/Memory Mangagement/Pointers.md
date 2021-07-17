@@ -141,7 +141,11 @@ int main(void)
 
 ## Pointer Arithmetic
 Basic arithmetic operations are allowed on pointers in the form of addition and subtraction. For example, the expression `ptr++` just means 'increment the pointer by one',
-which would add `1 * sizeof(typeof(ptr))` to the pointer.
+which would add `1 * sizeof(typeof(ptr))` to the pointer. Take an array for example, you may be used to writing `array[3]` to access the third element, but really what you're
+writing is `*(array + 3)` - the compiler just substitutes the expression. You see an array is just a raw series of bytes as is evident from the expression 
+`malloc(10 * sizeof(int))`; thus, in order to access the individual elements, the computer calculates the right element by taking the offset from the pointer to the beginning
+of the array and the . Assuming that the example `*(array + 3)` is an int array, the computer takes the address of the beginning of the array (`array`) and adds _3 \* 
+sizeof(int)_, dereferencing (accessing) the result.
 
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
