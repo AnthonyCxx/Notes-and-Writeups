@@ -102,6 +102,8 @@ Here is a simple generic macro that increments different datatypes differently.
 
 ```C
 #include <stdio.h>
+
+// Increment integers by 1, floats by 2, and doubles by 3
 #define INCREMENT(X) _Generic((X), int: X += 1, float: X += 2.0f, double: X += 3.0)
 
 int main(void)
