@@ -22,7 +22,7 @@ The _#define_ directive defines a pattern for the compiler such that whenever it
 (the second item). These patterns of input which are transformed into patterns of output are called [macros](https://en.wikipedia.org/wiki/Macro_(computer_science)). 
 In its simplest form, the _#define_ macro is used to define constants that will be substituted throughout the program. For example, a directive
 _#define PI 3.14159_ would replace all instances of 'PI' (but not pi, pI, or Pi) with '3.14159'. Per convention, macro identifiers (names) should always be fully 
-capitalized.
+capitalized. See more about macros [here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/The%20Compiler/Macros.md).
 ```C
 #include <stdio.h>
 #define PI 3.14159
