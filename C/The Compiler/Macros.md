@@ -95,7 +95,9 @@ int main(void)
 [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) introduced the [_\_Generic_](https://en.cppreference.com/w/c/language/generic) keyword,
 which allows you to write a single macro that works with varying datatypes. This is important because it allows for safer macros by preventing unintentional misusing
 them with types it wasn't intended for; in addition to providing some type-safety, the _\_Generic_ keyword allows you to emulate typical object-oriented programming
-principles like function overloading and templating.
+principles like function overloading and templating. [Here](https://gist.github.com/ThirteenFish/8253ab3a55101bd86455) is a good real-life example of achieving
+pseudo-polymorphism via _\_Generic_.
+
 
 ### Simple Usage
 Here is a simple generic macro that increments different datatypes differently.
