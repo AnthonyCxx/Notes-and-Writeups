@@ -212,7 +212,12 @@ void print_double(double num)
     printf("Printing double: \'%.2lf\'\n", num);
 }
 ```
-
+> Prints: <br />
+> Printing string: 'This is a string :D' <br />
+> Printing double: '14.00' <br />
+> Printing int: '1300' <br />
+> Printing char: 'A' <br />
+ 
 ### Sources:
 IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
 Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
