@@ -46,11 +46,11 @@ extern int errno;
 
 int main(void)
 {
-    // max allocatable size allowed (~ 9.223 quintillion bytes)
+    // max allocatable size allowed (~ 9.223 quintillion bytes, will always fail)
     unsigned long long* ptr = (unsigned long long*) malloc(9223372036854775807);  
 
     if (ptr == NULL)  
-            perror("An error has occured");
+            perror("An error has occured");  //'An error has occured': <message>
     else
         free(ptr);
 
