@@ -4,6 +4,31 @@ C does not support exception handling, so you can go ahead and cry now. Instead,
 and [_ERANGE_](https://www.tutorialspoint.com/c_standard_library/c_macro_erange.htm))
 to deal with errors.
 
+## Simple Error Handling with Conditionals
+Ideally, you can predict potentially pitfalls in your program; if you can, using an _if_ statement is always a solid option.
+
+Note: dividing by zero is actually undefined behavior, not 0, but for the sake of example I'm ignoring that.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    int result, dividend = 30, divisor = 0;
+
+    // Avoid floating-point exception from dividing by zero
+    if (divisor != 0)
+        result = dividend / divisor;  // 30 / 0
+    else
+        result = 0;
+
+    printf("The result of %d / %d is %d\n", dividend, divisor, result);
+
+    return 0;
+}
+```
+> Prints: <br />
+> The result of 30 / 0 is 0
+
 ## errno
 _errno_ is a integer that corrosponds to an error message in a  hard-coded lookup table. This table varies by system, but for our purposes you should use [this Linux table](https://www.thegeekstuff.com/2010/10/linux-error-codes/). To use _errno_ in your program, declare it globally via `extern int errno;`.
 
