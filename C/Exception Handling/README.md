@@ -1,6 +1,7 @@
 # Exception Handling in C
 C does not support exception handling, so you can go ahead and cry now. <br />
-
+Instead, we have [conditionals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Conditionals.md), a set of functions (), and a macro ([_extern int errono_](https://www.tutorialspoint.com/c_standard_library/c_macro_errno.htm))
+to deal with errors.
 
 ## Sources
 TutorialsPoint: [_C - Error Handling_](https://www.tutorialspoint.com/cprogramming/c_error_handling.htm) <br />
