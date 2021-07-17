@@ -102,22 +102,22 @@ Here is a simple generic macro that increments different datatypes differently.
 
 ```C
 #include <stdio.h>
-
 #define INCREMENT(X) _Generic((X), int: X += 1, float: X += 2.0f, double: X += 3.0)
 
 int main(void)
 {
-        int int_num = 1;
+    int int_num = 1;
     float float_num = 1.0;
 
     printf("The integer 1 incremented is: %d\n", INCREMENT(int_num));
-    printf("The float 1 incremented is: %f\n", INCREMENT(float_num));
-
-    return 0;
-
+    printf("The float 1 incremented is: %.2f\n", INCREMENT(float_num));
+   
     return 0;
 }
 ```
+> Prints: <br />
+> The integer 1 incremented is: 2 <br />
+> The float 1 incremented is: 3.00 <br />
 
 ### Evaluating Datatypes
 ```C
@@ -157,8 +157,8 @@ int main(void)
 }
 ```
 > Prints: <br />
-> Type name: char pointer
-> Type name: unsigned long long
+> Type name: char pointer <br />
+> Type name: unsigned long long <br />
 
 ### Sources:
 IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
