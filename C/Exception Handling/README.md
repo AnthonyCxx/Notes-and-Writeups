@@ -4,6 +4,13 @@ C does not support exception handling, so you can go ahead and cry now. Instead,
 and [_ERANGE_](https://www.tutorialspoint.com/c_standard_library/c_macro_erange.htm))
 to deal with errors.
 
+## errno
+_errno_ is a integer that corrosponds to a hard-coded lookup table for error messages. This table varies by system, but for our purposes you should use [this Linux table](https://www.thegeekstuff.com/2010/10/linux-error-codes/).
+
+## strerror()
+
+## perror()
+
 ## Sources
 TutorialsPoint: [_C - Error Handling_](https://www.tutorialspoint.com/cprogramming/c_error_handling.htm) <br />
 TutorialsPoint: [_C Library Macro: Errno_](https://www.tutorialspoint.com/c_standard_library/c_macro_errno.htm) <br />
