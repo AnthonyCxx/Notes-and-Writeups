@@ -124,11 +124,46 @@ which allows you to write a single macro that works with varying datatypes. This
 them with types it wasn't intended for; in addition to providing some type-safety, the _\_Generic_ keyword allows you to emulate typical object-oriented programming
 principles like function overloading and templating.
 
+### Simple Usage
 ```C
+#include <stdio.h>
 
+#define TYPE(X) \
+ _Generic((X), \
+    char: "char", \
+    unsigned char: "unsigned char",\
+    char*: "char pointer",        \
+                    \
+    short: "short", \
+    unsigned short: "unsigned short", \
+    int: "int", \
+    unsigned int: "unsigned int", \
+    long: "long", \
+    unsigned long: "unsigned long", \
+    long long: "long long", \
+    unsigned long long: "unsigned long long", \
+                    \
+    float: "float", \
+    double: "double", \
+    long double: "long double", \
+                                \
+    default: "unknown datatype")
+
+
+int main(void)
+{
+    // Print the type of a string literal (a char*)
+    printf("Type name: %s\n", TYPE("this is a string literal"));
+
+    // Print the datatype of an unsigned long long
+    printf("Type name: %s\n", TYPE(10ULL));    // 'ULL' suffix for unsigned long long literal
+
+    return 0;
+}
 ```
 > Sources: <br />
 > IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
 > Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
+> WikiChip: [_Generic Selection - C_](https://en.wikichip.org/wiki/c/generic_selection) <br />
 > Rob's Programming Blog: [_C11 - Generic Selections_](http://www.robertgamble.net/2012/01/c11-generic-selections.html) <br />
 > StackOverflow: [_Syntax and Sample Usage of \_Generic in C11_](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11) <br />
