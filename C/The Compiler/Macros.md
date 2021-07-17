@@ -165,7 +165,7 @@ int main(void)
 > Type name: unsigned long long <br />
 
 ### Complex Usage
-Generic macros can be used to achieve pseudo-polymorphism, mapping varying functions to a single 'function' call.
+_\_Generic_ macros can be used to achieve pseudo-polymorphism, mapping varying functions to a single 'function' call.
 ```C
 #include <stdio.h>
 
