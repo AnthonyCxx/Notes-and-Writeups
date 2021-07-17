@@ -6,7 +6,7 @@ opposed to a boolean's two states) but still keep the advantage of a boolean in 
 the second is 1, the third is 2, and so on; however, this can be overwritten by manually assigning the values inside of the enum declaration. 
 A good summary can be found [_here_](https://www.youtube.com/watch?v=lWzZ2l5n81c) (yes, CodeVault again - he's just so good at explaining stuff). <br />
 
-Enums may also be preferable to booleans because they can represent two or more potentially unrelated states, whereas a boolean implies a single state that either is or is not.
+Enums can also be clearer booleans because they can represent two or more potentially unrelated states, whereas a boolean implies a single state that either is or is not.
 
 ## Declaring an Enum
 An enum is declared like so `enum enum_name { list_of_possible_values };`. The list of possible values is comma-separated.
