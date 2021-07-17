@@ -1,4 +1,5 @@
 # Exception Handling in C
+C does not support exception handling, so you can go ahead and cry now. <br />
 
 
 ## Sources
