@@ -119,8 +119,14 @@ int main(void)
 > The name of this file is Macros.c <br />
 
 ## Generics with _\_Generic_ 
-C11 introduced the [_\_Generic_]()
+[C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) introduced the [_\_Generic_](https://en.cppreference.com/w/c/language/generic) keyword,
+which allows you to write a single macro that works with varying datatypes. This is important because it allows for safer macros by preventing unintentional misusing
+them with types it wasn't intended for; in addition to providing some type-safety, the _\_Generic_ keyword allows you to emulate typical object-oriented programming
+principles like function overloading and templating.
 
+```C
+
+```
 > Sources: <br />
 > IBM Documentation: [_Generic Selection (C11)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=expressions-generic-selection-c11) <br />
 > Microsoft Documentation: [_Generic Selection (C11)_](https://docs.microsoft.com/en-us/cpp/c-language/generic-selection?view=msvc-160) <br />
