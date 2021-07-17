@@ -5,7 +5,7 @@ and [_ERANGE_](https://www.tutorialspoint.com/c_standard_library/c_macro_erange.
 to deal with errors.
 
 ## errno
-_errno_ is a integer that corrosponds to a hard-coded lookup table for error messages. This table varies by system, but for our purposes you should use [this Linux table](https://www.thegeekstuff.com/2010/10/linux-error-codes/).
+_errno_ is a integer that corrosponds to an error message in a  hard-coded lookup table. This table varies by system, but for our purposes you should use [this Linux table](https://www.thegeekstuff.com/2010/10/linux-error-codes/). To use _errno_ in your program, declare it globally via `extern int errno;`.
 
 ## strerror()
 
