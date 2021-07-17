@@ -79,7 +79,7 @@ int main(void)
     // 'stdout' is a file, so you can close it
     fclose(stdout);
 
-    // Won't work because 'stdout' is closed
+    // Throws an error because 'stdout' is closed
     puts("This won\'t print");
 
     // Error message
