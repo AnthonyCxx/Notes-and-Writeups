@@ -111,7 +111,7 @@ Tuple getNums()
         each operation that the user could have chosen directly correlates with an index
         in both lookup tables. This way, we don't have to evaluate their choice and instead
         can use it directly, knowing that their choices, the arithmetic functions, and tokens
-        all line up nicely.
+        all line up.
 
 */
 
