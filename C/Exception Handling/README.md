@@ -17,7 +17,7 @@ int main(void)
 
     // Avoid floating-point exception from dividing by zero
     if (divisor != 0)
-        result = dividend / divisor;  // 30 / 0
+        result = dividend / divisor;
     else
         result = 0;
 
