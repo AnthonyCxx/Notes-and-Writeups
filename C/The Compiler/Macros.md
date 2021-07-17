@@ -165,7 +165,52 @@ int main(void)
 ### Complex Usage
 Generic macros can be used to achieve pseudo-polymorphism, mapping varying functions to a single 'function' call.
 ```C
+#include <stdio.h>
 
+void print_char(char);
+void print_str(char*);
+
+void print_int(int);
+void print_float(float);
+void print_double(double);
+
+// Pseudo-polymorphism
+#define print(x) _Generic((x), char: print_char, char*: print_str, int: print_int, float: print_float, double: print_double)(x)
+
+int main(void)
+{
+    print("This is a string :D");
+    print(14.00);
+    print(1300);
+    print((char) 'A');   // For some reason disincluding the typecast '(char)' yields 'print_int'
+
+    return 0;
+}
+
+void print_char(char chr)
+{
+    printf("Printing char: \'%c\'\n", chr);
+}
+
+void print_str(char* str)
+{
+    printf("Printing string: \'%s\'\n", str);
+}
+
+void print_int(int num)
+{
+    printf("Printing int: \'%d\'\n", num);
+}
+
+void print_float(float num)
+{
+    printf("Printing float: \'%.2f\'\n", num);
+}
+
+void print_double(double num)
+{
+    printf("Printing double: \'%.2lf\'\n", num);
+}
 ```
 
 ### Sources:
