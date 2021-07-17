@@ -184,7 +184,7 @@ int main(void)
     print("This is a string :D");
     print(14.00);
     print(1300);
-    print((char) 'A');   // For some reason disincluding the typecast '(char)' yields 'print_int'
+    print((char) 'A');   // For some reason disincluding the typecast '(char)' yields 'print_int'?
 
     return 0;
 }
