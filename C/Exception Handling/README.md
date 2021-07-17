@@ -32,6 +32,33 @@ int main(void)
 ## errno
 _errno_ is a integer that corrosponds to an error message in a  hard-coded lookup table. This table varies by system, but for our purposes you should use [this Linux table](https://www.thegeekstuff.com/2010/10/linux-error-codes/). To use _errno_ in your program, declare it globally via `extern int errno;`.
 
+## perror()
+_perror(**_str_**)_ prints the given string followed by a colon and a built-in error message from the system's error lookup table. _perror()_ cannot be called 
+without an argument; if you want a more flexible option, then use _strerror()_ from [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm).
+
+```C
+#include <stdio.h>      // I/O operations
+#include <stdlib.h>    // contains 'malloc()' and 'free()'
+#include <errno.h>    // contains 'errno'
+
+// Macro from 'errno.h', receives error codes from operations
+extern int errno;
+
+int main(void)
+{
+    unsigned long long* ptr = (unsigned long long*) malloc(9223372036854775807);   // max allocatable size allowed (~ 9.223 quintillion bytes)
+
+    if (ptr == NULL)  
+            perror("An error has occured");
+    else
+        free(ptr);
+
+    return 0;
+}
+```
+> Prints: <br />
+> An error has occured: Cannot allocate memory
+
 ## strerror()
 _strerror(**_int_**)_ is a function under [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) that searches the system's error lookup table for
 the given error code (as an integer) and returns the appropriate error message as a string literal. <br />
@@ -42,7 +69,7 @@ Here, I forced a printing error by closing [stdout](https://stackoverflow.com/qu
 #include <string.h>    // contains 'strerror()'
 #include <errno.h>    // contains 'errno'
 
-// Macro from 'errno.h', receives error codes from operations
+// Macro from 'errno.h', listens for error codes from functions
 extern int errno;
 
 int main(void)
@@ -65,8 +92,6 @@ int main(void)
 ```
 > Prints: <br />
 > An error occured: Bad file descriptor (Error code: 9)
-
-## perror()
 
 ## Sources
 TutorialsPoint: [_C - Error Handling_](https://www.tutorialspoint.com/cprogramming/c_error_handling.htm) <br />
