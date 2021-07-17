@@ -25,7 +25,7 @@ Finally, if _malloc()_ cannot allocate memory (because there is not enough room)
 int main(void)
 {
     // Allocate memory for a single integer and typecast the memory to an integer pointer
-    int* ptr = (int*) malloc( sizeof(int) );
+    int* ptr = (int*) malloc( sizeof(int) );  // Allocating an array would be done like: '(int*) malloc(10 * sizeof(int));'
 
     // Always check for errors
     if (ptr == NULL)
