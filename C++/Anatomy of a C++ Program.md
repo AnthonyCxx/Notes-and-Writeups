@@ -65,8 +65,63 @@ int main()
 ## _#include \<iostream\>_
 _#include \<iostream\>_ includes a header file that contains the funtions needed for input and output.
 
+
+```C++
+#include <iostream>
+
+int main()
+{
+     // This is a comment
+
+    /*
+        This is a 
+        multi-line comment
+    */
+
+    return 0;
+}
+```
+
 ## _cout << "Hello, world!" << endl;_
+This line outputs the string "_Hello, World!_" onto the screen and begins a new line (cout = common output; endl = endline).
+
+```C++
+#include <iostream>
+
+int main()
+{
+     // This is a comment
+
+    /*
+        This is a 
+        multi-line comment
+    */
+
+    cout << "Hello, world!" << endl;
+    
+    return 0;
+}
+```
+
 
 ## _using namespace std;_
 All C++ objects belong to the _std_ (standard) namespace. This means that anytime you write _cout_ or _end_, you'll have to prefix it with _std::_. I know that makes no sense
 right now, but just make a habit of including this line in your programs.
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // This is a comment
+
+    /*
+        This is a 
+        multi-line comment
+    */
+
+    cout << "Hello, world!" << endl;
+
+    return 0;
+}
+```
