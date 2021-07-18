@@ -42,7 +42,7 @@ for (int i=0, j=0; i < 6; i += 1, j += 2)
 }
 
 ```
-> Note: this works in other languages such as C++ and C# as well
+> Note: this works in other languages such as C and C# as well
  
 ## While Statement
 The _while_ statment continues to execute the body of the loop until the given condition is false. <br />
@@ -131,3 +131,5 @@ for(int num : nums)
     cout << num << '\n';
 }
 ```
+> Prints: <br />
+> 1, 2, 3, 4, 5 (on separate lines)
