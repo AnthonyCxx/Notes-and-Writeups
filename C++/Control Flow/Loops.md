@@ -114,7 +114,7 @@ _num_ takes on a value of the Nth element in the array until it has iterated ove
 
 ## Format
 ```C++
-for(data_type name : container)
+for(variable declaration : container)
 {
 
 }
