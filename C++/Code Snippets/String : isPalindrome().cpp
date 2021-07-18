@@ -1,3 +1,4 @@
+// Reverses a string, returning a new string
 string reverse(const string& source)
 {
     string reverse;
@@ -10,6 +11,7 @@ string reverse(const string& source)
     return reverse;
 }
 
+// A palindrome is a word that is spelled the same backwards and forwards
 bool isPalindrome(const string& str)
 {
     return str == reverse(str);
