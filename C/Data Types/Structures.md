@@ -82,6 +82,62 @@ int main(void)
 > Prints: <br />
 > Name: Henry <br />
 > Phone number: 540-321-2080 <br />
+
+## Returning Multiple Values with Structs
+A function can only return one variable, but nothing's to say that the variable can't be a struct that contains 5 different variables.
+
+```C
+#include <stdio.h>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+
+// A struct of two integers (mimics tuple)
+typedef struct Tuple
+{
+    int min;
+    int max;
+} Tuple;
+
+
+Tuple findMinMax(int array[], int size)
+{
+    int min, max;
+
+    // Initialize for comparisions
+    min = max = array[0];
+
+    // Compare all elements
+    for(int i=0; i < size; i++)
+    {
+        // If new min.
+        if (min > array[i])
+            min = array[i];
+
+        // If new max.
+        if (max < array[i])
+            max = array[i];
+    }
+
+    // Return an anonymous tuple
+    Tuple temp = {min, max};
+    return temp;
+}
+
+
+// DRIVER CODE
+int main(void)
+{
+    // An array of 5 integers
+    int array[5] = {35, 14, 31, 21, 6};
+    Tuple minMax;
+
+    // Find the minimum and maximum values of the array
+    minMax = findMinMax(array, SIZE(array));
+
+    // Print the min and max
+    printf("Minimum: %d\n", minMax.min);
+    printf("Maximum: %d\n", minMax.max);
+}
+```
     
 ## Structs within Structs
 Structures can contain other structs as one of their members. As C does not have inheritance, C often uses composition is mimic inheritance; however, this only goes so far as
