@@ -7,13 +7,12 @@ using namespace std;
 
 int main()
 {
-    // This is a comment
-
     /*
         This is a 
         multi-line comment
     */
 
+    // Writes 'Hello, World!' to the screen
     cout << "Hello, world!" << endl;
 
     return 0;
@@ -44,7 +43,7 @@ int main()
 ```
 
 ## Comments
-The lines `// This is a comment` and `/* This is a multi-line comment */` are comments, lines in the source code that will be ignored by 
+The lines `// Writes 'Hello, World!' to the screen` and `/* This is a multi-line comment */` are comments, lines in the source code that will be ignored by 
 [the compiler](https://www.freecodecamp.org/news/c-compiler-explained-what-is-the-compiler-and-how-do-you-use-it/). Comments allow you to 
 document your code, making it more legible and leaving notes for anyone else that will read it. 
 
