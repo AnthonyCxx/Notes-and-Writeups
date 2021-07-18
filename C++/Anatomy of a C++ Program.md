@@ -31,8 +31,8 @@ The lines `// This is a comment` and `/* This is a multi-line comment */` are co
 [the compiler](https://www.freecodecamp.org/news/c-compiler-explained-what-is-the-compiler-and-how-do-you-use-it/). Comments allow you to 
 document your code, making it more legible and leaving notes for anyone else that will read it. 
 
-## _#include <iostream>_
-
+## _#include \<iostream\>_
+_#include \<iostream\>_ includes a header file that contains the funtions needed for input and output.
 
 ## _using namespace std;_
 All C++ objects belong to the _std_ (standard) namespace. This means that anytime you write _cout_ or _end_, you'll have to prefix it with _std::_. I know that makes no sense
