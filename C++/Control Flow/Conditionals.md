@@ -105,8 +105,9 @@ would be [NPC dialogue](https://learn.unity.com/tutorial/switch-statements#5c8a6
 player character.
 
 ### Standard Behavior
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
@@ -115,19 +116,19 @@ int main(void)
     switch (coins)
     {
         case 300:
-            puts("You can buy a large health potion.");
+            cout << "You can buy a large health potion.\n";
             break;
 
         case 200:
-            puts("You can buy a medium health potion.");
+            cout << "You can buy a medium health potion.\n";
             break;
 
         case 100:
-            puts("You can buy a small health potion.");
+            cout << "You can buy a small health potion.\n";
             break;
 
         default:
-            puts("You have insufficient funds.");
+            cout << "You have insufficient funds.\n";
             break;
     }
 
@@ -139,8 +140,9 @@ int main(void)
 ### Fall-through Behavior
 By disclusing the _break_ statement, you can allow the flow of execution to continue to the next case (and the next case, etc.) after a case is triggered.
 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
@@ -149,17 +151,17 @@ int main(void)
     switch (coins)
     {
         case 300:
-            puts("You can buy a large health potion.");
+            cout << "You can buy a large health potion.\n";
 
         case 200:
-            puts("You can buy a medium health potion.");
-            
+            cout << "You can buy a medium health potion.\n";
+
         case 100:
-            puts("You can buy a small health potion.");
+            cout << "You can buy a small health potion.\n";
             break;
 
         default:
-            puts("You have insufficient funds.");
+            cout << "You have insufficient funds.\n";
     }
 
     return 0;
@@ -172,8 +174,9 @@ int main(void)
 
 ### Using GNU Range Expressions
 The GCC Compiler allows you to use [range expressions](https://gcc.gnu.org/onlinedocs/gcc/Case-Ranges.html) as a replacement for single cases.
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
@@ -182,17 +185,17 @@ int main(void)
     switch (coins)
     {
         case 300 ... 999:    // case 300 - case 999
-            puts("You can buy a large health potion.");
+            cout << "You can buy a large health potion.\n";
 
         case 200 ... 299:    // case 200 - case 299
-            puts("You can buy a medium health potion.");
+            cout << "You can buy a medium health potion.\n";
 
         case 100 ... 199:   // case 100 - case 199
-            puts("You can buy a small health potion.");
+            cout << "You can buy a small health potion.\n";
             break;
 
         default:
-            puts("You have insufficient funds.");
+            cout << "You have insufficient funds.\n";
     }
 
     return 0;
@@ -207,20 +210,21 @@ The ternary operator (as opposed to binary or unary operators) takes a condition
 it returns the second expression. Think of the ternary operator as a simplified version of a standard _if_-_else_ conditional structure.
 
 ### Format
-```C
+```C++
 expression ? value1 : value2
 ```
 
 ### Example
 ```C
-#include <stdio.h>
-#include <math.h>
+#include <iostream>
+#include <cmath>
 #define PI 3.14
+using namespace std;
 
 int main()
 {
-    // Returns (and then prints) 'Pi is less than the square root of 5' because 'PI > sqrt(5)' is false
-    puts( PI > sqrt(5) ? "Pi is greater than the square root of 5" : "Pi is less than the square root of 5" );
+    // Returns (and then prints) 'Pi is greather than the square root of 5' because 'PI > sqrt(5)' is false
+    cout <<  (PI > sqrt(5) ? "Pi is greater than the square root of 5\n" : "Pi is less than the square root of 5\n");
 
     return 0;
 }
