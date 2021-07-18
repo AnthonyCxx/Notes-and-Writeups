@@ -18,3 +18,9 @@ int main()
     return 0;
 }
 ```
+
+## The _main()_ function
+A function is a block of code that performs an action. The _main()_ function is where every C++ program starts. Naturally, this means there can only be one _main()_ function
+and the name _main()_ must be written verbatim. 
+
+## Return 0
