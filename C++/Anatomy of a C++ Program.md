@@ -23,6 +23,13 @@ int main()
 A function is a block of code that performs an action. The _main()_ function is where every C++ program starts. <br />
 Naturally, this means there can only be one _main()_ function and the name _main()_ must be written verbatim. 
 
+```C++
+int main()
+{
+
+}
+```
+
 ## _return 0_
 The line _return 0_ returns the error code 0 to the system that ran the program, indicating that there was no error.
 
