@@ -215,7 +215,7 @@ expression ? value1 : value2
 ```
 
 ### Example
-```C
+```C++
 #include <iostream>
 #include <cmath>
 #define PI 3.14
