@@ -97,7 +97,6 @@ typedef struct Tuple
     int max;
 } Tuple;
 
-
 Tuple findMinMax(int array[], int size)
 {
     int min, max;
@@ -121,7 +120,6 @@ Tuple findMinMax(int array[], int size)
     Tuple temp = {min, max};
     return temp;
 }
-
 
 // DRIVER CODE
 int main(void)
