@@ -109,26 +109,24 @@ int main()
 ```
 
 ## Range-based For Loop
-A range-based for loop is the equivalent of a [_foreach loop_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement) in Java or C#.
-A range-based for loop loops over a 
+A range-based for loop is the equivalent of a [_foreach loop_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement) in Java or C#. A range-based for loop iterates over a over a container (a data structure that contains a collection of elements). In the example, the variable
+_num_ takes on a value of the Nth element in the array until it has iterated over all the elements.
 
 ## Format
+```C++
+for(data_type name : container)
+{
+
+}
+```
 
 ## Example
 ```C++
-#include <iostream>
-using namespace std;
+// An array of 5 numbers
+int nums[5] = {1, 2, 3, 4, 5};
 
-int main()
+for(int num : nums)
 {
-    // An array of 5 numbers
-    int nums[5] = {1, 2, 3, 4, 5};
-
-    for(int num : nums)
-    {
-        cout << num << '\n';
-    }
-
-    return 0;
+    cout << num << '\n';
 }
 ```
