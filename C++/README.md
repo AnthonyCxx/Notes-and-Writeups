@@ -9,3 +9,6 @@ This is not meant to be an authority of any kind nor is it meant to be comprehen
 [_The C++ Programming Language, Fourth Edition_](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840) <br />
 [_A Tour of C++, 2nd Edition_](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832) <br />
 [_Software Architecture with C++_](https://www.amazon.com/Software-Architecture-effective-architecture-techniques/dp/1838554599) <br />
+
+## Other Resources
+[_The Cherno's C++ Tutorial Series_](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) <br />
