@@ -106,8 +106,8 @@ int main()
 
 
 ## _using namespace std;_
-All C++ objects belong to the _std_ (standard) namespace. This means that anytime you write _cout_ or _end_, you'll have to prefix it with _std::_. I know that makes no sense
-right now, but just make a habit of including this line in your programs.
+All C++ objects belong to the _std_ (standard) namespace. This means that anytime you write _cout_ or _end_, you'll have to prefix it with _std::_. <br />
+I know that makes no sense right now, but just make a habit of including this line in your programs.
 ```C++
 #include <iostream>
 using namespace std;
