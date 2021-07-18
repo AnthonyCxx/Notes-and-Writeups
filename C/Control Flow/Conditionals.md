@@ -218,7 +218,7 @@ expression ? value1 : value2
 
 int main()
 {
-    // Returns (and then prints) 'Pi is less than the square root of 5' because 'PI > sqrt(5)' is false
+    // Returns (and then prints) 'Pi is greater than the square root of 5' because 'PI > sqrt(5)' is false
     puts( PI > sqrt(5) ? "Pi is greater than the square root of 5" : "Pi is less than the square root of 5" );
 
     return 0;
