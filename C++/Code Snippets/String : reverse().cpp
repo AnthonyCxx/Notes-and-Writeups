@@ -1,4 +1,4 @@
-// Returns a new string (can be used in expressions like 'str == reverse(str)')
+// Returns a new string (meant to be used in expressions like 'str == reverse(str)')
 string reverse(const string& source)
 {
     string reverse;
