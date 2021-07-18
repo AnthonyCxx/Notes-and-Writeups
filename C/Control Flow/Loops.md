@@ -8,7 +8,7 @@ and an update statemnt in that order; each of these sections are separated by se
 known (or deducible by some property or expression). <br />
 
 ### Format
-```C#
+```C
 for(delcaration; condition; update)
 {
     //Body
