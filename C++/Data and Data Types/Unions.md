@@ -7,7 +7,7 @@ that a struct would otherwise maintain. [Codeforwin](https://codeforwin.org/) ha
 how an [embedded system](https://en.wikipedia.org/wiki/Embedded_system) can use unions to store various systems of color codes (rgb, rgba) _without_ having to maintain 
 the variables for each color system at once, allowing for better performance.
 
-## Declaring a Union in C
+## Declaring a Union 
 
 ### Format
 ```C++
