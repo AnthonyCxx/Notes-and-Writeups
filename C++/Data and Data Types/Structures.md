@@ -77,3 +77,47 @@ int main()
 > Employee name: John <br />
 > Employee title: Senior Manager <br />
 > Employee ID: 123 <br />
+
+## Struct Methods
+If you define a function inside of a struct, it becomes a _method_, which is a function that belongs to said struct. <br />
+Having function members (methods) allows you to easily manipulate the data of a struct or put it to some use. <br />
+
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Employee
+{
+    string name;
+    string title;
+    int id;        // Naming should be consistant (even though 'ID' looks better)
+
+        void getInfo()
+        {
+        cout << "Employee name: " << name << '\n';
+        cout << "Employee title: " << title << '\n';
+        cout << "Employee ID: " << id << '\n';
+        }
+};
+
+int main()
+{
+    // Declare an employee named 'john'
+    Employee john = {
+                      .name = "John",
+                      .title = "Senior Manager",
+                      .id = 123
+                    };
+
+        // Call 'getInfo()', printing John's name, title, and ID
+        john.getInfo();
+
+    return 0;
+}
+```
+> Prints: <br />
+> Employee name: John <br />
+> Employee title: Senior Manager <br />
+> Employee ID: 123 <br />
