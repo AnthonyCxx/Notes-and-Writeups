@@ -20,7 +20,7 @@ string reverse(const string_view source)
 }
 
 // A palindrome is a word that is spelled the same backwards and forwards
-bool isPalindrome(const string& str)
+bool isPalindrome(const string_view str)
 {
     return str == reverse(str);
 }
