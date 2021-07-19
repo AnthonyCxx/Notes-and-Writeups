@@ -1,27 +1,28 @@
 # Arrays in C
-An array is a data structure that stores a set of elements, each of which has to be of the same datatype. Arrays are not limited to primitive types, so you can make an
-array of arrays (a matrix), and an array of arrays of arrays (a tensor). Declaring an array uses the following format <br /> `datatype name[size];`. The size of the array
-_must_ be known at compile time, unless [allocated dynamically](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/).
+An array is a derived type that stores a set of elements, each of which has to be of the same datatype. Arrays are not limited to primitive types, so you can make an an
+array of structs, array of arrays (a matrix), and an array of arrays of arrays (a tensor). Declaring an array uses the following format <br /> `datatype name[size];`. 
+The size of the array _must_ be known at compile time, unless [allocated dynamically](https://www.cplusplus.com/doc/tutorial/dynamic/).
 
 ## Declaring an Array
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
     // Declare a 1D array of 5 elements (integers, all of which are 0)
-    // In C, memory does not have a default value. You MUST initialize it before using it.
+    // In C++, memory does not have a default value. You MUST initialize it before using it.
     int simple_array[5] = {0, 0, 0, 0, 0};
 
     // Print the values of the array
-    printf("%s", "Array contents: ");
+    cout << "Array contents: ";
 
     // Loop over the array
     for(int index=0; index < 5; index++)  // 5 is the size of the array
     {
-        printf("%d ", simple_array[index]);
+        cout << simple_array[index] << " ";
     }
-    putchar('\n');     //Endline
+    cout << '\n';     //Endline
 
     return 0;
 }
@@ -29,7 +30,7 @@ int main(void)
 > Leaving the array uninitialized gave me the following output: 0, 0, 873242784, 32692, -524434688
 
 ## Array Trick: Calculating Size on the Fly
-Writing flexible code in C can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
+Writing flexible code in C++ can be challenging at times because of the lack of built-in tools. For example, if you wanted to write a flexible function that could iterate
 over any array, you would need to know the size of said array; however, there is no [_Array.Length_](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-5.0) property like in C#. To solve this problem, you have to resort to a pretty neat trick. Assuming that all the elements of the array are the same size in bytes (which
 is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
 first element in the array. This can be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
@@ -38,17 +39,20 @@ first element in the array. This can be done in a single macro: `#define SIZE(ar
 paramters nor arrays created with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm). If you want to use this trick in a function, 
 pass the size of the array as a separate parameter.
 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
+
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+//                  ^ size of the array   ^ size of the first element
 
 int main(void)
 {
-    int hugeArray[100000];   // 100_000
+    int hugeArray[100'000];   // You can use a single apostrophe as a comma in C++
 
-    int arraySize = sizeof(hugeArray) / sizeof(hugeArray[0]);
-    //              ^ size of the array        ^ size of the first element
+    int arraySize = SIZE(hugeArray);
 
-    printf("The size of the huge array is %d\n", arraySize);
+    cout << "The size of the huge array is exactly " << arraySize << '\n';
 
     return 0;
 }
@@ -58,23 +62,24 @@ int main(void)
 Arrays are always [passed by reference](https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm), not [by value](https://www.tutorialspoint.com/cprogramming/c_function_call_by_value.htm), this is beacuse "the name of the array itself is just a pointer to the first element"
 (via notes from [Florida State University](https://www.cs.fsu.edu/~myers/c++/notes/pointers2.html)). Passing an array as a parameter is exactly the same as passing 
 a variable, except you need to put _\[\]_ (brackets) after the array name to indicate that it's an array (it's not necessary include the size of the array in the brackets). 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
 #define SIZE(array) sizeof(array) / sizeof(array[0])
+using namespace std;
 
 void printArray(int array[], int size)
 {
     // Header
-    printf("Array values: ");
+    cout << "Array values: ";
 
     // Loop over values
     for(int i = 0; i < size; i++)
     {
-        printf("%d ", array[i]);
+        cout << array[i] << " ";
     }
 
     // Ending
-    putchar('\n');
+    cout << '\n';
 }
 
 void zeroFill(int array[], int size)  // 'int array[]' is converted to 'int* array' by the compiler
@@ -90,15 +95,21 @@ int main(void)
     // An array with three sequential values
     int array[3] = {1, 2, 3};
 
+        /*
+                         NOTE: The array size must be passed as a parameter
+                         because the 'SIZE()' macro doesn't work inside
+                         of functions unless the array was declared inside of functions.
+    */
+
     // Before
-    puts("BEFORE zero-filling the array...");
+    cout << "BEFORE zero-filling the array...\n";
     printArray(array, SIZE(array));
 
     // Zero-fill
     zeroFill(array, SIZE(array));
 
     // After
-    puts("\nAFTER zero-filling the array...");
+    cout << "\nAFTER zero-filling the array...\n";
     printArray(array, SIZE(array));
 
     return 0;
@@ -113,25 +124,25 @@ int main(void)
 
 ## Returning an Array from a Function
 Arrays can be returned from a function with `return array;`. Remember that the name of the array is just a pointer to the first element, so you will need to catch
-the array with a pointer of the same type as the array. If you declare the array in the function _without_ declaring it on the heap (using [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) or [_calloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm)),
-the array will be deallocated when the function [goes out of scope](https://stackoverflow.com/questions/34586141/what-does-going-out-of-scope-means-in-c-objects/34587544#34587544) and you will have a [dangling pointer](https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/). Below, the function _createScoreboard()_
-returns a new array (so it must be allocated on the heap). Here, I used _calloc()_ instead of _malloc()_ because _calloc()_ automatically fills the array with 0s
-(just like declaring it globally would).
+the array with a pointer of the same type as the array. If you declare the array in the function _without_ declaring it on the heap,
+the array will be deallocated when the function [goes out of scope](https://stackoverflow.com/questions/34586141/what-does-going-out-of-scope-means-in-c-objects#:~:text=A%20name%20like%20i%20can,a%20local%20loop%20variable%20i%20.) and you will have a [dangling pointer](https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/). Below, the function _createScoreboard()_ returns a new array (so it must be allocated on the heap).
 
-```C
-#include <stdio.h>      // For I/O Operations
-#include <stdlib.h>    // Contains malloc(), calloc() and free()
+```C++
+#include <iostream>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+using namespace std;
 
 // Creates an integer array that represents the players scores
 int* createScoreboard(int playerCount)
 {
-    // Declare a new array on the heap (filled with 0s by calloc)
-    int* array = calloc(playerCount, sizeof(int));   // (amount of elements, size of each element)
+    // Declare a new arra
+    int* array = new int[playerCount];
 
     // Array is NULL if not enough space on the heap for a new array
     if (array == NULL)
-    {   //fprintf means print to file: stderr is a 'file' in UNIX
-        fprintf(stderr, "Failed to allocate a new array. Returns NULL.\n");
+    {
+                //fprintf means print to file: stderr is a 'file' in UNIX
+        fprintf(stderr, "Failed to allocate a new array. Returning NULL.\n");
     }
 
     // Return the array to main
@@ -148,35 +159,33 @@ int main(void)
 
     // Print all the elements of the array
     printf("Array elements: ");
-    for(int i=0; i < 5; i++) 
+    for(int i=0; i < 5; i++)
     {
-        printf("%d ", scoreboard[i]); 
-    }  
-    putchar('\n');
+        cout << scoreboard[i] << " ";
+    }
+    cout << '\n';
 
     // Free the memory of the scoreboard on the heap (prevents memory leak)
-    free(scoreboard);
+    delete [] scoreboard;
 
     return 0;
 }
 ```
-> References: <br />
-> [_CodeVault (Youtuber): How to Use Dynamically-allocated Arrays in C_](https://www.youtube.com/watch?v=6Ir4l0VuI7Y) <br />
-> [_Wikipedia: Dynamic Memory Allocation in C_](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) <br />
-> [_TutorialsPoint: Pointer to Array in C_](https://www.tutorialspoint.com/cprogramming/c_pointer_to_an_array.htm) <br />
-> [_TutorialsPoint: Return Array from Function in C_](https://www.tutorialspoint.com/cprogramming/c_return_arrays_from_function.htm) <br />
-> [_TutorialsPoint: calloc() function_](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) <br />
-> [_TutorialsPoint: malloc() function_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) <br />
-> [_TecMint: Explanation of “Everything is a File” and Types of Files in Linux_](https://www.tecmint.com/explanation-of-everything-is-a-file-and-types-of-files-in-linux/) <br />
+> Prints: <br />
+> 0 0 0 0 0
+>
+> Note: After doing some testing, it seems that dynamically-allocated arrays are automatically initialized to 0
 
 ## Multi-dimensional Arrays
-[Multi-dimensional arrays](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm) are arrays that themselves contain arrays. These contained arrays
+[Multi-dimensional arrays](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/) are arrays that themselves contain arrays. These contained arrays
 are uniform in size and can even store other arrays to create 3-dimensional arrays and so on. When
 you access a multi-dimensional array, you have to specify the row and column like so: `array[row][column]`. Passing a multi-dimensional array as a parameter requires
 putting a set of _\[\]_ for each dimension and [putting the amount of dimensions (excluding the first) in the corresponding bracket](https://stackoverflow.com/questions/2828648/how-to-pass-a-multidimensional-array-to-a-function-in-c-and-c). See below for an example.
 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+using namespace std;
 
 // Print multi-array
 void printMultiArray(int array[][3], int rows, int cols)   // Second dimension must be known
@@ -188,17 +197,17 @@ void printMultiArray(int array[][3], int rows, int cols)   // Second dimension m
     for(int row=0; row < rows; row++)
     {
         // Print the header for the row
-        printf("Row %d contents: ", row);
+        cout << "Row " << row << " contents: " ;
 
         // Print all the elements in the row
         for(int element=0; element < cols; element++)
         {
             // Print the element, follow by a space
-            printf("%d ", array[row][element]);
+            cout << array[row][element] << " ";
         }
 
         // Newline at the end of each row
-        putchar('\n');
+        cout << '\n';
     }
 }
 
@@ -218,3 +227,8 @@ int main(void)
     return 0;
 }
 ```
+> Prints: <br />
+> Array Contents: <br />
+> Row 0 contents: 1 2 3 <br />
+> Row 1 contents: 4 5 6 <br />
+> Row 2 contents: 7 8 9 <br />
