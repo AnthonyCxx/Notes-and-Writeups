@@ -15,3 +15,6 @@ Finally, since I am programming on Linux, I use [AT&T syntax](http://www.sig9.co
 
 ## Other Resources
 [NASM (Assembly) Tutorial by Ray](https://cs.lmu.edu/~ray/notes/nasmtutorial/) <br />
+
+## Recommended Videos
+[_Comparing C to machine language_](https://www.youtube.com/watch?v=yOyaJXpAYZQ) by Ben Eater
