@@ -1,5 +1,5 @@
 # Exception Handling in C
-C does not support exception handling, so you can go ahead and cry now. Instead, we have [conditionals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Conditionals.md), a set of functions ([_perror()_](https://www.tutorialspoint.com/c_standard_library/c_function_perror.htm) and [_strerror()_](https://www.tutorialspoint.com/c_standard_library/c_function_strerror.htm)), and a set of macros 
+C does not support exception handling, so you can go ahead and cry now. Instead, we have [conditionals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Conditionals.md), two functions ([_perror()_](https://www.tutorialspoint.com/c_standard_library/c_function_perror.htm) and [_strerror()_](https://www.tutorialspoint.com/c_standard_library/c_function_strerror.htm)), and a set of macros 
 ([_extern int errno_](https://www.tutorialspoint.com/c_standard_library/c_macro_errno.htm), [_EDOM_](https://www.tutorialspoint.com/c_standard_library/c_macro_edom.htm),
 and [_ERANGE_](https://www.tutorialspoint.com/c_standard_library/c_macro_erange.htm))
 to deal with errors.
