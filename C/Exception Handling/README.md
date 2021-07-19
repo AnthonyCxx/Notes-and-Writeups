@@ -50,7 +50,7 @@ int main(void)
     unsigned long long* ptr = (unsigned long long*) malloc(9223372036854775807);  
 
     if (ptr == NULL)  
-            perror("An error has occured");  //'An error has occured': <message>
+        perror("An error has occured");  //'An error has occured': <message>
     else
         free(ptr);
 
