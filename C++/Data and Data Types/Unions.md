@@ -91,8 +91,8 @@ struct SurfacePro
 
 };
 
-// Driver code
-int main(void)
+// Driver code //
+int main()
 {
     SurfacePro tablet = { .touchscreen = {5, false} };   // Sensitivity of 5, gestures disabled
 
