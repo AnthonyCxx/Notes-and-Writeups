@@ -28,8 +28,8 @@ Anything in parentheses can be left implied.
 ## Non-primitive Data Types
 | Datatype | Function |
 | -------- | -------- |
-| [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md) | a derived type that stores a collection of independent elements of the same datatype |
-| [Structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md) | a user-defined type that stores a collection of variables as a single unit |
-| [Enums](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md) | a user-defined type that has a set of defined values (e.g. on/off or red/yellow/blue) |
-| [Unions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md) | a user-defined datatype that stores a number of variables in a single space in memory |
+| [Arrays]() | a derived type that stores a collection of independent elements of the same datatype |
+| [Structs]() | a user-defined type that stores a collection of variables as a single unit |
+| [Enums]() | a user-defined type that has a set of defined values (e.g. on/off or red/yellow/blue) |
+| [Unions]() | a user-defined datatype that stores a number of variables in a single space in memory |
 | [Pointers]() | a derived type that stores the memory address of an object in memory (not the class kind of object) |
