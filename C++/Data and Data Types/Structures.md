@@ -181,8 +181,37 @@ int main()
 > Maximum: 35 <br />
 
 ## Structs within Structs
-A data member of a struct can even be another struct
+A data member of a struct can even be another struct. Here, a folder is an array of file structures (not really accurate -- this is just an example).
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+struct File
+{
+    string name;
+    string contents;
+};
+
+struct Folder
+{
+    string name;
+    char shortcut;
+    File files[30];
+};
+
+int main()
+{
+    Folder dir {
+                  .name = "Home Directory",
+                  .shortcut = '~',
+                  .files = { /* Initialize files here */}
+               };
+
+    cout << "Folder name: " << dir.name << '\n';
+    cout << "Shortcut: " << dir.shortcut << '\n';
+
+    return 0;
+}
 ```
