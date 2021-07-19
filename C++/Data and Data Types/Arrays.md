@@ -141,8 +141,7 @@ int* createScoreboard(int playerCount)
     // Array is NULL if not enough space on the heap for a new array
     if (array == NULL)
     {
-                //fprintf means print to file: stderr is a 'file' in UNIX
-        fprintf(stderr, "Failed to allocate a new array. Returning NULL.\n");
+        cerr << "Failed to allocate a new array. Returning NULL.\n";
     }
 
     // Return the array to main
@@ -158,7 +157,7 @@ int main(void)
     scoreboard = createScoreboard(5);
 
     // Print all the elements of the array
-    printf("Array elements: ");
+    cout << "Array elements: ";
     for(int i=0; i < 5; i++)
     {
         cout << scoreboard[i] << " ";
