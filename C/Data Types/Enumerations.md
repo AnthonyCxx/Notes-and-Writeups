@@ -159,7 +159,7 @@ int main(void)
 ## Getting the Value of an Enum as a String
 The values of an enum are internally stored as strings, and there is no way to convert the name of a value of an enum into a string. If you want to use the value
 as a string, you have to write a _switch_ statement that returns the proper value. If you find yourself using this often, it may be better to use an array
-of strings.
+of strings and match each enum to a string in the array (this is called a lookup table).
 
 ```C
 #include <stdio.h>
