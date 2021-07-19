@@ -72,8 +72,8 @@ StrErrCode StrCheck(const string& str)
     if (str.empty())
         return EMPTY_STR;
 
-    // If contains illegal characters
-    if (regex_match(str, regex("[%!^\\*]")))  // %, !, ^, \, and * are illegal symbols
+    // If contains illegal characters (%, !, ^, \, or *)
+    if (regex_match(str, regex("[%!^\\*]")))
         return INVALID_CHAR;
 
     return GOOD_STR;
