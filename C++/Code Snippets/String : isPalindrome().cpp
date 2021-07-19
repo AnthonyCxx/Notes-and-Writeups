@@ -1,14 +1,14 @@
 // Reverses a string, returning a new string
 string reverse(const string& source)
 {
-    string reverse;
+    string reversed;
 
     for (int i=source.length() - 1; i > -1; i--)
     {
-        reverse += source[i];
+        reversed += source[i];
     }
 
-    return reverse;
+    return reversed;
 }
 
 // A palindrome is a word that is spelled the same backwards and forwards
