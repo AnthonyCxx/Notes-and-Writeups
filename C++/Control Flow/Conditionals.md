@@ -138,7 +138,7 @@ int main(void)
 > Prints: You can buy a large health potion.  <br />
 
 ### Fall-through Behavior
-By disclusing the _break_ statement, you can allow the flow of execution to continue to the next case (and the next case, etc.) after a case is triggered.
+By discluding the _break_ statement, you can allow the flow of execution to continue to the next case (and the next case, etc.) after a case is triggered.
 
 ```C++
 #include <iostream>
