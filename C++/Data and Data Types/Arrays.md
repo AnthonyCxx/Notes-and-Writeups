@@ -36,7 +36,7 @@ is true for all arrays of primitive types), then you can calculate the size of t
 first element in the array. This can be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
 
 **WARNING**: this trick does not work with pointers (it would just return the size of the pointer); that means that this trick will not work for arrays passed as 
-paramters nor arrays created with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm). If you want to use this trick in a function, 
+paramters nor arrays created with the [_new_](https://docs.microsoft.com/en-us/cpp/cpp/new-operator-cpp?view=msvc-160) keyword. If you want to use this trick in a function, 
 pass the size of the array as a separate parameter.
 
 ```C++
@@ -59,7 +59,7 @@ int main(void)
 ```
 
 ## Passing Arrays as Parameters
-Arrays are always [passed by reference](https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm), not [by value](https://www.tutorialspoint.com/cprogramming/c_function_call_by_value.htm), this is beacuse "the name of the array itself is just a pointer to the first element"
+Arrays are always [passed by reference](https://www.ibm.com/docs/en/zos/2.2.0?topic=calls-pass-by-reference-c-only), not [by value](https://www.tutorialspoint.com/cplusplus/cpp_function_call_by_value.htm), this is beacuse "the name of the array itself is just a pointer to the first element"
 (via notes from [Florida State University](https://www.cs.fsu.edu/~myers/c++/notes/pointers2.html)). Passing an array as a parameter is exactly the same as passing 
 a variable, except you need to put _\[\]_ (brackets) after the array name to indicate that it's an array (it's not necessary include the size of the array in the brackets). 
 ```C++
