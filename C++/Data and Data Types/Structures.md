@@ -94,12 +94,12 @@ struct Employee
     string title;
     int id;        // Naming should be consistant (even though 'ID' looks better)
 
-        void getInfo()
-        {
+    void getInfo()
+    {
         cout << "Employee name: " << name << '\n';
         cout << "Employee title: " << title << '\n';
         cout << "Employee ID: " << id << '\n';
-        }
+    }
 };
 
 int main()
