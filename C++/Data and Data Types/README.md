@@ -29,7 +29,7 @@ Anything in parentheses can be left implied.
 | Datatype | Function |
 | -------- | -------- |
 | [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Arrays.md) | a derived type that stores a collection of independent elements of the same datatype |
-| [Structs]() | a user-defined type that stores a collection of variables as a single unit |
+| [Structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Structs.md) | a user-defined type that stores a collection of variables as a single unit |
 | [Enums]() | a user-defined type that has a set of defined values (e.g. on/off or red/yellow/blue) |
 | [Unions]() | a user-defined datatype that stores a number of variables in a single space in memory |
 | [Pointers]() | a derived type that stores the memory address of an object in memory (not the class kind of object) |
