@@ -121,3 +121,61 @@ int main()
 > Employee name: John <br />
 > Employee title: Senior Manager <br />
 > Employee ID: 123 <br />
+
+
+## Returning Multiple Values with Structs
+A function can only return one variable, but nothing's to say that the variable can't be a struct that contains 5 different variables.
+
+```C++
+#include <iostream>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+using namespace std;
+
+// A struct of two integers (mimics tuple)
+struct Tuple
+{
+    int min;
+    int max;
+};
+
+// Find the min and max element in an array
+Tuple findMinMax(int array[], int size)
+{
+    int min, max;
+
+    // Initialize for comparisions
+    min = max = array[0];
+
+    // Compare all elements
+    for(int i=0; i < size; i++)
+    {
+        // If new min.
+        if (min > array[i])
+            min = array[i];
+
+        // If new max.
+        if (max < array[i])
+            max = array[i];
+    }
+
+    // Return an anonymous (nameless) tuple
+    return Tuple {min, max};
+}
+
+// DRIVER CODE //
+int main()
+{
+    // An array of 5 integers
+    int array[5] = {35, 14, 31, 21, 6};
+
+    // Find the minimum and maximum values of the array
+    Tuple minMax = findMinMax(array, SIZE(array));
+
+    // Print the min and max
+    cout << "Minimum: " << minMax.min << '\n';
+    cout << "Maximum: " << minMax.max << '\n';
+}
+```
+> Prints: <br />
+> Minimum: 6 <br />
+> Maximum: 35 <br />
