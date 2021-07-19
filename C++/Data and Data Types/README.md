@@ -1,5 +1,5 @@
 # Datatypes in C++
-Anything in parentheses can be left implied.
+Anything in parentheses can be omitted.
 
 ## Primitive Types
 | Datatype | Size (in bytes) | Minimum Value | Maximum Value | Literal Suffix |
