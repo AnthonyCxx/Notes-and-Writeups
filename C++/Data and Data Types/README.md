@@ -22,8 +22,8 @@ Anything in parentheses can be left implied.
 > 
 > Sources: <br />
 > Microsoft: [_Built-in Types (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-160) <br />
-> Microsoft: [Datatype Limits (C++)](https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160) <br />
-> Microsoft: [Integer Limits (C/C++)](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160) <br />
+> Microsoft: [_Datatype Limits (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160) <br />
+> Microsoft: [_Integer Limits (C/C++)_](https://docs.microsoft.com/en-us/cpp/c-language/cpp-integer-limits?view=msvc-160) <br />
 
 ## Non-primitive Data Types
 | Datatype | Function |
