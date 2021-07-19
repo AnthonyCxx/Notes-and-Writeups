@@ -25,7 +25,7 @@ struct Player
     Team team;
 };
 
-int main(void)
+int main()
 {
     // Initialize a player
     Player player_one = {
