@@ -6,7 +6,8 @@ in which structs can only have data members and must use function pointers to em
 are public by default, while those of a class are private by default.
 
 ## Declaring a Struct
-Declaring a struct only requires you to define a block of code, within which are the data/function members of the struct.
+Declaring a struct only requires you to define a block of code, within which are the data/function members of the struct. <br />
+Notice how you don't need to prefix struct declarations/usage with _struct_ like you have to in C.
 
 ```C++
 #include <iostream>
