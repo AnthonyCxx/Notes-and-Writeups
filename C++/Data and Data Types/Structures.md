@@ -111,8 +111,8 @@ int main()
                       .id = 123
                     };
 
-        // Call 'getInfo()', printing John's name, title, and ID
-        john.getInfo();
+    // Call 'getInfo()', printing John's name, title, and ID
+    john.getInfo();
 
     return 0;
 }
