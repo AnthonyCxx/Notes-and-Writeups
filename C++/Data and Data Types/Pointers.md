@@ -1,45 +1,47 @@
 # Pointers in C++
-A pointer is a variable that points to some location in memory and are used to keep track of [dynamically-allocated memory](https://www.programiz.com/c-programming/c-dynamic-memory-allocation) amongst other things. Like any variable, pointers are [strongly-typed](https://www.cs.cornell.edu/courses/cs1130/2012sp/1130selfpaced/module1/module1part4/strongtyping.html); however, they can also be [type-casted](https://ecomputernotes.com/what-is-c/function-a-pointer/type-casting-of-pointers) easily. Pointers are the same size regardless of what type they point to (8 bytes on 64-bit platforms, 4 on 32-bit) ([ref](https://www.holbertonschool.com/coding-resource-pointers-in-c#:~:text=Pointers%20are%20blocks%20of%20memory,any%20data%20type%20in%20C.)).
+A pointer is a variable that points to some location in memory and are used to keep track of [dynamically-allocated memory](https://www.cplusplus.com/doc/tutorial/dynamic/) amongst other things. Like any variable, pointers are [strongly-typed](https://www.cs.cornell.edu/courses/cs1130/2012sp/1130selfpaced/module1/module1part4/strongtyping.html); however, they can also be [type-casted](https://docs.microsoft.com/en-us/cpp/cpp/reinterpret-cast-operator?view=msvc-160) easily. Pointers are the same size regardless of what type they point to (8 bytes on 64-bit platforms, 4 on 32-bit) ([ref](https://stackoverflow.com/questions/399003/is-the-sizeofsome-pointer-always-equal-to-four)).
 
 ## Declaring a Pointer
-Pointers are declared like a normal variable, but include a '\*' after the datatype. If not given a value, the pointer will point to [NULL](https://www.tutorialspoint.com/null-pointer-in-c).
-```C
-#include <stdio.h>
+Pointers are declared like a normal variable, but include a '\*' after the datatype. If not given a value, the pointer will point to [NULL](https://www.learncpp.com/cpp-tutorial/null-pointers/#:~:text=A%20null%20value%20is%20a,1).
+```C++
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
     // A pointer that can point to an integer
     int* ptr;   // int* pointer is not given a value
-    
-    // Declare multiple points like: 'int *ptr, *ptr2, *ptr3;'
 
-    // Print what 'ptr' points to (NULL)
-    printf("The memory address of 'ptr' is: %p\n", ptr);
+    // Declare multiple points like: 'int *ptr, *ptr2, *ptr3;'
+    
+    if (ptr == NULL)   // true
+        cout << "Default value of a pointer is NULL" << endl;
 
     return 0;
 }
 ```
 > Prints: <br />
-> The memory address of 'ptr' is: (nil)
+> Default value of a pointer is NULL
 
 ## The & Operator
-The [& operator](https://fresh2refresh.com/c-programming/c-interview-questions-answers/what-is-ampersand-and-star-operators-in-c/) yields the memory address of a variable.
-The '&' operator can be used to assign pointers a value (either an existing variable or memory allocated with [_malloc()_](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm)). <br />
+The [& (address-of) operator](https://www.techopedia.com/definition/25580/address-of-operator--c) yields the memory address of a variable.
+The '&' operator can be used to assign pointers a value (either an existing variable or memory allocated with the [_new_](https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/) operator). <br />
 
 Here is a demonstration of how a pointer can be used to create aliases to existing variables. Later, we'll touch on dynamic memory allocation.
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
-int main(void)
+int main()
 {
     int  var = 5;       // Declare
     int* ptr = &var;   // Assign the pointer to the memory address of 'var'.
 
-    printf("The value of 'var' is: %d\n", var);
+    cout << "The value of 'var' is: " << var << '\n';
 
     *ptr = 10;   // 'ptr' is the memory address, '*ptr' is the value stored in 'ptr'
 
-    printf("The value of 'var' is: %d\n", var);
+    cout << "The value of 'var' is: " << var << '\n';
 
     return 0;
 }
@@ -57,10 +59,11 @@ in memory.
 To clarify, putting '\*' before a pointer while declaring a pointer is what indicates it is a pointer. Putting '\*' before an existing pointer references the contents
 at the memory address of the pointer. 
 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
-int main(void)
+int main()
 {
     // Declaring an integer and an integer pointer
     int  var = 5;
@@ -73,44 +76,46 @@ int main(void)
     */
 
     // Accessing memory addresses
-    printf("The memory address of 'var' is: %p\n", ptr);       // 'ptr' is the address stored in the pointer
-    printf("The memory address of 'ptr' is: %p\n\n", &ptr);   // '&ptr' is the address of the pointer
+    cout << "The memory address of 'var' is: " << ptr << '\n';       // 'ptr' is the address stored in the pointer
+    cout << "The memory address of 'ptr' is: " << &ptr << "\n\n";   // '&ptr' is the address of the pointer
 
     // Dereferecning a pointer
-    printf("The value pointed to by the pointer is: %d\n", *ptr);
+    cout << "The value pointed to by the pointer is: " << *ptr << endl;
 
     return 0;
 }
 ```
 > Prints: <br />
-> The memory address of 'var' is: 0x7ffff9162afc <br />
-> The memory address of 'ptr' is: 0x7ffff9162b00 <br />
->
+> The memory address of 'var' is: 0x7fffd372b7fc <br />
+> The memory address of 'ptr' is: 0x7fffd372b800 <br />
+
 > The value pointed to by the pointer is: 5 <br />
 
 ## Deferencing Non-primitive Pointers with the -> Operator
-Pointers can also be used with [non-primitive datatypes](https://www.wikitechy.com/step-by-step-tutorials/c-programming/c-non-primitive-data-types), such as [structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md).
-However, it becomes a bit more complex due to a problem with [operator precedence](https://www.tutorialspoint.com/cprogramming/c_operators_precedence.htm#:~:text=Advertisements,precedence%20than%20the%20addition%20operator.). 
+Pointers can also be used with [non-primitive datatypes](https://geekstocode.com/primitive-and-non-primitive-data-types-in-cpp/), such as [structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/Structures.md).
+However, it becomes a bit more complex due to a problem with [operator precedence](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160). 
 The ['.' (member access) operator](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160) has a higher
 precedence than the ['\*' (dereferencing) operator](https://www.computerhope.com/jargon/d/dereference-operator.htm); so, if you don't put parentheses around the '\*', you end up 
 trying to access the data member of an arbitrary address in memory and then dereference that, which is utter nonsense. Needless to say the structure 
 `(*pointer_to_struct).data_member)` is a bit verbose, so the `->` operator was invented as a shorthand. That way, you can simple write `pointer_to_struct->data_member` 
 and be done.
 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
+using namespace std;
 
 // 'Player' structure
-typedef struct Player
+struct Player
 {
     int health;
     int attack;
     int exp;
 
-} Player;
+};
 
 
-int main(void)
+// DRIVER CODE //
+int main()
 {
     // A 'Player' with 10 health, 7 attack, and 300 exp
     Player player1 = { .health = 10, .attack = 7, .exp = 300 };
@@ -119,16 +124,17 @@ int main(void)
     Player* ptr = &player1;     // a pointer of datatype 'Player' pointing to player1;
 
     // Using (*ptr).member to access members
-    printf("Health: %d\n", (*ptr).health );
-    printf("Attack: %d\n", (*ptr).attack );
-    printf("EXP: %d\n\n",  (*ptr).exp );
+    cout << "Health: " << (*ptr).health << '\n';
+    cout << "Attack: " << (*ptr).attack << '\n';
+    cout << "EXP: " <<  (*ptr).exp << "\n\n";
 
     // Using ptr->member to access members
-    printf("Health: %d\n", ptr->health);   // Lot simpler, huh?
-    printf("Attack: %d\n", ptr->attack);
-    printf("EXP: %d\n",    ptr->exp);
+        cout << "Health: " << ptr->health << '\n';   // Lot simpler, huh?
+    cout << "Attack: " << ptr->attack << '\n';
+    cout << "EXP: " << ptr->exp << endl;
 
     return 0;
+}
 }
 ```
 > Health: 10 <br />
@@ -147,29 +153,23 @@ writing is `*(array + 3)` -- the compiler just substitutes the expression. You s
 array (`array`) and then adding the amount of bytes needed to reach the right location in memory. Assuming that the earlier example `*(array + 3)` is an int array, the 
 computer would just take the address of the beginning of the array (`array`) and adds _3 \* sizeof(int)_ (a total of 12 bytes), and then dereference the result.
 
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
 #define SIZE(array) sizeof(array) / sizeof(array[0])
+using namespace std;
 
-int main(void)
+int main()
 {
     int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
+        // Print out all the elements
     for(int i=0; i < SIZE(array); i++)
     {
         // '*(array + i)' means 'take the beginning of the array and access the 'i'th element
-        printf("%d ", *(array + i));
+        cout << *(array + i) << " ";
     }
-    putchar('\n');
+    cout << '\n';
 
     return 0;
 }
 ```
-
-## Sources
-JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
-TutorialsPoint: [_C - Pointers_](https://www.tutorialspoint.com/cprogramming/c_pointers.htm) <br />
-GeeksforGeeks: [_Void, Null, and Wild Pointers_](https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/) <br />
-Programiz: [_C Pointers_](https://www.programiz.com/c-programming/c-pointers) <br />
-Guru99: [_Pointers in C Programming: What is Pointer, Types & Examples_](https://www.guru99.com/c-pointers.html) <br />
-BeginnersBook: [_Pointers in C Programming with examples_](https://beginnersbook.com/2014/01/c-pointers/) <br />
