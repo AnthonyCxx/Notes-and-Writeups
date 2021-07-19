@@ -50,8 +50,62 @@ int main()
 ## Manually Setting the Internal Values
 Each possible value of an enum is mapped to an integer constant that is always one greater than the last (starting at 0). If you assign the values manually,
 then the values of the enum will take on said integer value. If you assign one value manually and do not assign the ones that follow it, then the following 
-values will just follow the pattern of adding one to the previous value.
+values will just follow the pattern of adding one to the previous value. If you don't understand regex (regular expressions) yet, that's fine. Regex is just
+an algorithm for pattern matching. Here, I used regex to check if a string contained any illegal symbols (%, !, ^, \, or \*).
 
 ```C++
+#include <iostream>
+#include <string>
+#include <regex>
+using namespace std;
 
+// Enum of possible error states for a string
+enum StrErrCode { GOOD_STR = 0, EMPTY_STR = 100, INVALID_CHAR = 110, };
+
+// Function to check if a given string is valid (not empty nor contain illegal symbols)
+StrErrCode StrCheck(const string& str)
+{
+
+    // If the string is empty
+    if (str.empty())
+        return EMPTY_STR;
+
+    // If contains illegal characters
+    if (regex_match(str, regex("[%!^\\*]")))  // %, !, ^, \, and * are illegal symbols
+        return INVALID_CHAR;
+
+    return GOOD_STR;
+}
+
+// DRIVER CODE //
+int main()
+{
+    // Declare two illegal strings and a legal string
+    string emptyString = "";
+    string illegalString = "%";
+    string goodString = "Some non-empty text without illegal symbols";
+
+    // Check the empty string
+    if (StrCheck(emptyString) == GOOD_STR)
+        cout << "The string is good (not empty and nor contains illegal symbols)\n";
+    else
+        cout << "The string is illegal; Error code: (" << StrCheck(emptyString) << ")\n";
+
+    // Check the illegal string
+    if (StrCheck(illegalString) == GOOD_STR)
+        cout << "The string is good (not empty and nor contains illegal symbols)\n";
+    else
+        cout << "The string is illegal; Error code: (" << StrCheck(illegalString) << ")\n";
+
+    // Check the good string
+    if (StrCheck(goodString) == GOOD_STR)
+        cout << "The string is good (not empty and nor contains illegal symbols)\n";
+    else
+        cout << "The string is illegal; Error code: (" << StrCheck(goodString) << ")\n";
+    return 0;
+}
 ```
+> Prints: <br />
+> The string is illegal; Error code: (100) <br />
+> The string is illegal; Error code: (110) <br />
+> The string is good (not empty and nor contains illegal symbols) <br />
