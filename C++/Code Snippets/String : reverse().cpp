@@ -1,12 +1,19 @@
-// Returns a new string (meant to be used in expressions like 'str == reverse(str)')
-string reverse(const string& source)
+/*
+'<string_view>' is a C++17 header file that increases efficiency
+If you don't want to use C++17, replace 'string_view' with 'string&'
+*/
+
+#include <string_view>
+
+// Reverses a string, returning a new string
+string reverse(const string_view source)
 {
-    string reverse;
+    string reversed;
 
     for (int i=source.length() - 1; i > -1; i--)
     {
-        reverse += source[i];
+        reversed += source[i];
     }
 
-    return reverse;
+    return reversed;
 }
