@@ -179,3 +179,10 @@ int main()
 > Prints: <br />
 > Minimum: 6 <br />
 > Maximum: 35 <br />
+
+## Structs within Structs
+A data member of a struct can even be another struct
+
+```C++
+
+```
