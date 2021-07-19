@@ -111,3 +111,66 @@ int main()
 > The string is illegal; Error code: (100) <br />
 > The string is illegal; Error code: (110) <br />
 > The string is good (not empty and nor contains illegal symbols) <br />
+
+## Getting the Value of an Enum as a String
+The values of an enum are internally stored as strings, and there is no way to convert the name of a value of an enum into a string. If you want to use the value
+as a string, you have to write a _switch_ statement that returns the proper value. If you find yourself using this often, it may be better to use an array
+of strings and match each enum to a string in the array (this is called a lookup table).
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// An enum 'Team' which can be one of four teams
+enum Team { RED, YELLOW, BLUE, GREEN };
+
+// Struct mapped to the 'Player' alias
+struct Player
+{
+    int health;
+    int score;
+    Team team;
+};
+
+// Function delcaration
+string get_team(const Player& player);
+
+
+// Driver code //
+int main(void)
+{
+    // Initialize a player (using a designed initializer)
+    Player player_one = { .health = 10, .score = 0, .team = RED };
+
+    // Print stats
+    cout << "Health: " << player_one.health << '\n';
+    cout << "Score: " << player_one.score << '\n';
+    cout << "Team: " <<  get_team(player_one) << '\n';
+
+    return 0;
+}
+
+// get_team implementation
+string get_team(const Player& player)
+{
+    switch (player.team)   // Eval team
+    {
+        case RED:
+            return "RED";
+        case YELLOW:
+            return "YELLOW";
+        case BLUE:
+            return "BLUE";
+        case GREEN:
+            return "GREEN";
+
+        default:
+            return "UNKNOWN";
+    }   // ^ Implicit 'break' in the 'return' statement
+}
+```
+> Prints: <br />
+> Health: 10 <br />
+> Score: 0 <br />
+> Team: RED <br />
