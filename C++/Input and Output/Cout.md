@@ -21,7 +21,6 @@ using namespace std;
 
 int main()
 {
-
     // Displays 'Hello, world!'
     cout << "Hello, world!\n";
 
