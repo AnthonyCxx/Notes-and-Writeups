@@ -37,6 +37,8 @@ int main()
 > Notice how I have to put spaces on both sides of `+` and `=` -- this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
 
 ## Newlines with _'\\n'_ and _endl_
+You can end the current line (and start a new line) by outputting one of two choices: the [escape character](https://ciphertrick.com/c-beginners-introduction-to-escape-sequences/) '\\n', or the object [_endl_](https://en.cppreference.com/w/cpp/io/manip/endl).
+
 When people learn how to use _endl_ to end the current line, they usually use it _everywhere_. This is wrong, so don't do it. 
 
 ```C++
@@ -45,6 +47,7 @@ When people learn how to use _endl_ to end the current line, they usually use it
 
 ## Sources
 Programiz: [_C++ cout_](https://www.programiz.com/cpp-programming/library-function/iostream/cout) <br />
+JavaTPoint: [_C++ Basic Input/Output_](https://www.javatpoint.com/cpp-basic-input-output#:~:text=Standard%20end%20line%20(endl),characters%20and%20flushes%20the%20stream.) <br />
 LearnCPP.com: [_1.5 — Introduction to iostream: cout, cin, and endl_](https://www.learncpp.com/cpp-tutorial/introduction-to-iostream-cout-cin-and-endl/) <br />
 IncludeHelp.com: [_C++ Manipulators - endl, setw, setprecision, setf_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) <br />
 Educative.io: [_What is the difference between endl and \n in C++?_](https://www.educative.io/edpresso/what-is-the-difference-between-endl-and-n-in-cpp) <br />
