@@ -36,7 +36,7 @@ int main()
 ```
 > Notice how I have to put spaces on both sides of `+` and `=` -- this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
 
-## Newlines with _'\\n'_ and _endl_
+## Newlines with _\\n_ and _endl_
 You can end the current line (and start a new line) by outputting one of two choices: the [escape character](https://ciphertrick.com/c-beginners-introduction-to-escape-sequences/) _\\n_, or the object [_endl_](https://en.cppreference.com/w/cpp/io/manip/endl). Outputting _\\n_ just ends the current line, while _endl_ ends the current line
 and [flushes](https://www.geeksforgeeks.org/buffer-flush-means-c/) the output stream, making it _endl_ a combination of _\\n_ and _cout.flush()_.
 When people learn how to use _endl_ to end the current line, they usually use it everywhere. This is bad practice as not only is it unncessary to flush the 
@@ -59,7 +59,8 @@ int main()
 ```
 > Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
-## Formatting Output with _cout.setf()_ and _cout.unsetf()_
+## Formatting Output with _cout.precision()_, _cout.setf()_ and _cout.unsetf()_
+
 
 ## Unformatted Output with _cout.put()_ and _cout.write()_
 The _cout_ object inherits from the [_ostream class_](https://www.cplusplus.com/reference/ostream/ostream/) and so inherits the methods from said class. The [_ostream::put()_](https://www.cplusplus.com/reference/ostream/ostream/put/)
@@ -82,7 +83,6 @@ int main()
     return 0;
 }
 ```
-
 
 ## Sources
 Programiz: [_C++ cout_](https://www.programiz.com/cpp-programming/library-function/iostream/cout) <br />
