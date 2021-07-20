@@ -3,3 +3,11 @@ _cout_, which stands for 'common output' (at least what I heard from college, I'
 operator (<<) to write to the screen (e.g. `cout << "Hello, World!\n"`). <br /> In addition to providing general I/O functions, _cout_ also provides methods like
 [_setw()_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) (set width), [_setfill()_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) and [_setprecision()_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) under the [\<iomanip\>](https://en.cppreference.com/w/cpp/header/iomanip) library,
 which can be used to format output.
+
+
+## Sources
+IncludeHelp.com: [_C++ Manipulators - endl, setw, setprecision, setf_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
