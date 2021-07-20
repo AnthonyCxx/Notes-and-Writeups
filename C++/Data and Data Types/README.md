@@ -38,6 +38,7 @@ Anything in parentheses can be omitted.
 | Precedence	| Operator | Description | Associativity |
 | ----------- | -------- | ----------- | ------------- |
 | 1 | :: | [Scope Resolution](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160) | N/A |
+|  |  |  |  |
 | 2 | . and -> | [Member Access](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160) | L -> R |
 | 2 | \[\] | [Array Subscript](https://docs.microsoft.com/en-us/cpp/cpp/subscript-operator?view=msvc-160) | L -> R |
 | 2 | () | [Function Call](https://docs.microsoft.com/en-us/cpp/cpp/function-call-operator-parens?view=msvc-160) | L -> R |
@@ -48,6 +49,7 @@ Anything in parentheses can be omitted.
 | 2 | dynamic_cast\<\>() | [Dynamic Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-160) | L -> R |
 | 2 | reinterpret_cast\<\>() | [Reinterpreted Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/reinterpret-cast-operator?view=msvc-160) | L -> R |
 | 2 | static_cast\<\>() | [Static Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-160) | L -> R |
+|  |  |  |  |
 | 3 |  | []() | R -> L |
 | 3 |  | []() | R -> L |
 | 3 |  | []() | R -> L |
