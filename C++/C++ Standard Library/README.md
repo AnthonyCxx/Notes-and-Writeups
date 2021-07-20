@@ -1,5 +1,7 @@
 # The C++ Standard Library
-Header files that start with _c_ belong to the [C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/C%20Standard%20Library/README.md)
+Header files that start with _c_ belong to the [C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/C%20Standard%20Library/README.md).
+
+Note: This list is not comprehensive.
 
 | Library | Full Name | Contains |
 | ------- | --------- | -------- |
@@ -18,5 +20,6 @@ Header files that start with _c_ belong to the [C Standard Library](https://gith
 | [\<\>]() |  |  |
 | [\<\>]() |  |  |
 
-> Note: this is not a comprehensive list in the slightest. <br />
+> Note: The [_rand()_](https://en.cppreference.com/w/cpp/numeric/random/rand) function suffers from biased number distribution (see [_How much bias is introduced by the remainder technique?_](https://ericlippert.com/2013/12/16/how-much-bias-is-introduced-by-the-remainder-technique/) and [_Continuous weighted random distribution, biased toward one end_](https://gamedev.stackexchange.com/questions/12638/continuous-weighted-random-distribution-biased-toward-one-end)). 
+> Use C++'s [\<random\>](https://en.cppreference.com/w/cpp/header/random) library for more accurate results. <br />
 > Reference: [All C++ Libraries](https://en.cppreference.com/w/cpp/header)
