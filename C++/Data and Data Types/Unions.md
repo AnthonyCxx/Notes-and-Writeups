@@ -108,7 +108,8 @@ int main()
 
 ## Real-world Example
 I found this cracked example of unions on [a StackOverflow question](https://stackoverflow.com/questions/15685181/how-to-get-the-sign-mantissa-and-exponent-of-a-floating-point-number)
-that I stumbled across that allows you to individually access the sign, mantissa, and exponent of a floating-point number.
+that I stumbled across that allows you to individually access the sign, mantissa, and exponent of a floating-point number. This is only possible because the struct
+shares the same space in memory as the float.
 For a better explanation, look here: <br /> [_Wikipedia: Single-precision floating-point format_](https://en.wikipedia.org/wiki/Single-precision_floating-point_format).
 
 P.S. If you don't understand the format `variable : int` then reference [this article](https://docs.microsoft.com/en-us/cpp/cpp/cpp-bit-fields?view=msvc-160) on bit fields.
