@@ -39,6 +39,8 @@ Anything in parentheses can be omitted.
 | ----------- | -------- | ----------- | ------------- |
 | 1 | :: | [Scope Resolution](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160) | N/A |
 |  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 | 2 | . and -> | [Member Access](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160) | L -> R |
 | 2 | \[\] | [Array Subscript](https://docs.microsoft.com/en-us/cpp/cpp/subscript-operator?view=msvc-160) | L -> R |
 | 2 | () | [Function Call](https://docs.microsoft.com/en-us/cpp/cpp/function-call-operator-parens?view=msvc-160) | L -> R |
