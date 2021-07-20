@@ -21,6 +21,6 @@ Note: This list is not comprehensive.
 | [\<\>]() |  |  |
 
 > Note: The [_rand()_](https://en.cppreference.com/w/cpp/numeric/random/rand) function suffers from biased number distribution (see [_How much bias is introduced by the remainder technique?_](https://ericlippert.com/2013/12/16/how-much-bias-is-introduced-by-the-remainder-technique/) and [_Continuous weighted random distribution, biased toward one end_](https://gamedev.stackexchange.com/questions/12638/continuous-weighted-random-distribution-biased-toward-one-end)). 
-> Use C++'s [\<random\>](https://en.cppreference.com/w/cpp/header/random) library for more accurate results. <br />
+> Use C++'s [\<random\>](https://en.cppreference.com/w/cpp/header/random) library for serious projects. <br />
 >
 > Reference: [All C++ Libraries](https://en.cppreference.com/w/cpp/header)
