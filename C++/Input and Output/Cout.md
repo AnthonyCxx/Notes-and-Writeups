@@ -36,8 +36,16 @@ int main()
 ```
 > Notice how I have to put spaces on both sides of `+` and `=` -- this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
 
+## Newlines with _'\\n'_ and _endl_
+
+
+```C++
+
+```
 
 ## Sources
 Programiz: [_C++ cout_](https://www.programiz.com/cpp-programming/library-function/iostream/cout) <br />
 LearnCPP.com: [_1.5 — Introduction to iostream: cout, cin, and endl_](https://www.learncpp.com/cpp-tutorial/introduction-to-iostream-cout-cin-and-endl/) <br />
 IncludeHelp.com: [_C++ Manipulators - endl, setw, setprecision, setf_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) <br />
+Educative.io: [_What is the difference between endl and \n in C++?_](https://www.educative.io/edpresso/what-is-the-difference-between-endl-and-n-in-cpp) <br />
+GeeksforGeeks: [_endl vs \\n in C++_](https://www.geeksforgeeks.org/endl-vs-n-in-cpp/) <br />
