@@ -38,31 +38,20 @@ Anything in parentheses can be omitted.
 | Precedence	| Operator | Description | Associativity |
 | ----------- | -------- | ----------- | ------------- |
 | 1 | :: | [Scope Resolution](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160) | N/A |
+| 2 | . and -> | [Member Access](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160) | L -> R |
+| 2 | \[\] | [Array Subscript](https://docs.microsoft.com/en-us/cpp/cpp/subscript-operator?view=msvc-160) | L -> R |
+| 2 | () | [Function Call](https://docs.microsoft.com/en-us/cpp/cpp/function-call-operator-parens?view=msvc-160) | L -> R |
+| 2 | ++ | [Postfix Increment](https://docs.microsoft.com/en-us/cpp/cpp/postfix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | L -> R |
+| 2 |  | []() | L -> R |
+| 2 |  | []() | L -> R |
+| 2 |  | []() | L -> R |
+| 2 |  | []() | L -> R |
 | 2 |  | []() | L -> R |
 |  |  | []() |  |
 |  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
-|  |  | []() |  |
+
 > Sources:
-> Bowling Green State Univeristy CS: [_C++ Operator Precedence_](https://www.bgsu.edu/arts-and-sciences/computer-science/cs-documentation/c-plus-plus-operator-precedence.html) <br />
 > Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
 > CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
 > Wikipedia: [_Operators in C and C++_](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B) <br />
+> Bowling Green State Univeristy CS: [_C++ Operator Precedence_](https://www.bgsu.edu/arts-and-sciences/computer-science/cs-documentation/c-plus-plus-operator-precedence.html) <br />
