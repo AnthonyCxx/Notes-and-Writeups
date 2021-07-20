@@ -21,6 +21,6 @@ Note: This list is not comprehensive.
 | [\<iterator\>](https://en.cppreference.com/w/cpp/header/iterator) | Iterator | provides a variety of iterators for iterating over data structures (such as [maps](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)) |
 | [\<regex\>](https://en.cppreference.com/w/cpp/header/regex) | [Regular Expressions](https://www.computerhope.com/jargon/r/regex.htm) | classes and functions for regular expressions ([_regex\_match()_](https://en.cppreference.com/w/cpp/regex/regex_match), [_regex\_search()_](https://en.cppreference.com/w/cpp/regex/regex_search), [_regex\_recplace()_](https://en.cppreference.com/w/cpp/regex/regex_replace)) |
 > Note: The [_rand()_](https://en.cppreference.com/w/cpp/numeric/random/rand) function suffers from biased number distribution (see [_How much bias is introduced by the remainder technique?_](https://ericlippert.com/2013/12/16/how-much-bias-is-introduced-by-the-remainder-technique/) and [_Continuous weighted random distribution, biased toward one end_](https://gamedev.stackexchange.com/questions/12638/continuous-weighted-random-distribution-biased-toward-one-end)). 
-> Use C++'s [\<random\>](https://en.cppreference.com/w/cpp/header/random) library for serious projects. <br />
+> Use C++'s [\<random\>](https://en.cppreference.com/w/cpp/header/random) library for more serious projects. <br />
 >
 > Reference: [All C++ Libraries](https://en.cppreference.com/w/cpp/header)
