@@ -42,12 +42,25 @@ Anything in parentheses can be omitted.
 | 2 | \[\] | [Array Subscript](https://docs.microsoft.com/en-us/cpp/cpp/subscript-operator?view=msvc-160) | L -> R |
 | 2 | () | [Function Call](https://docs.microsoft.com/en-us/cpp/cpp/function-call-operator-parens?view=msvc-160) | L -> R |
 | 2 | ++ | [Postfix Increment](https://docs.microsoft.com/en-us/cpp/cpp/postfix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | L -> R |
-| 2 |  | []() | L -> R |
-| 2 |  | []() | L -> R |
-| 2 |  | []() | L -> R |
-| 2 |  | []() | L -> R |
-| 2 |  | []() | L -> R |
-|  |  | []() |  |
+| 2 | -- | [Postfix Increment](https://docs.microsoft.com/en-us/cpp/cpp/postfix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | L -> R |
+| 2 | typeid() | [Type Name](https://docs.microsoft.com/en-us/cpp/cpp/typeid-operator?view=msvc-160) | L -> R |
+| 2 | const_cast\<\>() | [Constant Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/const-cast-operator?view=msvc-160) | L -> R |
+| 2 | dynamic_cast\<\>() | [Dynamic Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-160) | L -> R |
+| 2 | reinterpret_cast\<\>() | [Reinterpreted Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/reinterpret-cast-operator?view=msvc-160) | L -> R |
+| 2 | static_cast\<\>() | [Static Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-160) | L -> R |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
+| 3 |  | []() | R -> L |
 |  |  | []() |  |
 
 > Sources:
