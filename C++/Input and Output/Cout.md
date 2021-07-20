@@ -57,6 +57,7 @@ int main()
     return 0;
 }
 ```
+> Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
 ## Sources
 Programiz: [_C++ cout_](https://www.programiz.com/cpp-programming/library-function/iostream/cout) <br />
