@@ -1,13 +1,5 @@
-/*
-'<string_view>' is a C++17 header file that increases efficiency
-
-If you don't want to use C++17, replace 'string_view' with 'string&'
-*/
-
-#include <string_view>
-
 // Reverses a string, returning a new string
-string reverse(const string_view source)
+string reverse(const string& source)
 {
     string reversed;
 
