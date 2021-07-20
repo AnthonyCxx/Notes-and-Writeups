@@ -38,7 +38,7 @@ Anything in parentheses can be omitted.
 | Precedence	| Operator | Description | Associativity |
 | ----------- | -------- | ----------- | ------------- |
 | 1 | :: | [Scope Resolution](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160) | N/A |
-| 2 |  | []() |  |
+| 2 |  | []() | L -> R |
 |  |  | []() |  |
 |  |  | []() |  |
 |  |  | []() |  |
@@ -61,3 +61,8 @@ Anything in parentheses can be omitted.
 |  |  | []() |  |
 |  |  | []() |  |
 |  |  | []() |  |
+> Sources:
+> Bowling Green State Univeristy CS: [_C++ Operator Precedence_](https://www.bgsu.edu/arts-and-sciences/computer-science/cs-documentation/c-plus-plus-operator-precedence.html) <br />
+> Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
+> CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
+> Wikipedia: [_Operators in C and C++_](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B) <br />
