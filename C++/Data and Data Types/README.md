@@ -145,7 +145,7 @@ Anything in parentheses can be omitted.
 | 17 | , | [Comma](https://docs.microsoft.com/en-us/cpp/cpp/comma-operator?view=msvc-160) | L -> R |
 > CITATION NOTICE: This chart was copied almost verbatim from Microsoft's C++ documentation: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160). All credit to Microsoft. <br />
 >
-> Sources:
+> Sources: <br />
 > Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
 > CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
 > Wikipedia: [_Operators in C and C++_](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B) <br />
