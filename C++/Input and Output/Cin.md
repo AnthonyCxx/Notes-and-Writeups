@@ -1,1 +1,1 @@
-# Input with _cin_ in C++
+# Input in C++ with _cin_
