@@ -54,19 +54,25 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
-| 3 |  | []() | R -> L |
+| 3 | sizeof() | [Size of Object or Type](https://docs.microsoft.com/en-us/cpp/cpp/sizeof-operator?view=msvc-160) | R -> L |
+| 3 | ++ | [Prefix Increment](https://docs.microsoft.com/en-us/cpp/cpp/prefix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | R -> L |
+| 3 | -- | [Prefix Decrement](https://docs.microsoft.com/en-us/cpp/cpp/prefix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | R -> L |
+| 3 | ~ | [One's Complement Operator](https://docs.microsoft.com/en-us/cpp/cpp/one-s-complement-operator-tilde?view=msvc-160) | R -> L |
+| 3 | ! | [Logical Not](https://docs.microsoft.com/en-us/cpp/cpp/logical-negation-operator-exclpt?view=msvc-160) | R -> L |
+| 3 | + | [Unary Plus](https://docs.microsoft.com/en-us/cpp/cpp/unary-plus-and-negation-operators-plus-and?view=msvc-160) | R -> L |
+| 3 | - | [Unary Minus](https://docs.microsoft.com/en-us/cpp/cpp/unary-plus-and-negation-operators-plus-and?view=msvc-160) | R -> L |
+| 3 | & | [Address-of](https://docs.microsoft.com/en-us/cpp/cpp/address-of-operator-amp?view=msvc-160) | R -> L |
+| 3 | * | [Indirection/Dereferencing](https://docs.microsoft.com/en-us/cpp/cpp/indirection-operator-star?view=msvc-160) | R -> L |
+| 3 | new | [Create Object](https://docs.microsoft.com/en-us/cpp/cpp/new-operator-cpp?view=msvc-160) | R -> L |
+| 3 | delete | [Destroy Object](https://docs.microsoft.com/en-us/cpp/cpp/delete-operator-cpp?view=msvc-160) | R -> L |
+| 3 | () | [C-Style Cast](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B) | R -> L |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| .* and ->* |  | [Pointer to Member](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 |  |  | []() |  |
 
 > Sources:
