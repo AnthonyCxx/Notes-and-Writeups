@@ -27,10 +27,8 @@ int main()
     // Displays '5 + 5 = 10'
     cout << "5 + 5 = " << 5 + 5 << '\n';
 
-
-    int a = 5, b = 5;
-
     // Displays '5 + 5 = 10'
+    int a = 5, b = 5;
     cout << a << " + " << b << " = " << a + b << '\n';
 
     return 0;
