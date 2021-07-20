@@ -16,7 +16,7 @@ char getSingleChar()
 
     //Prevent leaving a '\n' in the stream from the user hitting enter
     cin.clear();                                                 //Always call 'cin.clear()' before 'cin.ignore()'
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');        // Ignore everything up to the user pressing 'enter'
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');        // Ignore everything up to and including the user pressing 'enter'
 
     return character;
 }
