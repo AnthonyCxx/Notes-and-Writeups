@@ -9,8 +9,8 @@ Note: _cout_ is an object within the _std_ (standard) namespace. If you want to 
 instead of just `cout` every time you use it.
 
 ## Basic Usage with the << Operator
-The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. <br />
-An expression using `cout <<` returns _\*this_ (_cout_), so you can write `cout << "this " << "is " << "acceptable.\n";` and not have to write _cout_ every time. 
+The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using `cout <<` returns _\*this_ (_cout_), 
+so you can write `cout << "this " << "is " << "acceptable.\n";` and not have to write _cout_ every time. 
 ```C++
 
 ```
