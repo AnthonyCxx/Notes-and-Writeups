@@ -9,7 +9,12 @@ Note: _cout_ is an object within the _std_ (standard) namespace. If you want to 
 instead of just `cout` every time you use it.
 
 ## Basic Usage with the << Operator
-The << operator is overloaded so that when used with an
+The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. <br />
+An expression using _cout <<_ 
+```C++
+
+```
+
 
 ## Sources
 Programiz: [_C++ cout_](https://www.programiz.com/cpp-programming/library-function/iostream/cout) <br />
