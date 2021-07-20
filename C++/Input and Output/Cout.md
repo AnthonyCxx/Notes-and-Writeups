@@ -21,13 +21,13 @@ using namespace std;
 
 int main()
 {
-    // Displays 'Hello, world!'
+    //Displays 'Hello, world!'
     cout << "Hello, world!\n";
 
-    // Displays '5 + 5 = 10'
+    //Displays '5 + 5 = 10'
     cout << "5 + 5 = " << 5 + 5 << '\n';
 
-    // Displays '5 + 5 = 10'
+    //Displays '5 + 5 = 10'
     int a = 5, b = 5;
     cout << a << " + " << b << " = " << a + b << '\n';
 
@@ -48,10 +48,10 @@ using namespace std;
 
 int main()
 {
-    // Start a new line
+    //Start a new line
     cout << "Hello, World!\n";
 
-    // Start a new line AND flushes the output stream (cout.flush())
+    //Start a new line AND flushes the output stream (cout.flush())
     cout << "Hello, world!" << endl;
 
     return 0;
