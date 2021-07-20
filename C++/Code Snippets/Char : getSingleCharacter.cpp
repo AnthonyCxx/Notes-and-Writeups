@@ -6,7 +6,7 @@ This gave me a problem when I was making my Hangman game -- I needed raw input, 
 #include <limits>        //Contains numeric_limits::max()
 
 // Get a single character, disposing of the input from the 'enter' key
-char getChar()
+char getSingleChar()
 {
     char character;
 
