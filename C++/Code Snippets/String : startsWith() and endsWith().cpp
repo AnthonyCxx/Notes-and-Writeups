@@ -1,5 +1,3 @@
-#include <string_view>
-
 bool startsWith(const string& text, const string& searchStr)
 {
     return text.find(searchStr) == 0;
