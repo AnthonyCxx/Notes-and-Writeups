@@ -79,12 +79,33 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-| 6 |  | []() |  |
-| 6 |  | []() |  |
-| 6 |  | []() |  |
+| 6 | + | [Addition](https://docs.microsoft.com/en-us/cpp/cpp/additive-operators-plus-and?view=msvc-160) | L -> R |
+| 6 | - | [Subtraction](https://docs.microsoft.com/en-us/cpp/cpp/additive-operators-plus-and?view=msvc-160) | L -> R |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
+| 7 | >> | [Left Shift](https://docs.microsoft.com/en-us/cpp/cpp/left-shift-and-right-shift-operators-input-and-output?view=msvc-160) | L -> R |
+| 7 | << | [Right Shift](https://docs.microsoft.com/en-us/cpp/cpp/left-shift-and-right-shift-operators-input-and-output?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| 8 | < | [Less Than](https://docs.microsoft.com/en-us/cpp/cpp/relational-operators-equal-and-equal?view=msvc-160) | L -> R |
+| 8 | > | [Greater Than](https://docs.microsoft.com/en-us/cpp/cpp/relational-operators-equal-and-equal?view=msvc-160) | L -> R |
+| 8 | <= | [Less Than or Equal To](https://docs.microsoft.com/en-us/cpp/cpp/relational-operators-equal-and-equal?view=msvc-160) | L -> R |
+| 8 | >= | [Greater Than or Equal To](https://docs.microsoft.com/en-us/cpp/cpp/relational-operators-equal-and-equal?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| 9 | == | [Equality](https://docs.microsoft.com/en-us/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal?view=msvc-160) | L -> R |
+| 9 | != | [Inequality](https://docs.microsoft.com/en-us/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  | >= | []() | |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  | >= | []() | |
 > Sources:
 > Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
 > CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
