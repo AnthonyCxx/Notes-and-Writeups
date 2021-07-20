@@ -1,1 +1,1 @@
-# Output with _cout_ in C++
+# Output in C++ with _cout_
