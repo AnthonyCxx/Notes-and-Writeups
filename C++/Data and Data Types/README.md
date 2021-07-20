@@ -96,16 +96,36 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-| 9 | == | [Equality](https://docs.microsoft.com/en-us/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal?view=msvc-160) | L -> R |
-| 9 | != | [Inequality](https://docs.microsoft.com/en-us/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal?view=msvc-160) | L -> R |
+| 9 | <=> | [Three-way Comparison](https://www.modernescpp.com/index.php/c-20-the-three-way-comparison-operator) | L -> R |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  | >= | []() | |
+| 10 | == | [Equality](https://docs.microsoft.com/en-us/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal?view=msvc-160) | L -> R |
+| 10 | != | [Inequality](https://docs.microsoft.com/en-us/cpp/cpp/equality-operators-equal-equal-and-exclpt-equal?view=msvc-160) | L -> R |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  | >= | []() | |
+| 11 | & | [Bitwise AND](https://docs.microsoft.com/en-us/cpp/cpp/bitwise-and-operator-amp?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| 12 | ^ | [Bitwise XOR](https://docs.microsoft.com/en-us/cpp/cpp/bitwise-exclusive-or-operator-hat?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| 13 | \| | [Bitwise OR](https://docs.microsoft.com/en-us/cpp/cpp/bitwise-inclusive-or-operator-pipe?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  | []() |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  | []() |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  | []() |  |
 > Sources:
 > Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
 > CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
