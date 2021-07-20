@@ -1,4 +1,4 @@
-// Split a string by a delimiter, emulating '.split()' in Python. This can be reworked to work with any type pretty easily.
+// Split a string into a dynamic array (a vector) using a delimiter, emulating '.split()' in Python. This can be reworked to work with any type pretty easily.
 #include <string>
 #include <vector>
 
