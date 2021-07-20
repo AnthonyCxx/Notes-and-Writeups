@@ -73,8 +73,18 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  |  | []() |  |
-
+| 5 | \* | [Multiplication](https://docs.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-160) | L -> R |
+| 5 | / | [Division](https://docs.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-160) | L -> R |
+| 5 | % | [Modulus](https://docs.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-160) | L -> R |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| 6 |  | []() |  |
+| 6 |  | []() |  |
+| 6 |  | []() |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 > Sources:
 > Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
 > CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
