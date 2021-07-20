@@ -52,6 +52,8 @@ Anything in parentheses can be omitted.
 | 2 | reinterpret_cast\<\>() | [Reinterpreted Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/reinterpret-cast-operator?view=msvc-160) | L -> R |
 | 2 | static_cast\<\>() | [Static Type Conversion](https://docs.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-160) | L -> R |
 |  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 | 3 |  | []() | R -> L |
 | 3 |  | []() | R -> L |
 | 3 |  | []() | R -> L |
