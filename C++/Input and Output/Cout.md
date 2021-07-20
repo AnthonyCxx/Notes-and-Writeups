@@ -11,8 +11,31 @@ instead of just `cout` every time you use it.
 ## Basic Usage with the << Operator
 The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using `cout <<` returns _\*this_ (_cout_), 
 so you can write `cout << "this " << "is " << "acceptable.\n";` and not have to write _cout_ every time. 
-```C++
 
+C++ does not have [string interpolation](https://www.programiz.com/python-programming/string-interpolation) (formatted strings), so you have to chain _cout_ with _<<_
+in order to achieve the same effect. Technically, C++20 did introduce the [format()](https://en.cppreference.com/w/cpp/utility/format/format) function, but if you don't 
+understand move semantics and forwarding, then you should stick with C++11 until you do.
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    // Displays 'Hello, world!'
+    cout << "Hello, world!\n";
+
+    // Displays '5 + 5 = 10'
+    cout << "5 + 5 = " << 5 + 5 << '\n';
+
+
+    int a = 5, b = 5;
+
+    // Displays '5 + 5 = 10'
+    cout << a << " + " << b << " = " << a + b << '\n';
+
+    return 0;
+}
 ```
 
 
