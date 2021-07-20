@@ -1,6 +1,7 @@
 # The C++ Standard Library
-Header files that start with _c_ belong to the [C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/C%20Standard%20Library/README.md).
+Tried to order these by how often I use 'em.
 
+Note: Header files that start with _c_ belong to the [C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/C%20Standard%20Library/README.md).
 Note: This list is not comprehensive.
 
 | Library | Full Name | Contains |
