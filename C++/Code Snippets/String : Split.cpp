@@ -1,4 +1,4 @@
-// Split a string with a delimiter
+// Split a string by a delimiter
 #include <string>
 #include <vector>
 
