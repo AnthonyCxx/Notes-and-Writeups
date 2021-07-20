@@ -49,3 +49,4 @@ LearnCPP.com: [_1.5 — Introduction to iostream: cout, cin, and endl_](https://
 IncludeHelp.com: [_C++ Manipulators - endl, setw, setprecision, setf_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) <br />
 Educative.io: [_What is the difference between endl and \n in C++?_](https://www.educative.io/edpresso/what-is-the-difference-between-endl-and-n-in-cpp) <br />
 GeeksforGeeks: [_endl vs \\n in C++_](https://www.geeksforgeeks.org/endl-vs-n-in-cpp/) <br />
+GeeksforGeeks: [_What does buffer flush means in C++ ?_](https://www.geeksforgeeks.org/buffer-flush-means-c/) <br />
