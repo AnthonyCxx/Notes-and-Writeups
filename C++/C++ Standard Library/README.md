@@ -17,7 +17,7 @@ Note: This list is not comprehensive.
 | [\<cctype\>](https://en.cppreference.com/w/cpp/header/cctype) | Classify Character Type? | functions to classify characters into sets ([_isalpha()_](https://en.cppreference.com/w/cpp/string/byte/isalpha), [_isdigit()_](https://en.cppreference.com/w/cpp/string/byte/isdigit), [_tolower()_](https://en.cppreference.com/w/cpp/string/byte/tolower)) |
 | [\<sstream\>](https://en.cppreference.com/w/cpp/header/sstream) | String Stream | a string class that can be read and manipulated like a stream ([applications](https://www.geeksforgeeks.org/stringstream-c-applications/)) |
 | [\<algorithm\>](https://en.cppreference.com/w/cpp/header/algorithm) | Algorithm | algorithmic functions ([_transform()_](https://en.cppreference.com/w/cpp/algorithm/ranges/transform), [_for\_each()_](https://en.cppreference.com/w/cpp/algorithm/for_each), [_is\_sorted()_](https://en.cppreference.com/w/cpp/algorithm/is_sorted), [_all\_of()_](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of), [_unique()_](https://en.cppreference.com/w/cpp/algorithm/unique)) |
-| [\<map\>]() | Map | an associative data structure that maps one value to another ([a dictionary](https://www.geeksforgeeks.org/python-dictionary/) from Python) |
+| [\<map\>]() | Map | a data structure that maps one value to another ([a dictionary](https://www.geeksforgeeks.org/python-dictionary/) from Python) |
 | [\<iterator\>](https://en.cppreference.com/w/cpp/header/iterator) | Iterator | provides a variety of iterators for iterating over data structures (such as [maps](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)) |
 | [\<\>]() |  |  |
 | [\<\>]() |  |  |
