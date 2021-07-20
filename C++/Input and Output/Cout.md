@@ -60,7 +60,7 @@ int main()
 > Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
 ## Formatting Output with Member Functions
-_cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/) as well as a variety of [flags]().
+_cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/) as well as a variety of [flags](https://www.cplusplus.com/reference/ios/).
 
 
 ## Unformatted Output with _cout.put()_ and _cout.write()_
