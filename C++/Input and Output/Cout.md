@@ -75,7 +75,7 @@ using namespace std;
 
 int main()
 {
-    /*   NOTE: .write() and .put() ignore flags set by cout's setf()   */
+    /*   NOTE: .write() and .put() ignore flags set by cout   */
  
     //Write 15 chars of the following string
     cout.write("this is a string", 15);
