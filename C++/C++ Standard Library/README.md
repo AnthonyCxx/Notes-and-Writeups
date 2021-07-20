@@ -3,7 +3,7 @@ Header files that start with _c_ belong to the [C Standard Library](https://gith
 
 | Library | Full Name | Contains |
 | ------- | --------- | -------- |
-| [\<iostream\>]() | Input/Output Stream | objects and functions for I/O operations ([_cin_](https://en.cppreference.com/w/cpp/io/cin) , [_cout_](https://en.cppreference.com/w/cpp/io/cout), [_cerr_](https://en.cppreference.com/w/cpp/io/cerr)) |
+| [\<iostream\>]() | Input/Output Stream | objects and functions for I/O operations ([_cin_](https://en.cppreference.com/w/cpp/io/cin) , [_cout_](https://en.cppreference.com/w/cpp/io/cout), [_cerr_](https://en.cppreference.com/w/cpp/io/cerr), [_clog_](https://en.cppreference.com/w/cpp/io/clog)) |
 | [\<cstdlib\>](https://en.cppreference.com/w/cpp/utility/program/exit) | C Standard Library | miscellaenous common functions ([_exit()_](https://en.cppreference.com/w/cpp/utility/program/exit), [_rand()_](https://en.cppreference.com/w/cpp/numeric/random/rand), [_atoi()_](https://en.cppreference.com/w/cpp/string/byte/atoi)) |
 | [\<\>]() |  |  |
 | [\<\>]() |  |  |
