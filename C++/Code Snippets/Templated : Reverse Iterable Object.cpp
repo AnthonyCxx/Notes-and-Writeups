@@ -1,3 +1,5 @@
+// Works for arrays, strings, etc.
+
 template <typename Type>
 Type reverse(const Type& iterObj)  //Any iterable rvalue
 {
