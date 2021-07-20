@@ -69,7 +69,7 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-| .* and ->* |  | [Pointer to Member](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160) | L -> R |
+| 4 | .* and ->* | [Pointer to Member](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160) | L -> R |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
