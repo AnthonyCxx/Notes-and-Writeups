@@ -18,7 +18,7 @@ Anything in parentheses can be omitted.
 | double | 8 | 1.7E-308 | 1.7E+308 | N/A (default) |
 | long double | 16 | 1.7E-308 | 1.7E+308 | L |
 | bool | 1 | false | true | N/A |
-> Note: floats have about 7 decimal places, doubles have about 15, and long doubles have about 19. <br />
+> Note: floats have about 7 decimal places, doubles have about 15, and long doubles have about 19 (system-dependent). <br />
 > 
 > Sources: <br />
 > Microsoft: [_Built-in Types (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-160) <br />
