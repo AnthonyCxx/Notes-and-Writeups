@@ -136,5 +136,7 @@ int main()
   printf("sign = %x\n", d1.parts.sign);
   printf("exponent = %x\n", d1.parts.exponent);
   printf("mantissa = %x\n", d1.parts.mantissa);
+  
+  return 0;
 }
 ```
