@@ -59,6 +59,27 @@ int main()
 ```
 > Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
+## Unformatted Output with _cout.put()_ and _cout.write()_
+The _cout_ object inherits from the [_ostream class_](https://www.cplusplus.com/reference/ostream/ostream/) and so inherits the methods from said class. The [_ostream::put()_](https://www.cplusplus.com/reference/ostream/ostream/put/)
+and [_ostream::write()_](https://www.cplusplus.com/reference/ostream/ostream/write/) methods can be used to write unformatted output to the screen (ignoring any format specifiers set such as _setw()_ or _setprecision()_).
+_ostream::put()_ writes a single character to the stream (like _putchar()_ in C) and _ostream::write()_ writes _n_ characters to the stream, given an array. As a rule of thumb,
+use `cout <<` when you can.
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    //Write 15 chars of the following string
+    cout.write("this is a string", 15);
+    cout.put('\n');    //Put a newline
+
+    return 0;
+}
+```
+
+
 ## Sources
 Programiz: [_C++ cout_](https://www.programiz.com/cpp-programming/library-function/iostream/cout) <br />
 JavaTPoint: [_C++ Basic Input/Output_](https://www.javatpoint.com/cpp-basic-input-output#:~:text=Standard%20end%20line%20(endl),characters%20and%20flushes%20the%20stream.) <br />
