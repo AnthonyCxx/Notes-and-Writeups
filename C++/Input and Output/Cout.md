@@ -73,6 +73,8 @@ using namespace std;
 
 int main()
 {
+    /*   NOTE: .write() and .put() ignore flags set by cout's setf()   */
+ 
     //Write 15 chars of the following string
     cout.write("this is a string", 15);
     cout.put('\n');    //Put a newline
