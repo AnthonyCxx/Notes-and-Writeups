@@ -117,15 +117,31 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  |  | []() |  |
+| 14 | && | [Logical AND](https://docs.microsoft.com/en-us/cpp/cpp/logical-and-operator-amp-amp?view=msvc-160) | L -> R |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  |  | []() |  |
+| 15 | \|\| | [Logical OR](https://docs.microsoft.com/en-us/cpp/cpp/logical-or-operator-pipe-pipe?view=msvc-160) | L -> R |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
-|  |  | []() |  |
+| 16 | ? : | [Ternary Operator](https://docs.microsoft.com/en-us/cpp/cpp/conditional-operator-q?view=msvc-160) | R -> L |
+| 16 | = | [Assignment Operator](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | \*= | [Multiplication Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | /= | [Division Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | %= | [Modulus Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | += | [Addition Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | -= | [Subtraction Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | <<= | [Left-Shift Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | >>= | [Right-Shift Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | &= | [Bitwise AND Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | \|= | [Bitwise OR Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | ^= | [Bitwise XOR Assignment](https://docs.microsoft.com/en-us/cpp/cpp/assignment-operators?view=msvc-160) | R -> L |
+| 16 | throw | [Throw Expression](https://docs.microsoft.com/en-us/cpp/cpp/try-throw-and-catch-statements-cpp?view=msvc-160) | R -> L |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+| 17 | , | [Comma](https://docs.microsoft.com/en-us/cpp/cpp/comma-operator?view=msvc-160) | L -> R |
 > Sources:
 > Microsoft: [_C++ built-in operators, precedence, and associativity_](https://docs.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-160) <br />
 > CPPReference: [_C++ Operator Precedence_](https://en.cppreference.com/w/cpp/language/operator_precedence) <br />
