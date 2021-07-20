@@ -59,6 +59,8 @@ int main()
 ```
 > Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
+## Formatting Output with _cout.setf()_ and _cout.unsetf()_
+
 ## Unformatted Output with _cout.put()_ and _cout.write()_
 The _cout_ object inherits from the [_ostream class_](https://www.cplusplus.com/reference/ostream/ostream/) and so inherits the methods from said class. The [_ostream::put()_](https://www.cplusplus.com/reference/ostream/ostream/put/)
 and [_ostream::write()_](https://www.cplusplus.com/reference/ostream/ostream/write/) methods can be used to write unformatted output to the screen (ignoring any format specifiers set such as _setw()_ or _setprecision()_).
@@ -88,3 +90,5 @@ IncludeHelp.com: [_C++ Manipulators - endl, setw, setprecision, setf_](https://w
 Educative.io: [_What is the difference between endl and \n in C++?_](https://www.educative.io/edpresso/what-is-the-difference-between-endl-and-n-in-cpp) <br />
 GeeksforGeeks: [_endl vs \\n in C++_](https://www.geeksforgeeks.org/endl-vs-n-in-cpp/) <br />
 GeeksforGeeks: [_What does buffer flush means in C++ ?_](https://www.geeksforgeeks.org/buffer-flush-means-c/) <br />
+CPPReference: [_ios\_base: setf()_](https://en.cppreference.com/w/cpp/io/ios_base/setf) <br />
+Florida State University CS Department: [_Output Stream Formatting_](https://www.cs.fsu.edu/~myers/c++/notes/formatting.html) <br />
