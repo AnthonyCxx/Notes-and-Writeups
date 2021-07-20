@@ -13,7 +13,7 @@ Note: This list is not comprehensive.
 | [\<cmath\>](https://en.cppreference.com/w/cpp/header/cmath) | C Math | math-related functions ([_abs()_](https://en.cppreference.com/w/cpp/numeric/math/fabs), [_pow()_](https://en.cppreference.com/w/cpp/numeric/math/pow), [_log()_](https://en.cppreference.com/w/cpp/numeric/math/log), [_sin()_](https://en.cppreference.com/w/cpp/numeric/math/sin), [_cos()_](https://en.cppreference.com/w/cpp/numeric/math/cos), [_tan()_](https://en.cppreference.com/w/cpp/numeric/math/tan) [_ciel()_](https://en.cppreference.com/w/cpp/numeric/math/ceil), [_floor()_](https://en.cppreference.com/w/cpp/numeric/math/floor), [_round()_](https://en.cppreference.com/w/cpp/numeric/math/round)) |
 | [\<\>]() |  |  |
 | [\<\>]() |  |  |
-| [\<\>]() |  |  |
+| [\<sstream\>](https://en.cppreference.com/w/cpp/header/sstream) | String Stream | a string class that can be read and manipulated like a stream ([applications](https://www.geeksforgeeks.org/stringstream-c-applications/)) |
 | [\<\>]() |  |  |
 | [\<\>]() |  |  |
 | [\<\>]() |  |  |
