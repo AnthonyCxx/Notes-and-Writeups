@@ -1,9 +1,11 @@
-bool startsWith(const string& text, const string& searchStr)
+#include <string>
+
+bool startsWith(const string& text, const string& substr)
 {
-    return text.find(searchStr) == 0;
+        return text.find(substr) == 0;
 }
 
-bool endsWith(const string_view text, const string_view searchStr)
+bool endsWith(const string& text, const string& substr)
 {
-    return text.rfind(searchStr) + searchStr.length() == text.length();
+        return text.rfind(substr) + substr.length() == text.length();
 }
