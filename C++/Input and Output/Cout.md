@@ -34,7 +34,7 @@ int main()
     return 0;
 }
 ```
-> Notice how I have to put spaces on both sides of `+` and `=` - this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
+> Notice how I have to put spaces on both sides of `+` and `=` -- this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
 
 
 ## Sources
