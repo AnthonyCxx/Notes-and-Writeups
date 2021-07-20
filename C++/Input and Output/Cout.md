@@ -37,12 +37,25 @@ int main()
 > Notice how I have to put spaces on both sides of `+` and `=` -- this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
 
 ## Newlines with _'\\n'_ and _endl_
-You can end the current line (and start a new line) by outputting one of two choices: the [escape character](https://ciphertrick.com/c-beginners-introduction-to-escape-sequences/) _\\n_, or the object [_endl_](https://en.cppreference.com/w/cpp/io/manip/endl). Outputting _\\n_ 
-
-When people learn how to use _endl_ to end the current line, they usually use it _everywhere_. This is wrong, so don't do it. 
+You can end the current line (and start a new line) by outputting one of two choices: the [escape character](https://ciphertrick.com/c-beginners-introduction-to-escape-sequences/) _\\n_, or the object [_endl_](https://en.cppreference.com/w/cpp/io/manip/endl). Outputting _\\n_ just ends the current line, while _endl_ ends the current line
+and [flushes](https://www.geeksforgeeks.org/buffer-flush-means-c/) the output stream, making it _endl_ a combination of _\\n_ and _cout.flush()_.
+When people learn how to use _endl_ to end the current line, they usually use it everywhere. This is bad practice as not only is it unncessary to flush the 
+buffer every time you want to start a new line, but it also reduces the efficiency that [buffered input](https://gcc.gnu.org/onlinedocs/libstdc++/manual/streambufs.html) allows for.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    // Start a new line
+    cout << "Hello, World!\n";
+
+    // Start a new line AND flushes the output stream (cout.flush())
+    cout << "Hello, world!" << endl;
+
+    return 0;
+}
 ```
 
 ## Sources
