@@ -7,6 +7,4 @@
 | [cin](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/Cin.md) | an object with functions for reading from the input stream, [stdin](https://www.cplusplus.com/reference/cstdio/stdin/#:~:text=FILE%20*%20stdin%3B,parameters%2C%20like%20fgets%20or%20fscanf.) (the keyboard) |
 | [cerr/clog](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/Cerr%20and%20Clog.md) | objects with functions for writing to the error stream, [stderr](https://www.cplusplus.com/reference/cstdio/stderr/) |
 
-
-<img src="https://user-images.githubusercontent.com/70488531/126399289-11ff9a53-41a9-45f1-8ea9-2bf4adfc3df3.png" style="width:100px;height:100px;">
 ![image](https://user-images.githubusercontent.com/70488531/126399700-abceb2f1-d5dd-4c46-8f2e-20ee0b9953bd.png)
