@@ -6,8 +6,8 @@ which can be used to format output.
 
 
 ## Sources
+LearnCPP.com: [_1.5 — Introduction to iostream: cout, cin, and endl_](https://www.learncpp.com/cpp-tutorial/introduction-to-iostream-cout-cin-and-endl/) <br />
 IncludeHelp.com: [_C++ Manipulators - endl, setw, setprecision, setf_](https://www.includehelp.com/cpp-tutorial/cpp-manipulators-endl-setw-setprecision-setf-cpp-programming-tutorial.aspx) <br />
-: [__]() <br />
 : [__]() <br />
 : [__]() <br />
 : [__]() <br />
