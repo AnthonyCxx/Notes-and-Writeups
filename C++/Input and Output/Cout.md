@@ -60,7 +60,7 @@ int main()
 > Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
 ## Formatting Output with Member Functions
-_cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/).
+_cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/) as well as a variety of [flags]().
 
 
 ## Unformatted Output with _cout.put()_ and _cout.write()_
@@ -96,3 +96,4 @@ GeeksforGeeks: [_What does buffer flush means in C++ ?_](https://www.geeksforgee
 CPPReference: [_ios\_base: setf()_](https://en.cppreference.com/w/cpp/io/ios_base/setf) <br />
 Florida State University CS Department: [_Output Stream Formatting_](https://www.cs.fsu.edu/~myers/c++/notes/formatting.html) <br />
 TutorialsPoint: [_C++ Library - \<ios\>_](https://www.tutorialspoint.com/cpp_standard_library/ios.htm) <br />
+GeeksforGeeks: [_Formatted I/O in C++_](https://www.geeksforgeeks.org/formatted-i-o-in-c/) <br />
