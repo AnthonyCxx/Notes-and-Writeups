@@ -37,7 +37,7 @@ int main()
 > Notice how I have to put spaces on both sides of `+` and `=` -- this is because C++ does not include spaces inbetween output, just like it doesn't implicitly include newlines.
 
 ## Newlines with _'\\n'_ and _endl_
-You can end the current line (and start a new line) by outputting one of two choices: the [escape character](https://ciphertrick.com/c-beginners-introduction-to-escape-sequences/) '\\n', or the object [_endl_](https://en.cppreference.com/w/cpp/io/manip/endl).
+You can end the current line (and start a new line) by outputting one of two choices: the [escape character](https://ciphertrick.com/c-beginners-introduction-to-escape-sequences/) _\\n_, or the object [_endl_](https://en.cppreference.com/w/cpp/io/manip/endl). Outputting _\\n_ 
 
 When people learn how to use _endl_ to end the current line, they usually use it _everywhere_. This is wrong, so don't do it. 
 
