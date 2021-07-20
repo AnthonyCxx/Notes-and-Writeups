@@ -33,3 +33,9 @@ Anything in parentheses can be omitted.
 | [Enums](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Enumerations.md) | a user-defined type that has a set of defined values (e.g. on/off or red/yellow/blue) |
 | [Unions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Unions.md) | a user-defined datatype that stores a number of variables in a single space in memory |
 | [Pointers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Pointers.md) | a derived type that stores the memory address of an object in memory (not the class kind of object) |
+
+## Operator Precedence
+| Precedence	| Operator | Description | Associativity |
+| ----------- | -------- | ----------- | ------------- |
+| 1 | :: | [Scope Resolution](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160) | N/A |
+| 2 |  | []() |  |
