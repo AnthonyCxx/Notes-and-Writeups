@@ -139,6 +139,41 @@ int main(void)
 > Touchscreen sensitivity: 5 <br />
 > Gestures are not enabled <br />
 
+## Real-world Example
+I found this cracked example of unions on [a StackOverflow question](https://stackoverflow.com/questions/15685181/how-to-get-the-sign-mantissa-and-exponent-of-a-floating-point-number)
+that I stumbled across that allows you to individually access the sign, mantissa, and exponent of a floating-point number. This is only possible because the struct
+shares the same space in memory as the float. <br />
+For a better explanation, look here: [_Wikipedia: Single-precision floating-point format_](https://en.wikipedia.org/wiki/Single-precision_floating-point_format).
+
+P.S. If you don't understand the format `variable : int` then reference [this article](https://www.geeksforgeeks.org/bit-fields-c/) on bit fields.
+```C++
+#include <stdio.h>
+
+typedef union float_cast
+{
+    float f;
+
+    struct
+    {
+        unsigned int mantissa : 23;
+        unsigned int exponent : 8;
+        unsigned int sign : 1;
+    } parts;
+} float_cast;
+
+// DRIVER CODE //
+int main(void)
+{
+  float_cast d1 = { .f = 0.15625 };
+  printf("sign = %x\n", d1.parts.sign);
+  printf("exponent = %x\n", d1.parts.exponent);
+  printf("mantissa = %x\n", d1.parts.mantissa);
+  
+  return 0;
+}
+```
+
+
 ## Sources
 - [_GeeksforGeeks: Unions in C_](https://www.geeksforgeeks.org/union-c/)
 - [_TutorialsPoint: C - Unions_](https://www.tutorialspoint.com/cprogramming/c_unions.htm)
