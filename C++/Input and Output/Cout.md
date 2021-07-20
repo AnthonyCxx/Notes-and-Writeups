@@ -94,3 +94,4 @@ GeeksforGeeks: [_endl vs \\n in C++_](https://www.geeksforgeeks.org/endl-vs-n-in
 GeeksforGeeks: [_What does buffer flush means in C++ ?_](https://www.geeksforgeeks.org/buffer-flush-means-c/) <br />
 CPPReference: [_ios\_base: setf()_](https://en.cppreference.com/w/cpp/io/ios_base/setf) <br />
 Florida State University CS Department: [_Output Stream Formatting_](https://www.cs.fsu.edu/~myers/c++/notes/formatting.html) <br />
+TutorialsPoint: [_C++ Library - \<ios\>_](https://www.tutorialspoint.com/cpp_standard_library/ios.htm) <br />
