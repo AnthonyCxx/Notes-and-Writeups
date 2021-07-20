@@ -55,7 +55,7 @@ Anything in parentheses can be omitted.
 |  |  |  |  |
 |  |  |  |  |
 | 3 | sizeof() | [Size of Object or Type](https://docs.microsoft.com/en-us/cpp/cpp/sizeof-operator?view=msvc-160) | R -> L |
-| 3 | \_Alignof() |  |
+| 3 | \_Alignof() | [Alignment of Object or Type](https://en.cppreference.com/w/c/language/_Alignof) | R -> L |
 | 3 | ++ | [Prefix Increment](https://docs.microsoft.com/en-us/cpp/cpp/prefix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | R -> L |
 | 3 | -- | [Prefix Decrement](https://docs.microsoft.com/en-us/cpp/cpp/prefix-increment-and-decrement-operators-increment-and-decrement?view=msvc-160) | R -> L |
 | 3 | ~ | [One's Complement Operator](https://docs.microsoft.com/en-us/cpp/cpp/one-s-complement-operator-tilde?view=msvc-160) | R -> L |
