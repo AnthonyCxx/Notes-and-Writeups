@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-vector<string> split(const string& text, const char delimiter)
+vector<string> split(const string& text, const char delimiter)   //Could also be 'char&' or 'char&&'
 {
     vector<string> split_text;
     string word;
