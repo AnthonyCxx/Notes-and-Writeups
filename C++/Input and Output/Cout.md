@@ -83,7 +83,7 @@ int main()
     cout << showpoint << 1.0f << noshowpoint << '\n';
 
     //Representing numbers in hexadecimal format (but uppercase)
-    cout << "The number 500 in hex is (uppercase): " << uppercase << hex << 500 << nouppercase << '\n';
+    cout << "The number 500 in hex is (uppercase): " << uppercase << hex << 500 << nouppercase << "\n\n";
 
     /*  NON-  */
 
@@ -102,6 +102,7 @@ int main()
 > The number 500 in hex is: 1f4 <br />
 > 1.00000 <br />
 > The number 500 in hex is (uppercase): 1F4 <br />
+> 
 > 1.233141e+03 <br />
 > The number 500 in hex is: 1f4 <br />
 
