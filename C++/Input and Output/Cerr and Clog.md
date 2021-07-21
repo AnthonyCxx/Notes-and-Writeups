@@ -6,7 +6,7 @@ library and are used to write characters to [stderr](http://www.cs.kent.edu/~dur
 
 [_()_](https://www.geeksforgeeks.org/cin-get-in-c-with-examples/) and [_()_](https://www.includehelp.com/cpp-programs/cpp-program-to-read-string-using-cin-getline.aspx). 
 
-Note:  is an object within the std (standard) namespace. If you want to use it without `using namespace std;` at the top of your program, you'll have to write `std::cin` instead of just `cin` every time you use it.
+Note: _clog_ and _cerr_ are objects within the std (standard) namespace. If you want to use them without `using namespace std;` at the top of your program, you'll have to write `std::cerr` instead of just `cerr` every time you use them.
 
 
 ## Sources
