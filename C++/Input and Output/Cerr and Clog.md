@@ -1,7 +1,7 @@
 # Errors in C++ with _cerr_ and _clog_
 _clog_ and _cerr_, which stand for 'character log' and 'character error' respectively, belong to the [\<iostream\>](https://en.cppreference.com/w/cpp/header/iostream) 
 library and are used to write characters to [stderr](http://www.cs.kent.edu/~durand/CS1/Notes/06_IO/cs1_io.html) (the screen). _clog_ and _cerr_ generally use an
-[overloaded](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm) right bit-shift operator (<<) to write to the screen 
+[overloaded](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm) right bit-shift operator (<<) to write to the screen <br />
 (e.g. `cerr << "Fatal error: the file could not be opened or does not exist"`), but also has other functions like 
 
 [_()_](https://www.geeksforgeeks.org/cin-get-in-c-with-examples/) and [_()_](https://www.includehelp.com/cpp-programs/cpp-program-to-read-string-using-cin-getline.aspx). 
