@@ -52,6 +52,7 @@ int main()
 > This chart is a collection of excerpts from the [public notes](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) from Harvey Mudd College Computer Science Department 
 
 ```C++
+/* In retrospect, demonstrating this is a little hard without being able to show you the input... */
 
 ```
 > For reading lines, you [_getline()_](https://www.geeksforgeeks.org/getline-string-c/) from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library. <br />
