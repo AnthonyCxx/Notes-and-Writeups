@@ -35,7 +35,8 @@ int main()
     return 0;
 }
 ```
-> The 'ifstream' datatype has an overloaded 'bool' operator such that it evaluates to false if the file is invalid (does not exist or cannot be opened)
+> The 'ifstream' datatype has an overloaded 'bool' operator such that it evaluates to false if the file is invalid <br />
+> (does not exist or cannot be opened)
 
 ## Sources
 IBM Documentation: [_Using C and C++ standard streams and redirection_](https://www.ibm.com/docs/en/zos/2.1.0?topic=output-using-c-c-standard-streams-redirection) <br />
