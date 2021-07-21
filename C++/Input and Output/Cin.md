@@ -20,7 +20,23 @@ If you have trouble keeping track of which direction the arrows go for _cout_ (<
 goes outwards; the arrows for _cin_ point towards the variable that takes the input.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    //Declare two integers to store the user input
+    int num1, num2;
+
+    //Get two integers from the user
+    cout << "Enter two numbers to add together: ";
+    cin >> num1 >> num2;    //No need for a newline character because the user confirms input by pressing enter (\n)
+
+    //Display the result of 'num1 + num2'
+    cout << "The numbers " << num1 << " and " << num2 << " added together is: " << num1 + num2 << '\n';
+
+    return 0;
+}
 ```
 
 ## Sources
