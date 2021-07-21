@@ -8,11 +8,10 @@ and [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/).
 
 Note: _clog_ and _cerr_ are objects within the std (standard) namespace. If you want to use them without `using namespace std;` at the top of your program, you'll have to write `std::cerr` instead of just `cerr` every time you use them.
 
+## Basic Usage with the << Operator
+
 
 ## Sources
 IBM Documentation: [_Using C and C++ standard streams and redirection_](https://www.ibm.com/docs/en/zos/2.1.0?topic=output-using-c-c-standard-streams-redirection) <br />
 CPlusPlus: [_std::ostream_](https://www.cplusplus.com/reference/ostream/ostream/) <br />
 StudyMite: [_cerr and clog in C++_](https://www.studymite.com/cpp/cerr-and-clog-in-cpp/) <br />
-: [__]() <br />
-: [__]() <br />
-: [__]() <br />
