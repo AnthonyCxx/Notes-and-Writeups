@@ -8,8 +8,7 @@ as 1.271432e+02.
 ## Sources
 CPPReference: [_Standard library header <iomanip>_](https://en.cppreference.com/w/cpp/header/iomanip) <br />
 CPPReference: [_Input/output manipulators_](https://en.cppreference.com/w/cpp/io/manip) <br />
+CPlusPlus.com: [_\<iomanip\>_](https://www.cplusplus.com/reference/iomanip/) <br />
 CPlusPlus.com: [_std::ostream::operator<<_](https://www.cplusplus.com/reference/ostream/ostream/operator%3C%3C/) <br />
 Microsoft C++ Documentation: [_\<iomanip\> functions_](https://docs.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-160) <br />
-: [__]() <br />
-: [__]() <br />
-: [__]() <br />
+TutorialsPoint: [_C++ Library - <iomanip>_](https://www.tutorialspoint.com/cpp_standard_library/iomanip.htm) <br />
