@@ -8,6 +8,10 @@ and [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/).
 
 Note: _clog_ and _cerr_ are objects within the std (standard) namespace. If you want to use them without `using namespace std;` at the top of your program, you'll have to write `std::clog/cerr` instead of just `clog/cerr` every time you use them.
 
+## _cerr_ vs _clog_
+_cerr_ and _clog_ are both associated with the [stderr](https://www.ibm.com/docs/en/zos/2.2.0?topic=output-using-c-c-standard-streams-redirection) (standard error) stream
+and perform the same function. So, why are they different?
+
 ## Basic Usage with the << Operator
 The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using <br /> `clog/cerr <<` returns 
 \*this (_clog_/_cerr_), so you can write `clog/cerr << "this " << "is " << "acceptable.\n";` and not have to write cout every time.
