@@ -19,7 +19,7 @@ vector<string> split(const string& text, const char delimiter)   //Could also be
             word += text[i];   // C++ strings are mutable, so this isn't a problem
     }
 
-    // Append the last word
+    // Append the last word (not appended by the lack of delimiter)
     split_text.push_back(word);
 
     return split_text;
