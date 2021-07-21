@@ -7,7 +7,7 @@
 | [cerr/clog](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/Cerr%20and%20Clog.md) | objects with functions for writing to the error stream, [stderr](https://www.cplusplus.com/reference/cstdio/stderr/) (the screen) |
 
 ## C++ I/O Class Inheritance Hierarchy
-![image](https://user-images.githubusercontent.com/70488531/126399700-abceb2f1-d5dd-4c46-8f2e-20ee0b9953bd.png)
+[comment]: <> ![image](https://user-images.githubusercontent.com/70488531/126399700-abceb2f1-d5dd-4c46-8f2e-20ee0b9953bd.png)
 > White boxes are classes, black boxes are objects <br />
 >
 >  Source: [cplusplus.com](https://www.cplusplus.com/reference/ios/) <br />
