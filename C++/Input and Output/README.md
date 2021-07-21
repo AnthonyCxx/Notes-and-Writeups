@@ -8,4 +8,6 @@
 
 ## C++ I/O Class Inheritance Hierarchy
 ![image](https://user-images.githubusercontent.com/70488531/126399700-abceb2f1-d5dd-4c46-8f2e-20ee0b9953bd.png)
+> White boxes are classes, black boxes are objects.
+>
 >  Source: [cplusplus.com](https://www.cplusplus.com/reference/ios/) <br />
