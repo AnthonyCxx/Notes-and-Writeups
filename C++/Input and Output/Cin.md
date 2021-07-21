@@ -6,7 +6,7 @@ and [_cin.getline()_](https://www.includehelp.com/cpp-programs/cpp-program-to-re
 Note: cin is an object within the std (standard) namespace. If you want to use it without `using namespace std`; at the top of your program, you'll have to write `std::cin` instead of just `cin` every time you use it.
 
 ## Basic Usage with the >> Operator
-The >> operator is overloaded to it takes input from _cin_ and stores it in the given variable (e.g. `cin >> userInput`). How the data is read depends on the 
+The >> operator is overloaded to it takes input from _cin_ and stores it in the given variable (e.g. `cin >> word`). How the data is read depends on the 
 datatype of the variable the input is being stored in. If you read the input '15' into an integer, then the variable will hold the integer 15; conversely, if you read the 
 input '15' into a string, then the variable will hold the string "15". If you accidentally read the input as the wrong type, you can always convert the input using 
 [_stoi()_](https://en.cppreference.com/w/cpp/string/basic_string/stol) (**s**tring **to** **i**nteger), [_to\_string()_](https://www.cplusplus.com/reference/string/to_string/),
