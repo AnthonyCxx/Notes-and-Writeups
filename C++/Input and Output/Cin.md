@@ -3,7 +3,7 @@ _cin_, which stands for 'character input' belongs to the [\<iostream\>](https://
 left bit-shift operator (>>) to read from the keyboard (e.g. `cin >> someVariable`), but also has other functions like [_cin.get()_](https://www.geeksforgeeks.org/cin-get-in-c-with-examples/) 
 and [_cin.getline()_](https://www.includehelp.com/cpp-programs/cpp-program-to-read-string-using-cin-getline.aspx). 
 
-Note: _cin_ is an object within the std (standard) namespace. If you want to use it without `using namespace std`; at the top of your program, you'll have to write `std::cin` instead of just `cin` every time you use it.
+Note: _cin_ is an object within the std (standard) namespace. If you want to use it without `using namespace std;` at the top of your program, you'll have to write `std::cin` instead of just `cin` every time you use it.
 
 ## Basic Usage with the >> Operator
 The >> operator is overloaded to it takes input from _cin_ and stores it in the given variable (e.g. `cin >> word`). How the data is read depends on the 
