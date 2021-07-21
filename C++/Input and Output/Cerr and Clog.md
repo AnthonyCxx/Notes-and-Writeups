@@ -13,7 +13,27 @@ The << operator is overloaded such that it writes literals and expressions that 
 \*this (_clog_/_cerr_), so you can write `clog/cerr << "this " << "is " << "acceptable.\n";` and not have to write cout every time.
 
 ```C++
+#include <iostream>
+#include <fstream>       //Contains 'ifstream' datatype
+#include <cstdlib>      //Contains 'exit()'
+using namespace std;
 
+int main()
+{
+    //Declare a read-only file 'file'
+    ifstream file;
+
+    //Open a file 'thisFileDoesNotExist.txt' in read mode
+    file.open("thisFileDoesNotExist.txt");
+
+    if (!file)   // 'file' evals to false if invalid
+    {
+        clog << "Fatal error: file could not be opened or does not exist...\n";
+        exit(1);  //Exit with status code 1
+    }
+
+    return 0;
+}
 ```
 
 ## Sources
