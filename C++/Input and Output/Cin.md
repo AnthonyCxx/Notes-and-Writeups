@@ -50,8 +50,7 @@ int main()
 | cin.read(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching EOF |
 | cin.gcount() | counts the characters read by the last unformatted input operation (works for cin, but not peek or putback) |
 > Don't use _cin.getline()_ or _cin.read()_ for reading lines, use [_getline()_](https://www.geeksforgeeks.org/getline-string-c/) 
-> from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library. <br />
-> Only use _cin.getline()_ for C-strings.
+> from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library.  Only use _cin.getline()_ for C-strings.
 >
 > This chart is a collection of excerpts from the [public notes](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) from Harvey Mudd College Computer Science Department.
 
