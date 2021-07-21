@@ -89,8 +89,11 @@ int main()
     return 0;
 }
 ```
-> For reading lines, you [_getline()_](https://www.geeksforgeeks.org/getline-string-c/) from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library. <br />
-> _cin.getline()_ and _cin.read()_ for C-strings.
+> Prints: <br />
+> cin.get(): Read the character 'a' from the stream <br />
+> cin.putback(): Putting back 'a' into the stream... <br />
+> cin.peek(): The next character in the stream is 'a' <br />
+> cin.ignore(): Read the character 'c' from the stream (ignored two characters: 'a' and 'b') <br />
 
 ## Sources
 GeeksforGeeks: [_cin in C++_](https://www.geeksforgeeks.org/cin-in-c/) <br />
