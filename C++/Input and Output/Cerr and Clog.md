@@ -12,6 +12,10 @@ Note: _clog_ and _cerr_ are objects within the std (standard) namespace. If you 
 The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using <br /> `clog/cerr <<` returns 
 \*this (_clog_/_cerr_), so you can write `clog/cerr << "this " << "is " << "acceptable.\n";` and not have to write cout every time.
 
+```C++
+
+```
+
 ## Sources
 IBM Documentation: [_Using C and C++ standard streams and redirection_](https://www.ibm.com/docs/en/zos/2.1.0?topic=output-using-c-c-standard-streams-redirection) <br />
 CPlusPlus: [_std::ostream_](https://www.cplusplus.com/reference/ostream/ostream/) <br />
