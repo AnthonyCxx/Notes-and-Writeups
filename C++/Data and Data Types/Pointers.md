@@ -129,7 +129,7 @@ int main()
     cout << "EXP: " <<  (*ptr).exp << "\n\n";
 
     // Using ptr->member to access members
-        cout << "Health: " << ptr->health << '\n';   // Lot simpler, huh?
+    cout << "Health: " << ptr->health << '\n';   // Lot simpler, huh?
     cout << "Attack: " << ptr->attack << '\n';
     cout << "EXP: " << ptr->exp << endl;
 
