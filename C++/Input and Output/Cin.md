@@ -52,8 +52,39 @@ int main()
 > This chart is a collection of excerpts from the [public notes](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) from Harvey Mudd College Computer Science Department 
 
 ```C++
-/* In retrospect, demonstrating this is a little hard without being able to show you the input... */
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    //A single character :)
+    char character;
+
+    /* User enters 'abc' as input when prompted at 'cin.get()' */
+
+    //cin.get() -- extract one character from the input stream
+    cout << "Enter a character: ";
+    cin.get(character);                 //'a' is read from the stream
+    cout << "cin.get(): Read the character \'" << character << "\' from the stream\n";
+
+    //cin.putback() -- place 'character' back into the input stream
+    cout << "cin.putback(): Putting back \'" << character << "\' into the stream...\n";
+    cin.putback(character);
+
+    //cin.peek() -- peek at the next character in the stream
+    character = cin.peek();    //'a' is read but not removed from the stream
+    cout << "cin.peek(): The next character in the stream is \'" << character << "\'\n";
+
+    //cin.ignore() -- ignore 'int' characters in the stream (2)
+    cin.ignore(2);
+
+     //Exemplifies the effect of 'cin.ignore()'
+    //Reads the character 'c', skipping 'a' (put back by cin.putback()) as wel as the next character 'b'
+    cin.get(character);
+    cout << "cin.ignore(): Read the character \'" << character << "\' from the stream (ignored two characters: \'a\' and \'b\')\n";
+
+    return 0;
+}
 ```
 > For reading lines, you [_getline()_](https://www.geeksforgeeks.org/getline-string-c/) from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library. <br />
 > Only use _cin.getline()_ for C-strings.
