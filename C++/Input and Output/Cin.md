@@ -63,7 +63,11 @@ int main()
     //A single character :)
     char character;
 
-    /* User enters 'abc' as input when prompted at 'cin.get()' */
+    /* 
+       User enters 'abc' as input when prompted at 'cin.get()',
+       inserting all three characters into the stream, even though
+       only 'a' is extracted by 'cin.get()'                      
+    */
 
     //cin.get() -- extract one character from the input stream
     cout << "Enter a character: ";
