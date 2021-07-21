@@ -26,6 +26,7 @@ int main()
     //Open a file 'thisFileDoesNotExist.txt' in read mode
     file.open("thisFileDoesNotExist.txt");
 
+    //Verify that the file is valid
     if (!file)   // 'file' evals to false if invalid
     {
         clog << "Fatal error: file could not be opened or does not exist...\n";
