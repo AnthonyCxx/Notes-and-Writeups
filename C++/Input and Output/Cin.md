@@ -42,8 +42,8 @@ int main()
 ## _cin_ Methods
 | Method | Description |
 | ------ | ----------- |
-|  |  |
-|  |  |
+| cin.get(char&) | reads a single character; returns 0 if the operation fails (e.g. EOF). |
+| cin.getline(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching \\n or EOF |
 |  |  |
 |  |  |
 > This chart is a collection of excerpts from the [public notes](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) from Harvey Mudd College Computer Science Department 
@@ -51,6 +51,8 @@ int main()
 ```C++
 
 ```
+> For reading lines, you [_getline()_](https://www.geeksforgeeks.org/getline-string-c/) from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library. <br />
+> Only use _cin.getline()_ for C-strings.
 
 ## Sources
 GeeksforGeeks: [_cin in C++_](https://www.geeksforgeeks.org/cin-in-c/) <br />
