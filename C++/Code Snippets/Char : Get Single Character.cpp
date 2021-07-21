@@ -1,5 +1,5 @@
 /*
-Generally, you can use 'cin.get()', but even that leaves a newline ('\n') character in the stream, which can affect your program.
+Generally, you can use 'cin.get()', but even that leaves a newline ('\n') character in the stream along with any other extraneous input, which can affect your program.
 This gave me a problem when I was making my Hangman game -- I needed raw input, without the newline.
 */
 
