@@ -91,7 +91,7 @@ int main()
 }
 ```
 > For reading lines, you [_getline()_](https://www.geeksforgeeks.org/getline-string-c/) from the [\<string\>](https://en.cppreference.com/w/cpp/header/string) library. <br />
-> Only use _cin.getline()_ for C-strings.
+> _cin.getline()_ and _cin.read()_ for C-strings.
 
 ## Sources
 GeeksforGeeks: [_cin in C++_](https://www.geeksforgeeks.org/cin-in-c/) <br />
