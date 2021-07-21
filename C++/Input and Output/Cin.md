@@ -13,10 +13,10 @@ input '15' into a string, then the variable will hold the string "15". If you ac
 or some similar function.
 
 Notes: <br />
-\1. An expression using `cin >>` returns \*this (cin), so you can just write `cin >> x >> y >> z;`, not having
+An expression using `cin >>` returns \*this (cin), so you can just write `cin >> x >> y >> z;`, not having
 to write cin every time.
 
-\2. If you have trouble keeping track of which direction the arrows go for _cout_ (<<) and _cin_ (>>), think of it this way: the arrows for _cout_ go towards _cout_, because output
+If you have trouble keeping track of which direction the arrows go for _cout_ (<<) and _cin_ (>>), think of it this way: the arrows for _cout_ go towards _cout_, because output
 goes outwards; the arrows for _cin_ point towards the variable that takes the input.
 
 ```C++
