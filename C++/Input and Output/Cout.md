@@ -60,7 +60,7 @@ int main()
 > Here, there is no need to flush the output, so _\n_ is preferable to _endl_.
 
 ## Formatting Output with Member Functions
-_cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/) as well as a variety of [flags](https://www.cplusplus.com/reference/ios/). Even though many of these functions overlap with the [\<iomanip\>](https://en.cppreference.com/w/cpp/header/iomanip) library,
+_cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/) as well as a variety of [flags](https://www.tutorialspoint.com/cpp_standard_library/ios.htm). Even though many of these functions overlap with the [\<iomanip\>](https://en.cppreference.com/w/cpp/header/iomanip) library,
 I would recommend using \<iomanip\> for all I/O manipulation.
 
 ```C++
@@ -106,12 +106,6 @@ int main()
 > 
 > 1.233141e+03 <br />
 > The number 500 in hex is: 1f4 <br />
-
-### Output Formatting Flags
-|  |  |
-|  |  |
-|  |  |
-> This is modified version of the table from TutorialPoint's reference: [_C++ Library - <ios>_](https://www.tutorialspoint.com/cpp_standard_library/ios.htm) 
 
 ## Unformatted Output with _cout.put()_ and _cout.write()_
 The _cout_ object inherits from the [_ostream class_](https://www.cplusplus.com/reference/ostream/ostream/) and so inherits the methods from said class. The [_ostream::put()_](https://www.cplusplus.com/reference/ostream/ostream/put/)
