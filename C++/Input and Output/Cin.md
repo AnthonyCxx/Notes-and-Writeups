@@ -43,8 +43,8 @@ int main()
 | Method | Description |
 | ------ | ----------- |
 | cin.get(char&) | reads a single character; returns 0 if the operation fails (e.g. EOF). |
-| cin.getline(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching \\n or EOF |
-|  |  |
+| cin.getline(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching \\n or EOF. |
+| cin.read(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching EOF |
 |  |  |
 > This chart is a collection of excerpts from the [public notes](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) from Harvey Mudd College Computer Science Department 
 
