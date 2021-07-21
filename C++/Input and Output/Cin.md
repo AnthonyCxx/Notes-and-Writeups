@@ -32,7 +32,7 @@ int main()
     cout << "Enter two numbers to add together: ";
     cin >> num1 >> num2;    //No need for a newline character because the user confirms input by pressing enter (\n)
 
-    //Display the result of 'num1 + num2'
+    //Display the result of 'num1 + num2' ("The result of <num1> and <num2> is: <num1 + num2>")
     cout << "The numbers " << num1 << " and " << num2 << " added together is: " << num1 + num2 << '\n';
 
     return 0;
