@@ -13,7 +13,7 @@ input '15' into a string, then the variable will hold the string "15". If you ac
 or some similar function.
 
 Notes: <br />
-An expression using `cin >>` returns \*this (cin), so you can just write `cin >> x >> y >> z;` without having
+An expression using `cin >>` returns \*_this_ (cin), so you can just write `cin >> x >> y >> z;` without having
 to write cin every time.
 
 If you have trouble keeping track of which direction the arrows go for _cout_ (<<) and _cin_ (>>), think of it this way: the arrows for _cout_ go towards _cout_, because output
