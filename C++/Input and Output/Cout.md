@@ -62,6 +62,48 @@ int main()
 ## Formatting Output with Member Functions
 _cout_ provides the member functions [_.precision()_](https://www.cplusplus.com/reference/ios/ios_base/precision/), [_.width()_](https://www.cplusplus.com/reference/ios/ios_base/width/), [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/), [_.setf()_](https://www.cplusplus.com/reference/ios/ios_base/setf/), and [_.unsetf()_](https://www.cplusplus.com/reference/ios/ios_base/unsetf/) as well as a variety of [flags](https://www.cplusplus.com/reference/ios/).
 
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    /*  TOGGLE-ABLE  */
+
+    //Outputs the boolean 'true/false' as the string "true/false" instead of 1/0
+    cout << boolalpha << true << noboolalpha << '\n';
+
+    //Output positive numbers with a '+' prefixed
+    cout << showpos << 500 << noshowpos << '\n';
+
+    //Representing numbers in hexadecimal format
+    cout << "The number 500 in hex is: " << hex << 500 << '\n';
+
+    //Show the decimal point of the float '1.0' even though it's all 0's
+    cout << showpoint << 1.0f << noshowpoint << '\n';
+
+    //Representing numbers in hexadecimal format (but uppercase)
+    cout << "The number 500 in hex is (uppercase): " << uppercase << hex << 500 << nouppercase << '\n';
+
+    /*  NON-  */
+
+    //Show a float in scientific notation
+    cout << scientific << 1233.14151351359f << '\n';
+
+    //Representing numbers in hexadecimal format
+    cout << "The number 500 in hex is: " << hex << 500 << '\n';
+
+    return 0;
+}
+```
+> Prints: <br />
+> true <br />
+> +500 <br />
+> The number 500 in hex is: 1f4 <br />
+> 1.00000 <br />
+> The number 500 in hex is (uppercase): 1F4 <br />
+> 1.233141e+03 <br />
+> The number 500 in hex is: 1f4 <br />
 
 ## Unformatted Output with _cout.put()_ and _cout.write()_
 The _cout_ object inherits from the [_ostream class_](https://www.cplusplus.com/reference/ostream/ostream/) and so inherits the methods from said class. The [_ostream::put()_](https://www.cplusplus.com/reference/ostream/ostream/put/)
