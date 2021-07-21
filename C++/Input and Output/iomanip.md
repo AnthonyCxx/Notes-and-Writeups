@@ -7,23 +7,24 @@ as 1.271432e+02.
 ## Toggled Manipulators (Flags)
 Toggled manipulators (flags) from the \<ios\> persist between outputs, unlike manipulators like [_setw()_](https://www.cplusplus.com/reference/iomanip/setw/).
 
-| Toggled Manipulator | Negative Counterpart | Name | Function | 
-| boolalpha | noboolalpha |  |  |
-| showbase | noshowbase |  |  |
-| showpoint | noshowpoint |  |  |
-| skipws | noskipws |  |  |
-| uppercase | nouppercase |  |  |
-| unitbuf | nounitbuf |  |  |
-| left | N/A |  |  | 
-| right |  |  |  |
-| internal |  |  |  |
-| dec |  |  |  |
-| hex |  |  |  |
-| oct |  |  |  |
-| fixed |  |  |  |
-| scientific |  |  |  |
-| hexfloat |  |  |  |
-| defaultfloat |  |  |  |
+| Toggled Manipulator | Negative Counterpart | Function | 
+| ------------------- | --------------------
+| boolalpha | noboolalpha |  |  
+| showbase | noshowbase |  |  
+| showpoint | noshowpoint |  |  
+| skipws | noskipws |  |  
+| uppercase | nouppercase |  |  
+| unitbuf | nounitbuf |  |  
+| left | N/A |  |  
+| right |  |    
+| internal |  |    
+| dec |  |  |  
+| hex |  |  |  
+| oct |  |  |  
+| fixed |  |  |  
+| scientific |  |  |  
+| hexfloat |  |  |  
+| defaultfloat |  |  |  
 
 ## Sources
 CPPReference: [_Standard library header <iomanip>_](https://en.cppreference.com/w/cpp/header/iomanip) <br />
