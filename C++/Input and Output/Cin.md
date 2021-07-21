@@ -43,11 +43,12 @@ int main()
 | Method | Description |
 | ------ | ----------- |
 | cin.get(char&) | reads a single character; returns 0 if the operation fails (e.g. EOF). |
+| cin.ignore(streamsize, char) | ignores the next _streamsize_ characters in the stream, until it reaches _char_ delimiter |
+| cin.peek() | returns the next character in the stream, but does not remove it |
+| cin.putback(char) | puts back the most recently read character. _char_ **must** be the most recently read character. |
 | cin.getline(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching \\n or EOF. |
 | cin.read(char\*, int) | reads _int_ characters into _char\*_ buffer (implicitly includes \\0). Stops prematurely on reaching EOF |
 | cin.gcount() | counts the characters read by the last unformatted input operation (works for cin, but not peek or putback) |
-| cin.ignore(streamsize, char) | ignores the next _streamsize_ characters in the stream, until it reaches _char_ delimiter |
-| cin.putback(char) | puts back the most recently read character. _char_ **must** be the most recently read character. |
 |  |  |
 |  |  |
 |  |  |
