@@ -1,4 +1,4 @@
-// Split a string into a dynamic array (a vector) using a delimiter, emulating '.split()' in Python. This can be reworked to work with any type pretty easily.
+//Split a string into a dynamic array (a vector) using a delimiter, emulating '.split()' in Python. This can be reworked to work with any type pretty easily.
 #include <string>
 #include <vector>
 
@@ -7,15 +7,16 @@ vector<string> split(const string& text, const char delimiter)   //Could also be
     vector<string> split_text;
     string word;
 
-    // For every character in the text
+    //For every character in the text
     for(int i=0; i < text.length(); i++)
     {
+        //If hit the delimiter, add and flush the word
         if (text[i] == delimiter)
         {
             split_text.push_back(word);
             word.clear();
         }
-        else
+        else  //Otherwise add the next valid character
             word += text[i];   // C++ strings are mutable, so this isn't a problem
     }
 
