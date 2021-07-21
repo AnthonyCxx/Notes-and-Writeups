@@ -1,4 +1,4 @@
-// Works for arrays, strings, etc.
+// Works for arrays, strings, vectors, etc.
 
 template <typename Type>
 Type reverse(const Type& iterObj)  //Any iterable rvalue
