@@ -51,4 +51,6 @@ int main()
 ## Sources
 IBM Documentation: [_Using C and C++ standard streams and redirection_](https://www.ibm.com/docs/en/zos/2.1.0?topic=output-using-c-c-standard-streams-redirection) <br />
 CPlusPlus: [_std::ostream_](https://www.cplusplus.com/reference/ostream/ostream/) <br />
+CPlusPlus: [_cout, cerr, and clog_](http://www.cplusplus.com/forum/beginner/108474/) <br />
 StudyMite: [_cerr and clog in C++_](https://www.studymite.com/cpp/cerr-and-clog-in-cpp/) <br />
+Medium: [_Cerr — Error Stream Object in C++_](https://medium.com/swlh/cerr-error-stream-object-in-c-9d62d564e72c) <br />
