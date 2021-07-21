@@ -42,7 +42,7 @@ int main()
 ## _cin_ Methods
 | Method | Description |
 | ------ | ----------- |
-| cin.get(char&) | reads a single character; returns 0 if the operation fails (e.g. EOF). |
+| cin.get(char&) | reads a single character; returns 0 if the operation fails (e.g. if reads EOF). |
 | cin.ignore(streamsize, char) | ignores the next _streamsize_ characters in the stream, until it reaches _char_ delimiter |
 | cin.peek() | returns the next character in the stream, but does not remove it |
 | cin.putback(char) | puts back the most recently read character. _char_ **must** be the most recently read character. |
