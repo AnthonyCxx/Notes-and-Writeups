@@ -11,4 +11,4 @@ CPPReference: [_Input/output manipulators_](https://en.cppreference.com/w/cpp/io
 CPlusPlus.com: [_\<iomanip\>_](https://www.cplusplus.com/reference/iomanip/) <br />
 CPlusPlus.com: [_std::ostream::operator<<_](https://www.cplusplus.com/reference/ostream/ostream/operator%3C%3C/) <br />
 Microsoft C++ Documentation: [_\<iomanip\> functions_](https://docs.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-160) <br />
-TutorialsPoint: [_C++ Library - <iomanip>_](https://www.tutorialspoint.com/cpp_standard_library/iomanip.htm) <br />
+TutorialsPoint: [_C++ Library - \<iomanip\>_](https://www.tutorialspoint.com/cpp_standard_library/iomanip.htm) <br />
