@@ -84,7 +84,7 @@ int main()
      //Exemplifies the effect of 'cin.ignore()'
     //Reads the character 'c', skipping 'a' (put back by cin.putback()) as wel as the next character 'b'
     cin.get(character);
-    cout << "cin.ignore(): Read the character \'" << character << "\' from the stream (ignored two characters: \'a\' and \'b\')\n";
+    cout << "cin.ignore(): Read the character \'" << character << "\' from the stream (ignored 2 characters: \'a\' and \'b\')\n";
 
     return 0;
 }
@@ -93,7 +93,7 @@ int main()
 > cin.get(): Read the character 'a' from the stream <br />
 > cin.putback(): Putting back 'a' into the stream... <br />
 > cin.peek(): The next character in the stream is 'a' <br />
-> cin.ignore(): Read the character 'c' from the stream (ignored two characters: 'a' and 'b') <br />
+> cin.ignore(): Read the character 'c' from the stream (ignored 2 characters: 'a' and 'b') <br />
 
 ## Sources
 GeeksforGeeks: [_cin in C++_](https://www.geeksforgeeks.org/cin-in-c/) <br />
