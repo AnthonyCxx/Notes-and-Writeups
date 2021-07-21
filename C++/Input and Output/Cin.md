@@ -9,7 +9,7 @@ Note: cin is an object within the std (standard) namespace. If you want to use i
 The >> operator is overloaded to it takes input from _cin_ and stores it in the given variable (e.g. `cin >> userInput`). How the data is read depends on the 
 datatype of the variable the input is being stored in. If you read the input '15' into an integer, then the variable will hold the integer 15; conversely, if you read the 
 input '15' into a string, then the variable will hold the string "15". If you accidentally read the input as the wrong type, you can always convert the input using 
-[_stoi*()_](https://en.cppreference.com/w/cpp/string/basic_string/stol) (**_s_**tring **_to_** **_i_**nteger) or [_to\_string()_](https://www.cplusplus.com/reference/string/to_string/).
+[_stoi*()_](https://en.cppreference.com/w/cpp/string/basic_string/stol) (_**s**_tring _**to**_ _**i**_nteger) or [_to\_string()_](https://www.cplusplus.com/reference/string/to_string/).
 
 Notes: <br />
 1. An expression using `cin >>` returns \*this (cin), so you can just write `cin >> x >> y >> z;`, not having
