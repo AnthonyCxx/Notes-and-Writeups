@@ -107,6 +107,12 @@ int main()
 > 1.233141e+03 <br />
 > The number 500 in hex is: 1f4 <br />
 
+### Output Formatting Flags
+|  |  |
+|  |  |
+|  |  |
+> This is modified version of the table from TutorialPoint's reference: [_C++ Library - <ios>_](https://www.tutorialspoint.com/cpp_standard_library/ios.htm) 
+
 ## Unformatted Output with _cout.put()_ and _cout.write()_
 The _cout_ object inherits from the [_ostream class_](https://www.cplusplus.com/reference/ostream/ostream/) and so inherits the methods from said class. The [_ostream::put()_](https://www.cplusplus.com/reference/ostream/ostream/put/)
 and [_ostream::write()_](https://www.cplusplus.com/reference/ostream/ostream/write/) methods can be used to write unformatted output to the screen (ignoring any format specifiers set such as _setw()_ or _setprecision()_).
