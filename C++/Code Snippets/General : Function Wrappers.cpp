@@ -22,7 +22,7 @@ void time(function<void()> func)   //'function' is a class in the <functional> h
     cout << "Done! " << setprecision(2) << time_elapsed.count() << " seconds elapsed.\n";
 }
 
-//Print the numbers 1-100, but format them
+//Print the numbers 1-100, but format them (zero-padded to 3 digits)
 void print100()
 {
     for(int i=1; i < 101; i++)
