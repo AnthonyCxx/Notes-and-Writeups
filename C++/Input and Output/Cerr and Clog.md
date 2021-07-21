@@ -19,7 +19,7 @@ errors that would crash/abnormally terminate the program.
 
 ## Basic Usage with the << Operator
 The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using <br /> `clog/cerr <<` returns 
-\*this (_clog_/_cerr_), so you can write `clog/cerr << "this " << "is " << "acceptable.\n";` and not have to write cout every time.
+\*this (_clog_/_cerr_), so you can write `clog/cerr << "this " << "is " << "acceptable.\n";` and not have to write _clog_/_cerr_ every time.
 
 ```C++
 #include <iostream>
