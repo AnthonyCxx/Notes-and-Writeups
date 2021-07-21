@@ -8,7 +8,7 @@ as 1.271432e+02.
 Toggled manipulators (flags) from the \<ios\> persist between outputs, unlike manipulators like [_setw()_](https://www.cplusplus.com/reference/iomanip/setw/).
 
 | Toggled Manipulator | Negative Counterpart | Function | 
-| ------------------- | --------------------
+| ------------------- | -------------------- | -------- |
 | boolalpha | noboolalpha |  |  
 | showbase | noshowbase |  |  
 | showpoint | noshowpoint |  |  
