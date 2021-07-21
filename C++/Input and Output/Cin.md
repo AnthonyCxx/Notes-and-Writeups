@@ -39,7 +39,21 @@ int main()
 }
 ```
 
+## _cin_ Methods
+| Method | Description |
+| ------ | ----------- |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+> This chart is a collection of excerpts from the [public notes](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) from Harvey Mudd College Computer Science Department 
+
+```C++
+
+```
+
 ## Sources
 GeeksforGeeks: [_cin in C++_](https://www.geeksforgeeks.org/cin-in-c/) <br />
 Programiz: [_C++ cin_](https://www.programiz.com/cpp-programming/library-function/iostream/cin) <br />
 GeeksforGeeks: [_cin.get() in C++ with Examples_](https://www.geeksforgeeks.org/cin-get-in-c-with-examples/) <br />
+Harvey Mudd College: [_C++ File Input/Output_](https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200109/notes/io.html) <br />
