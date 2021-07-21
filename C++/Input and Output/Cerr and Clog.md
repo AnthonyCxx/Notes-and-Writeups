@@ -9,7 +9,7 @@ and [_.fill()_](https://www.cplusplus.com/reference/ios/ios/fill/).
 Note: _clog_ and _cerr_ are objects within the std (standard) namespace. If you want to use them without `using namespace std;` at the top of your program, you'll have to write `std::clog/cerr` instead of just `clog/cerr` every time you use them.
 
 ## Basic Usage with the << Operator
-The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using `clog/cerr <<` returns 
+The << operator is overloaded such that it writes literals and expressions that evaluate to literals to the screen. An expression using <br /> `clog/cerr <<` returns 
 \*this (_clog_/_cerr_), so you can write `clog/cerr << "this " << "is " << "acceptable.\n";` and not have to write cout every time.
 
 ## Sources
