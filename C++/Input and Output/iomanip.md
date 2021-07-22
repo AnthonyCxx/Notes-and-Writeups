@@ -88,7 +88,7 @@ Finally, this notation always includes an exponential part consisting on the let
 needed up to the stream's decimal precision (precision), counting both the digits before and after the decimal point (if any)."
 
 ```C++
-cout.precision(5);   //Normally, just use 'setprecision(5)'
+cout.precision(5);   //Normally, just use 'cout << setprecision(5)'
 
 //All floats will be represented with 5 decimal places
 cout << fixed << 159743.124125135 << '\n';   //159743.12413
