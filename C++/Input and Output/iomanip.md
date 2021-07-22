@@ -13,7 +13,7 @@ Unlike most flags and manipulators, _setw()_ does NOT persist between output, on
 
 While doing some testing, I found that _setw()_ does count escape sequences when counting the minimum width.
 ```C++
- //'Hello, World!' is 14 characters long, so it's padded by 6
+//'Hello, World!' is 14 characters long, so it's padded by 6
 cout << setw(20) << "Hello, world!\n";    // <== '\n' is counted by 'set()'
 
 //Not padded -- 'setw()' does not persist between calls
