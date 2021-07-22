@@ -8,7 +8,8 @@ as 1.271432e+02.
 Flags are toggleable manipulators; once enabled, the flag will continue to manipulate all input/output until restored to the default. <br />
 Some flags do not have a '_no_' counterpart (like _boolalpha_ and _noboolalpha_), this is because the state of this flag is not a single concept
 that is or is not (like a boolean), but instead one of a set of values. For example, the default for _dec_/_hex_/_oct_ is _dec_ ([decimal](https://www.tutorialspoint.com/decimal-number-system),
-the base-10 system we use); the decimal system is in contrast with but not the opposite of the hexadecimal and octal systems.
+the base-10 system we use); the decimal system is in contrast with but not the opposite of the hexadecimal and octal systems. Opposites do not exist for concepts
+with more than one counterpart.
 
 ### boolalpha/noboolalpha
 By default, booleans are represented in streams as 1's and 0's (true and false). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
