@@ -60,6 +60,8 @@ cout << "AFTER showpoint: integer = " << integer << ", f = " << f << ", f2 = " <
 ```
 
 ### fixed/scientific/hexfloat/defaultfloat
+
+#### fixed
 "When floatfield is set to fixed, floating-point values are written using fixed-point notation: the value is represented with exactly as many digits in the 
 decimal part as specified by the precision field (precision) and with no exponent part." -[std::fixed, cplusplus.com](https://www.cplusplus.com/reference/ios/fixed/).
 
