@@ -63,7 +63,7 @@ cout << "AFTER showpoint: integer = " << integer << ", f = " << f << ", f2 = " <
 _fixed_, _scientific_, _hexfloat_, and _defaultfloat_ are for different representations for floats. 
 These representations are mutually exclusive and will override the previous representation.
 
-All definitions are from [cplusplus.com: _\<ios\>](https://www.cplusplus.com/reference/ios/).
+All definitions are from [cplusplus.com: \<ios\>](https://www.cplusplus.com/reference/ios/).
 
 #### fixed
 "When floatfield is set to fixed, floating-point values are written using fixed-point notation: the value is represented with exactly as many digits in the 
