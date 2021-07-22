@@ -6,7 +6,7 @@ as 1.271432e+02.
 
 ## Flags
 Flags are toggleable manipulators; once enabled, the flag will continue to manipulate all input/output until restored to the default. <br />
-Some flags do not have a 'no' counterpart (like _boolalpha_ and _noboolalpha_), this is because the state of this flag is not a single concept
+Some flags do not have a '_no_' counterpart (like _boolalpha_ and _noboolalpha_), this is because the state of this flag is not a single concept
 that is or is not (like a boolean), but instead one of a set of values. For example, the default for _dec_/_hex_/_oct_ is _dec_ ([decimal](https://www.tutorialspoint.com/decimal-number-system),
 the base-10 system we use); the decimal system is in contrast with but not the opposite of the hexadecimal and octal systems.
 
