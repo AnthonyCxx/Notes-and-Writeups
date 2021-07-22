@@ -4,6 +4,8 @@ appears/functions. An example of a manipulator is the [_scientific_](https://en.
 [scientific notation](https://www.chem.tamu.edu/class/fyp/mathrev/mr-scnot.html). The line `cout << scientific << 127.14315;` would display the number 127.14315
 as 1.271432e+02.
 
+## Flags
+
 ### boolalpha/noboolalpha
 By default, booleans are represented in streams as 1's and 0's (true and false). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
 (boolean -> alphabetic).
