@@ -143,10 +143,13 @@ _showbase_ is a modifier for _hex_ and _oct_ that shows the radix indicator for 
 ```
 
 ### uppercase/nouppercase
-
+_uppercose_ is a modifier for _hex_ and _showbase_ that outputs hexadecimal letters (A-F) and the hex. radix indicator (0X) in uppercase.
 
 ```C++
+//Show radix indicator for hexadecimal numbers in uppercase
+cout << showbase << uppercase;
 
+cout << hex << 28 << '\n';    //0X1C
 ```
 
 ### internal/left/right
