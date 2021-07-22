@@ -7,10 +7,17 @@ as 1.271432e+02.
 ## Manipulators
 
 ### setw()
-...
+_setw()_, which is short of 'set width', sets the minimum length of the output. If the output is less than the the given number, the output will be padded to 
+meet the width. _setw()_ takes a single integer as a parameter, which is the minimum width. A minimum width of 5 is 5 characters in length.
+Unlike most flags and manipulators, _setw()_ does NOT persist between output, only affecting the next bit out output (ignoring other manipulators).
 
+While doing some testing, I found that _setw()_ does count escape sequences when counting the minimum width.
 ```C++
+ //'Hello, World!' is 14 characters long, so it's padded by 6
+cout << setw(20) << "Hello, world!\n";    // <== '\n' is counted by 'set()'
 
+//Not padded -- 'setw()' does not persist between calls
+cout << "Hello, World!\n";
 ```
 
 ### setfill()
