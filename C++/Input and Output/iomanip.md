@@ -153,11 +153,31 @@ cout << showbase << uppercase;
 cout << hex << 28 << '\n';    //0X1C
 ```
 
-### internal/left/right
+### left/right/internal
+_left_, _right_, and _internal_ change the alignment (justification) of the text.
 
+#### _left_
+_left_ aligns the text to the left, padding the text to the right.
+
+#### _right_
+_right_ aligns the text to the right, padding the text to the left.
+
+#### _internal_
+_internal_ pads the text inbetween the number and its modifiers.
+A hexadecimal number 0x1B may be padded like '0x#1B' in order to reach 5 characters.
 
 ```C++
+//'setw(5)' makes the width of every output 5 characters
+cout << setfill('#');
 
+//Displays -50##
+cout << left << setw(5) << -50 << '\n';
+
+//Displays ##-50
+cout << right << setw(5) << -50 << '\n';
+
+//Displays -##50
+cout << internal << setw(5) << -50 << '\n';
 ```
 
 ### unitbuf/nounitbuf
