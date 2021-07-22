@@ -60,14 +60,28 @@ cout << "AFTER showpoint: integer = " << integer << ", f = " << f << ", f2 = " <
 ```
 
 ### fixed/scientific/hexfloat/defaultfloat
+All definitions are from [cplusplus.com: _\<ios\>](https://www.cplusplus.com/reference/ios/).
 
 #### fixed
 "When floatfield is set to fixed, floating-point values are written using fixed-point notation: the value is represented with exactly as many digits in the 
-decimal part as specified by the precision field (precision) and with no exponent part." -[std::fixed, cplusplus.com](https://www.cplusplus.com/reference/ios/fixed/).
+decimal part as specified by the _precision_ field and with no exponent part." -[std::fixed, cplusplus.com](https://www.cplusplus.com/reference/ios/).
+
+#### scientific
+"When floatfield is set to scientific, floating-point values are written using [scientific notation](https://www.chem.tamu.edu/class/fyp/mathrev/mr-scnot.html): 
+the value is represented always with only one digit before the decimal point, followed by the decimal point and as many decimal digits as the precision field (precision).
+Finally, this notation always includes an exponential part consisting on the letter e followed by an optional sign and three exponential digits."
+
+#### hexfloat
+"When floatfield is set to hexfloat, floating-point values are written using [hexadecimal format](https://www.tutorialspoint.com/hexadecimal-number-system)."
+
+#### defaultfloat
+"When floatfield is set to defaultfloat, floating-point values are written using the default notation: the representation uses as many meaningful digits as 
+needed up to the stream's decimal precision (precision), counting both the digits before and after the decimal point (if any)."
 
 ```C++
 
 ```
+
 
 ### dec/hex/oct
 
