@@ -42,10 +42,21 @@ for(int i = -5; i < 6; i++)
 ```
 
 ### showpoint/noshowpoint
-
+Displays the mantissa (the stuff after the decimal point), even if a float does not have numbers there. For example, the float '15' would be '15.0000'.
+By default, _showpoint_ shows 4 decimal places, but this can be modified by _setprecision()_.
 
 ```C++
+int integer = 10;
+float f = 15;
+float f2 = 20.25;
 
+//Prints: 'BEFORE showpoint: integer = 10, f = 15, f2 = 20.25'
+cout << "BEFORE showpoint: integer = " << integer << ", f = " << f << ", f2 = " << f2 << endl;
+
+cout << showpoint;
+
+//Prints: 'AFTER showpoint: integer = 10, f = 15.0000, f2 = 20.2500'
+cout << "AFTER showpoint: integer = " << integer << ", f = " << f << ", f2 = " << f2 << endl;
 ```
 
 ### fixed/scientific/hexfloat/defaultfloat
