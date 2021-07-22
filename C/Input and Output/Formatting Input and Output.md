@@ -80,6 +80,12 @@ Flags alter the standard formatting specifications.
 | 0 | [zero-pads](https://stackoverflow.com/questions/153890/printing-leading-0s-in-c) the number to fit the specified width |
 | # | prints a radix indicator (0, 0x, 0X) for octal and hex numbers; keeps trailing zeros for floating-point numbers (decimal point) |
 
+## Specifiers Unique to _strftime()_
+The [_strftime()_](https://www.tutorialspoint.com/c_standard_library/c_function_strftime.htm) function from [\<time.h\>](https://www.tutorialspoint.com/c_standard_library/time_h.htm)
+has its own set of format specifers used to convert strings to the date/time so the _tm_ (time) struct can hold it properly.
+For example, the string "Tuesday" could be converted with the _%A_ format specifier. For a full list of format specifiers, see
+[this article](https://www.ibm.com/docs/en/i/7.2?topic=functions-strftime-convert-datetime-string) by IBM.
+
 ## Escape Sequences
 Escape sequences allow you to treat [metacharacters](https://en.wikipedia.org/wiki/Metacharacter) literally, preventing their normal action. <br />
 I've tried to list them in the order that I find myself using them.
