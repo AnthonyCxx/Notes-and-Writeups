@@ -117,12 +117,12 @@ cin >> input;
 /*
   You really don't need 'dec' here as it is the default setting
   and it has not been altered earlier (cin and cout are independent),
-  but I felt making it more explicit would help
+  but I felt making it more explicit would help :)
 */
 
 //User input '0x1f' is equal to '31' in decimal
 cout << dec << "You entered: " << input << '\n';
-cout << "The number 20 in octal is: " << oct << 20 << '\n'
+cout << "The number 20 in octal is: " << oct << 20 << '\n'  //'20' is '24' in octal
 ```
 
 ### showbase/noshowbase
