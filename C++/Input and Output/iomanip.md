@@ -29,7 +29,7 @@ bool input;
 cout << "Enter true or false: ";
 cin >> boolalpha >> input;
 
-//bool 'input' is 'true' if the user enters 'true' verbatim (all lowercase)
+//bool 'input' is 'true' iff the user enters 'true' verbatim (all lowercase)
 cout << "You entered: " << (input ? "True" : "False") << '\n';
 ```
 
