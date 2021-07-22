@@ -98,7 +98,7 @@ I've tried to list them in the order that I find myself using them.
 | \\' | apostrophe character |
 | \\" | quotation mark character |
 | \\\\ | backslash character |
-| \a | plays the [bel (bell) character](https://rosettacode.org/wiki/Terminal_control/Ringing_the_terminal_bell) |
+| \a | plays the [bel (bell) character](https://rosettacode.org/wiki/Terminal_control/Ringing_the_terminal_bell) (you may know this as the beep that plays when you get an error) |
 | \r | [carriage return character](https://www.quora.com/How-does-the-carriage-return-work-in-C) (manually resets writing to the beginning of the line, overwriting the current one) |
 | \b | backspace character |
 | \v | [vertical tab character](https://stackoverflow.com/questions/3380538/what-is-a-vertical-tab) |
