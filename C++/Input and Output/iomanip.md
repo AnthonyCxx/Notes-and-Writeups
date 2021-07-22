@@ -103,7 +103,7 @@ cout << defaultfloat << 15.12 << '\n';   //15.12
 
 
 ### dec/hex/oct
-
+_dec_, _hex_, and _oct_ change the [radix](https://en.wikipedia.org/wiki/Radix) (base) of the numbers used for that stream
 
 ```C++
 
@@ -145,3 +145,4 @@ CPlusPlus.com: [_std::ostream::operator<<_](https://www.cplusplus.com/reference/
 Microsoft C++ Documentation: [_\<iomanip\> functions_](https://docs.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-160) <br />
 TutorialsPoint: [_C++ Library - \<iomanip\>_](https://www.tutorialspoint.com/cpp_standard_library/iomanip.htm) <br />
 GeeksforGeekss: [_std::fixed, std::scientific, std::hexfloat, std::defaultfloat in C++_](https://www.geeksforgeeks.org/stdfixed-stdscientific-stdhexfloat-stddefaultfloat-c/) <br />
+GeeksforGeeks: [_std::oct, std::dec, and std::hex in C++_](https://www.geeksforgeeks.org/stdoct-stddec-and-stdhex-in-cpp/) <br />
