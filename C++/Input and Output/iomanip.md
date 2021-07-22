@@ -106,7 +106,23 @@ cout << defaultfloat << 15.12 << '\n';   //15.12
 _dec_, _hex_, and _oct_ change the [radix](https://en.wikipedia.org/wiki/Radix) (base) of the numbers used for that stream
 
 ```C++
+//Declare an int to catch input and set 'cin' to read numbers as hexadecimal
+int input;
+cin >> hex;
 
+//Get a number from the user (user input: '0x1f')
+cout << "Enter a number: ";
+cin >> input;
+
+/*
+  You really don't need 'dec' here as it is the default setting
+  and it has not been altered earlier (cin and cout are independent),
+  but I felt making it more explicit would help
+*/
+
+//User input '0x1f' is equal to '31' in decimal
+cout << dec << "You entered: " << input << '\n';
+cout << "The number 20 in octal is: " << oct << 20 << '\n'
 ```
 
 ### showbase/noshowbase
