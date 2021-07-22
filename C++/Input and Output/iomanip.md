@@ -163,7 +163,7 @@ _left_ aligns the text to the left, padding the text to the right.
 _right_ aligns the text to the right, padding the text to the left.
 
 #### _internal_
-_internal_ pads the text inbetween the number and its modifiers.
+_internal_ pads the text inbetween the number and its modifiers. <br />
 A hexadecimal number 0x1B may be padded like '0x#1B' in order to reach 5 characters.
 
 ```C++
@@ -181,10 +181,19 @@ cout << internal << setw(5) << -50 << '\n';
 ```
 
 ### unitbuf/nounitbuf
-
+Streams such as _cout_ are [buffered](http://www.cplusplus.com/forum/beginner/192071/), meaning that just because you write `cout << "Hello, World!"`
+doesn't mean that the program immediately writes 'Hello, World!' to the screen. _cout_ waits until it gets more input because it's more efficient to write one time
+with larger input than to write a number of separate times with smaller input. Buffering can be manually disabled with the _nounitbuf_ flags and re-enabled with the
+_unitbuf_ flag.
 
 ```C++
+//Buffering disabled
+cout << nounitbuf;
+cout << "Hello, world!\n";
 
+//Buffering re-enabled (default setting)
+cout << unitbuf;
+cout << "Hello, world!\n";
 ```
 
 ## Sources
