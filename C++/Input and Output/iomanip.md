@@ -6,7 +6,7 @@ as 1.271432e+02.
 
 ### boolalpha/noboolalpha
 By default, booleans are represented in streams as 1's and 0's (true and false). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
-(boolean -> alphabetic)
+(boolean -> alphabetic).
 ```C++
 //Displays '1'
 cout << true << '\n';
@@ -16,23 +16,79 @@ cout << boolalpha << true << '\n';
 
 //Displays '1'
 cout << noboolalpha << true << '\n';
+
+// Program 2 //
+bool input;
+
+cout << "Enter true or false: ";
+cin >> boolalpha >> input;
+
+//bool 'input' is 'true' if the user enters 'true' verbatim (all lowercase)
+cout << "You entered: " << (input ? "True" : "False") << '\n';
+```
+
+### showpos/noshowpos
+_showpos_ displays a _+_ sign in front of positive numbers, helping align positive and negative numbers as well as making them more explicit.
+
+```C++
+//Toggles showpos, showing a '+' for all numbers until noshowpos is used
+cout << showpos;
+
+//Prints -5 - 5, aligned because of the '+' sign
+for(int i = -5; i < 6; i++)
+{
+  cout << i << '\n';
+}
+```
+
+### showpoint/noshowpoint
+
+
+```C++
+
+```
+
+### fixed/scientific/hexfloat/defaultfloat
+
+
+```C++
+
+```
+
+### dec/hex/oct
+
+
+```C++
+
 ```
 
 ### showbase/noshowbase
 
-### internal/left/right
 
-### showpoint/noshowpoint
+```C++
 
-### showpos/noshowpos
+```
 
 ### uppercase/nouppercase
 
-### dec/hex/oct
 
-### fixed/scientific/hexfloat/defaultfloat
+```C++
+
+```
+
+### internal/left/right
+
+
+```C++
+
+```
 
 ### unitbuf/nounitbuf
+
+
+```C++
+
+```
 
 ## Sources
 CPPReference: [_Standard library header <iomanip>_](https://en.cppreference.com/w/cpp/header/iomanip) <br />
@@ -41,3 +97,4 @@ CPlusPlus.com: [_\<iomanip\>_](https://www.cplusplus.com/reference/iomanip/) <br
 CPlusPlus.com: [_std::ostream::operator<<_](https://www.cplusplus.com/reference/ostream/ostream/operator%3C%3C/) <br />
 Microsoft C++ Documentation: [_\<iomanip\> functions_](https://docs.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-160) <br />
 TutorialsPoint: [_C++ Library - \<iomanip\>_](https://www.tutorialspoint.com/cpp_standard_library/iomanip.htm) <br />
+GeeksforGeekss: [_std::fixed, std::scientific, std::hexfloat, std::defaultfloat in C++_](https://www.geeksforgeeks.org/stdfixed-stdscientific-stdhexfloat-stddefaultfloat-c/) <br />
