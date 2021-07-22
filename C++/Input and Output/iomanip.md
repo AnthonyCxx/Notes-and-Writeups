@@ -23,14 +23,20 @@ cout << "Hello, World!\n";
 ```
 
 ### setfill()
-...
+_setfill()_ takes a single character that can be used to change what _setw()_ pads with. By default, this character is a space.
 
 ```C++
+cout << setfill('.');
 
+//Displays '......Hello, world!'
+cout << setw(20) << "Hello, world!\n";    
+
+//Displays 'Hello, World!'
+cout << "Hello, World!\n";
 ```
 
 ### setprecision()
-...
+_setprecision_ 
 
 ```C++
 
