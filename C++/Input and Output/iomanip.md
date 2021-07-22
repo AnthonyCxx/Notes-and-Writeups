@@ -4,6 +4,29 @@ appears/functions. An example of a manipulator is the [_scientific_](https://en.
 [scientific notation](https://www.chem.tamu.edu/class/fyp/mathrev/mr-scnot.html). The line `cout << scientific << 127.14315;` would display the number 127.14315
 as 1.271432e+02.
 
+## Manipulators
+
+### setw()
+...
+
+```C++
+
+```
+
+### setfill()
+...
+
+```C++
+
+```
+
+### setprecision()
+...
+
+```C++
+
+```
+
 ## Flags
 Flags are toggleable manipulators; once enabled, the flag will continue to manipulate all input/output until restored to the default. <br />
 Some flags do not have a '_no_' counterpart (like _boolalpha_ and _noboolalpha_), this is because the state of this flag is not a single concept
