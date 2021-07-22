@@ -5,7 +5,8 @@ appears/functions. An example of a manipulator is the [_scientific_](https://en.
 as 1.271432e+02.
 
 ### boolalpha/noboolalpha
-....
+By default, booleans are represented in streams as 0's and 1's (false/true). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
+(boolean -> alphabetic)
   
 
 ## Sources
