@@ -17,7 +17,22 @@ cout << boolalpha << true << '\n';
 //Displays '1'
 cout << noboolalpha << true << '\n';
 ```
-  
+
+### showbase/noshowbase
+
+### showpoint/noshowpoint
+
+### showpos/noshowpos
+
+### unitbuf/nounitbuf
+
+### uppercase/nouppercase
+
+### dec/hex/oct
+
+### fixed/scientific/hexfloat/defaultfloat
+
+### internal/left/right
 
 ## Sources
 CPPReference: [_Standard library header <iomanip>_](https://en.cppreference.com/w/cpp/header/iomanip) <br />
