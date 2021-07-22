@@ -132,7 +132,7 @@ cout << "The number 20 in octal is: " << oct << 20 << '\n'  //'20' is '24' in oc
 ```
 
 ### showbase/noshowbase
-
+_showbase_ is a modifier for _hex_ and _oct_ that shows the 
 
 ```C++
 
