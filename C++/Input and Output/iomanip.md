@@ -63,7 +63,7 @@ with more than one counterpart.
 
 ### boolalpha/noboolalpha
 By default, booleans are represented in streams as 1's and 0's (true and false). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
-(boolean -> alphabetic).
+(boolean -> alphabetic). This approach is preferable to writing `(<bool> ? "true" : "false")` every single time.
 ```C++
 //Displays '1'
 cout << true << '\n';
