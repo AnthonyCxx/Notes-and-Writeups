@@ -37,7 +37,7 @@ cout << "Hello, World!\n";
 ```
 
 ### setprecision()
-_setprecision()_ can be used to change the amount of decimal places shown by a float. _setprecision()_ will only work if the [_fixed_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Input%20and%20Output/iomanip.md#fixed)
+_setprecision()_ can be used to change the amount of decimal places shown by a float. _setprecision()_ will only work if the [_fixed_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Input%20and%20Output/iomanip.md#fixedscientifichexfloatdefaultfloat)
 flag is set.
 
 ```C++
