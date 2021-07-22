@@ -109,7 +109,7 @@ cout << defaultfloat << 15.12 << '\n';   //15.12
 
 
 ### dec/hex/oct
-_dec_, _hex_, and _oct_ change the [radix](https://en.wikipedia.org/wiki/Radix) (base) of the numbers used for that stream
+_dec_, _hex_, and _oct_ change the [radix](https://en.wikipedia.org/wiki/Radix) (base) of the numbers used for that stream to decimal, hexadecimal, or octal.
 
 ```C++
 //Declare an int to catch input and set 'cin' to read numbers as hexadecimal
