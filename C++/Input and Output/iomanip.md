@@ -4,6 +4,8 @@ appears/functions. An example of a manipulator is the [_scientific_](https://en.
 [scientific notation](https://www.chem.tamu.edu/class/fyp/mathrev/mr-scnot.html). The line `cout << scientific << 127.14315;` would display the number 127.14315
 as 1.271432e+02.
 
+This is not a comprehensive list of manipulators.
+
 ## Manipulators
 
 ### setw()
