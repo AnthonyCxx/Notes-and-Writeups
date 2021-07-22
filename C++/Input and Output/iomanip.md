@@ -7,6 +7,16 @@ as 1.271432e+02.
 ### boolalpha/noboolalpha
 By default, booleans are represented in streams as 0's and 1's (false/true). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
 (boolean -> alphabetic)
+```C++
+//Displays '1'
+cout << true << '\n';
+
+//Displays 'true'
+cout << boolalpha << true << '\n';
+
+//Displays '1'
+cout << noboolalpha << true << '\n';
+```
   
 
 ## Sources
