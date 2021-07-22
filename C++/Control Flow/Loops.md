@@ -111,7 +111,7 @@ int main()
 ## Range-based For Loop
 A range-based for loop is the equivalent of a [_foreach loop_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement) in Java or C#. A range-based for loop iterates over a container (a data structure that contains a collection of elements). In the example, the variable
 _num_ takes on a value of the Nth element in the array until it has iterated over all the elements. If you want to write a flexible for loop that works with various types,
-don't know the type of the container, or don't want to write out the type, then use the [_auto_](https://www.youtube.com/watch?v=2vOPEuiGXVo) keyword.
+don't know the datatype of the container, or don't want to write out the type, then use the [_auto_](https://www.youtube.com/watch?v=2vOPEuiGXVo) keyword.
 
 ## Format
 ```C++
