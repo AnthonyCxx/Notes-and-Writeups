@@ -2,7 +2,8 @@
 The [\<iomanip\>](https://en.cppreference.com/w/cpp/header/iomanip) library contains a variety of functions called [_manipulators_](https://www.cplusplus.com/reference/ostream/ostream/operator%3C%3C/) that aren't displayed like normal input/output, but instead change the way the input/output 
 appears/functions. An example of a manipulator is the [_scientific_](https://en.cppreference.com/w/cpp/io/manip/fixed) manipulator, which displays the next float in 
 [scientific notation](https://www.chem.tamu.edu/class/fyp/mathrev/mr-scnot.html). The line `cout << scientific << 127.14315;` would display the number 127.14315
-as 1.271432e+02.
+as 1.271432e+02. A fair amount of these flags/manipulators can be used with both input and output, so feel free to mess around. If you want to read hexadecimal input
+from a file, you can use the _hex_ flag.
 
 This is not a comprehensive list of manipulators.
 
@@ -36,10 +37,21 @@ cout << "Hello, World!\n";
 ```
 
 ### setprecision()
-_setprecision_ 
+_setprecision()_ can be used to change the amount of decimal places shown by a float. _setprecision()_ will only work if the [_fixed_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Input%20and%20Output/iomanip.md#fixed)
+flag is set.
 
 ```C++
+const double PI = 3.14159265;
+cout << setprecision(7);
 
+//Displays '3.141593' (mantissa = 6)
+cout << PI << '\n';
+
+//Set the 'fixed' flag
+cout << fixed;
+
+//Displays '3.1415927' (mantissa = 7)
+cout << PI << '\n';
 ```
 
 ## Flags
