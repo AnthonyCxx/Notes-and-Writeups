@@ -20,11 +20,11 @@ cout << noboolalpha << true << '\n';
 
 ### showbase/noshowbase
 
+### internal/left/right
+
 ### showpoint/noshowpoint
 
 ### showpos/noshowpos
-
-### unitbuf/nounitbuf
 
 ### uppercase/nouppercase
 
@@ -32,7 +32,7 @@ cout << noboolalpha << true << '\n';
 
 ### fixed/scientific/hexfloat/defaultfloat
 
-### internal/left/right
+### unitbuf/nounitbuf
 
 ## Sources
 CPPReference: [_Standard library header <iomanip>_](https://en.cppreference.com/w/cpp/header/iomanip) <br />
