@@ -40,7 +40,7 @@ _showpos_ displays a _+_ sign in front of positive numbers, helping align positi
 //Toggles showpos, showing a '+' for all numbers until noshowpos is used
 cout << showpos;
 
-//Prints -5 - 5, aligned because of the '+' sign
+//Prints -5 through 5, aligned because of the '+' sign
 for(int i = -5; i < 6; i++)
 {
   cout << i << '\n';
