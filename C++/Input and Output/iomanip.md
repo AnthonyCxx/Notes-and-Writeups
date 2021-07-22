@@ -60,6 +60,9 @@ cout << "AFTER showpoint: integer = " << integer << ", f = " << f << ", f2 = " <
 ```
 
 ### fixed/scientific/hexfloat/defaultfloat
+_fixed_, _scientific_, _hexfloat_, and _defaultfloat_ are for different representations for floats. 
+These representations are mutually exclusive and will override the previous representation.
+
 All definitions are from [cplusplus.com: _\<ios\>](https://www.cplusplus.com/reference/ios/).
 
 #### fixed
@@ -79,8 +82,24 @@ Finally, this notation always includes an exponential part consisting on the let
 needed up to the stream's decimal precision (precision), counting both the digits before and after the decimal point (if any)."
 
 ```C++
+cout.precision(5);   //Normally, just use 'setprecision(5)'
 
+//All floats will be represented with 5 decimal places
+cout << fixed << 159743.124125135 << '\n';   //159743.12413
+
+//All floats will be represented in scientific notation if they can (overwriting 'fixed')
+cout << scientific << 159743.124125135 << '\n';   //1.59743e+05
+
+//All floats will be represented in hexfloat (overwriting 'scientific')
+cout << hexfloat << 159743.124125135 << '\n';   //0x1.37ff8fe35519bp+17
+
+//Reset float format to normal representation (overwriting 'hexfloat')
+cout << defaultfloat << 15.12 << '\n';   //15.12
 ```
+> 159743.12413
+1.59743e+05
+0x1.37ff8fe35519bp+17
+15.12
 
 
 ### dec/hex/oct
