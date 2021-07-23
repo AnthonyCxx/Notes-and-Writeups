@@ -194,6 +194,10 @@ int main()
 }
 ```
 
+## Catching Errors with _assert()_
+C++ inherited the _assert()_ function from C and continues to use it as a viable way of catching errors. _assert()_ is a function under the [_\<cassert\>_](https://www.cplusplus.com/reference/cassert/)
+library and is used for errors that ["should have never occured if all your code is correct"](https://docs.microsoft.com/en-us/cpp/cpp/errors-and-exception-handling-modern-cpp?view=msvc-160#exceptions_versus_assertions).
+
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
 cplusplus.com: [_std::exception_](https://www.cplusplus.com/reference/exception/exception/) <br />
