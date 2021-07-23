@@ -74,7 +74,7 @@ int main()
     catch(const string& errMsg)   //Catch ANY thrown string
     {
         //Error message, so use clog instead of cout
-        clog << "Error: " << errMsg << endl;   //Use 'endl' to flush the output
+        clog << "Error: " << errMsg << '\n'; 
         result = 0;
     }
 
@@ -179,7 +179,7 @@ int main()
     catch(const IndeterminateResult& e)
     {
         //Error message, so use clog instead of cout
-        clog << "Error: " << e.what() << endl;   //Use 'endl' to flush the output
+        clog << "Error: " << e.what() << '\n'; 
         result = 0;
     }
     catch(const UndefinedResult& e)
