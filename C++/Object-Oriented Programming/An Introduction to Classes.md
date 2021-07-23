@@ -116,3 +116,54 @@ int main()
     return 0;
 }
 ```
+
+## Special Methods: Constructors
+A constructor is a special type of method that is used to initialize the data members of a class. Constructors are automatically called when an instance of the class 
+is made, which makes them incredibly convenient. You can differentiate general methods from the constructor because the constructor shares the name of the class verbatim.
+Classes also do not have a return type.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Player
+{
+    //Don't worry about the 'public' keyword for now
+    public:
+        string name;
+        int health;
+        int damage;
+        int level;
+
+        //The constructor (shares the name 'Player')
+        Player(string Name, int Health, int Damage, int Level)
+        {
+            //<data member> = <parameter>
+            name = Name;
+            health = Health;
+            damage = Damage;
+            level = Level;
+        }
+
+        //Method 'printStats()' prints the stats of the player
+        void printStats()
+        {
+            cout << "Name: " << name << '\n';
+            cout << "Health: " << health << '\n';
+            cout << "Damage: " << damage << '\n';
+            cout << "Level: " << level << '\n';
+        }
+};
+
+int main()
+{
+    //Declare a Player, 'steve' using the constructor
+    Player steve("Steve", 20, 7, 30);    //Name, health, damage, level
+
+    //Print the data members of the class
+    steve.printStats();
+
+    return 0;
+}
+```
