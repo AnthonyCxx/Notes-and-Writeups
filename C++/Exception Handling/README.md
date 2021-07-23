@@ -64,7 +64,7 @@ int main()
     {
         //Throw error?
         if (denominator == 0)
-            throw string("you cannot divide by zero.");
+            throw string("you cannot divide by zero.");  //'string' is a class and has a constructor
 
         //Never executed since denominator is thrown
         result = numerator / denominator;
