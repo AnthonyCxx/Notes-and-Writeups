@@ -22,6 +22,7 @@ Aborted (core dumped)"_ <br />
 
 ```C++
 // Protip: If you don't know the error type, catching '...' will catch any and all errors. //
+// ^^ If you're in CSC-1720, then this will be on your test ^^
 
 try
 {
