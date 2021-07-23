@@ -167,3 +167,6 @@ int main()
     return 0;
 }
 ```
+
+## Access Modifiers, Getters, and Setters
+[Access modifiers](https://www.geeksforgeeks.org/access-modifiers-in-c/) define the way 
