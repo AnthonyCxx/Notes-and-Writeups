@@ -31,7 +31,8 @@ class Player
 
 ## Accessing Data Members with the _._ Operator
 The period is the [member-access operator](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160) in C++ and allows you to individually
-access the data members of a class. Here, the member-access operator is being used to initialize the values of the class.
+access the data members of a class.  <br />
+Here, the member-access operator is being used to initialize the values of the class.
 
 ```C++
 #include <iostream>
