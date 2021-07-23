@@ -183,7 +183,7 @@ int main()
     catch(const UndefinedResult& e)
     {
         //Error message, so use clog instead of cout
-        clog << "Error: " << e.what() << endl;   //Use 'endl' to flush the output
+        clog << "Error: " << e.what() << '\n';
         result = 0;
     }
 
