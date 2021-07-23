@@ -4,7 +4,8 @@ with errors in a way that allows the program to continue running seamlessly (hop
 in which case exception handing allows a graceful solution to be achieved.
 
 Exception handling is preferable to only error checking (C-style error handling) as exception handling is distinct from the rest of the code and cannot be confused with
-standard control flow; moreover, exception handling does not require the programmer to 
+standard control flow; moreover, exception handling does not require the programmer to implcitly know that some generic _if_ statment is meant to handle an error because
+the exception handling makes it abundently apparent.
 
 ```C++
 // PROGRAM 1 //
