@@ -19,7 +19,10 @@ cin >> numerator >> denominator;
 if (denominator != 0)
   result = numerator / denominator;
 else
+{
+  cout << "Error: denominator cannot be 0...\n";
   result = 0;
+}
 
 //Print the result
 cout << "Result: " << result << '\n';
@@ -27,6 +30,28 @@ cout << "Result: " << result << '\n';
 
 // PROGRAM 2 //
 
+//Declare three floats to perform division
+float numerator, denominator, result;
+
+//Get the numerator and denominator
+cin >> numerator >> denominator;
+
+//Divide numerator by denominator
+try
+{
+  if (denominator == 0)
+    throw denominator;
+
+  result = numerator / denominator;
+}
+catch(float e)
+{
+  cout << "Error: denominator cannot be 0...\n";
+  result = 0;
+}
+
+//Print the result
+cout << "Result: " << result << '\n';
 
 ```
 
