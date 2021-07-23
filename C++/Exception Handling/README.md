@@ -163,9 +163,10 @@ int main()
     //Error-free division
     try
     {
+        //Throw error?
         if (numerator == 0 and denominator == 0)
             throw IndeterminateResult("0 / 0 is indeterminate.");
-
+        
         //Throw error?
         if (denominator == 0)
             throw UndefinedResult("anything / 0 is undefined.");
