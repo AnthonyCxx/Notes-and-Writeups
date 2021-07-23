@@ -83,6 +83,8 @@ int main()
 }
 ```
 
+## Creating Custom Exception with Exception Classes
+
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
 cplusplus.com: [_std::exception_](https://www.cplusplus.com/reference/exception/exception/) <br />
