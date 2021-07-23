@@ -14,7 +14,7 @@ catches a built-in error [_bad\_alloc_](https://www.cplusplus.com/reference/new/
 fails. If there were no catch _try_/_catch_ block, then the program would have crashed with the following message: <br />
 _"terminate called after throwing an instance of 'std::bad_alloc'. <br />
 what():  std::bad\_alloc.  <br />
-Aborted (core dumped)"_. <br />
+Aborted (core dumped)"_ <br />
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
