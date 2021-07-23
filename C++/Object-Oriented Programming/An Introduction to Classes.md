@@ -175,3 +175,9 @@ class and the in-game display of the _healthbar_ class are both appropriately up
 developer comes along and ignorantly decides to modify the player's health directly, ignoring the _updateHealth()_ function. Now, the healthbar never gets updated
 and the amount of health the player actually has is different from what's displayed on-screen. This is utterly game-breaking. The access modifiers _public_, _private_,
 and _protected_ solve this problem.
+
+For the sake of simplicity, I'm only going to talk about _public_ and _private_ here. Members of a class (data members of functions) that are public are fully accessible. 
+Above, we were able to access the individual stats of the _Player_ 'steve' via the member-access operator (.) — this would not be the case if the members were private.
+Private members are only accessible internally by other members of the class. To work with or modify these private methods, _get_ and _set_ functions (called getters
+and setters) are used. Unlike constructors, which are special because of a property of the language, getters and setters are purely convention, but should still be recognized
+and used for clarity's sake.
