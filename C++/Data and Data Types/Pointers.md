@@ -173,3 +173,29 @@ int main()
     return 0;
 }
 ```
+
+## Differencing and Comparisons
+A lot more than just addition can be done with pointers Pointers are just integers so you can also subtract the difference between them or compare them
+using relational operators (<, >, <=, >=, ==, !=). And before you ask, don't even try to multiply pointers or use _pow()_ on them.
+
+```C
+#include <iostream>
+#define SIZE(array) sizeof(array) / sizeof(array[0])
+using namespace std;
+
+int main()
+{
+    //Declare an int array and two integer pointers
+    int *front, *end;
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    //Set the pointers to the front and back of the array
+    front = &arr[0];
+    end = &arr[SIZE(arr) - 1];
+
+    //Printing stuff. Notice how 'end - front' isn't dereferenced because what you're actually doing is subtracting memory addresses
+    cout << "The first element in the array is " << *front << " and the last is " << *end << "; the difference between the pointers is " << end - front << '\n';
+
+    return 0;
+}
+```
