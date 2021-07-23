@@ -58,29 +58,57 @@ int main()
 
 ## Private
 Private members can only be accessed and modified from within the class itself. External code, including classes derived from the class, has no access to private members. 
-Things like fields are often private.
-```C#
-static void Main(string[] args)
+Data members are often private
+```C++
+/* Note: this code does not compile. */
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class BaseClass
 {
-    Console.WriteLine($"Accessing through Main function: {PrivateExample.field}");  //Error! 'field' is private
+    private:
+        //Single public string
+        string data;
 
-    //Accessing 'field' through the derived class
-    otherClass.Print(); //Error! 'field' is private
-}
+    public:
+        //Constructor
+        BaseClass()
+        {
+            data = "some data";
+        }
+};
 
-
-public class PrivateExample
+class DerivedClass: public BaseClass
 {
-    private static string field = "private field";   //static, so an instance of the class is not necessary
-}
+    public:
+        //Constructor
+        DerivedClass()
+        {
+            data = "some data";
+        }
 
-//A class derived from class 'PrivateExample' (will not have access to PrivateExample's private members)
-public class otherClass : PrivateExample
+        //Single function 'print()' prints the inherited public string 'data'
+        void print()
+        {
+            cout << "Accessing the public data member 'data' from  the derived class 'DerivedClass': " << data << '\n';
+        }
+};
+
+int main()
 {
-    public static void Print()
-    {
-        Console.WriteLine($"Accessing through derived class's method: {PrivateExample.field}");  //Error! 'field' is private
-    }
+    //Object definitions
+    BaseClass base;
+    DerivedClass derived;
+
+    //Accessing the private string 'data' from the main function (ERROR!)
+    cout << "Accessing the public string 'data' from the main function: " << base.data << '\n';
+
+    //Accessing the private string 'data' from the derived class, 'DerivedClass' (ERROR!)
+    derived.print();
+
+    return 0;
 }
 ```
 > Reference: [C# Documentation: Private Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) <br />
