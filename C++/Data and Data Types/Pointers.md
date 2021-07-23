@@ -193,7 +193,7 @@ int main()
     front = &arr[0];
     end = &arr[SIZE(arr) - 1];
 
-    //Printing stuff. Notice how 'end - front' isn't dereferenced because what you're actually doing is subtracting memory addresses
+    Notice how 'end - front' isn't dereferenced because what you're actually doing is subtracting memory addresses
     cout << "The first element in the array is " << *front << " and the last is " << *end << "; the difference between the pointers is " << end - front << '\n';
 
     return 0;
