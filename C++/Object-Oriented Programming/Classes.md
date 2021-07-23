@@ -13,7 +13,8 @@ class ClassName
 
 };
 ```
-> Notice the semi-colon at the end of the definition. A class is a statement (in this case a description of a datatype) and so it needs a semi-colon.
+> Notice the semi-colon at the end of the definition. <br />
+> A class is a statement (in this case a description of a datatype) and so it needs a semi-colon.
 
 ### Example
 ```C++
