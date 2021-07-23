@@ -1,4 +1,4 @@
-# Access Modifiers in C
+# Access Modifiers in C++
 Access modifiers regulate how a member of a class (data members and methods) can be accessed in relation to external code.
 There are three types of access: public, private, and protected. By default, classes class members are private; however, you should still always explicitly 
 write out the accessor to maintain clean, readable code.
