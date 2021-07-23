@@ -178,6 +178,77 @@ and _protected_ solve this problem.
 
 For the sake of simplicity, I'm only going to talk about _public_ and _private_ here. Members of a class (data members of functions) that are public are fully accessible. 
 Above, we were able to access the individual stats of the _Player_ 'steve' via the member-access operator (.) — this would not be the case if the members were private.
-Private members are only accessible internally by other members of the class. To work with or modify these private methods, _get_ and _set_ functions (called getters
-and setters) are used. Unlike constructors, which are special because of a property of the language, getters and setters are purely convention, but should still be recognized
+Private members are only accessible internally by other members of the class. To work with or modify these private methods, _get_ and _set_ functions (called _getters_
+and _setters_) are used. Unlike constructors, which are special because of a property of the language, getters and setters are purely convention, but should still be recognized
 and used for clarity's sake.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Player
+{
+    //Data memeber should generally be private
+    private:
+        string name;
+        int health;
+        int damage;
+        int level;
+
+    //Functions should generally be public
+    public:
+        //The constructor (shares the name 'Player')
+        Player(string Name, int Health, int Damage, int Level)
+        {
+            //<data member> = <parameter>
+            name = Name;
+            health = Health;
+            damage = Damage;
+            level = Level;
+        }
+
+        //Method 'printStats()' prints the stats of the player
+        void printStats()
+        {
+            cout << "Name: " << name << '\n';
+            cout << "Health: " << health << '\n';
+            cout << "Damage: " << damage << '\n';
+            cout << "Level: " << level << '\n';
+        }
+
+        /*
+           Get + Set methods. Generally, don't condense them
+           like I did here. I just did this because I didn't
+           want to take up too much space
+        */
+
+        //Getter + Setter for name
+        string getName() { return name; }
+        void setName(string Name) { name = Name; }
+
+        //Getter + Setter for health
+        int getHealth() { return health; }
+        void setHealth(int Health) { health = Health; }
+
+        //Getter + Setter for damage
+        int getDamage() { return damage; }
+        void setDamage(int Damage) { damage = Damage; }
+
+        //Getter + Setter for level
+        int getLevel() { return level; }
+        void setLevel(int Level) { level = Level; }
+
+};
+
+int main()
+{
+    //Declare a Player, 'steve' using the constructor
+    Player steve("Steve", 20, 7, 30);    //Name, health, damage, level
+
+    //Print the data members of the class
+    steve.printStats();
+
+    return 0;
+}
+```
