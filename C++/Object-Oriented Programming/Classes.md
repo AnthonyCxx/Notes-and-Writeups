@@ -18,5 +18,54 @@ class ClassName
 
 ### Example
 ```C++
-
+class Player
+{
+    //Don't worry about the 'public' keyword for now
+    public:
+        string name;
+        int health;
+        int damage;
+        int level;
+};
 ```
+
+## Accessing Data Members with the _._ Operator
+The period is the [member-access operator](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160) in C++ and allows you to individually
+access the data members of a class. Here, the member-access operator is being used to initialize the values of the class.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Player
+{
+    //Don't worry about the 'public' keyword for now
+    public:
+        string name;
+        int health;
+        int damage;
+        int level;
+};
+
+int main()
+{
+    //Declare a Player, 'steve'
+    Player steve;
+
+    //Initialize the data members of the class
+    steve.name = "Steve";
+    steve.health = 20;
+    steve.damage = 7;
+    steve.level = 30;
+
+    //Print the data members of the class
+    cout << "Name: " << steve.name << '\n';
+    cout << "Health: " << steve.health << '\n';
+    cout << "Damage: " << steve.damage << '\n';
+    cout << "Level: " << steve.level << '\n';
+
+    return 0;
+}
+```
+> Instances of classes are called objects. The word 'class' only refers to be blueprint of the datatype.
