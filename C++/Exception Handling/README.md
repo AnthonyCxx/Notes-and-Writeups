@@ -84,7 +84,9 @@ int main()
 ```
 
 ## Creating Custom Exceptions with Exception Classes
-In the problem above, there is the problem that you cannot through separate errors for dividing 0 by 0 and generally dividing by 0 (
+In the problem above, there is the problem that you cannot throw separate errors for dividing 0 by 0 (indeterminate) and generally dividing by 0 (undefined)
+as there is only one datatype (double) to throw. You could of course throw a double and a string, or a char* and a string; both of these options are not only 
+confusing, but limiting, as you may need to throw three or more unique errors in more complex blocks.
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
