@@ -88,7 +88,7 @@ In the problem above, there is the problem that you cannot throw separate errors
 as there is only one datatype (double) to throw. You could of course throw a double and a string, or a double and a char*, or even a char* and a string; 
 however, all of these options are not only needlessly confusing, but limiting, as you may need to throw three or more unique errors in more complex blocks.
 Limiting yourself to the basic datatypes is highly restrictive. So, often programmers will create unique classes for each potential error, allowing you to 
-separate your errors (and _catch_ blocks) nicely.
+separate your errors (and _catch_ blocks) neatly.
 
 Here are two classes for dealing with both inderminate (0 / 0) and undefined (anything / 0) division. This way, you can avoid any and all floating-point exceptions
 that would kill your program. Furthermore, you can see how exception handling neatly divides the intended flow from the error-handling as they are in separate blocks.
