@@ -166,6 +166,30 @@ int main(void)
 }
 ```
 
+## Differencing and Comparisons
+A lot more than just addition can be done with pointers Pointers are just integers so you can also subtract the difference between them or compare them
+using relational operators (<, >, <=, >=, ==, !=). And before you ask, don't even try to multiply pointers or use _pow()_ on them.
+
+```C
+#include <stdio.h>
+
+int main(void)
+{
+    //Declare an int array and two integer pointers
+    int *front, *end;
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    //Set the pointers to the front and back of the array
+    front = &arr[0];
+    end = &arr[4];
+
+    //Printing stuff. Notice how 'end - front' isn't dereferenced because what you're actually doing is subtracting memory addresses
+    printf("The first element in the array is %d and the last is %d; the difference between the pointers is %ld.\n", *front, *end, end - front);
+
+    return 0;
+}
+```
+
 ## Sources
 JavaTPoint: [_C Pointers_](https://www.javatpoint.com/c-pointers) <br />
 TutorialsPoint: [_C - Pointers_](https://www.tutorialspoint.com/cprogramming/c_pointers.htm) <br />
