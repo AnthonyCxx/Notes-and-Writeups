@@ -182,7 +182,7 @@ int main(void)
 
     //Set the pointers to the front and back of the array
     front = &arr[0];
-    end = &arr[SIZE(arr) - 1];
+    end = &arr[SIZE(arr) - 1];  //Last element is the amount of elements minus 1
 
     //Printing stuff. Notice how 'end - front' isn't dereferenced because what you're actually doing is subtracting memory addresses
     printf("The first element in the array is %d and the last is %d; the difference between the pointers is %ld.\n", *front, *end, end - front);
