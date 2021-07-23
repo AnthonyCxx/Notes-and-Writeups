@@ -178,9 +178,9 @@ and _protected_ solve this problem.
 
 For the sake of simplicity, I'm only going to talk about _public_ and _private_ here. Members of a class (data members of functions) that are public are fully accessible. 
 Above, we were able to access the individual stats of the _Player_ 'steve' via the member-access operator (.) — this would not be the case if the members were private.
-Private members are only accessible internally by other members of the class. To work with or modify these private methods, _get_ and _set_ functions (called _getters_
-and _setters_) are used. Unlike constructors, which are special because of a property of the language, getters and setters are purely convention, but should still be recognized
-and used for clarity's sake.
+Private members are only accessible internally by other members of the class; if you try to access a private method otherwise, your code will not compile. 
+To work with or modify these private methods, _get_ and _set_ functions (called _getters_ and _setters_) are used. Unlike constructors, which are special because of 
+a property of the language, getters and setters are purely convention, but should still be recognized and used for clarity's sake.
 
 ```C++
 #include <iostream>
