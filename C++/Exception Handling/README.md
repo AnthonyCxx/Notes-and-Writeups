@@ -54,8 +54,13 @@ catch(float e)
 
 //Print the result
 cout << "Result: " << result << '\n';
-
 ```
+
+## Try and Catch
+Exception handling is fundamentally built upon three keywords: _try_ and _catch_. _try_ defines a block of code within which the programmer expects
+an error may occur and _catch_ catches the error, defining a block that runs after the error occurs. In the following example, the _catch_ statement
+catches a built-in error [_bad\_alloc_](https://www.cplusplus.com/reference/new/bad_alloc/) which is implicitly thrown when `new int[9223372036854775]` 
+fails.
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
