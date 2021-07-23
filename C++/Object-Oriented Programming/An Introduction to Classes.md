@@ -189,7 +189,7 @@ using namespace std;
 
 class Player
 {
-    //Data memeber should generally be private
+    //Data memebers should generally be private
     private:
         string name;
         int health;
