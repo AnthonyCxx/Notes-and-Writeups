@@ -9,9 +9,12 @@ the exception handling makes it abundently apparent.
 
 ## Basic Error Handling with _try_ and _catch_
 Exception handling is fundamentally built upon two keywords: _try_ and _catch_. _try_ defines a block of code within which the programmer expects
-an error may occur and _catch_ catches the error, defining a block that runs after the error occurs. In the following example, the _catch_ statement
-catches a built-in error [_bad\_alloc_](https://www.cplusplus.com/reference/new/bad_alloc/) which is implicitly thrown when `new int[9223372036854775]` 
-fails. If there were no catch _try_/_catch_ block, then the program would have crashed with the following message: <br />
+an error may occur and _catch_ catches the error, defining a block that runs after the error occurs. When an exception is raised, the program immediately
+exits the _try_ block and jumps to the relevant _catch_ block; the remaining statement in the _try_ block are ignored.
+
+In the following example, the _catch_ statement catches a built-in error [_bad\_alloc_](https://www.cplusplus.com/reference/new/bad_alloc/),
+which is implicitly thrown when `new int[9223372036854775]` fails. If there were no catch _try_/_catch_ block, then the program would have crashed
+with the following message: <br />
 
 _"terminate called after throwing an instance of 'std::bad_alloc'. <br />
 what():  std::bad\_alloc.  <br />
@@ -27,13 +30,56 @@ try
 }
 catch(bad_alloc)  //Fatal error caught, now the program won't crash.
 {
-  cout << "Error: array could not be allocated...\n";
+  clog << "Error: array could not be allocated...\n";
 }
 ```
 
 ## Manually Throwing Errors with _throw_
 If you want to catch anything other than an error thrown by the program itself, you'll have to do it manually with the _throw_ keyword. If you know Python,
-_throw_ is the C++'s [_raise_](https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python) keyword.
+think of _throw_ as the [_raise_](https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python) keyword. You can throw any datatype 
+in C++, integers, doubles, strings, classes, but you cannot have two catch blocks with the same datatype; if you do, then the second one will never be executed.
+This problem is solved by exception classes, which we will touch on shortly.
+
+This program catches a division by zero error (floating point exception), which otherwise would have crashed the program and caused a core dump.
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double numerator, denominator, result;
+
+    //Get the numerator and denominator from the user
+    cout << "Enter the numerator and denominator: ";
+    cin >> numerator >> denominator;
+
+    /*
+        User enters '10' for the numerator
+        and '0' for the denominator.
+    */
+
+    try
+    {
+        //Throw error?
+        if (denominator == 0)
+            throw denominator;
+
+        //Never executed since denominator is thrown
+        result = numerator / denominator;
+    }
+    catch(double denom)   //Catch any thrown double
+    {
+        //Error message, so use clog instead of cout
+        clog << "Error: the denominator " << denom << " is invalid.\n" << endl;   //Use 'endl' to flush the output
+        result = 0;
+    }
+
+    //Print result of the division
+    cout << "Result: " << result << '\n';
+
+    return 0;
+}
+```
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
