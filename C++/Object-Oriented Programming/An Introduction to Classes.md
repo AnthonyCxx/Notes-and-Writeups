@@ -249,6 +249,12 @@ int main()
     //Print the data members of the class
     steve.printStats();
 
+    //Change Steve's name
+    steve.setName("Herobrine");
+
+    //Print new stats
+    steve.printStats();
+
     return 0;
 }
 ```
