@@ -111,30 +111,60 @@ int main()
     return 0;
 }
 ```
-> Reference: [C# Documentation: Private Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) <br />
+> Reference: [Microsoft C++ Documentation: Private Keyword](https://docs.microsoft.com/en-us/cpp/cpp/private-cpp?view=msvc-160) <br />
 
 ## Protected
 Protected members are similar to private members in that they are only interally accessable; however, protected members are also accessible to derived classes.
-```C#
-static void Main(string[] args)
-{
-    Console.WriteLine($"Accessing through Main function: {ProtectedExample.field}");  //Illegal, 'field' is protected
+```C++
+/* Note: this code does not compile. */
 
-    //Accessing 'Field' through the derived class
-    otherClass.Print();    //Legal, protected members are accessible to derived classes!
-}
- 
-public class ProtectedExample
-{
-    protected static string field = "protected field";   //static, so an instance of the class is not necessary
-}
+#include <iostream>
+#include <string>
+using namespace std;
 
-public class otherClass : ProtectedExample
+class BaseClass
 {
-    public static void Print()
-    {
-        Console.WriteLine($"Accessing through derived class's method: {ProtectedExample.field}");
-    }
+    protected:
+        //Single public string
+        string data;
+
+    public:
+        //Constructor
+        BaseClass()
+        {
+            data = "some data";
+        }
+};
+
+class DerivedClass: public BaseClass
+{
+    public:
+        //Constructor
+        DerivedClass()
+        {
+            data = "some data";
+        }
+
+        //Single function 'print()' prints the inherited public string 'data'
+        void print()
+        {
+            cout << "Accessing the public data member 'data' from  the derived class 'DerivedClass': " << data << '\n';
+        }
+};
+
+int main()
+{
+    //Object definitions
+    BaseClass base;
+    DerivedClass derived;
+
+    //Accessing the protected string 'data' from the main function (ERROR!)
+    cout << "Accessing the public string 'data' from the main function: " << base.data << '\n';
+
+    //Accessing the protected string 'data' from the derived class, 'DerivedClass' (OK!)
+    derived.print();
+
+    return 0;
 }
 ```
-> Reference: [C# Documentation: Protected Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected) <br />
+> Reference: [Microsoft C++ Documentation: Protected Keyword](https://docs.microsoft.com/en-us/cpp/cpp/protected-cpp?view=msvc-160) <br />
