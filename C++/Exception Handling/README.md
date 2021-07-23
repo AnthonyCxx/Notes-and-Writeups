@@ -239,3 +239,5 @@ TutorialsPoint: [_C++ Exception Handling_](https://www.tutorialspoint.com/cplusp
 GeeksforGeeks: [_Exception Handling in C++_](https://www.geeksforgeeks.org/exception-handling-c/) <br />
 Microsoft C++ Documentation: [_Modern C++ best practices for exceptions and error handling (2020)_](https://docs.microsoft.com/en-us/cpp/cpp/errors-and-exception-handling-modern-cpp?view=msvc-160) <br />
 isocpp.org: [_Exceptions and Error Handling_](https://isocpp.org/wiki/faq/exceptions) <br />
+cplusplus.com: [_assert_](https://www.cplusplus.com/reference/cassert/assert/) <br />
+StackOverflow: [_Why should I use asserts?_](https://stackoverflow.com/questions/1081409/why-should-i-use-asserts) <br />
