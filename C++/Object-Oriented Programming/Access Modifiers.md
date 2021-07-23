@@ -4,7 +4,7 @@ There are three types of access: public, private, and protected. By default, cla
 write out the accessor to maintain clean, readable code.
 
 ## Public
-Public members have no restrictions and can be accessed by any code, inside and outside of the class. Classes, properties, and methods are often public.
+Public members have no restrictions and can be accessed by any code, inside and outside of the class. Methods are often public.
 ```
 #include <iostream>
 #include <string>
