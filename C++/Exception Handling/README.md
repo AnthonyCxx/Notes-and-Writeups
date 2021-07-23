@@ -32,7 +32,8 @@ catch(bad_alloc)  //Fatal error caught, now the program won't crash.
 ```
 
 ## Manually Throwing Errors with _throw_
-If you want to catch anything other than a
+If you want to catch anything other than an error thrown by the program itself, you'll have to do it manually with the _throw_ keyword. If you know Python,
+_throw_ is the C++'s [_raise_](https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python) keyword.
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
