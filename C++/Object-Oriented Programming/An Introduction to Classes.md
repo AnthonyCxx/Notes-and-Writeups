@@ -169,7 +169,7 @@ int main()
 ```
 
 ## Access Modifiers, Getters, and Setters
-[Access modifiers](https://www.geeksforgeeks.org/access-modifiers-in-c/) define the way the members of a class (or a class as a whole) are meant to be interacted with.
+[Access modifiers](https://www.geeksforgeeks.org/access-modifiers-in-c/) define the way the members of a class are meant to be interacted with.
 Take a player's health and healthbar in a videogame for example; the gave developer has written the game such that when a player takes damage, the health of the _Player_
 class and the in-game display of the _healthbar_ class are appropriately updated — this would likely be done in a function _updateHealth()_. Now imagine that another game
 developer comes along and ignorantly decides to modify the player's health directly, ignoring the _updateHealth()_ function. Now, the healthbar never gets updated
