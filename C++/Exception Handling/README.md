@@ -113,7 +113,7 @@ class IndeterminateResult
         }
 
         //Return the error message
-        string what() const
+        string what() const  //The 'what()' function is standard practice in C++. Always use a 'what()' function.
         {
             return message;
         }
