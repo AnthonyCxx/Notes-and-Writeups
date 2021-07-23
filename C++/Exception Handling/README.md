@@ -3,6 +3,33 @@ Exceptions are errors that occur during runtime, like a failure to allocate heap
 with errors in a way that allows the program to continue running seamlessly (hopefully). Sometimes, an exception cannot be truly 'recovered' from, but can only be dealt with,
 in which case exception handing allows a graceful solution to be achieved.
 
+Exception handling is preferable to only error checking (C-style error handling) as exception handling is distinct from the rest of the code and cannot be confused with
+standard control flow; moreover, exception handling does not require the programmer to 
+
+```C++
+// PROGRAM 1 //
+
+//Declare three floats to perform division
+float numerator, denominator, result;
+
+//Get the numerator and denominator
+cin >> numerator >> denominator;
+
+//Divide numerator by denominator
+if (denominator != 0)
+  result = numerator / denominator;
+else
+  result = 0;
+
+//Print the result
+cout << "Result: " << result << '\n';
+
+
+// PROGRAM 2 //
+
+
+```
+
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
 cplusplus.com: [_std::exception_](https://www.cplusplus.com/reference/exception/exception/) <br />
