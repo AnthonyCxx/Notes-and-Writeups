@@ -187,10 +187,10 @@ _showbase_ is a modifier for _hex_ and _oct_ that shows the radix indicator for 
 
 ```C++
 //Show radix indicator for hex. and octal numbers
-    cout << showbase;
+cout << showbase;
 
-    cout << hex << 20 << '\n';    //0x14
-    cout << oct << 20 << '\n';   //024
+cout << hex << 20 << '\n';    //0x14
+cout << oct << 20 << '\n';   //024
 ```
 
 ### uppercase/nouppercase
