@@ -200,8 +200,36 @@ library and is used for errors that ["should have never occured if all your code
 if the expression inside it evaluates to false. If you want to test your program without the _assert()_ statements you've included, you can disabled them by writing
 `#define NDEBUG`.
 
-```C++
+Here, the _assert()_ catches the fact that I forgot to add a _break_ statement after the final case. I meant for the flow of execution to fall through to cases
+1, 2, and 3, but not the default case. The _assert()_ statement makes this clear.
 
+```C++
+#include <iostream>
+#include <cassert>
+using namespace std;
+
+int main()
+{
+    int choice = 2;
+
+    switch (choice)
+    {
+        case 1:
+            cout << "Case 1 activated...\n";
+
+        case 2:
+            cout << "Case 2 activated...\n";
+
+        case 3:
+            cout << "Case 3 activated...\n";
+
+        //This should never happen.
+        default:
+            assert(0);  //Always false
+    }
+
+    return 0;
+}
 ```
 
 ## Sources
