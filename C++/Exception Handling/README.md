@@ -201,7 +201,7 @@ if the expression inside it evaluates to false. If you want to test your program
 `#define NDEBUG`.
 
 Here, the _assert()_ catches the fact that I forgot to add a _break_ statement after the final case. I meant for the flow of execution to fall through to cases
-1, 2, and 3, but not the default case. The _assert()_ statement makes this clear.
+1, 2, and 3, but not to the default case. The _assert()_ statement makes this clear.
 
 ```C++
 #include <iostream>
