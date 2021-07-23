@@ -5,7 +5,7 @@ write out the accessor to maintain clean, readable code.
 
 ## Public
 Public members have no restrictions and can be accessed by any code, inside and outside of the class. Methods are often public.
-```
+```C++
 #include <iostream>
 #include <string>
 using namespace std;
