@@ -44,6 +44,7 @@ This problem is solved by exception classes, which we will touch on shortly.
 This program catches a division by zero error (floating point exception), which would have crashed the program and caused a core dump.
 ```C++
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -63,15 +64,15 @@ int main()
     {
         //Throw error?
         if (denominator == 0)
-            throw denominator;
+            throw string("you cannot divide by zero.");
 
         //Never executed since denominator is thrown
         result = numerator / denominator;
     }
-    catch(double denom)   //Catch any thrown double
+    catch(const string& errMsg)   //Catch ANY thrown string
     {
         //Error message, so use clog instead of cout
-        clog << "Error: the denominator " << denom << " is invalid.\n" << endl;   //Use 'endl' to flush the output
+        clog << "Error: " << errMsg << endl;   //Use 'endl' to flush the output
         result = 0;
     }
 
