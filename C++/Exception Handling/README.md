@@ -17,6 +17,18 @@ _"terminate called after throwing an instance of 'std::bad_alloc'. <br />
 what():  std::bad\_alloc.  <br />
 Aborted (core dumped)"_ <br />
 
+```C++
+try
+{
+  //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
+  int* massiveArray = new int[9223372036854775];
+}
+catch(bad_alloc)  //Fatal error caught, now the program won't crash.
+{
+  cout << "Error: array could not be allocated...\n";
+}
+```
+
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
 cplusplus.com: [_std::exception_](https://www.cplusplus.com/reference/exception/exception/) <br />
