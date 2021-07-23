@@ -5,57 +5,56 @@ write out the accessor to maintain clean, readable code.
 
 ## Public
 Public members have no restrictions and can be accessed by any code, inside and outside of the class. Classes, properties, and methods are often public.
-```C++
+```
 #include <iostream>
 #include <string>
 using namespace std;
 
 class BaseClass
 {
-        public:
-                //Single public string
-                string data;
+    public:
+        //Single public string
+        string data;
 
-                //Constructor
-                BaseClass()
-                {
-                        data = "some data";
-                }
-
+        //Constructor
+        BaseClass()
+        {
+            data = "some data";
+        }
 };
 
 class DerivedClass: public BaseClass
 {
-        public:
-                //Constructor
-                DerivedClass()
-                {
-                        data = "some data";
-                }
+    public:
+        //Constructor
+        DerivedClass()
+        {
+            data = "some data";
+        }
 
-                //Single function 'print()' prints the inherited public string 'data'
-                void print()
-                {
-                        cout << "Accessing the public data member 'data' from  the derived class 'DerivedClass': " << data << '\n';
-                }
+        //Single function 'print()' prints the inherited public string 'data'
+        void print()
+        {
+            cout << "Accessing the public data member 'data' from  the derived class 'DerivedClass': " << data << '\n';
+        }
 };
 
 int main()
 {
-        //Object definitions
-        BaseClass base;
-        DerivedClass derived;
+   //Object definitions
+   BaseClass base;
+   DerivedClass derived;
 
-        //Accessing the public string 'data' from the main function
-        cout << "Accessing the public string 'data' from the main function: " << base.data << '\n';
+    //Accessing the public string 'data' from the main function
+    cout << "Accessing the public string 'data' from the main function: " << base.data << '\n';
 
-        //Accessing the public string 'data' from the derived class, 'DerivedClass'
-        derived.print();
+    //Accessing the public string 'data' from the derived class, 'DerivedClass'
+    derived.print();
 
     return 0;
 }
 ```
-> Reference: [C# Documentation: Public Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) <br />
+> Reference: [Microsoft C++ Documentation: Public Keyword](https://docs.microsoft.com/en-us/cpp/cpp/public-cpp?view=msvc-160) <br />
 
 ## Private
 Private members can only be accessed and modified from within the class itself. External code, including classes derived from the class, has no access to private members. 
