@@ -7,55 +7,6 @@ Exception handling is preferable to only error checking (C-style error handling)
 standard control flow; moreover, exception handling does not require the programmer to implcitly know that some generic _if_ statment is meant to handle an error because
 the exception handling makes it abundently apparent.
 
-```C++
-// PROGRAM 1 //
-
-//Declare three floats to perform division
-float numerator, denominator, result;
-
-//Get the numerator and denominator
-cin >> numerator >> denominator;
-
-//Divide numerator by denominator
-if (denominator != 0)
-  result = numerator / denominator;
-else
-{
-  cout << "Error: denominator cannot be 0...\n";
-  result = 0;
-}
-
-//Print the result
-cout << "Result: " << result << '\n';
-```
-
-```C++
-// PROGRAM 2 //
-
-//Declare three floats to perform division
-float numerator, denominator, result;
-
-//Get the numerator and denominator
-cin >> numerator >> denominator;
-
-//Divide numerator by denominator
-try
-{
-  if (denominator == 0)
-    throw denominator;
-
-  result = numerator / denominator;
-}
-catch(float e)
-{
-  cout << "Error: denominator cannot be 0...\n";
-  result = 0;
-}
-
-//Print the result
-cout << "Result: " << result << '\n';
-```
-
 ## Try and Catch
 Exception handling is fundamentally built upon three keywords: _try_ and _catch_. _try_ defines a block of code within which the programmer expects
 an error may occur and _catch_ catches the error, defining a block that runs after the error occurs. In the following example, the _catch_ statement
