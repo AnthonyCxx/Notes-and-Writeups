@@ -70,3 +70,49 @@ int main()
 }
 ```
 > Instances of classes are called objects. The word 'class' only refers to be blueprint of the datatype.
+
+## Methods
+As mentioned earlier, classes can contain functions. By moving all the print statements to a function in the class, we can write a single function that prints the stats
+of any member of the 'Player' class, instead of having to customize it for each one.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Player
+{
+    //Don't worry about the 'public' keyword for now
+    public:
+        string name;
+        int health;
+        int damage;
+        int level;
+
+        //Method 'printStats()' prints the stats of the player
+        void printStats()
+        {
+            cout << "Name: " << name << '\n';
+            cout << "Health: " << health << '\n';
+            cout << "Damage: " << damage << '\n';
+            cout << "Level: " << level << '\n';
+        }
+};
+
+int main()
+{
+    //Declare a Player, 'steve'
+    Player steve;
+
+    //Initialize the data members of the class
+    steve.name = "Steve";
+    steve.health = 20;
+    steve.damage = 7;
+    steve.level = 30;
+
+    //Print the data members of the class
+    steve.printStats();
+
+    return 0;
+}
+```
