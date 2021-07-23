@@ -1,5 +1,5 @@
 # Exception Handling in C++
-Exceptions are errors that occur during runtime, such as ; exceptions can be managed through
+Exceptions are errors that occur during runtime, like a failure to allocate heap memory because the request was too large or there wasn't enough memory left ([_bad\_alloc_](https://www.cplusplus.com/reference/new/bad_alloc/)); exceptions can be managed through a process called _exception handling_.
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
