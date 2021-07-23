@@ -18,6 +18,8 @@ what():  std::bad\_alloc.  <br />
 Aborted (core dumped)"_ <br />
 
 ```C++
+// Protip: If you don't know the error type, catching '...' will catch any and all errors. //
+
 try
 {
   //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
@@ -30,6 +32,7 @@ catch(bad_alloc)  //Fatal error caught, now the program won't crash.
 ```
 
 ## Manually Throwing Errors with _throw_
+If you want to catch anything other than a
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
