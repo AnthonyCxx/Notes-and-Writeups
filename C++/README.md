@@ -14,3 +14,4 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 
 ## Other Resources
 [_The Cherno's C++ Tutorial Series_](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) <br />
+[_Google C++ Style Guide_](https://google.github.io/styleguide/cppguide.html) <br />
