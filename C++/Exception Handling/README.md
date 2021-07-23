@@ -91,7 +91,8 @@ Limiting yourself to the basic datatypes is highly restrictive. So, often progra
 separate your errors (and _catch_ blocks) neatly.
 
 Here are two classes for dealing with both inderminate (0 / 0) and undefined (anything / 0) division. This way, you can avoid any and all floating-point exceptions
-that would kill your program. Furthermore, you can see how exception handling neatly divides the intended flow from the error-handling as they are in separate blocks.
+that would kill your program. Furthermore, you can see how exception handling neatly divides the intended flow of the program from the error-handling as they are in 
+separate blocks.
 
 ```C++
 #include <iostream>
@@ -112,8 +113,13 @@ class IndeterminateResult
             message = errorMessage;
         }
 
+        /* 
+           The 'what()' function is standard practice in C++. 
+           Always use a 'what()' function. to return the message.
+       */
+
         //Return the error message
-        string what() const  //The 'what()' function is standard practice in C++. Always use a 'what()' function.
+        string what() const 
         {
             return message;
         }
@@ -132,6 +138,11 @@ class UndefinedResult
         {
             message = errorMessage;
         }
+        
+        /* 
+           The 'what()' function is standard practice in C++. 
+           Always use a 'what()' function. to return the message.
+       */
 
         //Return the error message
         string what() const
