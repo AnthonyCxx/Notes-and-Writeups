@@ -27,8 +27,9 @@ else
 
 //Print the result
 cout << "Result: " << result << '\n';
+```
 
-
+```C++
 // PROGRAM 2 //
 
 //Declare three floats to perform division
