@@ -83,7 +83,8 @@ int main()
 }
 ```
 
-## Creating Custom Exception with Exception Classes
+## Creating Custom Exceptions with Exception Classes
+In the problem above, there is the problem that you cannot through separate errors for dividing 0 by 0 and generally dividing by 0 (
 
 ## Sources
 cplusplus.com: [_Exceptions_](https://www.cplusplus.com/doc/tutorial/exceptions/) <br />
