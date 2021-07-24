@@ -74,6 +74,35 @@ int main()
     cout << "5 + 5 = " << add(5, 5) << '\n';
 }
 ```
+## Default Parameters
+In the event that a method is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
+To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) 
+(some value). That way, the parameter will take on that value if and only if no other value is provided.
+
+```C++
+#include <iostream>
+using namespace std;
+
+/*
+    Function 'add' adds two integers.
+    If a value is not supplied, it is
+    assumed to be 0.
+*/
+int add(int a = 0, int b = 0)
+{
+    return a + b;
+}
+
+int main()
+{
+    cout << "Calling 'add(5, 5)': " << add(5, 5) << '\n';
+    cout << "Calling 'add(7)' (one parameter): " << add(7) << '\n';
+    cout << "Calling 'add()' (no parameters): " << add() << '\n';
+}
+```
+
+## Function Overloading
+
 
 # Methods
 A method is a function that is associated with a class or struct. Methods are blocks of code that can be invoked by name, executing the body of the method (its code).
