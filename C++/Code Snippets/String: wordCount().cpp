@@ -1,4 +1,4 @@
-// Inspired by this GeeksforGeeks article: https://www.geeksforgeeks.org/stringstream-c-applications/
+//From this GeeksforGeeks article: https://www.geeksforgeeks.org/stringstream-c-applications/
 
 #include <string>
 #include <sstream>
