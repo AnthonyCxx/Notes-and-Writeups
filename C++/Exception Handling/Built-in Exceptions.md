@@ -3,7 +3,36 @@ The following exceptions are built into C++ and inherited from the [_exception c
 There are plenty of exceptions built into C++, but a lot of them are very specific, so I've included the most applicable here.
 
 ### _invalid\_argument_
-_invalid\_arugment_ is thrown when 
+_invalid\_arugment_ should be thrown when an invalid argument is provided to a function.
+
+```C++
+#include <iostream>
+using namespace std;
+
+void print100(int argument)
+{
+    if (argument != 100)
+        throw invalid_argument("argument was not 100");
+
+    //If valid (100), print the argument
+    cout << argument << '\n';
+}
+
+int main()
+{
+    try
+    {
+        //Throws 'invalid_argument' from inside 'print100()'
+        print100(97);
+    }
+    catch(const invalid_argument& e)  //Catches 'invalid_argument' from 'print100()'
+    {
+        cout << "Error: " << e.what() << '\n';
+    }
+
+    return 0;
+}
+```
 
 ### _bad\_alloc_
 _bad\_alloc_ is thrown when a _new_ statement fails to allocate new memory.
