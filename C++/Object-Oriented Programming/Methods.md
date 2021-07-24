@@ -58,7 +58,8 @@ int main()
 ## Parameters
 Functions can take [parameters](https://www.thoughtco.com/definition-of-parameters-958124) (sometimes called arguments). The function can then use these 
 values as variables. When declaring parameters, be sure to declare their type as well. A simple method '_add_' could take two numbers as parameters and return their sum.
-Parameters should be declared as a part of the parameters list (inside the parentheses following the function name) and should be prefaced
+Parameters should be declared as a part of the parameters list (inside the parentheses following the function name) and should be prefaced by their datatype. If you have
+multiple parameters, they should be comma-separated.
 
 ```C++
 #include <iostream>
