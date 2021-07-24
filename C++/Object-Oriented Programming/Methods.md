@@ -102,7 +102,36 @@ int main()
 ```
 
 ## Function Overloading
+C++ is an object-oriented language, so it supports [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/). One of the major ways C++ support the object-oriented
+programming paradigm is through function overloading (the others being operator overloading and virtual functions). Function overloading allows two functions to share
+the same name and yet remain entirely distinct; the way the compiler can differentiate between functions is by the amount of parameters and/or their type, so you cannot
+having two different functions that only differ in return type will not work ([reference](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm#:~:text=Function%20Overloading%20in%20C%2B%2B,differ%20only%20by%20return%20type.)).
 
+In this example, you have two different add functions, one of integers, and one for doubles. In actual practice, this would be best achieved by [templates](https://www.tutorialspoint.com/cplusplus/cpp_templates.htm), but you haven't learned those yet.
+
+```C++
+#include <iostream>
+using namespace std;
+
+//'add' function for integers
+int add(int a = 0, int b = 0)
+{
+    return a + b;
+}
+
+//'add' funtion for integers
+double add(double a = 0, double b = 0)
+{
+    return a + b;
+}
+
+int main()
+{
+    //Calls two separate functions
+    cout << "Calling the 'add' function for integers: " << add(1, 12) << '\n';
+    cout << "Calling the 'add' function for double: " << add(3.5, 7.9) << '\n';
+}
+```
 
 # Methods
 A method is a function that is associated with a class or struct. Methods are blocks of code that can be invoked by name, executing the body of the method (its code).
