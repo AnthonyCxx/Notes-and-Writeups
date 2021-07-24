@@ -4,6 +4,26 @@ There are plenty of exceptions built into C++, but a lot of them are very specif
 
 ### _bad\_alloc_
 
+```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+        try
+        {
+                //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
+                int* massiveArray = new int[9223372036854775];
+        }
+        catch(const bad_alloc& e)
+        {
+                clog << "Error: " << e.what() << '\n';
+        }
+
+    return 0;
+}
+```
+
 ### _out\_of\_range_
 _out\_of\_range_ is thrown when you attempt to access an element that is out of the range of the object. Note that this does not work with the array subscript operator: _[ ]_
 
