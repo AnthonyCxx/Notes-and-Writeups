@@ -1,7 +1,8 @@
 # Built-in Exceptions in C++
-The following exceptions are built into C++ and inherited from the [_exception class_](https://en.cppreference.com/w/cpp/error/exception).
+The following exceptions are built into C++ and inherited from the [_exception class_](https://en.cppreference.com/w/cpp/error/exception). <br />
+There are plenty of exceptions built into C++, but a lot of them are very specific, so I've included the most applicable here.
 
-
+### _bad\_alloc_
 
 ### _out\_of\_range_
 _out\_of\_range_ is thrown when you attempt to access an element that is out of the range of the object. Note that this does not work with the array subscript operator: _[ ]_
