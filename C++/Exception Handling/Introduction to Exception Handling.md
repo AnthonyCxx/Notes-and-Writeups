@@ -33,7 +33,7 @@ try
 }
 catch(bad_alloc)  //Fatal error caught, now the program won't crash.
 {
-  clog << "Error: array could not be allocated...\n";
+  clog << "Error: array could not be allocated...\n";   //Report the error
 }
 ```
 
