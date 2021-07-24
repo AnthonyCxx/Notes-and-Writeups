@@ -109,4 +109,7 @@ int main()
 }
 ```
 
-## _catch_ Block order and Derived Exception Classes
+## Catch Block order and Derived Exception Classes
+Substitutability is a fundamental principle of design inhherited classes; anywhere where you use the base class, you should be able to use the derived class. Though
+incredibly convenient for functions, it can cause some problems for derived exceptions classes, as the derived exception class gets caught by a _catch_ block meant
+for the base class. To solve this problem, always put the _catch_ block for the derived exception class ***before*** the _catch_ block for the base exception class.
