@@ -81,9 +81,8 @@ int main()
 ```
 
 ## _try_ and _catch_ Blocks and Scope
-_try_ and _catch_ blocks apply to anything that happens within the _try_ block, even if it happens within a function in the _try_ block. <br />
-Be careful with this, as calling a function that has a _throw_ statement in it without having it in a _try_ block will result in an unhandled exception,
-crashing the program.
+_try_ and _catch_ blocks apply to anything that happens within the _try_ block, even if it happens within a function in the _try_ block. Be careful with this, 
+as calling a function that has a _throw_ statement in it without having it in a _try_ block will result in an unhandled exception, crashing the program.
 
 ```C++
 #include <iostream>
