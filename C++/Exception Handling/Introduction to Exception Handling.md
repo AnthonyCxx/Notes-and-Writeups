@@ -96,4 +96,4 @@ isocpp.org: [_Exceptions and Error Handling_](https://isocpp.org/wiki/faq/except
 cplusplus.com: [_assert_](https://www.cplusplus.com/reference/cassert/assert/) <br />
 StackOverflow: [_Why should I use asserts?_](https://stackoverflow.com/questions/1081409/why-should-i-use-asserts) <br />
 TutorialCup: [_Exception Handling in C++_](https://www.tutorialcup.com/cplusplus/exception-handling.htm) <br />
-[_std::exception_](https://en.cppreference.com/w/cpp/error/exception) <br />
+CPPReference: [_std::exception_](https://en.cppreference.com/w/cpp/error/exception) <br />
