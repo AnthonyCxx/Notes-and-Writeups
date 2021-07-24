@@ -55,6 +55,26 @@ int main()
 }
 ```
 
+## Parameters
+Functions can take [parameters](https://www.thoughtco.com/definition-of-parameters-958124) (sometimes called arguments). The function can then use these 
+values as variables. When declaring parameters, be sure to declare their type as well. A simple method '_add_' could take two numbers as parameters and return their sum.
+Parameters should be declared as a part of the parameters list (inside the parentheses following the function name) and should be prefaced
+
+```C++
+#include <iostream>
+using namespace std;
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    cout << "5 + 5 = " << add(5, 5) << '\n';
+}
+```
+
 # Methods IGJEAIOJGOIEAJG not finished thanks
 
 ## Defining a Method
