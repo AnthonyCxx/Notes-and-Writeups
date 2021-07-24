@@ -84,10 +84,47 @@ int main()
 ```
 
 ## Catching All Errors with an Elipsis
-The ellipsis operator, ..., can be used as a general catch-all. Think of it as Python's `except Exception:` or Java's [_Throwable_](https://www.geeksforgeeks.org/throwable-class-in-java-with-examples/)
+The ellipsis operator, ..., can be used as a general catch-all. Think of it as Python's _except Exception:_ or Java's [_Throwable_](https://www.geeksforgeeks.org/throwable-class-in-java-with-examples/)
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+int main()
+{
+    double numerator, denominator, result;
+
+    //Get the numerator and denominator from the user
+    cout << "Enter the numerator and denominator: ";
+    cin >> numerator >> denominator;
+
+    /*
+        User enters '10' for the numerator
+        and '0' for the denominator.
+    */
+
+    try
+    {
+        //Throw error?
+        if (denominator == 0)
+            throw string("you cannot divide by zero.");  //'string' is a class and has a constructor
+
+        //Never executed since denominator is thrown
+        result = numerator / denominator;
+    }
+    catch(...)   //Catch ANYTHING
+    {
+        //Error message, so use clog instead of cout
+        clog << "An error has occured...\n";
+        result = 0;
+    }
+
+    //Print result of the division
+    cout << "Result: " << result << '\n';
+
+    return 0;
+}
 ```
 
 
