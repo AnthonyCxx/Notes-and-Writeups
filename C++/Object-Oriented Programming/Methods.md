@@ -3,7 +3,8 @@ A method is a function that is associated with a class or struct. Methods are bl
 Methods have full access to the members of a class, including private members.
 
 # Functions
-A function is a block of code that can be called upon by name
+A function is a block of code that can be called upon by name, executing it. A function declaration requires a return type, the name of the function, and a list of the
+parameters that it takes.
 
 
 # Methods
