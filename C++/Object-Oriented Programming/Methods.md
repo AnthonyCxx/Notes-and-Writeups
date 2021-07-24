@@ -108,81 +108,72 @@ int main()
 ```
 
 ## Defining a Method Outside of a Class
-Classes can get quite complex, The body of a method does not have to be defined inside of a class; methods only have to be declared inside a class. <br />
+In actual practice, classes can have many functions, some of which may have hundreds of lines of code. This makes class definitions quite crowded.
+So, you can split the implementation of a class from the declaration inside the class; in practice, you should always divide the declaration and implementation
+of methods. That way, you can quickly see what a class does without necessarily having to see the implementation.
 
-When implementing a method outside of a class, you have to prefix the name of the function by the name of the class
-followed by the scope resolution operator, `::`.
+When implementing a method outside of a class, you have to prefix the name of the function by the name of the class followed by the scope resolution operator, `::`,
+to specify which class the method belongs to.
 
 ```C++
 #include <iostream>
-#include <string>
 using namespace std;
 
-class Pickaxe
+class Tool
 {
-    private:
-        string name;
-        int durability;
-
     public:
-        //Functions
-        Pickaxe(string);
-        string getName();
-        void setName(string);
-        int getDurability();
-        void setDurability(int);
-        void swing();
+        //Declaring that there is a function called 'use()'
+        void use();
 };
 
-// METHOD IMPLEMENTATION //
-
-//Constructor
-Pickaxe::Pickaxe(string Name = "A Generic Pickaxe")
+//Implementing the function 'use' outside the class
+void Tool::use()
 {
-    name = Name;
+    cout << "Using the tool!\n";
 }
 
-//Get + set methods for 'name'
-string Pickaxe::getName()
-{
-    return name;
-}
-
-void Pickaxe::setName(string Name)
-{
-    name = Name;
-}
-
-//Get + set methods for 'durability'
-int Pickaxe::getDurability()
-{
-return durability;
-}
-
-void Pickaxe::setDurability(int Durability)
-{
-    durability = Durability;
-}
-
-//Swing the pickaxe
-void Pickaxe::swing()
-{
-    cout << "Swinging the pickaxe!\n";
-    durability--;
-}
-
-
-// DRIVER CODE //
 int main()
 {
-    Pickaxe pickaxe;
+    //Declare a new tool
+    Tool tool;
 
-    pickaxe.swing();
+    //Use the tool
+    tool.use();
+
+    return 0;
 }
 ```
 
 ## _const_ Methods
+When declaring the parameters of a function, you can declare them as _const_; this creates a problem for class methods because the data members of a class
+are not taken as parameters, so you cannot label them as _const_ when writing the function parameters. To solve this, write the _const_ after the parameter list;
+doing so will prevent the function from changing any of the data members of the class.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+class Tool
+{
+    public:
+        //Declaring that there is a function called 'use()'
+        void use() const;
+};
+
+//Implementing the function 'use' outside the class
+void Tool::use() const
+{
+    cout << "Using the tool!\n";
+}
+
+int main()
+{
+    //Declare a new tool
+    Tool tool;
+
+    //Use the tool
+    tool.use();
+
+    return 0;
+}
 ```
