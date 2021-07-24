@@ -84,7 +84,8 @@ int main()
 ```
 
 ## Catching All Errors with an Elipsis
-The ellipsis operator, ..., can be used as a general catch-all. Think of it as Python's _except Exception_ or Java's [_Throwable_](https://www.geeksforgeeks.org/throwable-class-in-java-with-examples/)
+The ellipsis operator, ..., can be used as a general catch-all. Think of it as Python's [_except Exception_](https://docs.python.org/3/tutorial/errors.html) 
+or Java's [_Throwable_](https://www.geeksforgeeks.org/throwable-class-in-java-with-examples/)
 
 ```C++
 #include <iostream>
