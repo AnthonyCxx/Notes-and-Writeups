@@ -3,6 +3,7 @@ The following exceptions are built into C++ and inherited from the [_exception c
 There are plenty of exceptions built into C++, but a lot of them are very specific, so I've included the most applicable here.
 
 ### _bad\_alloc_
+_bad\_alloc_ is thrown when a _new_ statement fails to allocate new memory.
 
 ```C++
 #include <iostream>
