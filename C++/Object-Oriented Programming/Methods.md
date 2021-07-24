@@ -80,50 +80,36 @@ A method is a function that is associated with a class or struct. Methods are bl
 Methods have full access to the members of a class, including private members.
 
 ## Defining a Method
+To define a method, just define a function inside of a class. To use the method, call the function on an object using the [member-access operator](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160).
 
 ```C++
 #include <iostream>
-#include <string>
 using namespace std;
 
-class Pickaxe
+class Tool
 {
-    private:
-        string name;
-        int durability;
-
     public:
-        //Constructor
-        Pickaxe(string Name = "A Generic Pickaxe")
+        void use()
         {
-            name = Name;
-        }
-
-        //Get + set methods for 'name'
-        string getName() { return name; }
-        void setName(string Name) { name = Name; }
-
-        //Get + set methods for 'durability'
-        int getDurability() { return durability; }
-        void setDurability(int Durability) { durability = Durability; }
-
-        void swing()
-        {
-            cout << "Swinging the pickaxe!\n";
-            durability--;
+            cout << "Using the tool!\n";
         }
 };
 
 int main()
 {
-    Pickaxe pickaxe;
+    //Declare a new tool
+    Tool tool;
 
-    pickaxe.swing();
+    //Use the tool
+    tool.use();
+
+    return 0;
 }
 ```
 
 ## Defining a Method Outside of a Class
-The body of a method does not have to be defined inside of a class; methods only have to be declared inside a class. <br />
+Classes can get quite complex, The body of a method does not have to be defined inside of a class; methods only have to be declared inside a class. <br />
+
 When implementing a method outside of a class, you have to prefix the name of the function by the name of the class
 followed by the scope resolution operator, `::`.
 
