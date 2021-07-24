@@ -108,3 +108,5 @@ int main()
     return 0;
 }
 ```
+
+## _catch_ Block order and Derived Exception Classes
