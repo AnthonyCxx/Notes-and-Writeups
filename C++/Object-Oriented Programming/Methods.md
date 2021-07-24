@@ -255,7 +255,7 @@ int main()
 ## _const_ Methods
 When declaring the parameters of a function, you can declare them as _const_; this creates a problem for class methods because the data members of a class
 are not taken as parameters, so you cannot label them as _const_ when writing the function parameters. To solve this, write the _const_ after the parameter list;
-doing so will prevent the function from changing any of the data members of the class.
+doing so will prevent the function from changing any of the data members of the class. And no, you cannot have a _const_ constructor.
 
 ```C++
 #include <iostream>
@@ -263,10 +263,24 @@ using namespace std;
 
 class Tool
 {
-    public:
+        public:
+                // DATA MEMBERS //
+                //Adding a data member for the constructor to initialize
+                int durability;
+
+                // FUNCTIONS //
+                //Declaring the constructor (no return type)
+                Tool(int);
+
         //Declaring that there is a function called 'use()'
         void use() const;
 };
+
+//Implementing the construtor outside of the class
+Tool::Tool(int Durability)
+{
+        durability = Durability;
+}
 
 //Implementing the function 'use' outside the class
 void Tool::use() const
@@ -277,7 +291,7 @@ void Tool::use() const
 int main()
 {
     //Declare a new tool
-    Tool tool;
+    Tool tool(100);   //Durability is 100
 
     //Use the tool
     tool.use();
