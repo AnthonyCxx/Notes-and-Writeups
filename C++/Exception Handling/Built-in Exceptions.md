@@ -10,15 +10,15 @@ using namespace std;
 
 int main()
 {
-        try
-        {
-                //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
-                int* massiveArray = new int[9223372036854775];
-        }
-        catch(const bad_alloc& e)
-        {
-                clog << "Error: " << e.what() << '\n';
-        }
+    try
+    {
+        //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
+        int* massiveArray = new int[9223372036854775];
+    }
+    catch(const bad_alloc& e)
+    {
+        clog << "Error: " << e.what() << '\n';
+    }
 
     return 0;
 }
@@ -34,7 +34,7 @@ using namespace std;
 
 int main()
 {
-    //An array of 100 integers
+     //An array of 100 integers
      array<int, 100> arr;
      int element;
 
