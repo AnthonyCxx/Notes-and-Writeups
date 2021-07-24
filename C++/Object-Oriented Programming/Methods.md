@@ -4,12 +4,30 @@ Methods have full access to the members of a class, including private members.
 
 # Functions
 A function is a block of code that can be called upon by name, executing it. A function declaration requires a return type, the name of the function, and a list of the
-parameters that it takes. For now, only worry about the name.
+parameters that it takes. For now, only worry about the name, since we'll be using void functions.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+//Definition of a function 'printHello' with no return type (void) or parameters
+void printHello()
+{
+    cout << "Hello, world!" << '\n';
+}
+
+int main()
+{
+    //Calling function 'printHello'
+    printHello();
+
+    return 0;
+}
 ```
 
+## The _return_ Keyword and Return Types
+Methods can return a value to wherever it was called. The return keyword returns that value, which could be a literal, a variable, an expression, or even a data structure 
+(an array, tuple, dictionary, etc.). Once the return statement is executed, the function ends, regardless of whether there was code after the return statement. Any good compiler should warn you that the code after the return statement is 'dead code' (code that cannot and will not be executed). The datatype of the value that will be returned must be declared as a part of the method declaration (following the access modifier). Here, the return5() method returns an integer, 5. If a method does not return any value, then its return type is void.
 
 # Methods
 
