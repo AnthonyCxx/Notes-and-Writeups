@@ -1,5 +1,5 @@
 # Functions and Methods in C++
-If you already know what functions are, click here to skip to methods.
+If you already know what functions are, [click here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Methods.md#methods) to skip to methods.
 
 # Functions
 A function is a block of code that can be called upon by name, executing it. A function declaration requires a return type, the name of the function, and a list of the
