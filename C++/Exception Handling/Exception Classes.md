@@ -113,3 +113,70 @@ int main()
 Substitutability is a fundamental principle of design inhherited classes; anywhere where you use the base class, you should be able to use the derived class. Though
 incredibly convenient for functions, it can cause some problems for derived exceptions classes, as the derived exception class gets caught by a _catch_ block meant
 for the base class. To solve this problem, always put the _catch_ block for the derived exception class ***before*** the _catch_ block for the base exception class.
+
+### Bad Example
+If you try to compile this code, GCC will give you the following warning: "_warning: exception of type ‘IndeterminateResultException’ will be caught
+by earlier handler for ‘DivideByZeroException’_".
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class DivideByZeroException
+{
+    private:
+        string message;
+
+    public:
+        DivideByZeroException(string Message = "you cannot divide by zero!")
+        {
+            message = Message;
+        }
+
+        string what() const
+        {
+            return message;
+        }
+
+};
+
+class IndeterminateResultException: public DivideByZeroException
+{
+    private:
+        string message;
+
+    public:
+        IndeterminateResultException(string Message = "dividing zero by zero is indeterminate!")
+        {
+            message = Message;
+        }
+
+        string what() const
+        {
+            return message;
+        }
+};
+
+
+int main()
+{
+    try
+    {
+        //Gets caught by 'DivideByZeroException' since it's derived from it...
+        throw IndeterminateResultException();
+    }
+    catch(const DivideByZeroException& e)
+    {
+        clog << "Caught a divide by zero exception!\n";
+    }
+    catch(const IndeterminateResultException& e)
+    {
+        clog << "Caught an indeterminate result exception!\n";
+    }
+
+    return 0;
+}
+```
+
+### Good Example
