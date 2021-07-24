@@ -202,6 +202,56 @@ int main()
 }
 ```
 
+## Special Methods: Constructors
+A constructor is a special type of method that is used to initialize the data members of a class. Constructors are automatically called when an instance of the 
+class is made, which makes them incredibly convenient. You can differentiate general methods from the constructor because the constructor shares the name of the 
+class verbatim. Classes also do not have a return type.
+
+To pass values to the constructor, write them in a parameter list `( )` at the end of the object declaration as if declaring an instance of the class were calling
+a function (because it is).
+```C++
+#include <iostream>
+using namespace std;
+
+class Tool
+{
+        public:
+                // DATA MEMBERS //
+                //Adding a data member for the constructor to initialize
+                int durability;
+
+                // FUNCTIONS //
+                //Declaring the constructor (no return type)
+                Tool(int);
+
+        //Declaring that there is a function called 'use()'
+        void use();
+};
+
+//Implementing the construtor outside of the class
+Tool::Tool(int Durability)
+{
+        durability = Durability;
+}
+
+//Implementing the function 'use' outside the class
+void Tool::use()
+{
+    cout << "Using the tool!\n";
+}
+
+int main()
+{
+    //Declare a new tool
+    Tool tool(100);   //Durability is 100
+
+    //Use the tool
+    tool.use();
+
+    return 0;
+}
+```
+
 ## _const_ Methods
 When declaring the parameters of a function, you can declare them as _const_; this creates a problem for class methods because the data members of a class
 are not taken as parameters, so you cannot label them as _const_ when writing the function parameters. To solve this, write the _const_ after the parameter list;
