@@ -180,3 +180,65 @@ int main()
 ```
 
 ### Good Example
+Now that the most specific (most derived) _catch_ block comes first, substitutability won't cause any problems.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class DivideByZeroException
+{
+    private:
+        string message;
+
+    public:
+        DivideByZeroException(string Message = "you cannot divide by zero!")
+        {
+            message = Message;
+        }
+
+        string what() const
+        {
+            return message;
+        }
+
+};
+
+class IndeterminateResultException: public DivideByZeroException
+{
+    private:
+        string message;
+
+    public:
+        IndeterminateResultException(string Message = "dividing zero by zero is indeterminate!")
+        {
+            message = Message;
+        }
+
+        string what() const
+        {
+            return message;
+        }
+};
+
+
+int main()
+{
+    try
+    {
+        //Gets caught by 'IndeterminateResultException' since it's catch block comes first
+        throw IndeterminateResultException();
+    }
+    catch(const IndeterminateResultException& e)
+    {
+        clog << "Caught an indeterminate result exception!\n";
+    }
+    catch(const DivideByZeroException& e)
+    {
+        clog << "Caught a divide by zero exception!\n";
+    }
+
+    return 0;
+}
+```
