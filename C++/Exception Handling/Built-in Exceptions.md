@@ -15,7 +15,7 @@ int main()
         //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
         int* massiveArray = new int[9223372036854775];
     }
-    catch(const bad_alloc& e)
+    catch(const bad_alloc& e)  //Catch failed 'new' statement
     {
         clog << "Error: " << e.what() << '\n';
     }
