@@ -1,6 +1,12 @@
-# Methods in C++
+# Functions and Methods in C++
 A method is a function that is associated with a class or struct. Methods are blocks of code that can be invoked by name, executing the body of the method (its code).
 Methods have full access to the members of a class, including private members.
+
+# Functions
+
+
+
+# Methods
 
 ## Defining a Method
 
