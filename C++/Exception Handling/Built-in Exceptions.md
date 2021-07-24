@@ -26,6 +26,7 @@ int main()
     }
     catch (const out_of_range& e)
     {
+        //Prints: 'Error: array::at: __n (which is 99998) >= _Nm (which is 100)'
         clog << "Error: " << e.what() << '\n';
     }
 
