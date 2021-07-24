@@ -1,6 +1,5 @@
 # Functions and Methods in C++
-A method is a function that is associated with a class or struct. Methods are blocks of code that can be invoked by name, executing the body of the method (its code).
-Methods have full access to the members of a class, including private members.
+If you already know what functions are, click here to skip to methods.
 
 # Functions
 A function is a block of code that can be called upon by name, executing it. A function declaration requires a return type, the name of the function, and a list of the
@@ -77,6 +76,8 @@ int main()
 ```
 
 # Methods IGJEAIOJGOIEAJG not finished thanks
+A method is a function that is associated with a class or struct. Methods are blocks of code that can be invoked by name, executing the body of the method (its code).
+Methods have full access to the members of a class, including private members.
 
 ## Defining a Method
 
