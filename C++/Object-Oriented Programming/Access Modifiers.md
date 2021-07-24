@@ -115,6 +115,8 @@ int main()
 
 ## Protected
 Protected members are similar to private members in that they are only interally accessable; however, protected members are also accessible to derived classes.
+If you don't know what inheritance is yet, feel free to ignore this keyword and stick with _public_ and _private_.
+
 ```C++
 /* Note: this code does not compile. */
 
