@@ -21,9 +21,6 @@ what():  std::bad\_alloc.  <br />
 Aborted (core dumped)"_ <br />
 
 ```C++
-// Protip: If you don't know the error type, catching '...' will catch any and all errors. //
-// ^^ If you're in CSC-1720, then this will be on your test ^^
-
 try
 {
   //Always fails, array size is too large (~9.223 quadrillion bytes or 8 petabytes)
@@ -85,7 +82,8 @@ int main()
 
 ## Catching All Errors with an Elipsis
 The ellipsis operator, ..., can be used as a general catch-all. Think of it as Python's [_except Exception_](https://docs.python.org/3/tutorial/errors.html) 
-or Java's [_Throwable_](https://www.geeksforgeeks.org/throwable-class-in-java-with-examples/)
+or Java's [_Throwable_](https://www.geeksforgeeks.org/throwable-class-in-java-with-examples/). <br />
+If you are in CSC-1720, this will be on your test.
 
 ```C++
 #include <iostream>
