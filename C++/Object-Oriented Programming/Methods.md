@@ -26,8 +26,34 @@ int main()
 ```
 
 ## The _return_ Keyword and Return Types
-Methods can return a value to wherever it was called. The return keyword returns that value, which could be a literal, a variable, an expression, or even a data structure 
-(an array, tuple, dictionary, etc.). Once the return statement is executed, the function ends, regardless of whether there was code after the return statement. Any good compiler should warn you that the code after the return statement is 'dead code' (code that cannot and will not be executed). The datatype of the value that will be returned must be declared as a part of the method declaration (following the access modifier). Here, the return5() method returns an integer, 5. If a method does not return any value, then its return type is void.
+Functions can return a value to wherever it was called. The return keyword returns that value, which could be a literal, a variable, an expression, or even a 
+data structure (an array, tuple, map, etc.). Once the return statement is executed, the function ends, regardless of whether there was code after the return statement. 
+Any good compiler should warn you that the code after the return statement is 'dead code' (code that cannot and will not be executed). The datatype of the value that 
+will be returned must be declared as a part of the function declaration (just before the name). Here, the return5() method returns an integer, 5. 
+If a method does not return any value, then its return type is void.
+
+```C++
+#include <iostream>
+using namespace std;
+
+/*
+    A function 'return5' that returns the integer 5
+    to where it was called
+*/
+int return5()
+{
+    return 5;
+}
+
+int main()
+{
+    int number = return5();
+
+    cout << "The number returned by function 'return5' is: " << number << '\n';
+
+    return 0;
+}
+```
 
 # Methods IGJEAIOJGOIEAJG not finished thanks
 
