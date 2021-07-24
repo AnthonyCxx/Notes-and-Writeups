@@ -81,6 +81,38 @@ int main()
 ```
 
 ## _try_ and _catch_ Blocks and Scope
+_try_ and _catch_ blocks apply to anything that happens within the _try_ block, even if it happens within a function in the _try_ block. <br />
+Be careful with this, as calling a function that has a _throw_ statement in it without having it in a _try_ block will result in an unhandled exception,
+crashing the program.
+
+```C++
+#include <iostream>
+using namespace std;
+
+void print100(int argument)
+{
+    if (argument != 100)
+        throw invalid_argument("argument was not 100");
+
+    //If valid (100), print the argument
+    cout << argument << '\n';
+}
+
+int main()
+{
+    try
+    {
+        //Throws 'invalid_argument' from inside 'print100()'
+        print100(97);
+    }
+    catch(const invalid_argument& e)  //Catches 'invalid_argument' from 'print100()'
+    {
+        cout << "Error: " << e.what() << '\n';
+    }
+
+    return 0;
+}
+```
 
 ## Catching All Errors with an Elipsis
 The ellipsis operator, ..., can be used as a general catch-all. Think of it as Python's [_except Exception_](https://docs.python.org/3/tutorial/errors.html) 
