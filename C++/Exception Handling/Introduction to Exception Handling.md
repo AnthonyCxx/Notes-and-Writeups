@@ -7,8 +7,6 @@ Exception handling is preferable to only error checking (C-style error handling)
 standard control flow; moreover, exception handling does not require the programmer to implcitly know that some generic _if_ statment is meant to handle an error because
 the exception handling makes it abundently apparent.
 
-After you finish reading all of this, read through [_Modern C++ best practices for exceptions and error handling (2020)_](https://docs.microsoft.com/en-us/cpp/cpp/errors-and-exception-handling-modern-cpp?view=msvc-160).
-
 ## Basic Error Handling with _try_ and _catch_
 Exception handling is fundamentally built upon two keywords: _try_ and _catch_. _try_ defines a block of code within which the programmer expects
 an error may occur and _catch_ catches the error, defining a block that runs after the error occurs. When an exception is raised, the program immediately
