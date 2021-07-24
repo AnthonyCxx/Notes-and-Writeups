@@ -119,7 +119,7 @@ int add(int a = 0, int b = 0)
     return a + b;
 }
 
-//'add' funtion for integers
+//'add' funtion for doubles
 double add(double a = 0, double b = 0)
 {
     return a + b;
