@@ -17,10 +17,6 @@ For example, if you created a _furniture_ class with some attributes for the col
 _furniture_ class and only have to implement a few new attributes such as number of legs and chair model.
 
 ```C#
-
-```
-
-```
 //****************** Main Function *********************\\
 static void Main(string[] args)
 {
