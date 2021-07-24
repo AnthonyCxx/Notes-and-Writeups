@@ -123,6 +123,7 @@ by earlier handler for ‘DivideByZeroException’_".
 #include <string>
 using namespace std;
 
+//For dividing by zero
 class DivideByZeroException
 {
     private:
@@ -141,6 +142,7 @@ class DivideByZeroException
 
 };
 
+//For dividing zero by zero
 class IndeterminateResultException: public DivideByZeroException
 {
     private:
@@ -187,6 +189,7 @@ Now that the most specific (most derived) _catch_ block comes first, substitutab
 #include <string>
 using namespace std;
 
+//For dividing by zero
 class DivideByZeroException
 {
     private:
@@ -205,6 +208,8 @@ class DivideByZeroException
 
 };
 
+
+//For dividing zero by zero
 class IndeterminateResultException: public DivideByZeroException
 {
     private:
