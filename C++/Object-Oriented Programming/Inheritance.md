@@ -130,6 +130,7 @@ class Dog: public Animal  //Inherit publicly from the 'Animal' class
 You can call the constructor of a base class by putting a colon after the parameter list of the constructor of a derived class and then passing the 
 variables to the base constructor. To call multiple base constructors, separate them by commas.
 
+Calling the constructor of a base class makes initializing derived classes far less verbose.
 ```C++
 //Constructor, passing 'Age' and 'Genus' to the base constructor
 Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)   
@@ -139,14 +140,17 @@ Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)
 ```
 
 ## Multi-level Inheritance
+Multi-level inheritance occurs when you use a derived class as a base class for another derived class, creating a chain of inheritance.
 
+Here, a class 'Labrador' is derived from 'Dog', which is derived from 'Animal'. <br />
+Refer above for the code for the 'Dog' and 'Animal' classes.
 
 ```C++
 
 ```
 
 ## Multiple Inheritance
-
+Multiple inheritance occurs when a derived class inherits from multiple, unrelated base classes.
 
 ```C++
 
