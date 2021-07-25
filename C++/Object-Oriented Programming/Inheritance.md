@@ -7,6 +7,7 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 
 ## Inheritance
 
+## Access Modifiers for Inheritance
 
 ## Multi-level Inheritance
 
