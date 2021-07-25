@@ -62,7 +62,7 @@ Here, I used regex to check if a string contained any illegal symbols (%, !, ^, 
 using namespace std;
 
 // Enum of possible error states for a string
-enum StrErrCode { GOOD_STR = 0, EMPTY_STR = 100, INVALID_CHAR = 110, };
+enum StrErrCode { GOOD_STR = 0, EMPTY_STR = 100, INVALID_CHAR = 110 };
 
 // Function to check if a given string is valid (not empty nor contain illegal symbols)
 StrErrCode StrCheck(const string& str)
