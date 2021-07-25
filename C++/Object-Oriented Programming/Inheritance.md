@@ -6,9 +6,92 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
 
 ## Inheritance
+There's some stuff in here that you probably haven't gotten to yet. Refer below to [_Access Modifiers for Inheritance_]() and 
+[_Calling the Constructor of a Base Class_]() to clear things up a bit.
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+// ****** ANIMAL CLASS ****** //
+class Animal
+{
+     //'genus': any of the taxonomic groups into which a family
+    // is divided and which contains one or more species.
+    private:
+        int age;
+        string genus;
+
+    public:
+        Animal(int, string);
+        void eat();
+        void drink();
+        void sleep();
+};
+
+//Constructor
+Animal::Animal(int Age, string Genus)
+{
+    age = Age;
+    genus = Genus;
+}
+
+//Eat
+void Animal::eat()
+{
+    cout << "Eating...\n";
+}
+
+//Drink
+void Animal::drink()
+{
+    cout << "Drinking...\n";
+}
+
+//Sleeping
+void Animal::sleep()
+{
+    cout << "Sleeping...\n";
+}
+
+// ****** DOG CLASS ****** //
+class Dog: public Animal
+{
+    private:
+        string breed;
+
+    public:
+        Dog(int, string, string);
+        void bark();
+};
+
+//Constructor
+Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)
+{
+    breed = Breed;
+}
+
+void Dog::bark()
+{
+    cout << "Woof!\n";
+}
+
+// ****** DRIVER CODE ****** //
+int main()
+{
+    //Declare a new dog :)
+    Dog labrador(6, "canis lupus familiaris", "Labrador Retriever");
+
+    //Use the inherited functions from 'Animal'
+    labrador.eat();
+    labrador.sleep();
+
+    //Use the new 'bark' method from 'Dog'
+    labrador.bark();
+
+    return 0;
+}
 ```
 
 ## Access Modifiers for Inheritance
