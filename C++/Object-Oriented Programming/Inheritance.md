@@ -108,8 +108,9 @@ int main()
 
 ## Access Modifiers for Inheritance
 Access modifiers affect how members of a class (functions and variables) can be accessed by other code, _including_ derived classes. <br />
-Because of this, the _protected_ modifier should be used instead of _private_ to allow derived classes to still access the class members. <br />
-If not specified, it will assume private.
+Because of this, the _protected_ modifier should be used for the data members of the base class instead of _private_ 
+to allow derived classes to still access said class members. <br />
+When inheriting from a class, inherit it as _public_; you can inherit as _private_ or _protected_, but don't worry about that for now. If not specified, it will assume private.
 
 ```C++
 // ****** DOG CLASS ****** //
@@ -124,10 +125,6 @@ class Dog: public Animal
         void wagTail();
 };
 ```
-
-Here is a chart of the access specifier in the class in relation to the type of inheritance.
-![image](https://user-images.githubusercontent.com/70488531/126916527-dd1c35e4-7566-48bb-af99-0dc920f98fb7.png)
-> Via [Programiz.com](https://www.programiz.com/cpp-programming/access-modifiers)
 
 ## Calling the Constructor of a Base Class
 You can call the constructor of a base class by putting a colon after the parameter list of the constructor of a derived class and then passing the 
