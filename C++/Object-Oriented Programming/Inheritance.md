@@ -100,7 +100,7 @@ Access modifiers affect how members of a class (functions and variables) can be 
 Because of this, the _protected_ modifier should be used instead of _private_ to allow derived classes to still access the class members.
 
 Here is a chart of the access specifier in the class in relation to the type of inheritance.
-![image](https://user-images.githubusercontent.com/70488531/126916246-3b326dde-51cb-4899-9c5f-02ce813f2261.png)
+![image](https://user-images.githubusercontent.com/70488531/126916275-875ae3f9-d27e-463a-8850-126069fc4701.png)
 > Via [Programiz.com](https://www.programiz.com/cpp-programming/access-modifiers)
 
 ## Calling the Constructor of a Base Class
