@@ -265,7 +265,7 @@ using namespace std;
 class Scoreboard
 {
     private:
-        int* scores;     //A scoreboard to store points (as ints)
+        int* scores;        //A scoreboard to store points (as ints)
         size_t length;     //The length of the array (needed for looping)
 
     /*
