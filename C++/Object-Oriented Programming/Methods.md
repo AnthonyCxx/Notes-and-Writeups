@@ -274,39 +274,43 @@ class Scoreboard
     */
 
     public:
-    //Constructor
-    Scoreboard(int players)
-    {
-        //Keep track of the scores for each player
-        length = players;
-        scores = new int[length];
-
-        //Set all player's score to zero (initializing the array)
-        for(int i=0; i < length; i++)
-        {
-            scores[i] = 0;
-        }
-
-        cout << "Created a scorebeard with " << length << " elements...\n";
-    }
-
-    //Destructor
-    ~Scoreboard()
-    {
-        //Delete the array of scores
-        delete [] scores;
-
-        cout << "Deleting the array of " << length << " elements...\n";
-    }
-
-    void showScores()
-    {
-        for(int i=0; i < length; i++)
-        {
-            cout << "Player " << i + 1 << ": " << scores[length] << '\n';
-        }
-    }
+        Scoreboard(int);
+        ~Scoreboard();
+        void showScores();
 };
+
+//Constructor
+Scoreboard::Scoreboard(int players)
+{
+    //Keep track of the scores for each player
+    length = players;
+    scores = new int[length];
+
+    //Set all player's score to zero (initializing the array)
+    for(int i=0; i < length; i++)
+    {
+        scores[i] = 0;
+    }
+
+    cout << "Created a scorebeard with " << length << " elements...\n";
+}
+
+//Destructor
+Scoreboard::~Scoreboard()
+{
+    //Delete the array of scores
+    delete [] scores;
+
+    cout << "Deleting the array of " << length << " elements...\n";
+}
+
+void Scoreboard::showScores()
+{
+    for(int i=0; i < length; i++)
+    {
+        cout << "Player " << i + 1 << ": " << scores[length] << '\n';
+    }
+}
 
 int main()
 {
