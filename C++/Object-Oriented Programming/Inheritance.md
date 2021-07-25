@@ -64,6 +64,7 @@ class Dog: public Animal
     public:
         Dog(int, string, string);
         void bark();
+        void wagTail();
 };
 
 //Constructor
@@ -78,6 +79,12 @@ void Dog::bark()
     cout << "Woof!\n";
 }
 
+//wagTail
+void Dog::wagTail()
+{
+        cout << "*wagging tail*\n";
+};
+
 // ****** DRIVER CODE ****** //
 int main()
 {
@@ -88,8 +95,9 @@ int main()
     labrador.eat();
     labrador.sleep();
 
-    //Use the new 'bark' method from 'Dog'
+    //Use the new 'bark' and 'wagTail' methods from 'Dog'
     labrador.bark();
+    labrador.wagTail();
 
     return 0;
 }
@@ -100,14 +108,19 @@ Access modifiers affect how members of a class (functions and variables) can be 
 Because of this, the _protected_ modifier should be used instead of _private_ to allow derived classes to still access the class members.
 
 Here is a chart of the access specifier in the class in relation to the type of inheritance.
-![image](https://user-images.githubusercontent.com/70488531/126916275-875ae3f9-d27e-463a-8850-126069fc4701.png)
+![image](https://user-images.githubusercontent.com/70488531/126916293-2fb54339-52bd-4fe6-8698-ea975e185d30.png)
 > Via [Programiz.com](https://www.programiz.com/cpp-programming/access-modifiers)
 
 ## Calling the Constructor of a Base Class
-
+You can call the constructor of a base class by putting a semi-colon after the parameter list of the constructor of a derived class and then passing the 
+variables to the base constructor. To call multiple base constructors, separate them by commas.
 
 ```C++
-
+//Constructor, passing 'Age' and 'Genus' to the base constructor
+Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)   
+{
+    breed = Breed;
+}
 ```
 
 ## Multi-level Inheritance
