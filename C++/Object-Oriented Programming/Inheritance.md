@@ -107,9 +107,9 @@ int main()
 ```
 
 ## Access Modifiers for Inheritance
-Access modifiers affect how members of a class (functions and variables) can be accessed by other code, _including_ derived classes. <br />
+Access modifiers affect how members of a class (functions and variables) can be accessed by other code, _including_ derived classes. 
 Because of this, the _protected_ modifier should be used for the data members of the base class instead of _private_ 
-to allow derived classes to still access said class members. <br />
+to allow derived classes to still access said class members.
 When inheriting from a class, inherit it as _public_; you can inherit as _private_ or _protected_, but don't worry about that for now. If not specified, it will assume private.
 
 ```C++
