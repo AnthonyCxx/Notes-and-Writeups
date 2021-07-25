@@ -215,14 +215,14 @@ using namespace std;
 
 class Tool
 {
-        public:
-                // DATA MEMBERS //
-                //Adding a data member for the constructor to initialize
-                int durability;
+    public:
+        // DATA MEMBERS //
+        //Adding a data member for the constructor to initialize
+        int durability;
 
-                // FUNCTIONS //
-                //Declaring the constructor (no return type)
-                Tool(int);
+        // FUNCTIONS //
+        //Declaring the constructor (no return type)
+        Tool(int);
 
         //Declaring that there is a function called 'use()'
         void use();
@@ -231,7 +231,7 @@ class Tool
 //Implementing the construtor outside of the class
 Tool::Tool(int Durability)
 {
-        durability = Durability;
+    durability = Durability;
 }
 
 //Implementing the function 'use' outside the class
