@@ -114,7 +114,7 @@ When inheriting from a class, inherit it as _public_; you can inherit as _privat
 
 ```C++
 // ****** DOG CLASS ****** //
-class Dog: public Animal
+class Dog: public Animal  //Inherit publicly from the 'Animal' class
 {
     private:
         string breed;
