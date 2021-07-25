@@ -7,10 +7,23 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 
 ## Inheritance
 
+```C++
+
+```
 
 ## Access Modifiers for Inheritance
 
+
+```C++
+
+```
+
 ## Calling the Constructor of a Base Class
+
+
+```C++
+
+```
 
 ## Multi-level Inheritance
 
@@ -21,9 +34,30 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 
 ## Multiple Inheritance
 
+
+```C++
+
+```
 ## Virtual Methods
 
+
+```C++
+
+```
+
+## Calling an Overridden Method of a Base Class
+
+
+```C++
+
+```
+
 ## Pure Virtual Methods and Abstract Classes
+
+
+```C++
+
+```
 
 ## Sources
 TutorialsPoint: [_C++ Inheritance_](https://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm) <br />
