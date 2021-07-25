@@ -6,7 +6,10 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
 
 ## Inheritance
-There's some stuff in here that you probably haven't gotten to yet.  <br /> Refer below to [_Access Modifiers for Inheritance_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#access-modifiers-for-inheritance) and 
+To inherit from an existing class, put a colon after the name of the derived class and then put an access modifier (_public_, _private_, _protected_) and then the name
+of the class to inherit from. If you forget to put an access modifier, it will assume private.
+
+Admittedly, there's some stuff in here that you probably haven't gotten to yet.  <br /> Refer below to [_Access Modifiers for Inheritance_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#access-modifiers-for-inheritance) and 
 [_Calling the Constructor of a Base Class_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#calling-the-constructor-of-a-base-class) to clear things up a bit.
 
 ```C++
@@ -105,14 +108,29 @@ int main()
 
 ## Access Modifiers for Inheritance
 Access modifiers affect how members of a class (functions and variables) can be accessed by other code, _including_ derived classes. <br />
-Because of this, the _protected_ modifier should be used instead of _private_ to allow derived classes to still access the class members.
+Because of this, the _protected_ modifier should be used instead of _private_ to allow derived classes to still access the class members. <br />
+If not specified, it will assume private.
 
 Here is a chart of the access specifier in the class in relation to the type of inheritance.
 ![image](https://user-images.githubusercontent.com/70488531/126916293-2fb54339-52bd-4fe6-8698-ea975e185d30.png)
 > Via [Programiz.com](https://www.programiz.com/cpp-programming/access-modifiers)
 
+```C++
+// ****** DOG CLASS ****** //
+class Dog: public Animal
+{
+    private:
+        string breed;
+
+    public:
+        Dog(int, string, string);
+        void bark();
+        void wagTail();
+};
+```
+
 ## Calling the Constructor of a Base Class
-You can call the constructor of a base class by putting a semi-colon after the parameter list of the constructor of a derived class and then passing the 
+You can call the constructor of a base class by putting a colon after the parameter list of the constructor of a derived class and then passing the 
 variables to the base constructor. To call multiple base constructors, separate them by commas.
 
 ```C++
