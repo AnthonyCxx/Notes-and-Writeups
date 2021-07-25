@@ -23,6 +23,9 @@ Please, please do not memorize these. Just use them to learn Vim's grammar so yo
 ## Manipulating Text
 | Combo | Action |
 | ----- | ------ |
+| u | undo last command |
+| ctrl + r | redo last command |
+| 5yy | copy 5 lines |
 | ve~ | change the case from the cursor position to the end of the word |
 | ggVGU | capitalize the entire document |
 
