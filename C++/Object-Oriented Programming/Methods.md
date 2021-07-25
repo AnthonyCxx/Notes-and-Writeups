@@ -95,9 +95,9 @@ int add(int a = 0, int b = 0)
 
 int main()
 {
-    cout << "Calling 'add(5, 5)': " << add(5, 5) << '\n';
-    cout << "Calling 'add(7)' (one parameter): " << add(7) << '\n';
-    cout << "Calling 'add()' (no parameters): " << add() << '\n';
+    cout << "Calling 'add(5, 5)': " << add(5, 5) << '\n';               // a = 5, b = 5
+    cout << "Calling 'add(7)' (one parameter): " << add(7) << '\n';    //  a = 7, b = 0
+    cout << "Calling 'add()' (no parameters): " << add() << '\n';     //   a = 0, b = 0
 }
 ```
 
