@@ -2,4 +2,4 @@
 ya boi
 
 ## Deleting Operators
-className::operator& = delete;
+`className::operator& = delete;`
