@@ -7,11 +7,17 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 
 ## Inheritance
 
+
 ## Access Modifiers for Inheritance
 
 ## Calling the Constructor of a Base Class
 
 ## Multi-level Inheritance
+
+
+```C++
+
+```
 
 ## Multiple Inheritance
 
@@ -22,3 +28,7 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 ## Sources
 TutorialsPoint: [_C++ Inheritance_](https://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm) <br />
 GeeksforGeeks: [_Inheritance in C++_](https://www.geeksforgeeks.org/inheritance-in-c/) <br />
+GeeksforGeeks: [_Multiple Inheritance in C++_](https://www.geeksforgeeks.org/multiple-inheritance-in-c/#:~:text=Multiple%20Inheritance%20is%20a%20feature,in%20which%20they%20are%20inherited.&text=The%20destructors%20are%20called%20in%20reverse%20order%20of%20constructors.) <br />
+TutorialsPoint: [_C++ Inheritance_](https://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm) <br />
+CProgramming: [_Multiple Inheritance in C++_](https://www.cprogramming.com/tutorial/multiple_inheritance.html) <br />
+isocpp.org: [_Inheritance — Multiple and Virtual Inheritance_](https://isocpp.org/wiki/faq/multiple-inheritance) <br />
