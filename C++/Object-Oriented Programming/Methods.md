@@ -202,7 +202,7 @@ int main()
 }
 ```
 
-## Special Methods: Constructors
+## Special Method: Constructors
 A constructor is a special type of method that is used to initialize the data members of a class. Constructors are automatically called when an instance of the 
 class is made, which makes them incredibly convenient. You can differentiate general methods from the constructor because the constructor shares the name of the 
 class verbatim. Classes also do not have a return type.
@@ -249,6 +249,73 @@ int main()
     tool.use();
 
     return 0;
+}
+```
+
+## Special Method: Destructors
+Like constructors, destructors also have a special purpose and are called automatically. "Destructors are usually used to deallocate memory and do other cleanup 
+for a class object and its class members when the object is destroyed. A destructor is called for a class object when that object passes out of scope or is explicitly 
+deleted" ([ref](https://www.ibm.com/docs/en/i/7.3?topic=only-destructors-c)). Destructors also share the name of the class but are prefixed with a single tilde (~).
+
+Sorry this example doesn't fit the others, but there just wasn't a good way to do it.
+```C++
+#include <iostream>
+using namespace std;
+
+class Scoreboard
+{
+    private:
+        int* scores;     //A scoreboard to store points (as ints)
+        size_t length;     //The length of the array (needed for looping)
+
+    /*
+       'size_t' is just a special datatype for storing the size of stuff (strings, data structures...).
+       Anytime you are storing the size of something, make it 'size_t'.
+    */
+
+    public:
+    //Constructor
+    Scoreboard(int players)
+    {
+        //Keep track of the scores for each player
+        length = players;
+        scores = new int[length];
+
+        //Set all player's score to zero (initializing the array)
+        for(int i=0; i < length; i++)
+        {
+            scores[i] = 0;
+        }
+
+        cout << "Created a scorebeard with " << length << " elements...\n";
+    }
+
+    //Destructor
+    ~Scoreboard()
+    {
+        //Delete the array of scores
+        delete [] scores;
+
+        cout << "Deleting the array of " << length << " elements...\n";
+    }
+
+    void showScores()
+    {
+        for(int i=0; i < length; i++)
+        {
+            cout << "Player " << i + 1 << ": " << scores[length] << '\n';
+        }
+    }
+};
+
+int main()
+{
+    //A scoreboard that keeps track of 5 players
+    Scoreboard scoreboard(5);
+
+    //Output all the scores
+    scoreboard.showScores();
+
 }
 ```
 
