@@ -9,6 +9,8 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 
 ## Access Modifiers for Inheritance
 
+## Calling the Constructor of a Base Class
+
 ## Multi-level Inheritance
 
 ## Multiple Inheritance
