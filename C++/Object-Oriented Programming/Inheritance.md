@@ -6,7 +6,7 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
 
 ## Inheritance
-There's some stuff in here that you probably haven't gotten to yet. Refer below to [_Access Modifiers for Inheritance_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#access-modifiers-for-inheritance) <br /> and 
+There's some stuff in here that you probably haven't gotten to yet.  <br /> Refer below to [_Access Modifiers for Inheritance_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#access-modifiers-for-inheritance) and 
 [_Calling the Constructor of a Base Class_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#calling-the-constructor-of-a-base-class) to clear things up a bit.
 
 ```C++
