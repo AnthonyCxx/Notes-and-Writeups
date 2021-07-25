@@ -19,7 +19,7 @@ class Animal
 {
      //'genus': any of the taxonomic groups into which a family
     // is divided and which contains one or more species.
-    private:
+    protected:
         int age;
         string genus;
 
@@ -72,6 +72,7 @@ Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)
     breed = Breed;
 }
 
+//Bark
 void Dog::bark()
 {
     cout << "Woof!\n";
@@ -95,11 +96,10 @@ int main()
 ```
 
 ## Access Modifiers for Inheritance
+Access modifiers affect how members of a class (functions and variables) can be accessed by other code, _including_ derived classes. <br />
+Because of this, the _protected_ modifier should be used instead of _private_ to allow derived classes to still access the class members.
 
-
-```C++
-
-```
+![image](https://user-images.githubusercontent.com/70488531/126916214-ce1961f2-205d-419c-80cf-009331978ed9.png)
 
 ## Calling the Constructor of a Base Class
 
