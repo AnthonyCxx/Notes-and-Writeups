@@ -16,6 +16,7 @@ Please, please do not memorize these. Just use them to learn Vim's grammar so yo
 | cW | delete the current word and start insert (ignore symbols) |
 | c0 | delete from the cursor position to the beginning of the line and start insert |
 | c$ | delete from the cursor position to the end of the line and start insert |
+| cc | delete the entire line and start insert | 
 | db | delete the word before the cursor and start insert |
 | dB | delete the word before the cursor and start insert (ignore symbols) |
 | ddp | swap the current line with the line below |
