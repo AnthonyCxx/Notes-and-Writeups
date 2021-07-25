@@ -26,6 +26,7 @@ syntax on <br />
 " <=== A single " denotes a comment <br />
 
 " SETTINGS FOR 256_NOIR COLORSHCEME <br />
+' ================================= <br />
 "colorscheme 256_noir <br /> 
 "highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212 <br />
 "autocmd InsertEnter * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1c1c1c <br /> 
