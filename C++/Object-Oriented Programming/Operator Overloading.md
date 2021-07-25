@@ -2,3 +2,4 @@
 ya boi
 
 ## Deleting Operators
+className::operator& = delete;
