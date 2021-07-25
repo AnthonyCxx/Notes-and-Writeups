@@ -61,29 +61,6 @@ that is or is not (like a boolean), but instead one of a set of values. For exam
 the base-10 system we use); the decimal system is in contrast with but not the opposite of the hexadecimal and octal systems. Opposites do not exist for concepts
 with more than one counterpart.
 
-### boolalpha/noboolalpha
-By default, booleans are represented in streams as 1's and 0's (true and false). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
-(boolean -> alphabetic). This approach is preferable to writing `(<bool> ? "true" : "false")` every single time.
-```C++
-//Displays '1'
-cout << true << '\n';
-
-//Displays 'true'
-cout << boolalpha << true << '\n';
-
-//Displays '1'
-cout << noboolalpha << true << '\n';
-
-// Program 2 //
-bool input;
-
-cout << "Enter true or false: ";
-cin >> boolalpha >> input;
-
-//bool 'input' is 'true' if and only if the user enters 'true' verbatim (all lowercase)
-cout << "You entered: " << (input ? "True" : "False") << '\n';
-```
-
 ### showpos/noshowpos
 _showpos_ displays a _+_ sign in front of positive numbers, helping align positive and negative numbers as well as making them more explicit.
 
@@ -228,6 +205,29 @@ cout << right << setw(5) << -50 << '\n';
 
 //Displays -##50
 cout << internal << setw(5) << -50 << '\n';
+```
+
+### boolalpha/noboolalpha
+By default, booleans are represented in streams as 1's and 0's (true and false). If you want `cout << true` to output the string "true", then toggle _boolalpha_ 
+(boolean -> alphabetic). This approach is preferable to writing `(<bool> ? "true" : "false")` every single time.
+```C++
+//Displays '1'
+cout << true << '\n';
+
+//Displays 'true'
+cout << boolalpha << true << '\n';
+
+//Displays '1'
+cout << noboolalpha << true << '\n';
+
+// Program 2 //
+bool input;
+
+cout << "Enter true or false: ";
+cin >> boolalpha >> input;
+
+//bool 'input' is 'true' if and only if the user enters 'true' verbatim (all lowercase)
+cout << "You entered: " << (input ? "True" : "False") << '\n';
 ```
 
 ### unitbuf/nounitbuf
