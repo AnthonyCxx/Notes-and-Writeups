@@ -22,7 +22,7 @@ Please, please do not memorize these. Just use them to learn Vim's grammar so yo
 ## Manipulating Text
 | Combo | Action |
 | ----- | ------ |
-| ve~ | capitalize from the cursor position to the end of the word |
+| ve~ | change the case from the cursor position to the end of the word |
 | ggVGU | capitalize the entire document |
 
 ## Miscellaneous 
