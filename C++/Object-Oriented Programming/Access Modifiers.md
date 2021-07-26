@@ -172,8 +172,88 @@ int main()
 > Reference: [Microsoft C++ Documentation: Protected Keyword](https://docs.microsoft.com/en-us/cpp/cpp/protected-cpp?view=msvc-160) <br />
 
 ## Granting Access to Private Classes with _friend_
-Functions and classes 
+Functions, classes, and methods can all gain access to a class's private members if they are declared as a _friend_ within said class. To declare
+a function/class/method as a friend, just declare it within the class as you normally would, and put '_friend_' in front of it. Ta da.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+//Prior declaration required to include each other in each other's definitions...
+class PrivateClass;
+
+//Friend Method
+class GenericClass
+{
+    public:
+        void friendMethod(const PrivateClass&);
+};
+
+// PRIVATE CLASS //
+class PrivateClass
+{
+    private:
+        //Private data member
+        int number = 10;
+
+        //Friend function
+        friend void friendFunction(const PrivateClass&);
+
+        //Friend class
+        friend class FriendClass;
+
+        //Friend method
+        friend void GenericClass::friendMethod(const PrivateClass&);
+
+    public:
+        //Constructor
+        PrivateClass(int num = 0)
+        {
+            number = num;
+        }
+};
+
+//Friend function
+void friendFunction(const PrivateClass& pc)
+{
+    cout << "Accessing private data member from a function! Number is: " << pc.number << '\n';
+}
+
+//Friend class
+class FriendClass
+{
+    public:
+        void printNumber(const PrivateClass& pc)
+        {
+            cout << "Accessing the private data member from a friend class! Number is: " << pc.number << '\n';
+        }
+};
+
+//Friend method (must be defined AFTER the defininition of 'PrivateClass' since it's a parameter
+void GenericClass::friendMethod(const PrivateClass& pc)
+{
+    cout << "Accessing private data member from a method! Number is: " << pc.number << '\n';
+}
+
+// DRIVER CODE //
+int main()
+{
+    PrivateClass pc(10);
+    FriendClass  fc;
+    GenericClass gc;
+
+    //Friend function
+    friendFunction(pc);
+
+    //Friend class
+    fc.printNumber(pc);
+
+    //Friend method
+    gc.friendMethod(pc);
+
+    return 0;
+}
 ```
+> Sources: <br />
+> TutorialsPoint: [_C++ Friend Functions_](https://www.tutorialspoint.com/cplusplus/cpp_friend_functions.htm) <br />
+> GeeksforGeeks [_Friend class and function in C++_](https://www.geeksforgeeks.org/friend-class-function-cpp/) <br />
