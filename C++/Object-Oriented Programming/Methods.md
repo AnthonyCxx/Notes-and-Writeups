@@ -139,7 +139,7 @@ preventing [function overhead](https://stackoverflow.com/questions/144993/how-mu
 inline are subject to code optimizations not available to normal functions." 
 ([quote](https://docs.microsoft.com/en-us/cpp/cpp/inline-functions-cpp?view=msvc-160#inline-__inline-and-__forceinline); note this is the Microsoft C++ compiler).
 Keep in mind that just because you mark a function as _inline_ does not mean that it will be inlined — your compiler treats it more as a suggestion, really.
-If you _must_ inline a function for whatever reason, you can use compiler-specific techniques like GCC's `\_\_attribute\_\_((always\_inline))` ([source](https://www.keil.com/support/man/docs/armcc/armcc_chr1359124974010.htm))
+If you _must_ inline a function for whatever reason, you can use compiler-specific techniques like GCC's `__attribute__((always_inline))` ([source](https://www.keil.com/support/man/docs/armcc/armcc_chr1359124974010.htm))
 
 ```C++
 #include <iostream>
