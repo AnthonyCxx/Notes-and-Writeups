@@ -123,85 +123,51 @@ by earlier handler for ‘DivideByZeroException’_".
 #include <string>
 using namespace std;
 
-//For indeterminate calculations (0 / 0)
-class IndeterminateResult
+//For dividing by zero
+class DivideByZeroException
 {
     private:
-        //The error message
         string message;
 
     public:
-        //Default and parameterized constructor (via default parameter)
-        IndeterminateResult(string errorMessage = "Dividing 0 by 0 is indeterminate.")
+        DivideByZeroException(string Message = "you cannot divide by zero!")
         {
-            message = errorMessage;
+            message = Message;
         }
 
-        //Return the error message
         string what() const
         {
             return message;
         }
+
 };
 
-//For undefined calculations (anything / 0)
-class UndefinedResult
+//For dividing zero by zero
+class IndeterminateResultException: public DivideByZeroException
 {
-    private:
-        //The error message
-        string message;
-
     public:
-        //Default and parameterized constructor (via default parameter)
-        UndefinedResult(string errorMessage = "Dividing by 0 is undefined")
+        //A single constructor that calls the constructor from 'DivideByZeroException'
+        IndeterminateResultException(string Message = "dividing zero by zero is indeterminate!"): DivideByZeroException(Message)
         {
-            message = errorMessage;
-        }
-
-        //Return the error message
-        string what() const
-        {
-            return message;
         }
 };
 
-// DRIVER CODE //
+
 int main()
 {
-    double numerator, denominator, result;
-
-    //Get the numerator and denominator from the user
-    cout << "Enter the numerator and denominator: ";
-    cin >> numerator >> denominator;
-
-    //Error-free division
     try
     {
-        if (numerator == 0 and denominator == 0)
-            throw IndeterminateResult("0 / 0 is indeterminate.");
-
-        //Throw error?
-        if (denominator == 0)
-            throw UndefinedResult("anything / 0 is undefined.");
-
-        //If no errors are thrown, perform the calculation.
-        result = numerator / denominator;
+        //Gets caught by 'DivideByZeroException' since it's derived from it...
+        throw IndeterminateResultException();
     }
-    catch(const IndeterminateResult& e)
+    catch(const DivideByZeroException& e)
     {
-        //Error message, so use clog instead of cout
-        clog << "Error: " << e.what() << endl;   //Use 'endl' to flush the output
-        result = 0;
+        clog << "Caught a divide by zero exception!\n";
     }
-    catch(const UndefinedResult& e)
+    catch(const IndeterminateResultException& e)
     {
-        //Error message, so use clog instead of cout
-        clog << "Error: " << e.what() << endl;   //Use 'endl' to flush the output
-        result = 0;
+        clog << "Caught an indeterminate result exception!\n";
     }
-
-    //Print result of the division
-    cout << "Result: " << result << '\n';
 
     return 0;
 }
