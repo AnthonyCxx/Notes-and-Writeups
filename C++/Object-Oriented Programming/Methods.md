@@ -137,10 +137,25 @@ int main()
 The _inline_ keyword can be used to insert the actual body of the code into the program wherever the function is called — this can help increase efficiency by
 preventing [function overhead](https://stackoverflow.com/questions/144993/how-much-overhead-is-there-in-calling-a-function-in-c). Furthermore "Functions expanded 
 inline are subject to code optimizations not available to normal functions." 
-([quote](https://docs.microsoft.com/en-us/cpp/cpp/inline-functions-cpp?view=msvc-160#inline-__inline-and-__forceinline), note this is the Microsoft C++ compiler).
+([quote](https://docs.microsoft.com/en-us/cpp/cpp/inline-functions-cpp?view=msvc-160#inline-__inline-and-__forceinline); note this is the Microsoft C++ compiler).
+Keep in mind that just because you mark a function as _inline_ does not mean that it will be inlined — your compiler treats it more as a suggestion, really.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+inline int absurdMath(int a, int b)
+{
+    return a * b + 2 / 15;
+}
+
+int main()
+{
+    //'absurdMath()' is inlined, so 'absurdMath(157, 31135)' is directly replaced by '157 * 31135 + 2 / 15'
+    cout << "The result of this absurd math is: " << absurdMath(157, 31135) << '\n';
+
+    return 0;
+}
 ```
 > Sources: <br />
 > cplusplus.com: [_What is C++ inline functions_](https://www.cplusplus.com/articles/2LywvCM9/) <br />
@@ -151,7 +166,24 @@ inline are subject to code optimizations not available to normal functions."
 ## Improving Performance with _constexpr_
 
 ```C++
+#include <iostream>
+using namespace std;
 
+constexpr int absurdMath(int a, int b)
+{
+    return a * b + 2 / 15;
+}
+
+int main()
+{
+    /*
+       'absurdMath()' is a constant expression, so 'absurdMath(157, 31135)' is replaced
+       by the result of '157 * 31135 + 2 / 15' (4,888,195)
+    */
+    cout << "The result of this absurd math is: " << absurdMath(157, 31135) << '\n';
+
+    return 0;
+}
 ```
 > Sources: <br />
 > Youtuber CPP Nuts: [_constexpr C++ | C++11_](https://www.youtube.com/watch?v=frifFlPO_uI) <br />
