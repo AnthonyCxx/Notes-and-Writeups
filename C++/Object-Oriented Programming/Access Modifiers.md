@@ -213,6 +213,12 @@ class PrivateClass
         }
 };
 
+//Friend method (must be defined AFTER the definition of 'PrivateClass' since it accesses a member)
+void GenericClass::friendMethod(const PrivateClass& pc)
+{
+    cout << "Accessing private data member from a method! Number is: " << pc.number << '\n';
+}
+
 //Friend function
 void friendFunction(const PrivateClass& pc)
 {
@@ -229,11 +235,6 @@ class FriendClass
         }
 };
 
-//Friend method (must be defined AFTER the defininition of 'PrivateClass' since it's a parameter)
-void GenericClass::friendMethod(const PrivateClass& pc)
-{
-    cout << "Accessing private data member from a method! Number is: " << pc.number << '\n';
-}
 
 // DRIVER CODE //
 int main()
