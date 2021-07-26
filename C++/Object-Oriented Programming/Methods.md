@@ -140,7 +140,7 @@ Something something, GCC always inline whatever
 
 ```
 
-## Improving Performance Even More with _constexpr_
+## Improving Performance with _constexpr_
 
 ```C++
 
