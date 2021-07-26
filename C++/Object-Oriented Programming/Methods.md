@@ -481,3 +481,15 @@ int main()
     return 0;
 }
 ```
+
+## Improving Performance with _constexpr_
+
+```C++
+
+```
+> Sources: <br />
+> Youtuber CPP Nuts: [_constexpr C++ | C++11_](https://www.youtube.com/watch?v=frifFlPO_uI) <br />
+> CPPReference.com: [_constexpr specifier (since C++11)_](https://en.cppreference.com/w/cpp/language/constexpr) <br />
+> : [_constexpr (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/constexpr-cpp?view=msvc-160) <br />
+> : [_Understanding constexpr specifier in C++_](https://www.geeksforgeeks.org/understanding-constexper-specifier-in-c/) <br />
+> : [_Difference between `constexpr` and `const`_](https://stackoverflow.com/questions/14116003/difference-between-constexpr-and-const) <br />
