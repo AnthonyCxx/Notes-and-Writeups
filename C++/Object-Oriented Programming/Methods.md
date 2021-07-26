@@ -184,7 +184,7 @@ int main()
 {
     /*
        'absurdMath()' is a constant expression, so 'absurdMath(157, 31135)' is replaced
-       by the result of '157 * 31135 + 2 / 15' (4,888,195)
+       by the result of '157 * 31135 + 2 / 15', which is 4,888,195
     */
     cout << "The result of this absurd math is: " << absurdMath(157, 31135) << '\n';
 
