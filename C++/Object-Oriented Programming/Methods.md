@@ -136,6 +136,10 @@ int main()
 ## Improving Performance with _inline_
 Something something, GCC always inline whatever
 
+```C++
+
+```
+
 ## Improving Performance Even More with _constexpr_
 
 ```C++
