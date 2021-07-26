@@ -253,17 +253,17 @@ int main()
 ```
 
 ## Special Method: Copy Constructor
-If you were to copy the contents of an array, how would you do it? Would you write `newArray = existingArray;`? If you would, you would have just written a 
+If you were to copy the contents of an array, how would you do it? Would you write `newArray = existingArray`? If you would, you would have just written a 
 [shallow copy](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) of the existing array, 
 which means that both arrays are now pointing to the same space in memory. This is problematic because any changes to one array will affect the other. Even worse,
 if one array is delete/goes out of scope, the other array won't become a dangling pointer, which could crash your program very easily. To solve this problem, write a
 copy constructor. A copy constructor takes a single instance of the current class as its parameter and copies all of its members. If there is an array, a copy constructor
 won't create a shallow copy — instead, it will create a deep copy by sequentially copying all the elements in the existing array into the new array.
 
-**Extra**: Understanding Why Shallow Copying Exists: <br />
-Before you can understand why this problem exists, first you must accept a few basic principles of arrays: <br />
-1.) an array is a series of contiguous memory  <br />
-2.) the variable that contains an array (e.g. 'arr' in `int arr[15]`) actually stores the memory address of the first element in the array. <br />
+### Extra: Understanding Why Shallow Copying Exists: <br />
+Shallow copying exists when you directly assign one pointer to another. You see, the variable that contains an array (e.g. 'arr' in `int arr[15]`) actually
+stores the memory address of the first element in the array. So, when you write `newArray = existingArray`, you're really just assigning the memory address of
+the existing array to the new array. _This_ is what causes the problem. Now you have two different variables referencing the exact same array in memory.
 
 ```C++
 
