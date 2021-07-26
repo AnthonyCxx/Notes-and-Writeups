@@ -375,14 +375,90 @@ int main()
 }
 ```
 
-## Virtual Methods
-
+## Overriding Methods of a Base Class
+You can override a method of the base class by simply redefining it in the derived class; however, do this with care, as doing so will hide all versions of the base class's
+method. The following code does not compile because an object of the derived class calls _print()_, which is inherited from the base class, but _print()_ is hidden
+because it was overriden by _print(string)_.
 
 ```C++
+// Note: this code does not compile //
 
+#include <iostream>
+#include <string>
+using namespace std;
+
+// ****** BASE CLASS ****** //
+class Base
+{
+    public:
+        void print()
+        {
+            cout << "Called 'print()' from the base class!" << endl;
+        }
+};
+
+// ****** DERIVED CLASS ****** //
+class Derived : public Base
+{
+    public:
+        void print(string message)
+        {
+            cout << message << endl;
+        }
+};
+
+
+// DRIVER CODE //
+int main()
+{
+    Derived object;
+
+    object.print();
+}
 ```
 
 ## Calling an Overridden Method of a Base Class
+Just because a derived class you wrote overrides a method from the base class doesn't mean the derived class can't still access the original function from the 
+base class. All you have to do to access the superclass's method is put the name of the superclass followed by the scope-resolution operator, `::`.
+
+```C++
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// ****** BASE CLASS ****** //
+class Base
+{
+    public:
+        void print()
+        {
+            cout << "Called 'print()' from the base class!" << endl;
+        }
+};
+
+// ****** DERIVED CLASS ****** //
+class Derived : public Base
+{
+    public:
+        void print(string message)
+        {
+            cout << message << endl;
+        }
+};
+
+
+// DRIVER CODE //
+int main()
+{
+    Derived object;
+
+    //Call 'print()' from the class 'Base'
+    object.Base::print();
+}
+```
+
+## Virtual Methods
 
 
 ```C++
