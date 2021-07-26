@@ -173,7 +173,7 @@ int main()
 
 ## Granting Access to Private Data Members with _friend_
 Functions, classes, and methods can all gain access to a class's private members if they are declared as a _friend_ within said class. To declare
-a function/class/method as a friend, just declare it within the class as you normally would, and put '_friend_' in front of it. Ta da.
+a function/class/method as a friend, just declare it within the class as you normally would, and put '_friend_' in front of it. It's literally that easy.
 
 ```C++
 #include <iostream>
