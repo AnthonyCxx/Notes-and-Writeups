@@ -132,7 +132,7 @@ variables to the base constructor. To call multiple base constructors, separate 
 
 Calling the constructor of a base class makes initializing derived classes far less verbose.
 ```C++
-//Constructor, passing 'Age' and 'Genus' to the base constructor
+//Constructor, passing 'Age' and 'Genus' to the base constructor 'Animall::Animal(int, string)'
 Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)   
 {
     breed = Breed;
