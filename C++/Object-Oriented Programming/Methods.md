@@ -168,7 +168,7 @@ A constant expression (marked by the _constexpr_ keyword) indicates that the fun
 to increase performance at runtime. For a function to be a valid constant expression, it must be exceedingly simple, like a function with no more than one return statement
 or a constructor with just an [initializer list](https://www.educative.io/edpresso/what-are-initializer-lists-in-cpp). Constant expressions cannot be virtual or a coroutine,
 must return a literal type (i.e. not a user-defined type like a class), and cannot contain a whole slew of things, including but not limited to: a _try_/_catch_ block, 
-any uninitialized variables, or variables that aren't literal types.
+any uninitialized variables, or variables that aren't literal types. If a constant expression contains any of these things, the _constexpr_ keyword will be ignored.
 
 ```C++
 #include <iostream>
