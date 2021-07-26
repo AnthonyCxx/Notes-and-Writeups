@@ -152,7 +152,7 @@ using namespace std;
 // ****** CONTAINER CLASS ****** //
 class Container
 {
-    private:
+    protected:
         //Max capacity for a container is 256 items, 'capacity' determines how many are used
         string Items[256];
         int capacity;
@@ -184,7 +184,7 @@ void Container::close()
 // ***** BLOCK CLASS ****** //
 class Block
 {
-    private:
+    protected:
         string name;
         int id;
 
@@ -254,7 +254,7 @@ using namespace std;
 // ****** CONTAINER CLASS ****** //
 class Container
 {
-    private:
+    protected:
         //Max capacity for a container is 256 items, 'capacity' determines how many are used
         string Items[256];
         int capacity;
@@ -286,7 +286,7 @@ void Container::close()
 // ***** BLOCK CLASS ****** //
 class Block
 {
-    private:
+    protected:
         string name;
         int id;
 
@@ -331,27 +331,28 @@ Chest::Chest(string Name, int ID, int Capacity): Block(Name, ID), Container(Capa
 // ****** LOCKEDCHEST CLASS ****** //
 class LockedChest:  public Chest
 {
-        private:
-                bool isLocked;
+    //Private because I won't inherit from it
+    private:
+        bool isLocked;
 
-        public:
-                LockedChest(string, int, int, bool);
-                void inspectLock();
+    public:
+        LockedChest(string, int, int, bool);
+        void inspectLock();
 };
 
 //Constructor
 LockedChest::LockedChest(string Name, int ID, int Capacity, bool Locked): Chest(Name, ID, Capacity)
 {
-        isLocked = Locked;
+     isLocked = Locked;
 }
 
 //Inspect lock
 void LockedChest::inspectLock()
 {
-        if (isLocked)
-                cout << "Hmm...seems the chest is locked...\n";
-        else
-                cout << "The lock on the chest appears broken...\n";
+    if (isLocked)
+        cout << "Hmm...seems the chest is locked...\n";
+    else
+        cout << "The lock on the chest appears broken...\n";
 }
 
 int main()
