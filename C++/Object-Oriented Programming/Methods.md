@@ -434,7 +434,6 @@ Like constructors, destructors also have a special purpose and are called automa
 for a class object and its class members when the object is destroyed. A destructor is called for a class object when that object passes out of scope or is explicitly 
 deleted" ([quote](https://www.ibm.com/docs/en/i/7.3?topic=only-destructors-c)). Destructors also share the name of the class but are prefixed with a single tilde (~).
 
-Sorry this example doesn't fit the others, but there just wasn't a good way to do it.
 ```C++
 #include <iostream>
 using namespace std;
