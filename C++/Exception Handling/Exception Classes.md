@@ -232,7 +232,7 @@ int main()
 {
     try
     {
-        //Gets caught by 'IndeterminateResultException' since it's catch block comes first
+        //Gets caught by 'IndeterminateResultException' since its catch block comes first
         throw IndeterminateResultException();
     }
     catch(const IndeterminateResultException& e)
