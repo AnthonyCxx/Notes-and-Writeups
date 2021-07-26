@@ -142,18 +142,112 @@ Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)
 ## Multi-level Inheritance
 Multi-level inheritance occurs when you use a derived class as a base class for another derived class, creating a chain of inheritance.
 
-Here, a class 'Labrador' is derived from 'Dog', which is derived from 'Animal'. <br />
-Refer above for the code for the 'Dog' and 'Animal' classes.
-
 ```C++
 
 ```
 
 ## Multiple Inheritance
-Multiple inheritance occurs when a derived class inherits from multiple, unrelated base classes.
+Multiple inheritance occurs when a derived class inherits from multiple, unrelated base classes. <br />
+Here, a 'Chest' is a block that contains items; although these two classes are unrelated, both of them can be combined 
+using multiple inheritance.
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+// ****** CONTAINER CLASS ****** //
+class Container
+{
+    private:
+        //Max capacity for a container is 256 items, 'capacity' determines how many are used
+        string Items[256];
+        int capacity;
+
+    public:
+        Container(int);
+        void open();
+        void close();
+};
+
+//Constructor
+Container::Container(int Capacity)
+{
+    capacity = Capacity;
+}
+
+//Open the container
+void Container::open()
+{
+    cout << "Opening...\n";
+}
+
+//Close the container
+void Container::close()
+{
+    cout << "Closing...\n";
+}
+
+// ***** BLOCK CLASS ****** //
+class Block
+{
+    private:
+        string name;
+        int id;
+
+    public:
+        Block(string, int);
+        void place();
+        void destroy();
+};
+
+//Constructor
+Block::Block(string Name, int ID)
+{
+    name = Name;
+    id = ID;
+}
+
+//Place the block
+void Block::place()
+{
+    cout << "Placing the block...\n";
+}
+
+//Destroy the block
+void Block::destroy()
+{
+    cout << "Destroyed the block...\n";
+}
+
+// ****** CHEST CLASS ****** //
+class Chest: public Block, public Container  //A chest is a block that contains items
+{
+    public:
+        Chest(string, int, int);
+};
+
+//Constructor -- calls the constructors for 'Block' and 'Container'
+Chest::Chest(string Name, int ID, int Capacity): Block(Name, ID), Container(Capacity)
+{
+    //'Chest' implements no new members
+}
+
+int main()
+{
+    //New chest of 'Class Chest' type, ID: 167, and holds 64 items
+    Chest chest("Classic Chest", 167, 64);
+
+    //Calling 'Block' methods
+    chest.place();
+    chest.destroy();
+
+    //Calling 'Container' methods
+    chest.open();
+    chest.close();
+
+    return 0;
+}
 ```
 ## Virtual Methods
 
