@@ -460,10 +460,73 @@ int main()
 ```
 
 ## Virtual Methods
-_virtual_ is a keyword that can be applied to functions to ensure that the derived 
+Virtual methods have their binding delayed until runtime, rather than having it be done at compile time. This allows functions to take parameters of the base type
+and still call the overriden version of the function. You see, if you have a pointer/function parameter of a base class and you assign it to a derived class, it will
+still work; however, it will not call the overriden version of the function since it's type is the base class. If you want to use overriden functions with function
+parameters/pointers of the type of the base class, then you have to use the keyword _virtual_.
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+// ****** BASE CLASS ****** //
+class Base
+{
+    public:
+        //Virtual function
+        virtual void virtualPrint()
+        {
+            cout << "Called 'virtualPrint()' from the base class!" << '\n';
+        }
+
+        //Non-virtual function
+        void nonVirtualPrint()
+        {
+            cout << "Called 'nonVirtualPrint()' from the base class!" << '\n';
+        }
+};
+
+// ****** DERIVED CLASS ****** //
+class Derived : public Base
+{
+    public:
+        //Virtual function
+        virtual void virtualPrint()
+        {
+            cout << "Called 'virtualPrint()' from the derived class!" << '\n';
+        }
+
+        //Non-virtual function
+        void nonVirtualPrint()
+        {
+            cout << "Called 'nonVirtualPrint()' from the derived class!" << '\n';
+        }
+};
+
+
+//Function 'callPrint()' takes a 'Base' object as a parameter
+void callPrint(Base& obj)
+{
+    //Calls print on the object (virtual and non-)
+    obj.virtualPrint();       
+    obj.nonVirtualPrint();
+    
+    /*
+          Prints:
+          Called 'virtualPrint()' from the derived class!
+          Called 'nonVirtualPrint()' from the base class!
+    */
+}
+
+// DRIVER CODE //
+int main()
+{
+    Derived derivedObject;
+
+    //Calls print on the
+    callPrint(derivedObject);
+}
 ```
 
 ## Pure Virtual Methods and Abstract Classes
