@@ -252,6 +252,20 @@ int main()
 }
 ```
 
+## Special Method: Copy Constructor
+If you were to copy the contents of an array, how would you do it? Would you write `newArray = existingArray;`? If you would, you would have just written a 
+[shallow copy](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) of the existing array, 
+which means that both arrays are now pointing to the same space in memory. This is problematic because any changes to one array will affect the other. Even worse,
+if one array is delete/goes out of scope, the other array won't become a dangling pointer, which could crash your program very easily. To solve this problem, write a
+copy constructor. A copy constructor takes a single instance of the current class as its parameter and copies all of its members. If there is an array, a copy constructor
+won't create a shallow copy — instead, it will create a deep copy by sequentially copying all the elements in the existing array into the new array.
+
+**Extra**: Understanding Why Shallow Copying Exists: <br />
+
+```C++
+
+```
+
 ## Special Method: Destructors
 Like constructors, destructors also have a special purpose and are called automatically. "Destructors are usually used to deallocate memory and do other cleanup 
 for a class object and its class members when the object is destroyed. A destructor is called for a class object when that object passes out of scope or is explicitly 
