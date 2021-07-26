@@ -58,7 +58,7 @@ int main()
 
 ## Private
 Private members can only be accessed and modified from within the class itself. External code, including classes derived from the class, has no access to private members. 
-Data members are often private
+Data members are often private to acheive [abstraction](https://www.nerd.vision/post/polymorphism-encapsulation-data-abstraction-and-inheritance-in-object-oriented-programming).
 ```C++
 /* Note: this code does not compile. */
 
