@@ -133,6 +133,19 @@ int main()
 }
 ```
 
+## Improving Performance with _constexpr_
+
+```C++
+
+```
+> Sources: <br />
+> Youtuber CPP Nuts: [_constexpr C++ | C++11_](https://www.youtube.com/watch?v=frifFlPO_uI) <br />
+> CPPReference.com: [_constexpr specifier (since C++11)_](https://en.cppreference.com/w/cpp/language/constexpr) <br />
+> : [_constexpr (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/constexpr-cpp?view=msvc-160) <br />
+> : [_Understanding constexpr specifier in C++_](https://www.geeksforgeeks.org/understanding-constexper-specifier-in-c/) <br />
+> : [_Difference between _constexpr_ and _const__](https://stackoverflow.com/questions/14116003/difference-between-constexpr-and-const) <br />
+
+
 # Methods
 A method is a function that is associated with a class or struct. Methods are blocks of code that can be invoked by name, executing the body of the method (its code).
 Methods have full access to the members of a class, including private members.
@@ -481,15 +494,3 @@ int main()
     return 0;
 }
 ```
-
-## Improving Performance with _constexpr_
-
-```C++
-
-```
-> Sources: <br />
-> Youtuber CPP Nuts: [_constexpr C++ | C++11_](https://www.youtube.com/watch?v=frifFlPO_uI) <br />
-> CPPReference.com: [_constexpr specifier (since C++11)_](https://en.cppreference.com/w/cpp/language/constexpr) <br />
-> : [_constexpr (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/constexpr-cpp?view=msvc-160) <br />
-> : [_Understanding constexpr specifier in C++_](https://www.geeksforgeeks.org/understanding-constexper-specifier-in-c/) <br />
-> : [_Difference between `constexpr` and `const`_](https://stackoverflow.com/questions/14116003/difference-between-constexpr-and-const) <br />
