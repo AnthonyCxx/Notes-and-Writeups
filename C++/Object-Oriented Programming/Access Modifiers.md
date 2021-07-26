@@ -229,7 +229,7 @@ class FriendClass
         }
 };
 
-//Friend method (must be defined AFTER the defininition of 'PrivateClass' since it's a parameter
+//Friend method (must be defined AFTER the defininition of 'PrivateClass' since it's a parameter)
 void GenericClass::friendMethod(const PrivateClass& pc)
 {
     cout << "Accessing private data member from a method! Number is: " << pc.number << '\n';
