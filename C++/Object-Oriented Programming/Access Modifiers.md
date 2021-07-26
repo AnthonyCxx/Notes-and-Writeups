@@ -179,7 +179,7 @@ a function/class/method as a friend, just declare it within the class as you nor
 #include <iostream>
 using namespace std;
 
-//Prior declaration required to include each other in each other's definitions...
+//Prior declaration required for inter-dependent classes
 class PrivateClass;
 
 //Friend Method
