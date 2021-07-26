@@ -147,7 +147,7 @@ Multi-level inheritance occurs when you use a derived class as a base class for 
 ```
 
 ## Multiple Inheritance
-Multiple inheritance occurs when a derived class inherits from multiple, unrelated base classes. <br />
+Multiple inheritance occurs when a derived class inherits from multiple, unrelated base classes.
 Here, a 'Chest' is a block that contains items; although these two classes are unrelated, both of them can be combined 
 using multiple inheritance.
 
