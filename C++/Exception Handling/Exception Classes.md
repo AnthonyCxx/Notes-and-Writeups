@@ -204,18 +204,10 @@ class DivideByZeroException
 //For dividing zero by zero
 class IndeterminateResultException: public DivideByZeroException
 {
-    private:
-        string message;
-
     public:
-        IndeterminateResultException(string Message = "dividing zero by zero is indeterminate!")
+        //A single constructor that calls the constructor from 'DivideByZeroException'
+        IndeterminateResultException(string Message = "dividing zero by zero is indeterminate!"): DivideByZeroException(Message)
         {
-            message = Message;
-        }
-
-        string what() const
-        {
-            return message;
         }
 };
 
