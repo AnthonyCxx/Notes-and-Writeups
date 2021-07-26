@@ -170,3 +170,10 @@ int main()
 }
 ```
 > Reference: [Microsoft C++ Documentation: Protected Keyword](https://docs.microsoft.com/en-us/cpp/cpp/protected-cpp?view=msvc-160) <br />
+
+## Granting Access to Private Classes with _friend_
+Functions and classes 
+
+```C++
+
+```
