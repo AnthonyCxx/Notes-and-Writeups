@@ -261,6 +261,9 @@ copy constructor. A copy constructor takes a single instance of the current clas
 won't create a shallow copy — instead, it will create a deep copy by sequentially copying all the elements in the existing array into the new array.
 
 **Extra**: Understanding Why Shallow Copying Exists: <br />
+Before you can understand why this problem exists, first you must accept a few basic principles of arrays: <br />
+1.) an array is a series of contiguous memory  <br />
+2.) the variable that contains an array (e.g. 'arr' in `int arr[15]`) actually stores the memory address of the first element in the array. <br />
 
 ```C++
 
