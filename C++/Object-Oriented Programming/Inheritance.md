@@ -399,7 +399,7 @@ class Base
 };
 
 // ****** DERIVED CLASS ****** //
-class Derived : public Base
+class Derived: public Base
 {
     public:
         void print(string message)
@@ -439,7 +439,7 @@ class Base
 };
 
 // ****** DERIVED CLASS ****** //
-class Derived : public Base
+class Derived: public Base
 {
     public:
         void print(string message)
