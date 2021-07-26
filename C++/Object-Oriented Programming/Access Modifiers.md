@@ -69,7 +69,7 @@ using namespace std;
 class BaseClass
 {
     private:
-        //Single public string
+        //Single private string
         string data;
 
     public:
@@ -127,7 +127,7 @@ using namespace std;
 class BaseClass
 {
     protected:
-        //Single public string
+        //Single protected string
         string data;
 
     public:
