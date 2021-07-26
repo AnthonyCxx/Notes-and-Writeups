@@ -460,7 +460,7 @@ int main()
 ```
 
 ## Virtual Methods
-
+_virtual_ is a keyword that can be applied to functions to ensure that the derived 
 
 ```C++
 
