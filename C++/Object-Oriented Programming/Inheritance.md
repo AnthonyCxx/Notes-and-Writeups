@@ -245,6 +245,7 @@ int main()
 
 ## Multi-level Inheritance
 Multi-level inheritance occurs when you use a derived class as a base class for another derived class, creating a chain of inheritance.
+Using the existing class 'Chest', I was able to derive a new class 'LockedChest' that can be locked.
 
 ```C++
 #include <iostream>
