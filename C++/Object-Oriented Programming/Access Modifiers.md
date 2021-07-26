@@ -258,3 +258,5 @@ int main()
 > Sources: <br />
 > TutorialsPoint: [_C++ Friend Functions_](https://www.tutorialspoint.com/cplusplus/cpp_friend_functions.htm) <br />
 > GeeksforGeeks [_Friend class and function in C++_](https://www.geeksforgeeks.org/friend-class-function-cpp/) <br />
+> GreatLearning: [_Friend Functions in C++ | All You Need to Know_](https://www.mygreatlearning.com/blog/friend-functions-in-cpp/) <br />
+> Programiz: [_C++ friend Function and friend Classes_](https://www.programiz.com/cpp-programming/friend-function-class) <br />
