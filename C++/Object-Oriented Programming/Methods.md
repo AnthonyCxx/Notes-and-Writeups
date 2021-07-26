@@ -261,12 +261,106 @@ copy constructor. A copy constructor takes a single instance of the current clas
 won't create a shallow copy — instead, it will create a deep copy by sequentially copying all the elements in the existing array into the new array.
 
 ### Extra: Understanding Why Shallow Copying Exists: <br />
-Shallow copying exists when you directly assign one pointer to another. You see, the variable that contains an array (e.g. 'arr' in `int arr[15]`) actually
+Shallow copying occurs when you directly assign one pointer to another. You see, the variable that contains an array (e.g. 'arr' in `int arr[15]`) actually
 stores the memory address of the first element in the array. So, when you write `newArray = existingArray`, you're really just assigning the memory address of
 the existing array to the new array. _This_ is what causes the problem. Now you have two different variables referencing the exact same array in memory.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+// ****** ARRAYCONTAINER CLASS ****** //
+class ArrayContainer
+{
+    private:
+        int array[10];
+        size_t length;
+        //^ Length should always be 'size_t', as an integer may be too small
+
+    public:
+        //Parameterized Constructor
+        ArrayContainer(int);
+
+        //Copy constructor
+        ArrayContainer(const ArrayContainer& Other);
+
+        //Print array elements
+        void print();
+
+        //Assign an element in the array
+        void set(int, int);
+};
+
+//Default Constructor
+ArrayContainer::ArrayContainer(int beginning = 0)
+{
+    length = 10;
+
+    for(int i=0; i < length; i++)
+    {
+        //Assigns and then increments (postfix)
+        array[i] = beginning++;
+    }
+}
+
+//Copy Constructor
+ArrayContainer::ArrayContainer(const ArrayContainer& Other)
+{
+    //You have access to the other class's private members since it's the same class
+    length = Other.length;
+
+    //Sequentially copy each element of the array
+    for(int i=0; i < Other.length; i++)
+    {
+        array[i] = Other.array[i];
+    }
+}
+
+
+//Print
+void ArrayContainer::print()
+{
+    //Print all 10 items in the array in a line
+    for(int i=0; i < length; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << '\n';
+}
+
+//Set
+void ArrayContainer::set(int index, int value)
+{
+    //If the index is valid (0 through 10), go ahead and assign the element
+    if (index >= 0 and index <= 10)
+    {
+        array[index] = value;
+    }
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Declare an array
+    ArrayContainer originalArray(16);
+
+    //Declare a new array that copies the original
+    ArrayContainer newArray(originalArray);
+
+    //Print the original values of the arrays
+    originalArray.print();
+    newArray.print();
+    cout << '\n';
+
+    //Change the new array
+    newArray.set(0, 9999);
+
+    //Show that there is no change in the original
+    originalArray.print();
+    newArray.print();
+
+    return 0;
+}
 ```
 
 ## Special Method: Destructors
