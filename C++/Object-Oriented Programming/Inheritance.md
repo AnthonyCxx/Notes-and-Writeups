@@ -357,7 +357,7 @@ void LockedChest::inspectLock()
 
 int main()
 {
-    //New chest of 'LockedChest' type, ID: 170, and holds 32 items
+    //New chest of 'LockedChest' type, ID: 170, holds 32 items, and is locked
     LockedChest chest("A Mysterious Chest", 170, 32, true);
 
     //Calling 'Block' methods
