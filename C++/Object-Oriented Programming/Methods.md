@@ -134,11 +134,19 @@ int main()
 ```
 
 ## Improving Performance with _inline_
-Something something, GCC always inline whatever
+The _inline_ keyword can be used to insert the actual body of the code into the program wherever the function is called — this can help increase efficiency by
+preventing [function overhead](https://stackoverflow.com/questions/144993/how-much-overhead-is-there-in-calling-a-function-in-c). Furthermore "Functions expanded 
+inline are subject to code optimizations not available to normal functions." 
+([quote](https://docs.microsoft.com/en-us/cpp/cpp/inline-functions-cpp?view=msvc-160#inline-__inline-and-__forceinline), note this is the Microsoft C++ compiler).
 
 ```C++
 
 ```
+> Sources: <br />
+> cplusplus.com: [_What is C++ inline functions_](https://www.cplusplus.com/articles/2LywvCM9/) <br />
+> Microsoft C++ Documentation: [_Inline Functions (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/inline-functions-cpp?view=msvc-160) <br />
+> GeeksforGeeks: [_Inline Functions in C++_](https://www.geeksforgeeks.org/inline-functions-cpp/) <br />
+> StackOverflow: [_Do compilers always ignore inline hints?_](https://stackoverflow.com/questions/32047466/do-c11-compatible-compilers-always-ignore-inline-hints) <br />
 
 ## Improving Performance with _constexpr_
 
