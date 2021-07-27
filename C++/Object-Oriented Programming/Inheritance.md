@@ -451,7 +451,7 @@ int main()
 ## Pure Virtual Methods (Interfaces)
 Pure virtual functions are functions declared in a base class that have no implementation and are intended to be overriden by the derived class. 
 Derived classes _must_ provide their own implementations for pure virtual functions, guaranteeing that each class has its own implementation of the
-virtual method. Any class with a pure virtual functions become an [abstract base class](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm), preventing them from 
+virtual method. Any class with a pure virtual function becomes an [abstract base class](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm), preventing them from 
 being instantiated (typically because it wouldn't make sense). Abstract base classes ([ABCs](https://docs.python.org/3/library/abc.html)) are meant to be nothing more than a template to derive new classes from. To make a virtual method a pure virtual method, set the virtual metthod to 0 (e.g. `virtual void function() = 0`).
 
 If you know Java or C#, you may know this as an [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface). Unlike interfaces,
