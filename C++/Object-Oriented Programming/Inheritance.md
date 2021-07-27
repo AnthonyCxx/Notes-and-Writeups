@@ -376,96 +376,14 @@ int main()
 }
 ```
 
-## Overriding Methods of a Base Class
-You can override a method of the base class by simply redefining it in the derived class; however, do this with care, as doing so will hide all versions of the base class's
-method. The following code does not compile because an object of the derived class calls _print()_, which is inherited from the base class, but _print()_ is hidden
-because it was overriden by _print(string)_.
-
-```C++
-// Note: this code does not compile //
-
-#include <iostream>
-#include <string>
-using namespace std;
-
-// ****** BASE CLASS ****** //
-class Base
-{
-    public:
-        void print()
-        {
-            cout << "Called 'print()' from the base class!" << endl;
-        }
-};
-
-// ****** DERIVED CLASS ****** //
-class Derived: public Base
-{
-    public:
-        void print(string message)
-        {
-            cout << message << endl;
-        }
-};
-
-
-// DRIVER CODE //
-int main()
-{
-    Derived object;
-
-    object.print();
-}
-```
-
-## Calling an Overridden Method of a Base Class
-Just because a derived class you wrote overrides a method from the base class doesn't mean the derived class can't still access the original function from the 
-base class. All you have to do to access the superclass's method is put the name of the superclass followed by the scope-resolution operator, `::`.
-
-```C++
-
-#include <iostream>
-#include <string>
-using namespace std;
-
-// ****** BASE CLASS ****** //
-class Base
-{
-    public:
-        void print()
-        {
-            cout << "Called 'print()' from the base class!" << endl;
-        }
-};
-
-// ****** DERIVED CLASS ****** //
-class Derived: public Base
-{
-    public:
-        void print(string message)
-        {
-            cout << message << endl;
-        }
-};
-
-
-// DRIVER CODE //
-int main()
-{
-    Derived object;
-
-    //Call 'print()' from the class 'Base'
-    object.Base::print();
-}
-```
-
-## Virtual Methods
+## Overriding Methods with Virtual _virtual_
 Virtual methods have their binding delayed until runtime, rather than having it be done at compile time. This allows functions to take parameters of the base type
 and still call the overriden version of the function. You see, if you have a pointer/function parameter of a base class and you assign it to a derived class, it will
 still work; however, it will not call the overriden version of the function since it's type is the base class. If you want to use overriden functions with function
 parameters/pointers of the type of the base class, then you have to use the keyword _virtual_. Virtual functions _must_ be implemented in every derived class; if you 
 don't want to change the implementation, just call `Base::function()`. in the definition.
 
+Anytime you override a virtual function, add _override_ to the function.
 ```C++
 #include <iostream>
 #include <string>
@@ -493,7 +411,7 @@ class Derived : public Base
 {
     public:
         //Virtual function
-        virtual void virtualPrint()
+        virtual void virtualPrint() override  //Overrides 'virtualPrint' from the base class
         {
             cout << "Called 'virtualPrint()' from the derived class!" << '\n';
         }
@@ -510,9 +428,9 @@ class Derived : public Base
 void callPrint(Base& obj)
 {
     //Calls print on the object (virtual and non-)
-    obj.virtualPrint();       
+    obj.virtualPrint();
     obj.nonVirtualPrint();
-    
+
     /*
           Prints:
           Called 'virtualPrint()' from the derived class!
@@ -528,6 +446,16 @@ int main()
     //Calls print on the
     callPrint(derivedObject);
 }
+```
+
+## Pure Virtual Methods (Interfaces)
+Pure virtual functions are functions declared in a base class that have no implementation (typically because it wouldn't make sense) and are intended to be overriden 
+by the derived class. Derived classes _must_ provide implementations for pure virtual functions. Any class with a pure virtual functions become [abstract base classes](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm), preventing them from being instantiated. Abstract base classes are meant to be nothing more than a template
+to derive new classes from. If you know Java or C#, you may know this as an [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface).
+
+To make a virtual method a pure virtual method, set the virtual metthod to 0 (e.g. `virtual void function() = 0`).
+```C++
+
 ```
 
 ## Sources
