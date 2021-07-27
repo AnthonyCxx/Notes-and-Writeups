@@ -336,12 +336,8 @@ int main()
 ```
 
 ### Stream Insertion and Extraction Operators (<< and >>)
-The stream insertion operator (<<) and stream extraction operator (>>) overloads cannot be a part of the class definition to allow chain calling ([see here](https://stackoverflow.com/questions/9351166/does-overloading-operator-works-inside-the-class) for why).
-
-
-need to the data members of the class (public and private). Using [the keyword friend](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) at the front of a function  <br />
-  declaration gives the function access to all the data members of the given class. **The keyword friend is only   <br />
-  included in the function declaration**.  <br />
+The stream insertion operator (<<) and stream extraction operator (>>) overloads cannot be a part of the class definition to allow chain calling ([see here](https://stackoverflow.com/questions/9351166/does-overloading-operator-works-inside-the-class) for why). Because of this, you have to the << and >> overloads
+as [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) functions. The << and >> will take two parameters, an [_ostream_](https://www.geeksforgeeks.org/c-stream-classes-structure/) or [_istream_](https://www.cplusplus.com/forum/beginner/73195/) variable and then the class you want to overload for.
 
 ## Deleting Operators
 `className::operator& = delete;`
