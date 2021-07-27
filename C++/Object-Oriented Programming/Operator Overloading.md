@@ -97,7 +97,7 @@ int main()
 > Reference: [_to\_string()_](https://www.geeksforgeeks.org/stdto_string-in-cpp/) 
 
 ## Overloading Binary Operators
-Binary operators take one function parameter.
+Binary operators take one function parameter, which is usually a const reference.
 
 ```C++
 #include <iostream>
@@ -182,7 +182,7 @@ int main()
 ```
 
 ## Special Cases
-The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
+The following operators are special cases. Only the stream insertion/extraction and prefix/postfix operators are on the test for CSC-1720.
 
 ### _bool_ Operator
 For implicit booleanness
