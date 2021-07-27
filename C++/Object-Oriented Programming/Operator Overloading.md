@@ -323,13 +323,16 @@ int main()
     //Delcare a new set of coordinates
     Coordinates location(50, 70);
 
-        cout << "Original coordinates: " << location.getCoords() << '\n';
+        //Original coordinates: 50, 70
+	cout << "Original coordinates: " << location.getCoords() << '\n';
 
         location++;
-        cout << "Coordinates incremented by 1: " << location.getCoords() << '\n';
+        //Coordinates incremented by 1: 51, 71
+	cout << "Coordinates incremented by 1: " << location.getCoords() << '\n';
 
         location--;
         location--;
+	//Location decremented by 2: 49, 69
         cout << "Location decremented by 2: " << location.getCoords() << '\n';
 
     return 0;
