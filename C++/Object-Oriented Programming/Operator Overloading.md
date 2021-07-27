@@ -104,6 +104,84 @@ int main()
 ## Overloading Binary Operators
 ....Differentiating Between Unary and Binary Operators
 
+```C++
+#include <iostream>
+using namespace std;
+
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x, y;
+
+    public:
+        Coordinates(int, int);
+        void printCoords() const;
+
+        //Unary Plus and Minus
+        Coordinates operator+();
+        Coordinates operator-();
+
+        //Binary Addition and Subtraction
+        Coordinates operator+(const Coordinates&);
+        Coordinates operator-(const Coordinates&);
+};
+
+//Constructor
+Coordinates::Coordinates(int X, int Y)
+{
+    x = X;
+    y = Y;
+}
+
+//Get coordinates
+void Coordinates::printCoords() const
+{
+    cout << "Coordinates: " << x << ", " << y << '\n';
+}
+
+//+ Overload (unary plus)
+Coordinates Coordinates::operator+()
+{
+    //Return a new set of coordianates (each coordinate is negative if the coordinate was originally positive)
+    return Coordinates( (x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
+}
+
+//- Overload (unary minus)
+Coordinates Coordinates::operator-()
+{
+    //Return a new set of negated coordinates
+    return Coordinates(-x, -y);
+}
+
+//+ Overload (binary addition)
+Coordinates Coordinates::operator+(const Coordinates& other)
+{
+    //Return a new set of coordinates -- the sum of the two sets of coordinates
+    return Coordinates(x + other.x, y + other.y);
+}
+
+//- Overload (binary subtraction)
+Coordinates Coordinates::operator-(const Coordinates& other)
+{
+    //Return a new set of coordinates -- the difference of the two sets of coordinates
+    return Coordinates(x - other.x, y - other.y);
+}
+
+
+int main()
+{
+    //Declare two sets of coordinates
+    Coordinates location(50, 70);
+    Coordinates hiddenLair(-30, -500);
+
+    //Get the difference between the sets of coordinates
+    Coordinates difference = -location - hiddenLair;
+    difference.printCoords();
+
+    return 0;
+}
+```
 
 ## Special Cases
 The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
