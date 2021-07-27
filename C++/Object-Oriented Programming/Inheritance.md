@@ -376,14 +376,13 @@ int main()
 }
 ```
 
-## Overriding Methods with Virtual _virtual_
+## Overriding Methods with _virtual_ and _override_
 Virtual methods have their binding delayed until runtime, rather than having it be done at compile time. This allows functions to take parameters of the base type
 and still call the overriden version of the function. You see, if you have a pointer/function parameter of a base class and you assign it to a derived class, it will
-still work; however, it will not call the overriden version of the function since it's type is the base class. If you want to use overriden functions with function
-parameters/pointers of the type of the base class, then you have to use the keyword _virtual_. Virtual functions _must_ be implemented in every derived class; if you 
-don't want to change the implementation, just call `Base::function()`. in the definition.
+still work; however, it will not call the overriden version of the function since it's type is the base class. Instead, it would call the method from the base class.
+If you want to use overriden functions with function parameters/pointers of the type of the base class, then you have to use the keyword _virtual_. 
 
-Anytime you override a virtual function, add _override_ to the function.
+Anytime you override a virtual function, add [_override_](https://www.geeksforgeeks.org/override-keyword-c/) to the function.
 ```C++
 #include <iostream>
 #include <string>
@@ -465,3 +464,8 @@ GeeksforGeeks: [_Multiple Inheritance in C++_](https://www.geeksforgeeks.org/mul
 TutorialsPoint: [_C++ Inheritance_](https://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm) <br />
 CProgramming: [_Multiple Inheritance in C++_](https://www.cprogramming.com/tutorial/multiple_inheritance.html) <br />
 isocpp.org: [_Inheritance — Multiple and Virtual Inheritance_](https://isocpp.org/wiki/faq/multiple-inheritance) <br />
+isocpp.org: [_Inheritance — virtual functions_](https://isocpp.org/wiki/faq/virtual-functions) <br />
+isocpp.org: [_Inheritance — Multiple and Virtual Inheritance_](https://isocpp.org/wiki/faq/multiple-inheritance) <br />
+GeeksforGeeks: [_Virtual Functions and Runtime Polymorphism in C++ | Set 1 (Introduction)_](https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/) <br />
+TheCherno: [_Virtual Functions in C++_](https://www.youtube.com/watch?v=oIV2KchSyGQ) <br />
+TheCherno: [_Interfaces in C++ (Pure Virtual Functions)_](https://www.youtube.com/watch?v=UWAdd13EfM8) <br />
