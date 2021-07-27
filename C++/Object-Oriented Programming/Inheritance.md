@@ -382,7 +382,7 @@ and still call the overriden version of the function. You see, if you have a poi
 still work; however, it will not call the overriden version of the function since it's type is the base class. Instead, it would call the method from the base class.
 If you want to use overriden functions with function parameters/pointers of the type of the base class, then you have to use the keyword _virtual_. 
 
-Anytime you override a virtual function, add [_override_](https://www.geeksforgeeks.org/override-keyword-c/) to the function.
+Anytime you override a virtual function, add [_override_](https://www.geeksforgeeks.org/override-keyword-c/) to the overriding function.
 ```C++
 #include <iostream>
 #include <string>
