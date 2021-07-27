@@ -149,7 +149,7 @@ class IndeterminateResultException: public DivideByZeroException
         //A single constructor that calls the constructor from 'DivideByZeroException'
         IndeterminateResultException(string Message = "dividing zero by zero is indeterminate!"): DivideByZeroException(Message)
         {
-                    //'IndeterminateResultException' implements no new members
+            //'IndeterminateResultException' implements no new members
         }
 };
 
