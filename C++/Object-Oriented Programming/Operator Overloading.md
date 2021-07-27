@@ -110,6 +110,9 @@ The following operators are special cases. Only the stream insertion/extraction,
 
 ### _bool_ Operator
 
+### Typecast Operators
+float()
+
 ### Stream Insertion and Extraction Operators (<< and >>)
 
 
