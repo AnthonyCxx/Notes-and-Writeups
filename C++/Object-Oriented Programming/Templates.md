@@ -1,5 +1,9 @@
 # Templates (Generics) in C++
 
+## Templated Functions
+
+## Templated Classes
+
 ## Default Parameters
 
 ## Sources
