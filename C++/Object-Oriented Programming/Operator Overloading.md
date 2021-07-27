@@ -410,10 +410,6 @@ int main()
 }
 ```
 
-## Deleting Operators
-`className::operator& = delete;`
-
-
 ## Sources
 Book: [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
 IBM: [_Overloading operators (C++ only)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=only-overloading-operators-c) <br />
