@@ -288,7 +288,7 @@ int main(void)
 }
   
 ```
-[Adapted from This GeeksForGeeks Article](https://www.geeksforgeeks.org/binary-search/)
+> [Adapted from This GeeksForGeeks Article](https://www.geeksforgeeks.org/binary-search/)
 
 ## Chapter 16 - Linked Lists and Iterators
 
