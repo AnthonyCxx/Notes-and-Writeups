@@ -392,35 +392,41 @@ using namespace std;
 class Base
 {
     public:
-        //Virtual function
-        virtual void virtualPrint()
-        {
-            cout << "Called 'virtualPrint()' from the base class!" << '\n';
-        }
-
-        //Non-virtual function
-        void nonVirtualPrint()
-        {
-            cout << "Called 'nonVirtualPrint()' from the base class!" << '\n';
-        }
+        virtual void virtualPrint();
+        void nonVirtualPrint();
 };
+
+//Virtual function
+void Base::virtualPrint()
+{
+    cout << "Called 'virtualPrint()' from the base class!" << '\n';
+}
+
+//Non-virtual function
+void Base::nonVirtualPrint()
+{
+    cout << "Called 'nonVirtualPrint()' from the base class!" << '\n';
+}
 
 // ****** DERIVED CLASS ****** //
-class Derived : public Base
+class Derived: public Base
 {
     public:
-        //Virtual function
-        void virtualPrint() override  //Overrides 'virtualPrint' from the base class
-        {
-            cout << "Called 'virtualPrint()' from the derived class!" << '\n';
-        }
-
-        //Non-virtual function
-        void nonVirtualPrint()
-        {
-            cout << "Called 'nonVirtualPrint()' from the derived class!" << '\n';
-        }
+        void virtualPrint() override;
+        void nonVirtualPrint();
 };
+
+//Virtual function
+void Derived::virtualPrint()
+{
+    cout << "Called 'virtualPrint()' from the derived class!" << '\n';
+}
+
+//Non-virtual function
+void Derived::nonVirtualPrint()
+{
+    cout << "Called 'nonVirtualPrint()' from the derived class!" << '\n';
+}
 
 
 //Function 'callPrint()' takes a 'Base' object as a parameter
@@ -429,12 +435,6 @@ void callPrint(Base& obj)
     //Calls print on the object (virtual and non-)
     obj.virtualPrint();
     obj.nonVirtualPrint();
-
-    /*
-          Prints:
-          Called 'virtualPrint()' from the derived class!
-          Called 'nonVirtualPrint()' from the base class!
-    */
 }
 
 // DRIVER CODE //
