@@ -16,13 +16,13 @@ compiler what to do.
 
 
 ## Special Cases
-The following operators have 
+The following operators have special rules associated with them. Yes, all of these are on the test for CSC-1720.
 
 
 ### Stream Insertion and Extraction Operators (<< and >>)
 
 
-### Prefix and Postfix Operators
+### Prefix and Postfix Operators (++ and --)
 
 
 ## Deleting Operators
