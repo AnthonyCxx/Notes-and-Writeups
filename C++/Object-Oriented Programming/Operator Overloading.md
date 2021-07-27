@@ -4,11 +4,29 @@ When you write a simple expression like _2 + 2_, the computer gives you _4_ beca
 of operator overloading: providing definitions for how the program should treat expressions that involve classes. All you have to do is write a function that explains to the
 compiler what to do.
 
-##
 
-special operators: <<, >>, [bool](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const), prefix and postfix operators
+## Overloading Unary Operators
+[bool](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const)
+
+
+## Overloading Binary Operators
+
+
+## Differentiating Between Unary and Binary Operators
+
+
+## Special Cases
+The following operators have 
+
+
+### Stream Insertion and Extraction Operators (<< and >>)
+
+
+### Prefix and Postfix Operators
+
 
 ## Deleting Operators
 `className::operator& = delete;`
+
 
 ## Sources
