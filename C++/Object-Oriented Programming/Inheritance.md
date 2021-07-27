@@ -463,7 +463,8 @@ int main()
 Virtual methods have their binding delayed until runtime, rather than having it be done at compile time. This allows functions to take parameters of the base type
 and still call the overriden version of the function. You see, if you have a pointer/function parameter of a base class and you assign it to a derived class, it will
 still work; however, it will not call the overriden version of the function since it's type is the base class. If you want to use overriden functions with function
-parameters/pointers of the type of the base class, then you have to use the keyword _virtual_.
+parameters/pointers of the type of the base class, then you have to use the keyword _virtual_. Virtual functions _must_ be implemented in every derived class; if you 
+don't want to change the implementation, just call `Base::function()`. in the definition.
 
 ```C++
 #include <iostream>
