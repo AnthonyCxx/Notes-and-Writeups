@@ -30,3 +30,13 @@ The following operators have special rules associated with them. Yes, all of the
 
 
 ## Sources
+Artima: [_The Safe Bool Idiom_](https://www.artima.com/articles/the-safe-bool-idiom) <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
