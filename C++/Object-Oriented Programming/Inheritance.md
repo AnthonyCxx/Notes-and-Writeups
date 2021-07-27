@@ -446,7 +446,7 @@ int main()
     callPrint(derivedObject);
 }
 ```
-> I recommend you read [this FAQ article](https://isocpp.org/wiki/faq/virtual-functions) to better understand virtual functions
+> Read [this FAQ article](https://isocpp.org/wiki/faq/virtual-functions) to better understand virtual functions
 
 ## Pure Virtual Methods (Interfaces)
 Pure virtual functions are functions declared in a base class that have no implementation and are intended to be overriden by the derived class. 
