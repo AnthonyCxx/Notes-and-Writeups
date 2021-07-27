@@ -85,7 +85,7 @@ int main()
 
     cout << "Initial coordinates: " << location.getCoords() << '\n';
 
-    //Negate the location and THEN get the coordinates. Does not affect the original coordinates.
+    //Negate the location and THEN get the coordinates. Returns a new set of negated coordinates.
     cout << "Negated coordinates: " << (-location).getCoords() << '\n';
 
     //Show the original coordinates were unaffected
