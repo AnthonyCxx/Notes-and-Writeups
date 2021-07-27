@@ -341,7 +341,72 @@ as [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object
 
 The _friend_ keyword should only be included in the declaration; do not include it in the function implementation.
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x, y;
+
+    public:
+        Coordinates(int, int);
+                string getCoords() const;
+
+        //<< and >> Overloads (friend functions)
+        friend ostream& operator<<(ostream&, const Coordinates&);
+        friend istream& operator>>(istream&, Coordinates&);
+};
+
+//Constructor
+Coordinates::Coordinates(int X = 0, int Y = 0)
+{
+    x = X;
+    y = Y;
+}
+
+//Get coordinates
+string Coordinates::getCoords() const
+{
+    //Return the coordinates as a string
+    return to_string(x) + ", " + to_string(y);
+}
+
+//Stream Insertion Overload (<<)
+ostream& operator<<(ostream& ostreamObject, const Coordinates& coords)
+{
+    //Try not to include newlines (\n) in overloads, because they prevent code flexibility
+    ostreamObject << "Coordinates: " << coords.getCoords();
+
+    return ostreamObject;
+}
+
+//Stream Extraction Overload (>>)
+istream& operator>>(istream& istreamObject, Coordinates& coords)
+{
+    //Friend functions have access to a class's private members
+    istreamObject >> coords.x >> coords.y;
+
+    return istreamObject;
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Declare a new set of coordinates
+    Coordinates remoteIsland;
+
+    //Get the coordinates for remoteIsland
+    cout << "Enter the location of the newfound island: ";
+    cin >> remoteIsland;   //Is equal to 'cin >> remoteIsland.x >> remoteIsland.y'
+
+    //Now you can straight-up output the location
+    cout << remoteIsland << '\n';
+
+    return 0;
+}
 ```
 
 ## Deleting Operators
