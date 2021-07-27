@@ -1,4 +1,7 @@
 # Templates (Generics) in C++
+Templates are a definition of a function of class that is not specific to any one type.
+
+Templates do not exist until called
 
 ## Templated Functions
 
@@ -9,6 +12,7 @@ As of C++17, you can provide default arguments for template paramters.
 
 ## Sources
 isocpp.org: [_Templates_](https://isocpp.org/wiki/faq/templates) <br />
+IBM C++ Documentation: [_https://www.ibm.com/docs/en/i/7.4?topic=reference-templates-c-only_](https://www.ibm.com/docs/en/i/7.4?topic=reference-templates-c-only) <br />
 GeeksforGeeks: [_Templates in C++_](https://www.geeksforgeeks.org/templates-cpp/) <br />
 Programiz: [_C++ Templates_](https://www.programiz.com/cpp-programming/templates) <br />
 TheCherno: [_Templates in C++_](https://www.youtube.com/watch?v=I-hZkUa9mIs) <br />
