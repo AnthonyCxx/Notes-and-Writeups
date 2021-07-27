@@ -242,7 +242,7 @@ int main()
 
 ### Prefix and Postfix Operators (++ and --)
 The only difference between the prefix increment operator and the postfix increment operator (++) is whether they are put before or after the variable,
-so how do you overload them? Well, you differentiate between them by giving the postfix operator a dummy int parameter.
+so how do you overload them? Well, you differentiate between them by giving the postfix operator a dummy _int_ parameter.
 
 Here, I chose to alter the actual class, so I chose to return _\*this_ instead of a new set of coordinates.
 ```C++
@@ -291,7 +291,7 @@ Coordinates& Coordinates::operator++()
 }
 
 //Postfix Increment Overload
-Coordinates& Coordinates::operator++(int dummy)
+Coordinates& Coordinates::operator++(int dummy)  //You won't use 'dummy'
 {
     x++;
     y++;
@@ -309,7 +309,7 @@ Coordinates& Coordinates::operator--()
 }
 
 //Postfix Decrement Overload
-Coordinates& Coordinates::operator--(int dummy)
+Coordinates& Coordinates::operator--(int dummy)  //You won't use 'dummy'
 {
     x--;
     y--;
