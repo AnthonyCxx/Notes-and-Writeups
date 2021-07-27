@@ -7,6 +7,7 @@ This is not meant to be an authority of any kind nor is it meant to be comprehen
 P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article.
 
 ## Books Used
+[_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
 [_Sams Teach Yourself C++ in One Hour a Day, 8th Edition_](https://www.amazon.com/One-Hour-Sams-Teach-Yourself/dp/0789757745) <br />
 [_Modern C++ for Absolute Beginners: A Friendly Introduction to C++ Programming Language and C++11 to C++20 Standards 1st ed. Edition_](https://www.amazon.com/Modern-Absolute-Beginners-Introduction-Programming/dp/1484260465) <br />
 [_The C++ Programming Language, Fourth Edition_](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840) <br />
