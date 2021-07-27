@@ -448,15 +448,68 @@ int main()
 ```
 
 ## Pure Virtual Methods (Interfaces)
-Pure virtual functions are functions declared in a base class that have no implementation and are intended to be overriden 
-by the derived class. Derived classes _must_ provide their own implementations for pure virtual functions, guaranteeing that each class has its own implementation of the
+Pure virtual functions are functions declared in a base class that have no implementation and are intended to be overriden by the derived class. 
+Derived classes _must_ provide their own implementations for pure virtual functions, guaranteeing that each class has its own implementation of the
 virtual method. Any class with a pure virtual functions become [abstract base classes](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm), preventing them from 
-being instantiated (typically because it wouldn't make sense). Abstract base classes are meant to be nothing more than a template to derive new classes from. 
+being instantiated (typically because it wouldn't make sense). Abstract base classes ([ABCs](https://docs.python.org/3/library/abc.html)) are meant to be nothing more than a template to derive new classes from. 
 If you know Java or C#, you may know this as an [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface).
 
 To make a virtual method a pure virtual method, set the virtual metthod to 0 (e.g. `virtual void function() = 0`).
 ```C++
+#include <iostream>
+using namespace std;
 
+// ****** ANIMAL CLASS (ABSTRACT) ****** //
+class Animal
+{
+    public:
+        //Three pure virtual methods
+        virtual void eat() = 0;
+        virtual void sleep() = 0;
+        virtual void move() = 0;
+};
+
+// ****** BAT CLASS ****** //
+class Bat: public Animal
+{
+    public:
+        void eat() override;
+        void sleep() override;
+        void move() override;
+};
+
+//Eat
+void Bat::eat()
+{
+    cout << "The bat is eating delicious bugs...\n";
+}
+
+//Sleep
+void Bat::sleep()
+{
+    cout << "The bat sleeps, hanging upside-down from the ceiling of the cave...\n";
+}
+
+//Move
+void Bat::move()
+{
+    cout << "The horror of the night soars throughout the night sky...\n";
+}
+
+
+// ****** DRIVER CODE ****** //
+int main()
+{
+    //Declare an animal, inherited from abstract class 'Animal'
+    Bat bat;
+
+    //'Bat' methods, overriden from 'Animal'
+    bat.eat();
+    bat.sleep();
+    bat.move();
+
+    return 0;
+}
 ```
 
 ## Sources
