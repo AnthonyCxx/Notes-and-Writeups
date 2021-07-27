@@ -341,7 +341,7 @@ class LockedChest:  public Chest
         void inspectLock();
 };
 
-//Constructor
+//Constructor, calls the constructor for 'Chest' (you can only call the constructor of a direct superclass)
 LockedChest::LockedChest(string Name, int ID, int Capacity, bool Locked): Chest(Name, ID, Capacity)
 {
      isLocked = Locked;
