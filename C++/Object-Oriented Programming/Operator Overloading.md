@@ -101,6 +101,7 @@ int main()
 
 ```C++
 #include <iostream>
+#include <string>
 using namespace std;
 
 // COORDINATES CLASS //
@@ -111,7 +112,7 @@ class Coordinates
 
     public:
         Coordinates(int, int);
-        void printCoords() const;
+        string getCoords() const;
 
         //Unary Plus and Minus
         Coordinates operator+();
@@ -130,16 +131,17 @@ Coordinates::Coordinates(int X, int Y)
 }
 
 //Get coordinates
-void Coordinates::printCoords() const
+string Coordinates::getCoords() const
 {
-    cout << "Coordinates: " << x << ", " << y << '\n';
+    //Return the coordinates as a string
+    return to_string(x) + ", " + to_string(y);
 }
 
 //+ Overload (unary plus)
 Coordinates Coordinates::operator+()
 {
     //Return a new set of coordianates (each coordinate is negative if the coordinate was originally positive)
-    return Coordinates( (x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
+    return Coordinates((x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
 }
 
 //- Overload (unary minus)
@@ -164,6 +166,7 @@ Coordinates Coordinates::operator-(const Coordinates& other)
 }
 
 
+// DRIVER CODE //
 int main()
 {
     //Declare two sets of coordinates
@@ -171,8 +174,8 @@ int main()
     Coordinates hiddenLair(-30, -500);
 
     //Get the difference between the sets of coordinates
-    Coordinates difference = -location - hiddenLair;
-    difference.printCoords();
+    Coordinates difference = location - hiddenLair;
+    cout << "Difference between 'location' and 'hiddenLair': " << difference.getCoords() << '\n';
 
     return 0;
 }
