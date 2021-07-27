@@ -454,7 +454,7 @@ virtual method. Any class with a pure virtual functions become an [abstract base
 being instantiated (typically because it wouldn't make sense). Abstract base classes ([ABCs](https://docs.python.org/3/library/abc.html)) are meant to be nothing more than a template to derive new classes from. To make a virtual method a pure virtual method, set the virtual metthod to 0 (e.g. `virtual void function() = 0`).
 
 If you know Java or C#, you may know this as an [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface). Unlike interfaces,
-which contain any implementations, abstract classes can have pure virtual methods (without implementations) alongside standard and virtual methods (with implementations).
+which cannot contain any implementations, abstract classes can have pure virtual methods (without implementations) alongside standard and virtual methods (with implementations).
 
 ```C++
 #include <iostream>
