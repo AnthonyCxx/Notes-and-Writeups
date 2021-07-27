@@ -410,7 +410,7 @@ class Derived : public Base
 {
     public:
         //Virtual function
-        virtual void virtualPrint() override  //Overrides 'virtualPrint' from the base class
+        void virtualPrint() override  //Overrides 'virtualPrint' from the base class
         {
             cout << "Called 'virtualPrint()' from the derived class!" << '\n';
         }
