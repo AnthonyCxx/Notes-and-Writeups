@@ -97,7 +97,7 @@ int main()
 > Reference: [_to\_string()_](https://www.geeksforgeeks.org/stdto_string-in-cpp/) 
 
 ## Overloading Binary Operators
-....Differentiating Between Unary and Binary Operators
+Binary operators take one function parameter.
 
 ```C++
 #include <iostream>
