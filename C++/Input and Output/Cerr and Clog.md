@@ -1,4 +1,4 @@
-# Error Output in C++ with _cerr_ and _clog_
+# Outputting Errors in C++ with _cerr_ and _clog_
 _clog_ and _cerr_, which stand for 'character log' and 'character error' respectively, belong to the [\<iostream\>](https://en.cppreference.com/w/cpp/header/iostream) 
 library and are used to write characters to [stderr](http://www.cs.kent.edu/~durand/CS1/Notes/06_IO/cs1_io.html) (the screen). _clog_ and _cerr_ generally use an
 [overloaded](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm) right bit-shift operator (<<) to write to the screen <br />
