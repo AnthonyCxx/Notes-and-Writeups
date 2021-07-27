@@ -4,6 +4,8 @@ overloading can be done with just functions, but operator overloading makes code
 want to write out `coordinates.multiply(Othercoordinates.negate())` when you could write `coordinates * -OtherCoordinates` instead? Obivously, there is a question of clarity, 
 but that's where the programmer's discretion should come in. As a rule of thumb, if you have to refer to the implementation of the class
 to understand what an overloaded operator does, then it's poorly written. Operators should only be overloaded when it makes perfect sense and aids the clarity of the code.
+To overload an operator, declare a function like so: `returnType operator operatorSymbol(parameters);`. For example, `bool operator==(const Date& other) const;`
+could be used to compare a class '_Date_'.
 
 ## Notable Restrictions on Operator Overloading <br />
 - You cannot change [operator precedence](https://www.ibm.com/docs/en/zos/2.4.0?topic=operators-operator-precedence-associativity) <br />
