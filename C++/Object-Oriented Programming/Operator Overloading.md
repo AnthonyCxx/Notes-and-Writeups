@@ -38,7 +38,7 @@ class Coordinates
         void operator-();
 };
 
-//Consructor
+//Constructor
 Coordinates::Coordinates(int X, int Y)
 {
     x = X;
