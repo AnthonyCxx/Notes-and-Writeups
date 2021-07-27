@@ -529,16 +529,6 @@ int main()
 }
 ```
 
-## Pure Virtual Methods and Abstract Classes
-If a virtual function is assigned zero (e.g. `virtual void function() = 0;`), then the class becomes an [abstract base class](https://isocpp.org/wiki/faq/abcs).
-Abstract base classes cannot be instantiated and only serve as a template to derive new classes from. For example, the first class we created on this page was
-'Animal', there is no animal 'Animal'; rather, 'Animal' is a trait of a creature. 'Animal' is an abstract idea and it makes no sense to create an instance of class
-'Animal'. So, 'Animal' should be an abstract base class.
-
-```C++
-
-```
-
 ## Sources
 TutorialsPoint: [_C++ Inheritance_](https://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm) <br />
 GeeksforGeeks: [_Inheritance in C++_](https://www.geeksforgeeks.org/inheritance-in-c/) <br />
