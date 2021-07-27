@@ -190,7 +190,7 @@ I'll be honest, I had no idea this existed until I came across [this cracked Sta
 The _bool_ overload allows a class to have a trait called implicit booleanness, which is the idea that the class itself can have a boolean value. You know how you can
 write `if (inFile)` and it will evaluate to false if the file is bad or it's the end of the file? Well, that's implicit booleanness at work.
 
-A _bool_ overload should be const and, unlike other overloads, should not have any return type but should have a return value (don't ask me why or how...).
+A _bool_ overload should be const and, unlike other overloads, should not have any return type but should have a return value.
 
 ```C++
 #include <iostream>
