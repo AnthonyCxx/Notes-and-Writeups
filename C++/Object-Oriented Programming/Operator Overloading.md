@@ -31,7 +31,7 @@ The following operators have special rules associated with them. Yes, all of the
 
 ## Sources
 Artima: [_The Safe Bool Idiom_](https://www.artima.com/articles/the-safe-bool-idiom) <br />
-: [__]() <br />
+Book: [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
 : [__]() <br />
 : [__]() <br />
 : [__]() <br />
