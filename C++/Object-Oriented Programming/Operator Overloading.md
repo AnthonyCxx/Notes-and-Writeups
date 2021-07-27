@@ -1,7 +1,7 @@
 # Operator Overloading in C++
 Operator overloading is the ability to define what should happen when operators are applied to classes (a user-defined type). Anything that can be done with operator
 overloading can be done with just functions, but operator overloading makes code far more readable. I mean, do you _really_ 
-want to write out `coordinates.multiply(Othercoordinates.negate())` when you could write <br /> `coordinates * -OtherCoordinates` instead? Obivously, there is a question of clarity, 
+want to write out `coordinates.multiply(Othercoordinates.negate())` when you could write `coordinates * -OtherCoordinates` instead? Obivously, there is a question of clarity, 
 but that's where the programmer's discretion should come in. As a rule of thumb, if you have to refer to the implementation of the class
 to understand what an overloaded operator does, then it's poorly written. Operators should only be overloaded when it makes perfect sense and aids the clarity of the code.
 
