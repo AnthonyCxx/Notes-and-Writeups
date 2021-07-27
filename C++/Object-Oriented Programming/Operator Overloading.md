@@ -15,7 +15,7 @@ could be used to compare a class '_Date_'.
 - You cannot overload some operators [.](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160), [.*](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160), [::](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160), [?:](https://docs.microsoft.com/en-us/cpp/cpp/conditional-operator-q?view=msvc-160), [sizeof()](https://docs.microsoft.com/en-us/cpp/cpp/sizeof-operator?view=msvc-160)
 		
 - Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access <br /> 
-  to the data members of the class (public and private). Using the keyword friend at the front of a function  <br />
+  to the data members of the class (public and private). Using [the keyword friend](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) at the front of a function  <br />
   declaration gives the function access to all the data members of the given class. **The keyword friend is only   <br />
   included in the function declaration**.  <br />
 
