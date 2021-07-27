@@ -22,10 +22,15 @@ to understand what an overloaded operator does, then it's poorly written. Operat
 Unary operators are the simplest to overload, as they take no parameters. <br />
 In this example, coordinates can be easily made positive or negative by putting a positive or negative sign in front of them.
 
+The overloaded operators here return a new set of coordinates (as an anonymous object) because we don't want to alter the original set 
+of coordinates. Plus, you can't use _void_ functions in expression (like 2 + 2), so we have to return something. If you do want to alter
+the original coordinates, return [_\*this_](https://www.geeksforgeeks.org/this-pointer-in-c/) instead of a new set of coordinates.
 ```C++
 #include <iostream>
+#include <string>
 using namespace std;
 
+// COORDINATES CLASS //
 class Coordinates
 {
     private:
@@ -33,15 +38,11 @@ class Coordinates
 
     public:
         Coordinates(int, int);
-        void printCoords() const;
+        string getCoords() const;
 
-        /*
-            operator+ and operator- take no parameters,
-            so it's clear that they are the unary plus and minus
-            operators, not the binary addition and subtraction operators
-        */
-        void operator+();
-        void operator-();
+        //Unary Plus and Minus
+        Coordinates operator+();
+        Coordinates operator-();
 };
 
 //Constructor
@@ -52,54 +53,44 @@ Coordinates::Coordinates(int X, int Y)
 }
 
 //Get coordinates
-void Coordinates::printCoords() const
+string Coordinates::getCoords() const
 {
-    cout << "Coordinates: " << x << ", " << y << '\n';
+    //Return the coordinates as a string
+    return to_string(x) + ", " + to_string(y);
 }
 
 //+ Overload (unary plus)
-void Coordinates::operator+()
+Coordinates Coordinates::operator+()
 {
-    //If x or y is negative, make them positive
-
-    if (x < 0)
-        x *= -1;
-
-    if (y < 0)
-        y *= -1;
+    //Return a new set of coordianates (each coordinate is negative if the coordinate was originally positive)
+    return Coordinates( (x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
 }
 
 //- Overload (unary minus)
-void Coordinates::operator-()
+Coordinates Coordinates::operator-()
 {
-    x = -x;
-    y = -y;
+    //Return a new set of negated coordinates
+    return Coordinates(-x, -y);
 }
+
 
 int main()
 {
-    //Declare a location with the coordinates 50, 70 (x, y)
+    //Declare two sets of coordinates
     Coordinates location(50, 70);
 
-    //Print coordinates
-    location.printCoords();
+    cout << "Initial coordinates: " << location.getCoords() << '\n';
 
-    //Make coordinates negative
-    -location;
+    //Negate the location and THEN get the coordinates
+    cout << "Negated coordinates: " << (-location).getCoords() << '\n';
 
-    //Print coordinates
-    location.printCoords();
-
-    //Make coordinates positive
-    +location;
-
-    //Print coordinates
-    location.printCoords();
+    //Make the coordinates positive again
+    cout << "Positive coordinates: " << (+location).getCoords() << '\n';
 
     return 0;
 }
 ```
-
+> Reference: [_to\_string()_](https://www.geeksforgeeks.org/stdto_string-in-cpp/) 
 
 ## Overloading Binary Operators
 ....Differentiating Between Unary and Binary Operators
@@ -182,6 +173,8 @@ int main()
     return 0;
 }
 ```
+
+## Returning a New Object vs _\*this_
 
 ## Special Cases
 The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
