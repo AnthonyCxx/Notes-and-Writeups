@@ -186,7 +186,7 @@ The following operators are special cases. Only the stream insertion/extraction 
 The others are just kinda cool.
 
 ### _bool_ Operator
-I'll be honest, I had no idea this existed until I came across [this cracked StackOverflow question](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const).
+I'll be honest, I had no idea this existed in C++ until I came across [this cracked StackOverflow question](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const).
 The _bool_ overload allows a class to have a trait called implicit booleanness, which is the idea that the class itself can have a boolean value. You know how you can
 write `if (inFile)` and it will evaluate to false if the file is bad or it's the end of the file? Well, that's implicit booleanness at work.
 
@@ -240,13 +240,103 @@ int main()
 }
 ```
 
-### Typecast Operators
-operator float() const
+### Prefix and Postfix Operators (++ and --)
+The only difference between the prefix increment operator and the postfix increment operator (++) is whether they are put before or after the variable,
+so how do you overload them? Well, you differentiate between them by giving the postfix operator a dummy int parameter.
+
+Here, I chose to alter the actual class, so I chose to return _\*this_ instead of a new set of coordinates.
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x, y;
+
+    public:
+        Coordinates(int, int);
+                string getCoords() const;
+
+        //Overloaded Prefix and Postfix Increment
+        Coordinates& operator++();          //Prefix Increment
+        Coordinates& operator++(int);      //Postfix Increment
+        Coordinates& operator--();        //Prefix Decrement
+        Coordinates& operator--(int);    //Postfix Decrement
+};
+
+//Constructor
+Coordinates::Coordinates(int X, int Y)
+{
+    x = X;
+    y = Y;
+}
+
+//Get coordinates
+string Coordinates::getCoords() const
+{
+    //Return the coordinates as a string
+    return to_string(x) + ", " + to_string(y);
+}
+
+//Prefix Increment Overload
+Coordinates& Coordinates::operator++()
+{
+    x++;
+    y++;
+
+    return *this;
+}
+
+//Postfix Increment Overload
+Coordinates& Coordinates::operator++(int dummy)
+{
+    x++;
+    y++;
+
+    return *this;
+}
+
+//Prefix Decrement Overload
+Coordinates& Coordinates::operator--()
+{
+    x--;
+    y--;
+
+    return *this;
+}
+
+//Postfix Decrement Overload
+Coordinates& Coordinates::operator--(int dummy)
+{
+    x--;
+    y--;
+
+    return *this;
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Delcare a new set of coordinates
+    Coordinates location(50, 70);
+
+        cout << "Original coordinates: " << location.getCoords() << '\n';
+
+        location++;
+        cout << "Coordinates incremented by 1: " << location.getCoords() << '\n';
+
+        location--;
+        location--;
+        cout << "Location decremented by 2: " << location.getCoords() << '\n';
+
+    return 0;
+}
+```
 
 ### Stream Insertion and Extraction Operators (<< and >>)
-
-
-### Prefix and Postfix Operators (++ and --)
 
 
 ## Deleting Operators
