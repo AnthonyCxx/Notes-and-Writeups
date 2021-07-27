@@ -1,8 +1,9 @@
 # Operator Overloading in C++
 
+### Notable Rules
+...
 
 ## Overloading Unary Operators
-[bool](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const)
 
 
 ## Overloading Binary Operators
@@ -14,6 +15,7 @@
 ## Special Cases
 The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
 
+### _bool_ Operator
 
 ### Stream Insertion and Extraction Operators (<< and >>)
 
