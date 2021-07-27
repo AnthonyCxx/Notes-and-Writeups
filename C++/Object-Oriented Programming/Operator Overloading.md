@@ -6,7 +6,7 @@ want to write out `date.addDays(30)` when you could write `date + 30` instead? O
 may not be the clearest, but that's where the programmer's discretion should come in. As a rule of thumb, if you have to refer to the implementation of the class
 to understand what an overloaded operator does, then it's poorly written. Operators should only be overloaded when it makes perfect sense and aids the clarity of the code.
 
-### Notable Restrictions on Operator Overloading <br />
+## Notable Restrictions on Operator Overloading <br />
 - You cannot change operator precedence <br />
 - Associativity cannot be changed  <br />
 - You cannot use default parameters <br />
