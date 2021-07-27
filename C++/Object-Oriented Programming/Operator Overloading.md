@@ -109,9 +109,10 @@ int main()
 The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
 
 ### _bool_ Operator
+For implicit booleanness
 
 ### Typecast Operators
-float()
+operator float() const
 
 ### Stream Insertion and Extraction Operators (<< and >>)
 
