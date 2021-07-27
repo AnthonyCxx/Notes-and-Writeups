@@ -177,11 +177,11 @@ int main()
 }
 ```
 
-## Special Cases
+# Special Cases
 The following operators are special cases. Only the stream insertion/extraction and prefix/postfix operators are on the test for CSC-1720. <br />
 The others are just kinda cool.
 
-### _bool_ Operator
+## _bool_ Operator
 I'll be honest, I had no idea this existed in C++ until I came across [this cracked StackOverflow question](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const).
 The _bool_ overload allows a class to have a trait called implicit booleanness, which is the idea that the class itself can have a boolean value. You know how you can
 write `if (inFile)` and it will evaluate to false if the file is bad or it's the end of the file? Well, that's implicit booleanness at work.
@@ -236,7 +236,7 @@ int main()
 }
 ```
 
-### Prefix and Postfix Operators (++ and --)
+## Prefix and Postfix Operators (++ and --)
 The only difference between the prefix increment operator and the postfix increment operator (++) is whether they are put before or after the variable,
 so how do you overload them? Well, you differentiate between them by giving the postfix operator a dummy _int_ parameter.
 
@@ -335,7 +335,7 @@ int main()
 }
 ```
 
-### Stream Insertion and Extraction Operators (<< and >>)
+## Stream Insertion and Extraction Operators (<< and >>)
 The stream insertion operator (<<) and stream extraction operator (>>) overloads cannot be a part of the class definition to allow chain calling ([see here](https://stackoverflow.com/questions/9351166/does-overloading-operator-works-inside-the-class) for why). Because of this, you have to write the << and >> overloads
 as [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) functions. The << and >> functions will both take two parameters, an [_ostream_](https://www.geeksforgeeks.org/c-stream-classes-structure/) or [_istream_](https://www.cplusplus.com/forum/beginner/73195/) variable respectively and then the class you want to overload for. In case you aren't familiar with the _istream_
 and _ostream_ datatypes, they are class types of _cin_ and _cout_; _istream_ stands for 'input stream' and _ostream_ stands for 'output stream'.
