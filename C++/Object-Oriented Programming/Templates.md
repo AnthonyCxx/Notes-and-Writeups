@@ -5,6 +5,7 @@
 ## Templated Classes
 
 ## Default Parameters
+As of C++17, you can provide default arguments for template paramters.
 
 ## Sources
 isocpp.org: [_Templates_](https://isocpp.org/wiki/faq/templates) <br />
