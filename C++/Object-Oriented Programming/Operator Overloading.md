@@ -23,8 +23,9 @@ Unary operators are the simplest to overload, as they take no parameters. <br />
 In this example, coordinates can be easily made positive or negative by putting a positive or negative sign in front of them.
 
 The overloaded operators here return a new set of coordinates (as an anonymous object) because we don't want to alter the original set 
-of coordinates. Plus, you can't use _void_ functions in expression (like 2 + 2), so we have to return something. If you do want to alter
+of coordinates. Plus, you can't use _void_ functions in expression (like 2 + 2), so we have to return something. If you do alter
 the original coordinates, return [_\*this_](https://www.geeksforgeeks.org/this-pointer-in-c/) instead of a new set of coordinates.
+The _\*this_ keyword is a pointer to the current instance of the class, which allows you to refer to the current object.
 ```C++
 #include <iostream>
 #include <string>
@@ -63,7 +64,7 @@ string Coordinates::getCoords() const
 Coordinates Coordinates::operator+()
 {
     //Return a new set of coordianates (each coordinate is negative if the coordinate was originally positive)
-    return Coordinates( (x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
+    return Coordinates((x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
 }
 
 //- Overload (unary minus)
