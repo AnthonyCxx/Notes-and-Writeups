@@ -7,8 +7,8 @@ may not be the clearest, but that's where the programmer's discretion should com
 to understand what an overloaded operator does, then it's poorly written. Operators should only be overloaded when it makes perfect sense and aids the clarity of the code.
 
 ## Notable Restrictions on Operator Overloading <br />
-- You cannot change operator precedence <br />
-- Associativity cannot be changed  <br />
+- You cannot change [operator precedence](https://www.ibm.com/docs/en/zos/2.4.0?topic=operators-operator-precedence-associativity) <br />
+- [Associativity](https://www.ibm.com/docs/en/zos/2.4.0?topic=operators-operator-precedence-associativity) cannot be changed  <br />
 - You cannot use default parameters <br />
 - You cannot create new operators <br />
 - You cannot overload some operators [.](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160), [.*](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160), [::](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160), [?:](https://docs.microsoft.com/en-us/cpp/cpp/conditional-operator-q?view=msvc-160), [sizeof()](https://docs.microsoft.com/en-us/cpp/cpp/sizeof-operator?view=msvc-160)
