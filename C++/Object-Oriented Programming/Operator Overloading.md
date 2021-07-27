@@ -182,10 +182,59 @@ int main()
 ```
 
 ## Special Cases
-The following operators are special cases. Only the stream insertion/extraction and prefix/postfix operators are on the test for CSC-1720.
+The following operators are special cases. Only the stream insertion/extraction and prefix/postfix operators are on the test for CSC-1720. <br />
+The others are just kinda cool.
 
 ### _bool_ Operator
 For implicit booleanness
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x, y;
+
+    public:
+        Coordinates(int, int);
+
+        //Bool overload
+        operator bool() const;
+};
+
+//Constructor
+Coordinates::Coordinates(int X, int Y)
+{
+    x = X;
+    y = Y;
+}
+
+//Bool overload
+Coordinates::operator bool() const
+{
+    //An object 'Coordinates' is true if both the x- and y-coordinate are positive.
+    return (x > 0 and y > 0);
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Delcare a new set of coordinates
+    Coordinates location(50, 70);
+
+    //The object 'location' of type 'Coordinates' can now be used as a boolean
+    if(location)
+        cout << "Both coordinates in 'location' are positive\n";  //Executed, 'location' is true
+    else
+        cout << "At least one of the coordinates in 'location' is negative :(\n";
+
+    return 0;
+}
+```
 
 ### Typecast Operators
 operator float() const
