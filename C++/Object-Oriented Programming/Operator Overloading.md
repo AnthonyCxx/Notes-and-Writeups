@@ -1,4 +1,10 @@
 # Operator Overloading in C++
+Operator overloading is the ability to define what should happen when operators are applied to classes (a user-defined type).
+
+Anything that can be done with operator overloading can be done with just functions, but operator overloading makes code far more readable. I mean, do you _really_ 
+want to write out `date.addDays(30)` when you could write `date + 30` instead? Obivously, there is a question of clarity, as arbitrarily adding an integer to a date
+may not be the clearest, but that's where the programmer's discretion should come in. As a rule of thumb, if you have to refer to the implementation of the class
+to understand what an overloaded operator does, then it's poorly written. Operators should only be overloaded when it makes perfect sense and aids the clarity of the code.
 
 ### Notable Restrictions on Operator Overloading <br />
 - You cannot change operator precedence <br />
@@ -14,7 +20,8 @@
 
 
 ## Overloading Unary Operators
-
+Unary operators are the simplest to overload, as they take no paramters. In this example, coordinates can be easily made positive or negative by putting a
+positive or negative sign in front of them.
 
 ```C++
 #include <iostream>
