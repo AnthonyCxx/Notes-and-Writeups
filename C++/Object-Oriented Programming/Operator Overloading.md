@@ -19,8 +19,8 @@ to understand what an overloaded operator does, then it's poorly written. Operat
 
 
 ## Overloading Unary Operators
-Unary operators are the simplest to overload, as they take no parameters. In this example, coordinates can be easily made positive or negative by putting a
-positive or negative sign in front of them.
+Unary operators are the simplest to overload, as they take no parameters. <br />
+In this example, coordinates can be easily made positive or negative by putting a positive or negative sign in front of them.
 
 ```C++
 #include <iostream>
