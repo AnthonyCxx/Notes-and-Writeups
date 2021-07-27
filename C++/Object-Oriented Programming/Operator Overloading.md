@@ -181,8 +181,6 @@ int main()
 }
 ```
 
-## Returning a New Object vs _\*this_
-
 ## Special Cases
 The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
 
