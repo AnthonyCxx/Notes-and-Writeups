@@ -5,7 +5,7 @@
 - Associativity cannot be changed  <br />
 - You cannot use default parameters <br />
 - You cannot create new operators <br />
-- You cannot overload some operators _._, _.*_, _::_, _?:_, _sizeof()_
+- You cannot overload some operators [_._](https://docs.microsoft.com/en-us/cpp/cpp/member-access-operators-dot-and?view=msvc-160), [_.*_](https://docs.microsoft.com/en-us/cpp/cpp/pointer-to-member-operators-dot-star-and-star?view=msvc-160), [_::_](https://docs.microsoft.com/en-us/cpp/cpp/scope-resolution-operator?view=msvc-160), [_?:_](https://docs.microsoft.com/en-us/cpp/cpp/conditional-operator-q?view=msvc-160), [_sizeof()_](https://docs.microsoft.com/en-us/cpp/cpp/sizeof-operator?view=msvc-160)
 		
 - Some overloaded operators (<< and >> notably) cannot be a part of the class itself, but still need access <br /> 
   to the data members of the class (public and private). Using the keyword friend at the front of a function  <br />
