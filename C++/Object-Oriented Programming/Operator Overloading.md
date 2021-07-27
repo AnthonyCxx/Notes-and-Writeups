@@ -75,6 +75,7 @@ Coordinates Coordinates::operator-()
 }
 
 
+// DRIVER CODE //
 int main()
 {
     //Declare two sets of coordinates
@@ -82,11 +83,11 @@ int main()
 
     cout << "Initial coordinates: " << location.getCoords() << '\n';
 
-    //Negate the location and THEN get the coordinates
+    //Negate the location and THEN get the coordinates. Does not affect the original coordinates.
     cout << "Negated coordinates: " << (-location).getCoords() << '\n';
 
-    //Make the coordinates positive again
-    cout << "Positive coordinates: " << (+location).getCoords() << '\n';
+    //Show the original coordinates were unaffected
+    cout << "Initial coordinates: " << location.getCoords() << '\n';
 
     return 0;
 }
