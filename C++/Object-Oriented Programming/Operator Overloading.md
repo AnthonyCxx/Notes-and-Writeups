@@ -12,7 +12,7 @@
 
 
 ## Special Cases
-The following operators have special rules associated with them. Yes, all of these are on the test for CSC-1720.
+The following operators are special cases. Only the stream insertion/extraction, and prefix/postfix operators are on the test for CSC-1720.
 
 
 ### Stream Insertion and Extraction Operators (<< and >>)
