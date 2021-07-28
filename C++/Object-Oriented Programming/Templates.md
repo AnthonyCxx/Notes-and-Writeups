@@ -142,9 +142,6 @@ int main()
 ```
 > Prints: 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14
 
-## Default Parameters
-As of C++17, you can provide default arguments for template paramters.
-
 ## Sources
 isocpp.org: [_Templates_](https://isocpp.org/wiki/faq/templates) <br />
 IBM C++ Documentation: [_Templates (C++ only)_](https://www.ibm.com/docs/en/i/7.4?topic=reference-templates-c-only) <br />
