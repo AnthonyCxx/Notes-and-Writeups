@@ -56,6 +56,11 @@ int main()
 ## Templated Classes
 An example of a templated class. Templates provide a safer alternative to using [void pointers to achieve polymorphism](https://riptutorial.com/c/example/17747/polymorphic-behaviour-with-void-pointers), as you would do in C.
 
+This example is a simple array class, based on the [_array_ class](https://www.cplusplus.com/reference/array/array/) from the C++ Standard Template Library.
+```C++
+
+```
+
 ## Default Parameters
 As of C++17, you can provide default arguments for template paramters.
 
