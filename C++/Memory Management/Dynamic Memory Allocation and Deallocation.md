@@ -1,2 +1,10 @@
 # Dynamic Memory Allocation and Deallocation in C++
+> Pre-requisite: [_Pointers_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Pointers.md)
 
+Typically, when you declare a variable (an array, let's say) you know in advance how big it will need to be; however, this is not always the case.
+The need to store data that we do not already know the size of gave rise to the need for [dynamic memory allocation](https://www.tutorialspoint.com/cplusplus/cpp_dynamic_memory.htm), the ability to declare variables (and even data structures) at runtime. Dynamic memory is stored in [the heap](https://www.dummies.com/programming/cpp/how-the-heap-works-in-c/) as opposed to the stack (ref. [_The Stack vs the Heap_](https://nickolasteixeira.medium.com/stack-vs-heap-whats-the-difference-and-why-should-i-care-5abc78da1a88)).
+Dynamic memory is allocated and deallocated using two operators (yes, operators), [_new_](https://www.youtube.com/watch?v=NUZdUSqsCs4) and [_delete_]().
+
+Always remember to free dynamically-allocated memory after you are done with it, as the computer does not free it for you (unlike stack-allocated memory); 
+if you forget to free dynamically-allocated memory, it will remain allocated. This problem is known as 
+[memory leak](https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/) and can debilitate a system to the point of crashing it.
