@@ -85,7 +85,7 @@ using namespace std;
 
 void someFunction()
 {
-    cout << "Inside the function \'" << __FUNCTION__ << "\'!\n";
+    cout << "Inside the function \'" << __FUNCTION__ << "\' on line " << __LINE__ << "!\n";
 }
 
 int main()
@@ -107,4 +107,4 @@ int main()
 > Prints: <br />
 > This program was compiled on Jul 28 2021 at 13:31:24 <br />
 > The name of this file is PredefinedMacros.cpp <br />
-> Inside the function 'someFunction'! <br />
+> Inside the function 'someFunction' at line 6! <br />
