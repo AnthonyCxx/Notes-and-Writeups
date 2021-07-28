@@ -14,12 +14,14 @@ Interestingly enough, the type-specific versions of templated function/class do 
 To test this, make a syntax error in a templated function and compile the program without using it. The program will compile just fine.
 
 ## Templated Functions
+An example of a templated function.
 
 ```C++
 
 ```
 
 ## Templated Classes
+An example of a templated class.
 
 ## Default Parameters
 As of C++17, you can provide default arguments for template paramters.
