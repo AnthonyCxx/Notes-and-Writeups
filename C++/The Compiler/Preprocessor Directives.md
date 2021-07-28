@@ -43,14 +43,14 @@ int main(void)
 The _#ifndef_, _#define_,  and _#endif_ trio are typically used to prevent the compiler from including the same code multiple times (via the _#include_ directive). 
 Code that is inbetween an _#ifndef_ and _#endif_ will not be executed if the macro (definition/pattern) is not defined (is false). The _#define_ (definition/pattern)
 is included as a trigger, so that same code won't be included  more than once.
-```C
+```C++
 // In customFile.h
 #ifndef CUSTOM_FILE      // If 'CUSTOM_FILE' is not defined, define everything until '#endif'
 #define CUSTOM_FILE      // Prevents this body from being included multiple times (by defining 'CUSTOM_FILE')
 
-void sayHello(void)
+void sayHello()
 {
-    printf("%s", "Hello!");
+    cout << "Hello!\n";
 }
 
 #endif                 // End the conditional (creates a boundary for '#ifndef')
