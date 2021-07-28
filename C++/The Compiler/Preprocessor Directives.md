@@ -29,7 +29,7 @@ capitalized. See more about macros [here](https://github.com/EthanC2/Notes-and-W
 #define PI 3.14159
 using namespace std;
 
-int main(void)
+int main()
 {
     //Preprocessor replaces 'PI' with '3.14159'
     cout << "Pi is equal to " << PI << '\n';
