@@ -44,8 +44,40 @@ _new_ and _delete_ are expectionally useful for arrays since it avoids the probl
 You use _new_ and _delete_ with arrays just like you do with primitive data types, except you need to add brackets. A new integer array would
 look like this: `int* newArray = new int[10];` and deleting the array would look like this: `delete [] newArray`.
 
+From doing some testing, I've found that arrays seem to be initialized to 0 by default, but you should initialize them anyway.
 ```C++
+#include <iostream>
+using namespace std;
 
+/*
+    As a rule of thumb, be sure to keep track of the size of dynamically-allocated arrays;
+    otherwise, you'll be stuck with an array you don't know the size of.
+*/
+
+int main()
+{
+    //Size should be 'size_t' (or at least unsigned) so it can't be negative
+    size_t size;
+
+    //Get the size of the array
+    cout << "Enter the size of the array you want to create: ";
+    cin >> size;
+
+    //Declare a new array of the requested size
+    int* arrptr = new int[size];   //arrptr stand for 'array pointer'
+
+    //Use the stored size to iterate over the loop
+    for(size_t i=0; i < size; i++)
+    {
+        cout << arrptr[i] << " ";
+    }
+    cout << '\n';
+
+    //Delete the dynamically-allocated array
+    delete [] arrptr;
+
+    return 0;
+}
 ```
 _new[]_ and _delete[]_ are technically separate operators from _new_ and _delete_, so make sure you overload both if you overload one.
 > Reference: [_C++ Standard Library: \<new\>_](https://www.cplusplus.com/reference/new/) 
