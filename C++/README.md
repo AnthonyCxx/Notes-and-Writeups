@@ -1,5 +1,5 @@
 # A Reference for the C++ Programming Language
-A reference for C++ programming.
+A reference for C++ programming. If you are using this for class, do not use anything past C++11.
 
 I'm learning as I go and just using this as a form of documenting what I've learned. <br />
 This is not meant to be an authority of any kind nor is it meant to be comprehensive.
