@@ -14,7 +14,8 @@ need to dereference the pointer to delete what it points to because you can only
 writing `delete ptr;` does not delete the pointer, just its contents.
 
 You should use _new_ and _delete_ in C++ instead of C's _malloc()_ and _free()_ because unlike _malloc()_ and _free()_, _new_ and _delete_
-also call the constructors/destructors of objects when the memory is allocated/deallocated.
+also call the constructors/destructors of objects when the memory is allocated/deallocated. Oh, and both _new_ and _delete_ can be overloaded
+since they're operators.
 ```C++
 
 ```
