@@ -8,8 +8,8 @@ To make a function a template, add `template <typename T>` before the return typ
 where '_T_' is the name of the datatype of the variable that is subject to change. The name '_T_' is entirely arbitrary — you can name the type whatever you want, but '_T_'
 is generally used because it's short and makes sense (since '_T_' is short for type). In fact, some languages like C# mandate '_T_' as the indicator of a generic type.
 
-Interestingly enough, the type-specific versions of templated function/class do not exist until used in the program. To prove this, make a syntax error in a templated
-function and compile the program without using it. The program will compile just fine.
+Interestingly enough, the type-specific versions of templated function/class do not exist until used in the program, which is when the compiler creates them. 
+To test this, make a syntax error in a templated function and compile the program without using it. The program will compile just fine.
 
 ## Templated Functions
 
