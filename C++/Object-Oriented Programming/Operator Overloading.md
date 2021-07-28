@@ -354,7 +354,7 @@ class Coordinates
 
     public:
         Coordinates(int, int);
-                string getCoords() const;
+        string getCoords() const;
 
         //<< and >> Overloads (friend functions)
         friend ostream& operator<<(ostream&, const Coordinates&);
