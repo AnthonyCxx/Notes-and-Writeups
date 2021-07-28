@@ -142,6 +142,96 @@ int main()
 ```
 > Prints: 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14
 
+## Default Arguments for Templates
+As of C++17, you can provide a default datatype for templates. That way, you can write a templated function/class and only write out the datatype in angled brackets
+if you're working with different datatypes. Just like default parameters, you write a default template parameter as `template <typename T = int>`.
+
+Here's the same _Array_ class you just used above, but with a default type of _int_.
+
+```C++
+//Compiles with C++17 and above: 'g++ -std=c++17 file.cpp'
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+// ARRAY CLASS //
+template <typename T = int>   //Default datatype is now 'int'
+class Array
+{
+    private:
+        //Data members
+        T* array;     //Array Pointer
+        size_t size;
+
+    public:
+        //Functions
+        Array(const size_t);
+        ~Array();
+        void fill(const T);
+        void print() const;
+
+        //Overloaded Operators
+        T& operator[](int) const;
+};
+
+//Constructor
+template <typename T>
+Array<T>::Array(const size_t Size)
+{
+    size = Size;
+    array = new T[size];
+}
+
+//Destructor
+template <typename T>
+Array<T>::~Array()
+{
+    //Free the array
+    delete [] array;
+}
+
+//Fill: initialize the array
+template <typename T>
+void Array<T>::fill(const T value)
+{
+    for(int i=0; i < size; i++)
+    {
+        array[i] = value;
+    }
+}
+
+//Print: print the array
+template <typename T>
+void Array<T>::print() const
+{
+    for(int i=0; i < size; i++)
+    {
+        //Print comma-separated indices
+        cout << array[i] << (i != size-1 ? ", " : "");
+    }
+    cout << '\n';
+}
+
+//[] Overload: element access
+template <typename T>
+T& Array<T>::operator[](int index) const
+{
+    return array[index];
+}
+
+
+// DRIVER CODE //
+int main()
+{
+    //An array of 10 ints
+    Array arr(10);   //No <int> suffix
+    arr.fill(7);
+    arr.print();
+
+    return 0;
+}
+```
+
 ## Sources
 isocpp.org: [_Templates_](https://isocpp.org/wiki/faq/templates) <br />
 IBM C++ Documentation: [_Templates (C++ only)_](https://www.ibm.com/docs/en/i/7.4?topic=reference-templates-c-only) <br />
