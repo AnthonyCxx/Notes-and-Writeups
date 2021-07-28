@@ -15,6 +15,11 @@
 I've included _register_ last as, although it does exist, it was deprecitated in C++11 and was [removed in C++17 ](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/). If you try to compile a program with the _register_ keyword in it with C++17, you will get a warning '_warning: ISO C++17 does not allow ‘register’
 storage class specifier_'.
 
+The _register_ keyword was a hint to the compiler to store the variable in a [CPU register](https://whatis.techtarget.com/definition/register) istead of in memory so it 
+can be accessed faster. Data is typically stored in a CPU register when it is accessed often; this practice increases program performance. The problem with the _register_ 
+keyword was that the compiler is much better at deciding what data should be stored in the register and when, so it ignored the keyword the majority of the time. This was
+such a problem that the keyword was subsequently removed (just like _auto_ in C).
+
 ## Sources
 Microsoft C++ Documentation: [_Storage Classes_](https://docs.microsoft.com/en-us/cpp/cpp/storage-classes-cpp?view=msvc-160) <br />
 cppreference.com: [_Storage Class Specifiers_](https://en.cppreference.com/w/cpp/language/storage_duration) <br />
