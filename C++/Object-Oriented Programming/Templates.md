@@ -1,7 +1,8 @@
 # Templates (Generics) in C++
-Templates are a definition of a function of class that is not specific to any one type.
-
-Templates do not exist until called
+Templates are a definition of a function of class that is not specific to any one type. 
+Type-specific versions of templated function/class do not exist until used in the program.
+The classic example of a template is the _swap()_ function. The _swap()_ function is simple and makes no calls to type-specific features like string's _substr()_ method,
+so why write five different overloads of the same exact function?
 
 ## Templated Functions
 
