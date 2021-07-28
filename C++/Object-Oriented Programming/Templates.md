@@ -89,6 +89,8 @@ template <typename T>
 Array<T>::Array(const size_t Size)
 {
     size = Size;
+    
+    //Declare a new array of whatever type was given
     array = new T[size];
 }
 
