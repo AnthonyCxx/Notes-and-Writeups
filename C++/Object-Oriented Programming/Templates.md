@@ -3,7 +3,7 @@ Templates are a definition of a function of class that is not specific to any on
 The classic example of a template is the _swap()_ function. The _swap()_ function is simple and makes no calls to type-specific features like string's _substr()_ method,
 so why write five different overloads of the same exact function when the only difference is the datatype? When you write a templated function _swap()_, you can call it
 with any datatype, saving you plenty of time that you would have spent overloading functions. To make a function a template, add `template <typename T>` before the return type,
-where '_T_' is the name of the datatype of whatever variable is subject to change. The name '_T_' is entirely arbitrary — you can name the type whatever you want, but '_T_'
+where '_T_' is the name of the datatype of the variable that is subject to change. The name '_T_' is entirely arbitrary — you can name the type whatever you want, but '_T_'
 is generally used because it's short and makes sense (since '_T_' is short for type). In fact, some languages like C# mandate '_T_' as the indicator of a generic type.
 
 Interestingly enough, the type-specific versions of templated function/class do not exist until used in the program. To prove this, make a syntax error in a templated
