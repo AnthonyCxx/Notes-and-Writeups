@@ -16,7 +16,41 @@ Interestingly enough, the type-specific versions of templated function/class do 
 An example of a templated function.
 
 ```C++
+//A simple program to swap A and B using templates.
+#include <iostream>
+using namespace std;
 
+template <typename T>    //Make 'swap()' generic, using type indicator, 'T'
+void genericSwap(T& a, T& b)   //Two generic types, 'T', passed by reference
+{
+    //Declare a generic variable
+    T temp;
+
+    //Swap 'a' and 'b'
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+int main()
+{
+    int intA = 10, intB = 20;
+    char charA = 'A', charB = 'Z';
+
+    //Before
+    cout << "ints A and B BEFORE swap: " << intA << ", " << intB << '\n';
+    cout << "chars A and B BEFORE swap: " << charA << ", " << charB << '\n';
+
+    //An int and a char version of 'swap()'
+    genericSwap<int>(intA, intB);
+    genericSwap<char>(charA, charB);
+
+    //After
+    cout << "ints A and B AFTER swap: " << intA << ", " << intB << '\n';
+    cout << "chars A and B AFTER swap: " << charA << ", " << charB << '\n';
+
+    return 0;
+}
 ```
 
 ## Templated Classes
