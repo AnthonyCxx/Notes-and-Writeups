@@ -34,7 +34,7 @@ int main()
 ## Parameterized Macros
 Macros can be taken a step further with [parameterized macros](https://en.wikipedia.org/wiki/Macro_(computer_science)#Parameterized_macro), patterns that can take parameters.
 Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. In modern C++, you really
-should use _inline_ or _constexpr_ to avoid function overhead. This is not something you should be using in my honest opinion. <br />
+should use [_inline_](https://www.geeksforgeeks.org/inline-functions-cpp/) or [_constexpr_](https://www.geeksforgeeks.org/understanding-constexper-specifier-in-c/) to avoid function overhead. This is not something you should be using in my honest opinion. <br />
 
 Here, we can write a simple macro to calculate the square of a number, preventing us from having to include the entire [_\<cmath\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use the [_pow()_](https://www.tutorialspoint.com/c_standard_library/c_function_pow.htm) function a single
 time.
