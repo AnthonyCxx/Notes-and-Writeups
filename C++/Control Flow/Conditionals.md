@@ -104,6 +104,8 @@ The _switch_ statment allows for evaluating a variable or expression that may eq
 would be [NPC dialogue](https://learn.unity.com/tutorial/switch-statements#5c8a6f91edbc2a067d4753d4) that is based on an in-game value, such as the intelliegence of the 
 player character.
 
+I highly reccommend you read '[_Why switch is better than if-else_](https://mortoray.com/2019/06/29/why-switch-is-better-than-if-else/)' to learn why Switch statements
+are better for decision-making with a defined set of values (and switch statements can be more efficient).
 ### Standard Behavior
 ```C++
 #include <iostream>
