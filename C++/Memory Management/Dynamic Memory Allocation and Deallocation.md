@@ -14,7 +14,25 @@ need to dereference the pointer to delete what it points to because you can only
 writing `delete ptr;` does not delete the pointer, just its contents.
 
 ```C++
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    //Declare a new integer, allocated dynamically
+    int* ptr = new int;
+
+    //Assign to the new integer
+    *ptr = 5;
+
+    //Use the new integer
+    cout << "The new pointer contains: " << *ptr << '\n';
+
+    //Free the dynamically allocated memory
+    delete ptr;
+
+    return 0;
+}
 ```
 
 You should use _new_ and _delete_ in C++ instead of C's _malloc()_ and _free()_ because unlike _malloc()_ and _free()_, _new_ and _delete_
