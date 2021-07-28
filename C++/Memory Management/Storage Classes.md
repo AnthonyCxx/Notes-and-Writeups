@@ -6,7 +6,7 @@ _auto_ is C++'s equivalent of [_var_](https://www.geeksforgeeks.org/var-keyword-
 compiler, which prevents you from having to type out long datatypes names. Only use _auto_ where you feel that the datatype is clear, as _auto_ can greatly
 reduce code readability when overused.
 
-_auto_ can be used as the return type for a function and can even be used as the type for a function parameter (as of C++20).
+_auto_ can be used as the return type for a function and can even be used as the type for a function parameter (as of C++20). <br />
 [Here](https://lesleylai.info/en/auto-parameters/)'s why you shouldn't do that. 
 ```C++
 #include <iostream>
