@@ -7,4 +7,4 @@ Honestly, a lot of the stuff in here can be done better with native C++ tools li
 | ---- | -------- |
 | [Preprocessor Directives.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/Preprocessor%20Directives.md) | a summary of preprocessor directives |
 | [Macros.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/Macros.md) | a summary of macros and common C++ macros |
-| [GNU C Extensions.md]() | useful functions as C++ extensions by GNU |
+| [GNU C Extensions.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/GNU%20C%2B%2B%20Extensions.md) | useful functions as C++ extensions by GNU |
