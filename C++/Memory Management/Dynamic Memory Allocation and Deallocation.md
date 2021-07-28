@@ -40,3 +40,12 @@ also call the constructors/destructors of objects when the memory is allocated/d
 since they're operators.
 
 ## Allocating and Deallocating Arrays with _new[]_ and _delete[]_
+_new_ and _delete_ are expectionally useful for arrays since it avoids the problem of having to know the size of the array at compile time.
+You use _new_ and _delete_ with arrays just like you do with primitive data types, except you need to add brackets. A new integer array would
+look like this: `int* newArray = new int[10];` and deleting the array would look like this: `delete [] newArray`.
+
+```C++
+
+```
+_new[]_ and _delete[]_ are technically separate operators from _new_ and _delete_, so make sure you overload both if you overload one.
+> Reference: [_C++ Standard Library: \<new\>_](https://www.cplusplus.com/reference/new/) 
