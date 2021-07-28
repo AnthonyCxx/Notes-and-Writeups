@@ -80,7 +80,7 @@ class Array
         void print() const;
 
         //Overloaded Operators
-        T& operator[](int) const;
+        T& operator[](int) const;  //Element access
 };
 
 //Constructor
