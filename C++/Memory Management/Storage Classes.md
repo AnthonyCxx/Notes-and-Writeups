@@ -4,7 +4,8 @@
 ## _auto_
 _auto_ is C++'s equivalent of [_var_](https://www.geeksforgeeks.org/var-keyword-in-java/) in Java and C#; _auto_ leaves the datatype of a variable to be inferred by the
 compiler, which prevents you from having to type out long datatypes names. Only use _auto_ where you feel that the datatype is clear, as _auto_ can greatly
-reduce code readability when overused.
+reduce code readability when overused. You can see that _auto_ is replaced by the appropriate datatype by the compiler during the early stages of compilation
+with [cppinsights.io](https://cppinsights.io/).
 
 _auto_ can be used as the return type for a function and can even be used as the type for a function parameter (as of C++20). <br />
 [Here](https://lesleylai.info/en/auto-parameters/)'s why you shouldn't do that. 
@@ -13,7 +14,7 @@ _auto_ can be used as the return type for a function and can even be used as the
 using namespace std;
 
 template <typename T1, typename T2>
-auto add(T1 a, T2 b)
+auto add(T1 a, T2 b)    //Automatic return type
 {
     return a + b;
 }
