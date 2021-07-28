@@ -11,6 +11,8 @@ The _new_ keyword declares a new instance of an object (in the raw memory sense)
 whenever you need it. The _new_ keyword also returns a pointer to the newly-allocated data, so be sure to catch it with a pointer of the appropriate type
 (e.g. `int* ptr = new int;`).
 
+On one last note, you should use _new_ and _delete_ in C++ instead of C's _malloc()_ and _free()_ because unlike _malloc()_ and _free()_, _new_ and _delete_
+also call the constructors/destructors of objects when the memory is allocated/deallocated.
 ```C++
 
 ```
