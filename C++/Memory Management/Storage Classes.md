@@ -12,7 +12,7 @@
 ## _thread\_local_
 
 ## _register_
-I've included _register_ as, although it does exist, was deprecitated in C++11 and was [removed in C++17 ](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/). If you try to compile a program with the _register_ keyword in it with C++17, you will get a warning '_warning: ISO C++17 does not allow ‘register’
+I've included _register_ last as, although it does exist, it was deprecitated in C++11 and was [removed in C++17 ](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/). If you try to compile a program with the _register_ keyword in it with C++17, you will get a warning '_warning: ISO C++17 does not allow ‘register’
 storage class specifier_'.
 
 ## Sources
