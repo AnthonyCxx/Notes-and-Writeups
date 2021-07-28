@@ -7,7 +7,7 @@ The need to store data that we do not already know the size of gave rise to the 
 Dynamic memory is allocated and deallocated using two keywords: [_new_](https://www.youtube.com/watch?v=NUZdUSqsCs4) and [_delete_](https://www.journaldev.com/38336/delete-operator-in-c-plus-plus). Always remember to free dynamically-allocated memory after you are done with it, as the computer does not free it for you (unlike stack-allocated memory); if you forget to free dynamically-allocated memory, it will remain allocated. This problem is known as [memory leak](https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/) and can debilitate a system to the point of crashing it.
 
 ## Allocating and Deallocating Memory with _new_ and _delete_
-The _new_ keyword declares a new instance of an object (in the sense of a datatype or class) on the heap at runtime, allowing you to create as much memory as you need,
+The _new_ keyword declares a new instance of an object (in the raw memory sense) on the heap at runtime, allowing you to create as much memory as you need,
 whenever you need it. The _new_ keyword also returns a pointer to the newly-allocated data, so be sure to catch it with a pointer of the appropriate type.
 To use _new_, all you have to write  is`int* ptr = new int;` and you have yourself a new integer.
 
