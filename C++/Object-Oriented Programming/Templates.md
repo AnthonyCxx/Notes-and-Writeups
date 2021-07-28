@@ -59,7 +59,85 @@ prefix instead of just `ClassName::` as your normally would.
 
 This example is a simple array class, based on the [_array_ class](https://www.cplusplus.com/reference/array/array/) from the C++ Standard Template Library.
 ```C++
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
+// ARRAY CLASS //
+template <typename T>
+class Array
+{
+    private:
+        //Data members
+        T* array;     //Array Pointer
+        size_t size;
+
+    public:
+        //Functions
+        Array(const size_t);
+        ~Array();
+        void fill(const T);
+        void print() const;
+
+        //Overloaded Operators
+        T& operator[](int) const;
+};
+
+//Constructor
+template <typename T>
+Array<T>::Array(const size_t Size)
+{
+    size = Size;
+    array = new T[size];
+}
+
+//Destructor
+template <typename T>
+Array<T>::~Array()
+{
+    //Free the array
+    delete [] array;
+}
+
+//Fill: initialize the array
+template <typename T>
+void Array<T>::fill(const T value)
+{
+    for(int i=0; i < size; i++)
+    {
+        array[i] = value;
+    }
+}
+
+//Print: print the array
+template <typename T>
+void Array<T>::print() const
+{
+    for(int i=0; i < size; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << '\n';
+}
+
+//[] Overload: element access
+template <typename T>
+T& Array<T>::operator[](int index) const
+{
+    return array[index];
+}
+
+
+// DRIVER CODE //
+int main()
+{
+    //An array of 10 doubles
+    Array<double> arr(10);
+    arr.fill(3.14);
+    arr.print();
+
+    return 0;
+}
 ```
 
 ## Default Parameters
