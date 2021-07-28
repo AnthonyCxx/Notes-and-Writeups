@@ -21,7 +21,7 @@ capitalized.
 #define PI 3.14159
 using namespace std;
 
-int main(void)
+int main()
 {
     //Preprocessor replaces 'PI' with '3.14159'
     cout << "Pi is equal to " << PI << '\n';
