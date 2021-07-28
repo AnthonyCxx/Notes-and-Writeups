@@ -11,6 +11,7 @@ generic type. When using a templated function/class, you should specifiy the dat
 (e.g. `void swap<int>(a, b)`). You can leave the compiler to imply the datatypes, but including the type helps code readability.
 
 Interestingly enough, the type-specific versions of templated function/class do not exist until used in the program, which is when the compiler creates them. 
+This means that by creating a template, you are effectively programming the compiler itself. Neat.
 
 ## Templated Functions
 An example of a templated function.
