@@ -80,7 +80,7 @@ class Array
         void print() const;
 
         //Overloaded Operators
-        T& operator[](int) const;  //Element access
+        T& operator[](int) const;
 };
 
 //Constructor
@@ -115,7 +115,8 @@ void Array<T>::print() const
 {
     for(int i=0; i < size; i++)
     {
-        cout << array[i] << " ";
+        //Print comma-separated indices
+        cout << array[i] << (i != size-1 ? ", " : "");
     }
     cout << '\n';
 }
@@ -139,6 +140,7 @@ int main()
     return 0;
 }
 ```
+> Prints: 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14
 
 ## Default Parameters
 As of C++17, you can provide default arguments for template paramters.
