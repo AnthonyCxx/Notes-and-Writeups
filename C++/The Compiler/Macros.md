@@ -16,13 +16,15 @@ The _#define_ directive defines a pattern for the compiler such that whenever it
 In its simplest form, the _#define_ macro is used to define constants that will be substituted throughout the program. For example, a directive
 _#define PI 3.14159_ would replace all instances of 'PI' (but not pi, pI, or Pi) with '3.14159'. Per convention, macro identifiers (names) should always be fully 
 capitalized.
-```C
-#include <stdio.h>
+```C++
+#include <iostream>
 #define PI 3.14159
+using namespace std;
 
 int main(void)
 {
-    printf("Pi is equal to %.5f\n", PI);     //Show Pi with 5 decimal places (%.5f)
+    //Preprocessor replaces 'PI' with '3.14159'
+    cout << "Pi is equal to " << PI << '\n';
 
     return 0;
 }
@@ -31,17 +33,20 @@ int main(void)
 
 ## Parameterized Macros
 Macros can be taken a step further with [parameterized macros](https://en.wikipedia.org/wiki/Macro_(computer_science)#Parameterized_macro), patterns that can take parameters.
-Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. <br />
+Often, parameterized macros are used to write simple functions and eliminate [function overhead](https://stackoverflow.com/questions/31779335/why-is-there-overhead-when-calling-functions) (the time taken to call a function). Read [this StackOverflow response](https://stackoverflow.com/questions/14041453/why-are-preprocessor-macros-evil-and-what-are-the-alternatives) before using parameterized macros as they can have many unintended side effects and can be outright harmful in some cases. In modern C++, you really
+should use _inline_ or _constexpr_ to avoid function overhead. This is not something you should be using in my honest opinion. <br />
 
-Here, we can write a simple macro to calculate the square of a number, preventing us from having to include the entire [_\<math.h\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use the [_pow()_](https://www.tutorialspoint.com/c_standard_library/c_function_pow.htm) function a single
-time. See [this article](https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm) for more information on macros.
-```C
-#include <stdio.h>
-#define SQUARE(x) (x*x)    // Parameterized 
+Here, we can write a simple macro to calculate the square of a number, preventing us from having to include the entire [_\<cmath\>_](https://www.tutorialspoint.com/c_standard_library/math_h.htm) to use the [_pow()_](https://www.tutorialspoint.com/c_standard_library/c_function_pow.htm) function a single
+time.
+```C++
+#include <iostream>
+#define SQUARE(x) (x*x)    // Parameterized
+using namespace std;
 
-int main(void)
+int main()
 {
-    printf("The square of 5 is: %d\n", SQUARE(5));
+        //'SQUARE(5)' is replaced by '5 * 5'
+    cout << "The square of 5 is: " << SQUARE(5) << '\n';
 
     return 0;
 }
