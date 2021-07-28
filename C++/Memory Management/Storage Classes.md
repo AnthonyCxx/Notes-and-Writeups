@@ -2,6 +2,32 @@
 
 
 ## _auto_
+_auto_ is C++'s equivalent of [_var_](https://www.geeksforgeeks.org/var-keyword-in-java/) in Java and C#; _auto_ leaves the datatype of a variable to be inferred by the
+compiler, which prevents you from having to type out long datatypes names. Only use _auto_ where you feel that the datatype is clear, as _auto_ can greatly
+reduce code readability when overused.
+
+_auto_ can be used as the return type for a function and can even be used as the type for a function parameter (as of C++20).
+[Here](https://lesleylai.info/en/auto-parameters/)'s why you shouldn't do that. 
+```C++
+#include <iostream>
+using namespace std;
+
+template <typename T1, typename T2>
+auto add(T1 a, T2 b)
+{
+    return a + b;
+}
+
+int main()
+{
+    auto intA = 100;
+    auto floatB = 3.14f;
+
+    cout << "100 + 3.14 = " << add(intA, floatB) << '\n';
+
+    return 0;
+}
+```
 
 ## _extern_
 
