@@ -6,12 +6,18 @@ with any datatype, saving you plenty of time that you would have spent overloadi
 
 To make a function a template, add `template <typename T>` before the return type,
 where '_T_' is the name of the datatype of the variable that is subject to change. The name '_T_' is entirely arbitrary — you can name the type whatever you want, but '_T_'
-is generally used because it's short and makes sense (since '_T_' is short for type). '_T_' is so common that some languages like C# mandate it as the indicator of a generic type.
+is generally used because it's short and makes sense (since '_T_' is short for type). '_T_' is so common that some languages like C# mandate it as the indicator of 
+generic type. When using a templated function/class, you should specifiy the datatype by putting the type in angled brackets after the name of the function/class
+(e.g. `void swap<int>(a, b)`). You can leave the compiler to imply the datatypes, but including the type helps code readability.
 
 Interestingly enough, the type-specific versions of templated function/class do not exist until used in the program, which is when the compiler creates them. 
 To test this, make a syntax error in a templated function and compile the program without using it. The program will compile just fine.
 
 ## Templated Functions
+
+```C++
+
+```
 
 ## Templated Classes
 
