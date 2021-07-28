@@ -4,6 +4,6 @@ such as [pre-defined macros](https://stuff.mit.edu/afs/athena/project/rhel-doc/3
 
 | File | Function | 
 | ---- | -------- |
-| [Preprocessor Directives.md]() | a summary of preprocessor directives |
-| [Macros.md]() | a summary of macros and common C++ macros |
+| [Preprocessor Directives.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/Preprocessor%20Directives.md) | a summary of preprocessor directives |
+| [Macros.md](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/Macros.md) | a summary of macros and common C++ macros |
 | [GNU C Extensions.md]() | useful functions as C++ extensions by GNU |
