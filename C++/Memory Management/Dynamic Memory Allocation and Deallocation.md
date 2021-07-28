@@ -8,9 +8,8 @@ Dynamic memory is allocated and deallocated using two keywords: [_new_](https://
 
 ## Allocating and Deallocating Memory with _new_ and _delete_
 The _new_ keyword declares a new instance of an object (in the raw memory sense) on the heap at runtime, allowing you to create as much memory as you need,
-whenever you need it. The _new_ keyword also returns a pointer to the newly-allocated data, so be sure to catch it with a pointer of the appropriate type.
-To use _new_, all you have to write  is`int* ptr = new int;` and you have yourself a new integer.
-
+whenever you need it. The _new_ keyword also returns a pointer to the newly-allocated data, so be sure to catch it with a pointer of the appropriate type
+(e.g. `int* ptr = new int;`).
 
 ```C++
 
