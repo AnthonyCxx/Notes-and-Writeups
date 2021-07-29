@@ -108,7 +108,7 @@ int main()
     return 0;
 }
 ```
-> Don't forget to initialize _result_ in the _catch_ blocks, otherwise it's value will be [garbage](https://www.learncpp.com/cpp-tutorial/uninitialized-variables-and-undefined-behavior/)
+> Don't forget to initialize _result_ in the _catch_ blocks, otherwise it's value will be [garbage](https://www.learncpp.com/cpp-tutorial/uninitialized-variables-and-undefined-behavior/).
 
 ## Catch Block order and Derived Exception Classes
 Substitutability is a fundamental principle of design inhherited classes; anywhere where you use the base class, you should be able to use the derived class. Though
