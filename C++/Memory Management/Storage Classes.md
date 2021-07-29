@@ -105,6 +105,50 @@ int main()
 > The loop has been run a total of 20 times <br />
 
 ## _mutable_
+Think _mut-_ as in mutation. The _mutable_ keyword allows a data member of a class or struct to be modified even if the class/struct is _const_.
+
+```C++
+#include <iostream>
+using namespace std;
+
+class ExampleClass
+{
+    //Public data members, for sake of ease
+    public:
+        int a;
+        mutable int b;
+        ExampleClass(int, int);
+        void print() const;
+};
+
+ExampleClass::ExampleClass(int A, int B)
+{
+    a = A;
+    b = B;
+}
+
+void ExampleClass::print() const
+{
+    cout << "a = " << a << ", b = " << b << '\n';
+}
+
+int main()
+{
+    //Declare a const ExampleClass, 'example'
+    const ExampleClass example(10, 10);
+
+    //Print 'a' and 'b'
+    example.print();
+
+    //example.a = 20;     <== Error, 'example.a' is read-only
+    example.b = 20;       //Fine, because 'b' is mutable
+
+    //Print 'a' and 'b'
+    example.print();
+
+    return 0;
+}
+```
 
 ## _thread\_local_
 
