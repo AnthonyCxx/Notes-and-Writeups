@@ -98,8 +98,8 @@ Unlike the other functions here, [_memset()_](https://www.tutorialspoint.com/c_s
 header file. _memset()_ allows you to set each byte in memory to a specific value.
 
 **WARNING:** _memset()_ belongs under _\<string.h\>_ for a reason. _memset()_ sets each individual byte to the given value; if you try to set an integer array to 100, 
-it will set each of the 4 bytes in the int to 100, giving your 0x64646464 (1,684,300,900). _memset()_ is only suitable for setting char array and setting and integer 
-array to 0 (because all bytes are 0 -- a special case). If you want to initialize an integer array, do it manually with a for loop.
+it will set each of the 4 bytes in the int to 100, giving your 0x64646464 (1,684,300,900). _memset()_ is only suitable for initializing char arrays. 
+If you want to initialize an integer array, do it manually with a for loop.
 
 ```C
 #include <stdio.h>
