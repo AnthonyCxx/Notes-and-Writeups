@@ -102,13 +102,55 @@ int main()
 ```
 
 ## Implicit Parameter Type Conversion
-Because of this, I recommend all math-related functions you write to both use and return doubles, as you can always type-cast to a less specific type (double->float, 
-double->int), but you cannot type-cast to a more specific type (float -> double) without
+Compatible types such as _int_, _float_, and _double_ or _char*_ and _string_ can be [implcitly converted](https://www.ibm.com/docs/en/zos/2.1.0?topic=resolution-implicit-conversion-sequences)
+when provided as a parameter for a function. If you have a function that takes an integer as a parameter, but you pass it a float (let's say 13.75), it will automatically
+convert the float 13.75 into the integer 13 by [truncating](https://techterms.com/definition/truncate) it. The same goes for return types. If you return a double 56.88
+and catch it in an integer, then the integer will contain 56 because it will type-cast 56.88 into 58 before storing it.
+
+Because of this, I recommend all math-related functions you write to both use and return doubles, as you can always type-cast to a less specific type (double to float, 
+double to int), but you cannot type-cast to a more specific type (float to double) without losing some precision (some or all of the decimal places).
 
 ```C++
+#include <iostream>
+using namespace std;
 
+/*
+    A simple add function.
+    If the arguments passed ('a' and 'b') are not doubles,
+    then they will be type-casted to doubles before being added.
+    If the result is not caught by a double, then the result will
+    be type-casted to the appropriate datatype.
+
+    Essentially, by using the most-specific datatype (i.e. doubles), we can
+    guarantee that we have an accurate and valid result for any datatype since we
+    can always type-cast downwards to less specific type if needed (e.g. int).
+*/
+double add(double a, double b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int intA = 10, intB = 20;                 //Sum = 30
+    double doubleA = 15.5, doubleB = 16.7;   //Sum = 32.2
+
+    //int + int
+    int intResult = add(intA, intB);                //Stores the result as an integer
+    cout << "10 + 20 stored as an integer is: " << intResult << '\n';
+
+    //double + double
+    double doubleResult = add(doubleA, doubleB);   //Stores the result as a double
+    cout << "15.5 + 16.5 stored as a double is: " << doubleResult << '\n';
+
+    //int + double
+    int mixedResult = add(intA, doubleA);         //Stores the result as an integer (type-casted down from a double)
+    cout << "10 + 15.5 stored as an integer is: " << mixedResult << '\n';
+
+    return 0;
+}
 ```
-> References: [__]() and [__]() 
+> References: [_LearnToProgram: Type Compatibility_](http://learntoprogramming.com/type-compatibility) and [_cplusplus.com: Type Conversions_](https://www.cplusplus.com/doc/tutorial/typecasting/) 
 
 ## Function Overloading
 C++ is an object-oriented language, so it supports [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/). One of the major ways C++ support the object-oriented
