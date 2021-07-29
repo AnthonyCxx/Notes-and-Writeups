@@ -8,16 +8,15 @@ using namespace std;
 //All this mess with 'pair<bool, vector<string>' could easily be replaced with C++17's 'std::optional<T>', but this works for C++11...
 pair<bool, vector<string>> readFile(const string& path)    //Should be 'const char*' if hard-coded
 {
-
-    //Tie the file contents with a bool noting if the file was valid
-    vector<string> contents;
-    pair<bool, vector<string>> filepair(false, contents);
-
     //Declare (and open) a file with the filepath
     ifstream file(path);
-
+    
     //Temporary string for reading the file contents
     string line;
+    
+    //Tie the file contents with a bool, to know if the file was valid
+    vector<string> contents;
+    pair<bool, vector<string>> filepair(false, contents);
 
     //If the file is valid
     if (file)
