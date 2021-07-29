@@ -56,7 +56,7 @@ Files can be set to different modes, all of which are inherited from
 ## Detecting the End of File
 When looping over a file to read its contents, you either need to know how long the file is or you need to be able to detect the end of the file (EOF).
 99% of time, you won't know the size of the file, so being able to detect EOF is the only viable method. C++ provides a number of ways to check for EOF,
-so there are a number of structures that people use to check for EOF, all of which are perfectly valid ways. Here are 5 ways to check for the end of a file,
+so there are a number of ways people tend to write their loop conditions, all of which are perfectly valid. Here are 5 ways to check for the end of a file,
 be it explicit or not.
 
 ### while(!file.eof())
