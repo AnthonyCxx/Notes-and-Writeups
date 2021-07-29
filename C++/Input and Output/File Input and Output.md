@@ -48,7 +48,7 @@ int main()
 ```
 
 ## Using Files Modes
-
+Files can be set to different modes, all of which are inherited from 
 
 # Reading from Files
 
