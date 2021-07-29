@@ -1,6 +1,6 @@
 # Built-in Exceptions in C++
 The following exceptions are built into C++ and inherited from the [_exception class_](https://en.cppreference.com/w/cpp/error/exception). <br />
-There are plenty of exceptions built into C++, but a lot of them are very specific, so I've included the most applicable here.
+There are plenty of exceptions built into C++ under [_\<stdexcept\>_](https://www.tutorialspoint.com/cpp_standard_library/stdexcept.htm), but a lot of them are very specific, so I've included the most applicable here.
 
 ### _invalid\_argument_
 _invalid\_arugment_ should be thrown when an invalid argument is provided to a function.
