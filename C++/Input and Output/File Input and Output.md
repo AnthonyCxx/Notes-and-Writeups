@@ -51,7 +51,7 @@ int main()
 ## Using Files Modes
 Files can be set to different modes, which dictates how the file stream reads/writes to the file.
 These modes are not necessarily exclusive, as you can combine compatible flags (e.g. _ios::in_ and _ios::binary_).
-To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/bitwise-operators) (a '|') between the flags.
+To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/bitwise-operators) (a single '\|') between the flags.
 
 | Mode | Full Name | Description | 
 | ---- | --------- | ----------- |
