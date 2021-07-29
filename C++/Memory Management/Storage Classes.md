@@ -135,7 +135,7 @@ void ExampleClass::print() const
 int main()
 {
     //Declare a const ExampleClass, 'example'
-    const ExampleClass example(10, 10);
+    const ExampleClass example(10, 10);  //Both 'a' and 'b' are 10
 
     //Print 'a' and 'b'
     example.print();
