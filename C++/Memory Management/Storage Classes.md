@@ -151,7 +151,8 @@ int main()
 ```
 
 ## _thread\_local_
-
+"A variable declared with the thread_local specifier is accessible only on the thread on which it is created. The variable is created when the thread is created, 
+and destroyed when the thread is destroyed. Each thread has its own copy of the variable." ([source](https://docs.microsoft.com/en-us/cpp/cpp/storage-classes-cpp?view=msvc-160)).
 
 ## _register_
 I've included _register_ last as, although it does exist, it was deprecitated in C++11 and was [removed in C++17 ](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/). If you try to compile a program with the _register_ keyword in it with C++17, you will get a warning '_warning: ISO C++17 does not allow ‘register’
