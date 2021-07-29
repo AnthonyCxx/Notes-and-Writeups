@@ -3,6 +3,8 @@
 
 # Reading from Files
 
+## Reading a File Character by Character
+
 ## Reading a File Word by Word
 
 ## Reading a File Line by Line
