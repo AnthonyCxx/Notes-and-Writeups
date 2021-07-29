@@ -1,6 +1,6 @@
 /*
     All this mess with 'pair<bool, vector<string>' could easily be replaced with C++17's 
-    'std::optional<T>', but this works for C++11...
+    'std::optional<T>'; this is a work-around for C++11
 */
 
 #include <iostream>
