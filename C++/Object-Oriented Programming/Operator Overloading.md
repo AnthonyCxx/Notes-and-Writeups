@@ -336,7 +336,7 @@ int main()
 ```
 
 ## Stream Insertion and Extraction Operators (<< and >>)
-> Prerequisite: the [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) keyword <br />
+> Pre-requisite: the [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) keyword <br />
 
 The stream insertion operator (<<) and stream extraction operator (>>) overloads cannot be a part of the class definition to allow chain calling ([see here](https://stackoverflow.com/questions/9351166/does-overloading-operator-works-inside-the-class) for why). Because of this, you have to write the << and >> overloads
 as [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) functions. The << and >> functions will both take two parameters, an [_ostream_](https://www.geeksforgeeks.org/c-stream-classes-structure/) or [_istream_](https://www.cplusplus.com/forum/beginner/73195/) variable respectively and then the class you want to overload for. In case you aren't familiar with the _istream_
@@ -413,7 +413,70 @@ int main()
 ```
 
 # Disabling Functions with _delete_
-As of C++11, you can set a function (or operator overload) to `= delete`, which will then 
+As of C++11, you can set a function (or operator overload) to `= delete`, which will then prevent the compiler from using said function/operator.
+
+## Deleting Operators and Functions
+
+This example contains a class _SecureString_ which acts as a wrapper for a simple _char*_, preventing it from being copied in the program as well as disabling referencing
+its address in memory. I used a c-string instead of a normal string because not only is it smaller, giving it a smaller memory footprint, but a c-string gives me the ability 
+to manually overwrite the contents of the c-string, protecting it from memory imaging techniques that may be able otherwise fish it out.
+of the string with _memset()_, 
+```C++
+#include <iostream>
+#include <cstring>   //Contains 'memset()'
+using namespace std;
+
+// SECURESTRING CLASS //
+class SecureString  //Mimics C#'s 'SecureString' class under 'System.Security'
+{
+    private:
+        char* data;
+        size_t size;
+
+    public:
+        //Constructor
+        SecureString(const char*);
+
+        //Dispose of the memory
+        void dispose();
+
+        //Delete all methods of referencing the 'SecureString' object (copy constructor, operators)
+        SecureString(const SecureString&) = delete;               //Copy Constructor
+        SecureString* operator&() const = delete;                //Address-of operator
+        SecureString& operator=(const SecureString&) = delete;  //Assignment assignment operator
+};
+
+//Constructor
+SecureString::SecureString(const char* cstr)
+{
+    //Store the size of the string (excluding null-terminating char)
+    size = strlen(cstr);
+
+    //Copy the string literal into the data
+    data = strdup(cstr);
+}
+
+//Dispose: zero-writes the memory the string was allocated to
+void SecureString::dispose()
+{
+    //Zero-write the c-string
+    memset(data, '0', size);
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Create a new secure c-string
+    SecureString SSN("some social security number");
+
+    //Overwrite the memory of the c-string, disposing of it
+    SSN.dispose();
+
+    return 0;
+}
+```
+
+## Preventing Select Implicit Type Conversions
 
 ## Sources
 Book: [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
@@ -428,3 +491,4 @@ stroustrup.com: [_control of defaults: default and delete_](https://www.stroustr
 IBM: [_Deleted functions (C++11)_](https://www.ibm.com/docs/en/zos/2.2.0?topic=definitions-deleted-functions-c11) <br />
 GeeksforGeeks: [_Explicitly Defaulted and Deleted Functions in C++ 11_](https://www.geeksforgeeks.org/explicitly-defaulted-deleted-functions-c-11/) <br />
 thispointer.com: [_C++11 / C++14 : ‘delete’ keyword and deleted functions with Use Cases | Examples_](https://thispointer.com/c11-c14-delete-keyword-and-deleted-functions-with-use-cases-examples/) <br />
+StackOverflow: [_How to cleanse (overwrite with random bytes) std::string internal buffer?_](https://stackoverflow.com/questions/38702943/how-to-cleanse-overwrite-with-random-bytes-stdstring-internal-buffer) <br />
