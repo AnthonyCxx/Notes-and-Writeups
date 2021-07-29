@@ -336,6 +336,7 @@ int main()
 ```
 
 ## Stream Insertion and Extraction Operators (<< and >>)
+> Prerequisite: the _friend_ keyword <br />
 The stream insertion operator (<<) and stream extraction operator (>>) overloads cannot be a part of the class definition to allow chain calling ([see here](https://stackoverflow.com/questions/9351166/does-overloading-operator-works-inside-the-class) for why). Because of this, you have to write the << and >> overloads
 as [_friend_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Access%20Modifiers.md#granting-access-to-private-data-members-with-friend) functions. The << and >> functions will both take two parameters, an [_ostream_](https://www.geeksforgeeks.org/c-stream-classes-structure/) or [_istream_](https://www.cplusplus.com/forum/beginner/73195/) variable respectively and then the class you want to overload for. In case you aren't familiar with the _istream_
 and _ostream_ datatypes, they are class types of _cin_ and _cout_; _istream_ stands for 'input stream' and _ostream_ stands for 'output stream'.
