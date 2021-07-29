@@ -35,7 +35,7 @@ int main()
         file >> word;
         cout << "The first word in the file is: " << word << '\n';
 
-        //Write to the file (overwriting the file, since 'ios::out' is the default mode)
+        //Write to the file (overwriting the file, since 'ios::in | ios::out' is the default mode)
         file << "This string will be written to the file";
 
         //Close the file
