@@ -138,15 +138,15 @@ int main()
 
     //int + int
     int intResult = add(intA, intB);                //Stores the result as an integer
-    cout << "10 + 20 stored as an integer is: " << intResult << '\n';
+    cout << "10 + 20 stored as an integer is: " << intResult << '\n';  //Result = 30
 
     //double + double
     double doubleResult = add(doubleA, doubleB);   //Stores the result as a double
-    cout << "15.5 + 16.5 stored as a double is: " << doubleResult << '\n';
+    cout << "15.5 + 16.5 stored as a double is: " << doubleResult << '\n';  //Result = 32.2
 
     //int + double
     int mixedResult = add(intA, doubleA);         //Stores the result as an integer (type-casted down from a double)
-    cout << "10 + 15.5 stored as an integer is: " << mixedResult << '\n';
+    cout << "10 + 15.5 stored as an integer is: " << mixedResult << '\n';  //Result = 25
 
     return 0;
 }
