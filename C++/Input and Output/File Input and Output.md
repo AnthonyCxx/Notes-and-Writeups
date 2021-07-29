@@ -27,7 +27,7 @@ int main()
     file.open(filename);  //.open("file.txt") also works
 
     //Read and write to the file
-    if (file)  //File objects evaluate to true if they're valid (good to use)
+    if (file)  //File objects evaluate to true if they're good to use (returns file.good())
     {
         //To store the read word in
         string word;
