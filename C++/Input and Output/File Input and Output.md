@@ -113,6 +113,7 @@ Some text here...
 ```
 
 # Writing to Files
+Writing to files is much simpler than reading from files.
 
 ## Working with File Modes
 
