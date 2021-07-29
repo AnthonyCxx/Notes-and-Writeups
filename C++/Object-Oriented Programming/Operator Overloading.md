@@ -425,6 +425,6 @@ Programiz: [_C++ Operator Overloading_](https://www.programiz.com/cpp-programmin
 TheCherno: [_OPERATORS and OPERATOR OVERLOADING in C++_](https://www.youtube.com/watch?v=mS9755gF66w) <br />
 Artima: [_The Safe Bool Idiom_](https://www.artima.com/articles/the-safe-bool-idiom) <br />
 stroustrup.com: [_control of defaults: default and delete_](https://www.stroustrup.com/C++11FAQ.html#default) <br />
-IBM: [_Deleted functions (C++11)_](Deleted functions (C++11)) <br />
+IBM: [_Deleted functions (C++11)_](Deleted functions (C++11) <br />
 GeeksforGeeks: [_Explicitly Defaulted and Deleted Functions in C++ 11_](https://www.geeksforgeeks.org/explicitly-defaulted-deleted-functions-c-11/) <br />
 thispointer.com: [_C++11 / C++14 : ‘delete’ keyword and deleted functions with Use Cases | Examples_](https://thispointer.com/c11-c14-delete-keyword-and-deleted-functions-with-use-cases-examples/) <br />
