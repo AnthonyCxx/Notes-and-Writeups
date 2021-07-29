@@ -1,3 +1,8 @@
+/*
+    All this mess with 'pair<bool, vector<string>' could easily be replaced with C++17's 
+    'std::optional<T>', but this works for C++11...
+*/
+
 #include <iostream>
 #include <string>
 #include <fstream>      //For file I/O
@@ -5,7 +10,6 @@
 #include <utility>    //Contains pair<>
 using namespace std;
 
-//All this mess with 'pair<bool, vector<string>' could easily be replaced with C++17's 'std::optional<T>', but this works for C++11...
 pair<bool, vector<string>> readFile(const string& path)    //Should be 'const char*' if hard-coded
 {
     //Declare (and open) a file with the filepath
