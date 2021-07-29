@@ -38,7 +38,8 @@ think of _throw_ as the [_raise_](https://stackoverflow.com/questions/2052390/ma
 in C++, integers, doubles, strings, classes, but you cannot have two catch blocks with the same datatype; if you do, then the second one will never be executed.
 This problem is solved by exception classes, which you can read about [here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Exception%20Handling/Exception%20Classes.md).
 
-This program catches a division by zero error (floating point exception), which would have crashed the program and caused a core dump.
+This program catches a division by zero error (floating point exception), which would have crashed the program and caused a core dump. <br />
+When the _throw_ statement is executed, the execution immediately jumps to the appropriate _catch_ block.
 ```C++
 #include <iostream>
 #include <string>
