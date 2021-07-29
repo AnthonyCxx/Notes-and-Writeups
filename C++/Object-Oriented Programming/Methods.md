@@ -108,7 +108,8 @@ convert the float 13.75 into the integer 13 by [truncating](https://techterms.co
 and catch it in an integer, then the integer will contain 56 because it will type-cast 56.88 into 58 before storing it.
 
 Because of this, I recommend all math-related functions you write to both use and return doubles, as you can always type-cast to a less specific type (double to float, 
-double to int), but you cannot type-cast to a more specific type (float to double) without losing some precision (some or all of the decimal places).
+double to int), but you cannot type-cast to a more specific type (float to double) without losing some or all of the characteristics of the more specific datatype
+(in this case, some or all of the decimal places).
 
 ```C++
 #include <iostream>
