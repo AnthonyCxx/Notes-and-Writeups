@@ -416,6 +416,7 @@ int main()
 As of C++11, you can set a function (or operator overload) to `= delete`, which will then prevent the compiler from using said function/operator.
 
 ## Deleting Operators and Functions
+Something something, this example isn't done...
 
 This example contains a class _SecureString_ which acts as a wrapper for a simple _char*_, preventing it from being copied in the program as well as disabling referencing
 its address in memory. I used a c-string instead of a normal string because not only is it smaller, giving it a smaller memory footprint, but a c-string gives me the ability 
