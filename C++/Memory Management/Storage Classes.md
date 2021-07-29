@@ -32,7 +32,7 @@ int main()
 
 ## _extern_
 The _extern_ keyword (short for 'external') provides an alternative to _#include_, allowing you to use variables and functions declared in other files without including the
-other file.
+other file. The default value of an external variable is 0.
 
 File 1
 ```C++
