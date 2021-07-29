@@ -70,7 +70,7 @@ void ascii(char character)
 ## _static_
 Static variables do not go out of scope, unlike local variables. Static variables can be used to maintain values even between function calls.
 Static class members are shared between all instances of said class, so you could have a static data member '_count_' used to keep track of the amount
-of instances of the class. To make this word, increment _count_ in the constructor and decrement it in the destructor.
+of instances of the class. To make this work, increment _count_ in the constructor and decrement it in the destructor.
 
 The default value of a static variable is 0
 ```C++
