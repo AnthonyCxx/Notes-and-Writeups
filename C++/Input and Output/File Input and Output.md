@@ -49,7 +49,7 @@ int main()
 ```
 
 ## Using Files Modes
-Files can be set to different modes, which dictates how the file stream reads/writes to the file. <br />
+Files can be set to different modes, which dictates how the file stream reads/writes to the file.
 These modes are not necessarily exclusive, as you can combine compatible flags (e.g. _ios::in_ and _ios::binary_).
 To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/bitwise-operators) (a '|') between the flags.
 
@@ -58,7 +58,7 @@ To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/b
 | _ios::in_ | Input | ... |
 | _ios::out_ | Output | ... |
 | _ios::trunc_ | Truncate | ... |
-> _ios::in_ is the default for _ifstream_, _ios::out_ is the default for _ofstream_ and _ios::in \| ios::out_ is the default for _fstream_.
+> _ios::in_ is the default for _ifstream_, _ios::out_ is the default for _ofstream_, and _ios::in \| ios::out_ is the default for _fstream_.
 
 # Reading from Files
 
