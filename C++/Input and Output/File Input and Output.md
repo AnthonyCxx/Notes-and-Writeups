@@ -1,11 +1,11 @@
 # Working with Files in C++
-> Quick reference: click [here]() to read a file line by line, and [here]() for word by word.
+
 
 # Reading from Files
 
-## Reading a File Line by Line
-
 ## Reading a File Word by Word
+
+## Reading a File Line by Line
 
 ## Storing a File with _string_
 
@@ -14,6 +14,13 @@
 ```
 
 ## Storing a File with _vector\<T\>_
+> Pre-requisite: [_vectors_](https://www.educative.io/edpresso/what-is-a-c-vector)
+
+Some text here...
+
+```C++
+
+```
 
 ## Storing a File with _stringstream_
 
