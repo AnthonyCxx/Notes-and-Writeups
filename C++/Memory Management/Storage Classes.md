@@ -8,7 +8,7 @@ reduce code readability when overused. You can see that _auto_ is replaced by th
 with [cppinsights.io](https://cppinsights.io/).
 
 _auto_ can be used as the return type for a function and can even be used as the type for a function parameter (as of C++20). <br />
-[Here](https://lesleylai.info/en/auto-parameters/)'s why you shouldn't do that. 
+[Here](https://lesleylai.info/en/auto-parameters/)'s why you shouldn't use _auto_ as a function parameter. 
 ```C++
 #include <iostream>
 using namespace std;
