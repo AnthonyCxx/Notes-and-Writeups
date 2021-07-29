@@ -152,6 +152,7 @@ int main()
 
 ## _thread\_local_
 
+
 ## _register_
 I've included _register_ last as, although it does exist, it was deprecitated in C++11 and was [removed in C++17 ](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/). If you try to compile a program with the _register_ keyword in it with C++17, you will get a warning '_warning: ISO C++17 does not allow ‘register’
 storage class specifier_'.
@@ -168,3 +169,4 @@ TutorialsPoint: [_Storage Classes in C++_](https://www.tutorialspoint.com/cplusp
 JavaTPoint: [_C++ Storage Classes_](https://www.javatpoint.com/cpp-storage-classes) <br />
 GeeksforGeeks: [_Storage Classes in C++ with Examples_](https://www.geeksforgeeks.org/storage-classes-in-c-with-examples/) <br />
 Programiz: [_C++ Storage Class_](https://www.programiz.com/cpp-programming/storage-class) <br />
+educba: [_C++ thread_local_](https://www.educba.com/c-plus-plus-thread_local/) <br />
