@@ -7,7 +7,7 @@ This is not meant to be an authority of any kind nor is it meant to be comprehen
 P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article.
 
 ## Tricks and Tools
-Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (....) <br />
+Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (shows you how the compiler changes your source code behind the scenes) <br />
 Tool: [_cdecl, C gibberish to English_](https://cdecl.org/) (C -> English translator meant for C, but still sometimes useful) <br />
 Tool: [_Hot Examples: Search C++ Code from 1,000,000+ Projects_]() <br />
 Trick: [_The ''Clockwise/Spiral Rule''_](http://c-faq.com/decl/spiral.anderson.html) <br />
