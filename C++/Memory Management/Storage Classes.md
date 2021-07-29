@@ -69,10 +69,13 @@ void ascii(char character)
 
 ## _static_
 Static variables do not go out of scope, unlike local variables. Static variables can be used to maintain values even between function calls.
-The default value of a static variable is 0.
+Static class members are shared between all instances of said class, so you could have a static data member '_count_' used to keep track of the amount
+of instances of the class. To make this word, increment _count_ in the constructor and decrement it in the destructor.
 
-```C
-#include <stdio.h>
+The default value of a static variable is 0
+```C++
+#include <iostream>
+using namespace std;
 
 // Loop X number of times, keeping track of how many total times
 void loop(int times)
@@ -84,7 +87,7 @@ void loop(int times)
         total++;
     }
 
-    printf("The loop has been run a total of %d times\n", total);
+    cout << "The loop has been run a total of " << total << " times\n";
 }
 
 int main()
