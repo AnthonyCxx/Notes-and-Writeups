@@ -432,11 +432,12 @@ class SecureString  //Mimics C#'s 'SecureString' class under 'System.Security'
 {
     private:
         char* data;
-        size_t size;
+        bool disposed;
 
     public:
         //Constructor
         SecureString(const char*);
+        ~SecureString();
 
         //Dispose of the memory
         void dispose();
@@ -447,21 +448,33 @@ class SecureString  //Mimics C#'s 'SecureString' class under 'System.Security'
         SecureString& operator=(const SecureString&) = delete;  //Assignment assignment operator
 };
 
-//Constructor
+//Constructor (const char*)
 SecureString::SecureString(const char* cstr)
 {
-    //Store the size of the string (excluding null-terminating char)
-    size = strlen(cstr);
+    //Data is initialized
+    disposed = false;
 
     //Copy the string literal into the data
     data = strdup(cstr);
+}
+
+//Destructor
+SecureString::~SecureString()
+{
+    /*
+        If the password has not been disposed of before going out of scope
+        dispose of it.
+    */
+
+    if (!disposed)
+        dispose();
 }
 
 //Dispose: zero-writes the memory the string was allocated to
 void SecureString::dispose()
 {
     //Write binary zeros to the c-string
-    memset(data, '\0', size);
+    memset(data, '\0', strlen(data));
 }
 
 // DRIVER CODE //
@@ -474,6 +487,7 @@ int main()
     SSN.dispose();
 
     return 0;
+
 }
 ```
 
