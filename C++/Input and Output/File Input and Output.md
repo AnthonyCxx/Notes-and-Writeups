@@ -87,7 +87,7 @@ be it explicit or not.
 
 ## Reading a File by Character
 
-## Reading a File Word
+## Reading a File by Word
 
 ## Reading a File by Line
 
