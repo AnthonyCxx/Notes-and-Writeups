@@ -10,7 +10,7 @@
 #include <utility>    //Contains pair<>
 using namespace std;
 
-pair<bool, vector<string>> readFile(const string& path)    //Should be 'const char*' if hard-coded
+pair<bool, vector<string>> readFile(const string& path)    //Can be 'const char*' if hard-coded
 {
     //Declare (and open) a file with the filepath
     ifstream file(path);
