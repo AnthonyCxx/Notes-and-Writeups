@@ -35,9 +35,10 @@ The _extern_ keyword (short for 'external') provides an alternative to _#include
 other file.
 
 File 1
-```C
-// Compile with 'gcc *.c' ('*' wildcard matches with all C source code files)
-#include <stdio.h>
+```C++
+// Compile with 'g++ *.cpp' ('*' wildcard matches with all C++ source code files)
+#include <iostream>
+using namespace std;
 
 extern void ascii(char);     // There is a void function that accepts a char in another file
 
@@ -45,9 +46,8 @@ int main()
 {
     char input;
 
-    printf("Enter a character to find its ASCII value: ");
-    input = getchar();
-    putchar('\n');
+    cout << "Enter a character to find its ASCII value: ";
+    cin.get(input);
 
     ascii(input);   //prints the ASCII value of a character
 
@@ -56,13 +56,14 @@ int main()
 ```
 
 File 2
-```C
+```C++
 // The other file
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 void ascii(char character)
 {
-    printf("The ASCII value of %c is %d\n", character, character);
+    cout << "The ASCII value of " << character << " is " << (int) character << '\n';
 }
 ```
 
