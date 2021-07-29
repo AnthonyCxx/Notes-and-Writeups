@@ -4,8 +4,47 @@ three streams (classes) to work with files, [_ifstream_](https://www.cplusplus.c
 and writing files). Since _ifstream_, _ofstream_, and _fstream_ are all a part of the [I/O class inheritance hierarchy](https://www.cplusplus.com/reference/iolibrary/),
 they can be formatted with [_\<iomanip\>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md) and use _<<_ and _>>_ just like _cin_ and _cout_.
 
-# Reading from Files
+## Basic File I/O
+Here's a quick rundown on how to use files.
 
+```C++
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    //Declare a file named 'file' (fstream = read & write) and a string for the file name
+    fstream file;
+    const string filename = "file.txt";
+
+    //Open the file
+    file.open(filename);  //.open("file.txt") also works
+
+    //Read and write to the file
+    if (file)  //File objects evaluate to true if they're valid (good to use)
+    {
+        string word;
+
+        //Read a word from the file
+        file >> word;
+        cout << "The first word in the file is: " << word << '\n';
+
+        //Write to the file (overwriting the file, since 'ios::out' is the default mode)
+        file << "This string will be written to the file";
+
+        //Close the file
+        file.close();
+    }
+
+    return 0;
+}
+```
+
+## Using Files Modes
+
+# Reading from Files
 
 ## Reading a File Character by Character
 
