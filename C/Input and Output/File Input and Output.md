@@ -1,4 +1,4 @@
-# Reading from Files in C
+# Working with Files in C
 
 ## The _FILE_* Datatype
 All files in C are pointers of the [_FILE_](https://www.geeksforgeeks.org/data-type-file-c/#:~:text=A%20FILE%20is%20a%20type,although%20it%20is%20system%20specific.) datatype.
