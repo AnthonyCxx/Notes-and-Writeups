@@ -15,7 +15,8 @@ int main()
     FILE* file = fopen("textfile.txt", "r"); 
 
     // Check for errors
-    if (file != NULL) {
+    if (file != NULL) 
+    {
         puts("File exists and was opened successfully");
     }
     else {
