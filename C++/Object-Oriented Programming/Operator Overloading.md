@@ -493,7 +493,7 @@ int main()
 }
 ```
 
-## Preventing Select Implicit Type Conversions
+## Preventing Certain Implicit Type Conversions
 
 ## Sources
 Book: [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
