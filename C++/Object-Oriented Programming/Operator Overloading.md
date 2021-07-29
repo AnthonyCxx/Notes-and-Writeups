@@ -482,6 +482,8 @@ int main()
 {
     //Create a new secure c-string
     SecureString SSN("some social security number");
+    
+    //SecureString ptr = &SSN;    <== illegal, '&' is deleted
 
     //Overwrite the memory of the c-string, disposing of it
     SSN.dispose();
