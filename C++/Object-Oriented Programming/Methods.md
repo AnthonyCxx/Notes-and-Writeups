@@ -101,6 +101,13 @@ int main()
 }
 ```
 
+## Implicit Parameter Type Conversion
+
+
+```C++
+
+```
+
 ## Function Overloading
 C++ is an object-oriented language, so it supports [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/). One of the major ways C++ support the object-oriented
 programming paradigm is through function overloading (the others being operator overloading and virtual functions). Function overloading allows two functions to share
