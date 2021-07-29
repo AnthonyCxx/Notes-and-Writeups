@@ -102,11 +102,13 @@ int main()
 ```
 
 ## Implicit Parameter Type Conversion
-
+Because of this, I recommend all math-related functions you write to both use and return doubles, as you can always type-cast to a less specific type (double->float, 
+double->int), but you cannot type-cast to a more specific type (float -> double) without
 
 ```C++
 
 ```
+> References: [__]() and [__]() 
 
 ## Function Overloading
 C++ is an object-oriented language, so it supports [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/). One of the major ways C++ support the object-oriented
