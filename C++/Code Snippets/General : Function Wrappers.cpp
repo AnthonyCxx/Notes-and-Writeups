@@ -24,10 +24,14 @@ void time(function<void()> func)   //'function' is a class in the <functional> h
 
 //Print the numbers 1-100, but format them (zero-padded to 3 digits)
 void print100()
-{
+{   
+    //Set stream flag
+    cout  << setfill('0');
+    
+    //Print 0-100, zero-padded to 3 chars
     for(int i=1; i < 101; i++)
     {
-        cout  << setfill('0') << setw(3) << i << '\n';
+        cout << setw(3) << i << '\n';
     }
 }
 
