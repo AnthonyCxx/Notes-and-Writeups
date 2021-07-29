@@ -29,6 +29,7 @@ int main()
     //Read and write to the file
     if (file)  //File objects evaluate to true if they're valid (good to use)
     {
+        //To store the read word in
         string word;
 
         //Read a word from the file
