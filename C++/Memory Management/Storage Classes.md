@@ -105,7 +105,7 @@ int main()
 > The loop has been run a total of 20 times <br />
 
 ## _mutable_
-Think _mut-_ as in mutation. The _mutable_ keyword allows a data member of a class or struct to be modified even if the class/struct is _const_.
+Think _mut-_ as in 'mutation'. The _mutable_ keyword allows a data member of a class or struct to be modified even if the class/struct is _const_.
 
 ```C++
 #include <iostream>
