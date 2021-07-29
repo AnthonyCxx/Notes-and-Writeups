@@ -460,8 +460,8 @@ SecureString::SecureString(const char* cstr)
 //Dispose: zero-writes the memory the string was allocated to
 void SecureString::dispose()
 {
-    //Zero-write the c-string
-    memset(data, '0', size);
+    //Write binary zeros to the c-string
+    memset(data, '\0', size);
 }
 
 // DRIVER CODE //
