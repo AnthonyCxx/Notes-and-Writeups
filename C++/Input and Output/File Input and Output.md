@@ -50,11 +50,11 @@ int main()
 
 # Reading from Files
 
-## Reading a File Character by Character
+## Reading a File by Character
 
-## Reading a File Word by Word
+## Reading a File Word
 
-## Reading a File Line by Line
+## Reading a File by Line
 
 ## Storing a File with _string_
 
