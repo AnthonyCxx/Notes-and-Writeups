@@ -5,7 +5,7 @@ Feel free to remove the _chrono::_ from everything you see if you are using the 
 
 The majority of this document has been constructed from the talk [_A \<chrono\> Tutorial_](https://www.youtube.com/watch?v=P32hvk8b13M) by [Howard Hinnant](https://github.com/HowardHinnant), who is recognized as a master C++ programmer and invented move semantics.  All credit to him.
 
-# Measuring Time
+# Basics of Keeping Time with the _duration_ and _time\_point_ Classes
 
 # _duration_
 The _duration_ class is used to store a duration of time (the amount of time between two points in time); these points in time may or may not 
