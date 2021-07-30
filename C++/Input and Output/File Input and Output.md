@@ -153,7 +153,7 @@ while(getline(file, line, 'z'))   //Get a a whole line (up to and excluding the 
 Storing a file in a string is simplest way to store the contents of a file. Storing a file's content in a string does lose track of the individual lines, 
 so store your files in a string when you have no special needs, like formatting or keeping the lines separate.
 
-Strings are [mutable](https://lemire.me/blog/2017/07/07/are-your-strings-immutable/) in C++, so there's no problem with constantly changing a string like in C# or Java.
+Strings are [mutable](https://lemire.me/blog/2017/07/07/are-your-strings-immutable/) in C++, so there's no problem with constantly changing a string unlike in C# or Java.
 ```C++
 //String delcarations
 string contents;    //Store the file contents in one large string
