@@ -135,7 +135,7 @@ Read a file line by line by using [_getline()_](https://www.javatpoint.com/cpp-g
 If you provide a [delimiter](https://searchoracle.techtarget.com/definition/delimiter) (a character) as a third argument to _getline()_ (after the file to read from and the string to store the data in), 
 then _getline()_ will read up to the given delimiter instead of a newline ('\n') like it normally does. <br />
 
-**WARNING:** Don't forget that _getline()_ does not include the delimiter it stops at in the data it returns. 
+**WARNING:** _getline()_ does not include the delimiter it stops at in the data it returns. 
 ```C++
 //String delcarations
 string contents;    //Store the file contents in one large string
