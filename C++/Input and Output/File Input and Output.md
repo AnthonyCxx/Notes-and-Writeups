@@ -9,7 +9,7 @@ three streams (classes) to work with files, [_ifstream_](https://www.cplusplus.c
 and writing files). Since _ifstream_, _ofstream_, and _fstream_ are all a part of the [I/O class inheritance hierarchy](https://www.cplusplus.com/reference/iolibrary/),
 they can be formatted with [_\<iomanip\>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md) and use _<<_ and _>>_ just like _cin_ and _cout_.
 
-## Basic File I/O
+## File I/O Summary
 Here's a quick rundown on how to use files.
 
 ```C++
