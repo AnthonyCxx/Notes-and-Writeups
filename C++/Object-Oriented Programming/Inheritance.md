@@ -137,11 +137,12 @@ class Dog: public Animal  //Inherit publicly from the 'Animal' class
 
 ## Calling the Constructor of a Base Class
 You can call the constructor of a base class by putting a colon after the parameter list of the constructor of a derived class and then passing the 
-variables to the base constructor. To call multiple base constructors, separate them by commas.
+variables to the base constructor; the base constructor of a class is indicated by its name, since a class can inherit from multiple classes. 
+To call multiple base constructors, separate them by commas.
 
 Calling the constructor of a base class makes initializing derived classes far less verbose.
 ```C++
-//Constructor, passing 'Age' and 'Genus' to the base constructor 'Animall::Animal(int, string)'
+//Constructor, passing 'Age' and 'Genus' to the base constructor 'Animal::Animal(int, string)'
 Dog::Dog(int Age, string Genus, string Breed): Animal(Age, Genus)   
 {
     breed = Breed;
