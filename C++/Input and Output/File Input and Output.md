@@ -77,7 +77,7 @@ overloaded _<<_ opreator from the _istream_ class.
 Read a file character by character by using _>>_ with a char datatype. By default, _istream_ streams (like files) skip whitespace. <br />
 If you want to include whitespace, put `file >> noskipws;` (no skip whitespace) in front of the loop.
 
-If you're parsing by character to look for specific character, consider used the [_\<cctype\>_](https://en.cppreference.com/w/cpp/header/cctype) library, which contains
+If you're parsing by character to look for specific character, consider using the [_\<cctype\>_](https://en.cppreference.com/w/cpp/header/cctype) library, which contains
 pre-written functions for classifying characters like [_isalpha()_](https://en.cppreference.com/w/cpp/string/byte/isalpha), [_isdigit()_](https://en.cppreference.com/w/cpp/string/byte/isdigit), [_ispunct()_](https://en.cppreference.com/w/cpp/string/byte/ispunct), [_isspace()_](https://en.cppreference.com/w/cpp/string/byte/isspace), [_isupper()_](https://en.cppreference.com/w/cpp/string/byte/isupper), and [_islower()_](https://en.cppreference.com/w/cpp/string/byte/islower) as well as two functions for manipulating character case: [_toupper()_](https://en.cppreference.com/w/cpp/string/byte/toupper) and [_tolower()_](https://en.cppreference.com/w/cpp/string/byte/tolower).
 ```C++
 //Delcarations
