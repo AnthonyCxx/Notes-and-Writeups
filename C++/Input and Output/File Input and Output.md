@@ -59,7 +59,7 @@ To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/b
 | _ios::out_ | Output | standard write mode | overwrites the file | creates file |
 | _ios::ate_ | At End | write mode; starts pointer at the end of the file (can be changed) | appends data (by default) | creates file |
 | _ios::app_ | Append | write mode; starts pointer at the end of the file (cannot be changed) | appends data | creates file |
-| _ios::trunc_ | Truncate | write mode wipes file contents | wipes file contents | creates file |
+| _ios::trunc_ | Truncate | write mode; wipes file contents | wipes file contents | creates file |
 | _ios::binary_ | Binary | read/write mode modifier; treats the file as binary data instead of text | N/A | N/A |
 > _ios::in_ is the default for _ifstream_, _ios::out_ is the default for _ofstream_, and _ios::in \| ios::out_ is the default for _fstream_.
 
