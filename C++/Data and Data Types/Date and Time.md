@@ -52,6 +52,9 @@ The _duration_ class is a template that can be used to create custom units of ti
 60 frames a second, using the custom type '_frames_' as `using frames = duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
 
 # The _time\_point_ Class
+| Method | Description | 
+| ------ | ----------- | 
+| [_time_since_epoch()_](https://www.cplusplus.com/reference/chrono/time_point/time_since_epoch/) | returns a _duration_ object containing the time between the _time\_point_ object and the [epoch](https://en.wikipedia.org/wiki/Unix_time) |
 
 ## Time Point Arithmetic 
 You can subtract timepoints, but not add them.
