@@ -34,5 +34,5 @@ These instantiations can be used like literals, so you can pass '_10ms_' to a fu
 ## Sources
 CppCon 2016: [_CppCon 2016: Howard Hinnant “A \<chrono\> Tutorial"_](https://www.youtube.com/watch?v=P32hvk8b13M) <br />
 cplusplus.com: [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/) <br />
-cppreference.com: [_Date and time utilities: std::chono_](https://en.cppreference.com/w/cpp/chrono/weekday) <br />
+cppreference.com: [_Date and time utilities: std::chono_](https://en.cppreference.com/w/cpp/chrono) <br />
 TheCherno: [_Timing in C++_](https://www.youtube.com/watch?v=oEx5vGNFrLk) <br />
