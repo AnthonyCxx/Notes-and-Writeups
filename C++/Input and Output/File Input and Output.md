@@ -95,7 +95,7 @@ while(file >> character)   //Get a single character
 ```
 
 ## Reading a File by Word
-Read a file character by character by using _>>_ with a string datatype. 
+Read a file word by word by using _>>_ with a string datatype. 
 
 For some reason, my program broke and only read the first word when I added `file >> noskipws` like I did in the previous example.
 ```C++
