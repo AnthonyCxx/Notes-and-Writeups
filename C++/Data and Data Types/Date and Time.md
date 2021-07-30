@@ -17,20 +17,21 @@ pass '_10ms_' instead of '_10_' which is much clearer.
 
 #### Initializing a _duration_
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
-You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes.
+You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
+From testing, it seems you cannot assign a smaller unit of time (e.g. milliseconds) to a variable of a larger unit (e.g. hours).
 
 #### Outputting a _duration_
 `cout << time_waited;` does not work. You have to output the amount of time by using the _.count()_ method. <br />
 For example `cout << time_waited.count()` would work.
 
-| Unit | Ratio |
-| ---- | ----- |
-| [_chrono::hours_](https://www.cplusplus.com/hours) | 3600/1 |
-| [_chrono::minutes_](https://www.cplusplus.com/reference/chrono/minutes/) | 60/1 |
-| [_chrono::seconds_](https://www.cplusplus.com/reference/chrono/seconds/) | 1/1 |
-| [_chrono::milliseconds_](https://www.cplusplus.com/reference/chrono/milliseconds/) | 1/1000 |
-| [_chrono::microseconds_](https://www.cplusplus.com/reference/chrono/microseconds/) | 1/1,000,000 |
-| [_chrono::nanoseconds_](https://www.cplusplus.com/reference/chrono/nanoseconds/) | 1/1,000,000,000 |
+| Unit | Literal Suffix | Ratio |
+| ---- | -------------- | ----- |
+| [_chrono::hours_](https://www.cplusplus.com/hours) | h | 3600/1 |
+| [_chrono::minutes_](https://www.cplusplus.com/reference/chrono/minutes/) | min | 60/1 |
+| [_chrono::seconds_](https://www.cplusplus.com/reference/chrono/seconds/) | s | 1/1 |
+| [_chrono::milliseconds_](https://www.cplusplus.com/reference/chrono/milliseconds/) | ms | 1/1000 |
+| [_chrono::microseconds_](https://www.cplusplus.com/reference/chrono/microseconds/) | us | 1/1,000,000 |
+| [_chrono::nanoseconds_](https://www.cplusplus.com/reference/chrono/nanoseconds/) | ns | 1/1,000,000,000 |
 > All the ratios use _seconds_ as the standard for comparison.
 
 ## time_point
