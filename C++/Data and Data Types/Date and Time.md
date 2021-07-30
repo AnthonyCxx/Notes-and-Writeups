@@ -48,7 +48,7 @@ By typecasting, we force program to truncate the extra twelve minutes and store 
 ## Getting the Value of a _duration_
 `cout << time_waited;` does not work. You have to access the amount of time by using the _.count()_ method. <br />
 For example `cout << time_waited.count()` would work. However, adding two variables of type _seconds_ and assigning
-it to a new _seconds_ variable is acceptable.
+it to a new _seconds_ variable is fine without using _.count()_.
 
 ## Mixed-mode Arithmetic
 Doing math with variables of different units (e.g. _hours_ and _nanoseconds_) works just fine. <br />
