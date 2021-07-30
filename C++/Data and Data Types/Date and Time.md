@@ -60,7 +60,8 @@ The _duration_ class is a template that can be used to create custom units of ti
 
 | Custom Duration | Declaration |
 | --------------- | ----------- |
-| Days | `using days = duration<int, ratio_multiply<ratio<24>, hours::period>>;` |
+| Day | `using days = duration<int, ratio_multiply<ratio<24>, hours::period>>;` |
+| Week | `using weeks = duration<int, ratio_multiply<ratio<7>, days::period>>` |
 > '_using days = duration<int, ratio<86400>>;_' also works since there are 86400 seconds in a day
 
 # The _time\_point_ Class
