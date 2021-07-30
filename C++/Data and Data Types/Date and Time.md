@@ -11,6 +11,13 @@ The majority of this document has been constructed from the talk [_A \<chrono\> 
 The _duration_ class is used to store a duration of time (the amount of time between two points in time); these points in time may or may not 
 be _time\_point_ objects.
 
+| Method | Type | Description | 
+| ------ | ---- | ----------- | 
+| [_.count()_](https://www.cplusplus.com/reference/chrono/duration/count/) | Instance | returns the count (value/the time) of a _duration_ object | 
+| [_.zero()_](https://www.cplusplus.com/reference/chrono/duration/zero/) | Static | returns a _duration_ object with the value 0 | 
+| [_.min()_](https://www.cplusplus.com/reference/chrono/duration/min/) | Static | returns a _duration_ object with the minimum possbile value | 
+| [_.max()_](https://www.cplusplus.com/reference/chrono/duration/max/) | Static | returns a _duration_ object with the maximum possbile value | 
+
 ## _duration_ typedefs
 There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
 These instantiations can be used like any other datatype, so you can make _milliseconds_ the datatype for a function parameter and then 
@@ -55,8 +62,8 @@ The _duration_ class is a template that can be used to create custom units of ti
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
 | [_.time_since_epoch()_](https://www.cplusplus.com/reference/chrono/time_point/time_since_epoch/) | Instance | returns a _duration_ object containing the time between the _time\_point_ object and the [epoch](https://en.wikipedia.org/wiki/Unix_time) |
-| [_min()_](https://www.cplusplus.com/reference/chrono/time_point/min/) | Static | returns the minimum value of a _time\_point_ object |
-| [_max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns the maximum value of a _time\_point_ object |
+| [_.min()_](https://www.cplusplus.com/reference/chrono/time_point/min/) | Static | returns a _time\_point_ object with the minimum possible value |
+| [_.max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns a _time\_point_ object with the maximum possible value |
 
 ## Time Point Arithmetic 
 You can subtract timepoints, but not add them.
