@@ -1,7 +1,14 @@
 # Datatypes in C++
-Anything in parentheses can be omitted.
+| File | Function |
+| ---- | -------- |
+| [Primitive Datatypes]() |  |
+| [Non-primitive Datatypes]() |  |
+| [Operators and Operator Precedence]() |  |
+| [Working with Date and Time]() |  |
 
 ## Primitive Types
+Anything in parentheses can be omitted.
+
 | Datatype | Size (in bytes) | Minimum Value | Maximum Value | Literal Suffix |
 | -------- | --------------- | ------------- | ------------- | -------------- | 
 | (signed) char | 1 | -128 | 127 | N/A |  
