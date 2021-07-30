@@ -9,7 +9,7 @@ The _duration_ class is used to store a duration of time (the amount of time bet
 
 ### _duration_ typedefs
 There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
-These instantiations can be used like literals, so you can pass '_10ms_' to a function to make it clearer.
+These instantiations can be used like literals, so you can pass '_10ms_' instead of '_10_' to a function to make it clearer.
 
 | Unit | Ratio |
 | ---- | ----- |
