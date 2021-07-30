@@ -2,7 +2,7 @@
 Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities. <br />
 All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sake of examples, I will only assume you are using namespace _std_.
 
-The majority of this document has been constructor from the talk ['_A \<chrono\> Tutorial_'](https://www.youtube.com/watch?v=P32hvk8b13M) by [Howard Hinnant](https://github.com/HowardHinnant), who is recognized as a master C++ programmer
+The majority of this document has been constructed from the talk [_A \<chrono\> Tutorial_](https://www.youtube.com/watch?v=P32hvk8b13M) by [Howard Hinnant](https://github.com/HowardHinnant), who is recognized as a master C++ programmer
 and invented move semantics.
 
 # Measurements
