@@ -1,6 +1,6 @@
 # Operator Overloading in C++
 > Jump:
-> [Special Cases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#special-cases), [_bool_](), [_++/--_](), [_<</>>_]() <br />
+> [Special Cases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#special-cases), [_bool_](), [_++_]() and [_++_](), [_<<_]() and [_>>_]() <br />
 > [Disabling Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md#disabling-functions-with-delete) <br />
 
 Operator overloading is the ability to define what should happen when operators are applied to classes (a user-defined type). Anything that can be done with operator
