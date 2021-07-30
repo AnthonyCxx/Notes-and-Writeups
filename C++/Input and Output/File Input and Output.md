@@ -55,20 +55,25 @@ To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/b
 
 | Mode | Full Name | Description | 
 | ---- | --------- | ----------- |
-| _ios::in_ | Input | ... |
-| _ios::out_ | Output | ... |
-| _ios::trunc_ | Truncate | ... |
+| _ios::in_ | Input | standard read mode |
+| _ios::out_ | Output | standard write mode (overwrites existing files) |
+| _ios::ate_ | At End |  |
+| _ios::app_ | Append |  |
+| _ios::trunc_ | Truncate |  |
+| _ios::binary_ | Binary | treats the file as binary data instead of text (compatible with all flags) |
 > _ios::in_ is the default for _ifstream_, _ios::out_ is the default for _ofstream_, and _ios::in \| ios::out_ is the default for _fstream_.
 
 # Reading from Files
 
 ## Detecting the End of File (EOF)
 When looping over a file to read its contents, you either need to know how long the file is or you need to be able to detect the end of the file.
-99% of time, you won't know the size of the file, so being able to detect EOF is the only viable method. C++ provides a number of ways to check for EOF,
+99% of time, you won't know the size of the file, so being able to detect _EOF_ is the only viable method. C++ provides a number of ways to check for _EOF_,
 so there are a number of ways people tend to write their loop conditions, all of which are perfectly valid. Here are 5 ways to check for the end of a file,
 be it explicit or not.
 
 ### while(!file.eof())
+This is the clearest way to checking for _EOF_, as it spells out '_continue while I have not reached the end of the file_'. <br />
+
 ```C++
 
 ```
@@ -79,6 +84,8 @@ be it explicit or not.
 ```
 
 ### while(file)
+I honestly don't like this way at all, since it's so vague.
+
 ```C++
 
 ```
@@ -134,6 +141,5 @@ cplusplus.com: [_std::fstream_](https://www.cplusplus.com/reference/fstream/fstr
 Guru99: [_C++ File Handling: How to Open, Write, Read, Close Files in C++_](https://www.guru99.com/cpp-file-read-write-open.html) <br />
 DecodeJava: [_C++ File and File Modes_](https://www.decodejava.com/cpp-file-and-file-modes.htm) <br />
 StackOverflow: [_What is the difference among ios::app, out, and trunc in C++?_](https://stackoverflow.com/questions/48085781/what-is-the-difference-among-iosapp-out-and-trunc-in-c/48086058) <br />
-: [__]() <br />
 : [__]() <br />
 StackOverflow: [_How to Read from a Text File, Character by Character in C++_](https://stackoverflow.com/questions/12240010/how-to-read-from-a-text-file-character-by-character-in-c) <br />
