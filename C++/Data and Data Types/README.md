@@ -4,7 +4,7 @@
 | [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#primitive-types) | the basic datatypes that make up C++ |
 | [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#non-primitive-data-types) | derived and user-defined datatypes |
 | [Operators and Operator Precedence](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#operator-precedence) | functions associated with tokens |
-| [Working with Date and Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Date%20and%20Time.md) | ... |
+| [Working with Date and Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Date%20and%20Time.md) | working with time with the _\<chrono\>_ library |
 
 ## Primitive Types
 Anything in parentheses can be omitted.
@@ -26,6 +26,7 @@ Anything in parentheses can be omitted.
 | long double | 16 | 1.7E-308 | 1.7E+308 | L |
 | bool | 1 | false | true | N/A |
 > Note: floats have about 7 decimal places, doubles have about 15, and long doubles have about 19 (system-dependent). <br />
+> Note: you can use a single apostrophe to separate large numbers into sections like you do with commas in writing (e.g. `1'000'000`). <br />
 > 
 > Sources: <br />
 > Microsoft: [_Built-in Types (C++)_](https://docs.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-160) <br />
