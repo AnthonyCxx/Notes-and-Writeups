@@ -135,7 +135,16 @@ then _getline()_ will read up to the given delimiter instead of a newline ('\n')
 
 Don't forget that _getline()_ does not include the delimiter it stops at in the data it returns. 
 ```C++
+//String delcarations
+string contents;    //Store the file contents in one large string
+string line;
 
+//Until the end of the file
+while(getline(file, line, 'z'))   //Get a a whole line (up to and excluding the character 'z')
+{
+    //Append the string to the file contents
+    contents += line + ' ';  //Have to append an extra space since not reading whitespace
+}
 ```
 
 ## Storing a File with _string_
