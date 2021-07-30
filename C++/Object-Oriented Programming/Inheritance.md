@@ -1,10 +1,10 @@
 # Inheritance in C++
 > Jump: <br />
-> [Inheritance]()
-> t
-> t
-> t
-> t
+> [Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#inheritance) <br />
+> []() <br />
+> []() <br />
+> []() <br />
+> []() <br />
 
 Inheritance is the ability of a class to be able to inherit the attributes (function and data members) of another class, extending and building off of the 
 base class. The class that the new class inherits from is called the base class and the class inheriting the properties is called the derived class. For example, 
