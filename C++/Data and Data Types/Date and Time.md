@@ -18,7 +18,9 @@ pass '_10ms_' instead of '_10_' which is much clearer.
 #### Initializing a _duration_
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
-From testing, it seems you cannot assign a smaller unit of time to a variable of a larger unit like `chrono::hours time = 3ms`.
+
+#### _duration\_cast<T>
+...
 
 #### Getting the Value of a _duration_
 `cout << time_waited;` does not work. You have to access the amount of time by using the _.count()_ method. <br />
