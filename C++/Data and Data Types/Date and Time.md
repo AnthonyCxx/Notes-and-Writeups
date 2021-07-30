@@ -19,7 +19,7 @@ pass '_10ms_' instead of '_10_' which is much clearer.
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
 
-#### _duration\_cast<T>_
+#### _duration\_cast\<T\>_
 ...
 
 #### Getting the Value of a _duration_
