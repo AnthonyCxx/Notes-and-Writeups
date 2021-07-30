@@ -246,6 +246,7 @@ int main()
     return 0;
 }
 ```
+> Jump: [File Modes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Input%20and%20Output/File%20Input%20and%20Output.md#using-files-modes)
 
 # Sources
 cplusplus.com: [_Input/output with files_](https://www.cplusplus.com/doc/tutorial/files/) <br />
