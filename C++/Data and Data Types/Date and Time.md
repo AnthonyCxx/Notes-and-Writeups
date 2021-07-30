@@ -8,10 +8,12 @@ All classes from _\<chrono\>_ are a part of the namespace _std::chrono_.
 The _duration_ class is used to store a duration of time (the amount of time between two points in time).
 
 ### _duration_ typedefs
-There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours.
+There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
+These instantiations can be used like literals, so you can pass '_10ms_' to a function to make it clearer.
+
 | Unit | Ratio |
 | ---- | ----- |
-| hours | 3600/1 |
+| [hours](https://www.cplusplus.com/hours) | 3600/1 |
 | minutes | 60/1 |
 | seconds | 1/1 |
 | milliseconds | 1/1000 |
