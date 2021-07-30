@@ -30,7 +30,7 @@ pass '_10ms_' instead of '_10_' which is much clearer.
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
 
-## _duration\_cast\<T\>_
+## Casting with _duration\_cast\<T\>_
 You can store a larger unit in a variable of a smaller unit (e.g. _hours_ in a variable of type _seconds_) without typecasting, but you cannot
 store a smaller unit in a variable of a larger type unless you typecast as the larger datatype may [truncate](https://techterms.com/definition/truncate)
 a portion of that data since it cannot be wholly represented. To 'type-cast' the time, use the [_duration\_cast\<T\>_](https://en.cppreference.com/w/cpp/chrono/duration/duration_cast) function.
@@ -55,6 +55,8 @@ The _duration_ class is a template that can be used to create custom units of ti
 
 ## Time Point Arithmetic 
 You can subtract timepoints, but not add them.
+
+## Casting with _time\_point\_cast_
 
 # Using Clocks
 
