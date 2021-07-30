@@ -68,14 +68,13 @@ To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/b
 ## Detecting the End of File (EOF)
 When looping over a file to read its contents, you either need to know how long the file is or you need to be able to detect the end of the file.
 99% of time, you won't know the size of the file, so being able to detect _EOF_ is the only viable method. C++ provides a number of ways to check for _EOF_,
-so there are a number of ways people tend to write their loop conditions, only some of which are perfectly valid. Here are 5 ways to check for the end of a file,
-regardles of whether explicit or not.
+so there are a number of ways people tend to write their loop conditions, only some of which are perfectly valid. Most people tend to write something like
+_!file.eof()_ to check for _EOF_, but [this approach is considered bad practice](https://stackoverflow.com/questions/5605125/why-is-iostreameof-inside-a-loop-condition-i-e-while-stream-eof-cons) as the badbit is only set after _EOF_ is read, causing an extra, blank line to be read.
 
 For these examples, I'm going to be using [_getline()_](https://www.journaldev.com/39743/getline-in-c-plus-plus) and storing the contents in a string.
 
-### while(!file.eof())
-This is the clearest way to checking for _EOF_, as it spells out '_continue while I have not reached the end of the file_'. <br />
-Keep in mind that [this approach is considered bad practice](https://stackoverflow.com/questions/5605125/why-is-iostreameof-inside-a-loop-condition-i-e-while-stream-eof-cons) as the badbit is only set after _EOF_ is read (leaving an extra line).
+### while(file >> word) and while(file >> character)
+This is a much better approach than checking for EOF directly as it won't leave an extra line.
 
 ```C++
 //String delcarations
@@ -83,44 +82,37 @@ string contents;    //Store the file contents in one large string
 string line;       //Stores each line temporarily
 
 //Until the end of the file
-while(!file.eof())
+while(file.good())  
 {
     //Get the line from the file
     getline(file, line);
 
     //Append the line to the contents
-    contents += line;  //You might want to put a '+= " "' for a space
+    contents += line += ' ';  //Extra '+= <<space>>' to put a space between lines
 }
 ```
-
-### while(file.good())
-```C++
-
-```
-
-### while(file)
-I honestly don't like this way at all, since it's so vague.
-
-```C++
-
-```
-
-### while(file >> word) and while(file >> character)
-```C++
-
-```
-
-### while(getline(file, str))
-```C++
-
-```
-
 
 ## Reading a File by Character
 
 ## Reading a File by Word
 
 ## Reading a File by Line
+
+``C++
+//String delcarations
+string contents;    //Store the file contents in one large string
+string line;       //Stores each line temporarily
+
+//Until the end of the file
+while(file.good())  
+{
+    //Get the line from the file
+    getline(file, line);
+
+    //Append the line to the contents
+    contents += line += ' ';  //Extra '+= <<space>>' to put a space between lines
+}
+```
 
 ## Storing a File with _string_
 
