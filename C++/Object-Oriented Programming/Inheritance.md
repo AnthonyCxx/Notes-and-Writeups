@@ -452,7 +452,7 @@ int main()
 {
     Derived derivedObject;
 
-    //Calls print on the
+    //Calls print on the 'Derived' object, which is possible since it's inherited from the 'Base' class
     callPrint(derivedObject);
 }
 ```
