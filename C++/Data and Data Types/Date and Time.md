@@ -72,6 +72,7 @@ You can subtract two _time\_point_ objects, but not add them.
 You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _minutes_)
 
 # Using Clocks
+Clocks are not interoperable; you cannot assign a timepoint of type _system\_clock::time\_point_ to a variable of _steady\_clock::time\_point_.
 
 # system_clock
 
