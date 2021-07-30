@@ -22,7 +22,7 @@ You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_wait
 ### _duration\_cast\<T\>_
 You can store a larger unit in a variable of a smaller unit (e.g. _hours_ in a variable of type _seconds_) without typecasting, but you cannot
 store a smaller unit in a variable of a larger type unless you typecast as the larger datatype may [truncate](https://techterms.com/definition/truncate)
-a portion of that data since it cannot be wholly represented. To 'type-cast' the type, use the [_duration\_cast\<T\>_](https://en.cppreference.com/w/cpp/chrono/duration/duration_cast) function.
+a portion of that data since it cannot be wholly represented. To 'type-cast' the time, use the [_duration\_cast\<T\>_](https://en.cppreference.com/w/cpp/chrono/duration/duration_cast) function.
 
 For example, the line `chrono::hours h = 72min;` will not compile because 72 minutes cannot be represented in a whole hour (as 72 minutes is 1 hours and 12 minutes).
 By typecasting, we force program to truncate the extra twelve minutes and store the 72 minutes as one hour: `chrono::hours h = chrono::duration_cast<chrono::hours>(72min);`.
