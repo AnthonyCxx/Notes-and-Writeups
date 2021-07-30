@@ -25,6 +25,10 @@ From testing, it seems you cannot assign a smaller unit of time to a variable of
 For example `cout << time_waited.count()` would work. However, adding two variables of type _seconds_ and assigning
 it to a new _seconds_ variable is acceptable.
 
+#### Mixed-mode Arithmetic
+Adding variables of different units (e.g. _hours_ and _nanoseconds_) works just fine. <br />
+The result will be returned in the smallest unit of the expression (in this case, nanoseconds).
+
 | Unit | Literal Suffix | Ratio |
 | ---- | -------------- | ----- |
 | [_chrono::hours_](https://www.cplusplus.com/hours) | h | 3600/1 |
