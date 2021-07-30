@@ -57,6 +57,7 @@ The _duration_ class is a template that can be used to create custom units of ti
 You can subtract timepoints, but not add them.
 
 ## Casting with _time\_point\_cast_
+You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _minutes_)
 
 # Using Clocks
 
