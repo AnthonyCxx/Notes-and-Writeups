@@ -107,11 +107,31 @@ string word;
 while(file >> word)   //Get a single word
 {
     //Append the string to the file contents
-    contents += word += ' ';  //Have to append an extra space since not reading whitespace
+    contents += word + ' ';    //Have to append an extra space since not reading whitespace
 }
 ```
 
 ## Reading a File by Line
+Read a file line by line by using [_getline()_](https://www.javatpoint.com/cpp-getline) with a string datatype.
+_getline()_ only needs two arguments: the file to read from and the string to store the data in (in that order). 
+
+```C++
+//String delcarations
+string contents;    //Store the file contents in one large string
+string line;
+
+//Until the end of the file
+while(getline(file, line))   //Get a a whole line (until '\n')
+{
+    //Append the string to the file contents
+    contents += line + ' ';  //Have to append an extra space since not reading whitespace
+}
+```
+
+## Reading a File By Line with Custom Delimiter
+Read a file line by line by using [_getline()_](https://www.javatpoint.com/cpp-getline) with a string datatype.
+If you provide a [delimiter](https://searchoracle.techtarget.com/definition/delimiter) as a third argument to _getline()_ (after the file to read from and the string to store the data in), 
+then _getline()_ will read up to the given delimiter instead of a newline ('\n') like it normally does.
 
 ```C++
 
