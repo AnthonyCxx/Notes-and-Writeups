@@ -439,12 +439,12 @@ void Derived::nonVirtualPrint()
 }
 
 
-//Function 'callPrint()' takes a 'Base' object as a parameter
+//Function 'callPrint()' takes a 'Base' object as a parameter, but it passed the derived class
 void callPrint(Base& obj)
 {
     //Calls print on the object (virtual and non-)
-    obj.virtualPrint();
-    obj.nonVirtualPrint();
+    obj.virtualPrint();              //Calls 'Derived::virtualPrint()' (correct)
+    obj.nonVirtualPrint();          //Class 'Base::nonVirtualPrint()' (incorrect)
 }
 
 // DRIVER CODE //
