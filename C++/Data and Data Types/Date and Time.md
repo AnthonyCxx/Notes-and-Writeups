@@ -1,6 +1,6 @@
 # Working with Date and Time in C++
 Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities. <br />
-All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sake of examples, I will only assume you are using namespace _std::_.
+All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sake of examples, I will only assume you are using namespace _std_.
 
 # Measurements
 
@@ -14,11 +14,11 @@ These instantiations can be used like literals, so you can pass '_10ms_' to a fu
 | Unit | Ratio |
 | ---- | ----- |
 | [_chrono::hours_](https://www.cplusplus.com/hours) | 3600/1 |
-| [_chrono::minutes_]() | 60/1 |
-| [_chrono::econds_]() | 1/1 |
-| [_chrono::milliseconds_]() | 1/1000 |
-| [_chrono::microseconds_]() | 1/1,000,000 |
-| [_chrono::nanoseconds_]() | 1/1,000,000,000 |
+| [_chrono::minutes_](https://www.cplusplus.com/reference/chrono/minutes/) | 60/1 |
+| [_chrono::seconds_](https://www.cplusplus.com/reference/chrono/seconds/) | 1/1 |
+| [_chrono::milliseconds_](https://www.cplusplus.com/reference/chrono/milliseconds/) | 1/1000 |
+| [_chrono::microseconds_](https://www.cplusplus.com/reference/chrono/microseconds/) | 1/1,000,000 |
+| [_chrono::nanoseconds_](https://www.cplusplus.com/reference/chrono/nanoseconds/) | 1/1,000,000,000 |
 > All the ratios use _seconds_ as the standard for comparison.
 
 ## time_point
