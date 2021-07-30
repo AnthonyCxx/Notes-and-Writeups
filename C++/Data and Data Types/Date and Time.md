@@ -48,7 +48,7 @@ Doing math with variables of different units (e.g. _hours_ and _nanoseconds_) wo
 The result will be returned in the smallest unit of the expression (in this case, nanoseconds).
 
 ## Creating Custom Durations
-The _duration_ class is a template that can be used to create custom units of time. In the talk, Mr. Hinnant uses the example of a game developer trying to measure
+The _duration_ class is a template that can be used to create custom units of time. In the talk, Dr. Hinnant uses the example of a game developer trying to measure
 60 frames a second, using the custom type '_frames_' as `using frames = duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
 
 # time_point
