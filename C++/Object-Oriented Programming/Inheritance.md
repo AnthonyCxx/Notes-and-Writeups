@@ -1,7 +1,7 @@
 # Inheritance in C++
 > Jump: <br />
 > [Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#inheritance) <br />
-> []() <br />
+> [Inheritance Access Modifiers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#access-modifiers-for-inheritance) <br />
 > []() <br />
 > []() <br />
 > []() <br />
