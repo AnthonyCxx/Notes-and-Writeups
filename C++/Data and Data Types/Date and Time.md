@@ -66,7 +66,7 @@ The _duration_ class is a template that can be used to create custom units of ti
 | [_.max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns a _time\_point_ object with the maximum possible value |
 
 ## Time Point Arithmetic 
-You can subtract timepoints, but not add them.
+You can subtract _time\_point_\s, but not add them.
 
 ## Casting with _time\_point\_cast_
 You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _minutes_)
