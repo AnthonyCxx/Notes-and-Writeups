@@ -74,11 +74,11 @@ You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _m
 # Using Clocks
 Clocks are not interoperable; you cannot assign a timepoint of type _chrono::system\_clock::time\_point_ to a variable of _chrono::steady\_clock::time\_point_.
 
-# system_clock
+# The _system\_clock_ Class
 
-# stready_clock
+# The _stready\_clock_ Class
 
-# high_resolution_clock
+# The _high\_resolution\_clock_ Class
 
 ## Sources
 CppCon 2016: [_CppCon 2016: Howard Hinnant “A \<chrono\> Tutorial"_](https://www.youtube.com/watch?v=P32hvk8b13M) <br />
