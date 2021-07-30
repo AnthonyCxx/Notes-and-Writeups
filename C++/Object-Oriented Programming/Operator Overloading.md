@@ -1,4 +1,6 @@
 # Operator Overloading in C++
+> Jump:
+> [Disabling Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md#disabling-functions-with-delete) <br />
 Operator overloading is the ability to define what should happen when operators are applied to classes (a user-defined type). Anything that can be done with operator
 overloading can be done with just functions, but operator overloading makes code far more readable. I mean, do you _really_ 
 want to write out `coordinates.multiply(Othercoordinates.negate())` when you could write `coordinates * -OtherCoordinates` instead? Obivously, there is a question of clarity, 
