@@ -90,7 +90,8 @@ Use _system\_clock_ when you need times that relate to a calendar
 | [_::from\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/from_time_t/) | Static |  |
 
 # The _stready\_clock_ Class
-Use _steady\_clock_ when you need to measure _time\_point_ — think of it like a stopwatch. _steady\_clock_ has no relationship to any calendar, so you cannot use it for dates.
+Use _steady\_clock_ when you need to measure _time\_point_ — think of it like a stopwatch. <br />
+_steady\_clock_ has no relationship to any calendar, so you cannot use it for dates.
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
