@@ -150,21 +150,42 @@ while(getline(file, line, 'z'))   //Get a a whole line (up to and excluding the 
 
 ## Storing a File with _string_
 Storing a file in a string is simplest way to store the contents of a file. Storing a file's content in a string does lose track of the individual lines, 
-so store your files in a string when you have no special needs, like formatting or keeping the lines
+so store your files in a string when you have no special needs, like formatting or keeping the lines separate.
 
 Strings are [mutable](https://lemire.me/blog/2017/07/07/are-your-strings-immutable/) in C++, so there's no problem with constantly changing a string like in C# or Java.
 ```C++
+//String delcarations
+string contents;    //Store the file contents in one large string
+string line;       //Temporarily store a whole line
 
+//Until the end of the file
+while(getline(file, line))   //Get a a whole line (until '\n')
+{
+    //Append the string to the file contents
+    contents += line + ' ';  //Have to append an extra space since not reading whitespace
+}
 ```
 
 ## Storing a File with _vector\<T\>_
 > Pre-requisite: [_vectors_](https://www.educative.io/edpresso/what-is-a-c-vector)
 
-Some text here...
+A vector is basically an array except you can change the size as you need to, making it useful for storing a file of an unknown size, while still
+being able to keep the individual lines separate. Vectors have very little overhead, so don't worry about slowing down your program by using one.
 
+If you're going to print the vector, I would recommend a [_ranged-based for loop_](https://www.geeksforgeeks.org/range-based-loop-c/).
 ```C++
+//Storage delcarations
+vector<string> contents;    //Store the lines of the files separately in a vector
+string line;               //Temporarily store a whole line
 
+//Until the end of the file
+while(getline(file, line))   //Get a a whole line (until '\n')
+{
+    //Append the string to the file content vector
+    contents.push_back(line);
+}
 ```
+> Reference: [_std::vector functions_](https://www.cplusplus.com/reference/vector/vector/)
 
 ## Storing a File with _stringstream_
 
