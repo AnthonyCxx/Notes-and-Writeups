@@ -174,6 +174,7 @@ being able to keep the individual lines separate. Vectors have very little overh
 
 If you're going to print the vector, I would recommend a [_ranged-based for loop_](https://www.geeksforgeeks.org/range-based-loop-c/).
 ```C++
+#include <vector>
 //Storage delcarations
 vector<string> contents;    //Store the lines of the files separately in a vector
 string line;               //Temporarily store a whole line
@@ -188,9 +189,25 @@ while(getline(file, line))   //Get a a whole line (until '\n')
 > Reference: [_std::vector functions_](https://www.cplusplus.com/reference/vector/vector/)
 
 ## Storing a File with _stringstream_
+> Pre-requisite: [_stringstream_](https://www.geeksforgeeks.org/stringstream-c-applications/)
 
+A stringstream is essentially a string, but it inherits from the [_iostream_](https://www.cplusplus.com/reference/istream/iostream/) class so it can be used like a stream.
+This means that you can use the _<<_ and _>>_ operators with it, as well as format using format flags from [_\<iomanip\>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md). I like to use _stringstream_ as a replacement for _string_ when I want to format the contents of the file, 
+but don't want to format the file object itself (yes it's is circumstantial, but useful).
+
+You can access the contents of a stringstream as a string as `stringstream.str()`.
 ```C++
+#include <sstream>
+//Storage delcarations
+stringstream contents;     //Store the lines of the file as a stringstream
+string line;              //Temporarily store a whole line
 
+//Until the end of the file
+while(getline(file, line))   //Get a a whole line (until '\n')
+{
+    //Append the string to the file content vector
+    contents << line + ' ';   //Have to append an extra space since not reading whitespace
+}
 ```
 
 # Writing to Files
