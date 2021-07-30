@@ -1,6 +1,7 @@
 # Working with Date and Time in C++
 Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities. <br />
-All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sake of examples, I will only assume you are using namespace _std_.
+All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sake of examples, I will only assume you are using namespace _std_. <br />
+Feel free to remove the _chrono::_ from everything you see if you are using the namespace _std::chrono_.
 
 The majority of this document has been constructed from the talk [_A \<chrono\> Tutorial_](https://www.youtube.com/watch?v=P32hvk8b13M) by [Howard Hinnant](https://github.com/HowardHinnant), who is recognized as a master C++ programmer and invented move semantics.  All credit to him.
 
@@ -25,7 +26,7 @@ store a smaller unit in a variable of a larger type unless you typecast as the l
 a portion of that data since it cannot be wholly represented. To 'type-cast' the time, use the [_duration\_cast\<T\>_](https://en.cppreference.com/w/cpp/chrono/duration/duration_cast) function.
 
 For example, the line `chrono::hours h = 72min;` will not compile because 72 minutes cannot be represented in a whole hour (as 72 minutes is 1 hours and 12 minutes).
-By typecasting, we force program to truncate the extra twelve minutes and store the 72 minutes as one hour: `chrono::hours h = chrono::duration_cast<chrono::hours>(72min);`.
+By typecasting, we force program to truncate the extra twelve minutes and store the 72 minutes as 1 hour: `chrono::hours h = chrono::duration_cast<chrono::hours>(72min);`.
 
 ### Getting the Value of a _duration_
 `cout << time_waited;` does not work. You have to access the amount of time by using the _.count()_ method. <br />
