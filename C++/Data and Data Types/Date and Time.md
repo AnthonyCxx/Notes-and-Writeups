@@ -17,7 +17,8 @@ You cannot assign an integer to a _duration_ like `chrono::minutes time_waited =
 You have to write `chrono::minutes time_waited{3}` to indicate that you mean 3 minutes.
 
 #### Outputting a _duration_
-`cout << time_waited;` does not work. You have to output the amount of time by using the _.count()_ method (e.g. `cout << time_waited.count()`).
+`cout << time_waited;` does not work. You have to output the amount of time by using the _.count()_ method. <br />
+For example `cout << time_waited.count()` would work.
 
 | Unit | Ratio |
 | ---- | ----- |
