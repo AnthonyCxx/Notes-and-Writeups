@@ -6,6 +6,7 @@
 > [Multiple Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#multiple-inheritance) <br />
 > [Multi-level Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#multi-level-inheritance) <br />
 > [Virtual Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#overriding-methods-with-virtual-and-override) <br />
+> [Pure Virtual Methods (Interfaces)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#pure-virtual-methods-interfaces) <br />
 
 Inheritance is the ability of a class to be able to inherit the attributes (function and data members) of another class, extending and building off of the 
 base class. The class that the new class inherits from is called the base class and the class inheriting the properties is called the derived class. For example, 
