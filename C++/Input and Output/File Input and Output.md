@@ -85,7 +85,7 @@ pre-written functions for classifying characters like [_isalpha()_](https://en.c
 string contents;    //Store the file contents in one large string
 char character;    //Temporarily store a single character
 
-//file >> noskipws;    <== Include this to read whitespace
+//file >> noskipws;    <== include this to read whitespace
 
 //Until the end of the file
 while(file >> character)   //Get a single character
