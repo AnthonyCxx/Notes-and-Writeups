@@ -4,7 +4,7 @@
 | [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#primitive-types) | the basic datatypes that make up C++ |
 | [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#non-primitive-data-types) | derived and user-defined datatypes |
 | [Operators and Operator Precedence](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#operator-precedence) | functions associated with tokens |
-| [Working with Date and Time]() | ... |
+| [Working with Date and Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Date%20and%20Time.md) | ... |
 
 ## Primitive Types
 Anything in parentheses can be omitted.
