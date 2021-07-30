@@ -15,19 +15,19 @@ There are a set of instantiations of the _duration_ class to represent common un
 These instantiations can be used like any other datatype, so you can make _milliseconds_ the datatype for a function parameter and then 
 pass '_10ms_' instead of '_10_' which is much clearer.
 
-#### Initializing a _duration_
+### Initializing a _duration_
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
 
-#### _duration\_cast\<T\>_
+### _duration\_cast\<T\>_
 ...
 
-#### Getting the Value of a _duration_
+### Getting the Value of a _duration_
 `cout << time_waited;` does not work. You have to access the amount of time by using the _.count()_ method. <br />
 For example `cout << time_waited.count()` would work. However, adding two variables of type _seconds_ and assigning
 it to a new _seconds_ variable is acceptable.
 
-#### Mixed-mode Arithmetic
+### Mixed-mode Arithmetic
 Adding variables of different units (e.g. _hours_ and _nanoseconds_) works just fine. <br />
 The result will be returned in the smallest unit of the expression (in this case, nanoseconds).
 
