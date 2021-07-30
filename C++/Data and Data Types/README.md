@@ -20,7 +20,7 @@ Anything in parentheses can be omitted.
 | (signed) long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | l/L |  
 | unsigned long (int) | 8 | 0 | 18,446,744,073,709,551,615 | ul/UL |
 | (signed) long long (int) | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | ll/LL | 
-| unsigned long long (int) | 8 | 0 | 18,446,744,073,709,551,615 | %ull/ULL |  
+| unsigned long long (int) | 8 | 0 | 18,446,744,073,709,551,615 | ull/ULL |  
 | float | 4 | 3.4E-38 | 3.4E+38 | f |
 | double | 8 | 1.7E-308 | 1.7E+308 | N/A (default) |
 | long double | 16 | 1.7E-308 | 1.7E+308 | L |
