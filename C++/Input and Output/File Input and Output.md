@@ -212,7 +212,40 @@ while(getline(file, line))   //Get a a whole line (until '\n')
 > Reference: [_std::stringstream functions_](https://www.cplusplus.com/reference/sstream/stringstream/)
 
 # Writing to Files
-Writing to files is much simpler than reading from files.
+Writing to files is much simpler than reading from files. You can just use the _<<_ operator like you do with _cout_.
+
+```C++
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    //Declare a file named 'file' (ofstream = write) and a string for the file name
+    ofstream file;
+    const string filename = "file.txt";
+
+    //Open the file, appending to the it (ios::app)
+    file.open(filename, ios::out | ios::app);
+
+    //Read and write to the file
+    if (file)  //File objects evaluate to true if they're valid (good to use; 'file.good()' also works)
+    {
+        //Write to the file
+        file << "Appending this text to the end of the file :)";
+
+        //Close the file
+        file.close();
+    }
+    else
+    {
+        cerr << "File could not be read...\n";
+    }
+    
+    return 0;
+}
+```
 
 # Sources
 cplusplus.com: [_Input/output with files_](https://www.cplusplus.com/doc/tutorial/files/) <br />
