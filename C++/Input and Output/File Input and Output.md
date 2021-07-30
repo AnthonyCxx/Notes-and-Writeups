@@ -131,7 +131,7 @@ while(getline(file, line))   //Get a a whole line (until '\n')
 
 ## Reading a File By Line with Custom Delimiter
 Read a file line by line by using [_getline()_](https://www.javatpoint.com/cpp-getline) with a string datatype.
-If you provide a [delimiter](https://searchoracle.techtarget.com/definition/delimiter) as a third argument to _getline()_ (after the file to read from and the string to store the data in), 
+If you provide a [delimiter](https://searchoracle.techtarget.com/definition/delimiter) (a character) as a third argument to _getline()_ (after the file to read from and the string to store the data in), 
 then _getline()_ will read up to the given delimiter instead of a newline ('\n') like it normally does. <br />
 
 Don't forget that _getline()_ does not include the delimiter it stops at in the data it returns. 
