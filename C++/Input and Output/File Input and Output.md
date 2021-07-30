@@ -54,7 +54,7 @@ These modes are not necessarily exclusive, as you can combine compatible flags (
 To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/bitwise-operators) (a single '\|') between the flags.
 
 | Mode | Full Name | Description | If Found | If Not Found |
-| ---- | --------- | ----------- | -------- |  |
+| ---- | --------- | ----------- | -------- | ------------ |
 | _ios::in_ | Input | standard read mode | N/A | N/A |
 | _ios::out_ | Output | standard write mode | overwrites the file | creates file |
 | _ios::ate_ | At End |  |  |  |
