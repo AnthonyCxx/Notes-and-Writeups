@@ -57,7 +57,7 @@ int main()
         cout << "File read successfully\n";
 
         //For each line in the string vector
-        for (string line : content.value()) //'optoinal<T>.value()' returns the data stored
+        for (string line : content.value()) //'optional<T>.value()' returns the data stored
         {
             cout << line << '\n';
         }
