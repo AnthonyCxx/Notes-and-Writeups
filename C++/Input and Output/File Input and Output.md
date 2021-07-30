@@ -192,7 +192,7 @@ while(getline(file, line))   //Get a a whole line (until '\n')
 > Pre-requisite: [_stringstream_](https://www.geeksforgeeks.org/stringstream-c-applications/)
 
 A stringstream is essentially a string, but it inherits from the [_iostream_](https://www.cplusplus.com/reference/istream/iostream/) class so it can be used like a stream.
-This means that you can use the _<<_ and _>>_ operators with it, as well as format using format flags from [_\<iomanip\>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md). I like to use _stringstream_ as a replacement for _string_ when I want to format the contents of the file, 
+This means that you can use the _<<_ and _>>_ operators with it, as well as format it using format flags from [_\<iomanip\>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md). I like to use _stringstream_ as a replacement for _string_ when I want to format the contents of the file, 
 but don't want to format the file object itself (yes it's is circumstantial, but useful).
 
 You can access the contents of a stringstream as a string as `stringstream.str()`.
