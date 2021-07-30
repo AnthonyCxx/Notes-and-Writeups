@@ -1,8 +1,11 @@
 # Working with Date and Time in C++
-Just a heads up, this topic is especially hard. There is a lot to learn here — so much so that I had to watch a one hour tutorial to get the basics.
+Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities. All classes from _\<chrono\>_ are a part of the namespace _std::chrono_.
 
-Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities.
+# Classes 
 
+## 
+
+## Clocks
 
 ## Sources
 CppCon 2016: [_CppCon 2016: Howard Hinnant “A \<chrono\> Tutorial"_](https://www.youtube.com/watch?v=P32hvk8b13M) <br />
