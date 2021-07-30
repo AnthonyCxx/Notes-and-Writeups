@@ -16,6 +16,16 @@ There are a set of instantiations of the _duration_ class to represent common un
 These instantiations can be used like any other datatype, so you can make _milliseconds_ the datatype for a function parameter and then 
 pass '_10ms_' instead of '_10_' which is much clearer.
 
+| Unit | Literal Suffix | Ratio |
+| ---- | -------------- | ----- |
+| [_chrono::hours_](https://www.cplusplus.com/hours) | h | 3600/1 |
+| [_chrono::minutes_](https://www.cplusplus.com/reference/chrono/minutes/) | min | 60/1 |
+| [_chrono::seconds_](https://www.cplusplus.com/reference/chrono/seconds/) | s | 1/1 |
+| [_chrono::milliseconds_](https://www.cplusplus.com/reference/chrono/milliseconds/) | ms | 1/1000 |
+| [_chrono::microseconds_](https://www.cplusplus.com/reference/chrono/microseconds/) | us | 1/1,000,000 |
+| [_chrono::nanoseconds_](https://www.cplusplus.com/reference/chrono/nanoseconds/) | ns | 1/1,000,000,000 |
+> All the ratios use _seconds_ as the standard for comparison.
+
 ### Initializing a _duration_
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
@@ -36,16 +46,6 @@ it to a new _seconds_ variable is acceptable.
 ### Mixed-mode Arithmetic
 Doing math with variables of different units (e.g. _hours_ and _nanoseconds_) works just fine. <br />
 The result will be returned in the smallest unit of the expression (in this case, nanoseconds).
-
-| Unit | Literal Suffix | Ratio |
-| ---- | -------------- | ----- |
-| [_chrono::hours_](https://www.cplusplus.com/hours) | h | 3600/1 |
-| [_chrono::minutes_](https://www.cplusplus.com/reference/chrono/minutes/) | min | 60/1 |
-| [_chrono::seconds_](https://www.cplusplus.com/reference/chrono/seconds/) | s | 1/1 |
-| [_chrono::milliseconds_](https://www.cplusplus.com/reference/chrono/milliseconds/) | ms | 1/1000 |
-| [_chrono::microseconds_](https://www.cplusplus.com/reference/chrono/microseconds/) | us | 1/1,000,000 |
-| [_chrono::nanoseconds_](https://www.cplusplus.com/reference/chrono/nanoseconds/) | ns | 1/1,000,000,000 |
-> All the ratios use _seconds_ as the standard for comparison.
 
 ## time_point
 
