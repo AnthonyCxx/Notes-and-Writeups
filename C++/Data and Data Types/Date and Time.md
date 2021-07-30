@@ -22,7 +22,7 @@ From testing, it seems you cannot assign a smaller unit of time to a variable of
 
 #### Getting the Value of a _duration_
 `cout << time_waited;` does not work. You have to access the amount of time by using the _.count()_ method. <br />
-For example `cout << time_waited.count()` would work. However, adding two variables of type _seconds_ and assngining
+For example `cout << time_waited.count()` would work. However, adding two variables of type _seconds_ and assigning
 it to a new _seconds_ variable is acceptable.
 
 | Unit | Literal Suffix | Ratio |
