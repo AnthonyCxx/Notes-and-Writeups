@@ -2,7 +2,7 @@
 > Jump: <br />
 > [Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#inheritance) <br />
 > [Inheritance Access Modifiers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#access-modifiers-for-inheritance) <br />
-> []() <br />
+> [Calling the Constructor of a Base Class](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Inheritance.md#calling-the-constructor-of-a-base-class) <br />
 > []() <br />
 > []() <br />
 
