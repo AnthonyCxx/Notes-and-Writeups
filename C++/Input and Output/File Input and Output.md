@@ -53,6 +53,7 @@ Files can be set to different modes, which dictates how the file stream reads/wr
 These modes are not necessarily exclusive, as you can combine compatible flags (e.g. _ios::in_ and _ios::binary_).
 To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/bitwise-operators) (a single '\|') between the flags.
 
+Example of opening a file: `file.open("filename", ios::in | ios::binary)`.
 | Mode | Full Name | Description | If Found | If Not Found |
 | ---- | --------- | ----------- | -------- | ------------ |
 | _ios::in_ | Input | standard read mode | N/A | N/A |
