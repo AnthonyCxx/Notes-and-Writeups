@@ -58,6 +58,10 @@ The result will be returned in the smallest unit of the expression (in this case
 The _duration_ class is a template that can be used to create custom units of time. In the talk, Dr. Hinnant uses the example of a game developer trying to measure
 60 frames a second, using the custom type '_frames_' as `using frames = duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
 
+| Custom Duration | Declaration |
+| --------------- | ----------- |
+| Days | `using days = duration<int, ratio_multiply<ratio<24>, hours::period>>` |
+
 # The _time\_point_ Class
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
