@@ -98,7 +98,7 @@ while(file.good())
 
 ## Reading a File by Line
 
-``C++
+```C++
 //String delcarations
 string contents;    //Store the file contents in one large string
 string line;       //Stores each line temporarily
