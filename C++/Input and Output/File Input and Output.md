@@ -53,14 +53,14 @@ Files can be set to different modes, which dictates how the file stream reads/wr
 These modes are not necessarily exclusive, as you can combine compatible flags (e.g. _ios::in_ and _ios::binary_).
 To combine flags, put a [bitwise OR](https://www.programiz.com/cpp-programming/bitwise-operators) (a single '\|') between the flags.
 
-| Mode | Full Name | Description | 
-| ---- | --------- | ----------- |
-| _ios::in_ | Input | standard read mode |
-| _ios::out_ | Output | standard write mode (overwrites existing files) |
-| _ios::ate_ | At End |  |
-| _ios::app_ | Append |  |
-| _ios::trunc_ | Truncate |  |
-| _ios::binary_ | Binary | treats the file as binary data instead of text (compatible with all flags) |
+| Mode | Full Name | Description | If Found | If Not Found |
+| ---- | --------- | ----------- | -------- |  |
+| _ios::in_ | Input | standard read mode | N/A | N/A |
+| _ios::out_ | Output | standard write mode | overwrites the file | creates file |
+| _ios::ate_ | At End |  |  |  |
+| _ios::app_ | Append | write mode adds to the end of the existing file | ... | creates file |
+| _ios::trunc_ | Truncate | write mode; starts a clean file by deleting the existing file if found |  |  |
+| _ios::binary_ | Binary | treats the file as binary data instead of text (compatible with all flags) | N/A | N/A |
 > _ios::in_ is the default for _ifstream_, _ios::out_ is the default for _ofstream_, and _ios::in \| ios::out_ is the default for _fstream_.
 
 # Reading from Files
