@@ -101,7 +101,7 @@ For some reason, my program broke and only read the first word when I added `fil
 ```C++
 //String delcarations
 string contents;    //Store the file contents in one large string
-string word;
+string word;       //Temporarily store a single string
 
 //Until the end of the file
 while(file >> word)   //Get a single word
@@ -118,7 +118,7 @@ _getline()_ only needs two arguments: the file to read from and the string to st
 ```C++
 //String delcarations
 string contents;    //Store the file contents in one large string
-string line;
+string line;       //Temporarily store a whole line
 
 //Until the end of the file
 while(getline(file, line))   //Get a a whole line (until '\n')
@@ -137,7 +137,7 @@ Don't forget that _getline()_ does not include the delimiter it stops at in the 
 ```C++
 //String delcarations
 string contents;    //Store the file contents in one large string
-string line;
+string line;       //Temporarily store a whole line
 
 //Until the end of the file
 while(getline(file, line, 'z'))   //Get a a whole line (up to and excluding the character 'z')
