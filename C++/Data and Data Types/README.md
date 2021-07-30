@@ -1,10 +1,10 @@
 # Datatypes in C++
 | File | Function |
 | ---- | -------- |
-| [Primitive Datatypes]() |  |
-| [Non-primitive Datatypes]() |  |
-| [Operators and Operator Precedence]() |  |
-| [Working with Date and Time]() |  |
+| [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#primitive-types) | ... |
+| [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#non-primitive-data-types) | ... |
+| [Operators and Operator Precedence](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#operator-precedence) | ... |
+| [Working with Date and Time]() | ... |
 
 ## Primitive Types
 Anything in parentheses can be omitted.
