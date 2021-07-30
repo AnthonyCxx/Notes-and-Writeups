@@ -426,8 +426,7 @@ Something something, this example isn't done...
 
 This example contains a class _SecureString_ which acts as a wrapper for a simple _char*_, preventing it from being copied in the program as well as disabling referencing
 its address in memory. I used a c-string instead of a normal string because not only is it smaller, giving it a smaller memory footprint, but a c-string gives me the ability 
-to manually overwrite the contents of the c-string, protecting it from memory imaging techniques that may be able otherwise fish it out.
-of the string with _memset()_, 
+to manually overwrite the contents of the c-string with _memset()_, protecting it from memory imaging techniques that may be able otherwise fish it out.
 ```C++
 #include <iostream>
 #include <cstring>   //Contains 'memset()'
