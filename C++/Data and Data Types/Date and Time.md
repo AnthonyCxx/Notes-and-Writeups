@@ -1,5 +1,5 @@
 # Working with Date and Time in C++
-Just a heads up, this topic is especially hard. There is a lot to learn here — so much so that you could make a one hour tutorial about it.
+Just a heads up, this topic is especially hard. There is a lot to learn here — so much so that I had to watch a one hour tutorial to get the basics.
 
 Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities.
 
