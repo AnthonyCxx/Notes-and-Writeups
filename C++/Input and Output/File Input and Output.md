@@ -209,11 +209,10 @@ while(getline(file, line))   //Get a a whole line (until '\n')
     contents << line + ' ';   //Have to append an extra space since not reading whitespace
 }
 ```
+> Reference: [_std::stringstream functions_](https://www.cplusplus.com/reference/sstream/stringstream/)
 
 # Writing to Files
 Writing to files is much simpler than reading from files.
-
-## Working with File Modes
 
 # Sources
 cplusplus.com: [_Input/output with files_](https://www.cplusplus.com/doc/tutorial/files/) <br />
