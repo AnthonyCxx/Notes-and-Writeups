@@ -53,6 +53,9 @@ The _duration_ class is a template that can be used to create custom units of ti
 
 # time_point
 
+## Time Point Arithmetic 
+You can subtract timepoints, but not add them.
+
 # Using Clocks
 
 # system_clock
