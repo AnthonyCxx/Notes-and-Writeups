@@ -2,14 +2,21 @@
 Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities. <br />
 All classes from _\<chrono\>_ are a part of the namespace _std::chrono_.
 
-# Classes 
-
 # Measurements
 
 ## _duration_
 some text...
 
-
+### _duration_ typedefs
+There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours.
+| Unit | Ratio |
+| ---- | ----- |
+| hours | 3600/1 |
+| minutes |  |
+| seconds |  |
+| milliseconds |  |
+| microseconds |  |
+| nanoseconds |  |
 
 ## time_point
 
