@@ -55,8 +55,8 @@ The _duration_ class is a template that can be used to create custom units of ti
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
 | [_.time_since_epoch()_](https://www.cplusplus.com/reference/chrono/time_point/time_since_epoch/) | Instance | returns a _duration_ object containing the time between the _time\_point_ object and the [epoch](https://en.wikipedia.org/wiki/Unix_time) |
-|  |  |  |
-|  |  |  |
+| [_min()_](https://www.cplusplus.com/reference/chrono/time_point/min/) | Static | returns the minimum value of a _time\_point_ object |
+| [_max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns the maximum value of a _time\_point_ object |
 
 ## Time Point Arithmetic 
 You can subtract timepoints, but not add them.
