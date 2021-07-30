@@ -4,9 +4,20 @@ All classes from _\<chrono\>_ are a part of the namespace _std::chrono_.
 
 # Classes 
 
-## 
+## Measurements
+
+### _duration_
+some text...
+
+### time_point
 
 ## Clocks
+
+### system_clock
+
+### stready_clock
+
+### high_resolution_clock
 
 ## Sources
 CppCon 2016: [_CppCon 2016: Howard Hinnant “A \<chrono\> Tutorial"_](https://www.youtube.com/watch?v=P32hvk8b13M) <br />
