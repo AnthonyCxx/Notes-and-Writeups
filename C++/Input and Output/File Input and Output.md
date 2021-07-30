@@ -72,9 +72,6 @@ so there are a number of ways people tend to write their loop conditions, only s
 `while(!file.eof())` to check for _EOF_, but this approach is considered bad practice as the badbit is only set after _EOF_ is read, causing an extra, blank line to be read
 (see [this article](https://hownot2code.com/2016/06/08/the-end-of-file-eof-check-may-not-be-enough/), [this one](https://softwareengineering.stackexchange.com/questions/318081/why-does-ifstream-eof-not-return-true-after-reading-the-last-line-of-a-file), [this one](https://www.tutorialspoint.com/why-is-iostream-eof-inside-a-loop-condition-considered-wrong), and [this one](https://stackoverflow.com/questions/5605125/why-is-iostreameof-inside-a-loop-condition-i-e-while-stream-eof-cons)). Instead, write something like <br /> `while(file >> data)`, which is safe.
 
-### while(file >> word) and while(file >> character)
-This is a much better approach than checking for EOF directly as it won't leave an extra line.
-
 ## Reading a File by Character
 
 ```C++
