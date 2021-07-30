@@ -5,7 +5,8 @@ All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sak
 # Measurements
 
 ## _duration_
-The _duration_ class is used to store a duration of time (the amount of time between two points in time).
+The _duration_ class is used to store a duration of time (the amount of time between two points in time); these points in time may or may not 
+be _time\_point_ objects.
 
 ### _duration_ typedefs
 There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
