@@ -76,7 +76,7 @@ so there are a number of ways people tend to write their loop conditions, only s
 overloaded _<<_ opreator from the _istream_ class.
 
 ## Reading a File by Character
-Read a file character by character by using _>>_ with a char datatype. By default, _istream_ streams (like files) skip whitespace. <br />
+Read a file character by character by using _>>_ with a char datatype. By default, _istream_ streams (like _cin_ and _ifstream_/_fstream_ files) skip whitespace. <br />
 If you want to include whitespace, put `file >> noskipws;` (no skip whitespace) in front of the loop.
 
 If you're parsing by character to look for specific character, consider using the [_\<cctype\>_](https://en.cppreference.com/w/cpp/header/cctype) library, which contains
