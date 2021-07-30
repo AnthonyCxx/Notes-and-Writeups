@@ -7,7 +7,7 @@ The majority of this document has been constructed from the talk [_A \<chrono\> 
 
 # Basics of Keeping Time with the _duration_ and _time\_point_ Classes
 
-# _duration_
+# The _duration_ Class
 The _duration_ class is used to store a duration of time (the amount of time between two points in time); these points in time may or may not 
 be _time\_point_ objects.
 
@@ -51,7 +51,7 @@ The result will be returned in the smallest unit of the expression (in this case
 The _duration_ class is a template that can be used to create custom units of time. In the talk, Dr. Hinnant uses the example of a game developer trying to measure
 60 frames a second, using the custom type '_frames_' as `using frames = duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
 
-# time_point
+# The _time\_point_ Class
 
 ## Time Point Arithmetic 
 You can subtract timepoints, but not add them.
