@@ -1,5 +1,5 @@
 # Operator Overloading in C++
-> Jump:
+> Jump: <br />
 > [Special Cases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#special-cases), [_bool_](), [_++ and --_](), and [_<</>>_]() <br />
 > [Disabling Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md#disabling-functions-with-delete) <br />
 
