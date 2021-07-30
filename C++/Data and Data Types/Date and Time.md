@@ -12,8 +12,12 @@ be _time\_point_ objects.
 There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
 These instantiations can be used like literals, so you can pass '_10ms_' instead of '_10_' to a function to make it clearer.
 
+#### Initializing a _duration_
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` to indicate that you mean 3 minutes.
+
+#### Outputting a _duration_
+`cout << time_waited;` does not work. You have to output the amount of time by using the _.count()_ method (e.g. `cout << time_waited.count()`).
 
 | Unit | Ratio |
 | ---- | ----- |
