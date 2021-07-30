@@ -14,9 +14,9 @@ be _time\_point_ objects.
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
 | [_.count()_](https://www.cplusplus.com/reference/chrono/duration/count/) | Instance | returns the count (value/the time) of a _duration_ object | 
-| [_.zero()_](https://www.cplusplus.com/reference/chrono/duration/zero/) | Static | returns a _duration_ object with the value 0 | 
-| [_.min()_](https://www.cplusplus.com/reference/chrono/duration/min/) | Static | returns a _duration_ object with the minimum possbile value | 
-| [_.max()_](https://www.cplusplus.com/reference/chrono/duration/max/) | Static | returns a _duration_ object with the maximum possbile value | 
+| [_::zero()_](https://www.cplusplus.com/reference/chrono/duration/zero/) | Static | returns a _duration_ object with the value 0 | 
+| [_::min()_](https://www.cplusplus.com/reference/chrono/duration/min/) | Static | returns a _duration_ object with the minimum possbile value | 
+| [_::max()_](https://www.cplusplus.com/reference/chrono/duration/max/) | Static | returns a _duration_ object with the maximum possbile value | 
 
 ## _duration_ typedefs
 There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
@@ -62,8 +62,8 @@ The _duration_ class is a template that can be used to create custom units of ti
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
 | [_.time_since_epoch()_](https://www.cplusplus.com/reference/chrono/time_point/time_since_epoch/) | Instance | returns a _duration_ object containing the time between the _time\_point_ object and the [epoch](https://en.wikipedia.org/wiki/Unix_time) |
-| [_.min()_](https://www.cplusplus.com/reference/chrono/time_point/min/) | Static | returns a _time\_point_ object with the minimum possible value |
-| [_.max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns a _time\_point_ object with the maximum possible value |
+| [_::min()_](https://www.cplusplus.com/reference/chrono/time_point/min/) | Static | returns a _time\_point_ object with the minimum possible value |
+| [_::max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns a _time\_point_ object with the maximum possible value |
 
 ## Time Point Arithmetic 
 You can subtract two _time\_point_ objects, but not add them.
@@ -79,9 +79,9 @@ Use _system\_clock_ when you need times that relate to a calendar
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
-| [_.now()_](https://www.cplusplus.com/reference/chrono/system_clock/now/) | Static | returns the current value of the _time\_point_ of _system\_clock_ |
-| [_.to\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/to_time_t/) | Static |  |
-| [_.from\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/from_time_t/) | Static |  |
+| [_::now()_](https://www.cplusplus.com/reference/chrono/system_clock/now/) | Static | returns the current value of the _time\_point_ of _system\_clock_ |
+| [_::to\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/to_time_t/) | Static |  |
+| [_::from\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/from_time_t/) | Static |  |
 
 # The _stready\_clock_ Class
 Use _steady\_clock_ when you need to measure _time\_point_ — think of it like a stopwatch. _steady\_clock_ has no relationship to any calendar, so you cannot use it for dates.
