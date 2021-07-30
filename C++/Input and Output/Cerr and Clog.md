@@ -14,7 +14,7 @@ and perform the same function. The only difference between _cerr_ and _clog_ is 
 is that when you perform an I/O operation with _clog_ (like `clog << "An error has occured'`), it may not write to the screen immediately; typically, buffered streams
 (like _cout_ and _clog_) wait until the output reaches a certain length before writing to the screen — this is to increase efficiency, as I/O operations tend to be rather slow.
 _cerr_ on the other hand is unbuffered, so every time you write to _cerr_, it immediately writes to the screen. Because of this, _cerr_ is often reserved for fatal errors
-(i.e. ones that crash the system) as buffering the output may prevent it from being written entirely. In essence, use _clog_ for general errors, and reserve _cerr_ for
+(i.e. ones that crash/terminate the program) as buffering the output may prevent it from being written entirely. In essence, use _clog_ for general errors, and reserve _cerr_ for
 errors that would crash/abnormally terminate the program.
 
 ## Basic Usage with the << Operator
