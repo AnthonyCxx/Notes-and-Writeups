@@ -13,4 +13,4 @@ auto start = steady_clock::now();
 auto end = steady_clock::now();
 
 //Output total time between time_point objects
-cout << seconds{end - start}.count() << "seconds\n";
+cout << duration_cast<seconds>(end - start).count() << "seconds\n";
