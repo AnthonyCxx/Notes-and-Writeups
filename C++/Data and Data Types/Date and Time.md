@@ -85,7 +85,7 @@ You can subtract two _time\_point_ objects, but not add them.
 ## Casting with _time\_point\_cast_
 You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _minutes_)
 
-# Basics of Getting Time with _clock_ Classes
+# Getting Current Time with _clock_ Classes
 Clocks are not interoperable; you cannot assign a timepoint of type _chrono::system\_clock::time\_point_ to a variable of _chrono::steady\_clock::time\_point_.
 
 # The _system\_clock_ Class
