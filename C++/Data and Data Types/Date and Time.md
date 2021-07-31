@@ -82,10 +82,11 @@ When creating custom types that are based on existing types (even existing custo
 > Note: 'epoch' is pronouced like 'epic'.
 
 ## Time Point Arithmetic 
-You can subtract two _time\_point_ objects, but not add them.
+You can subtract two _time\_point_ objects, but not add them. <br />
+However, you can add units of time to _time\_point_ objects (e.g. _today + day_ yields _tomorrow_)
 
 ## Casting with _time\_point\_cast_
-You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _minutes_)
+You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _minutes_) with _time\_point\_cast_.
 
 # Getting Current Time with _clock_ Classes
 Clocks are not interoperable; you cannot assign a timepoint of type _chrono::system\_clock::time\_point_ to a variable of _chrono::steady\_clock::time\_point_.
@@ -98,17 +99,22 @@ Use _system\_clock_ when you need times in relation to a calendar.
 | period | no | length of a period in seconds |
 | duration | no | _duration_ type for _system\_clock_ |
 | time_point | no | _time\_point_ type for _system\_clock_ |
-| is_steady | yes |  |
+| is_steady | yes | returns _true_ if the clock is _steady_ |
+> The _system\_clock_ is not steady.
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
 | [_::now()_](https://www.cplusplus.com/reference/chrono/system_clock/now/) | Static | returns the current value of the _time\_point_ of _system\_clock_ |
-| [_::to\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/to_time_t/) | Static |  |
-| [_::from\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/from_time_t/) | Static |  |
+| [_::to\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/to_time_t/) | Static | converts a _time\_point_ to a [_time\_t_ struct](https://en.cppreference.com/w/c/chrono/time_t) |
+| [_::from\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/from_time_t/) | Static | converts a [_time\_t_ struct](https://en.cppreference.com/w/c/chrono/time_t) to a _time\_point_ |
 
 # The _stready\_clock_ Class
 Use _steady\_clock_ when you need to measure _time\_point_ — think of it like a stopwatch. <br />
 _steady\_clock_ has no relationship to any calendar, so you cannot use it for dates.
+
+The reason you should always use _stready\_clock_ to measure elapsed time is because _stready\_clock_ ensures that the time between ticks does not vary;
+Moreover, the _stready\_clock_ cannot be arbitrarily changed like the _system\_clock_, protecting your measurements from manual changes, daylight savings time,
+et cetra.
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
