@@ -143,6 +143,8 @@ Hopefully, [this guide](https://github.com/EthanC2/Notes-and-Writeups/blob/main/
 find a good tutorial for _\<chrono\>_ out there, so I scraped together what I could from a few wikis and such.
 
 ```C++
+#include <chrono>
+
 //USING CHRONO::LITERALS AS PARAMETERS AND LOOPING FOR 'X' TIME
 void loopfor(chrono::seconds s)
 {
