@@ -136,7 +136,8 @@ for(int num : nums)
 
 ## Timed Loop (via _\<chrono\>_)
 The  [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/) library gives you access to [_steady\_clock_](https://www.cplusplus.com/reference/chrono/steady_clock/), 
-which you can use to measure time. From there, all you have to do is use a _while_ loop and keep looping until you reach the desired amount of time.
+which you can use to measure time. <br />
+From there, all you have to do is use a _while_ loop and keep looping until you reach the desired amount of time.
 
 Hopefully, [this guide](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Date%20and%20Time.md) will help you some; I couldn't really
 find a good tutorial for _\<chrono\>_ out there, so I scraped together what I could from a few wikis and such.
