@@ -181,8 +181,8 @@ int main()
 
 
     // SIMPLE MATH WITH DURATIONS (IMPLICIT CONVERIONS)
-    chrono::hours h = 1h;
-    chrono::minutes min = 30min;
+    chrono::hours h = 1h;              //1 hour
+    chrono::minutes min = 30min;      //30 minutes
 
     cout << "And we waited for a total of " << (h + min).count() << " minutes...\n";
 
@@ -190,8 +190,8 @@ int main()
     // SIMPLE MATH WITH DURATIONS (MAINTAIN COARSE UNIT WITH CUSTOM UNIT) //
     using floatminute = chrono::duration<double, ratio<60,1>>;   //Minutes, but can measure fractions of a minute
 
-    chrono::minutes m = 1min;
-    chrono::seconds s = 30s;
+    chrono::minutes m = 1min;     //1 minute
+    chrono::seconds s = 30s;     //30 seconds
 
     cout << "Total time: " << chrono::duration_cast<floatminute>(m + s).count() << " minutes\n";   //1.5 minutes instead of 1 minute
 
