@@ -2,7 +2,7 @@
 Loops (iteration statements) allow you to repeat a statement or block of statements multiple times, usually until some condition is no longer true.
 C++ has 4 types of iteration statements: for loops, while loops, and do...while loops and range-based for loops. Loops consist of a condition and a body. <br />
 
-## For Statement
+## For Loop
 The _for_ statement allows you to execute a block of statements a specific number of times. A _for_ statement consists of a declaration statement, a condition,
 and an update statemnt in that order; each of these sections are separated by semi-colons. It is best to use a for loop when the exact amount of executions is 
 known (or deducible by some property or expression). <br />
@@ -44,7 +44,7 @@ for (int i=0, j=0; i < 6; i += 1, j += 2)
 ```
 > Note: this works in other languages such as C and C# as well
  
-## While Statement
+## While Loop
 The _while_ statment continues to execute the body of the loop until the given condition is false. <br />
 If the given condition is false from the start, then the loop will not execute at all.
 
@@ -66,7 +66,7 @@ while (1 == 1)
 > Note: this is actually an infinte loop (1 _always_ equals 1), please do not run this. <br />
 > Side Note: If you are actually dumb enough to run this, you can stop the program with _ctrl_ + _c_. Don't say I didn't warn you.
 
-## Do...While Statement
+## Do...While Loop
 The _do...while_ loop acts similarly to a while loop, repeating until the given condition is false; however, unlike a normal _while_ loop, a _do...while_ loop will
 always execute at least once. _Do...while_ loops are exceptionally useful for validating user input.
 
@@ -133,3 +133,26 @@ for(int num : nums)
 ```
 > Prints: <br />
 > 1, 2, 3, 4, 5 (on separate lines)
+
+## Timed Loop (via _\<chrono\>_)
+The  [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/) library gives you access to [_steady\_clock_](https://www.cplusplus.com/reference/chrono/steady_clock/), 
+which you can use to measure time. From there, all you have to do is use a _while_ loop and keep looping until you reach the desired amount of time.
+
+Hopefully, [this guide](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Date%20and%20Time.md) will help you some; I couldn't really
+find a good tutorial for _\<chrono\>_ out there, so I scraped together what I could from a few wikis and such.
+
+```C++
+//USING CHRONO::LITERALS AS PARAMETERS AND LOOPING FOR 'X' TIME
+void loopfor(chrono::seconds s)
+{
+    //Get the initial time
+    chrono::steady_clock::time_point start = chrono::steady_clock::now();
+
+    //Loop for 'X' seconds: compares the current time to the initial time; if greater than the given time, stop.
+    while(chrono::duration_cast<chrono::seconds>(chrono::steady_clock::now() - start) < s)
+    {
+        //Code goes here...
+    }
+}
+```
+> You have to pass a [_duration_ literal](https://en.cppreference.com/w/cpp/chrono/duration) to this function (like _3s_, _5min_, or _7h_).
