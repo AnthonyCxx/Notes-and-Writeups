@@ -93,6 +93,7 @@ Clocks are not interoperable; you cannot assign a timepoint of type _chrono::sys
 # The _system\_clock_ Class
 Use _system\_clock_ when you need times in relation to a calendar.
 | Data Member | Constant? | Description |
+| ----------- | --------- | ----------- |
 | rep | no | stores the period count |
 | period | no | length of a period in seconds |
 | duration | no | _duration_ type for _system\_clock_ |
