@@ -57,16 +57,16 @@ The result will be returned in the smallest unit of the expression (in this case
 ## Creating Custom Durations
 The _duration_ class is a template that can be used to create custom units of time. To create a unit, you need to use a datatype (usually _int_) and a ratio which is 
 composed of a numerator and a denominator. All ratios are based on seconds, so the ratio of minute to ratio is _ratio<60, 1>_. The full declaration of a unit for
-minutes looks like `using minutes =`.
-
-In the talk, Dr. Hinnant uses the example of a game developer trying to measure
-60 frames a second, using the custom type '_frames_' as `using frames = duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
+minutes looks like `using minutes = chrono::duration<int, ratio<60, 1>>`. If you wanted to, you could declare a custom _minute_ type of type double that so you could
+store the amount of minutes with a decimal (`using dMinutes = chrono::duration<double, ratio<60,1>>;`). Feel free to create whatever unit of time you feel is necessary —
+days, months, years, leap years, et cetra. In the talk, Dr. Hinnant uses the example of a game developer trying to measure 60 frames a second, using the custom type 
+'_frames_' as `using frames = chrono::duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
 
 | Custom Duration | Declaration |
 | --------------- | ----------- |
-| Day | `using days = duration<int, ratio_multiply<ratio<24>, hours::period>>;` |
-| Week | `using weeks = duration<int, ratio_multiply<ratio<7>, days::period>>` |
-> '_using days = duration<int, ratio<86400>>;_' also works since there are 86400 seconds in a day
+| Day | `using days = chrono::duration<int, ratio_multiply<ratio<24>, hours::period>>;` |
+| Week | `using weeks = chrono::duration<int, ratio_multiply<ratio<7>, days::period>>` |
+> '_using days = chrono::duration<int, ratio<86400>>;_' also works since there are 86400 seconds in a day
 
 # The _time\_point_ Class
 | Method | Type | Description | 
