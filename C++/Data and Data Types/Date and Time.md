@@ -73,6 +73,7 @@ When creating custom types that are based on existing types (even existing custo
 | --------------- | ----------- |
 | Day | `using days = chrono::duration<int, ratio_multiply<ratio<24>, hours::period>>;` |
 | Week | `using weeks = chrono::duration<int, ratio_multiply<ratio<7>, days::period>>` |
+| Year | `using years = chrono::duration<int, ratio_multiply<ratio<365>, days::period>>` | 
 > '_using days = chrono::duration<int, ratio<86400>>;_' also works since there are 86400 seconds in a day
 
 # The _time\_point_ Class
