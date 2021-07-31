@@ -132,10 +132,20 @@ et cetra.
 | [_::now()_](https://www.cplusplus.com/reference/chrono/steady_clock/now/) | Static | returns the current value of the _time\_point_ of _steady\_clock_ |
 
 # The _high\_resolution\_clock_ Class
+The _high\_resolution\_clock_ has the shortest tick period of any of the clock, making it the most accurate.
+
+| Data Member | Constant? | Description |
+| ----------- | --------- | ----------- |
+| rep | no | stores the period count |
+| period | no | length of a period in seconds |
+| duration | no | _duration_ type for _system\_clock_ |
+| time_point | no | _time\_point_ type for _steady\_clock_ |
+| is_steady | yes | returns _true_ if the clock is _steady_ |
+> The _high\_resolution\_clock_ is steady.
+
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
-|  |  |  |
-|  |  |  |
+| [_::now()_](https://www.cplusplus.com/reference/chrono/high_resolution_clock/now/) | Static | returns the current value of the _time\_point_ of _high\_resolution\_clock_ |
 
 # Working Example
 
