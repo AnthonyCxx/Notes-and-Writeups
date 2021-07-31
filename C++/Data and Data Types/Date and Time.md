@@ -76,7 +76,7 @@ When creating custom types that are based on existing types (even existing custo
 | [_.time_since_epoch()_](https://www.cplusplus.com/reference/chrono/time_point/time_since_epoch/) | Instance | returns a _duration_ object containing the time between the _time\_point_ object and the [epoch](https://en.wikipedia.org/wiki/Unix_time) |
 | [_::min()_](https://www.cplusplus.com/reference/chrono/time_point/min/) | Static | returns a _time\_point_ object with the minimum possible value |
 | [_::max()_](https://www.cplusplus.com/reference/chrono/time_point/max/) | Static | returns a _time\_point_ object with the maximum possible value |
-> Note: 'epoch' is pronouced an 'epic'.
+> Note: 'epoch' is pronouced like 'epic'.
 
 ## Time Point Arithmetic 
 You can subtract two _time\_point_ objects, but not add them.
