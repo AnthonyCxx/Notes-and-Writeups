@@ -3,7 +3,8 @@ Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) 
 All classes from _\<chrono\>_ are a part of the namespace _std::chrono_; for sake of examples, I will only assume you are using namespace _std_. <br />
 Feel free to remove the _chrono::_ from everything you see if you are using the namespace _std::chrono_.
 
-The majority of this document has been constructed from the talk [_A \<chrono\> Tutorial_](https://www.youtube.com/watch?v=P32hvk8b13M) by [Howard Hinnant](https://github.com/HowardHinnant), who is recognized as a master C++ programmer and invented move semantics.  All credit to him.
+First, the majority of this document has been constructed from the talk [_A \<chrono\> Tutorial_](https://www.youtube.com/watch?v=P32hvk8b13M) by [Howard Hinnant](https://github.com/HowardHinnant), who is recognized as a master C++ programmer and invented move semantics.  All credit to him. Second, I recommend you have
+an [epoch converter](https://www.epochconverter.com/) open while you use this.
 
 # Basics of Keeping Time with the _duration_ and _time\_point_ Classes
 
