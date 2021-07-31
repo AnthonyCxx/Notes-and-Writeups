@@ -156,4 +156,4 @@ void loopfor(chrono::seconds s)
     }
 }
 ```
-> You have to pass a [_duration_ literal](https://en.cppreference.com/w/cpp/chrono/duration) to this function (like _3s_, _5min_, or _7h_).
+> You have to pass a [_duration_ literal](https://en.cppreference.com/w/cpp/chrono/duration) to this function (like _3s_, _5min_, or _7h_). Passing just _3_ won't compile.
