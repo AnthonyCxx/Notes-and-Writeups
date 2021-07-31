@@ -118,10 +118,18 @@ The reason you should always use _stready\_clock_ to measure elapsed time is bec
 Moreover, the _stready\_clock_ cannot be arbitrarily changed like the _system\_clock_, protecting your measurements from manual changes, daylight savings time,
 et cetra.
 
+| Data Member | Constant? | Description |
+| ----------- | --------- | ----------- |
+| rep | no | stores the period count |
+| period | no | length of a period in seconds |
+| duration | no | _duration_ type for _system\_clock_ |
+| time_point | no | _time\_point_ type for _steady\_clock_ |
+| is_steady | yes | returns _true_ if the clock is _steady_ |
+> The _steady\_clock_ is steady.
+
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
-|  |  |  |
-|  |  |  |
+| [_::now()_](https://www.cplusplus.com/reference/chrono/steady_clock/now/) | Static | returns the current value of the _time\_point_ of _steady\_clock_ |
 
 # The _high\_resolution\_clock_ Class
 | Method | Type | Description | 
