@@ -1,4 +1,6 @@
 # Working with Date and Time in C++
+> Jump: [_\<chrono\> by example_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/Date%20and%20Time.md#working-example) <br />
+
 Although C++ inherits [_\<ctime\>_](https://www.cplusplus.com/reference/ctime/) from C, C++ provides its own library, [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/), with classes for date and time utilities.
 Until C++20, _\<chrono\>_ was exclusively used for measuring time and relied on _\<ctime\>_ and its _Clock::to\_time\_t()_ and _Clock::from\_time\_t()_ to use dates.
 
