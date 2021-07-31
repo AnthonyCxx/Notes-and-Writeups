@@ -1,4 +1,4 @@
-//How to time to stuff like functions in C++, taken from Howard Hinnant's 'A ＜chrono> Tutorial'
+//How to time to stuff like functions in C++, taken from Howard Hinnant's 'A <chrono> Tutorial'
 #include <chrono>
 using namespace std::chrono;
 
