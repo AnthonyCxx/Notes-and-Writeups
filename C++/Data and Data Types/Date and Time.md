@@ -150,7 +150,82 @@ The _high\_resolution\_clock_ has the shortest tick period of any of the clock, 
 # Working Example
 
 ```C++
+#include <iostream>
+#include <chrono>
+#include <ctime>
+using namespace std;
 
+//USING CHRONO::LITERALS AS PARAMETERS AND LOOPING FOR 'X' TIME
+void loopfor(chrono::seconds s)
+{
+    //Not necessary, just for the 'Looped for...' statement.
+    using floatsecond = chrono::duration<double, ratio<1,1>>;
+
+    //Get the initial time
+    chrono::steady_clock::time_point start = chrono::steady_clock::now();
+
+    //Loop for 3 seconds: compares the current time to the initial time; if greater than the given time, stop.
+    while(chrono::duration_cast<chrono::seconds>(chrono::steady_clock::now() - start) < s)
+    {
+        //Put whatever code you want here...
+        cout << "Looped for " << chrono::duration_cast<floatsecond>(chrono::steady_clock::now() - start).count()  << " seconds...\n";
+    }
+}
+
+int main()
+{
+    //LOOPING FOR 'X' SECONDS
+    loopfor(3s);   //Loop for 3 seconds
+
+
+    // SIMPLE MATH WITH DURATIONS (IMPLICIT CONVERIONS)
+    chrono::hours h = 1h;
+    chrono::minutes min = 30min;
+
+    cout << "And we waited for a total of " << (h + min).count() << " minutes...\n";
+
+
+    // SIMPLE MATH WITH DURATIONS (MAINTAIN COARSE UNIT WITH CUSTOM UNIT) //
+    using floatminute = chrono::duration<double, ratio<60,1>>;   //Minutes, but can measure fractions of a minute
+
+    chrono::minutes m = 1min;
+    chrono::seconds s = 30s;
+
+    cout << "Total time: " << chrono::duration_cast<floatminute>(m + s).count() << " minutes\n";   //1.5 minutes instead of 1 minute
+
+
+    // GET DATE AND TIME FROM TIME_POINT (pre-C++20; requires <ctime>) //
+    time_t date;
+    chrono::system_clock::time_point time = chrono::system_clock::now();
+
+    date = chrono::system_clock::to_time_t(time);
+
+    cout << "Date and time: " << ctime(&date);
+
+
+
+    // MEASURE ELAPSED TIME //
+    using floatsecond = chrono::duration<double, ratio<1,1>>;   //Seconds, but can measure fractions of a second
+
+    chrono::steady_clock::time_point start = chrono::steady_clock::now();
+
+    /*
+        Code to measure goes here...
+    */
+
+    chrono::steady_clock::time_point end = chrono::steady_clock::now();
+    cout << fixed << "The work took a total of " << chrono::duration_cast<floatsecond>(end - start).count() << " seconds\n";
+
+
+    // GET CURRENT TIME (as epoch) //
+    int now = chrono::duration_cast<chrono::seconds>(chrono::system_clock::now().time_since_epoch()).count();
+    cout << fixed << "Time since epoch in seconds: " << now << '\n';
+
+
+    //Final note: apparently GCC ignores extra semi-colons on the end of a statement? I wrote '... = 30s;;' on accident and it took it...
+
+    return 0;
+}
 ```
 
 ## Sources
