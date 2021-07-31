@@ -101,7 +101,8 @@ All definitions are from [cplusplus.com: \<ios\>](https://www.cplusplus.com/refe
 
 #### fixed
 "When floatfield is set to fixed, floating-point values are written using fixed-point notation: the value is represented with exactly as many digits in the 
-decimal part as specified by the _precision_ field and with no exponent part."
+decimal part as specified by the _precision_ field and with no exponent part." The _fixed_ format is also useful for preventing the implicit representation of floats in 
+scientific notation.
 
 #### scientific
 "When floatfield is set to scientific, floating-point values are written using [scientific notation](https://www.chem.tamu.edu/class/fyp/mathrev/mr-scnot.html): 
