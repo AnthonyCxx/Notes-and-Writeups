@@ -166,7 +166,7 @@ void loopfor(chrono::seconds s)
     //Get the initial time
     chrono::steady_clock::time_point start = chrono::steady_clock::now();
 
-    //Loop for 3 seconds: compares the current time to the initial time; if greater than the given time, stop.
+    //Loop for 's' seconds: compares the current time to the initial time; if greater than the given time, stop.
     while(chrono::duration_cast<chrono::seconds>(chrono::steady_clock::now() - start) < s)
     {
         //Put whatever code you want here...
