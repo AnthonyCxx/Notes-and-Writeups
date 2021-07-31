@@ -55,8 +55,9 @@ Doing math with variables of different units (e.g. _hours_ and _nanoseconds_) wo
 The result will be returned in the smallest unit of the expression (in this case, nanoseconds).
 
 ## Creating Custom Durations
-The _duration_ class is a template that can be used to create custom units of time. To create a unit, you need to use a ratio which is composed of a numerator and a denominator.
-All ratios are based on seconds, so the ratio of minute to ratio is _ratio<60, 1>_.
+The _duration_ class is a template that can be used to create custom units of time. To create a unit, you need to use a datatype (usually _int_) and a ratio which is 
+composed of a numerator and a denominator. All ratios are based on seconds, so the ratio of minute to ratio is _ratio<60, 1>_. The full declaration of a unit for
+minutes looks like `using minutes =`.
 
 In the talk, Dr. Hinnant uses the example of a game developer trying to measure
 60 frames a second, using the custom type '_frames_' as `using frames = duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
@@ -111,4 +112,6 @@ _steady\_clock_ has no relationship to any calendar, so you cannot use it for da
 CppCon 2016: [_CppCon 2016: Howard Hinnant “A \<chrono\> Tutorial"_](https://www.youtube.com/watch?v=P32hvk8b13M) <br />
 cplusplus.com: [_\<chrono\>_](https://www.cplusplus.com/reference/chrono/) <br />
 cppreference.com: [_Date and time utilities: std::chono_](https://en.cppreference.com/w/cpp/chrono) <br />
+Bo Qian: [_C++ 11 Library: Clocks and Timers -- Part I_](https://www.youtube.com/watch?v=M13otPgOePs) <br />
+Bo Qian: [_C++ 11 Library: Clocks and Timers -- Part II_](https://www.youtube.com/watch?v=RuPfDfLKY04) <br />
 TheCherno: [_Timing in C++_](https://www.youtube.com/watch?v=oEx5vGNFrLk) <br />
