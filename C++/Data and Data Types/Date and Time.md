@@ -20,8 +20,8 @@ be _time\_point_ objects.
 
 ## _duration_ typedefs
 There are a set of instantiations of the _duration_ class to represent common units for time like seconds, minutes, and hours. <br />
-These instantiations can be used like any other datatype, so you can make _milliseconds_ the datatype for a function parameter and then 
-pass '_10ms_' instead of '_10_' which is much clearer.
+These instantiations can be used like any other datatype, so you can make _milliseconds_ the datatype for a function parameter; this forces you to
+pass '_10ms_' instead of just '_10_', which is much clearer.
 
 | Unit | Literal Suffix | Ratio |
 | ---- | -------------- | ----- |
