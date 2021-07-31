@@ -36,6 +36,7 @@ pass '_10ms_' instead of just '_10_', which is much clearer.
 ## Initializing a _duration_
 You cannot assign an integer to a _duration_ like `chrono::minutes time_waited = 3;` because '_3_' is an ambiguous amount. <br />
 You have to write `chrono::minutes time_waited{3}` or `chrono::minutes time_waited = 3min` to indicate that you mean 3 minutes. <br />
+If you want to write a time literal, you could write `chrono::seconds(3)` or `3s`.
 
 ## Casting with _duration\_cast\<T\>_
 You can store a larger unit in a variable of a smaller unit (e.g. _hours_ in a variable of type _seconds_) without typecasting, but you cannot
@@ -59,8 +60,9 @@ The _duration_ class is a template that can be used to create custom units of ti
 composed of a numerator and a denominator. All ratios are based on seconds, so the ratio of minute to ratio is _ratio<60, 1>_. The full declaration of a unit for
 minutes looks like `using minutes = chrono::duration<int, ratio<60, 1>>`. If you wanted to, you could declare a custom _minute_ type of type double that so you could
 store the amount of minutes with a decimal (`using dMinutes = chrono::duration<double, ratio<60,1>>;`). Feel free to create whatever unit of time you feel is necessary —
-days, months, years, leap years, et cetra. In the talk, Dr. Hinnant uses the example of a game developer trying to measure 60 frames a second, using the custom type 
-'_frames_' as `using frames = chrono::duration<int32_t, ratio<1,60>>` such that a _frame_ is ~16.667 milliseconds.
+days, months, years, leap years, et cetra. 
+
+When creating custom types that are based on existing types (even existing custom types), you can use _ratio\_multiply()_.
 
 | Custom Duration | Declaration |
 | --------------- | ----------- |
