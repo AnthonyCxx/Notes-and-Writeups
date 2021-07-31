@@ -92,6 +92,12 @@ Clocks are not interoperable; you cannot assign a timepoint of type _chrono::sys
 
 # The _system\_clock_ Class
 Use _system\_clock_ when you need times in relation to a calendar.
+| Data Member | Constant? | Description |
+| rep | no | stores the period count |
+| period | no | length of a period in seconds |
+| duration | no | _duration_ type for _system\_clock_ |
+| time_point | no | _time\_point_ type for _system\_clock_ |
+| is_steady | yes |  |
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
@@ -113,6 +119,12 @@ _steady\_clock_ has no relationship to any calendar, so you cannot use it for da
 | ------ | ---- | ----------- | 
 |  |  |  |
 |  |  |  |
+
+# Working Example
+
+```C++
+
+```
 
 ## Sources
 CppCon 2016: [_CppCon 2016: Howard Hinnant “A \<chrono\> Tutorial"_](https://www.youtube.com/watch?v=P32hvk8b13M) <br />
