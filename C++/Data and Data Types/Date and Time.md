@@ -88,7 +88,7 @@ You can type-cast a _time\_point_ to a different type (e.g. from _seconds_ to _m
 Clocks are not interoperable; you cannot assign a timepoint of type _chrono::system\_clock::time\_point_ to a variable of _chrono::steady\_clock::time\_point_.
 
 # The _system\_clock_ Class
-Use _system\_clock_ when you need times that relate to a calendar.
+Use _system\_clock_ when you need times in relation to a calendar.
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
