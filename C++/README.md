@@ -6,7 +6,7 @@ This is not meant to be an authority of any kind nor is it meant to be comprehen
 
 P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article.
 
-## Categories
+## Topics
 
 ### Basics
 - [Anatomy of a C++ Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Anatomy%20of%20a%20C%2B%2B%20Program.md)
