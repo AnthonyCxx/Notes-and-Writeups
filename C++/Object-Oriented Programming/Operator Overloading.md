@@ -488,7 +488,8 @@ using namespace std;
 class SecureString  //Mimics C#'s 'SecureString' class under 'System.Security'
 {
     private:
-        char* data;
+        char*  data;
+                size_t size;
         bool disposed;
 
     public:
@@ -511,20 +512,28 @@ SecureString::SecureString(const char* cstr)
     //Data is initialized
     disposed = false;
 
+    //Get the size of the string
+        size = strlen(cstr);
+
     //Copy the string literal into the data
-    data = strdup(cstr);
+    data = new char[size];           //Create a new c-string
+    memcpy(data, cstr, size);       //Copy the given string
 }
 
 //Destructor
 SecureString::~SecureString()
 {
     /*
-        If the password has not been disposed of before going out of scope
+        If the password has not been disposed of before going out of scope,
         dispose of it.
     */
 
+        //If not already disposed of, overwrite the memory
     if (!disposed)
         dispose();
+
+        //Delete the heap allocated char array
+        delete [] data;
 }
 
 //Dispose: zero-writes the memory the string was allocated to
@@ -539,7 +548,7 @@ int main()
 {
     //Create a new secure c-string
     SecureString SSN("some social security number");
-    
+
     //SecureString ptr = &SSN;    <== illegal, '&' is deleted
 
     //Overwrite the memory of the c-string, disposing of it
