@@ -27,6 +27,8 @@ This is **not** comprehensive, so be sure to explore them individual folders on 
 
 ### Advanced
 - [Advanced](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Advanced)
+- [Date and Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Date%20and%20Time.md)
+- [Move Semantics](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md)
 
 ### References
 - [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
