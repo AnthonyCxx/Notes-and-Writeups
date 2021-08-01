@@ -65,8 +65,7 @@ The _#pragma once_ directive tells the compiler to only include the current file
 directives are used. This is not only a more concise, but safer alternative to the _#ifndef_, _#define_,  and _#endif_ trio as there is no chance of a name conflict.
 
 ```C++
-//See how much cleaner this is?
-#pragma once
+#pragma once  //See how much cleaner this is?
 
 void sayHello()
 {
