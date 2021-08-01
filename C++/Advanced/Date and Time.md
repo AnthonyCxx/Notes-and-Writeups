@@ -208,7 +208,7 @@ int main()
 
 
     // MEASURE ELAPSED TIME //
-    using floatsecond = chrono::duration<double, ratio<1,1>>;   //Seconds, but can measure fractions of a second
+    using fpsecond = chrono::duration<double, ratio<1,1>>;   //Seconds, but can measure fractions of a second
 
     chrono::steady_clock::time_point start = chrono::steady_clock::now();
 
@@ -217,7 +217,7 @@ int main()
     */
 
     chrono::steady_clock::time_point end = chrono::steady_clock::now();
-    cout << fixed << "The work took a total of " << chrono::duration_cast<floatsecond>(end - start).count() << " seconds\n";
+    cout << fixed << "The work took a total of " << chrono::duration_cast<fpsecond>(end - start).count() << " seconds\n";
 
 
     // GET CURRENT TIME (as epoch) //
