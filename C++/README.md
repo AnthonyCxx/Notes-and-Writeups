@@ -18,6 +18,9 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 ### Object-Oriented Programming
 - [Object-Oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Object-Oriented%20Programming)
 
+### Advanced
+- [Advanced](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Advanced)
+
 
 ## Tricks and Tools
 Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (shows you how the compiler changes your source code behind the scenes) <br />
