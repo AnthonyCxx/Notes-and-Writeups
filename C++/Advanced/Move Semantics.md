@@ -18,7 +18,8 @@ is exclusively used when writing a function parameter, like <br /> `void print(s
 variable like '_name_'.
 
 Note: you may not have run into the problem of not being able to pass a literal (an _rvalue_, like '_Hello_') into a function that takes a _const lvalue&_ 
-(like `void print(const string& str)`) because _const_ _lvalues_ are interchangable with _rvalues_ in some situtations since both are non-modifiable data.
+(like `void print(const string& str)`) because _const_ _lvalues_ are interchangable with _rvalues_ in some situtations since both are non-modifiable data. 
+If you re-write the function _print()_ to only take `string& str`, then passing '_Hello_' would cause an error.
 
 since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
 
