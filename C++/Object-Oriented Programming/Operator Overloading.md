@@ -188,61 +188,6 @@ int main()
 The following operators are special cases. Only the stream insertion/extraction and prefix/postfix operators are on the test for CSC-1720. <br />
 The others are just kinda cool.
 
-## _bool_ Operator
-I'll be honest, I had no idea this existed in C++ until I came across [this cracked StackOverflow question](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const).
-The _bool_ overload allows a class to have a trait called implicit booleanness, which is the idea that the class itself can have a boolean value. You know how you can
-write `if (inFile)` and it will evaluate to false if the file is bad or it's the end of the file? Well, that's implicit booleanness at work.
-
-A _bool_ overload should be const and, unlike other overloads, should not have any return type but should have a return value.
-
-```C++
-#include <iostream>
-#include <string>
-using namespace std;
-
-// COORDINATES CLASS //
-class Coordinates
-{
-    private:
-        int x, y;
-
-    public:
-        Coordinates(int, int);
-
-        //Bool overload
-        operator bool() const;
-};
-
-//Constructor
-Coordinates::Coordinates(int X, int Y)
-{
-    x = X;
-    y = Y;
-}
-
-//Bool overload
-Coordinates::operator bool() const
-{
-    //An object 'Coordinates' is true if both the x- and y-coordinate are positive.
-    return (x > 0 and y > 0);
-}
-
-// DRIVER CODE //
-int main()
-{
-    //Delcare a new set of coordinates
-    Coordinates location(50, 70);
-
-    //The object 'location' of type 'Coordinates' can now be used as a boolean
-    if(location)
-        cout << "Both coordinates in 'location' are positive\n";  //Executed, 'location' is true
-    else
-        cout << "At least one of the coordinates in 'location' is negative :(\n";
-
-    return 0;
-}
-```
-
 ## Prefix and Postfix Operators (++ and --)
 The only difference between the prefix increment operator and the postfix increment operator (++) is whether they are put before or after the variable,
 so how do you overload them? Well, you differentiate between them by giving the postfix operator a dummy _int_ parameter.
@@ -414,6 +359,114 @@ int main()
 
     //Now you can straight-up output the location
     cout << remoteIsland << '\n';
+
+    return 0;
+}
+```
+
+# Conversion Operators
+If you overload a datatype as an 'operator', then you can convert the class into that datatype whenever you (or the program) needs to. If you overload the _bool_
+datatype, then you can use the class as a boolean. If you overload the _const char\*_ datatype, then you can use the class like a string literal (like "Hello, World!").
+
+## _const char\*_ Operator
+Overloading the _const char\*_ provides an alternative to overloading the stream insertion operator (_<<_). However, this approach is not favored as you must return
+a c-string, not a string. And if you call _.c\_str()_ on a temporary string (like `return string("this is the returned literal").c_str()`), then it will return an empty
+string because the c-string reflects the string and the string went out of scope. The solution to this is unfortunately adding a new string class member to store the string.
+It's a sub-optimal solution in my opinion.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x, y;
+        string coords;
+
+    public:
+        Coordinates(int, int);
+        operator const char*();
+};
+
+//Constructor
+Coordinates::Coordinates(int X, int Y)
+{
+    x = X;
+    y = Y;
+}
+
+//Const char* Operator Overload
+Coordinates::operator const char*()
+{
+    coords = to_string(x) + ", " + to_string(y);
+    return coords.c_str();
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Delcare a new set of coordinates
+    Coordinates location(50, 70);
+
+    cout << location << '\n';
+
+    return 0;
+}
+```
+
+## _bool_ Operator
+I'll be honest, I had no idea this existed in C++ until I came across [this cracked StackOverflow question](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const).
+The _bool_ overload allows a class to have a trait called implicit booleanness, which is the idea that the class itself can have a boolean value. You know how you can
+write `if (inFile)` and it will evaluate to false if the file is bad or it's the end of the file? Well, that's implicit booleanness at work.
+
+A _bool_ overload should be const and, unlike other overloads, should not have any return type but should have a return value.
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x, y;
+
+    public:
+        Coordinates(int, int);
+
+        //Bool overload
+        operator bool() const;
+};
+
+//Constructor
+Coordinates::Coordinates(int X, int Y)
+{
+    x = X;
+    y = Y;
+}
+
+//Bool overload
+Coordinates::operator bool() const
+{
+    //An object 'Coordinates' is true if both the x- and y-coordinate are positive.
+    return (x > 0 and y > 0);
+}
+
+// DRIVER CODE //
+int main()
+{
+    //Delcare a new set of coordinates
+    Coordinates location(50, 70);
+
+    //The object 'location' of type 'Coordinates' can now be used as a boolean
+    if(location)
+        cout << "Both coordinates in 'location' are positive\n";  //Executed, 'location' is true
+    else
+        cout << "At least one of the coordinates in 'location' is negative :(\n";
 
     return 0;
 }
