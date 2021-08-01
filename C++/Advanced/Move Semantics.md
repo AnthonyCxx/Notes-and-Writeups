@@ -3,6 +3,10 @@
 ## _lvalues_ and _rvalues_
 Before you understand move semantics, you must first understand the difference between an _lvalue_ and an _rvalue_.
 
+### _lvalues_
+
+### _rvalues_
+
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
 TheCherno: [_Move Semantics in C++_](https://www.youtube.com/watch?v=ehMg6zvXuMY) <br />
