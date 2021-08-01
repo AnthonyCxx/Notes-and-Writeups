@@ -8,7 +8,7 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 
 ## Topics
 Here are some shortcuts to the major folders and common files.
-This is **not** comprehensive, so be sure to explore them individual folders on your own. <br />
+This is **not** comprehensive; explore them individual folders on your own. <br />
 
 ### Beginner
 - [Anatomy of a C++ Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Anatomy%20of%20a%20C%2B%2B%20Program.md)
@@ -34,7 +34,6 @@ This is **not** comprehensive, so be sure to explore them individual folders on 
 - [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
 - [Code Snippets](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Code%20Snippets)
 - [Example Progams](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Example%20Programs)
-
 
 ## Tricks and Tools
 Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (shows you how the compiler changes your source code behind the scenes) <br />
