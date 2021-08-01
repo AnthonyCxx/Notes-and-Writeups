@@ -110,7 +110,7 @@ int main()
 ```
 > Don't forget to initialize _result_ in the _catch_ blocks, otherwise it's value will be [garbage](https://www.learncpp.com/cpp-tutorial/uninitialized-variables-and-undefined-behavior/).
 
-## Catch Block order and Derived Exception Classes
+## Catch Block Order and Derived Exception Classes
 Substitutability is a fundamental principle of design inhherited classes; anywhere where you use the base class, you should be able to use the derived class. Though
 incredibly convenient for functions, it can cause some problems for derived exceptions classes, as the derived exception class gets caught by a _catch_ block meant
 for the base class. To solve this problem, always put the _catch_ block for the derived exception class ***before*** the _catch_ block for the base exception class.
