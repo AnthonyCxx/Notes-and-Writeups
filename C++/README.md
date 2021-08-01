@@ -28,6 +28,11 @@ This is **not** comprehensive, so be sure to explore them individual folders on 
 ### Advanced
 - [Advanced](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Advanced)
 
+### References
+- [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
+- [Code Snippets](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Code%20Snippets)
+- [Example Progams](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Example%20Programs)
+
 
 ## Tricks and Tools
 Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (shows you how the compiler changes your source code behind the scenes) <br />
