@@ -170,7 +170,7 @@ while(getline(file, line))   //Get a a whole line (until '\n')
 ## Storing a File with _vector\<T\>_
 > Pre-requisite: [_vectors_](https://www.educative.io/edpresso/what-is-a-c-vector)
 
-A vector is basically an array except you can change the size as you need to, making it useful for storing a file of an unknown size, while still
+A vector is basically an array except you can change the size as you need, making it useful for storing a file of an unknown size, while still
 being able to keep the individual lines separate. Vectors have very little overhead, so don't worry about slowing down your program by using one.
 
 If you're going to loop over the vector (for printing, reading, etc.), I would recommend a [_ranged-based for loop_](https://www.geeksforgeeks.org/range-based-loop-c/).
