@@ -17,10 +17,13 @@ variable (e.g. `int* ptr = &x`). Just like you can use _&_ to reference an _lval
 is exclusively used when writing a function parameter, like <br /> `void print(string&& str)`, which would only take a string literal like '_Hello, World!_' and not a string 
 variable like '_name_'.
 
-You may not have run into this problem since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
+Note: you may not have run into the problem of not being able to pass a literal (an _rvalue_, like '_Hello_') into a function that takes a _const lvalue&_ 
+(like `void print(const string& str)`) because _const_ _lvalues_ are interchangable with _rvalues_ in some situtations since both are non-modifiable data.
+
+since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
 
 ## Sources
-TheCherno:[_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
+TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
 TheCherno: [_Move Semantics in C++_](https://www.youtube.com/watch?v=ehMg6zvXuMY) <br />
 InternalPointers.com: [_Understanding the meaning of lvalues and rvalues in C++_](https://www.internalpointers.com/post/understanding-meaning-lvalues-and-rvalues-c) <br />
 Thomas Becker: [_C++ Rvalue References Explained_](http://thbecker.net/articles/rvalue_references/section_01.html) <br />
