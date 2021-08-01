@@ -4,11 +4,14 @@
 Before you understand move semantics, you must first understand the difference between an _lvalue_ and an _rvalue_.
 "Put simply, an lvalue is an object reference and an rvalue is a value." - Ray Lischner, [_C++ in a Nutshell_](https://www.amazon.com/C-Nutshell-Ray-Lischner/dp/059600298X).
 For context, by 'object', he means an object (a value) stored in memory, not an instantiation of a class. An example of an _lvalue_ could be the string variable '_name_', 
-whereas an _rvalue_ could be the integer literal '_10_'.
+whereas an _rvalue_ could be the integer literal '_10_'. Of course it may not always be this simple, a _rvalue_ could just as easily be the whole expression '_* 129 % pow(3, 92)_'
+or a series of string concatenations like '_"Weather: " + weather_'.
 
-### _lvalues_
+### _lvalue_ and _rvalue_ References
 
-### _rvalues_
+You may not have run into this problem since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
+
+## The Problem with 
 
 ## Sources
 TheCherno:[_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
