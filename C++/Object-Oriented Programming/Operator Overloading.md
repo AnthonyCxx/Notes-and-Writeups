@@ -3,7 +3,7 @@
 > [Overloading Unary Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#overloading-unary-operators) <br />
 > [Overloading Binary Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#overloading-binary-operators) <br />
 > [Special Cases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#special-cases): [_++ and --_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#prefix-and-postfix-operators--and---) and [_<</>>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#stream-insertion-and-extraction-operators--and-) <br />
-> Conversion Operators
+> Conversion Operators <br />
 > [Disabling Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md#disabling-functions-with-delete) <br />
 
 Operator overloading is the ability to define what should happen when operators are applied to classes (a user-defined type). Anything that can be done with operator
