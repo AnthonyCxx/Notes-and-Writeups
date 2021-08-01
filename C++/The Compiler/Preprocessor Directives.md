@@ -58,7 +58,7 @@ void sayHello()
 
 # _#pragma_
 The _#pragma_ macro enables/disables various compiler features such as warnings or errors. The _#pragma_ directive can even 'poison' certain functions/features, preventing
-the code from using them (for security reasons, etc.).
+the code from using them (for security reasons, etc.). Some of these features are specific to the GCC compiler; if they are, then they will have '_GNU_' in the directive.
 
 ## _#pragma once_
 The _#pragma once_ directive tells the compiler to only include the current file once, regardless of how many _#include_
