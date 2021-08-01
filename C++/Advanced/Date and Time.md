@@ -162,7 +162,7 @@ using namespace std;
 void loopfor(chrono::seconds s)
 {
     //Not necessary, just for the 'Looped for...' statement.
-    using fpsecond = chrono::duration<double, ratio<1,1>>;
+    using fpsecond = chrono::duration<double, ratio<1,1>>;  //Floating-point second
 
     //Get the initial time
     chrono::steady_clock::time_point start = chrono::steady_clock::now();
