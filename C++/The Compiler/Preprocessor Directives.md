@@ -70,3 +70,22 @@ void sayHello()
     cout << "Hello!\n";
 }
 ```
+
+## _#pragma GCC Error/Warning_
+_#pragma GCC Error_ and _#pragma GCC Warning_ can be used to manually define errors. Though it sounds strange, manual warnings can be used to note things like bugs that you
+haven't gotten arround to fixing and manual errors can prevent people from using dangerous, unfinished code.
+
+```C++
+#include <iostream>
+using namespace std;
+
+#pragma GCC error "This error will prevent you from compiling the code"
+#pragma GCC warning "This is a warning. It won't stop you, but it should"
+
+int main()
+{
+    //Stuff
+
+    return 0;
+}
+```
