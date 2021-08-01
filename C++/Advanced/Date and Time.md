@@ -162,7 +162,7 @@ using namespace std;
 void loopfor(chrono::seconds s)
 {
     //Not necessary, just for the 'Looped for...' statement.
-    using floatsecond = chrono::duration<double, ratio<1,1>>;
+    using fpsecond = chrono::duration<double, ratio<1,1>>;
 
     //Get the initial time
     chrono::steady_clock::time_point start = chrono::steady_clock::now();
@@ -171,7 +171,7 @@ void loopfor(chrono::seconds s)
     while(chrono::duration_cast<chrono::seconds>(chrono::steady_clock::now() - start) < s)
     {
         //Put whatever code you want here...
-        cout << "Looped for " << chrono::duration_cast<floatsecond>(chrono::steady_clock::now() - start).count()  << " seconds...\n";
+        cout << "Looped for " << chrono::duration_cast<fpsecond>(chrono::steady_clock::now() - start).count()  << " seconds...\n";
     }
 }
 
@@ -189,12 +189,12 @@ int main()
 
 
     // SIMPLE MATH WITH DURATIONS (MAINTAIN COARSE UNIT WITH CUSTOM UNIT) //
-    using floatminute = chrono::duration<double, ratio<60,1>>;   //Minutes, but can measure fractions of a minute
+    using fpminute = chrono::duration<double, ratio<60,1>>;   //Minutes, but can measure fractions of a minute
 
     chrono::minutes m = 1min;     //1 minute
     chrono::seconds s = 30s;     //30 seconds
 
-    cout << "Total time: " << chrono::duration_cast<floatminute>(m + s).count() << " minutes\n";   //1.5 minutes instead of 1 minute
+    cout << "Total time: " << chrono::duration_cast<fpminute>(m + s).count() << " minutes\n";   //1.5 minutes instead of 1 minute
 
 
     // GET DATE AND TIME FROM TIME_POINT (pre-C++20; requires <ctime>) //
