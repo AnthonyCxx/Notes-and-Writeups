@@ -410,7 +410,8 @@ int main()
 {
     //Delcare a new set of coordinates
     Coordinates location(50, 70);
-
+  
+    //Prints '50, 70'
     cout << location << '\n';
 
     return 0;
