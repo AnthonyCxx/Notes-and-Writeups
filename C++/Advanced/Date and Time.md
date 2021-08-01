@@ -13,8 +13,8 @@ an [epoch converter](https://www.epochconverter.com/) open while you use this.
 # Basics of Keeping Time with the _duration_ and _time\_point_ Classes
 
 # The _duration_ Class
-The _duration_ class is used to store a duration of time (the amount of time between two points in time); these points in time may or may not 
-be _time\_point_ objects.
+The _duration_ class is used to store a duration of time (the amount of time between two points in time); you can perform general arithmetic on them and can use
+relational operators too (<, >, <=, >=).
 
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
