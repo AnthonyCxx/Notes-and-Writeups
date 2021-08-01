@@ -92,4 +92,22 @@ int main()
     return 0;
 }
 ```
-> If you can't tell from the '_GCC_', this is specific to the GCC Compiler.
+
+## _#pragma GCC poison_
+GCC allows you to 'poison' certain identifiers, which could be functions, objects, or even variable names. <br />
+If the code contains a poisoned identifier, it will not compile.
+
+Attempting to compile the following code yields an error, '_error: attempt to use poisoned "cout"_'.
+```C++
+#include <iostream>
+using namespace std;
+
+#pragma GCC poison cout
+
+int main()
+{
+    cout << "Hello, World!\n";
+
+    return 0;
+}
+```
