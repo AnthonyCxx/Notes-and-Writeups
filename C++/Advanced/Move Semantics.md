@@ -10,10 +10,10 @@ whereas an _rvalue_ could be the integer literal '_10_'. Of course it may not al
 or a string concatenation like '_"Weather: " + weather_', or even '_title + name_'.
 
 ### _lvalue_ and _rvalue_ References
+You are likely familiar with _lvalue_ references, which use the [address-of operator](https://www.dummies.com/programming/cpp/how-address-operators-work-in-c/) (&).
+We use _lvalue_ references for a number of things like passing an returning by reference (e.g. `void print(const string& str)`).
 
 You may not have run into this problem since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
-
-## The Problem with 
 
 ## Sources
 TheCherno:[_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
