@@ -1,5 +1,5 @@
 # Working with Memory in C++
-Once I finish reading, I'll have a second here on smart, unique, and weak pointers.
+Once I finish reading, I'll have a section here on smart, unique, and weak pointers.
 
 | File | Function |
 | ---- | -------- |
