@@ -23,7 +23,7 @@ This is **not** comprehensive, so be sure to explore them individual folders on 
 - [Object-Oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Object-Oriented%20Programming)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
 - [Pointers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Pointers.md)
-- [Memory Management](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
+- [Using Dynamic Memory](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
 
 ### Advanced
 - [Advanced](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Advanced)
