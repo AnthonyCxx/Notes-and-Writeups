@@ -10,15 +10,20 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 Here are some shortcuts to the major folders and common files.
 This is not comprehensive, so be sure to explore them individual folders on your own. <br />
 
-### Basics
+### Beginner
 - [Anatomy of a C++ Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Anatomy%20of%20a%20C%2B%2B%20Program.md)
 - [Data and Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20and%20Data%20Types)
 - [Input and Output](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Input%20and%20Output)
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Control%20Flow)
 - [The Compiler](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/The%20Compiler)
+- [Formatting Input and Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md)
+- [Using Files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/File%20Input%20and%20Output.md)
 
-### Object-Oriented Programming
+### Itermediate
 - [Object-Oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Object-Oriented%20Programming)
+- [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
+- [Pointers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Pointers.md)
+- [Memory Management](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
 
 ### Advanced
 - [Advanced](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Advanced)
