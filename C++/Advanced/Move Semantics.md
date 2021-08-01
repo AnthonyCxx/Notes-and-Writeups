@@ -11,7 +11,9 @@ or a string concatenation like '_"Weather: " + weather_', or even '_title + name
 
 ### _lvalue_ and _rvalue_ References
 You are likely familiar with _lvalue_ references, which use the [address-of operator](https://www.dummies.com/programming/cpp/how-address-operators-work-in-c/) (&).
-We use _lvalue_ references for a number of things like passing an returning by reference (e.g. `void print(const string& str)`).
+We use _lvalue_ references for a number of things like passing an returning by reference (e.g. `void print(const string& str)`) and assigning a pointer to an existing 
+variable (e.g. `int* ptr = &x`). Just like you can use _&_ to reference an _lvalue_, you can use _&&_ to reference an _rvalue_ (not to be confused with the [logical and
+operator](https://docs.microsoft.com/en-us/cpp/cpp/logical-and-operator-amp-amp?view=msvc-160#:~:text=The%20logical%20AND%20operator%20(%26%26,left%2Dto%2Dright%20associativity.), which is also &&.)
 
 You may not have run into this problem since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
 
