@@ -56,9 +56,12 @@ void sayHello()
 #endif                 // End the conditional (creates a boundary for '#ifndef')
 ```
 
-## _#pragma once_
+# _#pragma_
 The _#pragma_ macro enables/disables various compiler features such as warnings or errors. The _#pragma_ directive can even 'poison' certain functions/features, preventing
-the code from using them (for security reasons, etc.). The _#pragma once_ directive tells the compiler to only include the current file once, regardless of how many _#include_
+the code from using them (for security reasons, etc.).
+
+## _#pragma once_
+The _#pragma once_ directive tells the compiler to only include the current file once, regardless of how many _#include_
 directives are used. This is not only a more concise, but safer alternative to the _#ifndef_, _#define_,  and _#endif_ trio as there is no chance of a name conflict.
 
 ```C++
