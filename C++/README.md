@@ -6,6 +6,19 @@ This is not meant to be an authority of any kind nor is it meant to be comprehen
 
 P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article.
 
+## Categories
+
+### Basics
+- [Anatomy of a C++ Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Anatomy%20of%20a%20C%2B%2B%20Program.md)
+- [Data and Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20and%20Data%20Types)
+- [Input and Output](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Input%20and%20Output)
+- [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Control%20Flow)
+- [The Compiler](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/The%20Compiler)
+
+### Object-Oriented Programming
+- [Object-Oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Object-Oriented%20Programming)
+
+
 ## Tricks and Tools
 Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (shows you how the compiler changes your source code behind the scenes) <br />
 Tool: [_cdecl, C gibberish to English_](https://cdecl.org/) (C -> English translator meant for C, but still sometimes useful) <br />
