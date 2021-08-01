@@ -185,7 +185,7 @@ int main()
     chrono::hours h = 1h;              //1 hour
     chrono::minutes min = 30min;      //30 minutes
 
-    cout << "And we waited for a total of " << (h + min).count() << " minutes...\n";
+    cout << "And we waited for a total of " << (h + min).count() << " minutes...\n";  //90 min
 
 
     // SIMPLE MATH WITH DURATIONS (MAINTAIN COARSE UNIT WITH CUSTOM UNIT) //
