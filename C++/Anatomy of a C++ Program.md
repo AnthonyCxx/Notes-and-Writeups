@@ -84,7 +84,7 @@ int main()
 ```
 
 ## _cout << "Hello, world!" << endl;_
-This line outputs the string "_Hello, World!_" onto the screen and begins a new line (cout = common output; endl = endline).
+This line outputs the string "_Hello, World!_" onto the screen and begins a new line (_cout_ = character output; _endl_ = endline).
 
 ```C++
 #include <iostream>
