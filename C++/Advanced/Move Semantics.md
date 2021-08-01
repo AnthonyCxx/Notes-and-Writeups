@@ -14,7 +14,7 @@ You are likely familiar with _lvalue_ references, which use the [address-of oper
 We use _lvalue_ references for a number of things like passing an returning by reference (e.g. `void print(const string& str)`) and assigning a pointer to an existing 
 variable (e.g. `int* ptr = &x`). Just like you can use _&_ to reference an _lvalue_, you can use _&&_ to reference an _rvalue_ (not to be confused with the 
 [logical and operator](https://www.w3schools.com/cpp/cpp_operators_logical.asp), which is also &&). To my knowledge, using _&&_ to indicate an _rvalue_ reference
-is exclusively used when writing a function parameter, like <br /> `void print(string&& str)`, which would only take a string literal like '_Hello, World!_' but not a string 
+is exclusively used when writing a function parameter, like <br /> `void print(string&& str)`, which would only take a string literal like '_Hello, World!_' and not a string 
 variable like '_name_'.
 
 You may not have run into this problem since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
@@ -23,6 +23,7 @@ You may not have run into this problem since passing a non-modifiable (_const_) 
 TheCherno:[_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
 TheCherno: [_Move Semantics in C++_](https://www.youtube.com/watch?v=ehMg6zvXuMY) <br />
 InternalPointers.com: [_Understanding the meaning of lvalues and rvalues in C++_](https://www.internalpointers.com/post/understanding-meaning-lvalues-and-rvalues-c) <br />
+Thomas Becker: [_C++ Rvalue References Explained_](http://thbecker.net/articles/rvalue_references/section_01.html) <br />
 O'Rielly Media: [_C++ in a Nutshell_](https://www.amazon.com/C-Nutshell-Ray-Lischner/dp/059600298X) <br />
 CppCon 2019: [_Back to Basics: Move Semantics (1/2)_](https://www.youtube.com/watch?v=St0MNEU5b0o&t) by Klaus Iglberger <br />
 CppCon 2019: [_Back to Basics: Move Semantics (2/2)_](https://www.youtube.com/watch?v=pIzaZbKUw2s) by Klaus Iglberger <br />
