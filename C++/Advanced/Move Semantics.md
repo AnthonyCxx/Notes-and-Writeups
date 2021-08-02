@@ -6,8 +6,7 @@ Move semantics is especially efficient when dealing with large objects, and even
 Before you understand move semantics, you must first understand the difference between an _lvalue_ and an _rvalue_.
 "Put simply, an lvalue is an object reference and an rvalue is a value." - Ray Lischner, [_C++ in a Nutshell_](https://www.amazon.com/C-Nutshell-Ray-Lischner/dp/059600298X).
 For context, by 'object', he means an object (a value) stored in memory, not an instantiation of a class. An example of an _lvalue_ could be the string variable '_name_', 
-whereas an _rvalue_ could be the integer literal '_10_'. Of course it may not always be this simple, a _rvalue_ could just as easily be the whole expression '_12 * 129 % pow(3, 92)_'
-or a string concatenation like '_"Weather: " + weather_', or even '_title + name_'.
+whereas an _rvalue_ could be the integer literal '_10_'. Of course it may not always be this simple, a _rvalue_ could just as easily be the whole expression '_12 * 129 % pow(3, 92)_' or a string concatenation like '_"Weather: " + weather_', or even '_title + name_'.
 
 ### _lvalue_ and _rvalue_ References
 You are likely familiar with _lvalue_ references, which use the [address-of operator](https://www.dummies.com/programming/cpp/how-address-operators-work-in-c/) (&).
@@ -17,11 +16,13 @@ variable (e.g. `int* ptr = &x`). Just like you can use _&_ to reference an _lval
 is exclusively used when writing a function parameter, like <br /> `void print(string&& str)`, which would only take a string literal like '_Hello, World!_' and not a string 
 variable like '_name_'.
 
-Note: you may not have run into the problem of not being able to pass a literal (an _rvalue_, like '_Hello_') into a function that takes a _const lvalue&_ 
+You may not have run into the problem of not being able to pass a literal (an _rvalue_, like '_Hello_') into a function that takes a _const lvalue&_ 
 (like `void print(const string& str)`) because _const_ _lvalues_ are interchangable with _rvalues_ in some situtations since both are non-modifiable data. 
-If you re-write the function _print()_ to only take `string& str`, then passing '_Hello_' would cause an error.
+If you re-wrote the function _print()_ to only take `string& str`, then passing '_Hello_' would cause an error.
 
-since passing a non-modifiable (_const_) _lvalue_ reference can also take an _rvalue_.
+## Assignment
+
+## Move Semantics
 
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
