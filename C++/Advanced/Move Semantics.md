@@ -29,10 +29,13 @@ Let's say you assign one string to another; what stops you from simply reallocat
 resources since it's its own variable. Reallocating the resources of the old string to the new string would steal them from the old string, which is a problem. But what if
 we could guarantee that the old string wouldn't need its resources again? Say, if the string was a temporary string created as the result of an expression like '_title + name_'.
 Copying in this case would be unnecessarily inefficient because the temporary string object as a result of '_title + name_' is going to go out of scope in a moment anyway.
+You might as well just steal the resources from the temporary string since it's not going to do any harm.
 
-This is the entire point of move semantics. Move semantics are an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
+This is the entire point of move semantics. Move semantics are an optimization that reallocates the resources (contents) of a temporary object instead of copying it.
 Move semantics is especially efficient when dealing with large objects, and even more efficient if the transfer is marked
-[_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/).
+[_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/). Move semantics was impossible before C++11 because there was no way to 
+differentiate between _lvalues_ and _rvalues_ syntactically. Now that we can explicitly refer to _rvalues_ with the _&&_ operator, we can do things like overload the
+assignment operator (=) to steal the resources of an _rvalue_, allowing you to avoid copying where it is unnecessary.
 
 ## Reallocation of Resources with Move Semantics
 
