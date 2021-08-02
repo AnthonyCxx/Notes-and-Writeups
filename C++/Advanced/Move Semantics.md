@@ -24,9 +24,17 @@ You can remember the difference between _lvalues_ and _rvalues_ so: _lvalues_ ha
 of the expression '_title + name_' — the result of the expression '_title + name_' is just a nameless, temporary string object.
 The only exception to this rule is that an _lvalue_ is an _rvalue_ when used on the right-side of an assignment operation and is not modified in any way (e.g. `x = y`).
 
-## The Problem
+## Temporary Objects and Unnecessary Copying
+Let's say you assign one string to another; what stops you from simply reallocating the resources of the string to the new string? Well, the old string still needs its
+resources since it's its own variable. Reallocating the resources of the old string to the new string would steal them from the old string, which is a problem. But what if
+we could guarantee that the old string wouldn't need its resources again? Say, if the string was a temporary string created as the result of an expression like '_title + name_'.
+Copying in this case would be unnecessarily inefficient because the temporary string object as a result of '_title + name_' is going to go out of scope in a moment anyway.
 
-## Move Semantics
+Move semantics is an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
+Move semantics is especially efficient when dealing with large objects, and even more efficient if the transfer is marked
+[_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/).
+
+## Reallocation of Resources with Move Semantics
 
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
