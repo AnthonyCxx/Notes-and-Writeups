@@ -6,4 +6,3 @@
 | [Functions and Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Methods.md) | functions and methods (constructors, copy constructors, destructors) |
 | [Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Inheritance.md) | inheritance, multiple inheritance, virtual methods, and abstract classes |
 | [Operator Overloading](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md) | operator overloading in C++ |
-| [Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Templates.md) | Templates (Generics) in C++ |
