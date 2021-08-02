@@ -23,7 +23,7 @@ You can remember the difference between _lvalues_ and _rvalues_ so: _lvalues_ ha
 of the expression '_title + name_' — the result of the expression '_title + name_' is just a nameless, temporary string object.
 The only exception to this rule is that an _lvalue_ is an _rvalue_ when used on the right-side of an assignment operation and is not modified in any way (e.g. `x = y`).
 
-## Unnecessary Copying Temporary Objects
+## Unnecessarily Copying Temporary Objects
 Let's say you assign one string to another; what stops you from simply reallocating the resources of the string to the new string? Well, the old string still needs its
 resources since it's its own variable. Reallocating the resources of the old string to the new string would steal them from the old string, which is a problem. But what if
 we could guarantee that the old string wouldn't need its resources again? Say, if the string was a temporary string created as the result of an expression like '_title + name_'.
