@@ -41,8 +41,8 @@ assignment operator (=) to 'steal' the resources of an _xvalue_, allowing you to
 
 The reallocation of resources in move semantics takes form in two special member functions: the move constructor (`ClassName(ClassName&&)`) and the move assignment operator (`ClassName& operator=(ClassName&&)`). Notice how neither of these functions take _const_ references, since they will be altering the taken object. By the end of the operation,
 the new class should copied all values and references of the data members of the old class and the old class should be left in a "valid but undefined state" (Klaus Iglberger, [CPPCon 2019](https://www.youtube.com/watch?v=St0MNEU5b0o)), containing no references to its previous data members. To quote the C++ Core Guidelines directly,
-"Ideally, the moved-from object should be the default value of the type, unless there is an exceptionally good reason not to." If you are moving a class, then make the
-'default state' is the default state for each data member.
+"Ideally, that moved-from should be the default value of the type. Ensure that unless there is an exceptionally good reason not to." ([C.64](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c64-a-move-operation-should-move-and-leave-its-source-in-a-valid-state)).
+If you are moving a class, then make the 'default state' is the default state for each data member.
 
 ### Reallocating _lvalues_ in Classes
 Use `std::move()` on pointers because they're _lvalues_.
