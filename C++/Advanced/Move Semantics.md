@@ -45,7 +45,7 @@ the new class should copied all values and references of the data members of the
 If you are moving a class, then make the 'default state' is the default state for each data member.
 
 ### Reallocating _lvalues_ in Classes
-Use `std::move()` on pointers because they're _lvalues_.
+Use `std::move()` on strings because they're _lvalues_...
 
 ### Simultaneous Reassignment with _exchange()_
 The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
