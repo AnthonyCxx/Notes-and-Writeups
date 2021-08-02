@@ -1,16 +1,19 @@
 //How to time to stuff like functions in C++, taken from Howard Hinnant's 'A <chrono> Tutorial'
+#include <iostream>
 #include <chrono>
-using namespace std::chrono;
+using namespace std;
 
-//Get start time
-auto start = steady_clock::now();
+int main()
+{
+    using fpseconds = chrono::duration<double, ratio<1,1>>;   //Floating-point seconds
+    chrono::steady_clock::time_point start = chrono::steady_clock::now();  //Start time
 
-/*
-  WORK GOES HERE
-*/
+    /*
+        Work goes here...
+    */
 
-//Get end time
-auto end = steady_clock::now();
+    chrono::steady_clock::time_point end = chrono::steady_clock::now();  //End time
 
-//Output total time between time_point objects
-cout << duration_cast<seconds>(end - start).count() << "seconds\n";
+    cout << fixed;   //Prevents number being represented in scientific notation
+    cout << "Time elapsed: " << chrono::duration_cast<fpseconds>(end - start).count() << '\n';  //Find elapsed time
+}
