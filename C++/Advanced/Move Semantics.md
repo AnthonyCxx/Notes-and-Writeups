@@ -22,6 +22,7 @@ If you re-wrote the function _print()_ to only take `string& str`, then passing 
 You can remember the difference between _lvalues_ and _rvalues_ so: _lvalues_ have an _identifier_, a name that you can reference them with, like  string variable '_name_'; conversely, _rvalues_ are nameless. The number '_10_' does not have a name that you can call it with, and neither does the result
 of the expression '_title + name_' — the result of the expression '_title + name_' is just a nameless, temporary string object (called an _xvalue_, for 'expiring value').
 The only exception to this rule is that an _lvalue_ is an _rvalue_ when used on the right-side of an assignment operation and is not modified in any way (e.g. `x = y`).
+And the only exception to that exception is when an unmodified _lvalue_ is used in a _return_ statement (e.g. `return x`), in which case it's an _rvalue_.
 
 ## Unnecessarily Copying Temporary Objects
 Let's say you assign one string to another; what stops you from simply reallocating the resources of the string to the new string? Well, the old string still needs its
@@ -51,8 +52,12 @@ If you are moving a class, then make the 'default state' is the default state fo
 
 ### A look at _std::move()_
 [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is
-a shorthand for a very long and somewhat obscure static cast (`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to use it 
-with _rvalue_ references. 
+a shorthand for a very long and somewhat obscure static cast (`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to move 
+the _lvalue_ instead of copying it. Only use _move()_ when you know that the object is about to be destroyed or initialized with a new value.
+
+```C++
+
+```
 
 ### Simultaneous Reassignment with _exchange()_
 The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
