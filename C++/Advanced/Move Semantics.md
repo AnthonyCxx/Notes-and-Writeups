@@ -37,7 +37,7 @@ differentiate between _lvalues_ and _rvalues_ syntactically. Now that we can exp
 assignment operator (=) to 'steal' the resources of an _xvalue_, allowing you to avoid copying where it is unnecessary.
 
 ## Reallocation of Resources with Move Semantics
-The reallocation of resources in move semantics takes form in two special member functions: the move constructor (`ClassName(Classname&&)`) and the move assignment operator (`ClassName& operator=(ClassName&&)`). Notice how neither of these functions take _const_ references, since they will be altering the taken object. By the end of the operation,
+The reallocation of resources in move semantics takes form in two special member functions: the move constructor (`ClassName(ClassName&&)`) and the move assignment operator (`ClassName& operator=(ClassName&&)`). Notice how neither of these functions take _const_ references, since they will be altering the taken object. By the end of the operation,
 the new class should copied all values and references of the data members of the old class and the old class should be left in a "valid but undefined state" (Klaus Iglberger, [CPPCon 2019](https://www.youtube.com/watch?v=St0MNEU5b0o)), containing no references to its previous data members.
 
 ### Move Semantics and Raw Pointers
