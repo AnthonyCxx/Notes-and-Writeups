@@ -44,7 +44,7 @@ the new object should copied all values and references of the data members of th
 "Ideally, that moved-from should be the default value of the type. Ensure that unless there is an exceptionally good reason not to." ([C.64](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c64-a-move-operation-should-move-and-leave-its-source-in-a-valid-state)).
 If you are moving a class, then make the 'default state' is the default state for each data member.
 
-> See below for an explanation on [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
+> See below for an explanation on [_std::move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
 ```C++
 
 ```
