@@ -56,7 +56,7 @@ useful for pointers since you always have to set a stolen pointer to nullptr in 
 If a move constructor/assignment operator is marked as [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/), it can take
 a different, more efficient code path because it will not have to worry about exceptions potentially iterrupting the moving process. In this video, Dr. Iglberger
 was able to reduce the time it took to move an object from 0.005 seconds to 0.002 seconds (60% less time). If you can, always mark your move constructors and assignment
-operator overloads as _noexcept_ [C++ Core Guidelines: _C.66: Make move operations noexcept_](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-move-noexcept).
+operator overloads as _noexcept_ ([C++ Core Guidelines: _C.66: Make move operations noexcept_](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-move-noexcept)).
 
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
