@@ -1,4 +1,4 @@
-//How to time to stuff like functions in C++, taken from Howard Hinnant's 'A <chrono> Tutorial'
+//If you need more precise measurements, replace 'steady_clock' with 'high_resolution_clock'
 #include <iostream>
 #include <chrono>
 using namespace std;
