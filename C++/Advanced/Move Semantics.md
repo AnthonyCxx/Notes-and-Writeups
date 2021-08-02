@@ -1,6 +1,6 @@
 # Move Semantics in C++
-Move semantics is an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
-Move semantics is especially efficient when dealing with large objects, and even more efficient if the transfer is marked [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/).
+Move semantics are an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
+Move semantics are especially efficient when dealing with large objects, and even more efficient if the transfer is marked [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/).
 
 ## _lvalues_ and _rvalues_
 Before you understand move semantics, you must first understand the difference between an _lvalue_ and an _rvalue_.
@@ -30,7 +30,7 @@ resources since it's its own variable. Reallocating the resources of the old str
 we could guarantee that the old string wouldn't need its resources again? Say, if the string was a temporary string created as the result of an expression like '_title + name_'.
 Copying in this case would be unnecessarily inefficient because the temporary string object as a result of '_title + name_' is going to go out of scope in a moment anyway.
 
-Move semantics is an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
+This is the entire point of move semantics. Move semantics are an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
 Move semantics is especially efficient when dealing with large objects, and even more efficient if the transfer is marked
 [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/).
 
