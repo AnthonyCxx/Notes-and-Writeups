@@ -50,6 +50,15 @@ If you are moving a class, then make the 'default state' is the default state fo
 
 ```
 
+Here's the long an short of it all:
+| Special Member Function | Purpose |
+| ----------------------- | ------- |
+| Constructor |  |
+| Copy Constructor |  |
+| Assignment Operator Overload |  |
+| Move Constructor |  |
+| Move Assignment Operator Overload |  |
+
 ### A look at _std::move()_
 [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is
 a shorthand for a very long and somewhat obscure static cast (`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to move 
