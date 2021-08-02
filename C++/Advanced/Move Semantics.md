@@ -48,6 +48,10 @@ If you are moving a class, then make the 'default state' is the default state fo
 
 ```
 
+### A look at _std::move()_
+_move()_ is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is a shorthand for a very long and somewhat obscure static cast 
+(`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to use it with _rvalue_ references. 
+
 ### Simultaneous Reassignment with _exchange()_
 The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
 useful for pointers since you always have to set a stolen pointer to nullptr in the old object..
