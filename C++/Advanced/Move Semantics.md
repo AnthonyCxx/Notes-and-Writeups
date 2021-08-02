@@ -50,7 +50,7 @@ If you are moving a class, then make the 'default state' is the default state fo
 
 ```
 
-Here's the long an short of it all:
+In case you're confused on the exact differences between any of the special functions:
 | Special Member Function | Purpose | Returns | 
 | ----------------------- | ------- | ------- |
 | Constructor | creates a new object from nothing | Nothing |
