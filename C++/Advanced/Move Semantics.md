@@ -16,14 +16,14 @@ variable (e.g. `int* ptr = &x`). Just like you can use _&_ to reference an _lval
 is exclusively used when writing a function parameter, like <br /> `void print(string&& str)`, which would only take a string literal like '_Hello, World!_' and not a string 
 variable like '_name_'.
 
+You may not have run into the problem of not being able to pass a literal (an _rvalue_, like '_Hello_') into a function that takes a _const lvalue&_ 
+(like `void print(const string& str)`) because _const_ _lvalues_ are interchangable with _rvalues_ in some situtations since both are non-modifiable data. 
+If you re-wrote the function _print()_ to only take `string& str`, then passing '_Hello_' would cause an error.
+
 You can remember the difference between _lvalues_ and _rvalues_ so: _lvalues_ have an _identifier_, a name that you can reference them with, like the
 variable the string variable '_name_'; however, _rvalues_ are nameless. The number '_10_' does not have a name that you can call it with, and neither does the result
 of the expression '_title + name_' — the result of the expression '_title + name_' is just a temporary string object.
 The only exception to this rule is that an _lvalue_ is an _rvalue_ when used on the right-side of an assignment operation and is not modified in any way (e.g. `x = y`).
-
-You may not have run into the problem of not being able to pass a literal (an _rvalue_, like '_Hello_') into a function that takes a _const lvalue&_ 
-(like `void print(const string& str)`) because _const_ _lvalues_ are interchangable with _rvalues_ in some situtations since both are non-modifiable data. 
-If you re-wrote the function _print()_ to only take `string& str`, then passing '_Hello_' would cause an error.
 
 ## The Problem
 
