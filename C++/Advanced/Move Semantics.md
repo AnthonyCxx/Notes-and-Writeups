@@ -31,7 +31,7 @@ Copying in this case would be unnecessarily inefficient because the temporary st
 You might as well just steal the resources from the temporary string since it's not going to do any harm.
 
 This is the entire point of move semantics. Move semantics are an optimization that reallocates the resources (contents) of a temporary object instead of copying it.
-Move semantics is especially efficient when dealing with large objects, and even more efficient if the transfer is marked
+Move semantics are especially efficient when dealing with large objects, and even more efficient if the transfer is marked
 [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/). Move semantics was impossible before C++11 because there was no way to 
 differentiate between _lvalues_ and _rvalues_ syntactically. Now that we can explicitly refer to _rvalues_ with the _&&_ operator, we can do things like overload the
 assignment operator (=) to steal the resources of an _rvalue_, allowing you to avoid copying where it is unnecessary.
