@@ -51,13 +51,13 @@ If you are moving a class, then make the 'default state' is the default state fo
 ```
 
 Here's the long an short of it all:
-| Special Member Function | Purpose |
-| ----------------------- | ------- |
-| Constructor |  |
-| Copy Constructor |  |
-| Assignment Operator Overload |  |
-| Move Constructor |  |
-| Move Assignment Operator Overload |  |
+| Special Member Function | Purpose | Returns | 
+| ----------------------- | ------- | ------- |
+| Constructor | creates a new object from nothing | Nothing |
+| Copy Constructor | creates a new object based on another object | Nothing |
+| Assignment Operator Overload | copies the content of an existing object into another existing object | \*this |
+| Move Constructor | Steals the resources of one object into a new object | Nothing | 
+| Move Assignment Operator Overload | Steals the resources of an existing object and moves them into another one | \*this |
 
 ### A look at _std::move()_
 [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is
