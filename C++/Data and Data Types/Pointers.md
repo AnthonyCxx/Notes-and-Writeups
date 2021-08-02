@@ -56,7 +56,7 @@ is the actual address in memory. If you want to access the variable at the memor
 operator, '\*'](https://www.computerhope.com/jargon/d/dereference-operator.htm). Putting '\*' before the pointer will access the contents stored at the pointer's location
 in memory.
 
-To clarify, putting '\*' before a pointer while declaring a pointer is what indicates it is a pointer. Putting '\*' before an existing pointer references the contents
+To clarify, putting '\*' before a pointer while declaring a pointer is what indicates it is a pointer. Putting '\*' before an existing pointer variable references the contents
 at the memory address of the pointer. 
 
 ```C++
