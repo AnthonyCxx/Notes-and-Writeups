@@ -44,14 +44,15 @@ the new object should copied all values and references of the data members of th
 "Ideally, that moved-from should be the default value of the type. Ensure that unless there is an exceptionally good reason not to." ([C.64](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c64-a-move-operation-should-move-and-leave-its-source-in-a-valid-state)).
 If you are moving a class, then make the 'default state' is the default state for each data member.
 
-> See below for an explanation on _std::move()_
+> See below for an explanation on [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
 ```C++
 
 ```
 
 ### A look at _std::move()_
-_move()_ is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is a shorthand for a very long and somewhat obscure static cast 
-(`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to use it with _rvalue_ references. 
+[_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is
+a shorthand for a very long and somewhat obscure static cast (`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to use it 
+with _rvalue_ references. 
 
 ### Simultaneous Reassignment with _exchange()_
 The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
