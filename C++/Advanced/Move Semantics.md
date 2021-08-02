@@ -10,7 +10,7 @@ whereas an _rvalue_ could be the integer literal '_10_'. Of course it may not al
 
 ### _lvalue_ and _rvalue_ References
 You are likely familiar with _lvalue_ references, which use the [address-of operator](https://www.dummies.com/programming/cpp/how-address-operators-work-in-c/) (&).
-We use _lvalue_ references for a number of things like passing and returning by reference (e.g. `void print(const string& str)`) and assigning a pointer to an existing 
+We use _lvalue_ references for a number of things like passing and returning by reference (e.g. `void print(const string& str)`) or assigning a pointer to an existing 
 variable (e.g. `int* ptr = &x`). Just like you can use _&_ to reference an _lvalue_, you can use _&&_ to reference an _rvalue_ (not to be confused with the 
 [logical and operator](https://www.w3schools.com/cpp/cpp_operators_logical.asp), which is also &&). To my knowledge, using _&&_ to indicate an _rvalue_ reference
 is exclusively used when writing a function parameter, like <br /> `void print(string&& str)`, which would only take a string literal like '_Hello, World!_' and not a string 
