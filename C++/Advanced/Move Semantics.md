@@ -56,7 +56,7 @@ In case you're confused on the exact differences between any of the special func
 | Constructor | creates a new object from nothing | Nothing |
 | Copy Constructor | creates a new object based on another object | Nothing |
 | Assignment Operator Overload | copies the content of an existing object into another existing object | \*this |
-| Move Constructor | Moves the resources of one object into an object | Nothing | 
+| Move Constructor | creates a new object and moves the resources of an existing object into the new object | Nothing | 
 | Move Assignment Operator Overload | Moves the resources of an existing object into another one | \*this |
 
 ### A look at _std::move()_
