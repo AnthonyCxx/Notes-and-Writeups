@@ -224,12 +224,12 @@ by simple assignment; regardless, you should use _move()_ in all circumstances s
 
 ### Moving Pointers and _exchange()_
 When taking ownership of a pointer, things before a bit more complicated because of two things: <br />
-1. ...
-2. ...
+1. The data the moved-to pointer contains must be deleted before it can take on the value of the moved-from (to avoid memory leak)
+2. The moved-from pointer must be assigned _nullptr_
 
-Don't forget to assign the pointer of an old object to _nullptr_ and to free any memory to the moved-to owns
+As you can see, this is more complex than a normal _move()_, requiring a bit of work both before and after the _move()_. The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function makes this easier by allowing you to swap the values of the pointers in a single line.
 
-The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
+allows you to reassign the values of both the old and new objects at once, which is especially
 useful for pointers since you always have to set a moved pointer to _nullptr_ in the old object..
 
 ### Making Move Functions _noexcept_
