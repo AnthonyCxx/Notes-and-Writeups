@@ -53,10 +53,10 @@ If you are moving a class, then make the 'default state' is the default state fo
 In case you're confused on the exact differences between any of the special functions:
 | Special Member Function | Purpose | Returns | 
 | ----------------------- | ------- | ------- |
-| Constructor | creates a new object from nothing | Nothing |
-| Copy Constructor | creates a new object based on another object | Nothing |
-| Assignment Operator Overload | copies the content of an existing object into another existing object | \*this |
-| Move Constructor | creates a new object; moves the resources of an existing object into the new object | Nothing | 
+| Constructor | Creates a new object from nothing | Nothing |
+| Copy Constructor | Creates a new object based on another object | Nothing |
+| Assignment Operator Overload | Copies the resources of an existing object into another existing object | \*this |
+| Move Constructor | Creates a new object; moves the resources of an existing object into the new object | Nothing | 
 | Move Assignment Operator Overload | Moves the resources of an existing object into another one | \*this |
 
 ### A look at _std::move()_
