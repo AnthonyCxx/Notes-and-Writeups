@@ -368,6 +368,40 @@ You can avoid self-assignment in a move constructor/assignment operator in the s
 constructor/assignment operator with `if (this != &other)`. This comparison of memory addresses guarantees that you will not accidentally delete your own data
 and then try to copy that deleted data, which can be fatal, especially when dealing with pointers since you call `delete` before copying.
 
+## More Down-to-Earth Uses
+Despite move semantics seeming somewhat arcane and circumstantial, they can also be used to write better code any time you need to move resources. 
+For example, you could use move semantics to write a more efficient _swap()_ function (credit: [_Marek Polacek, Red Hat Developer_](https://developers.redhat.com/blog/2019/04/12/understanding-when-not-to-stdmove-in-c)).
+
+```C++
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void Swap(T& a, T& b)     //Two variable 'a' and 'b' of type 'T&'
+{
+    //Move the variables instead of copying
+    T temp(move(a));
+    a = move(b);
+    b = move(temp);
+}
+
+int main()
+{
+    int a = 10, b = 20;
+
+    //Before
+    cout << "BEFORE Swap: a = " << a << ", b = " << b << '\n';
+
+    //Swap
+    Swap<int>(a, b);
+
+    //After
+    cout << "AFTER Swap: a = " << a << ", b = " << b << '\n';
+
+    return 0;
+}
+```
+
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
 TheCherno: [_Move Semantics in C++_](https://www.youtube.com/watch?v=ehMg6zvXuMY) <br />
