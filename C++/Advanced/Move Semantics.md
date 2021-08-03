@@ -339,7 +339,7 @@ int main()
         Move arr2 into arr1, still leaving 'arr2' in a valid state
         since it points to 'nullptr' and the size becomes '0'
     */
-    arr1 = move(arr2);
+    arr1 = move(arr2);    //You really should re-initialize an object after moving from it...
 
     //See results
     arr1.print();    //Contains the contents moved from 'arr2'
