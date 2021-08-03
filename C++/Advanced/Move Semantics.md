@@ -309,7 +309,7 @@ ArrayContainer& ArrayContainer::operator=(ArrayContainer&& other) noexcept
 //Print
 void ArrayContainer::print() const
 {
-    if (data == nullptr)
+    if (data == nullptr)  //Note: NULL == nullptr
     {
         cout << "Error in function \'" << __FUNCTION__ << "\'; array points to nullptr.\n";
     }
