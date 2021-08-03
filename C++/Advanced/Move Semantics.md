@@ -227,8 +227,9 @@ When taking ownership of a pointer, things before a bit more complicated because
 1. The data the moved-to pointer contains must be deleted before it can take on the value of the moved-from (to avoid memory leak)
 2. The moved-from pointer must be assigned _nullptr_
 
-As you can see, this is more complex than a normal _move()_, requiring a bit of work both before and after the _move()_. The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function makes this easier by allowing you to swap the values of the pointers in a single line.
-_exchange()_ does NOT delete the value of the moved-to — it only makes swapping the pointer's value and _nullptr_ easier.
+As you can see, this is more complex than a normal _move()_, requiring a bit of work both before and after the _move()_. The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function from the [_\<utility\>_](https://www.cplusplus.com/reference/utility/) library makes this easier by allowing you 
+to swap the values of the pointers in a single line. _exchange()_ does NOT delete the value of the moved-to — it only makes swapping the pointer's value and _nullptr_ 
+easier.
 
 ```C++
 #include <iostream>
@@ -262,7 +263,7 @@ ArrayContainer::ArrayContainer(size_t Size = 0, const int value = 0)
     size = Size;
     data = new int[size];
 
-    //Initialize the new array (for good measure)
+    //Initialize the new array
     for(size_t i = 0; i < size; i++)
     {
         data[i] = value;
@@ -283,7 +284,10 @@ ArrayContainer::ArrayContainer(ArrayContainer&& other) noexcept
 
     //Take posession of the other pointer and set the other pointer to 'nullptr'
     data = exchange(other.data, nullptr);
+    
+    //Adjust sizes
     size = move(other.size);
+    other.size = 0;
 }
 
 //Move Assignment Operator
@@ -294,7 +298,10 @@ ArrayContainer& ArrayContainer::operator=(ArrayContainer&& other) noexcept
 
     //Take posession of the other pointer and set the other pointer to 'nullptr'
     data = exchange(other.data, nullptr);
+    
+    //Adjust sizes
     size = move(other.size);
+    other.size = 0;
 
     return *this;
 }
