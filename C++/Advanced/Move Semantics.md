@@ -41,9 +41,9 @@ assignment operator (=) to 'steal' the resources of an _xvalue_, allowing you to
 > At this point, I recommend watching [_Back to Basics: Move Semantics - David Olsen - CppCon 2020_](https://www.youtube.com/watch?v=ZG59Bqo7qX4)
 
 The reallocation of resources in move semantics takes form in two special member functions: the move constructor (`ClassName(ClassName&&)`) and the move assignment operator (`ClassName& operator=(ClassName&&)`). Notice how neither of these functions take _const_ references, since they will be altering the taken object. By the end of the operation,
-the new object should have copied all primitive values and taken control of all references belonging to the old object and the old object should be left in a "valid but undefined state" (Klaus Iglberger, [CPPCon 2019](https://www.youtube.com/watch?v=St0MNEU5b0o)), containing no references to its previous data members. To quote the C++ Core Guidelines directly,
-"Ideally, that moved-from should be the default value of the type. Ensure that unless there is an exceptionally good reason not to." ([C.64](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c64-a-move-operation-should-move-and-leave-its-source-in-a-valid-state)).
-If you are moving a class, then make the 'default state' is the default state for each data member.
+the new object should have copied all primitive values and taken control of all references belonging to the old object and the old object should be left in a "valid but undefined state" (Klaus Iglberger, [CPPCon 2019](https://www.youtube.com/watch?v=St0MNEU5b0o)), containing no references to its previous data members. To quote the C++ Core Guidelines directly, "Ideally, that moved-from should be the default value of the type. Ensure that unless there is an exceptionally good reason not to." 
+([C.64](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c64-a-move-operation-should-move-and-leave-its-source-in-a-valid-state)). If you are moving a class, 
+then make the 'default state' is the default state for each data member.
 
 > See below for an explanation on [_std::move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
 ```C++
@@ -60,10 +60,13 @@ In case you're confused on the exact differences between any of the special func
 | Move Constructor | Creates a new object; moves the resources of the existing object into the new object | Nothing | 
 | Move Assignment Operator Overload | Moves the resources of an existing object into another existing object | \*this |
 
-### A look at _std::move()_
-[_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is
+### _std::move()_ doesn't Move Resources?
+[_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. The _move()_ function is
 a shorthand for a very long and somewhat obscure static cast (`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to move 
-the _lvalue_ instead of copying it. Only use _move()_ when you know that the object is about to be destroyed or initialized with a new value.
+the _lvalue_ instead of copying it. Only use _move()_ (and by extent, move semantics) when you know that the object is about to be destroyed or initialized with a new value.
+
+The _move()_ function is not necessary for every moved value, since some are already _rvalues_. For example, moving an integer _i_ from one object to another can be done
+by simple assignment; regardless, you should use _move()_ in all circumstances since it's clearer.
 
 ```C++
 
