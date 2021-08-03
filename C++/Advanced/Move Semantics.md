@@ -57,8 +57,8 @@ In case you're confused on the exact differences between any of the special func
 | Parameterized Constructor | Creates a new object from the given parameters | Nothing |
 | Copy Constructor | Creates a new object based on an existing object | Nothing |
 | Assignment Operator Overload | Copies the resources of an existing object into another existing object | \*this |
-| Move Constructor | Creates a new object; moves the resources of an existing object into the new object | Nothing | 
-| Move Assignment Operator Overload | Moves the resources of an existing object into another one | \*this |
+| Move Constructor | Creates a new object; moves the resources of the existing object into the new object | Nothing | 
+| Move Assignment Operator Overload | Moves the resources of an existing object into another existing object | \*this |
 
 ### A look at _std::move()_
 [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. I wish. The _move()_ function is
