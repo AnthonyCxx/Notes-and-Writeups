@@ -9,6 +9,10 @@ with [cppinsights.io](https://cppinsights.io/).
 
 _auto_ can be used as the return type for a function and can even be used as the type for a function parameter (as of C++20). <br />
 [Here](https://lesleylai.info/en/auto-parameters/)'s why you shouldn't use _auto_ as a function parameter. 
+
+You may want to watch [this video](https://www.youtube.com/watch?v=wQxj20X-tIU) on type deductions to better understand some of the idiosyncrasies of the _auto_
+type inference rules. For example, if you assign a variable that is _const_ to a new variable that uses _auto_, then the new variable will not be _const_ (since 
+type inferencing drops _const_ and _volatile_ qualifiers).
 ```C++
 #include <iostream>
 using namespace std;
