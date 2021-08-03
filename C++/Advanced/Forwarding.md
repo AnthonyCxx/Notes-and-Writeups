@@ -3,7 +3,7 @@
 ## Forwarding (Universal) References
 > Recommended Video: [_Type Deduction and Why You Should Care_](https://www.youtube.com/watch?v=wQxj20X-tIU), by Scott Meyers
 
-Just because a reference contains _&&_ does not mean it's an _rvalue_ references — it may be a forwarding reference.
+Just because a reference contains _&&_ does not mean it's an _rvalue_ reference — it may be a forwarding reference.
 Unlike _lvalue_ references, which can only bind to _lvalues_, and _rvalue_ references, which can only bind to _rvalues_, a forwarding reference can bind to both
 _lvalues_ and _rvalues_ (hence why it is also called a universal reference). What looks like an _rvalue_ reference (denoted by _&&_) becomes a universal reference when 
 the datatype of the reference must be deduced (like in templated functions (`T&&`) or `auto&& var`). This is because whether the references becomes an _lvalue_ or _rvalue_
