@@ -55,7 +55,7 @@ In case you're confused on the exact differences between any of the special func
 | ----------------------- | ------- | ------- |
 | Default Constructor | Creates a new object from nothing | Nothing |
 | Parameterized Constructor | Creates a new object from the given parameters | Nothing |
-| Copy Constructor | Creates a new object based on another object | Nothing |
+| Copy Constructor | Creates a new object based on an existing object | Nothing |
 | Assignment Operator Overload | Copies the resources of an existing object into another existing object | \*this |
 | Move Constructor | Creates a new object; moves the resources of an existing object into the new object | Nothing | 
 | Move Assignment Operator Overload | Moves the resources of an existing object into another one | \*this |
