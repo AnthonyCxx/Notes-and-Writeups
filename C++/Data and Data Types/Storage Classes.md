@@ -12,7 +12,7 @@ _auto_ can be used as the return type for a function and can even be used as the
 
 You may want to watch [this video](https://www.youtube.com/watch?v=wQxj20X-tIU) on type deductions to better understand some of the idiosyncrasies of the _auto_
 type inference rules. For example, if you assign a variable that is _const_ to a new variable that uses _auto_, then the new variable will not be _const_ (since 
-type inferencing drops _const_ and _volatile_ qualifiers).
+type inferencing drops _const_ and _volatile_ qualifiers as well as references). If you want to keep cv-qualifiers or references, use _decltype(auto)_.
 ```C++
 #include <iostream>
 using namespace std;
