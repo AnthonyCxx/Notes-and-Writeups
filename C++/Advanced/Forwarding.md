@@ -1,6 +1,8 @@
 # Forwarding in C++
 
 ## Forwarding (Universal) References
+> Recommended Video: [_Type Deduction and Why You Should Care_](https://www.youtube.com/watch?v=wQxj20X-tIU), by Scott Meyers
+
 Just because a reference contains _&&_ does not mean it's an _rvalue_ references — it may be a forwarding reference.
 Unlike _lvalue_ references, which can only bind to _lvalues_, and _rvalue_ references, which can only bind to _rvalues_, a forwarding reference can bind to both
 _lvalues_ and _rvalues_ (hence why it is also called a universal reference). What you think of as an _rvalue_ reference becomes a forwaring reference when the datatype
