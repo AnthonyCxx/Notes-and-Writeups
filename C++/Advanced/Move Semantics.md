@@ -337,7 +337,7 @@ int main()
 
     /*
         Move arr2 into arr1, still leaving 'arr2' in a valid state
-        since it points to 'nullptr'
+        since it points to 'nullptr' and the size becomes '0'
     */
     arr1 = move(arr2);
 
