@@ -51,7 +51,7 @@ then make the 'default state' is the default state for each data member.
 #include <string>
 using namespace std;
 
-// COORDINATES CLASS //
+// LOCATION CLASS //
 class Coordinates
 {
     private:
@@ -164,8 +164,7 @@ Coordinates Coordinates::operator-(const Coordinates& other)
     return Coordinates(x - other.x, y - other.y);
 }
 
-// MISCELLANEOUS FUNCTION //
-Coordinates returnCoords()   //Returns a set of coordinates as a rvalue
+Coordinates returnCoords()
 {
     Coordinates tempCoords(-999, -999);
 
@@ -193,7 +192,7 @@ int main()
 
     //Move Constructor
     cout << "\nUsing the move constructor...\n";
-    Coordinates otherLocation(move(paramCoords));   //Cast lvalue 'paramCoords' into rvalue to call move constructor
+    Coordinates otherLocation(move(paramCoords + defaultCoords));  //Moves the contents of 'paramCoords + defaultCoords' into 'otherLocation'
 
     //Move Assignment Operator
     cout << "\nUsing the move assignment operator...\n";
@@ -213,6 +212,7 @@ In case you're confused on the exact differences between any of the special func
 | Assignment Operator Overload | Copies the resources of an existing object into another existing object | \*this |
 | Move Constructor | Creates a new object; moves the resources of the existing object into the new object | Nothing | 
 | Move Assignment Operator Overload | Moves the resources of an existing object into another existing object | \*this |
+> Reference: [_When does the Move Constructor get Called?_](https://stackoverflow.com/questions/13125632/when-does-move-constructor-get-called/13125851)
 
 ### _std::move()_ doesn't Move Resources?
 [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. The _move()_ function is
@@ -222,11 +222,11 @@ the _lvalue_ instead of copying it. Only use _move()_ (and by extent, move seman
 The _move()_ function is not necessary for every moved value, since some are already _rvalues_. For example, moving an integer _i_ from one object to another can be done
 by simple assignment; regardless, you should use _move()_ in all circumstances since it's clearer.
 
-```C++
-
-```
-
 ### Moving Pointers and _exchange()_
+When taking ownership of a pointer, things before a bit more complicated because of two things: <br />
+1. ...
+2. ...
+
 Don't forget to assign the pointer of an old object to _nullptr_ and to free any memory to the moved-to owns
 
 The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
