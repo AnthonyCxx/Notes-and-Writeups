@@ -53,7 +53,8 @@ If you are moving a class, then make the 'default state' is the default state fo
 In case you're confused on the exact differences between any of the special functions:
 | Special Member Function | Purpose | Returns | 
 | ----------------------- | ------- | ------- |
-| Constructor | Creates a new object from nothing | Nothing |
+| Default Constructor | Creates a new object from nothing | Nothing |
+| Parameterized Constructor | Creates a new object from the given parameters | Nothing |
 | Copy Constructor | Creates a new object based on another object | Nothing |
 | Assignment Operator Overload | Copies the resources of an existing object into another existing object | \*this |
 | Move Constructor | Creates a new object; moves the resources of an existing object into the new object | Nothing | 
