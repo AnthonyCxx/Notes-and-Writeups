@@ -489,7 +489,7 @@ class SecureString  //Mimics C#'s 'SecureString' class under 'System.Security'
 {
     private:
         char*  data;
-                size_t size;
+        size_t size;
         bool disposed;
 
     public:
@@ -513,7 +513,7 @@ SecureString::SecureString(const char* cstr)
     disposed = false;
 
     //Get the size of the string
-        size = strlen(cstr);
+    size = strlen(cstr);
 
     //Copy the string literal into the data
     data = new char[size];           //Create a new c-string
