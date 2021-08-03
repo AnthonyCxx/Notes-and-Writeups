@@ -117,8 +117,12 @@ Coordinates::Coordinates(Coordinates&& other) noexcept
 {
     cout << "Calling the move constructor\n";
 
+    //Move the contents from the object
     x = move(other.x);
     y = move(other.y);
+
+    //Reset the moved-from to a valid state
+    other.x = other.y = 0.0;
 }
 
 //Move Assignment Operator Overload
@@ -126,8 +130,12 @@ Coordinates& Coordinates::operator=(Coordinates&& other) noexcept
 {
     cout << "Calling the overloaded move assignment operator\n";
 
+    //Move the contents from the object
     x = move(other.x);
     y = move(other.y);
+
+    //Reset the moved-from to a valid state
+    other.x = other.y = 0.0;
 
     return *this;
 }
