@@ -5,7 +5,14 @@
 
 Just because a reference contains _&&_ does not mean it's an _rvalue_ references — it may be a forwarding reference.
 Unlike _lvalue_ references, which can only bind to _lvalues_, and _rvalue_ references, which can only bind to _rvalues_, a forwarding reference can bind to both
-_lvalues_ and _rvalues_ (hence why it is also called a universal reference). What you think of as an _rvalue_ reference becomes a forwaring reference when the datatype
+_lvalues_ and _rvalues_ (hence why it is also called a universal reference). What looks like an _rvalue_ reference (denoted by _&&_) becomes a universal reference when 
+the datatype of the reference must be deduced (like in templated functions (`T&&`) or `auto&& var`). This is because whether the references becomes an _lvalue_ or _rvalue_
+reference depends on the type the function/variable is initialized with.
+
+Forwarding references are unique to circumstances that try to deduce the type of the reference
+(templated functions (`T&&`) or `auto&& var`) because it is the rules of deduction that result in whether the reference becomes an _lvalue_ or an _rvalue_.
+
+What you think of as an _rvalue_ reference becomes a forwaring reference when the datatype
 is left to be deduced (like in templated functions (`T&&`) or `auto&& var`) because it depends on what the reference is initialized with. This is because of the rulesets
 for type deductions, which are explained in the video linked above.
 
