@@ -84,6 +84,11 @@ a different, more efficient code path because it will not have to worry about ex
 was able to reduce the time it took to move an object from 0.005 seconds to 0.002 seconds (60% less time). If you can, always mark your move constructors and assignment
 operator overloads as _noexcept_ (C++ Core Guidelines, [_C.66_](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-move-noexcept)).
 
+## Avoiding Self-Assignment
+You can avoid self-assignment in a move constructor/assignment operator in the same way you can in a copy constructor: by prefixing the operations of the move 
+constructor/assignment operator with `if (this != &other)`. This comparison of memory addresses guarantees that you will not accidentally delete your own data
+and then try to copy that deleted data, which is fatal.
+
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
 TheCherno: [_Move Semantics in C++_](https://www.youtube.com/watch?v=ehMg6zvXuMY) <br />
