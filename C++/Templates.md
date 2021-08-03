@@ -1,4 +1,6 @@
 # Templates (Generics) in C++
+> Video: CPPCon 2014, [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
+
 Templates are a definition of a function of class that is not specific to any one type.
 The classic example of a template is the _swap()_ function. The _swap()_ function is simple and makes no calls to type-specific features like string's _substr()_ method,
 so why write five different overloads of the same exact function when the only difference is the datatype? When you write a templated function _swap()_, you can call it
@@ -236,6 +238,7 @@ int main()
 ```
 
 ## Sources
+CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
 isocpp.org: [_Templates_](https://isocpp.org/wiki/faq/templates) <br />
 IBM C++ Documentation: [_Templates (C++ only)_](https://www.ibm.com/docs/en/i/7.4?topic=reference-templates-c-only) <br />
 GeeksforGeeks: [_Templates in C++_](https://www.geeksforgeeks.org/templates-cpp/) <br />
