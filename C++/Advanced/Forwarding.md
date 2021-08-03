@@ -6,8 +6,9 @@
 Just because a reference contains _&&_ does not mean it's an _rvalue_ reference — it may be a forwarding reference.
 Unlike _lvalue_ references, which can only bind to _lvalues_, and _rvalue_ references, which can only bind to _rvalues_, a forwarding reference can bind to both
 _lvalues_ and _rvalues_ (hence why it is also called a universal reference). What looks like an _rvalue_ reference (denoted by _&&_) becomes a universal reference when 
-the datatype of the reference must be deduced (like in templated functions (`T&&`) or `auto&& var`). This is because whether the references becomes an _lvalue_ or _rvalue_
-reference depends on the type the function/variable is initialized with.
+the datatype of the reference must be deduced (like in templated functions (`T&&`) or `auto&& var`). This is because whether the reference becomes an _lvalue_ or _rvalue_
+reference depends on the type the function/variable is initialized with. Notice how I explicitly said 'datatype' and 'type', not treating them as interchangable, because they're
+not (passing `int` to a parameter `T&&` is different from passing `const int`).
 
 Forwarding references are unique to circumstances that try to deduce the type of the reference
 (templated functions (`T&&`) or `auto&& var`) because it is the rules of deduction that result in whether the reference becomes an _lvalue_ or an _rvalue_.
