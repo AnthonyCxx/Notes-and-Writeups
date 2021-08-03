@@ -228,9 +228,119 @@ When taking ownership of a pointer, things before a bit more complicated because
 2. The moved-from pointer must be assigned _nullptr_
 
 As you can see, this is more complex than a normal _move()_, requiring a bit of work both before and after the _move()_. The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function makes this easier by allowing you to swap the values of the pointers in a single line.
+_exchange()_ does NOT delete the value of the moved-to — it only makes swapping the pointer's value and _nullptr_ easier.
 
-allows you to reassign the values of both the old and new objects at once, which is especially
-useful for pointers since you always have to set a moved pointer to _nullptr_ in the old object..
+```C++
+#include <iostream>
+#include <utility>
+using namespace std;
+
+// ARRAYCONTAINER CLASS //
+class ArrayContainer
+{
+    private:
+        //An array of integers + array size
+        int* data;
+        size_t size;
+
+    public:
+        //Constructor + Destructor
+        ArrayContainer(size_t, const int);
+        ~ArrayContainer();
+
+        //Move Constructor + Move Assignment Operator
+        ArrayContainer(ArrayContainer&&) noexcept;
+        ArrayContainer& operator=(ArrayContainer&&) noexcept;
+
+        //Print (for demonstration)
+        void print() const;
+};
+
+//Constructor
+ArrayContainer::ArrayContainer(size_t Size = 0, const int value = 0)
+{
+    size = Size;
+    data = new int[size];
+
+    //Initialize the new array (for good measure)
+    for(size_t i = 0; i < size; i++)
+    {
+        data[i] = value;
+    }
+}
+
+//Destructor
+ArrayContainer::~ArrayContainer()
+{
+    delete [] data;
+}
+
+//Move Constructor
+ArrayContainer::ArrayContainer(ArrayContainer&& other) noexcept
+{
+    //Delete current array (to prevent memory leak)
+    delete [] data;
+
+    //Take posession of the other pointer and set the other pointer to 'nullptr'
+    data = exchange(other.data, nullptr);
+    size = move(other.size);
+}
+
+//Move Assignment Operator
+ArrayContainer& ArrayContainer::operator=(ArrayContainer&& other) noexcept
+{
+    //Delete current array (to prevent memory leak)
+    delete [] data;
+
+    //Take posession of the other pointer and set the other pointer to 'nullptr'
+    data = exchange(other.data, nullptr);
+    size = move(other.size);
+
+    return *this;
+}
+
+//Print
+void ArrayContainer::print() const
+{
+    if (data == nullptr)
+    {
+        cout << "Error in function \'" << __FUNCTION__ << "\'; array points to nullptr.\n";
+    }
+    else
+    {
+        //Print the array in a comma-separted list
+        for(size_t i = 0; i < size; i++)
+        {
+            cout << data[i] << (i != size-1 ? ", " : "");
+        }
+        cout << '\n';
+    }
+}
+
+// DRIVER CODE //
+int main()
+{
+    //An array of 10 integers, initialized to '20'
+    ArrayContainer arr1(10, 20);
+    arr1.print();
+
+    //An array of 5 integers, initialized to '3'
+    ArrayContainer arr2(5, 3);
+    arr2.print();
+
+    /*
+        Move arr2 into arr1, still leaving 'arr2' in a valid state
+        since it points to 'nullptr'
+    */
+    arr1 = move(arr2);
+
+    //See results
+    arr1.print();    //Contains the contents moved from 'arr2'
+    arr2.print();   //Points to 'nullptr'; won't work
+
+    return 0;
+}
+```
 
 ### Making Move Functions _noexcept_
 If a move constructor/assignment operator is marked as [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/), it can take
@@ -241,7 +351,7 @@ operator overloads as _noexcept_ (C++ Core Guidelines, [_C.66_](https://isocpp.g
 ## Avoiding Self-Assignment
 You can avoid self-assignment in a move constructor/assignment operator in the same way you can in a copy constructor: by prefixing the operations of the move 
 constructor/assignment operator with `if (this != &other)`. This comparison of memory addresses guarantees that you will not accidentally delete your own data
-and then try to copy that deleted data, which is fatal.
+and then try to copy that deleted data, which can be fatal, especially when dealing with pointers since you call `delete` before copying.
 
 ## Sources
 TheCherno: [_lvalues and rvalues in C++_](https://www.youtube.com/watch?v=fbYknr-HPYE) <br />
