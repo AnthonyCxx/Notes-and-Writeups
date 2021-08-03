@@ -47,7 +47,161 @@ then make the 'default state' is the default state for each data member.
 
 > See below for an explanation on [_std::move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+// COORDINATES CLASS //
+class Coordinates
+{
+    private:
+        int x;      //x-coordinate
+        int y;     //y-coordinate
+
+    public:
+        //Various constructors and assignment operator overloads
+        Coordinates();                                              //Default Constructor
+        Coordinates(double, double);                               //Parameterized Constructor
+        Coordinates(const Coordinates&);                          //Copy Constructor
+        Coordinates& operator=(const Coordinates&);              //Assignment Operator Overload
+        Coordinates(Coordinates&&) noexcept;                    //Move Constructor
+        Coordinates& operator=(Coordinates&&) noexcept;        //Move Assignment Operator Overload
+
+        //Get info about the location...
+        string str() const;                  //Prints 'x, y'
+
+        //Mathematical Operator Overloads
+        Coordinates operator+();                           //Unary plus
+        Coordinates operator-();                          //Unary minus
+        Coordinates operator+(const Coordinates&);       //Binary addition
+        Coordinates operator-(const Coordinates&);      //Binary subtraction
+};
+
+//Default Constructor
+Coordinates::Coordinates()
+{
+    cout << "Calling the default constructor\n";
+
+    x = 0.0;
+    y = 0.0;
+}
+
+//Parameterized Constructor
+Coordinates::Coordinates(double X, double Y)
+{
+    cout << "Calling the parameterized constructor\n";
+}
+
+//Copy Constructor
+Coordinates::Coordinates(const Coordinates& other)
+{
+    cout << "Calling the copy constructor\n";
+
+    x = other.x;
+    y = other.y;
+}
+
+//Assignment Operator Overload
+Coordinates& Coordinates::operator=(const Coordinates& other)
+{
+    cout << "calling the overloaded assignment operator\n";
+
+    x = other.x;
+    y = other.y;
+
+    return *this;
+}
+
+//Move Constructor
+Coordinates::Coordinates(Coordinates&& other) noexcept
+{
+    cout << "Calling the move constructor\n";
+
+    x = move(other.x);
+    y = move(other.y);
+}
+
+//Move Assignment Operator Overload
+Coordinates& Coordinates::operator=(Coordinates&& other) noexcept
+{
+    cout << "Calling the overloaded move assignment operator\n";
+
+    x = move(other.x);
+    y = move(other.y);
+
+    return *this;
+}
+
+//str()
+string Coordinates::str() const
+{
+   return to_string(x) + ", " + to_string(y);
+}
+
+//Unary Plus
+Coordinates Coordinates::operator+()
+{
+    return Coordinates((x > 0 ? x : x * -1), (y > 0 ? y : y * -1));
+}
+
+//Unary minus
+Coordinates Coordinates::operator-()
+{
+    return Coordinates(-x, -y);
+}
+
+//Binary addition
+Coordinates Coordinates::operator+(const Coordinates& other)
+{
+    //Return a new set of coordinates -- the sum of the two sets of coordinates
+    return Coordinates(x + other.x, y + other.y);
+}
+
+//Binary subtraction
+Coordinates Coordinates::operator-(const Coordinates& other)
+{
+    //Return a new set of coordinates -- the difference of the two sets of coordinates
+    return Coordinates(x - other.x, y - other.y);
+}
+
+// MISCELLANEOUS FUNCTION //
+Coordinates returnCoords()   //Returns a set of coordinates as a rvalue
+{
+    Coordinates tempCoords(-999, -999);
+
+    return tempCoords;
+}
+
+// MAIN FUNCTION //
+int main()
+{
+    //Default Constructor
+    cout << "Using the default constructor...\n";
+    Coordinates defaultCoords;
+
+    //Parameterized Constructor
+    cout << "\nUsing the parameterized constructor...\n";
+    Coordinates paramCoords(-30, 60);
+
+    //Copy Constructor
+    cout << "\nUsing the copy constructor...\n";
+    Coordinates copiedCoords(paramCoords);
+
+    //Assignment Operator Overload (call twice to prevent just calling the copy constructor)
+    cout << "\nUsing the overloaded assignment operator\n";
+    Coordinates standardAssignmentCoords = defaultCoords = paramCoords;
+
+    //Move Constructor
+    cout << "\nUsing the move constructor...\n";
+    Coordinates otherLocation(move(paramCoords));   //Cast lvalue 'paramCoords' into rvalue to call move constructor
+
+    //Move Assignment Operator
+    cout << "\nUsing the move assignment operator...\n";
+    Coordinates movedLocation;
+    movedLocation = returnCoords();  //An lvalue returned from a function is an rvalue
+
+    return 0;
+}
 ```
 
 In case you're confused on the exact differences between any of the special functions:
