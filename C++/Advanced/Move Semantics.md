@@ -73,7 +73,7 @@ by simple assignment; regardless, you should use _move()_ in all circumstances s
 ```
 
 ### Moving Pointers and _exchange()_
-Don't forget to assign the pointer of an old object to _nullptr_
+Don't forget to assign the pointer of an old object to _nullptr_ and to free any memory to the moved-to owns
 
 The [_exchange()_](https://docs.w3cub.com/cpp/utility/exchange) function allows you to reassign the values of both the old and new objects at once, which is especially
 useful for pointers since you always have to set a moved pointer to _nullptr_ in the old object..
