@@ -231,6 +231,8 @@ the _lvalue_ instead of copying it. Only use _move()_ (and by extent, move seman
 The _move()_ function is not necessary for every moved value, since some are already _rvalues_. For example, moving an integer _i_ from one object to another can be done
 by simple assignment; regardless, you should use _move()_ in all circumstances since it's clearer.
 
+**WARNING**: Do not call _move()_ on a return value, as it prevents [return value optimizations](https://en.wikipedia.org/wiki/Copy_elision).
+
 ### Moving Pointers and _exchange()_
 When taking ownership of a pointer, things before a bit more complicated because of two things: <br />
 1. The data the moved-to pointer contains must be deleted before it can take on the value of the moved-from (to avoid memory leak)
