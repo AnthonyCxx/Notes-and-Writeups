@@ -10,6 +10,10 @@ the datatype of the reference must be deduced (like in templated functions (`T&&
 reference depends on the type the function/variable is initialized with. Notice how I explicitly said 'datatype' and 'type', not treating them as interchangable, because they're
 not (passing `int` to a parameter `T&&` is different from passing `const int`); This is because of the rulesets for type deductions, which are explained in the video linked above.
 
+## Forwarding
+
+## Perfect Forwarding
+
 ## Sources
 CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
 TechMunching: [_Universal Reference and Perfect Forwarding_](https://techmunching.com/universal-reference-and-perfect-forwarding/) (this article is really good) <br />
