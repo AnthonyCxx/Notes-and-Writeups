@@ -13,9 +13,35 @@ not (passing `int` to a parameter `T&&` is different from passing `const int`); 
 If the result of the deduction is a reference to a reference (like `(int& &&)`, which is illegal), then 
 [reference collapsing](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.2?topic=operators-reference-collapsing-c11) will occur.
 
-Here is an example of a universal reference.
+Here is an example of a universal reference, which can take an _lvalue_ or an _rvalue_ without problem.
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+//A function that takes a forwarding reference(lvalues and rvalues), a templated '&&'
+template <typename T>
+void print(T&& message)
+{
+    cout << message << '\n';
+}
+
+int main()
+{
+    /*
+        Function 'print()' can take both lvalues and rvalues,
+        since it's a forwarding reference
+    */
+
+    //lvalue
+    string str = "This is an lvalue";
+    print(str);
+
+    //rvalue
+    print("This is an rvalue");
+
+    return 0;
+}
 ```
 
 ## Preserving References with _std::forward\<T\>()_
