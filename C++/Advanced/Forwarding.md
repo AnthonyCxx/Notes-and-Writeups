@@ -47,7 +47,7 @@ int main()
 
 ## Preserving References with _std::forward\<T\>()_
 [_std::forward()_](https://www.cplusplus.com/reference/utility/forward/) doesn't forward anything, just like _move()_ doesn't move anything. You see, when you pass
-an argument to a templated function, it becomes an _lvalue_ — regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_.
+an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters are variables.
 
 _forward()_
 is 
