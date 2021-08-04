@@ -14,6 +14,10 @@ If the result of the deduction is a reference to a reference (like `(int& &&)`, 
 [reference collapsing](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.2?topic=operators-reference-collapsing-c11) will simplify the reference into a single reference
 (either _&_ or _&&_).
 
+**WARNING**: use universal references with care, since they WILL become the preferred function for any datatype that is implicitly converted. If you write a function that takes
+_const string&_ and one that takes _template \<typename T\> T&&_, then passing '_Hello_' to it will call _template \<typename T\> T&&_ instead of _const string&_ because
+string literals like '_Hello_' are actually just c-strings (const char\*).
+
 Here is an example of a universal reference, which can take an _lvalue_ or an _rvalue_ without problem.
 ```C++
 #include <iostream>
@@ -44,6 +48,8 @@ int main()
     return 0;
 }
 ```
+
+## 
 
 ## Preserving Value Types with _forward()_ (Perfect Forwarding)
 > Recommended Video: [_Back to Basics: Move Semantics (part 2 of 2)_](https://www.youtube.com/watch?v=pIzaZbKUw2s), by Klaus Iglberger <br />
