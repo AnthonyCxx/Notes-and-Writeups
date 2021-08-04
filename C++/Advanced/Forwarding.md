@@ -1,4 +1,5 @@
 # Forwarding in C++
+> Pre-requisite: [_lvalues and rvalues_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md#lvalues-and-rvalues) <br />
 
 ## Forwarding (Universal) References
 > Recommended Video: [_Type Deduction and Why You Should Care_](https://www.youtube.com/watch?v=wQxj20X-tIU), by Scott Meyers
