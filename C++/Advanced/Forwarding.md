@@ -59,8 +59,9 @@ When you pass an argument to a function, it becomes an _lvalue_ regardless of wh
 are variables. If you call _forward()_ on an argument, it casts the argument to the value type it was originally passed as. This allows you to pass arguments from
 a function to another function without losing the type of value, which is called perfect forwarding and is vitally important for wrapper and factory functions.
 
-In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of value that was passed.
+**WARNING**: Never call _forward()_ twice on the same object.
 
+In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of value that was passed.
 ```C++
 #include <iostream>
 #include <string>
