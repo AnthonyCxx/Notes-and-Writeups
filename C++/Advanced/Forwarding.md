@@ -13,9 +13,19 @@ not (passing `int` to a parameter `T&&` is different from passing `const int`); 
 If the result of the deduction is a reference to a reference (like `(int& &&)`, which is illegal), then 
 [reference collapsing](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.2?topic=operators-reference-collapsing-c11) will occur.
 
+## Preserving References with _std::forward\<T\>()_
+[_std::forward()_](https://www.cplusplus.com/reference/utility/forward/) doesn't forward anything, just like _move()_ doesn't move anything. You see, when you pass
+an argument to a templated function, it becomes an _lvalue_ — regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_.
+
+_forward()_
+is 
+
+In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_
+
+
 ## Forwarding
 ... <br />
-[_std::forward()_](https://www.cplusplus.com/reference/utility/forward/) doesn't forward anything, just like _move()_ doesn't move anything.
+
 
 ## Perfect Forwarding
 ...
