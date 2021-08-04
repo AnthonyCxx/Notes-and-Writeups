@@ -21,8 +21,8 @@ If you re-wrote the function _print()_ to only take `string& str`, then passing 
 
 You can remember the difference between _lvalues_ and _rvalues_ so: _lvalues_ have an _identifier_, a name that you can reference them with, like  string variable '_name_'; conversely, _rvalues_ are nameless. The number '_10_' does not have a name that you can call it with, and neither does the result
 of the expression '_title + name_' — the result of the expression '_title + name_' is just a nameless, temporary string object (called an _xvalue_, for 'expiring value').
-The only exception to this rule is that an _lvalue_ is an _rvalue_ when used on the right-side of an assignment operation and is not modified in any way (e.g. `x = y`).
-And the only exception to that exception is when an unmodified _lvalue_ is used in a _return_ statement (e.g. `return x`), in which case it's an _rvalue_.
+The only exception to this rule is that a variable is an _rvalue_ when used on the right-side of an assignment operation and is not modified in any way (e.g. `x = y`).
+And the only exception to that exception is when an unmodified variable is used in a _return_ statement (e.g. `return x`), in which case it's an _rvalue_.
 
 ## Unnecessarily Copying Temporary Objects
 Let's say you assign one string to another; what stops you from simply reallocating the resources of the string to the new string? Well, the old string still needs its
