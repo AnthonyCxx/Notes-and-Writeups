@@ -21,7 +21,7 @@ using namespace std;
 
 //A function that takes a forwarding reference(lvalues and rvalues), a templated '&&'
 template <typename T>
-void print(T&& message)
+void print(T&& message)  //Argument must be of type 'T'
 {
     cout << message << '\n';
 }
