@@ -7,11 +7,6 @@ Variadic templates are templates that can instantiate functions of both varying 
 they start with however many elements the give function has and perform the body of the function on each element one by one until they reach no elements, at which point 
 the base case is called. A function _add(1, 2, 3)_ would run _add(1, 2, 3)_, then _add(2, 3)_, and then _add(3)_ (the base case, which just returns '_3_').
 
-[https://eli.thegreenplace.net/2014/variadic-templates-in-c/](https://eli.thegreenplace.net/2014/variadic-templates-in-c/) <br />
-[https://kevinushey.github.io/blog/2016/01/27/introduction-to-c++-variadic-templates/](https://kevinushey.github.io/blog/2016/01/27/introduction-to-c++-variadic-templates/) <br />
-[https://docs.microsoft.com/en-us/cpp/cpp/ellipses-and-variadic-templates?view=msvc-160](https://docs.microsoft.com/en-us/cpp/cpp/ellipses-and-variadic-templates?view=msvc-160) <br />
-[https://www.modernescpp.com/index.php/c-insights-variadic-templates](https://www.modernescpp.com/index.php/c-insights-variadic-templates) <br />
-
 ```C++
 #include <iostream>
 using namespace std;
@@ -49,3 +44,11 @@ C++17 added a cleaner, non-recursive way to write variadic functions: fold expre
 Don't use this in C++, it's not type-safe and if you aren't careful, you'll get a segmentation fault.
 
 ## Sources
+Microsoft C++ Documentation: [_Ellipsis and Variadic Templates_](https://docs.microsoft.com/en-us/cpp/cpp/ellipses-and-variadic-templates?view=msvc-160) <br />
+Modernes C++: [_C++ Insights - Variadic Templates_](https://www.modernescpp.com/index.php/c-insights-variadic-templates) <br />
+Eli Bendersky's Blog: [_Variadic templates in C++_](https://eli.thegreenplace.net/2014/variadic-templates-in-c/) <br />
+Kevin Ushey's Blog: [_Intro to C++ Variadic Templates_](https://kevinushey.github.io/blog/2016/01/27/introduction-to-c++-variadic-templates/) <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
+: [__]() <br />
