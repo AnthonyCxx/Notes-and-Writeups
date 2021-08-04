@@ -48,7 +48,7 @@ int main()
 ## Preserving References with _forward()_ (Perfect Forwarding)
 When you pass an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters 
 are variables. If you call _forward()_ on an argument, it casts the argument to the reference type it was originally passed as. This allows you to pass arguments from
-a function to another function without losing the type of reference, which is especially important for wrapper and factory functions.
+a function to another function without losing the type of reference, which is called perfect forwarding and is vitally important for wrapper and factory functions.
 
 
 In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of reference that was passed.
