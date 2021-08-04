@@ -10,6 +10,7 @@ function like _add()_ that can take any number of variables, literals, or combin
 
 ## Fold Expressions (C++17)
 C++17 added a cleaner, non-recursive way to write variadic functions: fold expressions.
+[https://www.youtube.com/watch?v=nhk8pF_SlTk](https://www.youtube.com/watch?v=nhk8pF_SlTk) <br />
 
 ## C-Style Variadic Functions
 Don't use this in C++, it's not as safe and if you aren't careful, you'll get a segmentation fault.
