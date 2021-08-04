@@ -48,7 +48,7 @@ int main()
 ## Preserving References with _forward()_ (Perfect Forwarding)
 When you pass an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters 
 are variables. If you call _forward()_ on an argument, it casts the argument to the reference type it was originally passed as. This allows you to pass arguments from
-a function to another function without losing the type of reference.
+a function to another function without losing the type of reference, which is especially important for wrapper and factory functions.
 
 
 In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of reference that was passed.
@@ -59,6 +59,7 @@ CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.you
 Feabhas: [_Your handy cut-out-and-keep guide to std::forward and std::move_](https://blog.feabhas.com/2018/04/handy-cut-keep-guide-stdforward-stdmove/) <br />
 SweedenCpp: [_What is this std::forward thing?_](https://www.youtube.com/watch?v=srdwFMZY3Hg), by Paul Dreik <br />
 isocpp.org: [_What's the difference between std::move and std::forward?_](https://isocpp.org/blog/2018/02/quick-q-whats-the-difference-between-stdmove-and-stdforward) <br />
+Howard Hinnant: [_What's the difference between std::move and std::forward_](https://stackoverflow.com/questions/9671749/whats-the-difference-between-stdmove-and-stdforward/9672202#9672202) <br />
 Mircea Baja's Blog: [_C++ std::move and std::forward_](https://bajamircea.github.io/coding/cpp/2016/04/07/move-forward.html) <br />
 TechMunching: [_Universal Reference and Perfect Forwarding_](https://techmunching.com/universal-reference-and-perfect-forwarding/) (this article is really good) <br />
 Petr Zemek's Blog: [_Universal vs Forwarding References in C++_](https://blog.petrzemek.net/2016/09/17/universal-vs-forwarding-references-in-cpp/) <br />
