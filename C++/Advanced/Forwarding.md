@@ -12,7 +12,7 @@ reference depends on the type the function/variable is initialized with. Notice 
 not (passing `int` to a parameter `T&&` is much different from passing `const int&`); This is because of the rulesets for type deductions, which are explained in the video linked above.
 If the result of the deduction is a reference to a reference (like `(int& &&)`, which is illegal), then 
 [reference collapsing](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.2?topic=operators-reference-collapsing-c11) will simplify the reference into a single reference
-(either _&_ or _&&_). [Source](https://www.youtube.com/watch?v=pIzaZbKUw2s): 16:30.
+(either _&_ or _&&_). [Source: 16:30](https://www.youtube.com/watch?v=pIzaZbKUw2s).
 
 **WARNING**: Use universal references with care, since they WILL become the preferred function for any datatype that is implicitly converted since functions with universal
 references are both templated and take any type of reference. If you write a function that takes _const string&_ and one that takes _template \<typename T\> T&&_, then passing 
