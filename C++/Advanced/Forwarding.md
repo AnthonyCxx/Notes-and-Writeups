@@ -16,7 +16,7 @@ If the result of the deduction is a reference to a reference (like `(int& &&)`, 
 
 **WARNING**: use universal references with care, since they WILL become the preferred function for any datatype that is implicitly converted. If you write a function that takes
 _const string&_ and one that takes _template \<typename T\> T&&_, then passing '_Hello_' to it will call _template \<typename T\> T&&_ instead of _const string&_ because
-string literals like '_Hello_' are actually just c-strings (const char\*).
+string literals like '_Hello_' are actually c-strings (const char\*), not strings. This is a very subtle bug to catch.
 
 Here is an example of a universal reference, which can take an _lvalue_ or an _rvalue_ without problem.
 ```C++
