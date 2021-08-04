@@ -20,7 +20,7 @@ Here is an example of a universal reference, which can take an _lvalue_ or an _r
 #include <string>
 using namespace std;
 
-//A function that takes a forwarding reference(lvalues and rvalues), a templated '&&'
+//A function that takes a forwarding reference (lvalues and rvalues), a templated '&&'
 template <typename T>
 void print(T&& message)  //Argument must be of type 'T'
 {
