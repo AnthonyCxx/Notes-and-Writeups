@@ -45,12 +45,12 @@ int main()
 }
 ```
 
-## Preserving References with _forward()_ (Perfect Forwarding)
+## Preserving Value Types with _forward()_ (Perfect Forwarding)
 > Recommended Video: [_Back to Basics: Move Semantics (part 2 of 2)_](https://www.youtube.com/watch?v=pIzaZbKUw2s), by Klaus Iglberger <br />
 
 When you pass an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters 
-are variables. If you call _forward()_ on an argument, it casts the argument to the reference type it was originally passed as. This allows you to pass arguments from
-a function to another function without losing the type of reference, which is called perfect forwarding and is vitally important for wrapper and factory functions.
+are variables. If you call _forward()_ on an argument, it casts the argument to the value type it was originally passed as. This allows you to pass arguments from
+a function to another function without losing the type of value, which is called perfect forwarding and is vitally important for wrapper and factory functions.
 
 In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of reference that was passed.
 
@@ -75,11 +75,11 @@ void print(string&& str)
 template <typename T>
 void wrapper(T&& value)
 {
-    //Calls all values as lvalues (losing the type of reference)
+    //Calls all values as lvalues (losing the type of value)
     print(value);
 }
 
-//Wrapper that uses 'forward<T>' to preserve value categories
+//Wrapper that uses 'forward<T>' to preserve value types
 template <typename T>
 void forwardWrapper(T&& value)
 {
