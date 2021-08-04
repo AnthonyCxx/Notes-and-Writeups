@@ -3,7 +3,7 @@ A variadic function is a function varying [arity](https://en.wikipedia.org/wiki/
 function like _add()_ that can take any number of variables, literals, or combination of the two. I could call _add(1, 2)_ or _add(7, 14, 900)_ and it would work all the same.
 
 Though the implementation differs, all methods of creating variadic functions use an elipsis ('...', called the parameter pack) to represent the arguments passed
-to the function as a list. Other languages work the way way; C# uses the [_params_](https://www.c-sharpcorner.com/UploadFile/c63ec5/use-params-keyword-in-C-Sharp/) keyword
+to the function as a list. Other languages also work the way way; C# uses the [_params_](https://www.c-sharpcorner.com/UploadFile/c63ec5/use-params-keyword-in-C-Sharp/) keyword
 to pass the list of arguments as an array and Python uses [_\*args_ and \*kwargs](https://www.geeksforgeeks.org/args-kwargs-python/) to pass the arguments as a list.
 
 ## Variadic Templates (C++11)
