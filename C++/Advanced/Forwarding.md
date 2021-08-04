@@ -2,7 +2,7 @@
 > Pre-requisite: [_lvalues and rvalues_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md#lvalues-and-rvalues) <br />
 
 ## Forwarding References (Universal References)
-> Recommended Reading: [_Scott Meyers: Universal References in C++11_](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers) <br />
+> Recommended Reading: [Universal References in C++11_](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers), by Scott Meyers <br />
 > Recommended Video: [_Type Deduction and Why You Should Care_](https://www.youtube.com/watch?v=wQxj20X-tIU), by Scott Meyers
 
 Just because a reference contains _&&_ does not mean it's an _rvalue_ reference — it may be a forwarding reference.
