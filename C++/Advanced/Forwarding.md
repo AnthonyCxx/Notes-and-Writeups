@@ -45,7 +45,7 @@ int main()
 }
 ```
 
-## Preserving References with _std::forward\<T\>()_ (Perfect Forwarding)
+## Preserving References with _forward()_ (Perfect Forwarding)
 When you pass an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters 
 are variables. If you call _forward()_ on an argument, it casts the argument to the reference type it was originally passed as. This allows you to pass arguments from
 a function to another function without losing the type of reference.
