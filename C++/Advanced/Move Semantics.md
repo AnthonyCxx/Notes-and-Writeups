@@ -222,7 +222,7 @@ In case you're confused on the exact differences between any of the special func
 | Move Assignment Operator Overload | Moves the resources of an existing object into another existing object | \*this |
 > Reference: [_When does the Move Constructor get Called?_](https://stackoverflow.com/questions/13125632/when-does-move-constructor-get-called/13125851)
 
-### _std::move()_ doesn't Move Resources?
+### Wait, _std::move()_ doesn't Move Resources?
 [_move()_](https://www.learncpp.com/cpp-tutorial/stdmove/) is not a library function to automatically perform move semantics for you. The _move()_ function is
 a shorthand for a very long and somewhat obscure static cast (`static_cast<remove_reference_t<T>&&>(lvalue)`) that casts _lvalues_ into _rvalues_, allowing you to move 
 the _lvalue_ instead of copying it. Only use _move()_ (and by extent, move semantics) when you know that the object is about to be destroyed or initialized with a new value.
