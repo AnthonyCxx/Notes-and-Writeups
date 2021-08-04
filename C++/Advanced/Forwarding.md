@@ -45,21 +45,13 @@ int main()
 }
 ```
 
-## Preserving References with _std::forward\<T\>()_
-[_std::forward()_](https://www.cplusplus.com/reference/utility/forward/) doesn't forward anything, just like _move()_ doesn't move anything. You see, when you pass
-an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters are variables.
-
-_forward()_
-is 
-
-In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_
+## Preserving References with _std::forward\<T\>()_ (Perfect Forwarding)
+When you pass an argument to a function, it becomes an _lvalue_ regardless of whether it was passed to the function as an _lvalue_ or an _rvalue_, since parameters 
+are variables. If you call _forward()_ on an argument, it casts the argument to the reference type it was originally passed as. This allows you to pass arguments from
+a function to another function without losing the type of reference.
 
 
-## Forwarding
-... <br />
-
-
-## Perfect Forwarding
+In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of reference that was passed.
 ...
 
 ## Sources
