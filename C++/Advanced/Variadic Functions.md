@@ -7,7 +7,7 @@ to the function as a list. Other languages also work the way way; C# uses the [_
 to pass the list of arguments as an array and Python uses [_\*args_ and \*kwargs](https://www.geeksforgeeks.org/args-kwargs-python/) to pass the arguments as a list.
 
 ## Variadic Templates (C++11)
-Variadic templates are templates that can instantiate functions of both varying types _and_ varying parameters. These functions are recursive because
+Variadic templates are templates that can instantiate functions of both varying types _and_ varying parameters. These functions are 'recursive' (but not really) because
 they start with however many elements the give function has and perform the body of the function on each element one by one until they reach no elements, at which point 
 the base case is called. A function _add(1, 2, 3)_ would run _add(1, 2, 3)_, then _add(2, 3)_, and then _add(3)_ (the base case, which just returns '_3_'). Interestingly
 enough, variadic templates involve no actual recursion since the compiler creates the functions with the appropriate amount of arguments for each call, so it's only 
