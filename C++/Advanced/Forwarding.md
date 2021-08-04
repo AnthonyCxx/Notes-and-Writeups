@@ -14,7 +14,8 @@ If the result of the deduction is a reference to a reference (like `(int& &&)`, 
 [reference collapsing](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.2?topic=operators-reference-collapsing-c11) will occur.
 
 ## Forwarding
-...
+... <br />
+[_std::forward()_](https://www.cplusplus.com/reference/utility/forward/) doesn't forward anything, just like _move()_ doesn't move anything.
 
 ## Perfect Forwarding
 ...
