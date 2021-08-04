@@ -14,11 +14,17 @@ If the result of the deduction is a reference to a reference (like `(int& &&)`, 
 [reference collapsing](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.2?topic=operators-reference-collapsing-c11) will occur.
 
 ## Forwarding
+...
 
 ## Perfect Forwarding
+...
 
 ## Sources
 CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
+Feabhas: [_Your handy cut-out-and-keep guide to std::forward and std::move_](https://blog.feabhas.com/2018/04/handy-cut-keep-guide-stdforward-stdmove/) <br />
+SweedenCpp: [_What is this std::forward thing?_](https://www.youtube.com/watch?v=srdwFMZY3Hg), by Paul Dreik <br />
+isocpp.org: [_What's the difference between std::move and std::forward?_](https://isocpp.org/blog/2018/02/quick-q-whats-the-difference-between-stdmove-and-stdforward) <br />
+Mircea Baja's Blog: [_C++ std::move and std::forward_](https://bajamircea.github.io/coding/cpp/2016/04/07/move-forward.html) <br />
 TechMunching: [_Universal Reference and Perfect Forwarding_](https://techmunching.com/universal-reference-and-perfect-forwarding/) (this article is really good) <br />
 Petr Zemek's Blog: [_Universal vs Forwarding References in C++_](https://blog.petrzemek.net/2016/09/17/universal-vs-forwarding-references-in-cpp/) <br />
 open-std.org: [_Forwarding References_](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4164.pdf) (technical article, worth reading) <br />
