@@ -50,9 +50,60 @@ When you pass an argument to a function, it becomes an _lvalue_ regardless of wh
 are variables. If you call _forward()_ on an argument, it casts the argument to the reference type it was originally passed as. This allows you to pass arguments from
 a function to another function without losing the type of reference, which is called perfect forwarding and is vitally important for wrapper and factory functions.
 
-
 In short, _move()_ allows you to treat an _lvalue_ like an _rvalue_ and _forward()_ allows you to preserve the orignal type of reference that was passed.
-...
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+//Prints lvalues
+void print(string& str)
+{
+    cout << "Used an lvalue...\n";
+}
+
+//Prints rvalues
+void print(string&& str)
+{
+    cout << "Used an rvalue...\n";
+}
+
+//Wrapper
+template <typename T>
+void wrapper(T&& value)
+{
+    //Calls all values as lvalues (losing the type of reference)
+    print(value);
+}
+
+//Wrapper that uses 'forward<T>' to preserve value categories
+template <typename T>
+void forwardWrapper(T&& value)
+{
+    //Calls lvalues as lvalues and rvalues and rvalues
+    print(forward<T>(value));
+}
+
+int main()
+{
+    cout << "A demonstration of forwarding. The first value should be 'lvalue' and the second should be 'rvalue'\n\n";
+
+    string str = "This string is an lvalue; 'string()' is an rvalue";
+
+    //Using lvalues and rvalues as arguments WITHOUT forwarding
+    cout << "Using a wrapper WITHOUT using 'forward()'\n";
+    wrapper(str);
+    wrapper(string());
+
+    //Using lvalues and rvalues as arguments WITH forwarding
+    cout << "\nUsing a wrapper WITH using 'forward()'\n";
+    forwardWrapper(str);
+    forwardWrapper(string());
+
+    return 0;
+}
+```
 
 ## Sources
 CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
