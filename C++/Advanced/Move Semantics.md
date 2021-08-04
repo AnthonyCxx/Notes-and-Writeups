@@ -46,7 +46,7 @@ the new object should have copied all primitive values and taken control of all 
 ([C.64](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c64-a-move-operation-should-move-and-leave-its-source-in-a-valid-state)). If you are moving a class, 
 then make the 'default state' is the default state for each data member.
 
-> See below for an explanation on [_std::move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
+> [See below](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Advanced/Move%20Semantics.md#wait-stdmove-doesnt-move-resources) for an explanation on [_std::move()_](https://www.learncpp.com/cpp-tutorial/stdmove/)
 ```C++
 #include <iostream>
 #include <string>
