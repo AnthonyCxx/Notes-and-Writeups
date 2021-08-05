@@ -74,7 +74,7 @@ void print(const T& str, Args... args)
 
 int main()
 {
-    print("This function", "will", "print", "any number of", "strings.");
+    print("This function", "will", "print", "any number of", "strings.");  //or anything else you give it, like '10'
 
     return 0;
 }
