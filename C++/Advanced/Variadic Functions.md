@@ -86,7 +86,7 @@ C++17 added a cleaner, more straight-forward way to write variadic functions: fo
 expression that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. This does make the exact
 placement of the parameter pack a little more tricky and the code a little more difficult to write, so you'll have to look at a few examples before you really get it.
 
-The way a fold expression expands depends on the type of fold (unary or binary) and the placement of the parameter pack (left or right); this means that there are 
+The way a fold expression expands depends on the amount of operators (unary = 1, binary = 2) and the placement of the parameter pack (left or right); this means that there are 
 four types of fold expressions: unary left, unary right, binary left, and binary right. Whether the fold is left or right doesn't matter for some operators (like `+`),
 but does for others (like `-` and `/`).
 
@@ -101,7 +101,7 @@ right `arg1 && (arg2 && (arg3 && arg4))`.
 using namespace std;
 
 template <typename ...Args>     //'...' on the left for declarations
-auto sum(Args&&... args)
+auto sum(Args&& ...args)
 {
     //Unary right fold
     return (... + args);     //Expands to '(((num1 + num2) + num3) + num4) + num5'
@@ -118,7 +118,9 @@ int main()
 > Reference: [_auto_](https://www.geeksforgeeks.org/return-type-deduction-in-c14-with-examples/) return type
 
 ### Binary Folds
-Not all expression can be writte in a unary fold.
+Not all expression can be written with a unary fold because some expressions require more than just an operator, the parameter pack ('...'), and the arguments (args).
+For example, if you wanted to write a variadic _print()_ function, you would need to preface the expression '_cout <<_', but you also can't have more than one operator
+in a unary fold expression. 
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
