@@ -70,7 +70,7 @@ void print(const T& str, Args ...args)
     cout << str << ' ';  //Add a space (to separate strings)
 
     //Print the rest of the strings...
-    print(args...);
+    print(args...);   //Eventually reaches 'print(T)'
 }
 
 int main()
