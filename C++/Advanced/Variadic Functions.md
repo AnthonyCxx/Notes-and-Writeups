@@ -118,17 +118,68 @@ int main()
 > Reference: [_auto_](https://www.geeksforgeeks.org/return-type-deduction-in-c14-with-examples/) return type
 
 ### Binary Folds
-Not all expression can be written with a unary fold because some expressions require more than just an operator, the parameter pack ('...'), and the arguments (args).
+Not all expressions can be written with a unary fold because some expressions require more than just an operator, the parameter pack ('...'), and the arguments (args).
 For example, if you wanted to write a variadic _print()_ function, you would need to preface the expression '_cout <<_', but you also can't have more than one operator
-in a unary fold expression. To write a binary fold, preface a left fold with a value/expression and an operator (e.g. `base - ... - args` lets you subtract from a base with
-any number of arguments) and postface a right fold with the same
-(e.g. `.`). If the value prefixing/postfixing the binary fold is not in parentheses, the compiler will throw an error because it is not a single 'value'.
-
-...
+in a unary fold expression. Binary folds solve  this problem by allowsing you to preface/postface a fold with an value or expression (here, we preface it with `cout <<`.
+To write a binary fold, preface a left fold with a value/expression and an operator (e.g. `base - ... - args` lets you subtract from a base with
+any number of arguments) and postface a right fold with the same (e.g. `args - ... - base`). If the value prefixing/postfixing the binary fold is not in parentheses, 
+the compiler will throw an error because it is not a single 'value'.
 
 ```C++
+// C++17: COMPILE WITH 'g++ -std=c++17 file.cpp'  //
+#include <iostream>
+using namespace std;
 
+template <typename ...Args>
+void println(Args&& ...args)
+{
+        //Binary fold expression
+    (cout << ... << args) << '\n';
+}
+
+int main()
+{
+        println("this ", "prints " "fine: ", 3.14159265);
+}
 ```
+
+### Folding with Commas
+Folding over a comma allows you to apply a function to each argument in a parameter pack. Any fold that contains a comma will be a right fold.
+
+```C++
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+template <typename T, typename ...Args>
+vector<T> powers(Args&& ...args)
+{
+    //Declare a vector of type 'T'
+    vector<T> powers;
+
+    //Fill the vector with the powers of the given numbers
+    (powers.push_back(pow(args, 2)), ...);
+
+    //Return the vector of powers
+    return powers;
+}
+
+int main()
+{
+    //Print all the powers of the numbers 1-5
+    for(auto pow : powers<int>(1, 2, 3, 4, 5))
+    {
+        cout << pow << ' ';
+    }
+    cout << '\n';
+
+    return 0;
+}
+```
+
+### _sizeof...()_
+The _sizeof...()_ operator returns how many arguments the fold expression accepted.
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
