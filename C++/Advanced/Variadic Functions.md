@@ -90,7 +90,11 @@ The way a fold expression expands depends on the type of fold (unary or binary) 
 four types of fold expressions: unary left, unary right, binary left, and binary right. Whether the fold is left or right doesn't matter for some operators (like `+`),
 but does for others (like `-` and `/`).
 
-Example 1: a variadic _sum()_ function
+### Unary Folds
+Unary folds fold an expression over an operator (see [valid fold expression operators](https://docs.w3cub.com/cpp/language/fold)). An expression `... + args`
+(a unary left fold, since the '...' is on the left) would expand to `((arg1 + arg2) + arg3) + arg4` whereas a unary right fold (`args && ...`) would expand towards the 
+right `arg1 && (arg2 && (arg3 && arg4))`.
+
 ```C++
 // C++17: COMPILE WITH 'g++ -std=c++17 file.cpp'  //
 #include <iostream>
@@ -100,7 +104,7 @@ template <typename ...Args>     //'...' on the left for declarations
 auto sum(Args&&... args)
 {
     //Unary right fold
-    return (args + ...);     //Expands to '(((num1 + num2) + num3) + num4) + num5'
+    return (... + args);     //Expands to '(((num1 + num2) + num3) + num4) + num5'
 }
 
 int main()
@@ -113,12 +117,8 @@ int main()
 ```
 > Reference: [_auto_](https://www.geeksforgeeks.org/return-type-deduction-in-c14-with-examples/) return type
 
-### Unary Folds
-Unary folds fold an expression over an operator (see [valid fold expression operators](https://docs.w3cub.com/cpp/language/fold)). An expression `... + args`
-(a unary left fold, since the '...' is on the left) would expand to `((arg1 + arg2) + arg3) + arg4` whereas a unary right fold (`args && ...`) would expand towards the 
-right `arg1 && (arg2 && (arg3 && arg4))`.
-
 ### Binary Folds
+Not all expression can be writte in a unary fold.
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
@@ -130,7 +130,7 @@ Modernes C++: [_C++ Insights - Variadic Templates_](https://www.modernescpp.com/
 Eli Bendersky's Blog: [_Variadic templates in C++_](https://eli.thegreenplace.net/2014/variadic-templates-in-c/) <br />
 Kevin Ushey's Blog: [_Intro to C++ Variadic Templates_](https://kevinushey.github.io/blog/2016/01/27/introduction-to-c++-variadic-templates/) <br />
 C++ Weekly With Jason Turner: [_C++ Weekly - Ep 20 C++17's Fold Expressions - Introduction_](https://www.youtube.com/watch?v=nhk8pF_SlTk) <br />
-: [__]() <br />
-: [__]() <br />
-: [__]() <br />
-: [__]() <br />
+cppreference.com: [_C++17 Fold Expressions_](https://en.cppreference.com/w/cpp/language/fold) <br />
+bccnsoft.com: [_fold expressions_](https://doc.bccnsoft.com/docs/cppreference2015/en/cpp/language/fold.html) <br />
+FluentC++: [_C++ Fold Expressions 101_](https://www.fluentcpp.com/2021/03/12/cpp-fold-expressions/) <br />
+SO Documentation: [_Fold Expressions_](https://sodocumentation.net/cplusplus/topic/2676/fold-expressions) <br />
