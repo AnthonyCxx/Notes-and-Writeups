@@ -88,7 +88,7 @@ placement of the parameter pack a little more tricky and the code a little more 
 
 Example 1: a variadic _sum()_ function
 ```C++
-// C++17: COMPILE WITH 'g++ -std=c++17 file.cpp  //
+// C++17: COMPILE WITH 'g++ -std=c++17 file.cpp'  //
 #include <iostream>
 using namespace std;
 
