@@ -112,6 +112,7 @@ Example 2: a variadic _print()_ function
 ```C++
 
 ```
+[https://sodocumentation.net/cplusplus/topic/2676/fold-expressions](https://sodocumentation.net/cplusplus/topic/2676/fold-expressions)
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
