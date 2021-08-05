@@ -5,15 +5,16 @@ function like _add()_ that can take any number of variables, literals, or combin
 Though the implementation differs, all methods of creating variadic functions use an elipsis ('...', called the parameter pack) to represent the arguments passed
 to the function as a list. Other languages also work the way way; C# uses the [_params_](https://www.c-sharpcorner.com/UploadFile/c63ec5/use-params-keyword-in-C-Sharp/) keyword
 to pass the list of arguments as an array and Python uses [_\*args_ and \*kwargs](https://www.geeksforgeeks.org/args-kwargs-python/) to pass the arguments as a list.
-When the elipsis ('...') is placed on the left side of a type (`...Args`), it indicates that there is a parameter pack; when placed on the right side of a type (`args...`), 
-it expands into the parameter pack. Use `...Args` to declare a parameter pack and `args...` to use one.
 
 ## Variadic Templates (C++11)
 Variadic templates are templates that can instantiate functions of both varying types _and_ varying parameters. These functions are 'recursive' (but not really) because
 they start with however many elements the give function has and perform the body of the function on each element one by one until they reach no elements, at which point 
 the base case is called. A function _add(1, 2, 3)_ would run _add(1, 2, 3)_, then _add(2, 3)_, and then _add(3)_ (the base case, which just returns '_3_'). Interestingly
 enough, variadic templates involve no actual recursion since the compiler creates the functions with the appropriate amount of arguments for each call, so it's only 
-calling another function (even though it looks recursive). Because of this, variadic templates do not inherit the performance problems that recursive functions have.
+calling another function (even though it looks recursive). Because of this, variadic templates do not inherit the performance overhead that recursive functions have.
+
+When the elipsis ('...') is placed on the left side of a type (`...Args`), it indicates that there is a parameter pack; when placed on the right side of a type (`args...`), 
+it expands into the parameter pack. Use `...Args` to declare a parameter pack and `args...` to use one.
 
 Like the typename '_T_', there is nothing special about the typename '_Args_' (which is short for 'arguments'), you can change it to anything — it's just the typename
 of the parameter pack.
