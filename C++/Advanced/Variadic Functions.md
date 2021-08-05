@@ -55,7 +55,7 @@ using namespace std;
 
 //Base Case
 template <typename T>
-void print(T str)
+void print(const T& str)
 {
     //Base case adds the final '\n'
     cout << str << '\n';
@@ -63,7 +63,7 @@ void print(T str)
 
 //Variadic Print Function
 template <typename T, typename ...Args>
-void print(T str, Args... args)
+void print(const T& str, Args... args)
 {
     //Print a string
     cout << str << ' ';  //Add a space (to separate strings)
