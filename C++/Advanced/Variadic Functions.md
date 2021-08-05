@@ -133,7 +133,7 @@ using namespace std;
 template <typename ...Args>
 void println(Args&& ...args)
 {
-        //Binary fold expression
+    //Binary fold expression
     (cout << ... << args) << '\n';
 }
 
