@@ -99,7 +99,7 @@ template <typename ...Args>     //'...' on the left for declarations
 auto sum(Args&&... args)
 {
     //Binary right fold
-    return (args + ...);     //Apply 'args +' to all elements: 'num1 + num2 + num3...'
+    return (args + ...);     //Expands to '(((num1 + num2) + num3) + num4) + num5'
 }
 
 int main()
