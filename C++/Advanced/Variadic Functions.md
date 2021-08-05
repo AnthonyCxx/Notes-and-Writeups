@@ -144,10 +144,11 @@ int main()
 ```
 
 ### Folding with Commas
-Folding over a comma allows you to apply a function to each argument in a parameter pack. Any fold that contains a comma will be a right fold. <br />
+Folding over a comma allows you to apply a function to each argument in a parameter pack. Any fold that contains a comma will be a right fold. Honestly,
 I have no idea how this works.
 
 ```C++
+// C++17: COMPILE WITH 'g++ -std=c++17 file.cpp'  //
 #include <iostream>
 #include <vector>
 #include <cmath>
