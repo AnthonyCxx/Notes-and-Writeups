@@ -64,7 +64,7 @@ void print(const T& str)
 
 //Variadic Print Function
 template <typename T, typename ...Args>
-void print(const T& str, Args... args)
+void print(const T& str, Args ...args)
 {
     //Print a string
     cout << str << ' ';  //Add a space (to separate strings)
