@@ -83,8 +83,8 @@ int main()
 
 ## Fold Expressions (C++17)
 C++17 added a cleaner, more straight-forward way to write variadic functions: fold expressions. Fold expressions allow you to write a single function that contains an
-expression that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. This does make the exact
-placement of the parameter pack a little more tricky and the code a little more difficult to write, so you'll have to look at a few examples before you really get it.
+expression that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. The only real drawback is that 
+fold expressions tend to be simple, since they have such a specific form. If you need a more complex variadic function, use a variadic template.
 
 The way a fold expression expands depends on the amount of operators (unary = 1, binary = 2) and the placement of the parameter pack (left or right); this means that there are 
 four types of fold expressions: unary left, unary right, binary left, and binary right. Whether the fold is left or right doesn't matter for some operators (like `+`),
@@ -120,7 +120,15 @@ int main()
 ### Binary Folds
 Not all expression can be written with a unary fold because some expressions require more than just an operator, the parameter pack ('...'), and the arguments (args).
 For example, if you wanted to write a variadic _print()_ function, you would need to preface the expression '_cout <<_', but you also can't have more than one operator
-in a unary fold expression. 
+in a unary fold expression. To write a binary fold, preface a left fold with a value/expression and an operator (e.g. `base - ... - args` lets you subtract from a base with
+any number of arguments) and postface a right fold with the same
+(e.g. `.`). If the value prefixing/postfixing the binary fold is not in parentheses, the compiler will throw an error because it is not a single 'value'.
+
+...
+
+```C++
+
+```
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
