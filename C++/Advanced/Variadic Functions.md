@@ -94,7 +94,7 @@ using namespace std;
 
 
 template <typename ...T>  //'...' on the left for declarations
-auto sum(T... num)       //Return type cannot be 'T' since it's a parameter pack...
+auto sum(T... num)       //Return type cannot be 'T' since 'T' is the parameter pack...
 {
     return (num + ...);     //Apply 'num +' to all elements: 'num1 + num2 + num3...'
 }
