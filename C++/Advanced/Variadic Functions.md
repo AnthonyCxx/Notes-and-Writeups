@@ -26,14 +26,14 @@ using namespace std;
 
 //Base case
 template <typename T>
-T sum(T num)
+T sum(T&& num)
 {
     return num;
 }
 
 //Variadic Template
 template <typename T, typename ...Args>
-T sum(T num, Args ...args)
+T sum(T&& num, Args ...args)
 {
     //Takes the first number and calls 'sum()' again, calling with 1 less item
     return num + sum(args...);
@@ -56,7 +56,7 @@ using namespace std;
 
 //Base Case
 template <typename T>
-void print(const T& str)
+void print(T&& str)
 {
     //Base case adds the final '\n'
     cout << str << '\n';
@@ -64,7 +64,7 @@ void print(const T& str)
 
 //Variadic Print Function
 template <typename T, typename ...Args>
-void print(const T& str, Args ...args)
+void print(T&& str, Args ...args)
 {
     //Print a string
     cout << str << ' ';  //Add a space (to separate strings)
