@@ -87,7 +87,8 @@ expression that is applied to the parameter pack. Once expanded, the expression 
 placement of the parameter pack a little more tricky and the code a little more difficult to write, so you'll have to look at a few examples before you really get it.
 
 The way a fold expression expands depends on the type of fold (unary or binary) and the placement of the parameter pack (left or right); this means that there are 
-four types of fold expressions: unary left, unary right, binary left, and binary right.
+four types of fold expressions: unary left, unary right, binary left, and binary right. Whether the fold is left or right doesn't matter for some operators (like `+`),
+but does for others (like `-` and `/`).
 
 Example 1: a variadic _sum()_ function
 ```C++
@@ -98,7 +99,7 @@ using namespace std;
 template <typename ...Args>     //'...' on the left for declarations
 auto sum(Args&&... args)
 {
-    //Binary right fold
+    //Unary right fold
     return (args + ...);     //Expands to '(((num1 + num2) + num3) + num4) + num5'
 }
 
@@ -113,6 +114,9 @@ int main()
 > Reference: [_auto_](https://www.geeksforgeeks.org/return-type-deduction-in-c14-with-examples/) return type
 
 ### Unary Folds
+Unary folds fold an expression over an operator (see [valid fold expression operators](https://docs.w3cub.com/cpp/language/fold)). An expression `... + args`
+(a unary left fold, since the '...' is on the left) would expand to `((arg1 + arg2) + arg3) + arg4` whereas a unary right fold (`args + ...`) would expand like
+`arg1 + (arg2 + (arg3 + arg4))`.
 
 ### Binary Folds
 
