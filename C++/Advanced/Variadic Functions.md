@@ -81,10 +81,36 @@ int main()
 ```
 
 ## Fold Expressions (C++17)
-C++17 added a cleaner, non-recursive way to write variadic functions: fold expressions. Fold expressions allow you to write a single function that contains an
-expressions that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. This does make the exact
-placement of the parameter pack a little more tricky, so you'll have to look at a few examples before you really get it.
+C++17 added a cleaner, more straight-forward way to write variadic functions: fold expressions. Fold expressions allow you to write a single function that contains an
+expression that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. This does make the exact
+placement of the parameter pack a little more tricky and the code a little more difficult to write, so you'll have to look at a few examples before you really get it.
 
+Example 1: a variadic _sum()_ function
+```C++
+// C++17: COMPILE WITH 'g++ -std=c++17 file.cpp  //
+#include <iostream>
+using namespace std;
+
+
+template <typename ...T>  //'...' on the left for declarations
+auto sum(T... num)       //Return type cannot be 'T' since it's a parameter pack...
+{
+    return (num + ...);     //Apply 'num +' to all elements: 'num1 + num2 + num3...'
+}
+
+int main()
+{
+    cout << "8 + 49 + 72 = " << sum(8, 49, 72) << '\n';
+    cout << "7.2 + 3513 = " << sum(7.2, 3513) << '\n';
+
+    return 0;
+}
+```
+
+Example 2: a variadic _print()_ function
+```C++
+
+```
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
@@ -95,7 +121,7 @@ Microsoft C++ Documentation: [_Ellipsis and Variadic Templates_](https://docs.mi
 Modernes C++: [_C++ Insights - Variadic Templates_](https://www.modernescpp.com/index.php/c-insights-variadic-templates) <br />
 Eli Bendersky's Blog: [_Variadic templates in C++_](https://eli.thegreenplace.net/2014/variadic-templates-in-c/) <br />
 Kevin Ushey's Blog: [_Intro to C++ Variadic Templates_](https://kevinushey.github.io/blog/2016/01/27/introduction-to-c++-variadic-templates/) <br />
-: [__]() <br />
+C++ Weekly With Jason Turner: [_C++ Weekly - Ep 20 C++17's Fold Expressions - Introduction_](https://www.youtube.com/watch?v=nhk8pF_SlTk) <br />
 : [__]() <br />
 : [__]() <br />
 : [__]() <br />
