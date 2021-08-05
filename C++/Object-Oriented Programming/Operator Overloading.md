@@ -533,7 +533,7 @@ SecureString::~SecureString()
         dispose();
 
         //Delete the heap allocated char array
-        delete [] data;
+    delete [] data;
 }
 
 //Dispose: zero-writes the memory the string was allocated to
