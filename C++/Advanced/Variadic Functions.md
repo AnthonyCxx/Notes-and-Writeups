@@ -88,7 +88,7 @@ placement of the parameter pack a little more tricky, so you'll have to look at 
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
-Don't use this in C++, it's not type-safe and if you aren't careful, you'll get a segmentation fault.
+Honestly though, don't use it in C++, it's not type-safe and if you aren't careful, you'll get a segmentation fault.
 
 ## Sources
 Microsoft C++ Documentation: [_Ellipsis and Variadic Templates_](https://docs.microsoft.com/en-us/cpp/cpp/ellipses-and-variadic-templates?view=msvc-160) <br />
