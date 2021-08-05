@@ -15,7 +15,7 @@ the base case is called. A function _add(1, 2, 3)_ would run _add(1, 2, 3)_, the
 enough, variadic templates involve no actual recursion since the compiler creates the functions with the appropriate amount of arguments for each call, so it's only 
 calling another function (even though it looks recursive). Because of this, variadic templates do not inherit the performance problems that recursive functions have.
 
-Like the typename '_T_', there is nothing special about the typename '_Args_', you can change that to whatever you want — it just has to have the parameter pack.
+Like the typename '_T_', there is nothing special about the typename '_Args_', you can change it to anything — it's just the typename of the parameter pack.
 ```C++
 #include <iostream>
 using namespace std;
