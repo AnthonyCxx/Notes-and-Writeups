@@ -560,6 +560,9 @@ int main()
 ```
 
 ## Preventing Certain Implicit Type Conversions
+The [_explicit_](https://www.geeksforgeeks.org/g-fact-93/) can be used to prevent the compiler from implicitly converting the datatypes of parameters to fit a constructor.
+If a constructor marked _explicit_ took an int as a paramter, then you wouldn't be able to pass a double. However, this method prevents _all_ implicit converions; sometimes,
+only preventing some conversions is desirable. By setting specific constructors to `= delete`, we can prevent those specific conversions.
 
 ## Sources
 Book: [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
