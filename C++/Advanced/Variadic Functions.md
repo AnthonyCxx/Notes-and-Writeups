@@ -106,6 +106,7 @@ int main()
     return 0;
 }
 ```
+> Reference: [_auto_](https://www.geeksforgeeks.org/return-type-deduction-in-c14-with-examples/) return type
 
 Example 2: a variadic _print()_ function
 ```C++
