@@ -115,8 +115,8 @@ int main()
 
 ### Unary Folds
 Unary folds fold an expression over an operator (see [valid fold expression operators](https://docs.w3cub.com/cpp/language/fold)). An expression `... + args`
-(a unary left fold, since the '...' is on the left) would expand to `((arg1 + arg2) + arg3) + arg4` whereas a unary right fold (`args + ...`) would expand like
-`arg1 + (arg2 + (arg3 + arg4))`.
+(a unary left fold, since the '...' is on the left) would expand to `((arg1 + arg2) + arg3) + arg4` whereas a unary right fold (`args && ...`) would expand towards the 
+right `arg1 && (arg2 && (arg3 && arg4))`.
 
 ### Binary Folds
 
@@ -130,6 +130,7 @@ Modernes C++: [_C++ Insights - Variadic Templates_](https://www.modernescpp.com/
 Eli Bendersky's Blog: [_Variadic templates in C++_](https://eli.thegreenplace.net/2014/variadic-templates-in-c/) <br />
 Kevin Ushey's Blog: [_Intro to C++ Variadic Templates_](https://kevinushey.github.io/blog/2016/01/27/introduction-to-c++-variadic-templates/) <br />
 C++ Weekly With Jason Turner: [_C++ Weekly - Ep 20 C++17's Fold Expressions - Introduction_](https://www.youtube.com/watch?v=nhk8pF_SlTk) <br />
+: [__]() <br />
 : [__]() <br />
 : [__]() <br />
 : [__]() <br />
