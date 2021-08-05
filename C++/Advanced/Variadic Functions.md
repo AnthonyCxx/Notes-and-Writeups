@@ -6,7 +6,7 @@ Though the implementation differs, all methods of creating variadic functions us
 to the function as a list. Other languages also work the way way; C# uses the [_params_](https://www.c-sharpcorner.com/UploadFile/c63ec5/use-params-keyword-in-C-Sharp/) keyword
 to pass the list of arguments as an array and Python uses [_\*args_ and \*kwargs](https://www.geeksforgeeks.org/args-kwargs-python/) to pass the arguments as a list.
 When the elipsis ('...') is placed on the left side of a type (`...Args`), it indicates that there is a parameter pack; when placed on the right side of a type (`args...`), 
-it expands into the parameter pack.
+it expands into the parameter pack. Use `...Args` to declare a parameter pack and `args...` to use one.
 
 ## Variadic Templates (C++11)
 Variadic templates are templates that can instantiate functions of both varying types _and_ varying parameters. These functions are 'recursive' (but not really) because
