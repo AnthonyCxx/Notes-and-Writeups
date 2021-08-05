@@ -15,7 +15,10 @@ the base case is called. A function _add(1, 2, 3)_ would run _add(1, 2, 3)_, the
 enough, variadic templates involve no actual recursion since the compiler creates the functions with the appropriate amount of arguments for each call, so it's only 
 calling another function (even though it looks recursive). Because of this, variadic templates do not inherit the performance problems that recursive functions have.
 
-Like the typename '_T_', there is nothing special about the typename '_Args_', you can change it to anything — it's just the typename of the parameter pack.
+Like the typename '_T_', there is nothing special about the typename '_Args_' (which is short for 'arguments'), you can change it to anything — it's just the typename
+of the parameter pack.
+
+Example 1: a variadic _sum()_ function
 ```C++
 #include <iostream>
 using namespace std;
@@ -28,8 +31,8 @@ T sum(T num)
 }
 
 //Variadic Template
-template <typename T, typename... Args>
-T sum(T num, Args... args)
+template <typename T, typename ...Args>
+T sum(T num, Args ...args)
 {
     //Takes the first number and calls 'sum()' again, calling with 1 less item
     return num + sum(args...);
@@ -40,6 +43,38 @@ int main()
     cout << "1 + 2 = " << sum(1, 2) << '\n';
 
     cout << "7 + 14 + 900 = " << sum(7, 14, 900) << '\n';
+
+    return 0;
+}
+```
+
+Example 2: a variadic _print()_ function
+```C++
+#include <iostream>
+using namespace std;
+
+//Base Case
+template <typename T>
+void print(T str)
+{
+    //Base case adds the final '\n'
+    cout << str << '\n';
+}
+
+//Variadic Print Function
+template <typename T, typename ...Args>
+void print(T str, Args... args)
+{
+    //Print a string
+    cout << str << ' ';  //Add a space (to separate strings)
+
+    //Print the rest of the strings...
+    print(args...);
+}
+
+int main()
+{
+    print("This function", "will", "print", "any number of", "strings.");
 
     return 0;
 }
