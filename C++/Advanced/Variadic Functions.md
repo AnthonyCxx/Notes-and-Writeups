@@ -144,7 +144,8 @@ int main()
 ```
 
 ### Folding with Commas
-Folding over a comma allows you to apply a function to each argument in a parameter pack. Any fold that contains a comma will be a right fold.
+Folding over a comma allows you to apply a function to each argument in a parameter pack. Any fold that contains a comma will be a right fold. <br />
+I have no idea how this works.
 
 ```C++
 #include <iostream>
@@ -152,25 +153,26 @@ Folding over a comma allows you to apply a function to each argument in a parame
 #include <cmath>
 using namespace std;
 
+//Returns a list of the squares of the given arguments
 template <typename T, typename ...Args>
-vector<T> powers(Args&& ...args)
+vector<T> squares(Args&& ...args)
 {
     //Declare a vector of type 'T'
-    vector<T> powers;
+    vector<T> squares;
 
-    //Fill the vector with the powers of the given numbers
-    (powers.push_back(pow(args, 2)), ...);
+    //Fill the vector with the squares of the given numbers
+    (squares.push_back(pow(args, 2)), ...);
 
-    //Return the vector of powers
-    return powers;
+    //Return the vector of squares
+    return squares;
 }
 
 int main()
 {
-    //Print all the powers of the numbers 1-5
-    for(auto pow : powers<int>(1, 2, 3, 4, 5))
+    //Print all the squares of the numbers 1-5
+    for(auto square : squares<int>(1, 2, 3, 4, 5))
     {
-        cout << pow << ' ';
+        cout << square << ' ';
     }
     cout << '\n';
 
