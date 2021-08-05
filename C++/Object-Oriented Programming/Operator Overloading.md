@@ -532,7 +532,7 @@ SecureString::~SecureString()
     if (!disposed)
         dispose();
 
-        //Delete the heap allocated char array
+    //Delete the heap allocated char array
     delete [] data;
 }
 
