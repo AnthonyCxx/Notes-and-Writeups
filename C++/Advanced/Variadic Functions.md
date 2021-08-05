@@ -86,18 +86,20 @@ C++17 added a cleaner, more straight-forward way to write variadic functions: fo
 expression that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. This does make the exact
 placement of the parameter pack a little more tricky and the code a little more difficult to write, so you'll have to look at a few examples before you really get it.
 
+The way a fold expression expands depends on the type of operator (unary or binary) and the placement of the parameter pack (left or right); this means that there are 
+four types of fold expressions: unary left, unary right, binary left, and binary right.
+
 Example 1: a variadic _sum()_ function
 ```C++
 // C++17: COMPILE WITH 'g++ -std=c++17 file.cpp'  //
 #include <iostream>
 using namespace std;
 
-
-template <typename ...T>  //'...' on the left for declarations
-auto sum(T... num)       //Return type cannot be 'T' since 'T' is the parameter pack...
+template <typename ...Args>     //'...' on the left for declarations
+auto sum(Args&&... args)
 {
     //Binary right fold
-    return (num + ...);     //Apply 'num +' to all elements: 'num1 + num2 + num3...'
+    return (args + ...);     //Apply 'args +' to all elements: 'num1 + num2 + num3...'
 }
 
 int main()
@@ -112,7 +114,22 @@ int main()
 
 Example 2: a variadic _print()_ function
 ```C++
+// C++17: COMPILE WITH 'g++ -std=c++17 file.cpp'  //
+#include <iostream>
+using namespace std;
 
+template <typename ...Args>
+void print(Args&& ...args)
+{
+    (cout << ... << args) << '\n';
+}
+
+int main()
+{
+    print("this", " works");
+
+    return 0;
+}
 ```
 [https://sodocumentation.net/cplusplus/topic/2676/fold-expressions](https://sodocumentation.net/cplusplus/topic/2676/fold-expressions)
 
