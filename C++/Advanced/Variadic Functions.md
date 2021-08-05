@@ -81,8 +81,10 @@ int main()
 ```
 
 ## Fold Expressions (C++17)
-C++17 added a cleaner, non-recursive way to write variadic functions: fold expressions.
-[https://www.youtube.com/watch?v=nhk8pF_SlTk](https://www.youtube.com/watch?v=nhk8pF_SlTk) <br />
+C++17 added a cleaner, non-recursive way to write variadic functions: fold expressions. Fold expressions allow you to write a single function that contains an
+expressions that is applied to the parameter pack. Once expanded, the expression will be applied to every member of the paramter pack. This does make the exact
+placement of the parameter pack a little more tricky, so you'll have to look at a few examples before you really get it.
+
 
 ## C-Style Variadic Functions
 Don't use this in C++, it's not type-safe and if you aren't careful, you'll get a segmentation fault.
