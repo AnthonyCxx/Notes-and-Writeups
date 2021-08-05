@@ -503,7 +503,7 @@ class SecureString  //Mimics C#'s 'SecureString' class under 'System.Security'
         //Delete all methods of referencing the 'SecureString' object (copy constructor, operators)
         SecureString(const SecureString&) = delete;               //Copy Constructor
         SecureString* operator&() const = delete;                //Address-of operator
-        SecureString& operator=(const SecureString&) = delete;  //Assignment assignment operator
+        SecureString& operator=(const SecureString&) = delete;  //Assignment operator
 };
 
 //Constructor (const char*)
