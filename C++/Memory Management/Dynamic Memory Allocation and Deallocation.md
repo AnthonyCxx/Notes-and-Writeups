@@ -15,6 +15,7 @@ whenever you need it. The _new_ keyword also returns a pointer to the newly-allo
 need to dereference the pointer to delete what it points to because you can only use _delete_ with pointers, so it's implicitly understood. And no,
 writing `delete ptr;` does not delete the pointer, just its contents.
 
+**WARNING**: if you delete a pointer that has already been deleted (if you delete a pointer twice), then you will get a segmentation fault and your program will crash.
 ```C++
 #include <iostream>
 using namespace std;
