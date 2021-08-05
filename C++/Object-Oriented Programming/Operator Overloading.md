@@ -540,7 +540,7 @@ SecureString::~SecureString()
 void SecureString::dispose()
 {
     //Write binary zeros to the c-string
-    memset(data, '\0', strlen(data));
+    memset(data, '\0', size);
 }
 
 // DRIVER CODE //
