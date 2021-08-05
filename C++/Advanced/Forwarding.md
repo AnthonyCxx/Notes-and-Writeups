@@ -1,5 +1,7 @@
 # Forwarding in C++
 > Pre-requisite: [_lvalues and rvalues_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md#lvalues-and-rvalues) <br />
+Forwarding uses the function _forward()_ to preserve the value type (_lvalue_ or _rvalue_) of parameters passed to a function so they can be properly used within the 
+function and/or passed onto other functions.
 
 ## Forwarding References (Universal References)
 > Recommended Reading: [_Universal References in C++11_](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers), by Scott Meyers <br />
