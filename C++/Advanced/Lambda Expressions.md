@@ -16,6 +16,12 @@ to variables within the same scope.
 -> return_type : the return type of the function (optional)
 {} : the body of the function
 */
+
+//Example (notice the ';' at the end of the lambda)
+auto isLowercase = [](char letter) { return letter >= 97 && letter <= 122; };
+
+if (isLowercase('a'))
+    cout << "The letter 'a' is lowercase\n";
 ```
 
 ## Sources
