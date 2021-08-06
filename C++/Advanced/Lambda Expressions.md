@@ -26,6 +26,11 @@ if (isLowercase('a'))  //Use the lambda like a function
     cout << "The letter 'a' is lowercase\n";
 ```
 
+## Using Lambdas as Function Parameter
+A function can take another function as a paramter, which is often 
+
+## Capture Clauses and Capture Lists
+
 ## Sources
 Microsoft C++ Documentation: [_Lambda expressions in C++_](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160) <br />
 cppreference.com: [_Lambda expressions_](https://en.cppreference.com/w/cpp/language/lambda) <br />
