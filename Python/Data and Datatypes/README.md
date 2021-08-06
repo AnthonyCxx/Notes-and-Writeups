@@ -2,5 +2,5 @@
 
 | File | Function |
 | ---- | -------- |
-| [Datatypes]() | the basic datatypes that make up C++ |
+| [Built-in Datatypes]() | the basic datatypes that make up Python |
 | [Operators and Operator Precedence]() | functions associated with tokens |
