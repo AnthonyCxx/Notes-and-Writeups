@@ -567,7 +567,83 @@ You can define [literal suffixes](https://www.geeksforgeeks.org/integer-literal-
 followed by a string. Classes can have multiple user-defined literals
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
+//Because I am NOT writing out 'unsigned long long' that many times...
+using ULL = unsigned long long;  //Alias 'ULL' is now short for 'unsigned long long'
+
+// DISTANCE CLASS //
+class Distance   //Uses meters as the standard unit of measurement
+{
+    private:
+        ULL distance;
+
+    public:
+        Distance(ULL);
+        ULL getDistance() const;
+        string str() const;
+};
+
+//Constructor
+Distance::Distance(ULL in_distance)
+{
+    distance = in_distance;
+}
+
+//Get the distance
+ULL Distance::getDistance() const
+{
+    return distance;
+}
+
+string Distance::str() const
+{
+    return to_string(distance) + "m";
+}
+
+// USER-DEFINED LITERALS //
+
+//Kilometers
+Distance operator""_km(ULL distance)
+{
+    return Distance(1000 * distance);
+}
+
+//Meters
+Distance operator""_m(ULL distance)
+{
+    return Distance(distance);
+}
+
+//Centimeters
+Distance operator""_cm(ULL distance)
+{
+    return Distance(distance / 100);
+}
+
+//Millimeters
+Distance operator""_mm(ULL distance)
+{
+    return Distance(distance / 1000);
+}
+
+// DRIVER CODE //
+int main()
+{
+    Distance lengthKM = 1000_km;      //1000 kilometers
+    Distance lengthM  = 1000_m;      //1000 meters
+    Distance lengthCM = 1000_cm;    //1000 centimeters
+    Distance lengthMM = 1000_mm;   //1000 millimeters
+
+    cout << "Distance (km): " << lengthKM.str() << '\n';
+    cout << "Distance (m): " << lengthM.str() << '\n';
+    cout << "Distance (cm): " << lengthCM.str() << '\n';
+    cout << "Distance (mm): " << lengthMM.str() << '\n';
+
+    return 0;
+}
 ```
 
 ## Sources
