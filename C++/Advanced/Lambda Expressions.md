@@ -54,8 +54,6 @@ int main()
 }
 ```
 
-## Capture Clauses and Capture Lists
-
 ## Sources
 Microsoft C++ Documentation: [_Lambda expressions in C++_](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160) <br />
 cppreference.com: [_Lambda expressions_](https://en.cppreference.com/w/cpp/language/lambda) <br />
