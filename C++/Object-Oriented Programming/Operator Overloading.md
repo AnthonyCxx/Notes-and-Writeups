@@ -563,8 +563,8 @@ If a constructor marked _explicit_ took an int as a paramter, then you wouldn't 
 only preventing some conversions is desirable. By setting specific constructors to `= delete`, we can prevent those specific conversions.
 
 ## User-defined Literals
-You can define [literal suffixes](https://www.geeksforgeeks.org/integer-literal-in-c-cpp-prefixes-suffixes/) for classes by overloading the _""_ operator followed by a string.
-Classes can have multiple user-defined literals. The overload should not be a part of the class.
+You can define [literal suffixes](https://www.geeksforgeeks.org/integer-literal-in-c-cpp-prefixes-suffixes/) for classes by overloading the _""_ operator (outside the class)
+followed by a string. Classes can have multiple user-defined literals
 
 ```C++
 
