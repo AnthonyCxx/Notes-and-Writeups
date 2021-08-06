@@ -19,7 +19,7 @@ to variables within the same scope.
 {} : the body of the function
 */
 
-//Example (notice the ';' at the end of the lambda)
+//Example (notice the ';' at the end of the lambda, only needed for declarations)
 auto isLowercase = [](char letter) -> bool { return letter >= 97 && letter <= 122; };
 
 if (isLowercase('a'))  //Use the lambda like a function
