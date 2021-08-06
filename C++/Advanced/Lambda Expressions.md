@@ -45,7 +45,7 @@ int main()
     cout << "BEFORE Transformation: " << book << '\n';
 
     //Transform the string to uppercase
-    for_each(book.begin(), book.end(), [](char& c) { if (isupper(c)) c = tolower(c); else if (islower(c)) c = toupper(c); } );
+    for_each(book.begin(), book.end(), [](char& c) { if (isupper(c)) c = tolower(c); else if (islower(c)) c = toupper(c); });
 
     //After
     cout << "AFTER Transformation: " << book << '\n';
