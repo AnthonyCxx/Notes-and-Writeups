@@ -16,3 +16,12 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+## The _main()_ function and clause
+The _main()_ function should be the entry point of your code. The clause `if __name__ == '__main__'` is explained [here](https://stackoverflow.com/questions/419163/what-does-if-name-main-do) and basically just prevents other files from automatically running when being imported (which is a problem since Python is an interpreted language).
+
+## _print("Hello, World!")_
+This line outputs the string "Hello, World!" onto the screen and implicitly begins a new line
+
+## Comments
+Pythony uses a single octothorp (#) for single-line comments and uses either ''' or """ for multi-line comments.
