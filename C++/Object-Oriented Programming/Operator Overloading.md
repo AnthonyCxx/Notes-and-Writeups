@@ -564,6 +564,14 @@ The [_explicit_](https://www.geeksforgeeks.org/g-fact-93/) can be used to preven
 If a constructor marked _explicit_ took an int as a paramter, then you wouldn't be able to pass a double. However, this method prevents _all_ implicit converions; sometimes,
 only preventing some conversions is desirable. By setting specific constructors to `= delete`, we can prevent those specific conversions.
 
+## User-defined Literals
+You can define [literal suffixes](https://www.geeksforgeeks.org/integer-literal-in-c-cpp-prefixes-suffixes/) for classes by overloading the _""_ operator followed by a string.
+Classes can have multiple user-defined literals. The overload should not be a part of the class.
+
+```C++
+
+```
+
 ## Sources
 Book: [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) by D.S. Malik <br />
 IBM: [_Overloading operators (C++ only)_](https://www.ibm.com/docs/en/zos/2.4.0?topic=only-overloading-operators-c) <br />
