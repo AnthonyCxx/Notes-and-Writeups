@@ -27,7 +27,8 @@ if (isLowercase('a'))  //Use the lambda like a function
 ```
 
 ## Using Lambdas as Function Parameter
-A function can take another function as a paramter. This is common
+A function can take another function as a paramter. This is common for many functions in the [_\<algorithm\>_](https://www.cplusplus.com/reference/algorithm/) library.
+Lambda expressions allow you to write a one-time function so you can use it just for the one function call.
 
 ## Capture Clauses and Capture Lists
 
