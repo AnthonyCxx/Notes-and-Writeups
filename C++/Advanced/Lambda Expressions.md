@@ -28,7 +28,31 @@ if (isLowercase('a'))  //Use the lambda like a function
 
 ## Using Lambdas as Function Parameter
 A function can take another function as a paramter. This is common for many functions in the [_\<algorithm\>_](https://www.cplusplus.com/reference/algorithm/) library.
-Lambda expressions allow you to write a one-time function so you can use it just for the one function call.
+Lambda expressions allow you to write a one-time function so you can use it just for the one function call. Here, I used a lambda with the [_for\_each()_](cplusplus.com/reference/algorithm/for_each/) function to reverse the case of every letter in a string.
+
+```C++
+ #include <iostream>
+#include <string>
+#include <algorithm>
+#include <cctype>
+using namespace std;
+
+int main()
+{
+    string book = "Pride and Prejudice";
+
+    //Before
+    cout << "BEFORE Transformation: " << book << '\n';
+
+    //Transform the string to uppercase
+    for_each(book.begin(), book.end(), [](char& c) { if (isupper(c)) c = tolower(c); else if (islower(c)) c = toupper(c); } );
+
+    //After
+    cout << "AFTER Transformation: " << book << '\n';
+
+    return 0;
+}
+```
 
 ## Capture Clauses and Capture Lists
 
