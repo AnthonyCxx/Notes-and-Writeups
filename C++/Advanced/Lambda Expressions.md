@@ -20,7 +20,7 @@ to variables within the same scope.
 //Example (notice the ';' at the end of the lambda)
 auto isLowercase = [](char letter) -> bool { return letter >= 97 && letter <= 122; };
 
-if (isLowercase('a'))
+if (isLowercase('a'))   //Use the lambda like a function
     cout << "The letter 'a' is lowercase\n";
 ```
 
