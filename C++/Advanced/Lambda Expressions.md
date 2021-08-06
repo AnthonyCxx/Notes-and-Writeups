@@ -8,9 +8,11 @@ to variables within the same scope.
 
 ## Lambda Expression Format
 ```C++
+//Format
 []() -> return_type {}
 
 /*
+//Explanation
 [] : the capture clause
 () : the parameter list
 -> return_type : the return type of the function (optional)
