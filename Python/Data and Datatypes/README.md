@@ -10,5 +10,26 @@
 [strings](https://realpython.com/python-data-types/#strings), [integers](https://realpython.com/python-data-types/#integers), [floating-point numbers](https://realpython.com/python-data-types/#floating-point-numbers), and [booleans](https://realpython.com/python-data-types/#boolean-type-boolean-context-and-truthiness)
 
 ## Non-primitive Datatypes
+| Datatype | Purpose |
+| -------- | ------- |
+| list |  |
+| tuple |  |
+| range |  |
+| dict |  |
+| set |  |
+| frozenset |  |
+| bytes |  |
+| bytearray |  |
+| memoryview |  |
 
 ## Operator Precedence
+| Order | Operator(s) | 
+| ----- | ----------- |
+| 1 |  |
+| 2 |  |
+| 3 |  |
+| 4 |  |
+| 5 |  |
+| 6 |  |
+| 7 |  |
+> Source: [_Python Documentation: Section 6.17, Operator Precedence_](https://docs.python.org/3/reference/expressions.html#operator-precedence) <br />
