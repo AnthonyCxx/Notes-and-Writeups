@@ -10,7 +10,7 @@ This is **not** comprehensive; explore them individual folders on your own. <br 
 
 ### Beginner
 - [Anatomy of a C++ Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Anatomy%20of%20a%20C%2B%2B%20Program.md)
-- [Data and Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20and%20Data%20Types)
+- [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#primitive-types), [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#non-primitive-data-types), [Operators and Precedence](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#operator-precedence)
 - [Input and Output](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Input%20and%20Output)
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Control%20Flow)
 - [Importing Files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/Preprocessor%20Directives.md#include-file)
