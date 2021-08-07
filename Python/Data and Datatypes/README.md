@@ -7,6 +7,12 @@
 | [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Built-in%20Operators.md) | functions associated with tokens |
 
 ## Primitive Datatypes
+| Datatype | Function | Example |
+| -------- | -------- | ------- |
+| str |  |  |
+| int |  |  |
+| float |  |  |
+| bool |  |  |
 
 ## Non-primitive Datatypes
 
