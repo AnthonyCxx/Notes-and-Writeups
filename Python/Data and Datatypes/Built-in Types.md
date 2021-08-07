@@ -15,7 +15,8 @@ print("Your name is: " + name)
 - [Strings are immutable](https://docs.python.org/3/faq/design.html#why-are-python-strings-immutable) in Python (for security's sake), so altering them frequently may be slow.
 
 ## _int_
-Python doesn't differentiate between different types of integers like _short_ and _unsigned long long_. All integers have the range of a _signed long long_ (-9 quintillion - 9 quintillion), so don't worry about going out of range.
+Python doesn't differentiate between different types of integers like _short_ and _unsigned long long_. All integers have the range of a _signed long long_ (-9 quintillion -
+through 9 quintillion), so don't worry about going out of range.
 
 ```Python
 num1 = 10
