@@ -16,6 +16,23 @@ names = ["Harold", "Steve", "Charlotte", "Harley"]
 # Create a copy of the list 'names'
 '''Copying is important because direct assignment just creates an alias'''
 copy_list = names.copy()
+
+''' ACCESSING LISTS '''
+
+# Accessing a single element in a list
+print("The first name in the list is: ", names[0])  # The first item in a list is 0
+
+# Accessing multiple elements (splicing)
+print("The first three elements in the list are: ", names[0:3])   # Stop before index 3 (not grab 3 elements)
+
+''' ITERATION AND MEMBERSHIP '''
+# Iterating over the list
+for name in names:
+    print(name)
+
+# Checking Members
+if "Steve" in names:
+    print("Steve is here!")
 ```
 
 # List Methods
