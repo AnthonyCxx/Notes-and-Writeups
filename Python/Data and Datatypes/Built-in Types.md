@@ -1,11 +1,18 @@
 # Built-in Types in Python
 
 ## Boolean Type, _bool_
-Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.). <br />
-Most datatypes are [implicitly boolean](http://anh.cs.luc.edu/handsonPythonTutorial/boolean.html) are can be used as bools. <br />
+Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.).
+Datatypes are [implicitly boolean](http://anh.cs.luc.edu/handsonPythonTutorial/boolean.html) are can be used as bools;
 All numeric types are false when 0 and true otherwise, containers are false when empty (strings, lists, sets, etc.) and true otherwise, and _None_ is always false.
 ```Python
+if True:
+    print("Hello, World!")
 
+name = ""
+
+# If name is empty...
+if not name:
+    print("Hmm, you have to enter something for your name...")
 ```
 
 ### Operators
