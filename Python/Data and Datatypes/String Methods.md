@@ -50,3 +50,13 @@ count = sentence.count("needle")
 
 print(f"The amount of times the word 'needle' appears in the sentence is: {count}")
 ```
+
+### _.encode()_
+_.encode()_ returns a new string, converting unicode characters to ASCII. <br />
+The way the string is encoded depends on the second argument, _errors_, which can be set to any of a set of [replacement protocols](https://www.w3schools.com/python/ref_string_encode.asp) for properly translating unicode characters.
+
+```Python
+surname = "Weißflog"
+
+ascii_name = surname.encode()
+```
