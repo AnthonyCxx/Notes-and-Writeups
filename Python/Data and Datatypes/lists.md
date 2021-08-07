@@ -4,7 +4,7 @@
 > [List Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md#list-methods) <br />
 > [List Comprehension](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md#list-comprehension) <br />
 
-Lists are dynamic arrays that can store any number of elements of any type (including different datatypes). <br />
+Lists are dynamic arrays that can store any number of elements of any type (including different datatypes and even structures like tuples and other lists). <br />
 Lists are denoted with brackets (\[ \]) and comma-separated elements (in declarations and throughout Python) <br />
 Like arrays, lists can be accessed with brackets (e.g. `somelist[0]`) and manipulated via [splicing](https://www.geeksforgeeks.org/python-list-slicing/). <br />
 
