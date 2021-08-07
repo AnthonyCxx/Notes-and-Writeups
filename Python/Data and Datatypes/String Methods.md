@@ -38,3 +38,15 @@ surname = surname.casefold() # Changed to 'weissflog'
 ## Classifying Strings
 
 ## Miscellaneous
+
+### _.count()_
+Returns the amount of times a substring occurs in the string. <br />
+You can also specify a start and end index as optional arguments.
+
+```Python
+sentence = "This is a sentence about a needle in a haystack. How many needles are in this haystack? Well, as many needles as there are."
+
+count = sentence.count("needle")
+
+print(f"The amount of times the word 'needle' appears in the sentence is: {count}")
+```
