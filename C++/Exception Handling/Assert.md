@@ -29,7 +29,7 @@ int main()
 
         //This should never happen.
         default:
-            assert(0);  //Always false
+            assert(0);  //Always false, always terminates execution
     }
 
     return 0;
