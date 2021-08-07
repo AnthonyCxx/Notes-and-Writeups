@@ -14,7 +14,19 @@ print("Your name is: " + name)
 - Multi-lined strings can be initialized by using triple-quotation marks (''' ''' or """ """), just like multi-line comments can.
 - [Strings are immutable](https://docs.python.org/3/faq/design.html#why-are-python-strings-immutable) in Python (for security's sake), so altering them frequently may be slow.
 
-## Numeric Types: _int_, _float_, and _complex_
+## _int_
+Python doesn't differentiate between different types of integers like _short_ and _unsigned long long_. All integers have the range of a _signed long long_ (-9 quintillion - 9 quintillion), so don't worry about going out of range.
+
+```Python
+num1 = 10
+num2 = 20
+
+print(num1 + num2)
+```
+
+## _float_
+
+## _complex_
 
 ## Boolean Type, _bool_
 Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.).
