@@ -1,9 +1,12 @@
 # Built-in Types in Python
 
 ## String Type, _str_
-Strings are the heart of Python and easily the most-used type.
+Strings are the heart of Python and easily the most-used type. P
 
-Unlike most languages (like C++), strings can use single or double quotation marks (' ' or " ") since there is no _char_ datatype in Python. 
+### Important Notes
+- Unlike most languages (like C++), strings can use single or double quotation marks (' ' or " ") since there is no _char_ datatype in Python.
+- Multi-lined strings can be initialized by using triple-quotation marks (''' ''' or """ """), just like multi-line comments can.
+- [Strings are immutable](https://www.geeksforgeeks.org/why-are-python-strings-immutable/) in Python (for security's sake), so altering them frequently may be slow.
 
 ## Numeric Types: _int_, _float_, and _complex_
 
