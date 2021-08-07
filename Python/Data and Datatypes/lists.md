@@ -153,7 +153,8 @@ print(f"A total of {test_scores.count(90)} scored a 90 on the test")
 ```
 
 ### _.index()_
-_.index()_ returns the index of the first occurance of the given value.
+_.index()_ returns the index of the first occurance of the given value. <br />
+You can provide a start and end index after the value; if you have an end index, you must have a start index.
 
 ```Python
 # Declare a new list of 4 integers
