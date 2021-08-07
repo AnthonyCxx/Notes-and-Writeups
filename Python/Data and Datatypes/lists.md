@@ -148,9 +148,14 @@ print(f"A total of {test_scores.count(90)} scored a 90 on the test")
 ```
 
 ### _.index()_
+_.index()_ returns the index of the first occurance of the given value.
 
 ```Python
+# Declare a new list of 4 integers
+numbers = [1, 2, 4, 5, 4]
 
+# Find the first index of the int '4' (which is 2)
+print(f"The first index of the integer '4' is: {numbers.index(4)}")
 ```
 
 ### _.pop()_
