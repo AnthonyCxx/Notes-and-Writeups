@@ -23,25 +23,25 @@
 | memoryview |  |
 
 ## Operator Precedence
-| Order | Operator(s) | 
-| ----- | ----------- |
-| 01 |  |
-| 02 |  |
-| 03 |  |
-| 04 |  |
-| 05 |  |
-| 06 |  |
-| 07 |  |
-| 08 |  |
-| 09 |  |
-| 10 |  |
-| 11 |  |
-| 12 |  |
-| 13 |  |
-| 14 |  |
-| 15 |  |
-| 16 |  |
-| 17 |  |
-| 18 |  |
-| 19 |  |
+| Order | Operator(s) | Description |
+| ----- | ----------- | ----------- |
+| 01 | expressions inside parentheses, () |  |
+| 02 | [], (), . |  |
+| 03 | await |  |
+| 04 | \*\* |
+| 05 | +, -, ~ | Unary plus, unary minus, and one's complement |
+| 06 | \*, @, /, //, % |  |
+| 07 | +, - | Addition, Subtraction |
+| 08 |  |  |
+| 09 |  |  |
+| 10 |  |  |
+| 11 |  |  |
+| 12 |  |  |
+| 13 |  |  |
+| 14 |  |  |
+| 15 |  |  |
+| 16 |  |  |
+| 17 |  |  |
+| 18 |  |  |
+| 19 |  |  |
 > Source: [_Python Documentation: Section 6.17, Operator Precedence_](https://docs.python.org/3/reference/expressions.html#operator-precedence) <br />
