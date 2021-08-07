@@ -18,3 +18,7 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 ### Intermediate
 
 ### Advanced
+
+## Resources
+W3Schools: [Python Tutorial](https://www.w3schools.com/python/) <br />
+TutorialsPoint: [Python 3 Tutorial](https://www.tutorialspoint.com/python3/index.htm) <br />
