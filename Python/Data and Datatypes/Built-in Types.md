@@ -6,6 +6,10 @@ Booleans can either be _True_ or _False_ (mind the capital letter) and are used 
 
 ```
 
+### Operators
+Booleans have three operators associated with them: _and_, _or_ and _not_ (see [logical operators](https://www.w3schools.com/python/python_operators.asp)). <br />
+These operators can be used to modify and/or chain conditionals like `if condition1 and not condition2:`.
+
 ## Text Sequence Type, _str_
 
 
