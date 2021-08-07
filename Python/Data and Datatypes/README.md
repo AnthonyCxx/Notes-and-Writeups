@@ -25,13 +25,13 @@
 ## Operator Precedence
 | Order | Operator(s) | Description |
 | ----- | ----------- | ----------- |
-| 01 | expressions inside parentheses, () |  |
-| 02 | [], (), . |  |
-| 03 | await |  |
-| 04 | \*\* |
+| 01 | () | Expressions inside parentheses |
+| 02 | [], (), . | Subscription, slicing, calls, attribute references |
+| 03 | [await](https://docs.python.org/3/reference/expressions.html#await-expression) | await expression |
+| 04 | \*\* | Exponent |
 | 05 | +, -, ~ | Unary plus, unary minus, and one's complement |
 | 06 | \*, @, /, //, % |  |
-| 07 | +, - | Addition, Subtraction |
+| 07 | +, - | Binary addition, subtraction |
 | 08 |  |  |
 | 09 |  |  |
 | 10 |  |  |
