@@ -10,11 +10,12 @@ All numeric types are false when 0 and true otherwise, containers are false when
 if True:
     print("Hello, World!")
 
-name = ""
+firstname = ""
+lastname = ""
 
 # If name is empty...
-if not name:
-    print("Hmm, you have to enter something for your name...")
+if not firstname or not lastname:
+    print("Hmm, you have to have both a lastname and a firstname...")
 ```
 
 ### Operators
