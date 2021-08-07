@@ -32,4 +32,16 @@
 | 5 |  |
 | 6 |  |
 | 7 |  |
+| 8 |  |
+| 9 |  |
+| 10 |  |
+| 11 |  |
+| 12 |  |
+| 13 |  |
+| 14 |  |
+| 15 |  |
+| 16 |  |
+| 17 |  |
+| 18 |  |
+| 19 |  |
 > Source: [_Python Documentation: Section 6.17, Operator Precedence_](https://docs.python.org/3/reference/expressions.html#operator-precedence) <br />
