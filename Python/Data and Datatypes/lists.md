@@ -60,7 +60,7 @@ else:
 # List Methods
 
 ## _.append()_
-_append()_ appends an element to the end of a list.
+_.append()_ appends an element to the end of a list.
 
 ```Python
 # Declare a list of 4 integers
@@ -70,25 +70,51 @@ numbers = [10, 20, 30, 40]
 numbers.append(50)
 
 # Print the new list
-print(numbers)
+print(numbers)  # nu[10, 20, 30, 40, 50]
 ```
 
 ## _.clear()_
+_.clear()_ removes all the elements from a list.
 
 ```Python
+# Declare a list of 4 integers
+numbers = [10, 20, 30, 40]
+
+# Append the number '50' to the end
+numbers.append(50)
+
+# Print the new list
+print(numbers)  # numbers = []
 
 ```
 
 ## _.copy()_
+Copy returns a new list that is an exact copy of the list that called _.copy()_. <br />
+_.copy()_ is necessary because direct assignment (e.g. `some_list = some_other_list`) just makes an alias of the other list.
 
 ```Python
+# Declare a list of 5 integers
+numbers = [10, 20, 30, 40, 50]
 
+# Create a copy of the list 'numbers'
+copy_list = numbers.copy()
+
+# Delete the first element of the new list
+del copy_list[0]
+
+# Show that the original list is unaffected
+print(numbers)
 ```
 
 ## _.count()_
+_.count()_ returns the amount of instances of the given element in the list.
 
 ```Python
+# Declare a new list of scores
+test_scores = [90, 80, 85, 47, 95, 90, 100, 13, -12, -9999, 90]
 
+# Find the amount of students that scored a 90 ('test_scores.count(90)')
+print(f"A total of {test_scores.count(90)} scored a 90 on the test")
 ```
 
 ## _.extend()_
