@@ -228,5 +228,22 @@ print(numbers)
 
 # List Comprehension
 [List Comprehension](https://www.tutorialsteacher.com/python/python-list-comprehension) is a succinct method of creating a list. Typically, you have to write a verbose
-for-loop to create a list automatically, and it gets even more complex if you want to add an if statement. List comprehension allows you to do all of that in one line:
-`numbers = [i for i in range(100)]`.
+for-loop to create a list automatically, and it gets even more complex if you want to add an if statement. List comprehension allows you to do all of that in one line: <br />
+`numbers = [element for element in range(100)]`. The first _element_ is the item being appended to the list and the second _element_ represents that variable in the for-loop.
+ In this case, _element_ and _element_ are the same; however, if you were to apply a function or some sort of conditional, then they would be different.
+
+```Python
+# List Comprehension over a for a Range
+list_of_100 = [i for i in range(100)]
+
+# Applying Functions to each element in the collection
+uppercase_words = ["THIS IS A SENTENCE", "Hmmm, AngRy...", "I am NOT upset"]
+lowercase_words = [word.lower() for word in uppercase_words]  # Now '.lower()' has been applied to each element in 'uppercase_words'
+
+# Applying Conditionals to a collection
+all_numbers = [i for i in range(100)]    # The numbers 1-100
+even_numbers = [num for num in all_numbers if num % 2 == 0]  # Only copy numbers that are even (where '% 2 == 0' is True)
+
+# Altering the result and applying conditionals
+even_div_by_4 = [num / 4 for num in all_numbers if num % 2 == 0] # Add all even numbers to the list, but divide them by 4 before appending
+```
