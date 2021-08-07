@@ -71,23 +71,70 @@ else:
 # List Methods
 
 ## _.append()_
+_append()_ appends an element to the end of a list.
+
+```Python
+# Declare a list of 4 integers
+numbers = [10, 20, 30, 40]
+
+# Append the number '50' to the end
+numbers.append(50)
+
+# Print the new list
+print(numbers)
+```
 
 ## _.clear()_
 
+```Python
+
+```
+
 ## _.copy()_
+
+```Python
+
+```
 
 ## _.count()_
 
+```Python
+
+```
+
 ## _.extend()_
+
+```Python
+
+```
 
 ## _.index()_
 
+```Python
+
+```
+
 ## _.pop()_
 
+```Python
+
+```
+
 ## _.remove()_
+```Python
+
+```
 
 ## _.reverse()_
+```Python
+
+```
 
 ## _.sort()_
 
-## List Comprehension
+```Python
+
+```
+
+# List Comprehension
+[List Comprehension](https://www.tutorialsteacher.com/python/python-list-comprehension) is a succinct method of creating a list.
