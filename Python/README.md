@@ -1,7 +1,8 @@
 # A Reference for Python 3 Programming 
 Python is a high-level 3rd generation language that focuses on handling the minute details of programming for the programmer
 so they can focus on getting large amounts of work done quickly, which is apparent in both its simplicty and the wide array of packages
-it offers through the [Python Package Index](https://pypi.org/).
+it offers through the [Python Package Index](https://pypi.org/). If there's something you want to do in Python, chances are someone's already built a library
+for it and all you have to do is install it and write ~10 lines of code to get it running.
 
 ## Tools
 [Python Online Interpreter](https://www.programiz.com/python-programming/online-compiler/)
