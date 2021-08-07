@@ -222,4 +222,6 @@ print(numbers)
 ```
 
 # List Comprehension
-[List Comprehension](https://www.tutorialsteacher.com/python/python-list-comprehension) is a succinct method of creating a list.
+[List Comprehension](https://www.tutorialsteacher.com/python/python-list-comprehension) is a succinct method of creating a list. Typically, you have to write a verbose
+for-loop to create a list automatically, and it gets even more complex if you want to add an if statement. List comprehension allows you to do all of that in one line:
+`numbers = [i for i in range(100)]`.
