@@ -1,4 +1,4 @@
-# Built-in Types in Python
+# Primitive Types in Python
 
 ## String Type, _str_
 Strings are the heart of Python and easily the most-used type. In fact, strings are so prevalent in Python that all input is read in as a string.
