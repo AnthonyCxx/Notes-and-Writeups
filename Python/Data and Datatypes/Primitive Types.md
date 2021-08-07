@@ -14,7 +14,7 @@ print("Your name is: " + name)
 - Multi-lined strings can be initialized by using triple-quotation marks (''' ''' or """ """), just like multi-line comments can.
 - [Strings are immutable](https://docs.python.org/3/faq/design.html#why-are-python-strings-immutable) in Python (for security's sake), so altering them frequently may be slow.
 
-## _int_
+## Numeric Type, _int_
 Python doesn't differentiate between different types of integers like _short_ and _unsigned long long_. All integers have the range of a _signed long long_ (-9 quintillion -
 through 9 quintillion), so don't worry about going out of range.
 
@@ -25,7 +25,7 @@ num2 = 20
 print(num1 + num2)
 ```
 
-## _float_
+## Numeric Type, _float_
 _floats_ or [floating-point numbers](https://floating-point-gui.de/formats/fp/) are a numeric datatype that can represent numbers with decimals. Anything beyond 
 the max/min value of a float (1.8x10^308) will be represented by [infinity](https://www.geeksforgeeks.org/python-infinity/) (inf/-inf).
 
@@ -38,7 +38,7 @@ if pi < float("inf") and pi > float("-inf"):  #True
     print("Pi is a non-infinite number")
 ```
 
-## _complex_
+## Numeric Type, _complex_
 The _complex_ type supports [complex numbers](https://mathworld.wolfram.com/ComplexNumber.html). You can performs most arithmetic operations on complex types,
 but some operators like _floor()_ and _pow()_ will throw an exception if you try to use them.
 
