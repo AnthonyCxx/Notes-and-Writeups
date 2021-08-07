@@ -21,9 +21,6 @@
 | dict | a data structure that stores key-value pairs |
 | set | an collection of unique elements |
 | frozenset | an immutable set |
-| bytes |  |
-| bytearray |  |
-| memoryview |  |
 > _immutable_ means unalterable/unchangable.
 
 ## Operator Precedence
