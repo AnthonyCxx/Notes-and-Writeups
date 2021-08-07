@@ -44,7 +44,7 @@
 | Operator | Arity | Function |
 | -------- | ----- | -------- |
 | & | Binary | Bitwise AND |
-| | | Binary | Bitwise OR |
+| \| | Binary | Bitwise OR |
 | ^ | Binary | Bitwise XOR |
 | ~ | Unary | One's Complement |
 | << | Binary | Left Bit-shift |
@@ -62,7 +62,7 @@
 | //= | Binary | Floor Division Assignment |
 | \*\*= | Binary | Exponent Assignment |
 | &= | Binary | Bitwise AND Assignment |
-| |= | Binary | Bitwise OR Assignment |
+| \|= | Binary | Bitwise OR Assignment |
 | ^= | Binary | Bitwise XOR Assignment |
 | <<= | Binary | Left Bit-shift Assignment |
 | >>= | Binary | Right Bit-shift Assignment |
