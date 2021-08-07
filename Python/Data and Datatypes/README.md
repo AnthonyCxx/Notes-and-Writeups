@@ -30,18 +30,17 @@
 | 03 | [await](https://docs.python.org/3/reference/expressions.html#await-expression) | await expression |
 | 04 | \*\* | Exponent |
 | 05 | +, -, ~ | Unary plus, unary minus, and one's complement |
-| 06 | \*, @, /, //, % |  |
+| 06 | \*, @, /, //, % | Multiplication, matrix multiplication, division, modulus |
 | 07 | +, - | Binary addition, subtraction |
-| 08 |  |  |
-| 09 |  |  |
-| 10 |  |  |
-| 11 |  |  |
-| 12 |  |  |
-| 13 |  |  |
-| 14 |  |  |
-| 15 |  |  |
-| 16 |  |  |
-| 17 |  |  |
-| 18 |  |  |
-| 19 |  |  |
+| 08 | <<, >> | Bit shifts |
+| 09 | & | Bitwise AND |
+| 10 | ^ | Bitwise XOR |
+| 11 | \| | Bitwise OR |
+| 12 | in, not in, is, is not, <, <=, >, >=, ==, != | any comparison |
+| 13 | not | Boolean NOT |
+| 14 | and | Boolean AND |
+| 15 | or | Boolean OR |
+| 16 | __ if __ else __ | Ternary Operator |
+| 17 | lambda | Lambda Expression |
+| 18 | := | Assignment within Expression (Walrus Operator) |
 > Source: [_Python Documentation: Section 6.17, Operator Precedence_](https://docs.python.org/3/reference/expressions.html#operator-precedence) <br />
