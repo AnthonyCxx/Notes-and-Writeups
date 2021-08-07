@@ -90,12 +90,20 @@ print(list_one)  # list_one = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 ```
 
 ### _.insert()_
+_.insert()_ allows you to insert items at a specific index.
 
 ```Python
+# Declare a new list of 4 integers
+numbers = [1, 2, 4, 5]
 
+# Insert the word "three" at index 2
+numbers.insert(2, "three")
+
+# Print the list
+print(numbers)  # numbers = [1, 2, "three", 4, 5]
 ```
 
-## _.clear()_
+### _.clear()_
 _.clear()_ removes all the elements from a list.
 
 ```Python
@@ -110,7 +118,7 @@ print(numbers)  # numbers = []
 
 ```
 
-## _.copy()_
+### _.copy()_
 Copy returns a new list that is an exact copy of the list that called _.copy()_. <br />
 _.copy()_ is necessary because direct assignment (e.g. `some_list = some_other_list`) just makes an alias of the other list.
 
@@ -128,7 +136,7 @@ del copy_list[0]
 print(numbers)
 ```
 
-## _.count()_
+### _.count()_
 _.count()_ returns the amount of instances of the given element in the list.
 
 ```Python
@@ -139,29 +147,29 @@ test_scores = [90, 80, 85, 47, 95, 90, 100, 13, -12, -9999, 90]
 print(f"A total of {test_scores.count(90)} scored a 90 on the test")
 ```
 
-## _.index()_
+### _.index()_
 
 ```Python
 
 ```
 
-## _.pop()_
+### _.pop()_
 
 ```Python
 
 ```
 
-## _.remove()_
+### _.remove()_
 ```Python
 
 ```
 
-## _.reverse()_
+### _.reverse()_
 ```Python
 
 ```
 
-## _.sort()_
+### _.sort()_
 
 ```Python
 
