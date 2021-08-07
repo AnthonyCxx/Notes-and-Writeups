@@ -25,3 +25,23 @@ This line outputs the string "Hello, World!" onto the screen and implicitly begi
 
 ## Comments
 Pythony uses a single octothorp (#) for single-line comments and uses either ''' or """ for multi-line comments.
+
+## Blocks of Code in Python via Indentation
+Python is a very simple language, so it threw out all the semi-colons and braces from languages like C in favor of using identation to distinguish blocks of code.
+Blocks of code in Python start with a colon (:) and all the lines of the block are indented. Once the indentation ends, so does the block. Blocks can have blocks within
+them with further indentation.
+
+Always use tabs instead of spaces for indentation to reduce indentation errors.
+```Python
+# A function named 'func'
+def func():
+    # Start of function block
+    for number in [1, 2, 3]:
+        # Beginning of loop block
+        print(number)
+        # End of loop block
+    # End of function block
+
+# Call the function 'func'
+func()
+```
