@@ -24,6 +24,19 @@
 ## Logical
 | Operator | Arity | Function |
 | -------- | ----- | -------- |
+| and | Binary | true if both operands are true |
+| or | Binary | true if one operand is true |
+| not | Unary | true if the operand is false |
+
+## Identity
+| Operator | Arity | Function |
+| -------- | ----- | -------- |
+| is | Binary | returns true if the second class is or is derived from the first |
+| is not | Binary | returns true if the second class is not or is not derived from the first |
+
+## Membership
+| Operator | Arity | Function |
+| -------- | ----- | -------- |
 |  |  |  |
 |  |  |  |
 |  |  |  |
@@ -40,25 +53,6 @@
 |  |  |  |
 
 ## Assignment
-| Operator | Arity | Function |
-| -------- | ----- | -------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-
-## Identity
-| Operator | Arity | Function |
-| -------- | ----- | -------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-
-## Membership
 | Operator | Arity | Function |
 | -------- | ----- | -------- |
 |  |  |  |
