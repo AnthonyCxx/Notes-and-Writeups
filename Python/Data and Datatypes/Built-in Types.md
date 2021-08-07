@@ -3,7 +3,7 @@
 ## Boolean Type, _bool_
 Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.). 
 Most datatypes are [implicitly boolean](http://anh.cs.luc.edu/handsonPythonTutorial/boolean.html) are can be used as bools. 
-all numeric types are false when 0 and true otherwise, containers are false when empty (strings, lists, sets, etc.), and _None_ is always false.
+All numeric types are false when 0 and true otherwise, containers are false when empty (strings, lists, sets, etc.), and _None_ is always false.
 ```Python
 
 ```
