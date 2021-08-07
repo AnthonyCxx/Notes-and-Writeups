@@ -193,8 +193,8 @@ int main()
     front = &arr[0];
     end = &arr[SIZE(arr) - 1];
 
-        if (front < end)   //End has a higher memory address, so it's greater
-                cout << "The front of the array is sooner than the last\n";
+    if (front < end)   //End has a higher memory address, so it's greater
+        cout << "The front of the array is sooner than the last\n";
 
     return 0;
 }
