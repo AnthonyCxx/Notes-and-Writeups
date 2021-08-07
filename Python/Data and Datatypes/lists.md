@@ -207,9 +207,18 @@ print(numbers)
 ```
 
 ### _.sort()_
+_.sort()_ sorts a list from least to greatest using a given function as a key. If no function is given, it will sort the list alphabetically or be integer value <br />
+You can also sort in reverse order by setting _reverse_ equal to _True_.
 
 ```Python
+# Declare a list of 5 names
+numbers = ["Harold", "Charlotte", "The entire country of Luxembourg", "My friend's rat, Hamster"]
 
+# Sort the list
+numbers.sort(key=len, reverse=True)  # Sort by the 'len()' function in reverse order (longest -> shortest)
+
+# Show the sorted list
+print(numbers)
 ```
 
 # List Comprehension
