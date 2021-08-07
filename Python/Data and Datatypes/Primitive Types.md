@@ -75,7 +75,7 @@ These operators can be used to modify and/or chain conditionals like `if conditi
 The [_None_](https://www.w3schools.com/python/ref_keyword_none.asp) type is the Python equivalent of [NULL](https://www.thoughtco.com/definition-of-null-958118#:~:text=Null%20is%20a%20built%2Din,pattern%20for%20a%20null%20pointer.). Since variables cannot be defined without being initialized, you can use _None_
 to declare a variable for later use (assuming you don't want to give it a specific type with a constructor like _str()_ or _bool()_).
 
-When checking for _None_, always use the [_is_](https://realpython.com/courses/python-is-identity-vs-equality/) operator and not _==_ ([PEP-8 Python Style Guide](https://www.python.org/dev/peps/pep-0008/#programming-recommendations))
+When checking for _None_, always use the [_is_](https://realpython.com/courses/python-is-identity-vs-equality/) operator and not _==_, since it can be overloaded ([PEP-8 Python Style Guide](https://www.python.org/dev/peps/pep-0008/#programming-recommendations))
 
 ```Python
 variable = None
