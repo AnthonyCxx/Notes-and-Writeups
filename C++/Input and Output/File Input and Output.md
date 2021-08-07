@@ -213,7 +213,8 @@ while(getline(file, line))   //Get a a whole line (until '\n')
 > Reference: [_std::stringstream functions_](https://www.cplusplus.com/reference/sstream/stringstream/)
 
 # Writing to Files
-Writing to files is much simpler than reading from files. You can just use the _<<_ operator like you do with _cout_.
+Writing to files is much simpler than reading from files. You can just use the _<<_ operator like you do with _cout_. <br />
+How the text is written to the file depends on the mode the file was opened in (_ios::out_, _ios::app_, etc.).
 
 ```C++
 #include <iostream>
