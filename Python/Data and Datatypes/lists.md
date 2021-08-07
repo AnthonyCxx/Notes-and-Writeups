@@ -159,19 +159,51 @@ print(f"The first index of the integer '4' is: {numbers.index(4)}")
 ```
 
 ### _.pop()_
+_.pop()_ removes and returns an element. If not specified, it will remove and return the last element.
 
 ```Python
+# Declare a list of 5 integers
+numbers = [1, 2, 3, 4, 5]
 
+# Remove and return the last element
+last_element = numbers.pop()
+
+# Remove and return the second element (index = 1)
+second_element = numbers.pop(1)
+
+# Show the values of the popped elements
+print(f"The value of the second element was {second_element} and the value of the last element was {last_element}")
+
+# Show the popped elements were removed from the list
+print(numbers)
 ```
 
 ### _.remove()_
-```Python
+_.remove()_ removes the first occurance of the given value.
 
+```Python
+# Declare a list of 6 integers
+numbers = [1, 2, 3, 4, 5, 4]
+
+# Remove the first occurance of '4'
+numbers.remove(4)
+
+# Show the first occurance of '4' was removed
+print(numbers)
 ```
 
 ### _.reverse()_
-```Python
+_.reverse()_ reverses the order of a list.
 
+```Python
+# Declare an array of 5 integers
+numbers = [1, 2, 3, 4, 5]
+
+# Reverse the list
+numbers.reverse()
+
+# Show the reversal
+print(numbers)
 ```
 
 ### _.sort()_
