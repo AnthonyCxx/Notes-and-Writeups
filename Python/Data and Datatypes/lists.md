@@ -6,10 +6,7 @@ Like arrays, lists can be accessed with brackets (e.g. `somelist[0]`) and manipu
 ## Rundown on Lists
 ```Python
 
-'''                '''
 ''' CREATING LISTS '''
-'''                '''
-
 # Default constructor (creates a blank list)
 blank_list = list()
 
@@ -21,20 +18,14 @@ names = ["Harold", "Steve", "Charlotte", "Harley"]
 copy_list = names.copy()
 
 
-'''                 '''
 ''' ACCESSING LISTS '''
-'''                 '''
-
 # Accessing a single element in a list
 print("The first name in the list is: ", names[0])  # The first item in a list is 0
 
 # Accessing multiple elements (splicing)
 print("The first three elements in the list are: ", names[0:3])   # Stop before index 3 (not grab 3 elements)
 
-'''                '''
 ''' ALTERING LISTS '''
-'''                '''
-
 # Add a new element
 names.append("Charlie")
 
@@ -54,9 +45,7 @@ names.clear()
 newlist = ["Bekah", "Jeremey", "Wesley", "Savannah", "Steve"]
 names.extend(newlist)
 
-'''                          '''
 ''' ITERATION AND MEMBERSHIP '''
-'''                          '''
 # Iterating over the list
 for name in names:
     print(name)
