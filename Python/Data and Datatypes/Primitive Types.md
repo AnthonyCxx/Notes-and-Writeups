@@ -1,4 +1,5 @@
 # Primitive Types in Python
+Python is weakly typed, so variables can change datatypes throughout the program.
 
 ## String Type, _str_
 Strings are the heart of Python and easily the most-used type. In fact, strings are so prevalent in Python that all input is read in as a string.
