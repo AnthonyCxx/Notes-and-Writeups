@@ -5,6 +5,7 @@
 > [Special Cases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#special-cases): [_++ and --_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#prefix-and-postfix-operators--and---) and [_<</>>_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#stream-insertion-and-extraction-operators--and-) <br />
 > [Conversion Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Object-Oriented%20Programming/Operator%20Overloading.md#conversion-operators) <br />
 > [Disabling Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md#disabling-functions-with-delete) <br />
+> [User-defined Literals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Object-Oriented%20Programming/Operator%20Overloading.md#user-defined-literals) <br />
 
 Operator overloading is the ability to define what should happen when operators are applied to classes (a user-defined type). Anything that can be done with operator
 overloading can be done with just functions, but operator overloading makes code far more readable. I mean, do you _really_ 
