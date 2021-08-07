@@ -40,3 +40,5 @@ if variable is None:
 
 ## Sources
 Python 3.9.6 Documentation: [_Built-in Types_](https://docs.python.org/3/library/stdtypes.html) <br />
+W3Schools: [_Built-in Data Types_](https://www.w3schools.com/python/python_datatypes.asp) <br />
+RealPython: [_Basic Data Types in Python_](https://realpython.com/python-data-types/) <br />
