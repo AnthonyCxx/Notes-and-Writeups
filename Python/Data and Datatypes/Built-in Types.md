@@ -25,8 +25,29 @@ print(num1 + num2)
 ```
 
 ## _float_
+_floats_ or [floating-point numbers](https://floating-point-gui.de/formats/fp/) are a numeric datatype that can represent numbers with decimals. Anything beyond 
+the max/min value of a float (1.8x10^308) will be represented by [infinity](https://www.geeksforgeeks.org/python-infinity/) (inf/-inf).
+
+```Python
+pi = 3.1459265
+
+print("The value of PI is: ", pi)
+
+if pi < float("inf") and pi > float("-inf"):  #True
+    print("Pi is a non-infinite number")
+```
 
 ## _complex_
+The _complex_ type supports [complex numbers](https://mathworld.wolfram.com/ComplexNumber.html). You can performs most arithmetic operations on complex types,
+but some operators like _floor()_ and _pow()_ will throw an exception if you try to use them.
+
+```Python
+num1 = 10 + 5j
+num2 = 5 + 10j
+
+#Uses a formatted string
+print(f"10 + 5j + 5 + 10j = {num1 + num2}")
+```
 
 ## Boolean Type, _bool_
 Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.).
