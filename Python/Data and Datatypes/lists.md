@@ -207,7 +207,7 @@ print(numbers)
 ```
 
 ### _.sort()_
-_.sort()_ sorts a list from least to greatest using a given function as a key. If no function is given, it will sort the list alphabetically or be integer value <br />
+_.sort()_ sorts a list from least to greatest using a given function as a key. If no function is given, it will sort the list alphabetically or by value <br />
 You can also sort in reverse order by setting _reverse_ equal to _True_.
 
 ```Python
