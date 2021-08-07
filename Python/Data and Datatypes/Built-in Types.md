@@ -1,6 +1,9 @@
 # Built-in Types in Python
 
 ## String Type, _str_
+Strings are the heart of Python
+
+## Numeric Types: _int_, _float_, and _complex_
 
 ## Boolean Type, _bool_
 Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.).
@@ -26,7 +29,7 @@ These operators can be used to modify and/or chain conditionals like `if conditi
 The [_None_](https://www.w3schools.com/python/ref_keyword_none.asp) type is the Python equivalent of [NULL](https://www.thoughtco.com/definition-of-null-958118#:~:text=Null%20is%20a%20built%2Din,pattern%20for%20a%20null%20pointer.). Since variables cannot be defined without being initialized, you can use _None_
 to declare a variable for later use.
 
-When checking for _None_, always use the [_is_](https://realpython.com/courses/python-is-identity-vs-equality/) operator and not _==_ ([PEP-8](https://www.python.org/dev/peps/pep-0008/#programming-recommendations))
+When checking for _None_, always use the [_is_](https://realpython.com/courses/python-is-identity-vs-equality/) operator and not _==_ ([PEP-8 Python Style Guide](https://www.python.org/dev/peps/pep-0008/#programming-recommendations))
 
 ```Python
 variable = None
