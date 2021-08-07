@@ -103,7 +103,7 @@ using namespace std;
 template <typename ...Args>     //'...' on the left for declarations
 auto sum(Args&& ...args)
 {
-    //Unary right fold
+    //Unary left fold
     return (... + args);     //Expands to '(((num1 + num2) + num3) + num4) + num5'
 }
 
