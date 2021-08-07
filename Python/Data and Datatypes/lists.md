@@ -59,7 +59,9 @@ else:
 
 # List Methods
 
-## _.append()_
+## Inserting Elements
+
+### _.append()_
 _.append()_ appends an element to the end of a list.
 
 ```Python
@@ -73,7 +75,7 @@ numbers.append(50)
 print(numbers)  # numbers = [10, 20, 30, 40, 50]
 ```
 
-## _.extend()_
+### _.extend()_
 _.extend()_ appends a collection of elements (like another list or a set).
 
 ```Python
@@ -85,6 +87,12 @@ list_one.extend(list_two)
 
 # Print list_one
 print(list_one)  # list_one = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+```
+
+### _.insert()_
+
+```Python
+
 ```
 
 ## _.clear()_
