@@ -1,5 +1,7 @@
 # Primitive Types in Python
-Python is weakly typed, so variables can change datatypes throughout the program.
+Python is weakly typed, so variables can change datatypes throughout the program. <br />
+To declare a variable, just assign a value to a name (`e.g. this_variable = 10`). <br />
+If you don't want to give it a value, use the default constructor (e.g. `this_var = bool()`).
 
 ## String Type, _str_
 Strings are the heart of Python and easily the most-used type. In fact, strings are so prevalent in Python that all input is read in as a string.
