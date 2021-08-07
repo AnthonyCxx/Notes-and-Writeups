@@ -7,12 +7,7 @@
 | [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Built-in%20Operators.md) | functions associated with tokens |
 
 ## Primitive Datatypes
-| Datatype | Function | Example |
-| -------- | -------- | ------- |
-| str | a series of character |  |
-| int |  |  |
-| float |  |  |
-| bool |  |  |
+[strings](https://realpython.com/python-data-types/#strings), [integers](https://realpython.com/python-data-types/#integers), [floating-point numbers](https://realpython.com/python-data-types/#floating-point-numbers), and [booleans](https://realpython.com/python-data-types/#boolean-type-boolean-context-and-truthiness)
 
 ## Non-primitive Datatypes
 
