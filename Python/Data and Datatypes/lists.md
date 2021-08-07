@@ -218,7 +218,7 @@ You can also sort in reverse order by setting _reverse_ equal to _True_.
 
 ```Python
 # Declare a list of 5 names
-numbers = ["Harold", "Charlotte", "The entire country of Luxembourg", "My friend's rat, Hamster"]
+numbers = ["Harold", "Charlotte", "The entire country of Luxembourg", "My friend's rat, Smudge"]
 
 # Sort the list
 numbers.sort(key=len, reverse=True)  # Sort by the 'len()' function in reverse order (longest name -> shortest)
