@@ -4,6 +4,18 @@
 
 ## Formatting Strings
 
+### _.center()_
+_.center()_ returns a new string with the text centered in the middle of the amount of characters specified. <br />
+Providing a character as the second argument will fill the blank space with the given character.
+
+```Python
+event = "showdown"
+
+event = event.center(10, '.')
+```
+
+## Altering Case
+
 ### _.capitalize()_
 Returns a new string, capitalizing the first letter in the string.
 
