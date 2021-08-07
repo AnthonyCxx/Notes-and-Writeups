@@ -3,7 +3,7 @@ Lists are dynamic arrays that can store any number of elements of any type (incl
 Lists are denoted with brackets (\[ \]) and comma-separated elements (in declarations and throughout Python) <br />
 Like arrays, lists can be accessed with brackets (e.g. `somelist[0]`) and manipulated via [splicing](https://www.geeksforgeeks.org/python-list-slicing/). <br />
 
-## Declaring a List and Simple Operations
+## Rundown on Lists
 ```Python
 ''' CREATING LISTS '''
 
@@ -25,6 +25,27 @@ print("The first name in the list is: ", names[0])  # The first item in a list i
 # Accessing multiple elements (splicing)
 print("The first three elements in the list are: ", names[0:3])   # Stop before index 3 (not grab 3 elements)
 
+''' ALTERING LISTS '''
+
+# Add a new element
+names.append("Charlie")
+
+# Change an element
+names[0] = "Bridgitte"
+
+# Remove a Specific Element (by content)
+names.remove("Charlotte")
+
+# Remove a Specific Element (by index)
+del names[0]
+
+# Remove all elements
+names.clear()
+
+# Append a collection (like a list)
+newlist = ["Bekah", "Jeremey", "Wesley", "Savannah", "Steve"]
+names.extend(newlist)
+
 ''' ITERATION AND MEMBERSHIP '''
 # Iterating over the list
 for name in names:
@@ -33,6 +54,8 @@ for name in names:
 # Checking Members
 if "Steve" in names:
     print("Steve is here!")
+else:
+    print("Steve is absent :(!")
 ```
 
 # List Methods
