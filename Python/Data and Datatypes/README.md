@@ -9,7 +9,7 @@
 ## Primitive Datatypes
 | Datatype | Function | Example |
 | -------- | -------- | ------- |
-| str |  |  |
+| str | a series of character |  |
 | int |  |  |
 | float |  |  |
 | bool |  |  |
