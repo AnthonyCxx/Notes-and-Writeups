@@ -1,7 +1,9 @@
 # Built-in Types in Python
 
 ## Boolean Type, _bool_
-Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.).
+Booleans can either be _True_ or _False_ (mind the capital letter) and are used in control flow statements and loops (_if_, _while_, etc.). 
+Most datatypes are [implicitly boolean](http://anh.cs.luc.edu/handsonPythonTutorial/boolean.html) are can be used as bools. 
+all numeric types are false when 0 and true otherwise, containers are false when empty (strings, lists, sets, etc.), and _None_ is always false.
 ```Python
 
 ```
@@ -14,7 +16,7 @@ These operators can be used to modify and/or chain conditionals like `if conditi
 
 
 ## _None_
-The _None_ type is [](https://www.w3schools.com/python/ref_keyword_none.asp)
+The [_None_](https://www.w3schools.com/python/ref_keyword_none.asp) type is the Python equivalent of [NULL](https://www.thoughtco.com/definition-of-null-958118#:~:text=Null%20is%20a%20built%2Din,pattern%20for%20a%20null%20pointer.)
 
 ## Sources
 Python 3.9.6 Documentation: [_Built-in Types_](https://docs.python.org/3/library/stdtypes.html) <br />
