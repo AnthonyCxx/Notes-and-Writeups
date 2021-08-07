@@ -42,6 +42,7 @@ if pi < float("inf") and pi > float("-inf"):  #True
 The _complex_ type supports [complex numbers](https://mathworld.wolfram.com/ComplexNumber.html). You can performs most arithmetic operations on complex types,
 but some operators like _floor()_ and _pow()_ will throw an exception if you try to use them.
 
+Note: technically, _complex_ isn't a primitive type, but it fits here better than with lists, dictionaries, and such.
 ```Python
 num1 = 10 + 5j
 num2 = 5 + 10j
