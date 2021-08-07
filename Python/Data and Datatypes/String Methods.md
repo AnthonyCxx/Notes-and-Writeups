@@ -40,7 +40,7 @@ surname = surname.casefold() # Changed to 'weissflog'
 ## Miscellaneous
 
 ### _.count()_
-Returns the amount of times a substring occurs in the string. <br />
+_.count()_ returns the amount of times a substring occurs in the string. <br />
 You can also specify a start and end index as optional arguments.
 
 ```Python
