@@ -10,7 +10,7 @@ print("Hello, World!")
 ```
 
 ## _len()_
-_len_ takes the length of any sequences: strings, lists — anything.
+_len_ takes the length of any sequence: strings, lists — anything.
 
 ```Python
 name = "Mitzelplik"
