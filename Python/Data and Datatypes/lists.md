@@ -234,7 +234,7 @@ for-loop to create a list automatically, and it gets even more complex if you wa
 
 ```Python
 # List Comprehension over a for a Range
-list_of_100 = [i for i in range(100)]
+list_of_100 = [i for i in range(100)]  # Create a list of the integers 1-100
 
 # Applying Functions to each element in the collection
 uppercase_words = ["THIS IS A SENTENCE", "Hmmm, AngRy...", "I am NOT upset"]
