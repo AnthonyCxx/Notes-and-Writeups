@@ -70,7 +70,21 @@ numbers = [10, 20, 30, 40]
 numbers.append(50)
 
 # Print the new list
-print(numbers)  # nu[10, 20, 30, 40, 50]
+print(numbers)  # numbers = [10, 20, 30, 40, 50]
+```
+
+## _.extend()_
+_.extend()_ appends a collection of elements (like another list or a set).
+
+```Python
+list_one = [10, 20, 30, 40, 50]
+list_two = [60, 70, 80, 90, 100]
+
+# Append list_two to list_one
+list_one.extend(list_two)
+
+# Print list_one
+print(list_one)  # list_one = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 ```
 
 ## _.clear()_
@@ -115,12 +129,6 @@ test_scores = [90, 80, 85, 47, 95, 90, 100, 13, -12, -9999, 90]
 
 # Find the amount of students that scored a 90 ('test_scores.count(90)')
 print(f"A total of {test_scores.count(90)} scored a 90 on the test")
-```
-
-## _.extend()_
-
-```Python
-
 ```
 
 ## _.index()_
