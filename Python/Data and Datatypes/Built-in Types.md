@@ -3,7 +3,7 @@
 ## String Type, _str_
 Strings are the heart of Python and easily the most-used type.
 
-Unlike in C++, strings can use single or double quotation marks ('' or "") since there is not _char_ datatype in Python. 
+Unlike most languages (like C++), strings can use single or double quotation marks ('' or "") since there is not _char_ datatype in Python. 
 
 ## Numeric Types: _int_, _float_, and _complex_
 
