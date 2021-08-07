@@ -11,17 +11,20 @@
 [strings](https://realpython.com/python-data-types/#strings), [integers](https://realpython.com/python-data-types/#integers), [floating-point numbers](https://realpython.com/python-data-types/#floating-point-numbers), and [booleans](https://realpython.com/python-data-types/#boolean-type-boolean-context-and-truthiness)
 
 ## Non-primitive Datatypes
+> Unless otherwise specified, these types can store elements of various datatypes without problem <br />
+
 | Datatype | Purpose |
 | -------- | ------- |
-| list |  |
-| tuple |  |
-| range |  |
+| list | a dynamically-sized array |
+| tuple | an immutable sequence of elements |
+| range | an immutable sequence |
 | dict |  |
 | set |  |
 | frozenset |  |
 | bytes |  |
 | bytearray |  |
 | memoryview |  |
+> _immutable_ means unalterable/unchangable.
 
 ## Operator Precedence
 | Order | Operator(s) | Description |
