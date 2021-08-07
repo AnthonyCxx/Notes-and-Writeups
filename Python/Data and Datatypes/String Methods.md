@@ -1,5 +1,10 @@
 # String Methods in Python
 
+## General
+
+### _.endswith()_
+
+
 ## Modifying Strings
 
 ## Formatting Strings
