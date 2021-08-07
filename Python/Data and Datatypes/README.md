@@ -8,7 +8,7 @@
 | [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Common%20Functions.md) | a collection of the most common Python functions |
 
 ## Primitive Datatypes
-[strings](https://realpython.com/python-data-types/#strings), [integers](https://realpython.com/python-data-types/#integers), [floating-point numbers](https://realpython.com/python-data-types/#floating-point-numbers), and [booleans](https://realpython.com/python-data-types/#boolean-type-boolean-context-and-truthiness)
+There are four primitive types: [strings](https://realpython.com/python-data-types/#strings), [integers](https://realpython.com/python-data-types/#integers), [floating-point numbers](https://realpython.com/python-data-types/#floating-point-numbers), and [booleans](https://realpython.com/python-data-types/#boolean-type-boolean-context-and-truthiness)
 
 ## Non-primitive Datatypes
 > Unless otherwise specified, these types can store elements of various datatypes without problem <br />
