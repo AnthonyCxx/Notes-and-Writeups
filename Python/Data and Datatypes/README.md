@@ -19,7 +19,7 @@
 | tuple | an immutable sequence of elements |
 | range | an immutable sequence of integers (used for iteration) |
 | dict | a data structure that stores key-value pairs |
-| set |  |
+| set | an immutable collection of unique elements |
 | frozenset |  |
 | bytes |  |
 | bytearray |  |
