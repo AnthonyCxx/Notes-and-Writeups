@@ -1,7 +1,7 @@
 # Common Functions in Python
 
 ## _print()_
-Python's generic print function; _Console.WriteLine()_ in C# or _System.out.println()_ in Java. <br />
+Python's generic print function; Equal to _Console.WriteLine()_ in C# or _System.out.println()_ in Java. <br />
 If you want to prevent the implicit newline, add `, end=''` as the last argument.
 
 ```Python
