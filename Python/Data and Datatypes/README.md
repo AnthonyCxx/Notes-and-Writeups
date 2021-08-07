@@ -18,7 +18,7 @@
 | list | a dynamically-sized array |
 | tuple | an immutable sequence of elements |
 | range | an immutable sequence of integers (used for iteration) |
-| dict |  |
+| dict | a data structure that stores key-value pairs |
 | set |  |
 | frozenset |  |
 | bytes |  |
