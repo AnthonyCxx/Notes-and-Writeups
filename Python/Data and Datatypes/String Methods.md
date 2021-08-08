@@ -123,9 +123,9 @@ surname = surname.casefold() # Changed to 'weissflog'
 Returns _True_ if the string is alphabetic (letters a-zA-Z)
 
 ```Python
-sentence = "This is a plain an simple English sentence"
+letters = "abcdefg"
 
-if sentence.isalpha():
+if letters.isalpha():
     print("The string is alphabetic")
 ```
 
