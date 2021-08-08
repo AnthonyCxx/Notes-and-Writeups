@@ -18,7 +18,7 @@ There are four primitive types: [strings](https://realpython.com/python-data-typ
 | -------- | ------- |
 | [list](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md) | a dynamically-sized array |
 | [tuple](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Tuples.md) | an immutable sequence of elements |
-| dict | a data structure that stores key-value pairs |
+| [dict](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Dictionary.md) | a data structure that stores key-value pairs |
 | set | an collection of unique elements |
 | frozenset | an immutable set |
 > _immutable_ means unalterable/unchangable.
