@@ -84,9 +84,15 @@ for key, value in ages.items():
 ```
 
 ### _.copy()_
+_.copy()_ returns a new dictionary that is a copy of the original dictionary. <br />
+The _.copy()_ method should be used over raw assignment `= some_dictionary` because raw assignment just creates an alias of the same dictionary.
 
 ```Python
+# Initializing a Dictionary
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570}   # key:value
 
+# Creating a copy of a dictionary
+copy_dict = ages.copy()
 ```
 
 ### _.clear()_
