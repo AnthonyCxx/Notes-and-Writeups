@@ -2,6 +2,8 @@
 Python is all about strings. So, naturally they have a host of methods for manipulating them. <br />
 There are very few methods I left out here (like _maketrans()_ and _translate()_) because they seem too circumstantial.
 
+Here's a quick reference for all [Python string methods](https://www.w3schools.com/python/python_ref_string.asp).
+
 ## Searching Strings
 
 ### _.find()_
@@ -28,8 +30,42 @@ except ValueError:
     print("Whoops, looks like '.index()' threw an ValueError...")
 ```
 
+### _.rfind()_
+_.rfind()_ returns the index of the last occurance of a substring. If the string is not found, _.find()_ returns -1. <br />
+Optionally, you can specify a start and end index as integers. 
+
+```Python
+text = "this is a sentence about a sentence — isn't it a strange sentence?"
+
+print(text.rfind("sentence"))
+```
+
+### _.rindex()_
+_.rindex()_ returns the index of the last occurance of a substring. If the string is not found, an [ValueError](https://docs.python.org/3/library/exceptions.html#ValueError) is thrown.
+Optionally, you can specify a start and end index as integers. 
+
+```Python
+text = "this is a sentence about a sentence — isn't it a strange sentence?"
+
+try:
+    print(text.rfind("sentence"))  # Doesn't throw
+except ValueError:
+    print("Hmm... looks like the sentence doesn't cointain 'sentence'") # False
+```
+
+### _.startswith()_
+_.startswith()_ returns _True_ if the string starts with the given substring. <br />
+Optionally, you can specify a start and end index as integers. 
+
+```Python
+sentence = "This sentence ends with the word apple"
+
+if sentence.endswith("This"):
+    print("The sentence ends with 'This'")
+```
+
 ### _.endswith()_
-_.count()_ returns _True_ if the string ends with the given substring. <br />
+_.endswith()_ returns _True_ if the string ends with the given substring. <br />
 Optionally, you can specify a start and end index as integers. 
 
 ```Python
@@ -75,7 +111,6 @@ text = "      this has a lot of whitespace....          "
 print(text.strip())
 ```
 
-
 ### _.format()_
 The _.format()_ method is the pre-Python 3.6 way to format strings. <br />
 You should always use [f-strings](https://www.programiz.com/python-programming/string-interpolation) for string interpolation. <br />
@@ -106,14 +141,22 @@ event = "showdown"
 event = event.center(10, '.')
 ```
 
-### _.ljust()_
-_.ljust()_ left-justifies a string (aligns it to the left) to the amount of characters provided as an integer, filling any extra with spaces.
+### _.ljust()_ and _.rjust()_
+_.ljust()_ and _.rjust()_ left/right-justifies a string (aligns it to the left/right) to the amount of characters provided as an integer, filling any extra with spaces.
 Optionally, you can provide a character as the second argument to change the character used to fill the space.
 
 ```Python
 text = "some text"
 
 print(text.ljust(50, '.'))
+```
+
+### _.zfill()_
+_.zfill()_ (short for 'zero fill') pads a number with zeros until it reaches the given length.
+
+```Python
+for num in range(100):
+    print(str(num).zfill(3))  # 001, 010, 100
 ```
 
 ### _.expandtabs()_
@@ -139,6 +182,15 @@ sentence = "this is not a proper sentence because the first letter is not capita
 sentence = sentence.capitalize()
 ```
 
+### _.upper()_
+Returns a new string that is entirely uppercase.
+
+```Python
+text = "this is some text"
+
+print(f"Uppercase version: {text.upper()}")
+```
+
 ### _.lower()_ 
 Returns a new string that is entirely lowercase.
 
@@ -146,6 +198,24 @@ Returns a new string that is entirely lowercase.
 text = "THIS IS SOME TEXT"
 
 print(f"Lowercase version: {text.lower()}")
+```
+
+### _.swapcase()_
+Changes the case of each character in the string.
+
+```Python
+text = "Mount Everest is in Nepal"
+
+print(text.swapcase())
+```
+
+### _.title()_
+Capitalized the first letter of each word.
+
+```Python
+text = "make this string a title"
+
+print(text.title())
 ```
 
 ### _.casefold()_
@@ -267,7 +337,26 @@ if var_name.isidentifier():
     print("The string is a valid identifier")
 ```
 
-## Miscellaneous
+## Breaking Strings by Section
+
+### _.split()_
+Another one of my favorite methods, _.split()_ splits a string into an array based on a substring (usually a single character) that you provide. By default, the string
+it split on whitespace. Optionally, you can provide a max number of elements to split the string into (starting from the left).
+
+```Python
+text = "this is a short sentence."
+
+print(text.split())
+```
+
+### _.rsplit()_
+_.rsplit()_ functions like _split()_, but when it accepts a max number of elements to split the string into, it splits from the right.
+
+```Python
+text = "this is a sentence about a sentence — isn't it a strange sentence?"
+
+print(text.rsplit("sentence", 2))
+```
 
 ### _.join()_
 This is easily my favorite string method. <br />
@@ -279,6 +368,37 @@ countries = ["Turkey", "Sweeden", "Greece", "India", "Samoa"]
 # Make 'countries' a comma-separated string
 as_string = ', '.join(countries)
 ```
+
+### _.splitlines()_
+_.splitlines()_ splits a string into a list based on [linebreaks](https://www.programiz.com/python-programming/methods/string/splitlines) (like '\n' and '\f'). <br />
+By default, _.splitlines()_ discards these characters, but you can keep them with by providing '_True_' as an argument.
+
+```Python
+text = "This is a\nmulti-line sentence"
+
+print(text.splitlines())      # Discards '\n'
+print(text.splitlines(True))  # Keeps '\n'
+```
+
+### _.partition()_
+_.partition()_ splits a string into a three-part tuple based on a substring to search for. The middle of the tuple is the substring,
+the first part is anything before the substring, and the last part is anything after the substring. If the substring is the beginning/end
+of the string, then the first/last string of the tuple will be blank ('').
+
+```Python
+text = "aaa bbb ccc"
+print(text.partition("bbb"))
+```
+
+### _.partition()_
+_.rpartition()_ functions exactly like _.partition()_ but it finds the last instance of the substring.
+
+```Python
+text = "aaa bbb ccc aaa bbb"
+print(text.rpartition("aaa"))
+```
+
+## Miscellaneous
 
 ### _.encode()_
 _.encode()_ returns a new string, converting unicode characters to ASCII. <br />
