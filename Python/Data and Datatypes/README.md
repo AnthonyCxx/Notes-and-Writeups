@@ -17,7 +17,7 @@ There are four primitive types: [strings](https://realpython.com/python-data-typ
 | Datatype | Purpose |
 | -------- | ------- |
 | [list](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md) | a dynamically-sized array |
-| tuple | an immutable sequence of elements |
+| [tuple](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Tuples.md) | an immutable sequence of elements |
 | range | an immutable sequence of integers (used for iteration) |
 | dict | a data structure that stores key-value pairs |
 | set | an collection of unique elements |
