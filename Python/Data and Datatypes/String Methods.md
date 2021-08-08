@@ -5,7 +5,8 @@ There are very few methods I left out here (like _maketrans()_ and _translate()_
 Here's a quick reference for all [Python string methods](https://www.w3schools.com/python/python_ref_string.asp).
 
 ## Categories
-All the string methods can be broken down into the following categories <br />
+
+All the string methods can be broken down into the following categories: <br />
 -
 -
 -
