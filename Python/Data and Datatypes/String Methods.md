@@ -19,7 +19,12 @@ _.index()_ returns the index of a substring. If the string is not found, an [Val
 Optionally, you can specify a start and end index as integers. 
 
 ```Python
+text = "Arma virumque cano, Troiae qui primus ab oris..."
 
+try:
+    print("The index of the word 'mouse' is: ", text.index("mouse"))
+except ValueError:
+    print("Whoops, looks like '.index()' threw an ValueError...")
 ```
 
 ### _.endswith()_
@@ -124,15 +129,41 @@ if sentence.isalpha():
     print("The string is alphabetic")
 ```
 
-### _isnumeric()_
-Returns _True_ if the string is numeric (contains only digits 0-9)
-
-### _.isalnum()_
-
 ### _.isdecimal()_
+_.isdecimal()_ is the most strict numeric classifier, only returning _True_ when all the characters are 0-9.
+
+```Python
+if "5599928814".isdigit(): # True
+    print("Phone numbers are considered digital")
+```
 
 ### _.isdigit()_
+Returns _True_ if the number is
+_.isdigit()_ is less restrictive than _.isdecimal()_ and supports some miscellaneous unicode characters like superscript 2 (², [\U+00B2](https://unicode-table.com/en/00B2/)). 
 
+```Python
+if "²".isdigit(): # True
+    print("Superscript 2 is a valid digit type")
+```
+
+### _.isnumeric()_
+_.isnumeric()_ is even broader and considers stuff like vulgar fractions (e.g. ½, [U+00BD](https://www.compart.com/en/unicode/U+00BD)) numeric. <br />
+Though it's the broadest, even _.isnumeric()_ does not consider "-1" and "0.5" numeric since they have non-numeric characters (the minus sign and decimal point).
+
+```Python
+if "½".isnumeric(): # True
+    print("Vulgar fractions are numeric characters")
+```
+
+### _.isalnum()_
+Returns _True_ if both _.isalpha()_ and _.isdecimal()_ are true (if the string is alphanumeric).
+
+```Python
+num = "jeiaojg1238130751a"
+
+if num.isalnum():
+    print("The string is alphanumeric")
+```
 
 ## Miscellaneous
 
