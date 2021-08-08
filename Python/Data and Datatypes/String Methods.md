@@ -7,7 +7,7 @@ Here's a quick reference for all [Python string methods](https://www.w3schools.c
 ## Categories
 
 All the string methods can be broken down into the following categories: <br />
--
+
 -
 -
 -
