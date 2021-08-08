@@ -51,3 +51,24 @@ print(f"The smallest value was {min} and the largest was {max}")
 > You can use a single underscore, \_, to discard unwanted values (yes, even more than one and even in the middle of the tuple).
 
 ## Methods
+
+### _.count()_
+_.count()_ returns the amount of times the given item occurs in the tuple (which may be 0).
+
+```Python
+numbers = (1, 2, 3)
+
+print(f"The number 999 appears {numbers.count(999)} times in the tuple 'numbers'.")
+```
+
+### _.index()_
+_.index()_ returns the index of an element in the tuple. If not present, it will throw a [ValueError](https://docs.python.org/3/library/exceptions.html#ValueError).
+
+```Python
+numbers = (1, 2, 3)
+
+try:
+    print(f"The index of the number 3 is: {numbers.index(3)}")
+except ValueError:
+    print("Error: the number is not in the tuple.")
+```
