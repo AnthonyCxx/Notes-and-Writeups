@@ -62,9 +62,7 @@ else:
     print("Steve is absent :(!")
 ```
 
-# List Methods
-
-## Inserting Elements
+## List Methods
 
 ### _.append()_
 _.append()_ appends an element to the end of a list.
