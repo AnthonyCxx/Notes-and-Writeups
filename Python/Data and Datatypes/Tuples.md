@@ -12,7 +12,6 @@ tup2 = ()
 numbers = (1, 2, 3)
 
 ''' ACCESSING TUPLES '''
-
 # Normal indexing
 print(f"The first element in the tuple is: {numbers[0]}")
 
