@@ -114,6 +114,26 @@ surname = surname.casefold() # Changed to 'weissflog'
 
 ## Classifying Strings
 
+### _.isalpha()_
+Returns _True_ if the string is alphabetic (letters a-zA-Z)
+
+```Python
+sentence = "This is a plain an simple English sentence"
+
+if sentence.isalpha():
+    print("The string is alphabetic")
+```
+
+### _isnumeric()_
+Returns _True_ if the string is numeric (contains only digits 0-9)
+
+### _.isalnum()_
+
+### _.isdecimal()_
+
+### _.isdigit()_
+
+
 ## Miscellaneous
 
 ### _.encode()_
