@@ -13,6 +13,9 @@ empty_dict = {}
 # Initializing a Dictionary
 ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570}   # key:value
 
+# Creating a copy of a dictionary
+copy_dictionary = ages.copy()   # <== Needed because just '= ages' yields an alias
+
 ''' ACCESSING DICTIONARY MEMBERS '''
 # Getting a value from a key
 print(ages["Harold"])
@@ -46,3 +49,5 @@ for key, value in ages.items():
 ```
 
 ## Dictionary Methods
+
+
