@@ -56,6 +56,7 @@ _.keys()_ returns a list containing the dictionary's keys.
 ```Python
 ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
 
+# Print all the keys in the dictionary
 for key in ages.keys():
     print(key)
 ```
@@ -66,6 +67,7 @@ _.values()_ returns a list containing the dictionary's values.
 ```Python
 ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
 
+# Print all the values in the dictionary
 for value in ages.values():
     print(value)
 ```
@@ -75,9 +77,10 @@ _.items()_ returns a list of lists, where each sublist is a keys/value pair.
 
 ```Python
 ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
-    
+
+# Print all the key/value pairs in the dictionary
 for key, value in ages.items():
-    print(key, ", ", value)
+    print(key, " : ", value)
 ```
 
 ### _.copy()_
