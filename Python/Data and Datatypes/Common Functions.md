@@ -18,6 +18,25 @@ name = "Mitzelplik"
 print(f"Your name is {len(name)} characters long")
 ```
 
+## _range()_
+_range()_ returns a list of integers that can be iterated over and is used for traditional for-loops. <br />
+Optionally, you can provide a range of numbers and even a step if needed.
+
+**NOTE**: _range()_ stops BEFORE the end number and does not count it. You have to add 1 to include the end number.
+```Python
+# Traditional For-loop
+for num in range(10):  # 0-9
+    print(num)
+    
+# Loop Starting at Non-Zero Number
+for num in range(50, 61): # 50-60
+    print(num)
+
+# Looping with a Step
+for num in range(10, 22, 2): # 10-20, counting by 2s
+    print(num)
+```
+
 ## _type()_
 _type()_ returns the datatype of an object. Don't underestimate how useful this function is in a weak-typed system. It's great for finding bugs.
 
