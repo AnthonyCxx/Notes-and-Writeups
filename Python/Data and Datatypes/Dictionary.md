@@ -40,8 +40,8 @@ for key in ages.keys():
     print(key)
 
 # Iterating over Values
-for key in ages.keys():
-    print(ages[key])
+for value in ages.values():
+    print(value)
 
 # Iterating over Keys and Values
 for key, value in ages.items():
@@ -50,4 +50,92 @@ for key, value in ages.items():
 
 ## Dictionary Methods
 
+### _.keys()_
+_.keys()_ returns a list containing the dictionary's keys.
 
+```Python
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
+
+for key in ages.keys():
+    print(key)
+```
+
+### _.values()_
+_.values()_ returns a list containing the dictionary's values.
+
+```Python
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
+
+for value in ages.values():
+    print(value)
+```
+
+### _.items()_
+_.items()_ returns a list of lists, where each sublist is a keys/value pair.
+
+```Python
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
+    
+for key, value in ages.items():
+    print(key, ", ", value)
+```
+
+### _.copy()_
+
+```Python
+
+```
+
+### _.clear()_
+
+```Python
+
+```
+
+### _.pop()_
+
+```Python
+
+```
+
+### _.popitem()_
+
+```Python
+
+```
+
+### _.str()_
+
+```Python
+
+```
+
+### _.get()_
+
+```Python
+
+```
+
+### _.update()_
+
+```Python
+
+```
+
+### _.setdefault()_
+
+```Python
+
+```
+
+### _.has\_key()_
+
+```Python
+
+```
+
+### _.fromkeys()_
+
+```Python
+
+```
