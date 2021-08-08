@@ -53,6 +53,16 @@ print(f"The amount of times the word 'needle' appears in the sentence is: {count
 
 ## Modifying Strings
 
+### _.replace()_
+_.replace()_ replaces one substring with another. <br />
+If the amount of substitutions is not specified, it will replace all occurances.
+
+```Python
+sentence = "This is a sentence about a needle in a haystack. How many needles are in this haystack? Well, as many needles as there are."
+
+print(sentence.replace("needle", "shoe"))
+```
+
 ## Formatting Strings
 
 ### _.strip()_, _.lstrip()_, and _.rstrip()_
