@@ -11,7 +11,7 @@ default_constructor = dict()
 empty_dict = {}
 
 # Initializing a Dictionary
-ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570}
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570}   # key:value
 
 ''' ACCESSING DICTIONARY MEMBERS '''
 # Getting a value from a key
