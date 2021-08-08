@@ -29,7 +29,7 @@ ages["Lord Harkon"] = 1000
 del ages["Lord Harkon"]
 
 # Delete an entire dictionary
-#ages.clear()
+ages.clear()     # <== Make this a comment when running...
 
 ''' ITERATING OVER DICTIONARIES '''
 # Iterating over Keys
