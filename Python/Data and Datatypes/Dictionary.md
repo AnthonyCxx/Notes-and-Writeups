@@ -149,9 +149,17 @@ else:
 ```
 
 ### _.update()_
+_.update()_ allows you to copy the contents of a dictionary into another dictionary.
+I made a morse code translator a while back and made three separate dictionaries for each of the sets (numbers, letters, symbols) and was able to use _.update()_
+to create one master morse code dictionary from the three.
 
 ```Python
+colors = {"Black":"#000000", "White":"#FFFFFF", "Grey":"#878788"}
+primary_colors = {"Red":"#FF0400", "Yellow":"#FFF700", "Blue":"#0021FF "}
 
+# Add 'primary_colors' to 'colors'
+colors.update(**primary_colors)   # '**' unpacks the dictionary
+print(colors)
 ```
 
 ### _.setdefault()_
