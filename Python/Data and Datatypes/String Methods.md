@@ -84,6 +84,16 @@ event = "showdown"
 event = event.center(10, '.')
 ```
 
+### _.ljust()_
+_.ljust()_ left-justifies a string (aligns it to the left) to the amount of characters provided as an integer, filling any extra with spaces.
+Optionally, you can provide a character as the second argument to change the character used to fill the space.
+
+```Python
+text = "some text"
+
+print(text.ljust(50, '.'))
+```
+
 ### _.expandtabs()_
 _.expandtabs()_ takes an integer that represents the amount of characters a space will be printed as for that strings.
 
@@ -165,7 +175,79 @@ if num.isalnum():
     print("The string is alphanumeric")
 ```
 
+### _.islower()_
+Returns _True_ if the string is entirely lowercase
+
+```Python
+text = "This sentence is not entirely lowercase"
+
+if not text.islower():
+    print("The text is not entirely lowercase...")
+```
+
+### _.isupper()_
+Returns _True_ if the string is entirely uppercase.
+
+```Python
+sentence = "HURR DE DURR YELLING"
+
+if sentence.isupper():
+    print("Stop yelling, I can't see your face and hear your voice at the same time.")
+```
+
+### _.isprintable()_
+Returns _True_ if the string does not contain [unprintable characters](https://flaviocopes.com/non-printable-ascii-characters/).
+
+```Python
+text = "\0\0\0"    # '\0' is the NULL character (not printable)
+
+if not text.isprintable():
+    print("The text is not printable...")
+```
+
+### _.isspace()_
+Returns _True_ if the string is entirely whitespace (tabs, newlines, spaces, etc.).
+
+```Python
+text = "\t\n " # '\t','\n', and ' ' are all whitespace
+
+if text.isspace():
+    print("The text is all whitespace")
+```
+
+### _.istitle()_
+Returns _True_ if the string is lowercase except for the first letter of each word, like in a title. <br />
+Only alphabetic characters on considered when evaluating whether a string _.istitle()_.
+
+```Python
+title = "Catch-22"
+
+if title.istitle():  # True
+    print("The title is a valid title...")
+```
+
+### _.isidentifier()_
+Returns _True_ if the string is a valid [identifier](https://www.tutorialspoint.com/what-are-python-identifiers#:~:text=A%20Python%20identifier%20is%20a,digits%20(0%20to%209).)
+
+```Python
+var_name = "this_is_not_a_valid variable name"
+
+if var_name.isidentifier():
+    print("The string is a valid identifier")
+```
+
 ## Miscellaneous
+
+### _.join()_
+This is easily my favorite string method. <br />
+_.join()_ joins the members of an iterable object (like a list, tuple, or range) using the given string as a separator. 
+
+```Python
+countries = ["Turkey", "Sweeden", "Greece", "India", "Samoa"]
+
+# Make 'countries' a comma-separated string
+as_string = ', '.join(countries)
+```
 
 ### _.encode()_
 _.encode()_ returns a new string, converting unicode characters to ASCII. <br />
