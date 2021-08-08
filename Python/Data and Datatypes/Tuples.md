@@ -48,5 +48,6 @@ min, max = min_max(numbers)
 
 print(f"The smallest value was {min} and the largest was {max}")
 ```
+> You can use a single underscore, \_, to discard unwanted values (yes, even more than one and even in the middle of the tuple).
 
 ## Methods
