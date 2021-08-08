@@ -1,5 +1,6 @@
 # String Methods in Python
-Python is all about strings. So, naturally they have a host of methods for manipulating them.
+Python is all about strings. So, naturally they have a host of methods for manipulating them. <br />
+There are very few methods I left out here (like _maketrans()_ and _translate()_) because they seem too circumstantial.
 
 ## Searching Strings
 
