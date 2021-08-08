@@ -54,6 +54,17 @@ print(f"The amount of times the word 'needle' appears in the sentence is: {count
 
 ## Formatting Strings
 
+### _.strip()_, _.lstrip()_, and _.rstrip()_
+Returns a new string without the whitespace on either side of the string. _.lstrip()_ and _.rstrip()_ only strip the whitespace
+from the left or right side of the string respectively.
+
+```Python
+text = "      this has a lot of whitespace....          "
+
+print(text.strip())
+```
+
+
 ### _.format()_
 The _.format()_ method is the pre-Python 3.6 way to format strings. <br />
 You should always use [f-strings](https://www.programiz.com/python-programming/string-interpolation) for string interpolation. <br />
@@ -115,6 +126,15 @@ Returns a new string, capitalizing the first letter in the string.
 sentence = "this is not a proper sentence because the first letter is not capitalized."
 
 sentence = sentence.capitalize()
+```
+
+### _.lower()_ 
+Returns a new string that is entirely lowercase.
+
+```Python
+text = "THIS IS SOME TEXT"
+
+print(f"Lowercase version: {text.lower()}")
 ```
 
 ### _.casefold()_
