@@ -32,7 +32,7 @@ print(f"Removed item: {init_set.pop()}")
 # Remove all elements
 init_set.clear()
 
-''' CHEAT: REMOVING DUPLICATES FROM LIST '''
+''' HACK: REMOVING DUPLICATES FROM LIST '''
 # Temporary cast to set removes duplicates
 redundant_list = [1, 1, 1, 2, 2, 3, 3, 3, 3]
 without_duplicates = list(set(redundant_list)) # [1, 2, 3]
