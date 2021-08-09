@@ -171,7 +171,7 @@ print(ages)
 
 ### _.popitem()_
 Removes and returns the most recently inserted item as a tuple. <br />
-If the dictionary is empty, an error wil
+If the dictionary is empty, an error will be thrown.
 
 ```Python
 ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
