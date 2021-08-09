@@ -1,4 +1,4 @@
-# Datatypes, Operators, and Functions in Python
+# The Bare Basics of Python
 
 | File | Function |
 | ---- | -------- |
@@ -6,10 +6,11 @@
 | [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Data%20and%20Datatypes#non-primitive-datatypes) | the basic data structures that make up Python |
 | [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Built-in%20Operators.md) | functions associated with tokens |
 | [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Common%20Functions.md) | a collection of the most common Python functions |
+| [Slicing]() | access a portion of any iterable (strings, lists, tuples, etc.) |
 
 ## Primitive Datatypes
 There are four primitive types: [strings](https://realpython.com/python-data-types/#strings), [integers](https://realpython.com/python-data-types/#integers), [floating-point numbers](https://realpython.com/python-data-types/#floating-point-numbers), and [booleans](https://realpython.com/python-data-types/#boolean-type-boolean-context-and-truthiness)
-> Reference: [String Methods and Slicing](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md)
+> Reference: [String Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md)
 
 ## Non-primitive Datatypes
 > All data structures can store collections of varying types without problem. <br />
