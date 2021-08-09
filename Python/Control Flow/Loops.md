@@ -41,5 +41,5 @@ for num in range(10, 21, 2): # 10-20, counting by 2s
 ```
 
 ## _while_ Loops
-Unlike a _for_-loop, which always has a set, known amount of iterations, a _while_ loop is meant to be used when the amount of iterations is unknown and should be based
+Unlike a _for_-loop, which always has a set amount of iterations, a _while_ loop is meant to be used when the amount of iterations is unknown and should be based
 on a condition instead.
