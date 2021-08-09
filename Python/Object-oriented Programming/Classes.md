@@ -29,8 +29,10 @@ class Location:
     def coords(self):
         return str(self.x) + ", " + str(self.y)
 
-''' MAIN '''
-home = Location(10, -50)
+''' DRIVER CODE '''
+def main():
+    home = Location(10, -50)
+    print(f"The house is located at: {home.coords()}")
 
-print(f"The house is located at: {home.coords()}")
+main()
 ```
