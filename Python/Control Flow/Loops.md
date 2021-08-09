@@ -1,4 +1,6 @@
 # Loops in Python
+Python is simple, so it doesn't have a _do...while()_ or traditional _for()_ loop. <br />
+All other loops are just variations of _for_ and _while_ loops, so you just have to modify them a bit to get different types of loops,
 
 ## _for_ Loops
 In Python, for loops work a bit differently. If you wrote `for num in [1, 2, 3]` then _num_ would actually take on the values of 1, 2, and 3 while it iterated over the list.
