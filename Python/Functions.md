@@ -27,7 +27,7 @@ def add5():
     return 5 + 5
     
 # Call 'add5', returning '10'
-result = add5() # 'result = 5 + 5'
+result = add5()
     
 # Print the result
 print(f"5 + 5 = {result}")
