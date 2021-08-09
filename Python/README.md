@@ -21,6 +21,7 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 ### Intermediate
 - Exceptions
 - Object-oriented Programming
+- Using files
 
 ### Advanced
 
