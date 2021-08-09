@@ -148,6 +148,16 @@ else:
     print("The given key did not exist...")
 ```
 
+### _.setdefault()_
+Like, _.get()_, _.setdefault()_ provides a safe way to access dictionary values. <br />
+If the given key does not exist, it creates the key/value pair. The default value is _None_.
+
+```Python
+ages = {"Harold":None, "Charlie":21, "Sun Tzu":2570} 
+
+print(ages.setdefault("Homer", 39))   # "Homer":39 now exists
+```
+
 ### _.update()_
 _.update()_ allows you to copy the contents of a dictionary into another dictionary.
 I made a morse code translator a while back and made three separate dictionaries for each of the sets (numbers, letters, symbols) and was able to use _.update()_
@@ -160,12 +170,6 @@ primary_colors = {"Red":"#FF0400", "Yellow":"#FFF700", "Blue":"#0021FF "}
 # Add 'primary_colors' to 'colors'
 colors.update(**primary_colors)   # '**' unpacks the dictionary
 print(colors)
-```
-
-### _.setdefault()_
-
-```Python
-
 ```
 
 ### _.has\_key()_
