@@ -1,8 +1,8 @@
 # Lists in Python
 > Jump: <br />
-> [Rundown on Lists](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md#rundown-on-lists) <br />
-> [List Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md#list-methods) <br />
-> [List Comprehension](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/lists.md#list-comprehension) <br />
+> [Rundown on Lists](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Lists.md#rundown-on-lists) <br />
+> [List Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Lists.md#list-methods) <br />
+> [List Comprehension](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Lists.md#list-comprehension) <br />
 
 Lists are dynamic arrays that can store any number of elements of any type (including different datatypes). <br />
 Lists are denoted with brackets (\[ \]) and comma-separated elements (in declarations and throughout Python) <br />
