@@ -33,7 +33,7 @@ for num in range(50, 61): # 50-60
     print(num)
 
 # Looping with a Step
-for num in range(10, 22, 2): # 10-20, counting by 2s
+for num in range(10, 21, 2): # 10-20, counting by 2s
     print(num)
 ```
 
