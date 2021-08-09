@@ -48,16 +48,40 @@ print(add(9, 14))
 ```
 
 ## Default Parameters
+In the event that a function is called without some or all parameters, measures can be put into place to ensure that each parameter still has some default value.
+To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) 
+(some value). That way, the parameter will take on that value if and only if no other value is provided.
 
 ```Python
+def add(a = 0, b = 0):     # 'a' and 'b' have a default value of 0
+    return a + b 
+    
+# Calling 'add' with both parameters
+print(add(12, 100))
 
-```
+# Calling 'add' with one paramter (b = 0)
+print(add(50))
 
-## Function Overloading
-
-```Python
-
+# Calling 'add' with no parameters (a = 0, b = 0)
+print(add())
 ```
 
 ## Variadic Functions
-Intimidating name for a simple concept.
+Intimidating name for a simple concept. Variadic functions are functions that can take a varying amount of parameters.
+To make a function variadic, give it a special parameter _\*args_, which is a list that takes in the arguments.
+
+```Python
+# Concatenate all the strings given into one large string
+def concatenate(*args):
+    result = str() 
+    
+    # Iterate over the list of arguments
+    for string in args:
+        result += string
+        
+    return result
+    
+all = concatenate("this", "_function", "_takes", "_any", "_amount", "_of", "_strings")
+
+print(all)
+```
