@@ -18,6 +18,25 @@ print(init_set)
 
 # Create a copy of a set (just doing '= init_set' creates an alias, not a copy)
 copy_set = init_set.copy()  # <== Avoids creating an alias
+
+''' ADDING AND REMOVING ELEMENTS '''
+# Add an element
+init_set.add(10)
+
+# Remove an element
+init_set.discard(10)
+
+# Remove and return a random element
+print(f"Removed item: {init_set.pop()}")
+
+# Remove all elements
+init_set.clear()
+
+''' CHEAT: REMOVING DUPLICATES FROM LIST '''
+redundant_list = [1, 1, 1, 2, 2, 3, 3, 3, 3]
+without_duplicates = list(set(redundant_list)) # Temp cast to set removes duplicates
+
+print(without_duplicates)
 ```
 
 ## Set Methods
