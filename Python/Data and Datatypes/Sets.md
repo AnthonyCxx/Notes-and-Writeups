@@ -21,6 +21,12 @@ copy_set = init_set.copy()  # <== Avoids creating an alias
 ```
 
 ## Set Methods
+Set methods can be generally categorized like so:
+
+- [Adding Elements to Sets](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md#adding-elements-to-sets) 
+- [Removing Elements from a Set](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md#removing-elements-from-sets)
+- [Set Theory Operations](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md#set-theory-operations)
+- [Miscellaneous](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md#miscellaneous)
 
 ## Adding Elements to Sets
 
