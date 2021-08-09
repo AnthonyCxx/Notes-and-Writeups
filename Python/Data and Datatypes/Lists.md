@@ -240,7 +240,7 @@ uppercase_words = ["THIS IS A SENTENCE", "Hmmm, AngRy...", "I am NOT upset"]
 lowercase_words = [word.lower() for word in uppercase_words]  # Now '.lower()' has been applied to each element in 'uppercase_words'
 
 # Applying Conditionals to a collection
-all_numbers = [i for i in range(100)]    # The numbers 1-100
+all_numbers = [i for i in range(100)]    # This is better done as 'list(range(100))'
 even_numbers = [num for num in all_numbers if num % 2 == 0]  # Only copy numbers that are even (where '% 2 == 0' is True)
 
 # Altering the result and applying conditionals
