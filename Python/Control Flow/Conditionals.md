@@ -72,15 +72,17 @@ Until Python 3.10, Python lacked [structural pattern matching](https://www.pytho
 It's doubtful that you're working in Python 3.10, so you'll probably just have to use _if_-_else_ chains instead.
 
 [Here](https://www.python.org/dev/peps/pep-0636/#matching-specific-values) is a good, official example of how to write a Python 'switch' statement.
-
-### Format
-
 ```Python
-
+match command.split():
+    case ["quit"]:
+        print("Goodbye!")
+        quit_game()
+    case ["look"]:
+        current_room.describe()
+    case ["get", obj]:
+        character.get(obj, current_room)
+    case ["go", direction]:
+        current_room = current_room.neighbor(direction)
+    # The rest of your commands go here
 ```
-
-### Example
-
-```Python
-
-```
+> Citation: this example is taken from PEP 636: [_Structural Pattern Matching: Tutorial, Matching Specific Values_](https://www.python.org/dev/peps/pep-0636/#matching-specific-values)
