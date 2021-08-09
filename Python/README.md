@@ -16,9 +16,9 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Data%20and%20Datatypes#non-primitive-datatypes) ([_list_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Lists.md), [_tuple_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Tuples.md), [_dictionary_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Dictionary.md), [_set_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md), and [_frozenset_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md))
 - [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Built-in%20Operators.md)
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Control%20Flow)
-- [String Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md)
 - [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Functions.md)
 - [Common, Built-in Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Common%20Functions.md)
+- [String Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md)
 - [Slicing](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Slicing.md)
 
 ### Intermediate
