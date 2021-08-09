@@ -1,5 +1,8 @@
 # Sets and Frozen Sets in Python
-A set is a mutable, ordered collection of unique elements.
+A set is a mutable, ordered collection of unique elements. <br />
+To better understand sets, I recommend you learn some [set theory](https://www.youtube.com/watch?v=tyDKR4FG3Yw) (if you're in Discrete Math, sub to this guy) <br />
+
+A frozen set is just a set that is immutable.
 
 ## Sets by Example
 
@@ -18,4 +21,32 @@ copy_set = init_set.copy()  # <== Avoids creating an alias
 
 ## Set Methods
 
-A frozen set is just a set that is immutable.
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
+
+### _.()_
