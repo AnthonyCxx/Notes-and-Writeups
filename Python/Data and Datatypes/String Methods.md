@@ -12,7 +12,7 @@ All the string methods can be broken down into the following categories: <br />
 - [Formatting Strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md#formatting-strings)
 - [Altering Case](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md#altering-case)
 - [Classifying Strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md#classifying-strings)
-- [Breaking Strings by Section](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md#breaking-strings-by-section)
+- [Breaking Strings by Section and Joining Them](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md#breaking-strings-by-section)
 - [Miscellaneous](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md#miscellaneous)
 
 ## Searching Strings
