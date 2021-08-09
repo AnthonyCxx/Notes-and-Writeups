@@ -53,9 +53,18 @@ else:                                  # Correct invalid response
 ```
 
 ## The 'Ternary Operator', \_\_ if \_\_ else \_\_
+Python doesn't have a [ternary operator](https://www.freecodecamp.org/news/c-ternary-operator/), more of a ternary structure. <br />
+The structure '\_\_ if \_\_ else \_\_' returns the first argument if the second argument is _True_ — otherwise it returns the third argument.
 
+The ternary structure is especially useful for compressed conditionals in [list comprehension](https://www.programiz.com/python-programming/list-comprehension).
 ```Python
+x = 10
+y = 20
 
+# Return x if x is larger than y, otherwise return y
+larger = x if x > y else y
+
+print(f"The larger value is: {larger} (y ")
 ```
 
 ## Pattern Matching
