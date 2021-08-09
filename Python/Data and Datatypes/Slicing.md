@@ -16,13 +16,35 @@ print(nums[0:3]) # [1, 2, 3]
 ```
 
 ## Implying Indices
-You can imply the first or last index by omitting it.
+You can imply the first or last index by omitting it like `list[0:]`.
+
+```Python
+# A list of 5 integers
+nums = [1, 2, 3, 4, 5]
+
+# [:3] returns indices 0-2, stopping before index 3
+print(nums[:3]) # [1, 2, 3]
+
+# [2:] returns indices 2-4, stopping before index 5 (non-existent)
+print(nums[2:]) # [3, 4, 5]
+
+# [:] returns indices 0-4, stopping before index 5 (non-existent)
+print(nums[:]) # [1, 2, 3, 4, 5]
+```
+
+## Negative Indexing
 
 ```Python
 
 ```
 
 ## Introducing a Step
+
+```Python
+
+```
+
+## Steps with Negative Indexing
 
 ```Python
 
