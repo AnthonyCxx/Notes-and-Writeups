@@ -34,9 +34,17 @@ print(f"5 + 5 = {result}")
 ```
 
 ## Parameters
+When defining a function, you can put variables in the parameter list (the parentheses). Doing so allows you to pass data to the function when you call it that the function
+can then use (the data becomes tied to the variable names).
 
+Here, the function 'add' declares two parameters (a and b) so you can pass whatever two numbers to the function and it will return their sum.
 ```Python
-
+# Function 'add' adds two numbers
+def add(a, b):     # Takes two numbers, 'a' and 'b'
+    return a + b   # Returns the sum of 'a' and 'b'
+    
+print(add(7, 5))
+print(add(9, 14))
 ```
 
 ## Default Parameters
@@ -50,3 +58,6 @@ print(f"5 + 5 = {result}")
 ```Python
 
 ```
+
+## Variadic Functions
+Intimidating name for a simple concept.
