@@ -12,7 +12,7 @@ There are four primitive types: [strings](https://realpython.com/python-data-typ
 > Reference: [String Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md)
 
 ## Non-primitive Datatypes
-> Unless otherwise specified, these types can store elements of various datatypes without problem. <br />
+> All data structures can store collections of varying types without problem. <br />
 
 | Datatype | Purpose |
 | -------- | ------- |
