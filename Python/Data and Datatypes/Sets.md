@@ -33,8 +33,9 @@ print(f"Removed item: {init_set.pop()}")
 init_set.clear()
 
 ''' CHEAT: REMOVING DUPLICATES FROM LIST '''
+# Temporary cast to set removes duplicates
 redundant_list = [1, 1, 1, 2, 2, 3, 3, 3, 3]
-without_duplicates = list(set(redundant_list)) # Temp cast to set removes duplicates
+without_duplicates = list(set(redundant_list)) # [1, 2, 3]
 
 print(without_duplicates)
 ```
