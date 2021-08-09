@@ -43,3 +43,27 @@ for num in range(10, 21, 2): # 10-20, counting by 2s
 ## _while_ Loops
 Unlike a _for_-loop, which always has a set amount of iterations, a _while_ loop is meant to be used when the amount of iterations is unknown and should be based
 on a condition instead.
+
+```Python
+response = None
+
+# Continue the game until the user decides otherwise
+while response != "no":
+    print("Continuing the game...")
+    response = input("Continue the game?: ")
+```
+
+## Infinite Loops with _while True:_
+Putting _True_ for the condition of a loop will make an infinite loop. <br />
+To stop an infinite loop, you must either use a [break](https://www.programiz.com/python-programming/break-continue) statement, or terminate the program with _ctrl_ + _c_.
+
+```Python
+i = 0
+
+while True:
+    print(i)
+    i += 1
+    
+    if i > 500:
+        break
+```
