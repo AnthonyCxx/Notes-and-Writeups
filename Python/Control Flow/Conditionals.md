@@ -19,7 +19,7 @@ if response == "yes":
 ```
 
 ### _else_
-An _else_ statement will execute its respective block if the _if_ statement doesn't executes its. <br />
+An _else_ statement will execute its respective block if all the preceeding blocks failed. <br />
 
 ```Python
 response = "yes"
