@@ -78,4 +78,4 @@ print(nums[-3::-1])  # everything except the last two items, reversed
 # [::-1]
 print(nums[::-1]) # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
-> Like a true programmer, the middle section was copied from StackOverflow.
+> Like a true programmer, I copy and pasted the middle section from StackOverflow.
