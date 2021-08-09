@@ -18,8 +18,8 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Slicing](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Slicing.md)
 
 ### Intermediate
-- Object-oriented Programming
 - Exceptions
+- Object-oriented Programming
 
 ### Advanced
 
