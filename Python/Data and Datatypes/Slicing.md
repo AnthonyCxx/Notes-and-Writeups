@@ -34,7 +34,8 @@ print(nums[:]) # [1, 2, 3, 4, 5]
 
 ## Negative Indexing
 Since the length of the object is known via the [\_\_len\_\_](https://stackoverflow.com/questions/49929998/what-is-magic-about-len/49930062), you can iterate over it in 
-reverse. By providing a negative index, you can reference the end of the object. 
+reverse. <br /> 
+By providing a negative index, you can reference the end of the object. 
 
 ```Python
 # A list of 10 integers, corrosponding to their index
@@ -48,12 +49,21 @@ print(nums[3:-3]) # [3, 4, 5, 6]
 ```
 
 ## Introducing a Step
+Introducing a third number will provide a step, skipping every _int_ numbers where _int_ is the number provided. <br />
 
 ```Python
+# A list of 10 integers, corrosponding to their index
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+# [0:10:2] returns indices 0-9 and iterates over them by 2s
+print(nums[0:10:2]) # [0, 2, 4, 6, 8]
+
+# [0:10:3] returns indices 0-9 and iterates over them by 3s
+print(nums[0:10:3]) # [0, 3, 6, 9]
 ```
 
-## Steps with Negative Indexing
+## Negative Steps
+Providing a negative step will cause the slice to iterate backwards.
 
 ```Python
 
