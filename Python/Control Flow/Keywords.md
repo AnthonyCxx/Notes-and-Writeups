@@ -26,4 +26,15 @@ for num in range(1,101):  # 1-100
 > This really should be written as `if num % 2 == 0: print(num)`. Always use as little control flow as possible.
 
 ## _pass_
-_pass_ is a strange thing because it's not really related to control flow in my opinion, but Python's official documentation lists it under [_More Control Flow Tools, Pass Statements_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements), so I guess I'll include it. _pass_ allows you to omit syntactically necessary
+_pass_ is a strange thing because it's not really related to control flow in my opinion, but Python's official documentation lists it under [_More Control Flow Tools, Pass Statements_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements), so I guess I'll include it. _pass_ allows you to omit syntactically necessary code without
+consequence. If you use the omitted code, it just does nothing. For example, you can define the body of a function as _pass_ and it will just do nothing when called. Personally,
+I use it for when I want to just ignore an exception (a lot of people do this).
+
+```Python
+text = "a"
+
+try:
+    print(text[9000])   # Throws an IndexError (no index 9000...)
+except Exception:       # Catch all errors
+    pass                # Just ignore the error
+```
