@@ -113,8 +113,8 @@ print(sentence.replace("needle", "shoe"))
 ## Formatting Strings
 
 ### _.strip()_, _.lstrip()_, and _.rstrip()_
-Returns a new string without the whitespace on either side of the string. _.lstrip()_ and _.rstrip()_ only strip the whitespace
-from the left or right side of the string respectively.
+Returns a new string without the whitespace on either side of the string. <br />
+_.lstrip()_ and _.rstrip()_ only strip the whitespace from the left or right side of the string respectively.
 
 ```Python
 text = "      this has a lot of whitespace....          "
