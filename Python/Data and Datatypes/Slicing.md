@@ -33,9 +33,18 @@ print(nums[:]) # [1, 2, 3, 4, 5]
 ```
 
 ## Negative Indexing
+Since the length of the object is known via the [\_\_len\_\_](https://stackoverflow.com/questions/49929998/what-is-magic-about-len/49930062), you can iterate over it in 
+reverse. By providing a negative index, you can reference the end of the object. 
 
 ```Python
+# A list of 10 integers, corrosponding to their index
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+# [0:-2] returns indices 0-7, stopping before index 8
+print(nums[0:-2]) # [0, 1, 2, 3, 4, 5, 6, 7]
+
+# [3:-3] returns indices 3-6, stopping before index 7
+print(nums[3:-3]) # [3, 4, 5, 6]
 ```
 
 ## Introducing a Step
