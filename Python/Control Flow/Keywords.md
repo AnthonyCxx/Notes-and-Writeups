@@ -23,6 +23,7 @@ for num in range(1,101):  # 1-100
     
     print(num)
 ```
-> This really should be written as `if num % 2 == 0: print(num)`. Always be as direct as possible.
+> This really should be written as `if num % 2 == 0: print(num)`. Always use as little control flow as possible.
 
 ## _pass_
+_pass_ is a strange thing because it's not really related to control flow in my opinion, but Python's official documentation lists it under [_More Control Flow Tools, Pass Statements_](https://docs.python.org/3/tutorial/controlflow.html#pass-statements), so I guess I'll include it. _pass_ allows you to omit syntactically necessary
