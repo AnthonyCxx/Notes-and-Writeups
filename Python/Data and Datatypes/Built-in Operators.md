@@ -31,8 +31,8 @@
 ## Identity
 | Operator | Arity | Function |
 | -------- | ----- | -------- |
-| is | Binary | True if the second class is or is derived from the first |
-| is not | Binary | True if the second class is not or is not derived from the first |
+| is | Binary | True if the second class is or is derived from the first class |
+| is not | Binary | True if the second class is not or is not derived from the first class |
 > Always use _is_ and _is not_ when checking for _None_
 
 ## Membership
