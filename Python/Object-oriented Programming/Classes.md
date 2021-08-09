@@ -35,3 +35,5 @@ main()
 
 ## Constructors: _\_\_init\_\__
 The  _\_\_init\_\__ method
+The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
+magic methods).
