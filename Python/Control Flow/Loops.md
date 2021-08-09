@@ -60,10 +60,12 @@ To stop an infinite loop, you must either use a [break](https://www.programiz.co
 ```Python
 i = 0
 
+# Infinite loop
 while True:
     print(i)
     i += 1
     
+    # Stop the infinite loop if the number is greater than 500
     if i > 500:
         break
 ```
