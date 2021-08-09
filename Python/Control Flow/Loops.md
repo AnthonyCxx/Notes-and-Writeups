@@ -4,6 +4,23 @@
 In Python, for loops work a bit differently. If you wrote `for num in [1, 2, 3]` then _num_ would actually take on the values of 1, 2, and 3 while it iterated over the list.
 This is what makes Python's for-loops distinct — the fact that they take on the value of element at the index in an object (1, 2, 3) instead of the value of the index itself (0, 1, 2)
 
+Iterating over a collection like a list or a tuple
+```Python
+items = ["A Backpack", "A Map", "A Sword", "Boots (the monkey)", "A leopard-print bookshelf (ew)"]
+
+# Loop over the items, where 'item' is the current item
+for item in items:
+    print(item)
+```
+
+Iterating over a string is done just like a list since it's also a sequence.
+```Python
+word = "Arrow"
+
+for char in word:  # For every character in the word
+    print(char)
+```
+
 ## _range()_
 The _range()_ function returns a list of integers that can be iterated over and is used for traditional for-loops. <br />
 Optionally, you can provide a range of numbers and even a step if needed.
