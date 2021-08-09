@@ -18,7 +18,7 @@ Iterating over a string is done just like a list since it's also a sequence.
 word = "Arrow"
 
 for char in word:  # For every character in the word
-    print(char)
+    print(char)    # Print the current character
 ```
 
 ## _range()_
