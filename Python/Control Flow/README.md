@@ -4,8 +4,6 @@ alter the [flow of execution](https://en.wikipedia.org/wiki/Control_flow#:~:text
 
 | File | Function |
 | ---- | -------- | 
-|  |  |
-|  |  |
-|  |  |
+| [Conditionals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Control%20Flow/Conditionals.md) | Conditionals (_if_, _else_, _elif_) |
 |  |  |
 |  |  |
