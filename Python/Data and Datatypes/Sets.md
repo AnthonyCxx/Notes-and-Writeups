@@ -12,7 +12,8 @@ A frozen set is just a set that is immutable.
 default_set = set()
 
 # Initializing a Set
-init_set = set((1, 2, 2, 3))  # <== Wrap all elements in '()' to make 1 argument
+init_set = set((1, 2, 2, 3))  # <== Wrap all elements in '()' to make 1 argument  
+other_way = {1, 2, 3}
 print(init_set)
 
 # Create a copy of a set (just doing '= init_set' creates an alias, not a copy)
@@ -21,7 +22,7 @@ copy_set = init_set.copy()  # <== Avoids creating an alias
 
 ## Set Methods
 
-### _.()_
+### _.add()_
 
 ### _.()_
 
