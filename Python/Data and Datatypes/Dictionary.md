@@ -83,54 +83,6 @@ for key, value in ages.items():
     print(key, " : ", value)
 ```
 
-### _.copy()_
-_.copy()_ returns a new dictionary that is a copy of the original dictionary.
-The _.copy()_ method should be used over raw assignment `= some_dictionary` because raw assignment just creates an alias of the same dictionary.
-
-```Python
-# Initializing a Dictionary
-ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570}   # key:value
-
-# Creating a copy of a dictionary
-copy_dict = ages.copy()
-```
-
-### _.clear()_
-_.clear()_ deletes all the elements of the dictionary.
-
-```Python
-ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
-
-# Delete all pairs in the dictionary
-ages.clear()
-
-print(ages)
-```
-
-### _.pop()_
-_.pop()_ removes and returns the value of the key provided as the argument. <br />
-In case the key does not exist, you can provide a second argument as a default return value.
-
-```Python
-ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
-
-# Remove and return the value of 'Harold'
-print(ages.pop("Harold", "N/A"))
-print(ages)
-```
-
-### _.popitem()_
-Removes and returns the most recently inserted item as a tuple. <br />
-If the dictionary is empty, an error wil
-
-```Python
-ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
-
-# Remove and return the last key/value pair
-print(ages.popitem())
-print(ages)
-```
-
 ### _.get()_
 _.get()_ provides a safe way to access dictionary values. If the key/value pair does not exist for a given key, then
 it will return none (unless you provide a different default value as a second argument).
@@ -180,3 +132,52 @@ If you don't provide a default argument for each item in the dictionary, their v
 numbers = dict.fromkeys(range(15))
 print(numbers)
 ```
+
+### _.copy()_
+_.copy()_ returns a new dictionary that is a copy of the original dictionary.
+The _.copy()_ method should be used over raw assignment `= some_dictionary` because raw assignment just creates an alias of the same dictionary.
+
+```Python
+# Initializing a Dictionary
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570}   # key:value
+
+# Creating a copy of a dictionary
+copy_dict = ages.copy()
+```
+
+### _.clear()_
+_.clear()_ deletes all the elements of the dictionary.
+
+```Python
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
+
+# Delete all pairs in the dictionary
+ages.clear()
+
+print(ages)
+```
+
+### _.pop()_
+_.pop()_ removes and returns the value of the key provided as the argument. <br />
+In case the key does not exist, you can provide a second argument as a default return value.
+
+```Python
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
+
+# Remove and return the value of 'Harold'
+print(ages.pop("Harold", "N/A"))
+print(ages)
+```
+
+### _.popitem()_
+Removes and returns the most recently inserted item as a tuple. <br />
+If the dictionary is empty, an error wil
+
+```Python
+ages = {"Harold":47, "Charlie":21, "Sun Tzu":2570} 
+
+# Remove and return the last key/value pair
+print(ages.popitem())
+print(ages)
+```
+
