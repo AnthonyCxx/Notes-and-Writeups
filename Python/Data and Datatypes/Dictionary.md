@@ -172,14 +172,11 @@ colors.update(**primary_colors)   # '**' unpacks the dictionary
 print(colors)
 ```
 
-### _.has\_key()_
-
-```Python
-
-```
-
 ### _.fromkeys()_
+_.fromkeys()_ creates a dictionary from an iterable object like a range or a list. <br />
+If you don't provide a default argument for each item in the dictionary, their value will be _None_.
 
 ```Python
-
+numbers = dict.fromkeys(range(15))
+print(numbers)
 ```
