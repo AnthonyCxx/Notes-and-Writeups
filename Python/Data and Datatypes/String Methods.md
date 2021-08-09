@@ -255,8 +255,8 @@ if letters.isalpha():
 _.isdecimal()_ is the most strict numeric classifier, only returning _True_ when all the characters are 0-9.
 
 ```Python
-if "5599928814".isdigit(): # True
-    print("Phone numbers are considered digital")
+if "5599928814".isdecimal(): # True
+    print("Phone numbers are considered decimal")
 ```
 
 ### _.isdigit()_
@@ -288,7 +288,7 @@ if num.isalnum():
 ```
 
 ### _.islower()_
-Returns _True_ if the string is entirely lowercase
+Returns _True_ if the string is entirely lowercase.
 
 ```Python
 text = "This sentence is not entirely lowercase"
