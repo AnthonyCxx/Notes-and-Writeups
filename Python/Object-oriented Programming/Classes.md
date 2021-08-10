@@ -133,6 +133,21 @@ Instance methods are functions that are specific to a class (there are also [cla
 Just like instance variables are declared prefixed by _self_, all instance methods (including special methods like _\_\_init\_\__) must take [_self_](https://www.programiz.com/article/python-self-why) as their first parameter (even if they have no other paramters). This is because Python favors being explicit and the
 stark division between what is and is not directly tied to the class.
 
+```Python
+class Mouse:
+    # Instance method, takes 'sequak' as the first parameter
+    def squeak(self):
+        print("Squeak!")
+ 
+def main():
+    mouse = Mouse()
+
+    # Call instance method
+    mouse.squeak()
+
+main()
+```
+
 ## Constructors: _\_\_init\_\__
 The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
 only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
