@@ -74,6 +74,38 @@ main()
 ```
 
 ## Instance Attributes
+Instance attributes are class members that are tied to the individual instances of a class. You can try to affect all instances of the class like you can with
+class attributes, but it won't do anything. Instance members are typically declared in and initialized by the  _\_\_init()\_\__ function, which is the special name of
+the constructor in Python.
+
+```Python
+class Location:
+    address = "Unknown"   # <== Class attribute
+    
+    # Constructor
+    def __init__(self, x, y): 
+        self.x = x     # <== Instance attribute
+        self.y = y     # <== Instance attribute
+    
+    # Method: returns coordinates
+    def coords(self):
+        return str(self.x) + ", " + str(self.y)
+
+# // DRIVER CODE //
+def main():
+    home = Location(10, -50)
+    school = Location(30, 30)
+    
+    print(home.coords())
+    print(school.coords())
+    
+    Location.x = 20   # <== Does nothing, 'x' is an instance attribute
+    
+    print(home.coords())
+    print(school.coords())
+    
+main()
+```
 
 ## 'Public' and '\_\_Private' Data Members
 Python does not support [access modifiers](https://www.geeksforgeeks.org/access-modifiers-in-c/) through keywords like _public_ and _private_ like languages such as 
