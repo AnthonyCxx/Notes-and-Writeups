@@ -20,7 +20,7 @@ main()
 
 ## Overloadable Operators
 
-P.S. '[token](https://techterms.com/definition/token)' refers to a single, irreducible element of a programming language.
+P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irreducible element of a programming language like the operator '+'.
 
 ### Arithmetic Operators
 | Token | Arity | Dunder Method |
