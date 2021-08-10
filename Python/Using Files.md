@@ -10,7 +10,7 @@ RealPython has a really good guide on [reading/writing files in Python](https://
 For reference, I use the [walrus operator](https://realpython.com/lessons/assignment-expressions/) (:=) a lot here.
 
 ## Opening a File
-Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/). Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
+Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/) that is iterable. Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
 
 ```Python
 with open("file.txt", "r") as f:
@@ -47,6 +47,16 @@ with open("file.txt", "r") as f:       # Using the file 'file.txt' in read mode
             print(char)                # Print the given character
 ```
 > Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
+
+## Reading by Word
+If you split the line before iterating over it, then you iterate over the words as a list instead of the characters as a string.
+
+```Python
+with open("file.txt", "r") as f:               # Using the file 'file.txt' in read mode
+    for line in f:                             # For every line in the file
+        for word in line.rstrip().split():     # For every word in the stripped line
+            print(word)                        # Print the given word
+```
 
 ## Reading by Line
 file.readline() reads a single line from the file. <br />
