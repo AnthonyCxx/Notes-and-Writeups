@@ -35,10 +35,10 @@ The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method reads 
 If no amount is specified, _read()_ will read the entire file. To read by character, do _read(1)_.
 
 ```Python
-with open("file.txt", "r") as f:
-    for line in f:
-        for char in line.rstrip():
-            print(char)
+with open("file.txt", "r") as f:       # Using the file 'file.txt' in read mode
+    for line in f:                     # For every line in the file
+        for char in line.rstrip():     # For every character in the stripped line
+            print(char)                # Print the given character
 ```
 > Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
