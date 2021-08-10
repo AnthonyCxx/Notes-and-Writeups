@@ -20,18 +20,22 @@ main()
 
 ## Overloadable Operators
 
+P.S. '[token](https://techterms.com/definition/token)' refers to a single, irreducible element of a programming language.
+
 ### Arithmetic Operators
 | Token | Arity | Dunder Method |
-| -------- | ----- | ------------- | 
-|  |  |  |
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
+| ----- | ----- | ------------- | 
+| + |  | _\_\_add()\_\__ |
+| - |  |  | 
+| * |  |  | 
+| / |  |  | 
+| % |  |  | 
+| // |  |  | 
+| ** |  |  | 
 
 ### Comparison Operators
-| Operator | Arity | Dunder Method |
-| -------- | ----- | ------------- | 
+| Token | Arity | Dunder Method |
+| ----- | ----- | ------------- | 
 |  |  |  |
 |  |  |  | 
 |  |  |  | 
@@ -39,8 +43,8 @@ main()
 |  |  |  | 
 
 ### Bitwise Operators
-| Operator | Arity | Dunder Method |
-| -------- | ----- | ------------- | 
+| Token | Arity | Dunder Method |
+| ------ | ----- | ------------- | 
 |  |  |  |
 |  |  |  | 
 |  |  |  | 
@@ -48,8 +52,8 @@ main()
 |  |  |  | 
 
 ### Assignment Operators
-| Operator | Arity | Dunder Method |
-| -------- | ----- | ------------- | 
+| Token | Arity | Dunder Method |
+| ------ | ----- | ------------- | 
 |  |  |  |
 |  |  |  | 
 |  |  |  | 
