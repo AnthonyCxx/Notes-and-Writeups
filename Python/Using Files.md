@@ -1,5 +1,5 @@
 # Reading and Writing Files in Python
-RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/)..
+RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/).
 
 For reference, I use the [walrus operator](https://realpython.com/lessons/assignment-expressions/) (:=) a lot here.
 
@@ -71,12 +71,14 @@ with open("file.txt", "r") as f:
 ```
 
 ## Reading Entire File as String
-file.read()
+The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method read an entire file as a string if not given
+an amount of characters to read.
 
 ```Python
-
+with open("file.txt", "r") as f:
+     content = f.read().rstrip()
+     print(content)
 ```
-> Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading Entire File as List
 file.readlines() reads the entire <br />
