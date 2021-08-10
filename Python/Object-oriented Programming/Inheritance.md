@@ -28,6 +28,7 @@ class Employee(Person):
         # Call the constructor of the parent class
         Person.__init__(self, name, age)
     
+        # Initialize instance attributes
         self.company = company
         self.yearly_salary = yearly_salary
         
