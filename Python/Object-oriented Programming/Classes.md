@@ -39,7 +39,7 @@ main()
 ## Constructors: _\_\_init\_\__
 The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
 only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
-constructors both declare the data members of a class and initialize them too.
+constructors declare the data members of a class and initialize them too.
 
 The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
 magic methods).
