@@ -66,13 +66,15 @@ def __isub__(self, other):
 
 | Token | Arity | Dunder Method |
 | ------ | ----- | ------------- | 
-| += |  |  |
-| -= |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
+| += | Binary |  |
+| -= | Binary |  | 
+| \*= | Binary |  | 
+| / | Binary |  | 
+| % | Binary |  | 
+| // | Binary |  | 
+| \*\* | Binary |  | 
+| <<= | Binary |  | 
+| >>= | Binary |  | 
+| &= | Binary |  | 
+| \|= | Binary |  | 
+| ^= | Binary |  | 
