@@ -19,15 +19,11 @@ filename.function()
 > This assumes
 
 ## Importing Specific Objects from a File
+You can import anything with an identifier from a file: variables, classes, functions...
 
 ```Python
 from filename import something
 
 # Don't need the 'filename.' prefix anymore...
 something()
-```
-## Import User-made Modules from a Different Directory
-
-```Python
-
 ```
