@@ -19,6 +19,7 @@ main()
 ```
 
 ## Overloadable Operators
+For a full list of overloadable operators, [click here](https://docs.python.org/3/library/operator.html#mapping-operators-to-functions).
 
 P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irreducible element of a programming language like the operator '+'.
 
@@ -56,6 +57,13 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 | ~ | Unary | \_\_invert()\_\_ | 
 
 ### Assignment Operators
+For some reason or another, I could only get the assignment overloads to work like this:
+```Python
+def __isub__(self, other):
+        return self.num - other
+```
+> Why is \_\_isub()\_\_ returning something? I don't know.
+
 | Token | Arity | Dunder Method |
 | ------ | ----- | ------------- | 
 |  |  |  |
