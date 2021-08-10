@@ -42,11 +42,15 @@ _r_ mode throws a [_FileNotFoundError_](https://docs.python.org/3/library/except
 # Reading Files
 
 ## Reading by Character
+file.read(1)
 
 ## Reading by Line
+file.readline()
 
 ## Reading Entire File into String
+file.read()
 
 ## Reading Entire File into List
+file.readlines()
 
 # Writing to Files
