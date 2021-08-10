@@ -36,6 +36,43 @@ def main():
 main()
 ```
 
+## Class Attributes
+When a variable is declared normally (i.e. without the _self_ keyword) like `name = Deathstroke"`, then that variable is shared across all instances of the class.
+Now, this is not like [_static_ class members](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm) in languages like C++ where changing the variable in 
+once instance of the class will affect all other instances (well, not necessarily). If I have two locations
+
+```Python
+class Location:
+    name = "Unknown"    # <== Class attribute
+    
+    # Constructor
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    # Method: returns coordinates
+    def coords(self):
+        return str(self.x) + ", " + str(self.y)
+
+# // DRIVER CODE //
+def main():
+    home = Location(10, -50)
+    school = Location(30, 30)
+    
+    # BEFORE
+    print(home.name)
+    print(school.name)
+    
+    # Change the name of the location for ALL instances of the 'Location' class
+    Location.name = "221B Baker St."
+    
+    # AFTER
+    print(home.name)
+    print(school.name)
+```
+
+## Instance Attributes
+
 ## Constructors: _\_\_init\_\__
 The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
 only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
