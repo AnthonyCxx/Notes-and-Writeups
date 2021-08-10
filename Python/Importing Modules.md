@@ -2,6 +2,8 @@
 All references to contents from other files must be prefixed with the name of the file followed by a dot (e.g. `filename.function()`) <br />
 You can import anything with an identifier from a file: variables, classes, functions...
 
+[Definitive Guide to Python's _import_ Statement](https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html) <br />
+
 ## Importing Modules
 Importing native modules (from the Python standard library) is as simple. Just write _import_ followed by the module name.
 
