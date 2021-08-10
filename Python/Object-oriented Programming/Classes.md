@@ -165,8 +165,8 @@ def main():
     school = Location(30, 30)
     
     # Print the classes as strings
-    print(home)
-    print(school)
+    print(home)       # '10, 50'
+    print(school)     # '30, 30'
     
 main()
 ```
