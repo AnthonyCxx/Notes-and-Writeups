@@ -81,6 +81,7 @@ with open("file.txt", "r") as f:
 > Reference: [List Comprehension](https://www.programiz.com/python-programming/list-comprehension)
 
 # Writing to Files
+Just use the _.write()_ method. It's that easy.
 
 ```Python
 with open("file.txt", "w") as f:
