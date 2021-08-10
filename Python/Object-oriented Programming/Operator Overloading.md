@@ -36,11 +36,12 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 ### Comparison Operators
 | Token | Arity | Dunder Method |
 | ------ | ----- | ------------- | 
-|  |  |  |
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
+| == | Binary | \_\_eq()\_\_ |
+| != | Binary | \_\_ne()\_\_ | 
+| < | Binary | \_\_lt()\_\_ | 
+| > | Binary | \_\_gt()\_\_ | 
+| <= | Binary | \_\_le()\_\_ | 
+| >= | Binary | \_\_ge()\_\_ | 
 
 ### Bitwise Operators
 | Token | Arity | Dunder Method |
