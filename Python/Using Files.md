@@ -1,7 +1,7 @@
 # Reading and Writing Files in Python
 > Jump: <br />
 > 
-> Reading files [by character](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-character), [by line](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-line) <br />
+> Reading files [by character](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-character), [by word](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-word), [by line](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-line) <br />
 > Reading entire files as [a string](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-entire-file-as-string), [a list](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-entire-file-as-list) <br />
 > [Writing to files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#writing-to-files) <br />
 
