@@ -5,7 +5,7 @@ You can import anything with an identifier from a file: variables, classes, func
 [Definitive Guide to Python's _import_ Statement](https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html) <br />
 
 ## Importing Modules
-Importing native modules (from the Python standard library) is as simple. Just write _import_ followed by the module name.
+Importing native modules (from [the Python standard library](https://docs.python.org/3/py-modindex.html)) is as simple. Just write _import_ followed by the module name.
 
 ```Python
 import datetime
