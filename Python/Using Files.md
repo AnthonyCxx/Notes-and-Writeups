@@ -1,6 +1,8 @@
 # Reading and Writing Files in Python
 RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/).
 
+For reference, I use the [walrus operator](https://realpython.com/lessons/assignment-expressions/) (:=) a lot here.
+
 ## Opening a File
 Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/). Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
 
@@ -41,16 +43,46 @@ _r_ mode throws a [_FileNotFoundError_](https://docs.python.org/3/library/except
 
 # Reading Files
 
+## Safely Reading Files
+
+```Python
+
+```
+
 ## Reading by Character
-file.read(1)
+The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method reads a given amount of characters. <br />
+If no amount is specified, _read()_ will read the entire file. To read by character, do _read(1)_.
+
+```Python
+with open("file.txt", "r") as f:
+    while char := f.read(1):
+        print(char)
+```
+> Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading by Line
 file.readline()
 
-## Reading Entire File into String
+```Python
+
+```
+
+## Reading Entire File as String
 file.read()
 
-## Reading Entire File into List
+```Python
+
+```
+
+## Reading Entire File as List
 file.readlines()
 
+```Python
+
+```
+
 # Writing to Files
+
+```Python
+
+```
