@@ -12,9 +12,6 @@ Here is a class _Employee_ that inherits from _Person_, extending it.
 ```Python
 # // PERSON CLASS (PARENT) // #
 class Person:
-    # Class attribute
-    species = "Human"
-    
     # Instance Attributes
     def __init__(self, name, age):
         self.name = name
