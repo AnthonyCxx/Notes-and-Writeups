@@ -127,16 +127,46 @@ def main():
 main()
 ```
 
-## Constructors: _\_\_init\_\__
-The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
-only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
-constructors declare the data members of a class and initialize them too.
-
-The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
-magic methods).
-
 ## Methods
 Methods are functions that are specific to a class. In Python, all methods (including _\_\_init\_\__) must take [_self_](https://www.programiz.com/article/python-self-why) 
 as their first parameter (even if they have none). This is because Python favors being explicit and the stark division between what is and is not a part of the class is helpful.
 
+## Constructors: _\_\_init\_\__
+The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
+only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
+constructors declare the instance members of a class and initialize them too.
+
+The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
+magic methods).
+
 ## Destructors: _\_\_del\_\__
+
+## String Representation: _\_\_repr\_\__
+Python's all about strings, so it should come as no surprise that it has a special method for representing a class as a string. The string returned by _\_\_repr\_\__
+is considered to the string representation of the object. 
+
+See [this StackOverflow post](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr) to see the differences between _\_\_repr\_\__ and _\_\_str\_\__ (both string representations of an object).
+```Python
+class Location:
+    address = "Unknown"   # <== Class attribute
+    
+    # Constructor
+    def __init__(self, x, y): 
+        self.x = x     # <== Instance attribute
+        self.y = y     # <== Instance attribute
+    
+    # Special method: string representation of 'Location'
+    def __repr__(self):
+        return str(self.x) + ", " + str(self.y)
+
+# // DRIVER CODE //
+def main():
+    home = Location(10, -50)
+    school = Location(30, 30)
+    
+    # Print the classes as strings
+    print(home)
+    print(school)
+    
+main()
+```
