@@ -35,7 +35,7 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 
 ### Comparison Operators
 | Token | Arity | Dunder Method |
-| ----- | ----- | ------------- | 
+| ------ | ----- | ------------- | 
 |  |  |  |
 |  |  |  | 
 |  |  |  | 
@@ -44,12 +44,13 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 
 ### Bitwise Operators
 | Token | Arity | Dunder Method |
-| ------ | ----- | ------------- | 
-|  |  |  |
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
+| ----- | ----- | ------------- | 
+| << | Binary | \_\_lshift()\_\_  |
+| >> | Binary | \_\_rshift()\_\_ | 
+| & | Binary | \_\_and()\_\_ | 
+| \| | Binary | \_\_or()\_\_ | 
+| ^ | Binary | \_\_xor()\_\_ | 
+| ~ | Unary | \_\_invert()\_\_ | 
 
 ### Assignment Operators
 | Token | Arity | Dunder Method |
