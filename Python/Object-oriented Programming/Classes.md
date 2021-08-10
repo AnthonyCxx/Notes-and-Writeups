@@ -128,9 +128,10 @@ def main():
 main()
 ```
 
-## Methods
-Methods are functions that are specific to a class. In Python, all methods (including _\_\_init\_\__) must take [_self_](https://www.programiz.com/article/python-self-why) 
-as their first parameter (even if they have none). This is because Python favors being explicit and the stark division between what is and is not a part of the class is helpful.
+## Instance Methods
+Instance methods are functions that are specific to a class (there are also [class and static methods](https://realpython.com/instance-class-and-static-methods-demystified/)).
+Just like instance variables are declared prefixed by _self_, all instance methods (including special methods like _\_\_init\_\__) must take [_self_](https://www.programiz.com/article/python-self-why) as their first parameter (even if they have no other paramters). This is because Python favors being explicit and the
+stark division between what is and is not directly tied to the class.
 
 ## Constructors: _\_\_init\_\__
 The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
