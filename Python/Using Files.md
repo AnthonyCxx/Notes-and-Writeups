@@ -75,7 +75,7 @@ Annoyingly, it does leave an ugly '\\n' on the end of each line, so I took the l
 
 ```Python
 with open("file.txt", "r") as f:
-     lines = [line.rstrip('\n') for line in f.readlines()]
+     lines = [line.rstrip() for line in f.readlines()]
      print(lines)
 ```
 > Reference: [List Comprehension](https://www.programiz.com/python-programming/list-comprehension)
