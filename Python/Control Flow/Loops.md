@@ -42,6 +42,16 @@ for num in range(10, 21, 2): # 10-20, counting by 2s
     print(num)
 ```
 
+## The _enumerate()_ Function
+The _enumerate()_ function is a basic _for_-loop with a counter built into it. <br />
+
+```Python
+items = ["An apple", "A bananna", "A fiddle", "A spoonful of sugar"]
+
+for count, item in enumerate(items):
+    print(f"{count}: {item}")
+```
+
 ## _while_ Loops
 Unlike a _for_-loop, which always has a set amount of iterations, a _while_ loop is meant to be used when the amount of iterations is unknown and should be based
 on a condition instead.
