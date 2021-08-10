@@ -25,7 +25,7 @@ P.S. '[token](https://techterms.com/definition/token)' refers to a single, irred
 ### Arithmetic Operators
 | Token | Arity | Dunder Method |
 | ----- | ----- | ------------- | 
-| + |  | _\_\_add()\_\__ |
+| + |  | \_\_add()\_\_ |
 | - |  |  | 
 | * |  |  | 
 | / |  |  | 
