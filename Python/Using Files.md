@@ -1,4 +1,10 @@
 # Reading and Writing Files in Python
+> Jump: <br />
+> 
+> Reading files [by character](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-character), [by line](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-by-line) <br />
+> Reading entire files as [a string](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-entire-file-as-string), [a list](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#reading-entire-file-as-list) <br />
+> [Writing to files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md#writing-to-files) <br />
+
 RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/).
 
 For reference, I use the [walrus operator](https://realpython.com/lessons/assignment-expressions/) (:=) a lot here.
@@ -75,7 +81,7 @@ Annoyingly, it does leave an ugly '\\n' on the end of each line, so I took the l
 
 ```Python
 with open("file.txt", "r") as f:
-     lines = [line.rstrip() for line in f.readlines()]
+     lines = [line.rstrip('\n') for line in f.readlines()]
      print(lines)
 ```
 > Reference: [List Comprehension](https://www.programiz.com/python-programming/list-comprehension)
