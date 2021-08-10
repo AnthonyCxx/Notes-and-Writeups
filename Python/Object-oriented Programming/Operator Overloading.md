@@ -31,7 +31,9 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 | / | Binary | \_\_truediv()\_\_ | 
 | % | Binary | \_\_mod()\_\_ | 
 | // | Binary | \_\_floordiv()\_\_ | 
-| ** | Binary | \_\_pow()\_\_ | 
+| \*\* | Binary | \_\_pow()\_\_ | 
+| - | Unary | \_\_neg()\_\_ |
+| + | Unary | \_\_pos()\_\_ |
 
 ### Comparison Operators
 | Token | Arity | Dunder Method |
