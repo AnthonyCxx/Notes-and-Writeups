@@ -106,7 +106,7 @@ def main():
 main()
 ```
 
-## 'Public' and '\_\_Private' Data Members
+## Public and \_\_Private Data Members
 Python does not support [access modifiers](https://www.geeksforgeeks.org/access-modifiers-in-c/) through keywords like _public_ and _private_ like languages such as 
 C++ or Java. Instead, accessability is determined by the syntax of the name. If the name of a class member (variables, functions, etc.) starts with two underscores 
 like `__name`, then the member will be inaccessible outside of the class. If you try to reference a 'private' member, then you will get an [_AttributeError_](https://www.geeksforgeeks.org/python-attributeerror/).
