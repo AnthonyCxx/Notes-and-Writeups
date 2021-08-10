@@ -49,6 +49,10 @@ print(Harold)  # Harold, 45, Wells Fargo, 87000
 ## The _super()_ Function
 Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)...
 
+[https://www.educative.io/edpresso/what-is-super-in-python](https://www.educative.io/edpresso/what-is-super-in-python) <br />
+[https://realpython.com/python-super/](https://realpython.com/python-super/)
+
+[_Why Should I use super()?_](https://stackoverflow.com/questions/222877/what-does-super-do-in-python-difference-between-super-init-and-expl)
 ```Python
 
 ```
