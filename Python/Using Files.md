@@ -43,12 +43,6 @@ _r_ mode throws a [_FileNotFoundError_](https://docs.python.org/3/library/except
 
 # Reading Files
 
-## Safely Reading Files
-
-```Python
-
-```
-
 ## Reading by Character
 The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method reads a given amount of characters. <br />
 If no amount is specified, _read()_ will read the entire file. To read by character, do _read(1)_.
@@ -94,5 +88,7 @@ with open("file.txt", "r") as f:
 # Writing to Files
 
 ```Python
-
+with open("file.txt", "w") as f:
+        f.write("Writing this to the file...")  
 ```
+> Note: Since the file was opened in '_w_' mode, the contents of it will be overwritten
