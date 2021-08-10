@@ -13,7 +13,7 @@ class Number:
 # // DRIVER CODE // #
 def main():
     num = Number(10)
-    print(num + 2)
+    print(num + 2)    # Add '2' directly to an object
 
 main()
 ```
@@ -21,9 +21,37 @@ main()
 ## Overloadable Operators
 
 ### Arithmetic Operators
+| Operator | Arity | Dunder Method |
+| -------- | ----- | ------------- | 
+|  |  |  |
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
 
 ### Comparison Operators
+| Operator | Arity | Dunder Method |
+| -------- | ----- | ------------- | 
+|  |  |  |
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
 
 ### Bitwise Operators
+| Operator | Arity | Dunder Method |
+| -------- | ----- | ------------- | 
+|  |  |  |
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
 
 ### Assignment Operators
+| Operator | Arity | Dunder Method |
+| -------- | ----- | ------------- | 
+|  |  |  |
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
