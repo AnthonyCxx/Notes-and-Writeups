@@ -78,6 +78,7 @@ Instance attributes are class members that are tied to the individual instances 
 class attributes, but it won't do anything. Instance members are typically declared in and initialized by the  _\_\_init()\_\__ function, which is the special name of
 the constructor in Python. To make a data member an instance attribute, preface the declaration (and all usage) with the [_self_](https://www.geeksforgeeks.org/self-in-python-class/) keyword.
 
+**NOTE**: All of your class variables should be instance attributes unless you need to share them.
 ```Python
 class Location:
     address = "Unknown"   # <== Class attribute
