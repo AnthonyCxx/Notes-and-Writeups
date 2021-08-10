@@ -41,7 +41,7 @@ When a variable is declared normally (i.e. without the _self_ keyword) like `nam
 Class attributes can and can't be compared to [_static_ class members](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm) in languages like C++, depending
 on what you mean. Like _static_ class members, class attributes can modify all instances of the class by assigning to the class attribute of the class itself instead of 
 just an instance. All that means is that if you had a class '_Location_' that had a class attribute '_name_', you could directly affect all _Location_ objects by assigning
-to `Location.name`. However, at the same time, you could choose to only affect one instance of an object by assigning to that object like `object.name = "something"`.
+to `Location.name`. However, you could choose to only affect one instance of an object by assigning to that object like `object.name = "something"`.
 
 ```Python
 class Location:
