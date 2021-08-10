@@ -20,6 +20,7 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Common, Built-in Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Common%20Functions.md)
 - [String Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/String%20Methods.md)
 - [Slicing](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Slicing.md)
+- [Importing Files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Importing%20Modules.md)
 
 ### Intermediate
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Object-oriented%20Programming)
