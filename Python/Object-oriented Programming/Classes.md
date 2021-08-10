@@ -40,17 +40,17 @@ main()
 When a variable is declared normally (i.e. without the _self_ keyword) like `name = "Deathstroke"`, then that variable is shared across all instances of the class.
 Class attributes can and can't be compared to [_static_ class members](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm) in languages like C++, depending
 on what you mean. Like _static_ class members, class attributes can modify all instances of the class by assigning to the class attribute of the class itself instead of 
-just an instance. All that means is that if you had a class '_Location_' that had a class attribute '_name_', you could directly affect all _Location_ objects by assigning
-to `Location.name`. However, you could choose to only affect one instance of an object by assigning to that object like `object.name = "something"`.
+just an instance. All that means is that if you had a class '_Location_' that had a class attribute '_address_', you could directly affect all _Location_ objects by assigning
+to `Location.address`. However, you could choose to only affect one instance of an object by assigning to that object like `object.address = "something"`.
 
 ```Python
 class Location:
-    name = "Unknown"    # <== Class attribute
+    address = "Unknown"   # <== Class attribute
     
     # Constructor
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+    def __init__(self, x, y): 
+        self.x = x     # <== Instance attribute
+        self.y = y     # <== Instance attribute
     
     # Method: returns coordinates
     def coords(self):
@@ -61,19 +61,40 @@ def main():
     home = Location(10, -50)
     school = Location(30, 30)
     
-    # BEFORE
-    print(home.name)
-    print(school.name)
+    print(home.address)
+    print(school.address)
     
     # Change the name of the location for ALL instances of the 'Location' class
-    Location.name = "221B Baker St."
+    Location.address = "221B Baker St."
     
-    # AFTER
-    print(home.name)
-    print(school.name)
+    print(home.address)
+    print(school.address)
+    
+main()
 ```
 
 ## Instance Attributes
+
+## 'Public' and '\_\_Private' Data Members
+Python does not support [access modifiers](https://www.geeksforgeeks.org/access-modifiers-in-c/) through keywords like _public_ and _private_ like languages such as 
+C++ or Java. Instead, accessability is determined by the syntax of the name. If the name of a class member (variables, functions, etc.) starts with two underscores 
+like `__name`, then the member will be inaccessible outside of the class. If you try to reference a 'private' member, then you will get an [_AttributeError_](https://www.geeksforgeeks.org/python-attributeerror/).
+
+```Python
+class Container:
+    __number = 5   # <== Private class attribute
+    
+    def __function(self):
+        print("This is a private function")
+  
+def main():  
+    num = Container()
+
+    #print(num.__number)   <== Illegal, '__number' is private
+    #num.__function()      <== Illegal, '__function()' is private
+
+main()
+```
 
 ## Constructors: _\_\_init\_\__
 The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
@@ -86,3 +107,5 @@ magic methods).
 ## Methods
 Methods are functions that are specific to a class. In Python, all methods (including _\_\_init\_\__) must take [_self_](https://www.programiz.com/article/python-self-why) 
 as their first parameter (even if they have none). This is because Python favors being explicit and the stark division between what is and is not a part of the class is helpful.
+
+## Destructors: _\_\_del\_\__
