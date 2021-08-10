@@ -78,3 +78,9 @@ Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considere
 ```Python
 
 ```
+
+## Method Chaining
+
+```Python
+
+```
