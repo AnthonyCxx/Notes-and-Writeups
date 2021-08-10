@@ -10,8 +10,43 @@ the same thing over and over again. In essence, inheritance allows for [D.R.Y. c
 
 Here is a class _Employee_ that inherits from _Person_, extending it.
 ```Python
+# // PERSON CLASS (PARENT) // #
+class Person:
+    # Class attribute
+    species = "Human"
+    
+    # Instance Attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    # String representation
+    def __str__(self):
+        return self.name + ", " + str(self.age)
+        
+# // EMPLOYEE CLASS (CHILD) // #
+class Employee(Person):
+    # Inherits 'name' and 'age' from class 'Person'
+    def __init__(self, name, age, company, yearly_salary):
+        # Call the constructor of the parent class
+        Person.__init__(self, name, age)
+    
+        self.company = company
+        self.yearly_salary = yearly_salary
+        
+    # String representation
+    def __str__(self):
+        return Person.__str__(self) + ", " + self.company + ", " + str(self.yearly_salary)
 
+# // DRIVER CODE // #
+Waldo = Person("Waldo", 32)
+Harold = Employee("Harold", 45, "Wells Fargo", 87000)
+
+print(Harold)
 ```
+
+## The _super()_ Function
+Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)...
 
 ## Multi-level Inhertiance
 
