@@ -37,11 +37,12 @@ main()
 
 ## Class Attributes
 When a variable is declared normally (i.e. without the _self_ keyword) like `name = "Deathstroke"`, then that variable is shared across all instances of the class.
-Class attributes can and can't be compared to [_static_ class members](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm) in languages like C++, depending
-on what you mean. Like _static_ class members, class attributes can modify all instances of the class by assigning to the class attribute of the class itself instead of 
-just an instance. All that means is that if you had a class '_Location_' that had a class attribute '_address_', you could directly affect all _Location_ objects by assigning
-to `Location.address`. However, you could just as easily choose to only affect one instance of an object by assigning to that object like `object.address = "something"`.
+Class attributes are like [_static_ class members](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm) in languages like C++ because modifying the class
+attribute in one class will affect all other instances of the class. That means is that if you had a class '_Location_' that had a class attribute '_address_', you could 
+directly affect all _Location_ objects by assigning to `Location.address`. However, you could just as easily choose to only affect one instance of an object by assigning 
+to that object like `object.address = "something"`.
 
+See [Python Documentation Section 9.3.5, _Class and Instance Variables_](https://docs.python.org/3/tutorial/classes.html#class-and-instance-variables) for more.
 ```Python
 class Location:
     address = "Unknown"   # <== Class attribute
