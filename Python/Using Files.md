@@ -61,10 +61,13 @@ with open("file.txt", "r") as f:
 > Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading by Line
-file.readline()
+file.readline() reads a single line from the file. <br />
+If you provide an _int_ as an argument, it will read _int_ lines.
 
 ```Python
-
+with open("file.txt", "r") as f:
+    while line := f.readline().rstrip('\n'):
+        print(line)
 ```
 
 ## Reading Entire File as String
