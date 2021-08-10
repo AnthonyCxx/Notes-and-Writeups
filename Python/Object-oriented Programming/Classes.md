@@ -37,7 +37,7 @@ main()
 ```
 
 ## Class Attributes
-When a variable is declared normally (i.e. without the _self_ keyword) like `name = Deathstroke"`, then that variable is shared across all instances of the class.
+When a variable is declared normally (i.e. without the _self_ keyword) like `name = "Deathstroke"`, then that variable is shared across all instances of the class.
 Now, this is not like [_static_ class members](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm) in languages like C++ where changing the variable in 
 once instance of the class will affect all other instances (well, not necessarily). If I have two locations
 
