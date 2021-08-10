@@ -5,7 +5,7 @@ These two variables together would allow us to create a single variable of type 
 classes can have functions (called methods), which allow to class to perform actions (modify state via behavior). These actions don't have to affect other data outside 
 the class; in fact, many methods are entirely internal. A class function (method) 'coords' could be as simple as returning the coordinates of the location.
 
-**NOTE**: All references to members of a class (both data members and methods) must be prefixed with _self_ (e.g. `self.x`).
+**NOTE**: All references to members of a class (both data members and methods) must be prefixed with [_self_](https://www.programiz.com/article/python-self-why) (e.g. `self.x`).
 ### Format
 ```Python
 class ClassName:
@@ -43,3 +43,7 @@ constructors declare the data members of a class and initialize them too.
 
 The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
 magic methods).
+
+## Methods
+Methods are functions that are specific to a class. In Python, all methods (including _\_\_init\_\__) must take [_self_](https://www.programiz.com/article/python-self-why) 
+as their first parameter (even if they have none). This is because Python favors being explicit and the stark division between what is and is not a part of the class is helpful.
