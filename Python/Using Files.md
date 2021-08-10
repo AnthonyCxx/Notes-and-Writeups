@@ -76,12 +76,16 @@ file.read()
 ```Python
 
 ```
+> Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading Entire File as List
-file.readlines()
+file.readlines() reads the entire <br />
+Annoyingly, it does leave an ugly '\\n' on the end of each line, so I took the liberty of removing them for you.
 
 ```Python
-
+with open("file.txt", "r") as f:
+     lines = [line.rstrip('\n') for line in f.readlines()]
+     print(lines)
 ```
 
 # Writing to Files
