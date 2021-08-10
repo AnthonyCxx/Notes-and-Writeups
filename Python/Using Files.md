@@ -1,5 +1,5 @@
 # Reading and Writing Files in Python
-RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/).
+RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/)..
 
 For reference, I use the [walrus operator](https://realpython.com/lessons/assignment-expressions/) (:=) a lot here.
 
