@@ -3,13 +3,14 @@ All references to contents from other files must be prefixed with the name of th
 You can import anything with an identifier from a file: variables, classes, functions...
 
 ## Importing Modules
-Importing native modules (from the Python standard library) is
+Importing native modules (from the Python standard library) is as simple. Just write _import_ followed by the module name.
 
 ```Python
 import datetime
 ```
 
 ## Importing User-made Modules
+The only catch here is that the files must be in the same folder.
 
 ```Python
 import filename
