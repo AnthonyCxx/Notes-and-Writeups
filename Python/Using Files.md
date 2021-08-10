@@ -20,7 +20,7 @@ with open("file.txt", "r+") as f:   # <== No need to call f.close() now
     print(rest)
 
     # Write a single line
-    f.write("This is appended to the end of the file (filemode: 'a')")
+    f.write("This is appended to the file")
 ```
 
 **WARNING**: "Warning Calling _f.write()_ without using the [_with_](https://www.geeksforgeeks.org/with-statement-in-python/) keyword or calling _f.close()_ might result 
