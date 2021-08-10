@@ -13,7 +13,7 @@ import datetime
 The only catch here is that the files must be in the same folder.
 
 ```Python
-import filename
+import filename     # or 'from . import filename'
 
 # Reference contents from the file 'filename'
 filename.function()
