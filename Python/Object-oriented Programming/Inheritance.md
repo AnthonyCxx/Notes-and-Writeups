@@ -5,8 +5,11 @@ if you created a 'tool' class, you could then use that tool class as a base for 
 the same thing over and over again. In essence, inheritance allows for [D.R.Y. coding](https://dzone.com/articles/is-your-code-dry-or-wet) by greatly increasing 
 [code reusability](https://www.c-sharpcorner.com/UploadFile/201fc1/what-is-code-reuse-and-why-we-use-it/).
 
-## Simple Inheritance
+The class being inherited from is called the parent class and the derived class is called the child class.
 
+## Simple Inheritance
+Simple inheritance is composed of one parent class and one derived class. To inherit from a class, just add the parent class's name in parentheses after the 
+name of the derived class in the derived class declaration. To include multiple parent classes, separate the parent class names with commas.
 
 Here is a class _Employee_ that inherits from _Person_, extending it.
 ```Python
@@ -40,8 +43,8 @@ class Employee(Person):
 Waldo = Person("Waldo", 32)
 Harold = Employee("Harold", 45, "Wells Fargo", 87000)
 
-print(Harold)
-```
+print(Harold)  # Harold, 45, Wells Fargo, 87000
+``` 
 
 ## The _super()_ Function
 Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)...
