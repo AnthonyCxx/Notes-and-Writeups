@@ -1,10 +1,8 @@
 # Reading and Writing Files in Python
 RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/).
 
-## Short Example
-
 ## Opening a File
-Open a file with the built-in [_open()_]() function.
+Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/). Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
 
 ```Python
 
@@ -14,7 +12,7 @@ Open a file with the built-in [_open()_]() function.
 in the arguments of _f.write()_ not being completely written to the disk, even if the program exits successfully." -Python Documentation Section 7.2, [Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files).
 
 ### File Modes
-_r_ mode throws a [_FileNotFoundError_](https://docs.python.org/3/library/exceptions.html#FileNotFoundError) if the file does not exist, _x_ mode throws a [_FileExistsError_](https://docs.python.org/3/library/exceptions.html#FileExistsError) if the file does exist, and _w_ mode overwrites the file if it exists. <br />
+_r_ mode throws a [_FileNotFoundError_](https://docs.python.org/3/library/exceptions.html#FileNotFoundError) if the file does not exist, _x_ mode throws a [_FileExistsError_](https://docs.python.org/3/library/exceptions.html#FileExistsError) if the file does exist, and _w_ mode overwrites the file if it exists.
 | Mode | Function |
 | ---- | --------- | 
 | r | reads file |
