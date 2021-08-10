@@ -565,7 +565,7 @@ only preventing some conversions is desirable. By setting specific constructors 
 
 ## User-defined Literals
 You can define [literal suffixes](https://www.geeksforgeeks.org/integer-literal-in-c-cpp-prefixes-suffixes/) for classes by overloading the _""_ operator (outside the class)
-followed by a string. Classes can have multiple user-defined literals
+followed by a string. <br /> Classes can have multiple user-defined literals
 
 ```C++
 #include <iostream>
