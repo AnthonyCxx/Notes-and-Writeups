@@ -7,22 +7,9 @@ For reference, I use the [walrus operator](https://realpython.com/lessons/assign
 Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/). Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
 
 ```Python
-# Open the file 'file.txt' in read/write mode
-with open("file.txt", "r+") as f:   # <== No need to call f.close() now
-    # Read a character
-    character = f.read(1)
-    print(character)
-
-    # Read a line
-    line = f.readline()
-    print(line)
-
-    # Read the whole file
-    rest = f.read()
-    print(rest)
-
-    # Write a single line
-    f.write("This is appended to the file")
+with open("file.txt", "r") as f:
+    for count, line in enumerate(f):
+        print(f"{count + 1}: {line.rstrip()}")
 ```
 
 **WARNING**: "Warning Calling _f.write()_ without using the [_with_](https://www.geeksforgeeks.org/with-statement-in-python/) keyword or calling _f.close()_ might result 
@@ -59,10 +46,17 @@ file.readline() reads a single line from the file. <br />
 If you provide an _int_ as an argument, it will read _int_ lines.
 
 ```Python
+# Best way        
 with open("file.txt", "r") as f:
-    while line := f.readline().rstrip('\n'):
+    for count, line in enumerate(f):
+        print(f"{count + 1}: {line.rstrip()}")
+        
+# Alternative
+with open("file.txt", "r") as f:
+    while line := f.readline().rstrip():
         print(line)
 ```
+> Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading Entire File as String
 The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method read an entire file as a string if not given
