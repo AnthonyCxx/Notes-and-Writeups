@@ -21,7 +21,7 @@ main()
 ## Overloadable Operators
 
 ### Arithmetic Operators
-| Operator | Arity | Dunder Method |
+| Token | Arity | Dunder Method |
 | -------- | ----- | ------------- | 
 |  |  |  |
 |  |  |  | 
