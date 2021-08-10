@@ -5,6 +5,7 @@ These two variables together would allow us to create a single variable of type 
 classes can have functions (called methods), which allow to class to perform actions (modify state via behavior). These actions don't have to affect other data outside 
 the class; in fact, many methods are entirely internal. A class function (method) 'coords' could be as simple as returning the coordinates of the location.
 
+**NOTE**: All references to members of a class (both data members and methods) must be prefixed with _self_ (e.g. `self.x`).
 ### Format
 ```Python
 class ClassName:
@@ -13,6 +14,8 @@ class ClassName:
 > Replace _pass_ with the body of the class.
 
 ### Example
+For more on the _\_\_init\_\__ method, see the next section.
+
 ```Python
 class Location:
     
@@ -34,6 +37,9 @@ main()
 ```
 
 ## Constructors: _\_\_init\_\__
-The  _\_\_init\_\__ method
+The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
+only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
+constructors both declare the data members of a class and initialize them too.
+
 The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
 magic methods).
