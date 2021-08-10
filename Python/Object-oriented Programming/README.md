@@ -6,4 +6,4 @@
 | Dunder Methods |  |
 | Static and Class Methods |  | 
 | Inheritance |  |
-| Operator Overloading |  |
+| [Operator Overloading](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Operator%20Overloading.md) | operator overloading |
