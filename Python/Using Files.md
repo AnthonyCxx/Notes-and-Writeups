@@ -36,8 +36,9 @@ If no amount is specified, _read()_ will read the entire file. To read by charac
 
 ```Python
 with open("file.txt", "r") as f:
-    while char := f.read(1):
-        print(char)
+    for line in f:
+        for char in line.rstrip():
+            print(char)
 ```
 > Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
