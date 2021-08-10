@@ -75,7 +75,7 @@ print(nums[1::-1])   # the first two items, reversed
 print(nums[:-3:-1])  # the last two items, reversed
 print(nums[-3::-1])  # everything except the last two items, reversed
 
-# [::-1]
+# [::-1] reverses an object (useful for strings)
 print(nums[::-1]) # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
 > Like a true programmer, I copy and pasted the middle section from StackOverflow.
