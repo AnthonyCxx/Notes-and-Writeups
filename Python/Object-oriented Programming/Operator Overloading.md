@@ -25,13 +25,13 @@ P.S. '[token](https://techterms.com/definition/token)' refers to a single, irred
 ### Arithmetic Operators
 | Token | Arity | Dunder Method |
 | ----- | ----- | ------------- | 
-| + |  | \_\_add()\_\_ |
-| - |  |  | 
-| * |  |  | 
-| / |  |  | 
-| % |  |  | 
-| // |  |  | 
-| ** |  |  | 
+| + | Binary | \_\_add()\_\_ |
+| - | Binary | \_\_sub()\_\_ | 
+| * | Binary | \_\_mul()\_\_ | 
+| / | Binary | \_\_truediv()\_\_ | 
+| % | Binary | \_\_mod()\_\_ | 
+| // | Binary | \_\_floordiv()\_\_ | 
+| ** | Binary | \_\_pow()\_\_ | 
 
 ### Comparison Operators
 | Token | Arity | Dunder Method |
