@@ -5,7 +5,6 @@ These two variables together would allow us to create a single variable of type 
 classes can have functions (called methods), which allow to class to perform actions (modify state via behavior). These actions don't have to affect other data outside 
 the class; in fact, many methods are entirely internal. A class function (method) 'coords' could be as simple as returning the coordinates of the location.
 
-**NOTE**: All references to members of a class (both data members and methods) must be prefixed with [_self_](https://www.programiz.com/article/python-self-why) (e.g. `self.x`).
 ### Format
 ```Python
 class ClassName:
