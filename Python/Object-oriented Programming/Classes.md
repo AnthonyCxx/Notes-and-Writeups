@@ -157,8 +157,6 @@ constructors declare the instance members of a class and initialize them too.
 The two underscores before and after the function name indicate that it is a [dunder method](https://www.geeksforgeeks.org/dunder-magic-methods-python/) (colloquially called
 magic methods).
 
-## Destructors: _\_\_del\_\__
-
 ## String Representation: _\_\_repr\_\__
 Python's all about strings, so it should come as no surprise that it has a special method for representing a class as a string. The string returned by _\_\_repr\_\__
 is considered to the string representation of the object. 
