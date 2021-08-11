@@ -149,7 +149,7 @@ def main():
 main()
 ```
 
-## Constructors: _\_\_init\_\__
+## Constructor: _\_\_init\_\__
 The  _\_\_init\_\__ method is a special method called a [constructor](https://www.geeksforgeeks.org/constructors-in-python/). In most languages, constructors
 only initialize variables; however, in Python variables are declared by assigning them a value (even with it's with a default constructor or _None_). So, in Python 
 constructors declare the instance members of a class and initialize them too.
