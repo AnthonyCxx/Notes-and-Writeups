@@ -127,10 +127,78 @@ main()
 
 
 ## Multiple Inheritance
-
+Multiple inheritance occurs when a derived class inherits from two unrelated parent classes. <br />
+Multiple inheritance is less common, but useful.
 
 ```Python
+class Container:
+    def __init__(self, capacity: int=64, items: list=[]):
+        self.items = items
+        self.capacity = capacity
+        
+    # Open the container
+    def open() -> None:
+        print("Opening the container...")
+    
+    # Close the container
+    def close() -> None:
+        print("Closing the container...")
+    
+    # [] Overload (get items)
+    def __getitem__(self, index):
+        try:
+            return self.items[index]
+        except IndexError:
+            return None
+    
+    # [] Overload (set items)
+    def __setitem__(self, index, item):
+        try:
+            self.items[index] = item 
+        except IndexError:
+            pass
+    
+    def __repr__(self):
+        return '[' + ', '.join(self.items) + ']'
+    
+class Block:
+    def __init__(self, id: int):
+        self.id = id
+        
+    def place(self):
+        print("Placing the block...")
+        
+    def destroy(self):
+        print("Destroying the block")
+        
+    def __repr__(self):
+        return str(id)
+    
+class Chest(Block, Container):
+    def __init__(self, id: int, capacity: int=64, items: list=[]):
+        Block.__init__(self, id)
+        Container.__init__(self, capacity, items)
+        
+    def __repr__(self):
+        return Container.__repr__(self)
 
+def main():
+    # A chest (ID: 167) that takes 64 items and is given the following items
+    chest = Chest(167 ,64, ["Book", "Map", "RC-XD"])
+    
+    # Print all items
+    print(chest)
+    
+    # Getting items with [] Overload (__getitem__()) works
+    print(chest[0])
+    
+    # Assigning with [] Overload (__setitem__()) works
+    chest[1] = "Pretzel Roll"
+    
+    # Print all items
+    print(chest)
+
+main()
 ```
 
 
