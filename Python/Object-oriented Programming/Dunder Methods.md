@@ -140,3 +140,21 @@ def main():
     
 main()
 ```
+
+## Calling an Object like a Function
+Class can be called like functions (like `object()`) via the _\_\_call()\_\__ method, which is especially useful for things like [functors](https://www.geeksforgeeks.org/functors-use-python/).
+
+```Python
+class Object:
+    def __call__(self):
+        print("Calling the object like a function...")
+      
+# // DRIVER CODE // #
+def main():
+    obj = Object()
+    
+    # Use object like a function (calls __call__)
+    obj()
+    
+main()
+```
