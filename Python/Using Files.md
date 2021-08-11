@@ -93,7 +93,8 @@ with open("file.txt", "r") as f:
      lines = [line.rstrip() for line in f.readlines()]
      print(lines)
 ```
-> Reference: [List Comprehension](https://www.programiz.com/python-programming/list-comprehension)
+> Reference: [List Comprehension](https://www.programiz.com/python-programming/list-comprehension) <br />
+> Reference: [_Why does .readlines() leave a '\n'?_](https://www.python.org/dev/peps/pep-0259/)
 
 # Writing to Files
 Just use the _.write()_ method. It's that easy.
