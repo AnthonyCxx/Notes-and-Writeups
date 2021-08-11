@@ -36,4 +36,3 @@ Class methods are marked with `@classmethod` and take _cls_ (a class, passed imp
 ```Python
 
 ```
-> Class
