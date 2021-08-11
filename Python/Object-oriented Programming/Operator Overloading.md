@@ -57,7 +57,8 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 | ~ | Unary | \_\_invert()\_\_ | 
 
 ### Assignment Operators
-For some reason or another, I could only get the assignment overloads to work like this:
+For some reason or another, I could only get the assignment overloads to work like this: <br />
+I would have expected it to be `self.num -= other`.
 ```Python
 def __isub__(self, other):
         return self.num - other
