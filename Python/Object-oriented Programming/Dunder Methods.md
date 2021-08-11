@@ -61,6 +61,29 @@ def main():
 main()
 ```
 
+## Getting Content with the _in_ Operator
+You can overload the _in_ operator for you class via the _\_\_contains()\_\__ method, which should return a boolean (_True_ or _False_).
+
+```Python
+class ListWrapper:
+    data = [1, 2, 3, 4, 5, 6, 7]   # <== Class attribute (not instance)
+       
+    # 'in' Overload 
+    def __contains__(self, element):
+        return element in self.data
+      
+# // DRIVER CODE // #
+def main():
+    lst = ListWrapper()
+    
+    if 7 in lst: # if the number '7' is in lst.data (overloading 'in')
+        print("7 is in the class data")
+    else:
+        print("7 is NOT in the class data")
+    
+main()
+```
+
 ## Overloading the \[ \] Operator
 The _\_\_getitem()\_\__, _\_\_setitem()\_\__, and _\_\_delitem()\_\__  methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
 `print(chest[0])`,  _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`, and  _\_\_delitem()\_\__ allows you to delete items by index or value (depending
