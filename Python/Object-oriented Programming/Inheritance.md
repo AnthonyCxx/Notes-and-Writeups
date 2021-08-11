@@ -159,7 +159,7 @@ class Container:
             pass
     
     def __repr__(self):
-        return '[' + ', '.join(self.items) + ']'
+        return repr(self.items)
     
 class Block:
     def __init__(self, id: int):
