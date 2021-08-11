@@ -2,7 +2,7 @@
 Dunder methods (_dunder_ == 'double underscore') are special methods that can be used to enhance your classes. Dunder methods are prefixed and postfixed by two underscores
 and their functionality covers everything from constructors to operator overloading. This list is not comprehensive.
 
-[Here](https://levelup.gitconnected.com/python-dunder-methods-ea98ceabad15) is the only comprehensive article I've found on dunder methods.
+[Here](https://levelup.gitconnected.com/python-dunder-methods-ea98ceabad15) is the only comprehensive article I've found on dunder methods and here](https://dbader.org/blog/python-dunder-methods) is a summary of it.
 
 ## Constructors: _\_\_init()\_\__
 The _\_\_init()\_\__ method is used to declare and initialize the [instance attributes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#instance-attributes) of a class. <br />
