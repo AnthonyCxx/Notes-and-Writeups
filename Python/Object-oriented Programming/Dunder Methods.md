@@ -70,7 +70,7 @@ class ListWrapper:
        
     # 'in' Overload 
     def __contains__(self, element):
-        return element in self.data
+        return element in self.data   # Returns 'True' or 'False'
       
 # // DRIVER CODE // #
 def main():
