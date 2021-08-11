@@ -12,6 +12,7 @@ For reference, I use the [walrus operator](https://realpython.com/lessons/assign
 Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/) that is iterable. Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
 
 ```Python
+# Read file line by line with line numbers
 with open("file.txt", "r") as f:
     for count, line in enumerate(f):
         print(f"{count + 1}: {line.rstrip()}")
@@ -61,16 +62,10 @@ with open("file.txt", "r") as f:               # Using the file 'file.txt' in re
 file.readline() reads a single line from the file. <br />
 If you provide an _int_ as an argument, it will read _int_ lines.
 
-```Python
-# Best way        
+```Python     
 with open("file.txt", "r") as f:
-    for count, line in enumerate(f):
-        print(f"{count + 1}: {line.rstrip()}")
-        
-# Alternative
-with open("file.txt", "r") as f:
-    while line := f.readline().rstrip():
-        print(line)
+    for line in f:
+        print(line.rstrip())
 ```
 > Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
