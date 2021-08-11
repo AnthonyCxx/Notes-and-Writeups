@@ -43,3 +43,46 @@ main()
 > P.S. The return value of both functions must be strings.
 
 ## Overloading the \[ \] Operator
+The _\_\_getitem()\_\__ and _\_\_setitem()\_\__ methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
+`print(chest[0])` whereas _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`.
+
+```Python
+class Chest:
+    def __init__(self, *items: str): # 'items' should be any amount of strings)
+        self.items = list(items)     # Change the passed tuple of arguments into a string
+    
+    # [] Overload (get items)
+    def __getitem__(self, index):
+        try:
+            return self.items[index]
+        except IndexError:
+            return None
+    
+    # [] Overload (set items)
+    def __setitem__(self, index, item):
+        try:
+            self.items[index] = item 
+        except IndexError:
+            pass
+    
+    def __str__(self):
+        return ", ".join(self.items)
+     
+# // DRIVER CODE // # 
+def main():
+    chest = Chest("pencil", "paper", "eraser")
+    
+    # Print the items in the chest (calls __str__)
+    print(chest)
+    
+    # Get the first item (calls __getitem__)
+    print(f"The first item in the chest: {chest[0]=}")    
+    
+    # Change the value of the first item (calls __setitem__)
+    chest[0] = "book"
+    
+    # Print the items in the chest (calls __str__)
+    print(chest)
+    
+main()
+```
