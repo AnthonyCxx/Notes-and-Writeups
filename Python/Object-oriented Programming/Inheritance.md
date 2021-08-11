@@ -60,7 +60,19 @@ If you want to know the MRO for a class, print `Class.__mro__` or `Class.mro()`.
 
 [_Why Should I use super()?_](https://stackoverflow.com/questions/222877/what-does-super-do-in-python-difference-between-super-init-and-expl)
 ```Python
+class Base:
+    def __init__(self):
+        print("Calling the base constructor")
+    
+class Derived:
+    def __init__(self):
+        print("Calling the derived constructor")
+        super().__init__()
+        
+def main():
+    derived = Derived()
 
+main()
 ```
 
 ## Multi-level Inhertiance
