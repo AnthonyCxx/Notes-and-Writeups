@@ -4,7 +4,7 @@ and their functionality covers everything from constructors to operator overload
 
 If you're looking for operator overloading, [click here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Operator%20Overloading.md).
 
-## Constructors with _\_\_init()\_\__
+## Constructors: _\_\_init()\_\__
 The _\_\_init()\_\__ method is used to declare and initialize the [instance attributes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#instance-attributes) of a class. <br />
 _\_\_init()\_\__ is automatically called when a class is created and should exist for nearly all classes.
 
