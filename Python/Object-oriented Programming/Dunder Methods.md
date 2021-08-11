@@ -4,16 +4,24 @@ and their functionality covers everything from constructors to operator overload
 
 If you're looking for operator overloading, [click here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Operator%20Overloading.md).
 
-## Creation and Initialization
-The following methods are run automatically when an object is created.
+## Constructors with _\_\_init()\_\__
+The _\_\_init()\_\__ method is used to declare and initialize the [instance attributes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#instance-attributes) of a class. <br />
+_\_\_init()\_\__ is automatically called when a class is created and should exist for nearly all classes.
 
-Reference: [_How is \_\_new()\_\_ different from \_\_init()\_\_?_](https://dev.to/pila/constructors-in-python-init-vs-new-2f9j)
-
-| Dunder Method | Run when | Used for | 
-| ------------- | -------- | -------- |
-| _\_\_new()\_\__ | object is created | customize the object creation |
-| _\_\_init()\_\__ | object is created | initialize the object's data members |
-> Reference: [_When should I use \_\_new()\_\_?_](https://howto.lintel.in/python-__new__-magic-method-explained/)
+```Python
+class Class:
+    # Constructor takes 1 paramter 'num' which is assigned to 'self.num'
+    def __init__(self, num):
+        self.num = num
+      
+# // DRIVER CODE // #
+def main():
+    number = Class(10)
+    
+    print(number.num)
+    
+main()
+```
 
 ## String Representation
 Python has two dunder methods for creating a string representation of a class: _\_\_str()\_\__ and _\_\_repr()\_\__. I've linked an article below for more detail,
