@@ -73,16 +73,16 @@ def main():
     chest = Chest("pencil", "paper", "eraser")
     
     # Print the items in the chest (calls __str__)
-    print(chest)
+    print(chest) # pencil, paper, eraser
     
     # Get the first item (calls __getitem__)
-    print(f"The first item in the chest: {chest[0]=}")    
+    print(f"The first item in the chest: {chest[0]=}") # chest[0]='pencil'
     
     # Change the value of the first item (calls __setitem__)
     chest[0] = "book"
     
     # Print the items in the chest (calls __str__)
-    print(chest)
+    print(chest) # book, paper, eraser
     
 main()
 ```
