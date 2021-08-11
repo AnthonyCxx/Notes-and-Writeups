@@ -202,22 +202,23 @@ main()
 ```
 
 
-## Overriding Methods
+## Overriding Methods and Calling an Overriden Parent Method
 To override a method inherited from a parent class, just redefine it in the derived class. That simple.
 
+To call an overriden method in a derived class, use the name of the base class followed by the method (e.g. `Base.foo()`).
 ```Python
-
-```
-
-## Calling an Overriden Parent Method
-
-
-```Python
-
-```
-
-## Method Chaining
-
-```Python
-
+class Base:
+    def foo(self):
+        print("Doing something in the base class")
+        
+class Derived(Base):
+    def foo(self):
+        print("Doing something in the derived class")
+        
+# // DRIVER CODE // # 
+def main():
+    derived = Derived()
+    derived.foo()
+    
+main()
 ```
