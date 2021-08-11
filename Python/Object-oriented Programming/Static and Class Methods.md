@@ -7,4 +7,24 @@ Static methods are a method of a class that can be called without needing an ins
 to the members (data members or function members) of the class. The benefit of static members is organization; a utility-based class (like a temperature converter) may be 
 entirely composed of static methods.
 
+Static methods do not take _self_ as a parameter.
+```Python
+class TempConverter:
+    @staticmethod # Takes a float, returns (->) a float
+    def toF(temp: float) -> float:  # Fahrenheit
+        return round(temp * (9 / 5) + 32, 2)
+    
+    @staticmethod # Takes a float, returns (->) a float
+    def toC(temp: float) -> float:  # Celcius
+        return round((temp - 32) * (5 / 9), 2)
+    
+# // DRIVER CODE // # 
+def main():
+    print(f"80F in Celcius is: {TempConverter.toC(80)}C")
+    print(f"15C in Fahrenheit is: {TempConverter.toF(15)}")
+
+main()
+```
+> Notice how you can use the _toF()_ and _toC()_ methods without needing an instance of _TempConverter_.
+
 ## Class Methods
