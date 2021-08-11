@@ -7,6 +7,14 @@ The following methods are run automatically when an object is created or destroy
 
 Reference: [_How is \_\_new()\_\_ different from \_\_init()\_\_?_](https://dev.to/pila/constructors-in-python-init-vs-new-2f9j)
 
+| Dunder Method | Run when | Used for | 
+| ------------- | -------- | -------- |
+| _\_\_new()\_\__ |  |
+| _\_\_init()\_\__ |  |
+| _\_\_del()\_\__ |  |
+> Reference: [_When should I use \_\_new()\_\_?_](https://howto.lintel.in/python-__new__-magic-method-explained/)
+
+
 ### _\_\_new()\_\__
 _\_\_new()\_\__ is run when an object is created.
 
