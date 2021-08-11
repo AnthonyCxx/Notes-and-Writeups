@@ -24,3 +24,20 @@ If you overload both _\_\_str()\_\__ and _\_\_repr()\_\__, then Python will favo
 of _\_\_repr()\_\__, then use then [_repr()_](https://www.programiz.com/python-programming/methods/built-in/repr) function.
 
 Reference: [_When should I use \_\_str()\_\_ over \_\_repr()\_\_?_](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr)
+
+```Python
+class Class:
+    def __str__(self):
+        return "This is the __str__ representation"
+        
+    def __repr__(self):
+        return "This is the __repr__ representation"
+     
+# // DRIVER CODE // # 
+def main():
+    x = Class()
+    print(x)    # <== Calls '__str__' since it takes precedence
+    
+main()
+```
+> P.S. The return value of both functions must be strings.
