@@ -16,6 +16,8 @@ Reference: [_How is \_\_new()\_\_ different from \_\_init()\_\_?_](https://dev.t
 > Reference: [_When should I use \_\_new()\_\_?_](https://howto.lintel.in/python-__new__-magic-method-explained/)
 
 ## String Representation
-Python has two dunder methods for creating a string representation of a class: _\_\_str()\_\__ and _\_\_repr()\_\__
+Python has two dunder methods for creating a string representation of a class: _\_\_str()\_\__ and _\_\_repr()\_\__. I've linked an article below for more detail,
+but the long and short of it is that _\_\_str()\_\__ is for the end-user and _\_\_repr()\_\__ (the interal representation of the object) is for the developer. If you 
+printed a list, you would favor `print(', '.join(list))` over `print(list)`, no? Well that's the difference between _\_\_str()\_\__ and _\_\_repr()\_\_.
 
 Reference: [_When should I use \_\_str()\_\_ over \_\_repr()\_\_?_](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr)
