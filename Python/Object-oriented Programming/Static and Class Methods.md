@@ -28,3 +28,12 @@ main()
 > Notice how you can use the _toF()_ and _toC()_ methods without needing an instance of _TempConverter_.
 
 ## Class Methods
+Class methods know of the 
+
+Class methods are exceptionally useful for creating [factory methods](https://dev.to/danyson/how-classmethod-in-python-helps-in-implementing-factory-methods-23gl).
+
+Class methods are marked with `@classmethod` and take _cls_ (a class, passed implcitly) as a parameter.
+```Python
+
+```
+> Class
