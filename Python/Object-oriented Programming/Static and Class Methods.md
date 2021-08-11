@@ -28,9 +28,9 @@ main()
 > Notice how you can use the _toF()_ and _toC()_ methods without needing an instance of _TempConverter_.
 
 ## Class Methods
-Class methods know of the 
-
-Class methods are exceptionally useful for creating [factory methods](https://dev.to/danyson/how-classmethod-in-python-helps-in-implementing-factory-methods-23gl).
+Unlike static methods, class methods do know of the class, having access to the class attributes and methods; class methods can even modify class attributes; however,
+class methods cannot access instance attributes as they are not bound to an instance. Class methods implicitly take an instance of the class as the first argument (abbreviated
+_cls_) and are exceptionally useful for creating [factory methods](https://dev.to/danyson/how-classmethod-in-python-helps-in-implementing-factory-methods-23gl).
 
 Class methods are marked with `@classmethod` and take _cls_ (a class, passed implcitly) as a parameter.
 ```Python
