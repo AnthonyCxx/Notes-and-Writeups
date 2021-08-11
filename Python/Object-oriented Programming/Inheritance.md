@@ -189,10 +189,10 @@ def main():
     # Print all items
     print(chest)
     
-    # Getting items with [] Overload (__getitem__()) works
+    # Getting items with [] Overload (__getitem__) works
     print(chest[0])
     
-    # Assigning with [] Overload (__setitem__()) works
+    # Assigning with [] Overload (__setitem__) works
     chest[1] = "Pretzel Roll"
     
     # Print all items
