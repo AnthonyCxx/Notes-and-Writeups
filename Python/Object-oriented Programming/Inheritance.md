@@ -47,10 +47,14 @@ print(Harold)  # Harold, 45, Wells Fargo, 87000
 ``` 
 
 ## The _super()_ Function
-Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)...
+Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/) function makes referencing the parent class from the derived class simpler.
+Whenever you cann _super()_, it returns a delegate to the parent class.
 
-[https://www.educative.io/edpresso/what-is-super-in-python](https://www.educative.io/edpresso/what-is-super-in-python) <br />
-[https://realpython.com/python-super/](https://realpython.com/python-super/)
+Using _super()_ with single inheritance isn't that useful, but it's incredibly useful for multiple inheritance. When you call an inherited function in a derived class
+that was inherited from two or more different class, then Python refers to the derived class's [Method Resolution Order](https://www.geeksforgeeks.org/method-resolution-order-in-python-inheritance/) (MRO) to figure out which inherited function to call. The resolution order depends on what order you inherited the classes in. If you had a class '_Wolf_'
+that inherited from '_Canine_' and '_Predator_' that both had different _hunt()_ methods, then you could guarantee that the _Wolf_ class called _Canine_'s _hunt()_ methods
+by inherited from _Canine_ before _Predator_.
+
 
 [_Why Should I use super()?_](https://stackoverflow.com/questions/222877/what-does-super-do-in-python-difference-between-super-init-and-expl)
 ```Python
