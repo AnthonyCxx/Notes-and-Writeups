@@ -46,6 +46,7 @@ main()
 The _\_\_getitem()\_\__ and _\_\_setitem()\_\__ methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
 `print(chest[0])` whereas _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`.
 
+Overloading the \[ \] opreator can be useful for accessing for accessing many different types of data: strings, lists, tuples, dictionaries...
 ```Python
 class Chest:
     def __init__(self, *items: str): # 'items' should be any amount of strings)
