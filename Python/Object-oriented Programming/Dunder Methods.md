@@ -132,7 +132,7 @@ def main():
     # Change the value of the first item (calls __setitem__)
     chest[0] = "book"
     
-    # Deleting the second item
+    # Deleting the second item (calls __delitem__)
     del chest[1]
     
     # Print the items in the chest (calls __str__)
