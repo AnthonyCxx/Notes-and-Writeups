@@ -43,14 +43,15 @@ main()
 > P.S. The return value of both functions must be strings.
 
 ## Overloading the \[ \] Operator
-The _\_\_getitem()\_\__ and _\_\_setitem()\_\__ methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
-`print(chest[0])` whereas _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`.
+The _\_\_getitem()\_\__, _\_\_setitem()\_\__, and _\_\_delitem()\_\__  methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
+`print(chest[0])`,  _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`, and  _\_\_delitem()\_\__ allows you to delete items by index or value (depending
+on how you program it; here, I chose index).
 
 Overloading the \[ \] opreator can be useful for accessing for accessing many different types of data: strings, lists, tuples, dictionaries...
 ```Python
 class Chest:
     def __init__(self, *items: str): # 'items' should be any amount of strings)
-        self.items = list(items)     # Change the passed tuple of arguments into a string
+        self.items = list(items)     # Change the passed tuple of arguments into a list
     
     # [] Overload (get items)
     def __getitem__(self, index):
@@ -65,6 +66,13 @@ class Chest:
             self.items[index] = item 
         except IndexError:
             pass
+        
+    # [] Overload (delete items by index)
+    def __delitem__(self, index):
+        if (index >= 0 and index < len(self.items)):
+            del self.items[index]
+        else:
+            raise IndexError("index out of range")
     
     def __str__(self):
         return ", ".join(self.items)
@@ -82,8 +90,11 @@ def main():
     # Change the value of the first item (calls __setitem__)
     chest[0] = "book"
     
+    # Deleting the second item
+    del chest[1]
+    
     # Print the items in the chest (calls __str__)
-    print(chest) # book, paper, eraser
+    print(chest) # book, eraser
     
 main()
 ```
