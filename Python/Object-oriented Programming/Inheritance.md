@@ -48,12 +48,14 @@ print(Harold)  # Harold, 45, Wells Fargo, 87000
 
 ## The _super()_ Function
 Python's [_super()_](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/) function makes referencing the parent class from the derived class simpler.
-Whenever you cann _super()_, it returns a delegate to the parent class.
+Whenever you cann _super()_, it returns a delegate to the parent class. That way, you don't have to explicitly write out the name of the parent class each time.
 
 Using _super()_ with single inheritance isn't that useful, but it's incredibly useful for multiple inheritance. When you call an inherited function in a derived class
 that was inherited from two or more different class, then Python refers to the derived class's [Method Resolution Order](https://www.geeksforgeeks.org/method-resolution-order-in-python-inheritance/) (MRO) to figure out which inherited function to call. The resolution order depends on what order you inherited the classes in. If you had a class '_Wolf_'
 that inherited from '_Canine_' and '_Predator_' that both had different _hunt()_ methods, then you could guarantee that the _Wolf_ class called _Canine_'s _hunt()_ methods
 by inherited from _Canine_ before _Predator_.
+
+If you want to know the MRO for a class, print `Class.__mro__` or `Class.mro()`.
 
 
 [_Why Should I use super()?_](https://stackoverflow.com/questions/222877/what-does-super-do-in-python-difference-between-super-init-and-expl)
@@ -62,10 +64,53 @@ by inherited from _Canine_ before _Predator_.
 ```
 
 ## Multi-level Inhertiance
+Multi-level inheritance occurs when you use a derived class as a parent class for a new derived class, creating a chain of inheritance.
 
-
+Because things are getting more complicated, I used [function annotations](https://www.python.org/dev/peps/pep-3107/) to help you keep track of the parameter and return types.
 ```Python
+# Parent class 'Item'
+class Item:
+    def __init__(self, cost: int, weight: float):
+        self.cost = cost         # In gold coins
+        self.weight = weight     # In pounds
+        
+    def __repr__(self):
+        return str(self.cost) + ", " + str(self.weight)
 
+
+# Derived class 'Weapon' inherits from 'Item'
+class Weapon(Item):
+    def __init__(self, cost: int, weight: float, sharpness: int):
+        self.sharpness = sharpness
+        # Call parent constructor
+        Item.__init__(self, cost, weight)
+        
+    def swing(self) -> None:
+        print("Swinging the weapon!")
+        
+    def __repr__(self):
+        return Item.__repr__(self) + ", " + str(self.sharpness)
+ 
+
+# Derived class 'Sword' inherits from 'Weapon'
+class Sword(Weapon):
+    def __init__(self, cost: int, weight: float, sharpness: int):
+        # 'Sword' implements no new members       
+        Weapon.__init__(self, cost, weight, sharpness)
+        
+    # 'Sword' overrides 'Weapon.swing()'
+    def swing(self) -> None:
+        print("Swinging the sword!")
+        
+    def __repr__(self):
+        return Weapon.__repr__(self)
+
+# // DRIVER CODE // #
+def main():
+    sword = Sword(10, 3, 12)  # Cost, weight, sharpness
+    print(sword)
+ 
+main()
 ```
 
 
@@ -78,7 +123,7 @@ by inherited from _Canine_ before _Predator_.
 
 
 ## Overriding Methods
-
+To override a method inherited from a parent class, just redefine it in the derived class. That simple.
 
 ```Python
 
