@@ -26,11 +26,11 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Using files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md)
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Object-oriented%20Programming)
 - Exceptions
-- [Python Native Module Index](https://docs.python.org/3/py-modindex.html) (Python Standard Library)
 
 ### Advanced
 
 ## Resources
 W3Schools: [Python Tutorial](https://www.w3schools.com/python/) <br />
 TutorialsPoint: [Python 3 Tutorial](https://www.tutorialspoint.com/python3/index.htm) <br />
-[Complete Python Tutorial](https://www.youtube.com/watch?v=_uQrJ0TkZlc) (6 hours)
+[Complete Python Tutorial](https://www.youtube.com/watch?v=_uQrJ0TkZlc) (6 hours) <br />
+[Python Native Module Index](https://docs.python.org/3/py-modindex.html) (Python Standard Library) <br />
