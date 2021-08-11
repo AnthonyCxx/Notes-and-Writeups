@@ -42,6 +42,25 @@ main()
 ```
 > P.S. The return value of both functions must be strings.
 
+## Getting length with _\_\_len()\_\__
+_\_\_len()\_\__ defines the result of the _\_\_len()\_\__ function.
+
+```Python
+class ListWrapper:
+    data = [1, 2, 3, 4, 5, 6, 7]   # <== Class attribute (not instance)
+    
+    # len() Overload
+    def __len__(self):
+        return len(self.data)
+      
+# // DRIVER CODE // #
+def main():
+    lst = ListWrapper()
+    print(f"The data is {len(lst)} elements long...")
+    
+main()
+```
+
 ## Overloading the \[ \] Operator
 The _\_\_getitem()\_\__, _\_\_setitem()\_\__, and _\_\_delitem()\_\__  methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
 `print(chest[0])`,  _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`, and  _\_\_delitem()\_\__ allows you to delete items by index or value (depending
