@@ -76,6 +76,7 @@ In the event that a method is called without some or all parameters, measures ca
 To add default parameters, simple put an equals sign followed by a [literal](https://thabo-ambrose.medium.com/what-is-a-literal-in-computer-programming-560eace90b5b) 
 (some value). That way, the parameter will take on that value if and only if no other value is provided.
 
+A notable restriction on default parameter is that you cannot have a parameter with a default value before a parameter without a default value.
 ```C++
 #include <iostream>
 using namespace std;
