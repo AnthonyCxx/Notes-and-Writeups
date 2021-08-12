@@ -33,26 +33,6 @@ dummy = DummyClass()
 print(dummy.this_property_does_not_exist)
 ```
 
-## IndexError
-An _IndexError_ occurs when you try to access an index that does not exist.
-
-```Python
-numbers = [1, 2, 3, 4, 5]
-
-# Error, index '999' does not exist
-print(numbers[999])
-```
-
-## KeyError
-A _KeyError_ is thrown when you access a value with a key that does not exist.
-
-```Python
-heights = {"Harold":"5' 7", "Marissa":"5' 9", "Taylor":"6' 0"}
-
-# Error, 'Lauren' does not exist in the dictionary
-print(heights["Lauren"])
-```
-
 ## ValueError
 Raised when an operation is performed on a valid type but an invalid value (like a negative square root). <br />
 If the operation is performed on an invalid type (like the square root of "dog"), then a _TypeError_ will be thrown instead.
@@ -72,4 +52,24 @@ If you create a type and perform an operation on it without implemented the righ
 import math
 
 print(math.sqrt("dog"))
+```
+
+## IndexError
+An _IndexError_ occurs when you try to access an index that does not exist.
+
+```Python
+numbers = [1, 2, 3, 4, 5]
+
+# Error, index '999' does not exist
+print(numbers[999])
+```
+
+## KeyError
+A _KeyError_ is thrown when you access a value with a key that does not exist.
+
+```Python
+heights = {"Harold":"5' 7", "Marissa":"5' 9", "Taylor":"6' 0"}
+
+# Error, 'Lauren' does not exist in the dictionary
+print(heights["Lauren"])
 ```
