@@ -59,7 +59,7 @@ _order_ is _False_ by default.
 ```
 
 ### frozen
-The _frozen_ attribute will override \_\_setarr\_\_ and \_\_delattr\_\_ to make the dataclass immutable. <br />
+The _frozen_ attribute will override \_\_setattr\_\_ and \_\_delattr\_\_ to make the dataclass immutable. <br />
 If you try to change a frozen dataclass, you will get a _dataclasses.FrozenInstanceError_ exception.
 
 _frozen_ is _False_ by default.
