@@ -50,7 +50,20 @@ main()
 ```
 
 ## Manually Raising Errors with _raise_
+If you want to catch anything other than an error thrown by the program itself, you'll have to do it manually with the _raise_ keyword. If you know C++, think of _raise_ as the 
+_throw_ keyword. Unlike in C++ where you can throw anything, including primitive types, in Python you can only throw objects that inherit from the _BaseException_ class.
 
+Manually throwing errors sounds strange, but it's very useful when you want to throw an error that isn't built into Python. Later on, you'll get to creating your own custom
+errors and you'll use _raise_ a lot then.
+  
 ```Python
+def main():
+    try:
+        raise ZeroDivisionError
+    except ZeroDivisionError:
+        print("Caught a manually-raised ZeroDivisionError")
 
+main()
 ```
+  
+## Catching errors as ___
