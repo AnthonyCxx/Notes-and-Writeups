@@ -4,9 +4,9 @@ and their functionality covers everything from constructors to operator overload
 
 [Here](https://levelup.gitconnected.com/python-dunder-methods-ea98ceabad15) is the only comprehensive article I've found on dunder methods and here](https://dbader.org/blog/python-dunder-methods) is a summary of it.
 
-## Constructors: _\_\_init()\_\__
-The _\_\_init()\_\__ method is used to declare and initialize the [instance attributes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#instance-attributes) of a class. <br />
-_\_\_init()\_\__ is automatically called when a class is created and should exist for nearly all classes.
+## Constructors: _\_\_init\_\__
+The _\_\_init\_\__ method is used to declare and initialize the [instance attributes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#instance-attributes) of a class. <br />
+_\_\_init\_\__ is automatically called when a class is created and should exist for nearly all classes.
 
 ```Python
 class Class:
@@ -24,14 +24,14 @@ main()
 ```
 
 ## String Representation
-Python has two dunder methods for creating a string representation of a class: _\_\_str()\_\__ and _\_\_repr()\_\__. I've linked an article below for more detail,
-but the long and short of it is that _\_\_str()\_\__ is for the end-user and _\_\_repr()\_\__ (the interal representation of the object) is for the developer. If you 
-printed a list, you would favor `print(', '.join(list))` over `print(list)`, no? Well that's the difference between _\_\_str()\_\__ and _\_\_repr()\_\__.
+Python has two dunder methods for creating a string representation of a class: _\_\_str\_\__ and _\_\_repr\_\__. I've linked an article below for more detail,
+but the long and short of it is that _\_\_str\_\__ is for the end-user and _\_\_repr\_\__ (the interal representation of the object) is for the developer. If you 
+printed a list, you would favor `print(', '.join(list))` over `print(list)`, no? Well that's the difference between _\_\_str\_\__ and _\_\_repr\_\__.
 
-If you overload both _\_\_str()\_\__ and _\_\_repr()\_\__, then Python will favor _\_\_str()\_\__ when printing the object (for obvious reasons). If you want the result
-of _\_\_repr()\_\__, then use then [_repr()_](https://www.programiz.com/python-programming/methods/built-in/repr) function.
+If you overload both _\_\_str\_\__ and _\_\_repr\_\__, then Python will favor _\_\_str\_\__ when printing the object (for obvious reasons). If you want the result
+of _\_\_repr\_\__, then use then [_repr()_](https://www.programiz.com/python-programming/methods/built-in/repr) function.
 
-Reference: [_When should I use \_\_str()\_\_ over \_\_repr()\_\_?_](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr)
+Reference: [_When should I use \_\_str\_\_ over \_\_repr\_\_?_](https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr)
 
 ```Python
 class Class:
@@ -50,8 +50,8 @@ main()
 ```
 > P.S. The return value of both functions must be strings.
 
-## Getting length with _\_\_len()\_\__
-_\_\_len()\_\__ defines the result of the _\_\_len()\_\__ function.
+## Getting length with _\_\_len\_\__
+_\_\_len\_\__ defines the result of the _len()_ function.
 
 ```Python
 class ListWrapper:
@@ -70,7 +70,7 @@ main()
 ```
 
 ## Getting Content with the _in_ Operator
-You can overload the _in_ operator for you class via the _\_\_contains()\_\__ method, which should return a boolean (_True_ or _False_).
+You can overload the _in_ operator for you class via the _\_\_contains\_\__ method, which should return a boolean (_True_ or _False_).
 
 ```Python
 class ListWrapper:
@@ -93,8 +93,8 @@ main()
 ```
 
 ## Overloading the \[ \] Operator
-The _\_\_getitem()\_\__, _\_\_setitem()\_\__, and _\_\_delitem()\_\__  methods allow you to access a class via the operator \[ \]. _\_\_getitem()\_\__ allows you to retrieve elements like 
-`print(chest[0])`,  _\_\_setitem()\_\__ allows you to assign to elements like `chest[0] = value`, and  _\_\_delitem()\_\__ allows you to delete items by index or value (depending
+The _\_\_getitem\_\__, _\_\_setitem\_\__, and _\_\_delitem\_\__  methods allow you to access a class via the operator \[ \]. _\_\_getitem\_\__ allows you to retrieve elements like 
+`print(chest[0])`,  _\_\_setitem\_\__ allows you to assign to elements like `chest[0] = value`, and  _\_\_delitem\_\__ allows you to delete items by index or value (depending
 on how you program it; here, I chose index).
 
 Overloading the \[ \] opreator can be useful for accessing for accessing many different types of data: strings, lists, tuples, dictionaries...
@@ -150,7 +150,7 @@ main()
 ```
 
 ## Calling an Object like a Function
-Class can be called like functions (like `object()`) via the _\_\_call()\_\__ method, which is especially useful for things like [functors](https://www.geeksforgeeks.org/functors-use-python/).
+Class can be called like functions (like `object()`) via the _\_\_call\_\__ method, which is especially useful for things like [functors](https://www.geeksforgeeks.org/functors-use-python/).
 
 ```Python
 class Object:
