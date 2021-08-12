@@ -246,3 +246,4 @@ even_numbers = [num for num in all_numbers if num % 2 == 0]  # Only copy numbers
 # Altering the result and applying conditionals
 even_div_by_4 = [num / 4 for num in all_numbers if num % 2 == 0] # Add all even numbers to the list, but divide them by 4 before appending
 ```
+> For more complex conditionals, you can do 'if __ else __'
