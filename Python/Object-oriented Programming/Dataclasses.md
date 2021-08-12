@@ -8,7 +8,13 @@ generate a host of magic methods: \_\_init_\_\, \_\_repr_\_\, \_\_eq\_\_, all th
 Throughout the examples I will be using a class _Point_ that has two coordinates (an x- and a y-coordinate). <br />
 The example is from Scott Irwin's 2018 talk: [_Dataclasses are here. Now what?_](https://www.youtube.com/watch?v=zHY1oaYxxjA) <br />
 ```Python
+from dataclasses import dataclass
 
+# A simple, immutable 'Point' class that automatically implements __init__, __repr__ and, __eq__
+@dataclass(frozen=True)
+class Point:
+    x: int=0
+    y: int=0
 ```
 
 ## _@dataclass_ Arguments
