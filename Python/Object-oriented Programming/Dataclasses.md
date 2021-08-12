@@ -7,3 +7,19 @@ generate a host of magic methods: \_\_init_\_\, \_\_repr_\_\, \_\_eq\_\_, all th
 ```Python
 
 ```
+
+## _@dataclass_ Arguments
+The _@dataclass_ decorator can take arguments that change how the dataclass functions. <br />
+By default, only init, repr, and eq are true — order, frozen, and unsafe_hash are false by default.
+
+### init
+
+### repr
+
+### eq
+
+### order
+
+### frozen
+
+### unsafe_hash
