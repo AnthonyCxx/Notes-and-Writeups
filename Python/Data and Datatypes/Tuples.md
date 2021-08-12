@@ -2,6 +2,8 @@
 Tuples are an immutable data structure that can store a collection of elements of various types. <br />
 Think of a tuple like a list that can't be changed once made. Like lists, the individual elements can be accessed using brackets (\[ \]).
 
+Like sets, tuples are highly valued for their O(1) lookup time.
+
 ## Tuples by Example
 ```Python
 ''' DECLARING TUPLES '''
