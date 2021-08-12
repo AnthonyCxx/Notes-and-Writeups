@@ -6,8 +6,6 @@
 
 RealPython has a really good guide on [reading/writing files in Python](https://realpython.com/read-write-files-python/).
 
-For reference, I use the [walrus operator](https://realpython.com/lessons/assignment-expressions/) (:=) a lot here.
-
 ## Opening a File
 Open a file with the built-in [_open()_](https://www.w3schools.com/python/python_file_handling.asp) function, which returns a [file object](https://www.geeksforgeeks.org/file-objects-python/) that is iterable. Remember to always call [_.close()_](https://www.w3schools.com/python/ref_file_close.asp) on a file.
 
