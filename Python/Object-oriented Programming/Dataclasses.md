@@ -25,57 +25,24 @@ If you manually implement a dunder method like \_\_init\_\_ and _init_ is _True_
 
 ### init
 
-```Python
-def __init__(self, x: int=0, y: int=0) -> None:
-    self.x = x
-    self.y = y
-```
 
 ### repr
 
-```Python
-def __repr__(self):
-    return (f'{self.__class__.__qualname__}'
-            f'(x={self.x}, y={self.y})')
-```
 
 ### eq
 
-```Python
-def __eq__(self, other):
-    if other.__class__ is self.__class__:
-        return ((self.x, self.y) == (other.x, other.y))
-    return NotImplemented
-```
-> Reference: [_NotImplemented_](https://docs.python.org/3/library/exceptions.html#NotImplementedError) exception
 
 ### order
 The _order_ argument will implement all four comparison operators (<, >, <=, >=).
 
-The following example uses less than (\_\_lt\_\_).
-```Python
-def __init__(self, other):
-    if other.__class__ is self.__class__:
-        return (self.x, self.y) < (other.x, other.y)
-    return NotImplemented
-```
-> Reference: [_NotImplemented_](https://docs.python.org/3/library/exceptions.html#NotImplementedError) exception
-
 ### frozen
 The _frozen_ attribute will override \_\_setarr\_\_ and \_\_delattr\_\_ to make the dataclass immutable. <br />
 If you try to change a frozen dataclass, you will get a _dataclasses.FrozenInstanceError_ exception.
-
-```Python
-
-```
 
 ### unsafe_hash
 Depending on how eq and frozen are set, you may get a \_\_hash\_\_ function (assuming it's safe to implement). <br /> 
 If it's not and you want to force one, you can set _unsafe\_hash_ to _True_.
 
 You really shouldn't use this, since it's dangerous.
-```Python
-
-```
 
 ## Fields
