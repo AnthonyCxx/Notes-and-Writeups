@@ -219,7 +219,7 @@ void Array<T>::print() const
 
 //[] Overload: element access
 template <typename T>
-T& Array<T>::operator[](int index) const
+T& Array<T>::operator[](int index) const  //Return array index by reference so you can assign (and alter) it
 {
     return array[index];
 }
