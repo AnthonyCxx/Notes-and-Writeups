@@ -3,6 +3,7 @@ An abstract base class (ABC) is a class that cannot be instantiated (because it'
 For a class to become an abstract base class, they must inherit from the _ABC_ class under the [_abc_](https://docs.python.org/3/library/abc.html) module and have one or more
 abstract methods (denoted by `@abstractmethod`).
 
+You cannot instantiate an abstract class or any class that has inherited an abstract method without overriding it.
 ```Python
 from abc import ABC, abstractmethod
 ```
