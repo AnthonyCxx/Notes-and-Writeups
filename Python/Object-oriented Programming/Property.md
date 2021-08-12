@@ -33,7 +33,7 @@ main()
 
 ## Setters
 To write a setter, write a new method with the same name as the original property (the get method) and tag it with `property_name.setter`. <br />
-Here, I am writing a setter for _fullname_ so I have a setter function _fullname_ tagged _@fullname.setter_.
+Here, I am writing a setter for _fullname_ so I have a setter function _fullname_ tagged `@fullname.setter`.
 
 Setters will be automatically called when you try to assign to a property like `class.property = something`.
 ```Python
