@@ -77,3 +77,5 @@ _unsafe\_hash_ is _False_ by default.
 ```
 
 ## Fields
+The _field()_ function can provide greater control of the individual data members of the dataclass, allowing you to do things like exclude certain data members from \_\_repr\_\_,
+\_\_hash\_\_, \_\_init\_\_, \_\_eq\_\_, et cetra.
