@@ -6,7 +6,7 @@ can have getter and setter functions easily added to them; the benefit of using 
 called whenever you access/set the property so you can write `print(class.x)` and `class.x = y` instead of `print(class.get_x())` and `class.set_x(y)`. <br />
 Properties make things simple.
 
-The examples used here are a simplified version of the one in Corey Schafer's [Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters](https://www.youtube.com/watch?v=jCzT9XFZ5bw).
+The examples used here are a simplified version of the one in Corey Schafer's [Property Decorators - Getters, Setters, and Deleters](https://www.youtube.com/watch?v=jCzT9XFZ5bw).
 
 ## Properties with _@property_
 To declare a property, write a method and tag it with the `@property` decorator.
