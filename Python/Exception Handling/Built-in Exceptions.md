@@ -13,6 +13,26 @@ except Exception:
     print("Caught an error")
 ```
 
+## NameError
+Thrown when a variable is not found in the local/global scope.
+
+```Python
+# Error, 'variable' is not defined
+print(variable)
+```
+
+## AttributeError
+An _AttributeError_ is thrown when you access an attribute of a class that does not exist. <br />
+Abstract base classes help avoid this problem.
+
+```Python
+class DummyClass:
+    pass
+
+dummy = DummyClass()
+print(dummy.this_property_does_not_exist)
+```
+
 ## IndexError
 An _IndexError_ occurs when you try to access an index that does not exist.
 
@@ -31,18 +51,6 @@ heights = {"Harold":"5' 7", "Marissa":"5' 9", "Taylor":"6' 0"}
 
 # Error, 'Lauren' does not exist in the dictionary
 print(heights["Lauren"])
-```
-
-## AttributeError
-An _AttributeError_ is thrown when you access an attribute of a class that does not exist. <br />
-Abstract base classes help avoid this problem.
-
-```Python
-class DummyClass:
-    pass
-
-dummy = DummyClass()
-print(dummy.this_property_does_not_exist)
 ```
 
 ## ValueError
