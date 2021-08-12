@@ -12,14 +12,40 @@ generate a host of magic methods: \_\_init_\_\, \_\_repr_\_\, \_\_eq\_\_, all th
 The _@dataclass_ decorator can take arguments that change how the dataclass functions. <br />
 By default, only init, repr, and eq are true — order, frozen, and unsafe_hash are false by default.
 
+The following examples are for a class _Point_ that has two coordinates (an x- and a y-coordinate). <br />
+The example is from Scott Irwin's 2018 talk: [_Dataclasses are here. Now what?_](https://www.youtube.com/watch?v=zHY1oaYxxjA) <br />
+
 ### init
+
+```Python
+
+```
 
 ### repr
 
+```Python
+
+```
+
 ### eq
+
+```Python
+
+```
 
 ### order
 
+```Python
+
+```
+
 ### frozen
 
+```Python
+
+```
 ### unsafe_hash
+
+```Python
+
+```
