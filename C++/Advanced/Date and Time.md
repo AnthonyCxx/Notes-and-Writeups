@@ -117,7 +117,7 @@ for translating _time\_points_ into dates.  _system\_clock_ also automatically a
 | [_::from\_time\_t()_](https://www.cplusplus.com/reference/chrono/system_clock/from_time_t/) | Static | converts a [_time\_t_ struct](https://en.cppreference.com/w/c/chrono/time_t) to a _time\_point_ |
 
 # The _stready\_clock_ Class
-Use _steady\_clock_ when you need to measure _time\_point_ — think of it like a stopwatch. <br />
+Use _steady\_clock_ when you need to measure the time between _time\_point_ objects — think of it like a stopwatch. <br />
 _steady\_clock_ has no relationship to any calendar, so you cannot use it for dates.
 
 The reason you should always use _stready\_clock_ to measure elapsed time is because _stready\_clock_ ensures that the time between ticks does not vary;
