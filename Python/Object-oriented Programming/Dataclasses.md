@@ -42,11 +42,14 @@ _repr_ is _True_ by default.
 ```
 
 ### eq
+_eq_ will automatically generate the \_\_eq\_\_ method. \_\_eq\_\_ compares the dataclass like tuples, so if any element in the dataclass is not equal
+then the dataclasses are not equal.
 
 _eq_ is _True_ by default.
 
 ### order
-The _order_ argument will implement all four comparison operators (<, >, <=, >=).
+The _order_ argument will implement all four comparison operators (<, >, <=, >=). The comparison operators compare the dataclasses 
+like tuples, so the first unequal operation is how the dataclass will compare to each other. See [here](https://howtodoinjava.com/python/misc/compare-tuples/) for more on tuple comparison.
 
 _order_ is _False_ by default.
 
