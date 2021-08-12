@@ -23,3 +23,4 @@ def main():
     
 main()
 ```
+> Reference: [_Why should I use abstract base classes?_](https://stackoverflow.com/questions/3570796/why-use-abstract-base-classes-in-python/3571946) <br />
