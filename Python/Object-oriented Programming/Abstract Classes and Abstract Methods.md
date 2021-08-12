@@ -6,4 +6,20 @@ abstract methods (denoted by `@abstractmethod`).
 You cannot instantiate an abstract class or any class that has inherited an abstract method without overriding it.
 ```Python
 from abc import ABC, abstractmethod
+
+class Tool(ABC):
+    @abstractmethod
+    def use(self):
+        pass
+    
+class Saw(Tool):
+    # Overrides abstract method 'use()' from parent 'Tool'
+    def use(self):
+        print("Cutting something in half")
+    
+def main():
+    saw = Saw()
+    saw.use()
+    
+main()
 ```
