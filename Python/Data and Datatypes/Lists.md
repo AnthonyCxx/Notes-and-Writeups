@@ -236,7 +236,7 @@ for-loop to create a list automatically, and it gets even more complex if you wa
 list_of_100 = [i for i in range(100)]      # Create a list of the integers 1-100
 
 # Applying Functions to each element in the collection
-uppercase_words = ["THIS IS A SENTENCE", "Hmmm, AngRy...", "I am NOT upset"]
+uppercase_words = ["THIS IS A SENTENCE", "Hmmm, Angry...", "I am NOT upset"]
 lowercase_words = [word.lower() for word in uppercase_words]  # Now '.lower()' has been applied to each element in 'uppercase_words'
 
 # Applying Conditionals to a collection
