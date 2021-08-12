@@ -33,7 +33,7 @@ _init_ is _True_ by default.
 ```
 
 ### repr
-_repr_ creates a string representation of the class. The string representation of a Point object where x=10 and y=20 would look like
+_repr_ creates a string representation of the class. The string representation of a Point object where x=10 and y=20 would look like <br />
 `Point(x=10, y=20)`.
 
 _repr_ is _True_ by default.
@@ -50,16 +50,25 @@ The _order_ argument will implement all four comparison operators (<, >, <=, >=)
 
 _order_ is _False_ by default.
 
+```
+```
+
 ### frozen
 The _frozen_ attribute will override \_\_setarr\_\_ and \_\_delattr\_\_ to make the dataclass immutable. <br />
 If you try to change a frozen dataclass, you will get a _dataclasses.FrozenInstanceError_ exception.
 
 _frozen_ is _False_ by default.
 
+```
+```
+
 ### unsafe_hash
 Depending on how eq and frozen are set, you may get a \_\_hash\_\_ function (assuming it's safe to implement). <br /> 
 If it's not and you want to force one, you can set _unsafe\_hash_ to _True_. You really shouldn't use this, since it's dangerous.
 
 _unsafe\_hash_ is _False_ by default.
+
+```
+```
 
 ## Fields
