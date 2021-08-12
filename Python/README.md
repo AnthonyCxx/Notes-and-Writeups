@@ -26,7 +26,6 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Using files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md)
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Object-oriented%20Programming)
 - [Exceptions](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Exceptions)
-- Dataclasses
 
 ### Advanced
 
