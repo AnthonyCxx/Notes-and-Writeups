@@ -19,7 +19,16 @@ File "<string>", line 4, in main <br />
 IndexError: list index out of range_ <br />
  
 ```Python
+def main():
+    numbers = [1, 2, 3, 4, 5]
+    
+    # try...except block catches the error, allowing the program to continue
+    try:
+        print(numbers[999])
+    except IndexError:
+        print("The given index does not exist")
 
+main()
 ```
 
 ## Cleaning up with _finally_
