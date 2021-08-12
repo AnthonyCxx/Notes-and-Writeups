@@ -59,11 +59,23 @@ errors and you'll use _raise_ a lot then.
 ```Python
 def main():
     try:
-        raise ZeroDivisionError
-    except ZeroDivisionError:
-        print("Caught a manually-raised ZeroDivisionError")
+        raise Exception
+    except Exception:
+        print("Caught a manually-raised exception")
 
 main()
 ```
   
 ## Catching errors as ___
+The _as_ keyword makes an object an alias for an existing object. <br />
+You can use _as_ in the _except_ block to catch the error object and print it out directly, giving you access to its error message.
+  
+```Python
+def main():
+    try:
+        raise Exception("You can now use this error message")
+    except Exception as err:
+        print(err)
+
+main()  
+```
