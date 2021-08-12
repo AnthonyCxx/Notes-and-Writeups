@@ -65,7 +65,41 @@ main()
 ```
 
 ## Deleters
+Deleters are automatically called when you delete a property like `del class.some_property`. <br />
+You write a deleter the same way you write a setter, but replace the tag with `@property_name.deleter`.
 
 ```Python
-
+class Person:
+    def __init__(self, first: str, last: str):
+        self.first = first
+        self.last = last
+        
+    # 'fullname' acts as the get method
+    @property
+    def fullname(self):
+        return f"{self.first} {self.last}"
+        
+    @fullname.setter
+    def fullname(self, fullname):
+        self.first, self.last = fullname.split(' ')
+        
+    @fullname.deleter
+    def fullname(self):
+        self.first = self.last = None  # Set both first and last name to None
+        
+def main():
+    person = Person("Michael", "Bennet")  # A random name
+    
+    # Get the person's full name (calls fullname())
+    print(person.fullname)
+    
+    # Update the person's first and last name in one go (calls fullname.setter)
+    person.fullname = "Leah Stuart"
+    print(person.fullname)
+    
+    # Delete the person's fullname
+    del person.fullname
+    print(person.fullname)
+    
+main()
 ```
