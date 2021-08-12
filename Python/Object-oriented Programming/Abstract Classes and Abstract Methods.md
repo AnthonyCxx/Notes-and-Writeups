@@ -7,6 +7,7 @@ You cannot instantiate an abstract class or any class that has inherited an abst
 ```Python
 from abc import ABC, abstractmethod
 
+# An abstract class, since there is not such an object as 'Tool'
 class Tool(ABC):
     @abstractmethod
     def use(self):
