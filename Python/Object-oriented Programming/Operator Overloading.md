@@ -57,13 +57,13 @@ P.S. _[token](https://techterms.com/definition/token)_ refers to a single, irred
 | ~ | Unary | \_\_invert()\_\_ | 
 
 ### Assignment Operators
-For some reason or another, I could only get the assignment overloads to work like this: <br />
-I would have expected it to be `self.num -= other`.
+Assignment overloads should return _self_ so you can chain them.
+
 ```Python
 def __isub__(self, other):
-        return self.num - other
+        self.num -= other
+        return self
 ```
-> Why is \_\_isub()\_\_ returning something? I don't know.
 
 | Token | Arity | Dunder Method |
 | ------ | ----- | ------------- | 
