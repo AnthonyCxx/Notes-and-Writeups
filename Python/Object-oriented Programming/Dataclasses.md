@@ -4,6 +4,8 @@ module as _dataclass_, which contains a decorator, `@dataclass`, that can be use
 generate a host of magic methods: \_\_init_\_\, \_\_repr_\_\, \_\_eq\_\_, all the comparison operators (\_\_lt\_\_, \_\_le\_\_, \_\_gt\_\_, \_\_ge\_\_), and possibly even
 \_\_hash\_\_. This virtually eliminates all the normal boilerplate code you'd have to write in order to write a class for storing data.
 
+Although you have to declare a type for each data member of a dataclass, the declared type is only a hint. Python is a dynamic language and any variable can be any datatype
+at anytime. Dataclasses do not change this.
 
 Throughout the examples I will be using a class _Point_ that has two coordinates (an x- and a y-coordinate). <br />
 The example is from Scott Irwin's 2018 talk: [_Dataclasses are here. Now what?_](https://www.youtube.com/watch?v=zHY1oaYxxjA) <br />
@@ -11,7 +13,7 @@ The example is from Scott Irwin's 2018 talk: [_Dataclasses are here. Now what?_]
 from dataclasses import dataclass
 
 # A simple, immutable 'Point' class that automatically implements __init__, __repr__ and, __eq__
-@dataclass(frozen=True)
+@dataclass(frozen=True) # Both x and y have a default value of 0
 class Point:
     x: int=0
     y: int=0
