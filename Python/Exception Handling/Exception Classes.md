@@ -21,7 +21,7 @@ def main():
             raise DivisionByZero("Error: you cannot divide by zero...")
         
         print(f"10 / 10 = {numerator/denominator}")
-    except DivisionByZero as err:
+    except DivisionByZero as err:  # Using custom 'DivsionByZero' exception
         print(err)
 
 main()
