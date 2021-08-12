@@ -46,7 +46,6 @@ with open("file.txt", "r") as f:       # Using the file 'file.txt' in read mode
         for char in line.rstrip():     # For every character in the stripped line
             print(char)                # Print the given character
 ```
-> Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading by Word
 If you split the line before iterating over it, then you iterate over the words as a list instead of the characters as a string.
@@ -67,7 +66,6 @@ with open("file.txt", "r") as f:
     for line in f:
         print(line.rstrip())
 ```
-> Reference: [walrus operator](https://realpython.com/lessons/assignment-expressions/), :=
 
 ## Reading Entire File as String
 The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method read an entire file as a string if not given
