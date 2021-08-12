@@ -44,7 +44,7 @@ int main()
     //Before
     cout << "BEFORE Transformation: " << book << '\n';
 
-    //Transform the string to uppercase
+    //Reverse the case of the string (upper -> lower, lower -> upper)
     for_each(book.begin(), book.end(), [](char& c) { if (isupper(c)) c = tolower(c); else if (islower(c)) c = toupper(c); });
 
     //After
