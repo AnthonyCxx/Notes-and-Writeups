@@ -24,10 +24,14 @@ By default, only init, repr, and eq are true — order, frozen, and unsafe_hash 
 If you manually implement a dunder method like \_\_init\_\_ and _init_ is _True_, then the manual implemention will override the automatically-generated one.
 
 ### init
+_init_ automatically creates a constructor for the dataclass. The arguments for the constructor should be passed in the same order that the data members
+are declared in the dataclass (in this case, x then y).
 
 _init_ is _True_ by default.
 
 ### repr
+_repr_ creates a string representation of the class. The string representation of a Point object where x=10 and y=20 would look like
+`Point(x=10, y=20)`.
 
 _repr_ is _True_ by default.
 
