@@ -32,9 +32,21 @@ main()
 ```
 
 ## Cleaning up with _finally_
-
+The _finally_ block follows a _try_..._except_ block and is generally used to clean up the result of an operation which may or may not have gone through.
+  
+In complete honesty, I've never really used _finally_ because I didn't think it was that useful, but I found a decent answer [here](https://stackoverflow.com/questions/11551996/why-do-we-need-the-finally-clause-in-python) for when to use it.  
 ```Python
+def main():
+    f = open("textfile.txt", "w")
+    
+    try:
+        f.write(0 / 0)     # This won't write...
+    except Exception:
+        print("An error occured while writing to the file")
+    finally:
+        file.close()
 
+main()
 ```
 
 ## Manually Raising Errors with _raise_
