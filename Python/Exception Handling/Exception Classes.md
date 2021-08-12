@@ -4,6 +4,7 @@ _Exception_, has an \_\_init\_\_ method to define the error message, and has a \
 
 Here's a simple example of a custom _DivisionByZero_ exception (yes, I am aware Python has a built-in [_ZeroDivisionError_](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError) exception).
 ```Python
+# Custom exception class
 class DivisionByZero(Exception):
     def __init__(self, message: str="Error: division by zero"):
         self.msg = message
