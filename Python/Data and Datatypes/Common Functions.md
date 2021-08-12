@@ -50,7 +50,7 @@ result2 = 5/2
 if type(result1) == type(result2):
     print(f"The two are of the same datatype: {type(result1)}")
 else:
-    print(f"The two are not of the same datatype; types: {type(result1)}, {type(resul2)}")
+    print(f"The two are not of the same datatype; types: {type(result1)}, {type(result2)}")
 ```
 
 ## _sorted()_
