@@ -34,5 +34,19 @@ _cls_) and are exceptionally useful for creating [factory methods](https://dev.t
 
 Class methods are marked with `@classmethod` and take _cls_ (a class, passed implcitly) as a parameter.
 ```Python
+class Pizza:
+    def __init__(self, ingredients):
+        self.ingredients = ingredients
 
+    def __repr__(self):
+        return f'Pizza({self.ingredients!r})'
+
+    @classmethod
+    def margherita(cls):
+        return cls(['mozzarella', 'tomatoes'])
+
+    @classmethod
+    def prosciutto(cls):
+        return cls(['mozzarella', 'tomatoes', 'ham'])
 ```
+> This example is from RealPython: [_Delicious Pizza Factories With @classmethod_](https://realpython.com/instance-class-and-static-methods-demystified/#delicious-pizza-factories-with-classmethod) <br />
