@@ -25,24 +25,31 @@ If you manually implement a dunder method like \_\_init\_\_ and _init_ is _True_
 
 ### init
 
+_init_ is _True_ by default.
 
 ### repr
 
+_repr_ is _True_ by default.
 
 ### eq
 
+_eq_ is _True_ by default.
 
 ### order
 The _order_ argument will implement all four comparison operators (<, >, <=, >=).
+
+_order_ is _False_ by default.
 
 ### frozen
 The _frozen_ attribute will override \_\_setarr\_\_ and \_\_delattr\_\_ to make the dataclass immutable. <br />
 If you try to change a frozen dataclass, you will get a _dataclasses.FrozenInstanceError_ exception.
 
+_frozen_ is _False_ by default.
+
 ### unsafe_hash
 Depending on how eq and frozen are set, you may get a \_\_hash\_\_ function (assuming it's safe to implement). <br /> 
-If it's not and you want to force one, you can set _unsafe\_hash_ to _True_.
+If it's not and you want to force one, you can set _unsafe\_hash_ to _True_. You really shouldn't use this, since it's dangerous.
 
-You really shouldn't use this, since it's dangerous.
+_unsafe\_hash_ is _False_ by default.
 
 ## Fields
