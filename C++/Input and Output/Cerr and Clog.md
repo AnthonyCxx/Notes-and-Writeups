@@ -24,7 +24,6 @@ The << operator is overloaded such that it writes literals and expressions that 
 ```C++
 #include <iostream>
 #include <fstream>       //Contains 'ifstream' datatype
-#include <cstdlib>      //Contains 'exit()'
 using namespace std;
 
 int main()
@@ -38,8 +37,7 @@ int main()
     //Verify that the file is valid
     if (!file)   // 'file' evals to false if invalid
     {
-        clog << "Fatal error: file could not be opened or does not exist...\n";
-        exit(1);  //Exit with status code 1
+        clog << "Error: file could not be opened or does not exist...\n";
     }
 
     return 0;
