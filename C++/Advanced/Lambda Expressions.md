@@ -31,7 +31,7 @@ A function can take another function as a paramter. This is common for many func
 Lambda expressions allow you to write a one-time function so you can use it just for the one function call. Here, I used a lambda with the [_for\_each()_](cplusplus.com/reference/algorithm/for_each/) function to reverse the case of every letter in a string.
 
 ```C++
- #include <iostream>
+#include <iostream>
 #include <string>
 #include <algorithm>
 #include <cctype>
