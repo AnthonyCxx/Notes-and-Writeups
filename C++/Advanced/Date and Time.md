@@ -77,6 +77,9 @@ When creating custom types that are based on existing types (even existing custo
 > '_using days = chrono::duration<int, ratio<86400>>;_' also works since there are 86400 seconds in a day
 
 # The _time\_point_ Class
+The _time\_point_ class allows you to create timepoints, instances in time that can be measured against another timepoint to get a _duration_ (as in the _duration_ class) of time.
+Timepoints themselves any amount of time like '10 seconds', but rather a specific instance in time like '8:32 PM on August 7th, 2017'.
+
 | Method | Type | Description | 
 | ------ | ---- | ----------- | 
 | [_.time_since_epoch()_](https://www.cplusplus.com/reference/chrono/time_point/time_since_epoch/) | Instance | returns a _duration_ object containing the time between the _time\_point_ object and the [epoch](https://en.wikipedia.org/wiki/Unix_time) |
