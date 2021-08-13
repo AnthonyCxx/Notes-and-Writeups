@@ -35,9 +35,6 @@ _r_ mode throws a [_FileNotFoundError_](https://docs.python.org/3/library/except
 # Reading Files
 
 ## Reading by Character
-The [_read()_](https://www.w3schools.com/python/ref_file_read.asp) method reads a given amount of characters. <br />
-If no amount is specified, _read()_ will read the entire file. To read by character, do _read(1)_.
-
 ```Python
 with open("file.txt", "r") as f:       # Using the file 'file.txt' in read mode
     for line in f:                     # For every line in the file
