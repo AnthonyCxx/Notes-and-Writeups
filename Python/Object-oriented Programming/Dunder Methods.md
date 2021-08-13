@@ -149,7 +149,33 @@ def main():
 main()
 ```
 
-## Iterating over an Object _\_\_iter\_\__ and _\_\_next\_\__
+## Iterating over an Object with _\_\_iter\_\__ and _\_\_next\_\__
+In order to be iterable, an object must implement both the _\_\_iter\_\__ and _\_\_next\_\__ methods. <br />
+
+This is a take on Python's _range()_ function that has an inclusive, not exclusive, end.
+```Python
+class Range:
+    def __init__(self, start: int, end: int):
+        if start > end:
+            raise ValueError("the start of a 'Range' sequence cannot be greater than the end")
+        
+        self.current = start
+        self.end = end
+        
+    def __iter__(self):
+        return self
+        
+    def __next__(self):
+        if self.current > self.end:
+            raise StopIteration
+        num = self.current 
+        self.current += 1
+        return num
+        
+
+for square in Range(-10, 10):
+    print(square)
+```
 
 ## Calling an Object like a Function
 Class can be called like functions (like `object()`) via the _\_\_call\_\__ method, which is especially useful for things like [functors](https://www.geeksforgeeks.org/functors-use-python/).
