@@ -31,10 +31,6 @@ as_str = as_bytes.decode("utf-8")
 print(as_str)
 ```
 
-### _.fromhex()_
-
-### _.hex()_
-
 ## _bytearray_
 The _bytearray_ type is a mutable array of _bytes_ objects. It functions like a standard array and even has a host of methods for manipulating/changing the bytes inside 
 it.
