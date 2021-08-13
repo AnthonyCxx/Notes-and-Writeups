@@ -26,7 +26,7 @@ main()
 ## String Representation
 Python has two dunder methods for creating a string representation of a class: _\_\_str\_\__ and _\_\_repr\_\__. I've linked an article below for more detail,
 but the long and short of it is that _\_\_str\_\__ is for the end-user and _\_\_repr\_\__ (the interal representation of the object) is for the developer. If you 
-printed a list, you would favor `print(', '.join(list))` over `print(list)`, no? Well that's the difference between _\_\_str\_\__ and _\_\_repr\_\__.
+printed a list for the user, you would favor `print(', '.join(list))` over `print(list)`, no? Well that's the difference between _\_\_str\_\__ and _\_\_repr\_\__.
 
 If you overload both _\_\_str\_\__ and _\_\_repr\_\__, then Python will favor _\_\_str\_\__ when printing the object (for obvious reasons). If you want the result
 of _\_\_repr\_\__, then use then [_repr()_](https://www.programiz.com/python-programming/methods/built-in/repr) function.
