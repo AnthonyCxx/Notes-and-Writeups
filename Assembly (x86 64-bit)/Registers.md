@@ -30,7 +30,7 @@ In the x86_64 architecture, registers can hold up to 64 bits (8 bytes).
 | r13b  |  r13w  |  r13d  |  r13   | register 13 | General Purpose Register |
 | r14b  |  r14w  |  r14d  |  r14   | register 14 | General Purpose Register |
 | r15b  |  r15w  |  r15d  |  r15   | register 15 | General Purpose Register |
-> The 'ah/al' refer to how the [8-bit registers can either be can either be low or high](https://riptutorial.com/x86/example/6973/8-bit-registers) <br />
+> The 'ah/al' refer to how the [8-bit registers can either be can either be low or high](https://riptutorial.com/x86/example/6973/8-bit-registers). <br />
 > Reference: [When should I use low vs high registers?](https://stackoverflow.com/questions/53562739/if-i-have-an-8-bit-value-is-there-any-advantage-to-using-an-8-bit-register-inst)
 
 ### Visualization
