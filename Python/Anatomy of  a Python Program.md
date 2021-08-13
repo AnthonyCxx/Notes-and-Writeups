@@ -34,14 +34,11 @@ them with further indentation.
 Always use tabs instead of spaces for indentation to reduce indentation errors.
 ```Python
 # A function named 'func'
-def func():
-    # Start of function block
-    for number in [1, 2, 3]:
-        # Beginning of loop block
-        print(number)
-        # End of loop block
-    # End of function block
-
+def func():                         # Start of function block
+    for number in [1, 2, 3]:        # Beginning of loop block
+        print(number)               # End of loop block
+                                    # End of function block
+                                    
 # Call the function 'func'
 func()
 ```
