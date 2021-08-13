@@ -149,6 +149,8 @@ def main():
 main()
 ```
 
+## Iterating over an Object _\_\_iter\_\__ and _\_\_next\_\__
+
 ## Calling an Object like a Function
 Class can be called like functions (like `object()`) via the _\_\_call\_\__ method, which is especially useful for things like [functors](https://www.geeksforgeeks.org/functors-use-python/).
 
