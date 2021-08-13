@@ -26,6 +26,7 @@ class Person:
 def main():
     person = Person("Michael", "Bennet")  # A random name
     
+    # Notice how 'fullname' is called like a data member, not a method
     print(person.fullname)
     
 main()
