@@ -6,14 +6,34 @@ A wide array of data in Python can be pickled, see the Python Documentation, [_W
 
 ## Saving Data with _pickle.dump()_
 
+Pickled objects are byte streams, so you should always open the file in binary mode.
 ```Python
+import pickle
 
+# A-Z dictionary of morse code
+MORSE_LETTERS = {'.-':'A', '-...':'B', '-.-.':'C', '-..':'D', '.':'E', '..-.':'F', '--.':'G', \
+                 '....':'H', '..':'I', '.---':'J', '-.-':'K', '.-..':'L', '--':'M', '-.':'N', \
+                 '---':'O', '.--.':'P', '--.-':'Q', '.-.':'R', '...':'S', '-':'T', '..-':'U', \
+                 '...-':'V', '.--':'W', '-..-':'X', '-.--':'Y', '--..':'Z'}
+
+
+# Dump the morse code dictionary to the file
+with open("morse.pickle", "wb") as f:
+        pickle.dump(MORSE_LETTERS, f)
 ```
 
 ## Reading Data with _pickle.load()_
 
-```Python
 
+Pickled objects are byte streams, so you should always open the file in binary mode.
+```Python
+import pickle
+
+# Open the pickled file in binary read mode
+with open("morse.pickle", "rb") as f:
+    morse_code_dictionary = pickle.load(f)
+
+print(morse_code_dictionary)
 ```
 
 ## Temporary Conversion with _pickle.dumps()_ and _pickle.loads()_
