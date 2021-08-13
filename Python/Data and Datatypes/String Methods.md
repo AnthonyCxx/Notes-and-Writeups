@@ -412,7 +412,7 @@ print(text.rpartition("aaa"))
 ## Miscellaneous
 
 ### _.encode()_
-_.encode()_ returns a new string, converting unicode characters to ASCII. <br />
+_.encode()_ returns a new string, converting unicode characters to ASCII.
 The way the string is encoded depends on the second argument, _errors_, which can be set to any of a set of [replacement protocols](https://www.w3schools.com/python/ref_string_encode.asp) for properly translating unicode characters.
 
 ```Python
