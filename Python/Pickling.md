@@ -1,2 +1,2 @@
 # Pickling in Python
-Weird name for something so useful.
+Picking is a form of [data persistance](https://c3.ai/glossary/features/data-persistence/)
