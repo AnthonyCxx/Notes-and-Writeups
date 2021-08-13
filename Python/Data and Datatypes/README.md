@@ -5,7 +5,7 @@
 | [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Primitive%20Types.md) | the basic datatypes that make up Python |
 | [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Data%20and%20Datatypes#non-primitive-datatypes) | the basic data structures that make up Python |
 | [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Built-in%20Operators.md) | functions associated with tokens |
-| [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Common%20Functions.md) | a collection of the most common Python functions |
+| [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Functions.md) | defining and using functions in Python |
 | [Slicing](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Slicing.md) | access a portion of any iterable (strings, lists, tuples, etc.) |
 
 ## Primitive Datatypes
