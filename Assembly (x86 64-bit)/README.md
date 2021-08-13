@@ -10,6 +10,7 @@ Finally, since I am programming on Linux, I use [AT&T syntax](http://www.sig9.co
 ## Contents
 - [Anatomy of an Assembly Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Anatomy%20of%20an%20Assembly%20Program.md)
 - [Registers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Registers.md)
+- [Instructions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Instructions.md) (opcodes)
 - [System Call Index](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Assembly%20(x86%2064-bit)/System%20Calls)
 
 ## Books Used
