@@ -96,7 +96,7 @@ _default_ is the default value of the field.
 ### default_factory
 The _default\_factory_ parameter takes a function that returns the default value of the field.
 You have to use the _default\_factory_ method for non-primitive types like lists because setting the default value to `[]` would cause every instance to refer
-to the same list. To use the default factory for a list, set the field to `field(default_factory=list)` (this works because the _list()_ functions returns a list).
+to the same list. To use the default factory for a list, set the field to `field(default_factory=list)` (this works because the _list()_ function returns a list).
 
 By the way, make sure to import the _List_ from _typing_ so you can use _List_ as the default type of the data member.
 ```
