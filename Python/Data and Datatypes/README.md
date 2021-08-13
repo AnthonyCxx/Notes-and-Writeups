@@ -22,7 +22,7 @@ There are four primitive types: [strings](https://realpython.com/python-data-typ
 | [dict](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Dictionary.md) | a data structure that stores key-value pairs |
 | [set](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md) | an collection of unique elements |
 | [frozenset](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Sets.md) | an immutable set |
-| [Binary Sequence Types]() | [_bytes_](https://www.programiz.com/python-programming/methods/built-in/bytes), [_bytearray_](https://www.programiz.com/python-programming/methods/built-in/bytearray), and [_memoryview_](https://www.geeksforgeeks.org/memoryview-in-python/) |
+| [Binary Sequence Types](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Data%20and%20Datatypes/Binary%20Sequence%20Types.md) | [_bytes_](https://www.programiz.com/python-programming/methods/built-in/bytes), [_bytearray_](https://www.programiz.com/python-programming/methods/built-in/bytearray), and [_memoryview_](https://www.geeksforgeeks.org/memoryview-in-python/) |
 > _immutable_ means unalterable/unchangable.
 
 ## Operator Precedence
