@@ -135,7 +135,7 @@ Multiple inheritance is less common, but useful.
 from typing import List
 
 class Container:
-    def __init__(self, capacity: int=64, items: list=List):
+    def __init__(self, capacity: int=64, items: List=list()):
         self.items = items
         self.capacity = capacity
         
