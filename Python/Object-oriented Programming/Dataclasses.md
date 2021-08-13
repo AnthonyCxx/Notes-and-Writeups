@@ -76,6 +76,43 @@ _unsafe\_hash_ is _False_ by default.
 ```
 ```
 
-## Fields
+## Fields and Field Arguments
 The _field()_ function can provide greater control of the individual data members of the dataclass, allowing you to do things like exclude certain data members from \_\_repr\_\_,
-\_\_hash\_\_, \_\_init\_\_, \_\_eq\_\_, et cetra.
+\_\_hash\_\_, \_\_init\_\_, \_\_eq\_\_, et cetra. Fields also have a _default\_factory_ argument that allows you to set a default value for a mutable type like a list. If you 
+do not use the _default\_factory_ method, then all instances of the class will refer to the same list (or other mutable type).
+
+To use _field()_, you have to import it as _field_ from _dataclasses_ like `from dataclasses import field`.
+
+### default
+
+```
+```
+
+### default_factory
+
+
+```
+```
+
+### init
+
+
+```
+```
+
+### repr
+
+
+```
+```
+
+### compare
+
+```
+```
+
+### hash
+
+
+```
+```
