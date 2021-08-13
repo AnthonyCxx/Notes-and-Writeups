@@ -131,8 +131,11 @@ Multiple inheritance occurs when a derived class inherits from two unrelated par
 Multiple inheritance is less common, but useful.
 
 ```Python
+# The default value of a list cannot be '[]' since it will refer to the same list each time
+from typing import List
+
 class Container:
-    def __init__(self, capacity: int=64, items: list=[]):
+    def __init__(self, capacity: int=64, items: list=List):
         self.items = items
         self.capacity = capacity
         
