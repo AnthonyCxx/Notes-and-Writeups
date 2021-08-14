@@ -9,8 +9,8 @@ This is a reference for instructions, but is not comprehensive because [there ar
 ## Data Movement Instructions
 
 ### mov
-Copies data from the source (first operand) to the destination (second operand). <br /> If both are registers, then the must be of the same size and 
-if the source and destination are the same, then the operation acts as [_nop_](https://en.wikipedia.org/wiki/NOP_(code)#:~:text=In%20computer%20science%2C%20a%20NOP,protocol%20command%20that%20does%20nothing.) (no operation).
+Copies data from the source (first operand) to the destination (second operand).
+If both are registers, then the must be of the same size and if the source and destination are the same, then the operation acts as [_nop_](https://en.wikipedia.org/wiki/NOP_(code)#:~:text=In%20computer%20science%2C%20a%20NOP,protocol%20command%20that%20does%20nothing.) (no operation).
 
 ### push
 
