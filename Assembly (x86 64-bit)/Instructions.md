@@ -64,6 +64,12 @@ Conditional jumps jump _if_ a condition is true.
 | jnc | jump if [not carry](https://en.wikipedia.org/wiki/Carry_flag) |
 > These are only a few conditional jumps. See [here](https://www.tutorialspoint.com/assembly_programming/assembly_conditions.htm) for more.
 
+### cmp
+
+### call
+
+### ret
+
 ## Bit Operations
 
 ### neg
