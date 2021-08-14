@@ -44,6 +44,8 @@ Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows 
 ## idiv
 
 ## Logical Instructions
+Read about [how logical instructions work in assembly](https://www.tutorialspoint.com/assembly_programming/assembly_logical_instructions.htm) before using them. They work entirely
+in binary.
 
 ### and
 
@@ -54,6 +56,10 @@ Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows 
 ### xor
 
 You can quickly zero a register by using _xor_ on the same register like `xor rax, rax`.
+
+### xnor
+Reversing the result of a _xor_ operation yields whether or not the numbers were equal. <br />
+Writing `xnor eax, ecx` is a condensed `xor eax, ecx ; not eax`.
 
 ## Control Flow
 
