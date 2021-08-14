@@ -21,7 +21,7 @@ Finally, since I am programming on Linux, I use [AT&T syntax](http://www.sig9.co
 
 ## Other Resources
 [NASM (Assembly) Tutorial by Ray](https://cs.lmu.edu/~ray/notes/nasmtutorial/) <br />
-[Modern x64 Assembly Series](https://www.youtube.com/watch?v=rxsBghsrvpI&list=PLKK11Ligqitg9MOX3-0tFT1Rmh3uJp7kA) by Creel <br />
+[Modern x64 Assembly Series](https://www.youtube.com/watch?v=rxsBghsrvpI&list=PLKK11Ligqitg9MOX3-0tFT1Rmh3uJp7kA) by Creel (not Linux, but good for conceptual understanding) <br />
 
 ## Recommended Videos
 [_Comparing C to machine language_](https://www.youtube.com/watch?v=yOyaJXpAYZQ) by Ben Eater
