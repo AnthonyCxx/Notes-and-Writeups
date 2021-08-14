@@ -18,5 +18,11 @@ You can shift the bits of a number with the _<<_ and _>>_ operators to perform f
 A number `<< n` is the equivalent of multiplying that number by _2^n_. The same goes for division with the _>>_ operator.
 
 ```C++
-
+//Multiplication
+cout << (12 << 1) << '\n';   // 12 * (2^1) == 24
+cout << (12 << 3) << '\n';  // 12 * (2^3) == 94  
+    
+//Division
+cout << (12 >> 1) << '\n';  // 12 / (2^1) == 6
+cout << (12 >> 2) << '\n'; // 12 / (2^2) == 3
 ```
