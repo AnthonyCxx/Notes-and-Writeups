@@ -93,6 +93,8 @@ Conditional jumps jump _if_ a condition is true.
 _cmp_ compares two registers by subtraction. If the result is zero, then they were the same.
 Although the _cmp_ method performs subtraction, it does not actually alter either of the registers since it does not store the result — it just sets the flags.
 
+The result of a simple comparison like `cmp eax, ecx` could then be used by a conditional jump like _jz_ (jump if zero).
+
 ### call
 
 ### ret
