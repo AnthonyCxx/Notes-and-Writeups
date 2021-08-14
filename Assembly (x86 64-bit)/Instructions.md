@@ -95,9 +95,7 @@ Conditional jumps jump _if_ a condition is true.
 
 ### ret
 
-## Bit Operations
-
-### neg
+## Shifting Bits
 
 ### shl
 
