@@ -15,7 +15,7 @@ if (num & 1)  //True
 
 ## Fast Multiplication/Division
 You can shift the bits of a number with the _<<_ and _>>_ operators to perform fast multiplication and divsion with powers of 2. <br />
-A number `<< n` is the equivalent of multiplying that number by _2^n_.
+A number `<< n` is the equivalent of multiplying that number by _2^n_. The same goes for division with the _>>_ operator.
 
 ```C++
 
