@@ -25,6 +25,7 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 ### Intermediate
 - [Using files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Using%20Files.md)
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Object-oriented%20Programming)
+- [Generators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Generators.md)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Exception%20Handling)
 - [Lambda Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Lambda%20Expressions.md)
 - [Pickling](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Pickling.md)
