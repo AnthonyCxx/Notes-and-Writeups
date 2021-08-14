@@ -36,8 +36,6 @@ This is a reference for instructions, but is not comprehensive because [there ar
 
 ### or
 
-### xor
-
 ### not
 
 ## Control Flow
@@ -73,6 +71,8 @@ Conditional jumps jump _if_ a condition is true.
 ## Bit Operations
 
 ### neg
+
+### xor
 
 ### shl
 
