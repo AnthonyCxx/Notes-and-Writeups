@@ -12,6 +12,7 @@ Finally, since I am programming on Linux, I use [AT&T syntax](http://www.sig9.co
 - [Registers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Registers.md)
 - [Instructions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Assembly%20(x86%2064-bit)/Instructions.md) (opcodes)
 - [System Call Index](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Assembly%20(x86%2064-bit)/System%20Calls)
+- [Compilation Instructions](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Assembly%20(x86%2064-bit)/The%20Assembler) (NASM)
 
 ## Books Used
 [_Modern x86 Assembly Language Programming, 2nd Edition_](https://www.amazon.com/Modern-X86-Assembly-Language-Programming/dp/1484240626/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Modern+X86+Assembly+Language+Programming&qid=1625776593&sr=8-3) by Daniel Kusswurm <br />
