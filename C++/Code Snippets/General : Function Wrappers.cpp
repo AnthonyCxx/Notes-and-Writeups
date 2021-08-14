@@ -12,9 +12,9 @@ using namespace std;
 void time(function<void()> func)   //'function' is a class in the <functional> header file
 {
     //Mark the beginning and end time of the function
-    auto start = chrono::system_clock::now();
+    auto start = chrono::steady_clock::now();
     func();
-    auto end = chrono::system_clock::now();
+    auto end = chrono::steady_clock::now();
 
     //Translate the start and end time into a
     chrono::duration<double> time_elapsed = end - start;
