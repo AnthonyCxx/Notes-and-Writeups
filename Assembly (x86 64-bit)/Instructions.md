@@ -17,6 +17,9 @@ If both are registers, then the must be of the same size and if the source and d
 ### pop
 
 ### lea
+Loads the memory address of a variable, creating a point out of it.
+
+Reference: [_What's the Purpose of the LEA Instruction?_](https://stackoverflow.com/questions/1658294/whats-the-purpose-of-the-lea-instruction) <br />
 
 ## Arithmetic Instructions
 
