@@ -31,9 +31,13 @@ _add_ is used for unsigned and signed additive operations. Check the _overflow_ 
 
 ### sub
 
-### inc
+_sub_ substracts the second operand from the first and stores the result in the first. <br />
+Check the _overflow_ (OF) flag for a signed borrow and the _carry_ (CF) flag for an unsigned borrow.
 
-### dec
+### inc/dec
+_inc_ adds one to a value, _dec_ subtracts one. <br />
+
+Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows and _dec_ will not set the _carry_ (CF) flag if it carries.
 
 ### imul
 
