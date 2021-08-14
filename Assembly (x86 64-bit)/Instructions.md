@@ -25,6 +25,9 @@ Reference: [_What's the Purpose of the LEA Instruction?_](https://stackoverflow.
 ## Arithmetic Instructions
 
 ### add
+_add_ is used for unsigned and signed additive operations. Check the _overflow_ (OF) flag for a signed carry and the _carry_ (CF) flag for an unsigned carry.
+
+[_CF (Carry) and OF (Overflow) Flag_](https://stackoverflow.com/questions/791991/about-assembly-cfcarry-and-ofoverflow-flag) <br />
 
 ### sub
 
