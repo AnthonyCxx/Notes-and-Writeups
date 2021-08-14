@@ -51,6 +51,10 @@ Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows 
 
 ### not
 
+### xor
+
+You can quickly zero a register by using _xor_ on the same register like `xor rax, rax`.
+
 ## Control Flow
 
 ### Unconditional Jump, _jmp_
@@ -84,8 +88,6 @@ Conditional jumps jump _if_ a condition is true.
 ## Bit Operations
 
 ### neg
-
-### xor
 
 ### shl
 
