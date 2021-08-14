@@ -9,6 +9,7 @@ This is a reference for instructions, but is not comprehensive because [there ar
 ## Data Movement Instructions
 
 ### mov
+...
 
 ### push
 
@@ -48,6 +49,7 @@ This is a reference for instructions, but is not comprehensive because [there ar
 Conditional jumps take the following forms.
 
 | opcode | jump if |
+| ------ | ------- |
 |  |  |
 |  |  |
 |  |  |
