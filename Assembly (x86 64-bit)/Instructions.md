@@ -45,7 +45,7 @@ This is a reference for instructions, but is not comprehensive because [there ar
 ### Unconditional Jump, _jmp_
 
 ### Conditional Jumps
-Conditional jumps take the following forms.
+Conditional jumps jump _if_ a condition is true.
 
 | opcode | jump if |
 | ------ | ------- |
