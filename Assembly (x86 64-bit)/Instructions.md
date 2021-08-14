@@ -9,7 +9,6 @@ This is a reference for instructions, but is not comprehensive because [there ar
 ## Data Movement Instructions
 
 ### mov
-...
 
 ### push
 
