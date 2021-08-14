@@ -4,7 +4,8 @@ The registers contain the data and the opcodes perform the manipulations on said
 you have to make a [system call](https://www.cs.uaf.edu/2017/fall/cs301/lecture/11_17_syscall.html). Most of the stuff here is taken from Yale's Computer Science department's
 [_x86 Assembly Guide_](https://flint.cs.yale.edu/cs421/papers/x86-asm/asm.html). All credits to them.
 
-This is a reference for instructions, but is not comprehensive because [there are _so_ many opcodes](https://www.felixcloutier.com/x86/).
+This is a reference for instructions, but is not comprehensive because [there are _so_ many opcodes](https://www.felixcloutier.com/x86/). <br />
+Another note: I organized these by my own standards. For example, _lea_ is technically an arithmetic instruction since it doesn't read RAM.
 
 ## Data Movement Instructions
 
