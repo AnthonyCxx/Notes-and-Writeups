@@ -68,6 +68,7 @@ Writing `xnor eax, ecx` is a condensed `xor eax, ecx ; not eax`.
 ## Control Flow
 
 ### Unconditional Jump, _jmp_
+Jump
 
 ### Conditional Jumps
 Conditional jumps jump _if_ a condition is true.
@@ -98,9 +99,12 @@ The result of a simple comparison like `cmp eax, ecx` could then be used by a co
 ### call
 
 ### ret
+Return
 
 ## Shifting Bits
 
 ### shl
+Shift left
 
 ### shr
+Shift right
