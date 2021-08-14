@@ -44,16 +44,25 @@ This is a reference for instructions, but is not comprehensive because [there ar
 
 ### Unconditional Jump, _jmp_
 
-### Conditional Jump
+### Conditional Jumps
 Conditional jumps take the following forms.
 
 | opcode | jump if |
 | ------ | ------- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| je | jump if equal |
+| jne | jump if not equal |
+| jz | jump if zero |
+| jnz | jump if not zero |
+| js | jump if signed (negative) |
+| jl | jump if less than |
+| jg | just if greater than |
+| jle | jump if less than or equal to |
+| jge | jump if greater than or equal to |
+| jnle | jump if not less than or equal to |
+| jnge | jump if not greater than or equal to |
+| jc | jump if [carry](https://en.wikipedia.org/wiki/Carry_flag) |
+| jnc | jump if [not carry](https://en.wikipedia.org/wiki/Carry_flag) |
+> These are only a few conditional jumps. See [here](https://www.tutorialspoint.com/assembly_programming/assembly_conditions.htm) for more.
 
 ## Bit Operations
 
