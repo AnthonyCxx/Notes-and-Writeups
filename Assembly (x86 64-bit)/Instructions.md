@@ -90,6 +90,8 @@ Conditional jumps jump _if_ a condition is true.
 > These are only a few conditional jumps. See [here](https://www.tutorialspoint.com/assembly_programming/assembly_conditions.htm) for more.
 
 ### cmp
+_cmp_ compares two registers by subtraction. If the result is zero, then they were the same.
+Although the _cmp_ method performs subtraction, it does not actually alter either of the registers since it does not store the result — it just sets the flags.
 
 ### call
 
