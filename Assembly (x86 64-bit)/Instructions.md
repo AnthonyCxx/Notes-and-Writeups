@@ -31,7 +31,8 @@ pop eax
 _reg_ stands for 'register' and _value_ just means any mathematical value like the number 5, 27, et cetra.
 
 ### add
-_add_ is used for unsigned and signed additive operations. Check the _overflow_ (OF) flag for a signed carry and the _carry_ (CF) flag for an unsigned carry.
+_add_ is used for unsigned and signed additive operations. <br />
+Check the _overflow_ (OF) flag for a signed carry and the _carry_ (CF) flag for an unsigned carry.
 
 ```nasm
 ; Add rax and rbx, storing the result in rax
