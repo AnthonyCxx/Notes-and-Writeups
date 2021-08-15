@@ -15,16 +15,11 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 - [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Functions.md) 
 - [Input](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md) and [Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Output.md) 
 - [Formatting Input and Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Importing Files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/The%20Compiler/Preprocessor%20Directives.md#include-file)
+- [The Compiler](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/The%20Compiler) (preprocessor directives, marcros, and GNU C extensions)
+- [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Exception%20Handling)
 - [Files I/O](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/File%20Input%20and%20Output.md)
+- [Memory Management](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Memory%20Mangagement) (pointers, dynamic memory allocation, etc.)
 
 
 ## Reference Material
