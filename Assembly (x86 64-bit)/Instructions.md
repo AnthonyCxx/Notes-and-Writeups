@@ -42,17 +42,19 @@ Check the _overflow_ (OF) flag for a signed borrow and the _carry_ (CF) flag for
 ```
 
 
-### mul
-_mul_ multiplies the given register/value by the _rax_ register and stores the result in it.
+### mul/imul
+_mul_ multiplies the given register/value by the _rax_ register and stores the result in it. <br />
 
+When working with signed (potentially negative) numbers, use _imul_ instead of _mul_.
 ```nasm
 mov   rax, 10
 mul   2
 ```
 
-## div
-_div_ divides the given register/value by the _rax_ register and stores the result in it.
+## div/idiv
+_div_ divides the given register/value by the _rax_ register and stores the result in it. <br />
 
+When working with signed (potentially negative) numbers, use _idiv_ instead of _div_.
 ```nasm
 mov   rax, 10
 div   2
