@@ -2,6 +2,8 @@
 Registers are a part of the processor (CPU) that temporarily hold data that the CPU is currently working with/on. <br />
 Registers can be accessed by the CPU _much_ faster than memory.
 
+As a note, you can treat a register like a pointer by surrounding it in brackets like _\[rax\]_.
+
 ## Max Capacity of a Register
 In the x86_64 architecture, registers can hold up to 64 bits (8 bytes). 
 
