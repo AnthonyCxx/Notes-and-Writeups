@@ -68,12 +68,13 @@ Writing `xnor eax, ecx` is a condensed `xor eax, ecx ; not eax`.
 ## Control Flow
 
 ### Unconditional Jump, _jmp_
-Jump
+_jmp_ 'jumps' to a [label](https://docs.oracle.com/cd/E19120-01/open.solaris/817-5477/esqaq/index.html), moving the flow of execution to the labeled block of code <br />
+The _main_ function is an example of an identifier in assembly.
 
 ### Conditional Jumps
 Conditional jumps jump _if_ a condition is true.
 
-| opcode | jump if |
+| opcode | example | jump if |
 | ------ | ------- |
 | je | jump if equal |
 | jne | jump if not equal |
@@ -96,10 +97,9 @@ Although the _cmp_ method performs subtraction, it does not actually alter eithe
 
 The result of a simple comparison like `cmp eax, ecx` could then be used by a conditional jump like _je_ (jump if equal).
 
-### call
-
-### ret
-Return
+### call/ret
+_call_ is used to initiate a [subroutine](https://www.uet.edu.pk/pp/ee/~mtahir/EE371/EE371/Experiment_5.pdf). The important part about subroutines is that
+you can return the flow of execution to where you initially called the subroutine at with _call_ by using the _ret_ (return) instruction.
 
 ## Shifting Bits
 
