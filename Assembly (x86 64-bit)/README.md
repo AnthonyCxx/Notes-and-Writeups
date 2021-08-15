@@ -21,6 +21,7 @@ Finally, since I am programming on Linux, I use [AT&T syntax](http://www.sig9.co
 [_Oracle: x86 Assembly Language Reference Manual_](https://docs.oracle.com/cd/E19620-01/805-4693/805-4693.pdf) by... Oracle? <br />
 
 ## Other Resources
+[x86_64 Linux Assembly Tutorial](https://www.youtube.com/watch?v=VQAKkuLL31g&list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn) (perfect) <br />
 [NASM (Assembly) Tutorial by Ray](https://cs.lmu.edu/~ray/notes/nasmtutorial/) <br />
 [Modern x64 Assembly Series](https://www.youtube.com/watch?v=rxsBghsrvpI&list=PLKK11Ligqitg9MOX3-0tFT1Rmh3uJp7kA) by Creel (not Linux, but good for conceptual understanding) <br />
 
