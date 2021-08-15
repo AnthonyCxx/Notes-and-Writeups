@@ -23,25 +23,52 @@ Loads the memory address of a variable, creating a pointer out of it.
 Reference: [_What's the Purpose of the LEA Instruction?_](https://stackoverflow.com/questions/1658294/whats-the-purpose-of-the-lea-instruction) <br />
 
 ## Arithmetic Instructions
+_reg_ stands for 'register' and _value_ just means any mathematical value like the number 5, 27, et cetra.
 
 ### add
 _add_ is used for unsigned and signed additive operations. Check the _overflow_ (OF) flag for a signed carry and the _carry_ (CF) flag for an unsigned carry.
 
-[_CF (Carry) and OF (Overflow) Flag_](https://stackoverflow.com/questions/791991/about-assembly-cfcarry-and-ofoverflow-flag) <br />
+```nasm
+
+```
+> [_CF (Carry) and OF (Overflow) Flag_](https://stackoverflow.com/questions/791991/about-assembly-cfcarry-and-ofoverflow-flag) <br />
 
 ### sub
-
 _sub_ substracts the second operand from the first and stores the result in the first. <br />
 Check the _overflow_ (OF) flag for a signed borrow and the _carry_ (CF) flag for an unsigned borrow.
+
+```nasm
+
+```
+
+
+### mul
+
+```nasm
+
+```
+
+## div
+
+```nasm
+
+```
 
 ### inc/dec
 _inc_ adds one to a value, _dec_ subtracts one. <br />
 
 Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows and _dec_ will not set the _carry_ (CF) flag if it carries.
 
-### imul
+```nasm
 
-## idiv
+```
+
+### neg
+_neg_ negates the value of a register (makes it negative if positive and positive if negative).
+
+```nasm
+neg reg
+```
 
 ## Logical Instructions
 Read about [how logical instructions work in assembly](https://www.tutorialspoint.com/assembly_programming/assembly_logical_instructions.htm) before using them. They work entirely
