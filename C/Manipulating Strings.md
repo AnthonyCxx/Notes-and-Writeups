@@ -15,6 +15,7 @@ int main()
     const char* name = "Simon";
     size_t length = strlen(name);
     
+    //'length' is of type 'size_t' (z) and is unsigned (u), so it uses 'zu' as its format specifier
     printf("There are %zu characters in the name \'Simon\'", length);
 
     return 0;
