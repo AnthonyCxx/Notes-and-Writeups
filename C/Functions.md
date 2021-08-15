@@ -124,6 +124,7 @@ int main()
 ## Passing by Pointer
 C doesn't have references like C++ does, so instead it [passes by pointer](https://www.tutorialspoint.com/cprogramming/c_passing_pointers_to_functions.htm).
 
+Notice how you have to pass the memory addresses of '_a_' and '_b_' instead of just the variable.
 ```C
 #include <stdio.h>
 
