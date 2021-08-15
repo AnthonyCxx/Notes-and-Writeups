@@ -20,7 +20,7 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 - [The Compiler](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/The%20Compiler) (preprocessor directives, marcros, and GNU C extensions)
 
 ### Intermediate
-- [Manipulating Strings]() 
+- [Manipulating Strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Manipulating%20Strings.md) 
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Exception%20Handling)
 - [Files I/O](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/File%20Input%20and%20Output.md)
 - [Memory Management](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Memory%20Mangagement) (pointers, dynamic memory allocation, etc.)
