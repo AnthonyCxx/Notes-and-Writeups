@@ -43,15 +43,19 @@ Check the _overflow_ (OF) flag for a signed borrow and the _carry_ (CF) flag for
 
 
 ### mul
+_mul_ multiplies the given register/value by the _rax_ register and stores the result in it.
 
 ```nasm
-
+mov   rax, 10
+mul  2
 ```
 
 ## div
+_div_ divides the given register/value by the _rax_ register and stores the result in it.
 
 ```nasm
-
+mov   rax, 10
+div   2
 ```
 
 ### inc/dec
@@ -67,7 +71,8 @@ Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows 
 _neg_ negates the value of a register (makes it negative if positive and positive if negative).
 
 ```nasm
-neg reg
+; Negate the value in rax
+neg rax
 ```
 
 ## Logical Instructions
