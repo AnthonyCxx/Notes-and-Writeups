@@ -3,7 +3,7 @@ The [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.
 
 
 ## Length of a String, _strlen()_
-_strlen()_ returns the length of a string, discluding the null-terminating character ('\0').
+_strlen()_ returns the length of a string, discluding the null-terminating character (\0).
 
 Size in C is stored with the [_size\_t_](https://www.geeksforgeeks.org/size_t-data-type-c-language/) datatype, which is basically just a special integer for storing size.
 ```C
