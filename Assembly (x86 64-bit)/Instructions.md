@@ -47,7 +47,7 @@ _mul_ multiplies the given register/value by the _rax_ register and stores the r
 
 ```nasm
 mov   rax, 10
-mul  2
+mul   2
 ```
 
 ## div
