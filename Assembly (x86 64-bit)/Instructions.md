@@ -77,7 +77,6 @@ mov     rbx, 1
 div     rbx         
 ```
 > _div_ implcitily takes rax as the first parameter. <br />
->
 > If you are getting a floating-point exception when doing divison, [see here](https://stackoverflow.com/questions/9793060/getting-floating-point-exception-while-trying-to-use-div-in-assembly).
 
 ### inc/dec
