@@ -7,3 +7,20 @@ I used a lot of different resources for each topic, but if I had to pick a book,
 by Jeff Szuhay; <br /> it's a great book and anyone who knows C++ will be able to just speed through the book. <br />
 
 P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article.
+
+## Contents
+- [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Data%20Types#primitive-data-types) 
+- [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Data%20Types#non-primitive-data-types) ([arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md), [structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md), [enums](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md), [unions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md))
+- [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Functions.md) 
+- [Input](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md) and [Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Output.md) 
+- [Formatting Input and Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- [Files I/O](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/File%20Input%20and%20Output.md)
