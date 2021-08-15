@@ -1,7 +1,7 @@
 # Datatypes in C
 
 ## Primitive Data Types
-Anything in parentheses can be left to be implied (i.e. you can declare an unsigned short int using '_signed short int_','_short int_' or just '_short_'). <br />
+Anything in parentheses can be left to be implied (i.e. you can declare an signed short int using '_signed short int_','_short int_' or just '_short_'). <br />
 The actual size of the datatypes (in bytes) and their min/max values may vary from system to system (especially 32- vs 64-bit systems). <br />
 Run [this script](https://github.com/steven-schronk/C-Programming-Examples/commit/077c0d23312f66cd8209683c639516e56b06eb47) to find correct values for your system. <br />
 
