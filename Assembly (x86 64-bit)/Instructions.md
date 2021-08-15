@@ -74,7 +74,7 @@ The _main_ function is an example of an identifier in assembly.
 ### Conditional Jumps
 Conditional jumps jump _if_ a condition is true.
 
-| opcode | example | jump if |
+| opcode | jump if |
 | ------ | ------- |
 | je | jump if equal |
 | jne | jump if not equal |
