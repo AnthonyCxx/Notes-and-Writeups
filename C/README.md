@@ -9,6 +9,8 @@ by Jeff Szuhay; <br /> it's a great book and anyone who knows C++ will be able t
 P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article.
 
 ## Contents
+
+### Beginner
 - [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Data%20Types#primitive-data-types) 
 - [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Data%20Types#non-primitive-data-types) ([arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md), [structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md), [enums](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md), [unions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md))
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Control%20Flow) ([loops](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Loops.md), [conditionals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Conditionals.md), etc.)
@@ -16,6 +18,9 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 - [Input](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md) and [Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Output.md) 
 - [Formatting Input and Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md)
 - [The Compiler](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/The%20Compiler) (preprocessor directives, marcros, and GNU C extensions)
+
+### Intermediate
+- [Manipulating Strings]() 
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Exception%20Handling)
 - [Files I/O](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/File%20Input%20and%20Output.md)
 - [Memory Management](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Memory%20Mangagement) (pointers, dynamic memory allocation, etc.)
