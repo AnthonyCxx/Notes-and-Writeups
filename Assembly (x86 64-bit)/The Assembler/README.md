@@ -2,5 +2,5 @@
 
 ```shell
 nasm -f elf64 -g hello.asm 
-gcc --o hello hello.o  -no-pie
+gcc -o hello hello.o  -no-pie
 ```
