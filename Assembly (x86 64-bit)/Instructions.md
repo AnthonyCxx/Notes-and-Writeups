@@ -13,6 +13,14 @@ Another note: I organized these by my own standards. For example, _lea_ is techn
 Copies data from the source (first operand) to the destination (second operand).
 If both are registers, then the must be of the same size and if the source and destination are the same, then the operation acts as [_nop_](https://en.wikipedia.org/wiki/NOP_(code)#:~:text=In%20computer%20science%2C%20a%20NOP,protocol%20command%20that%20does%20nothing.) (no operation).
 
+```nasm
+; Move the integer '10' into the rax register
+mov     rax, 10
+
+; Move rax into rax (a null operation, nop)
+mov     rax, rax
+```
+
 ### push
 Pushes the value of a register onto the stack.
 
