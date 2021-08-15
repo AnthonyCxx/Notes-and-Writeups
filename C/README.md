@@ -29,3 +29,4 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 
 ## Reference Material
 - [The C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/C%20Standard%20Library) (a short, non-comprehensive summary)
+- [Example Programs](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Example%20Programs)
