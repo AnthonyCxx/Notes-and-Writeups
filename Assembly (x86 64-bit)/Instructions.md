@@ -14,13 +14,18 @@ Copies data from the source (first operand) to the destination (second operand).
 If both are registers, then the must be of the same size and if the source and destination are the same, then the operation acts as [_nop_](https://en.wikipedia.org/wiki/NOP_(code)#:~:text=In%20computer%20science%2C%20a%20NOP,protocol%20command%20that%20does%20nothing.) (no operation).
 
 ### push
+Pushes the value of a register onto the stack.
+
+```nasm
+push eax
+```
 
 ### pop
+Pop a value from the stack, removing it and storing it in the given register.
 
-### lea
-Loads the memory address of a variable, creating a pointer out of it.
-
-Reference: [_What's the Purpose of the LEA Instruction?_](https://stackoverflow.com/questions/1658294/whats-the-purpose-of-the-lea-instruction) <br />
+```nasm
+pop eax
+```
 
 ## Arithmetic Instructions
 _reg_ stands for 'register' and _value_ just means any mathematical value like the number 5, 27, et cetra.
@@ -29,7 +34,10 @@ _reg_ stands for 'register' and _value_ just means any mathematical value like t
 _add_ is used for unsigned and signed additive operations. Check the _overflow_ (OF) flag for a signed carry and the _carry_ (CF) flag for an unsigned carry.
 
 ```nasm
-
+; Add rax and rbx, storing the result in rax
+mov     rax, 3
+mov     rbx, 4
+add     rax, rbx
 ```
 > [_CF (Carry) and OF (Overflow) Flag_](https://stackoverflow.com/questions/791991/about-assembly-cfcarry-and-ofoverflow-flag) <br />
 
@@ -38,7 +46,10 @@ _sub_ substracts the second operand from the first and stores the result in the 
 Check the _overflow_ (OF) flag for a signed borrow and the _carry_ (CF) flag for an unsigned borrow.
 
 ```nasm
-
+; Subtract rax and rbx, storing the result in rax
+mov     rax, 7
+mov     rbx, 2
+sub     rax, rbx
 ```
 
 
@@ -47,18 +58,26 @@ _mul_ multiplies the given register/value by the _rax_ register and stores the r
 
 When working with signed (potentially negative) numbers, use _imul_ instead of _mul_.
 ```nasm
-mov   rax, 10
-mul   2
+; Multiply rax and rbx, storing the result in rax
+mov     rax, 3
+mov     rbx, 3
+mul     rbx    
 ```
+> _mul_ implcitily takes rax as the first parameter.
 
 ## div/idiv
 _div_ divides the given register/value by the _rax_ register and stores the result in it. <br />
 
 When working with signed (potentially negative) numbers, use _idiv_ instead of _div_.
 ```nasm
-mov   rax, 10
-div   2
+; Divide rax and rbx, storing the result in rax
+mov     rax, 3
+mov     rbx, 1
+div     rbx         
 ```
+> _div_ implcitily takes rax as the first parameter. <br />
+>
+> If you are getting a floating-point exception when doing divison, [see here](https://stackoverflow.com/questions/9793060/getting-floating-point-exception-while-trying-to-use-div-in-assembly).
 
 ### inc/dec
 _inc_ adds one to a value, _dec_ subtracts one. <br />
@@ -66,7 +85,13 @@ _inc_ adds one to a value, _dec_ subtracts one. <br />
 Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows and _dec_ will not set the _carry_ (CF) flag if it carries.
 
 ```nasm
-
+; Increment rax by one
+mov     rax, 5
+inc     rax
+        
+; Decrement rax by one
+mov     rax, 10
+dec     rax
 ```
 
 ### neg
