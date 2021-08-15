@@ -44,9 +44,9 @@ Check the _overflow_ (OF) flag for a signed carry and the _carry_ (CF) flag for 
 
 ```nasm
 ; Add rax and rbx, storing the result in rax
-mov     rax, 3
-mov     rbx, 4
-add     rax, rbx
+mov     rax, 3     ; rax = 3
+mov     rbx, 4     ; rbx = 4
+add     rax, rbx   ; rax = rax + rbx
 ```
 > [_CF (Carry) and OF (Overflow) Flag_](https://stackoverflow.com/questions/791991/about-assembly-cfcarry-and-ofoverflow-flag) <br />
 
@@ -56,9 +56,9 @@ Check the _overflow_ (OF) flag for a signed borrow and the _carry_ (CF) flag for
 
 ```nasm
 ; Subtract rax and rbx, storing the result in rax
-mov     rax, 7
-mov     rbx, 2
-sub     rax, rbx
+mov     rax, 7     ; rax = 7
+mov     rbx, 2     ; rbx = 2
+sub     rax, rbx   ; rax = rax - rbx
 ```
 
 
@@ -68,9 +68,9 @@ _mul_ multiplies the given register/value by the _rax_ register and stores the r
 When working with signed (potentially negative) numbers, use _imul_ instead of _mul_.
 ```nasm
 ; Multiply rax and rbx, storing the result in rax
-mov     rax, 3
-mov     rbx, 3
-mul     rbx    
+mov     rax, 3   ; rax = 3
+mov     rbx, 3   ; rbx = 3
+mul     rbx      ; rax = rax * rbx
 ```
 > _mul_ implcitily takes rax as the first parameter.
 
@@ -80,9 +80,9 @@ _div_ divides the given register/value by the _rax_ register and stores the resu
 When working with signed (potentially negative) numbers, use _idiv_ instead of _div_.
 ```nasm
 ; Divide rax and rbx, storing the result in rax
-mov     rax, 3
-mov     rbx, 1
-div     rbx         
+mov     rax, 3   ; rax = 3
+mov     rbx, 1   ; rbx = 1
+div     rbx      ; rax = rax / rbx
 ```
 > _div_ implcitily takes rax as the first parameter. <br />
 > If you are getting a floating-point exception when doing divison, [see here](https://stackoverflow.com/questions/9793060/getting-floating-point-exception-while-trying-to-use-div-in-assembly).
@@ -94,12 +94,12 @@ Be careful, because _inc_ does not set the _overflow_ (OF) flag if it overflows 
 
 ```nasm
 ; Increment rax by one
-mov     rax, 5
-inc     rax
+mov     rax, 5   ; rax = 5
+inc     rax      ; rax++
         
 ; Decrement rax by one
-mov     rax, 10
-dec     rax
+mov     rax, 10  ; rax = 10
+dec     rax      ; rax--
 ```
 
 ### neg
@@ -107,7 +107,7 @@ _neg_ negates the value of a register (makes it negative if positive and positiv
 
 ```nasm
 ; Negate the value in rax
-neg rax
+neg rax   ; rax = -rax
 ```
 
 ## Logical Instructions
