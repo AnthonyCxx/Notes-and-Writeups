@@ -121,6 +121,31 @@ int main()
 ```
 > References: [_LearnToProgram: Type Compatibility_](http://learntoprogramming.com/type-compatibility) and [_cplusplus.com: Type Conversions_](https://www.cplusplus.com/doc/tutorial/typecasting/) 
 
+## Passing by Pointer
+C doesn't have references like C++ does, so instead it [passes by pointer](https://www.tutorialspoint.com/cprogramming/c_passing_pointers_to_functions.htm).
+
+```C
+#include <stdio.h>
+
+int swap(int* a, int* b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main()
+{
+    int a = 10, b = 20;
+    
+    printf("Before: a = %d, b = %d\n", a, b);
+    swap(&a, &b);
+    printf("After: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+```
+
 ## Improving Performance with _inline_
 The _inline_ keyword can be used to insert the actual body of the code into the program wherever the function is called — this can help increase efficiency by
 preventing [function overhead](https://stackoverflow.com/questions/144993/how-much-overhead-is-there-in-calling-a-function-in-c). Furthermore "Functions expanded 
