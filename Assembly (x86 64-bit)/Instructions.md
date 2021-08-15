@@ -130,7 +130,7 @@ You can quickly zero a register by using _xor_ on the same register like `xor ra
 
 ### xnor
 Reversing the result of a _xor_ operation yields whether or not the numbers were equal. <br />
-Writing `xnor eax, ecx` is a condensed `xor eax, ecx ; not eax`.
+Writing `xnor eax, ecx` is a condensed `xor eax, ecx` and `not eax`.
 
 ## Control Flow
 
