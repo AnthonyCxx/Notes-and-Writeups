@@ -1,1 +1,2 @@
-# Manipulating (C-)Strings in C
+# Manipulating C-Strings in C
+The [_\<string.h\>_](https://www.tutorialspoint.com/c_standard_library/string_h.htm) library contains a number of functions for manipulating c-strings like [_strlen()_](https://www.tutorialspoint.com/c_standard_library/c_function_strlen.htm), [_memcpy()_](https://www.tutorialspoint.com/c_standard_library/c_function_memcpy.htm), [_memset()_](https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm), and [_strcat()_](https://www.tutorialspoint.com/c_standard_library/c_function_strcat.htm).
