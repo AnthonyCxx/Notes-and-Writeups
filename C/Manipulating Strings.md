@@ -26,3 +26,8 @@ int main()
 ## Copying Strings with _strcpy()_ and _strncpy()_
 All strings are char arrays, which are just pointers behind the scenes. If you assign one pointer to another (one string to another), then you just get an alias for
 the exact same string, not a new copy. So, C provides the [_strcpy()_](https://www.tutorialspoint.com/c_standard_library/c_function_strcpy.htm) and [_strncpy()_](https://www.tutorialspoint.com/c_standard_library/c_function_strncpy.htm) functions to iteratively copy strings from a source to a destination.
+
+The only difference between _strcpy()_ and _strncpy()_ is that _strncpy()_ only copies _n_ characters where _n_ is a number passed to the function.
+```C
+
+```
