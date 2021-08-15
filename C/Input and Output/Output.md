@@ -1,6 +1,6 @@
 # Output in C
 
-# Charcters
+# Characters
 
 ## putchar(__*char*__)
 Outputs a single character to stdout (the console, unless otherwise redirected). _putchar()_ works with escape sequences as well as ASCII text. <br />
