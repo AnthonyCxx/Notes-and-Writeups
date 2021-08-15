@@ -11,6 +11,7 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 ## Contents
 - [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Data%20Types#primitive-data-types) 
 - [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Data%20Types#non-primitive-data-types) ([arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Arrays.md), [structs](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Structures.md), [enums](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Enumerations.md), [unions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Data%20Types/Unions.md))
+- [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Control%20Flow) ([loops](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Loops.md), [conditionals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Control%20Flow/Conditionals.md), etc.)
 - [Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Functions.md) 
 - [Input](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Input.md) and [Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Output.md) 
 - [Formatting Input and Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/Formatting%20Input%20and%20Output.md)
