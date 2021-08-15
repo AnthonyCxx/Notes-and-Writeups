@@ -25,3 +25,7 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 - []()
 - []()
 - [Files I/O](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Input%20and%20Output/File%20Input%20and%20Output.md)
+
+
+## Reference Material
+- [The C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/C%20Standard%20Library) (a short, non-comprehensive summary)
