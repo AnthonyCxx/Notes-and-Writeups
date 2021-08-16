@@ -35,6 +35,7 @@ The only difference between _strcpy()_ and _strncpy()_ is that _strncpy()_ only 
 
 int main()
 {
+    //Going to assume that I don't know how long the orignal string is and I have to allocate the memory
     char* original = "Madame Zostra";
     char* copy = (char*) malloc(strlen(original) +1);
     
