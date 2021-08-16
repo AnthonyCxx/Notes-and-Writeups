@@ -64,6 +64,7 @@ puts(greeting);
 
 ## Comparing Strings with _strcmp()_ and _strncmpy()_
 Comparing strings is incredibly useful for a number of things, like alphabetizing.
+_strcmp()_ returns an integer depending on the result of the comparison. 0 is equal, greater than 0 means first was greater, less than 0 means second was greater.
 
 Yes, _strcmp()_ has a _strncmpy()_ counterpart. Yes it does the exactly what you expect.
 
