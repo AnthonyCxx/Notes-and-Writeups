@@ -64,7 +64,7 @@ puts(greeting);
 
 ## Comparing Strings with _strcmp()_ and _strncmpy()_
 Comparing strings is incredibly useful for a number of things, like alphabetizing.
-_strcmp()_ returns an integer depending on the result of the comparison. 0 is equal, greater than 0 means first was greater, less than 0 means second was greater.
+[_strcmp()_](https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm) returns an integer depending on the result of the comparison. 0 is equal, greater than 0 means first was greater, less than 0 means second was greater.
 
 Yes, _strcmp()_ has a _strncmpy()_ counterpart. Yes it does the exactly what you expect.
 
@@ -82,3 +82,27 @@ const char* name2 = "Seth";
 if (strcmp(name1, name2) == 0)
     puts("The names are identical in content and in case");
 ```
+
+## Searching for Substrings with _strstr()_
+[_strstr()_](https://www.tutorialspoint.com/c_standard_library/c_function_strstr.htm) returns a char pointer to the first instance of a substring.
+
+```C
+const char* text = "Hello, I can\'t hear you. Hello? Hello?";
+const char* substring = "hear";
+    
+char* instance = strstr(text, substring);
+printf("The rest of the text after and including the substring is: %s\n", instance);
+```
+
+## Searching for Characters with _strchr()_ and _strrchr()_
+[_strchr()_](https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm) returns a char pointer to the first instance of a character in a string. <br />
+If the character is not found, _strchr()_ returns _NULL_. _strrchr()_ works just like _strchr()_ except _strrchr()_ searches in reverse.
+
+_strchr()_ DOES include the character searched for in the pointer, so I added 1 here to disclude it.
+```C
+const char* phoneNumber = "+1-716-839-0712";
+const char* rawNumber = strchr(phoneNumber, '-') + 1;   //Add 1 to ignore the '-'
+    
+printf("The phone number without the country code is: %s", rawNumber);
+```
+> If you want the specific character and not the rest of the array, do `rawNumber[0]` to only access that element.
