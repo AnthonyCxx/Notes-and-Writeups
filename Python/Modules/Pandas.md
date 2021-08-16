@@ -2,7 +2,7 @@
 [Pandas](https://pandas.pydata.org/) is a library for data manipulation and analysis. <br />
 If you are using any persistant data from a relational database or even a NoSQL database like MongoDB, you should use pandas. 
 
-Everything here is an excerpt from Keith Galli's [_Complete Python Pandas Data Science Tutorial!_](https://www.youtube.com/watch?v=vmEHCJofslg).
+Everything here is an excerpt from Keith Galli's [_Complete Python Pandas Data Science Tutorial!_](https://www.youtube.com/watch?v=vmEHCJofslg). [Here](https://github.com/KeithGalli/pandas/blob/master/pokemon_data.csv) is the CSV file he used.
 
 ## Creating a Dataframe from a File
 
