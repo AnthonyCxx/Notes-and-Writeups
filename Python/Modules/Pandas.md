@@ -84,7 +84,7 @@ print(dataframe.sort_values(["Type 1", "HP"]))
 print(dataframe.sort_values("Name", ascending=False))
 
 # Sort data from multiple columns in reverse
-print(dataframe.sort_values(["Type 1", "HP"], ascending=[1, 0]))  # == ascending=[lowest -> highest (alphabetical), highest -> lowest]
+print(dataframe.sort_values(["Type 1", "HP"], ascending=[1, 0]))  # ascending=[lowest -> highest (alphabetical), highest -> lowest]
 ```
 
 ## Editing Data
