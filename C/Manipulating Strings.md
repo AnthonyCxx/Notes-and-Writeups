@@ -29,21 +29,55 @@ the exact same string, not a new copy. So, C provides the [_strcpy()_](https://w
 
 The only difference between _strcpy()_ and _strncpy()_ is that _strncpy()_ only copies _n_ characters where _n_ is a number passed to the function.
 ```C
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-int main()
-{
-    //Going to assume that I don't know how long the orignal string is and I have to allocate the memory
-    char* original = "Madame Zostra";
-    char* copy = (char*) malloc(strlen(original) +1);
+//Going to assume that I don't know how long the orignal string is and I have to allocate the memory
+char* original = "Madame Zostra";
+char* copy = (char*) malloc(strlen(original) +1);
     
-    strcpy(copy, original);
+strcpy(copy, original);
 
-    puts(copy);
-    free(copy);
+puts(copy);
+free(copy);
+```
 
-    return 0;
-}
+## Concatenating String with _strcat()_ and _strncat()_
+_strcat()_ and _strncat()_ [concatenate](https://en.wikipedia.org/wiki/Concatenation) two strings.
+
+Like with _strcpy()_ and _strncpy()_, _strncat()_ is just _strcat()_ but stops after _n_ characters.
+
+```C  
+char greeting[50] = "Good morning, ";
+char name[26];
+    
+//Get the user's name
+printf("Enter your name: ");
+fgets(name, sizeof(name), stdin);
+    
+//Make the full greeting
+strcat(greeting, name);
+    
+//Greet the user
+puts(greeting);
+```
+
+## Comparing Strings with _strcmp()_ and _strncmpy()_
+Comparing strings is incredibly useful for a number of things, like alphabetizing.
+
+Yes, _strcmp()_ has a _strncmpy()_ counterpart. Yes it does the exactly what you expect.
+
+| Result | Meaning |
+| ------ | ------- |
+| > 0 | first string is greater |
+| == 0 | the strings are identical |
+| < 0 | first string is lesser |
+> Note: capital letters are smaller than lowercase ones because they come first in ASCII.
+
+```C
+const char* name1 = "Seth";
+const char* name2 = "Seth";
+    
+if (strcmp(name1, name2) == 0)
+    puts("The names are identical in content and in case");
 ```
