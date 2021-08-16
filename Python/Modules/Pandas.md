@@ -62,14 +62,56 @@ for index, row in dataframe.iterrows():
     print(index, row["Name"])
 ```
 
-##
+## Searching and Sorting Data   
 
 ```Python
+# Filtering rows based on column data
+print(dataframe.loc[dataframe["Type 1"] == "Fire"])
 
+# Filtering rows based on multiple columns' data
+print(dataframe.loc[(dataframe["Type 1"] == "Grass") & (dataframe["Type 2"] == "Poison")])  # Replace '&' with '|' for 'or'
+
+# Get dataset stats for each column (get mean, standard deviation, minimum, maximum, etc.)
+print(dataframe.describe())
+
+# Sort data by column
+print(dataframe.sort_values("Name"))   # Sort by the 'Name' column
+
+# Sort data by multiple columns
+print(dataframe.sort_values(["Type 1", "HP"]))
+
+# Sort data by column in reverse
+print(dataframe.sort_values("Name", ascending=False))
+
+# Sort data from multiple columns in reverse
+print(dataframe.sort_values(["Type 1", "HP"], ascending=[1, 0]))  # == ascending=[lowest -> highest (alphabetical), highest -> lowest]
 ```
 
-##
+## Editing Data
 
 ```Python
+# Create a new column from existing columns
+dataframe["Atk/Def Ratio"] = dataframe["Attack"] / dataframe["Defense"]
 
+# Creating columns by formulating rows
+datafile["Total"] = datafile.iloc[:, 4:10].sum(axis=1)  # I have no fucking clue how this works
+
+# Dropping (deleting) columns
+dataframe = dataframe.drop(columns=["Atk/Def Ratio"])
+```
+
+## Saving Data
+
+```Python
+# Saving the dataframe as a CSV file
+dataframe.to_csv("filename.csv")
+
+# Save dataframe without row numbers (indices)
+dataframe.to_csv("filename.csv", index=False)
+
+# Save dataframe with special delimiter
+dataframe.to_csv("filename.csv", sep='\t')  # Separate by tabs instead of commas
+
+# Save dataframe as Excel file
+dataframe.to_excel("filename.xlsx")
 ```
