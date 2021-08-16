@@ -20,16 +20,46 @@ print(dataframe.head(10))
 print(dataframe.tail(10))
 ```
 
-## 
+## Reading Columns and Rows
 
 ```Python
+print(", ".join(dataframe.columns))
 
+# Get specific row
+print(dataframe.iloc[10])  # 'iloc' == 'index location'
+
+# Get multiple specific rows
+print(dataframe.iloc[0:10])
+
+# Print a specific column
+print(dataframe["Name"])
+
+# Printing multiple specific columns
+print(dataframe[["Name", "Generation", "Legendary"]])  # Notice the extra set of '[]'
+
+# Print specific row and column
+print(dataframe.iloc[0, 1])  # row 0, column 1 (both rows and columns are zero-indexed)
+
+# Print rows X through Y
+print(dataframe[0:100])
+
+# Print rows X through Y of a specific column
+print(dataframe["Name"][0:20])
+
+# Resetting the index on new dataframes
+dataframe = dataframe.reset_index()
 ```
 
-##
+## Iterating over a Dataframe by Row
 
 ```Python
+# Basic iteration
+for index, row in dataframe.iterrows():
+    print(index, row)
 
+# Iterating with Specific Columns
+for index, row in dataframe.iterrows():
+    print(index, row["Name"])
 ```
 
 ##
