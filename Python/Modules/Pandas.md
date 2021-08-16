@@ -13,10 +13,13 @@ If you are using any persistant data from a relational database or even a NoSQL 
 Everything here is an excerpt from Keith Galli's [_Complete Python Pandas Data Science Tutorial!_](https://www.youtube.com/watch?v=vmEHCJofslg). [Here](https://github.com/KeithGalli/pandas/blob/master/pokemon_data.csv) is the CSV file he used.
 
 ## Creating a Dataframe from a File
-
+Personally, I recommend making the identifier of the data the _index\_col_ so you can query the rows directly like `dataframe.loc["Pikachu"]`.
 ```Python
 # Reading a csv file
 dataframe = pandas.read_csv("pokemon_data.csv")
+
+# Using a value in the CSV file an the index column
+dataframe = pandas.read_csv("pokemon_data.csv", index_col="Name")
 
 # Printing data
 print(dataframe)
