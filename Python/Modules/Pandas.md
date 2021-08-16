@@ -7,7 +7,7 @@
 > [Editing a Dataframe](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Modules/Pandas.md#editing-data) <br />
 > [Saving a Dataframe as a file](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Modules/Pandas.md#saving-data) <br />
 
-[Pandas](https://pandas.pydata.org/) is a library for data manipulation and analysis. <br />
+[Pandas](https://pandas.pydata.org/) is a library for data storage, manipulation, and analysis that uses [dataframes](https://www.geeksforgeeks.org/python-pandas-dataframe/) to store and manipulate data. <br />
 If you are using any persistant data from a relational database or even a NoSQL database like MongoDB, you should use pandas. 
 
 Everything here is an excerpt from Keith Galli's [_Complete Python Pandas Data Science Tutorial!_](https://www.youtube.com/watch?v=vmEHCJofslg). [Here](https://github.com/KeithGalli/pandas/blob/master/pokemon_data.csv) is the CSV file he used.
