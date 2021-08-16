@@ -98,6 +98,9 @@ print(dataframe.sort_values(["Type 1", "HP"], ascending=[1, 0]))  # ascending=[l
 ## Editing Data
 
 ```Python
+# Edit specific row/column
+dataframe.iloc[0,1] = "edited data"  # Row 0, column 1 (both rows and columns are zero-indexed)
+
 # Create a new column from existing columns
 dataframe["Atk/Def Ratio"] = dataframe["Attack"] / dataframe["Defense"]
 
