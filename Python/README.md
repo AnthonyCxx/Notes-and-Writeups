@@ -27,8 +27,7 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Object-oriented%20Programming)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Exception%20Handling)
 - [Lambda Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Lambda%20Expressions.md)
-- [Pickling](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Pickling.md)
-- [Pandas](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Pandas/README.md)
+- [Modules](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Modules)
 
 ### Advanced
 
