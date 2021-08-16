@@ -143,7 +143,7 @@ int main()
 }
 ```
 
-### Folding with Commas
+### Folding over Commas
 Folding over a comma allows you to apply a function to each argument in a parameter pack. Any fold that contains a comma will be a right fold. Honestly,
 I have no idea how this works.
 
