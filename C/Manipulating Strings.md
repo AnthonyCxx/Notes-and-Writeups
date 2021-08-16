@@ -29,5 +29,20 @@ the exact same string, not a new copy. So, C provides the [_strcpy()_](https://w
 
 The only difference between _strcpy()_ and _strncpy()_ is that _strncpy()_ only copies _n_ characters where _n_ is a number passed to the function.
 ```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+int main()
+{
+    char* original = "Madame Zostra";
+    char* copy = (char*) malloc(strlen(original) +1);
+    
+    strcpy(copy, original);
+
+    puts(copy);
+    free(copy);
+
+    return 0;
+}
 ```
