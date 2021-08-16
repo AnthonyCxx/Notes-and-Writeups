@@ -7,5 +7,39 @@ For sake of ease, I will be using a [CSV](https://www.howtogeek.com/348960/what-
 ## Creating a Dataframe from a File
 
 ```Python
+# Reading a csv file
+dataframe = pandas.read_csv("pokemon_data.csv")
+
+# Printing data
+print(dataframe)
+
+# Print the first 10 rows
+print(dataframe.head(10))
+
+# Print the last  10 rows
+print(dataframe.tail(10))
+```
+
+## 
+
+```Python
+
+```
+
+##
+
+```Python
+
+```
+
+##
+
+```Python
+
+```
+
+##
+
+```Python
 
 ```
