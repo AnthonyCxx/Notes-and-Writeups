@@ -1,6 +1,8 @@
 # Cyber Competition Materials Structure
 [Return to directory listing](https://github.com/hpu-panthersec): all directories
 
+These notes are _very_ partial since I am focusing on mastering one skill at a time, which I recommend you do too since there is a lot in hacking to master.
+
 ## Major Folders
 | Directory | Explanation |
 | --------- | ----------- |
