@@ -19,7 +19,7 @@ Personally, I recommend making the identifier of the data the _index\_col_ so yo
 # Reading a csv file
 dataframe = pandas.read_csv("pokemon_data.csv")
 
-# Using a value in the CSV file an the index column
+# Using a value in the csv file an the index column
 dataframe = pandas.read_csv("pokemon_data.csv", index_col="Name")
 
 # Printing data
