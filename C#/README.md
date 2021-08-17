@@ -1,5 +1,5 @@
 # INCOMPLETE Reference Notes for C# 9.0
-I am putting this off until I learn Java since I want to get into IoT and embedded systems.
+Although I love C#, I am putting this off until I learn Java since I want to get into IoT and embedded systems.
 
 
 The majority of the information here comes straight from the [C# Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/api/system?view=net-5.0) and the rest is from [Essential C#, 8th Edition](https://www.amazon.com/Essential-8-0-Addison-Wesley-Microsoft-Technology/dp/0135972264). <br />
