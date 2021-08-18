@@ -4,7 +4,6 @@ This repository contains study guides for various subjects that I make for mysel
 These are just notes and aren't authoritative; use them at your own caution.
 
 ## Guides
-By 'complete' I mean as complete as I mean to make them.
 
 | Programming Language | Status | 
 | -------------------- | ------ |
