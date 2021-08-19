@@ -12,7 +12,7 @@ This is not a comprehensive list of manipulators.
 ### setw()
 _setw()_, which is short of 'set width', sets the minimum length of the output. If the output is less than the the given number, the output will be padded to 
 meet the width. _setw()_ takes a single integer as a parameter, which is the minimum width. A minimum width of 5 is 5 characters in length.
-Unlike most flags and manipulators, **_setw()_ does NOT persist between output**, only affecting the next bit out output operation (ignoring other manipulators).
+Unlike most flags and manipulators, **_setw()_ does NOT persist between output**, only affecting the next output operation (ignoring other manipulators).
 
 While doing some testing, I found that _setw()_ does count escape sequences when counting the minimum width.
 ```C++
