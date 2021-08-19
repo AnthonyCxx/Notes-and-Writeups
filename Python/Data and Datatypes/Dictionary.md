@@ -85,7 +85,7 @@ for key, value in ages.items():
 
 ### _.get()_
 _.get()_ provides a safe way to access dictionary values. If the key/value pair does not exist for a given key, then
-it will return none (unless you provide a different default value as a second argument).
+it will return _None_ (unless you provide a different default value as a second argument).
 
 ```Python
 ages = {"Harold":None, "Charlie":21, "Sun Tzu":2570} 
