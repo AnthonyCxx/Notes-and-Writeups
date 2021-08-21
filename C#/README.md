@@ -6,6 +6,13 @@ All I've done is synthesize the most relevant aspects of C# and provide some cod
 I fill the notes out as a I learn concepts and am not completely filling them out section by section. <br /> 
 Naturally, these notes are in no way comprehensive. <br />
 
+## Contents
+Here are some shortcuts to the major folders and common files. This is not comprehensive; explore them individual folders on your own.
+
+### Beginner  
+
+### Intermediate
+
 # Guides
 
 ## Microsoft Tutorials 
