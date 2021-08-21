@@ -2,8 +2,8 @@
 
 | File | Description | 
 | ---- | ----------- |
-| Primitive Datatypes |  |
-| Non-primitive Datatypes |  |
+| [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes) |  |
+| [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes) |  |
 |  |  |
 |  |  |
 |  |  |
