@@ -11,8 +11,18 @@ The difference between reference and pointer types is that reference types are a
 When passing value types as a parameter, the variable itself is not passed, only the value stored in it. Any changes to the copied value will not affect
 the original variable. This is not true for reference nor pointer types as they pass the address in memory.
 
+## Declaring a Variable
+
+```C#
+public static void Main()
+{
+    int number = 5;
+    Console.WriteLine(number);
+}
+```
+
 ## Global Variables
-There are no global variables in C#. However, a public static field in a class is essentially the same thing.
+Outside of the _Main_ function, there are no global variables in C#. However, a public static field in a class is essentially the same thing.
 ```C#
 public static void Main(string[] args)
 {
