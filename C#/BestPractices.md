@@ -20,6 +20,6 @@ as not only is it more efficient than overwriting with random characters, but it
 
 ## Checking for Null
 When checking for null, always use '_is null_' instead of '_== null_' because '_== null_' has more overhead (is less efficient) and is susceptible to being overloaded,
-which could result in unexpected behavior and by extent incorrect results.
+which could result in unexpected behavior and in some cases incorrect results.
 > Reference: [Jax's Code Hole: "_is null_" Versus "_== null_" in C# ](https://www.gullberg.tk/blog/is-null-versus-null-in-c/) <== Read this, seriously. <br />
 > Note: The '_IL_' he refers to in the article is [_Microsoft Intermediate Language_](https://en.wikipedia.org/wiki/Common_Intermediate_Language), which is the byte-code that C# compiles to.
