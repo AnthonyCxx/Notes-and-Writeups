@@ -1,6 +1,8 @@
 # C# Data Types
 
 ## Primitive Datatypes
+Technically, a string is a reference type, but I included it here since it fits.
+
 | Datatype | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
 | bool | System.Boolean | 1 | false | true | false | N/A 
@@ -25,11 +27,13 @@
 ## Non-primitive Types
 | Datatype | Description |
 | -------- | ----------- | 
+| String |  |
+| Array |  |
+| Enum |  |
 | [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) |  |
 | Struct |  |
-| Enum |  |
-| Array |  |
-| String |  |
+| Interface |  |
+| Delegate |  |
 
 ## Operator Precedence
 
