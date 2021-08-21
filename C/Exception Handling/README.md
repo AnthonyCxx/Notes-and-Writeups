@@ -41,9 +41,6 @@ without an argument; if you want a more flexible option, then use _strerror()_ f
 #include <stdlib.h>    // contains 'malloc()' and 'free()'
 #include <errno.h>    // contains 'errno'
 
-// Macro from 'errno.h', receives error codes from operations
-extern int errno;
-
 int main(void)
 {
     // max allocatable size allowed (~9.223 quintillion bytes, will always fail)
@@ -70,9 +67,6 @@ Here, I forced a printing error by closing [stdout](https://stackoverflow.com/qu
 #include <stdio.h>      // I/O operations
 #include <string.h>    // contains 'strerror()'
 #include <errno.h>    // contains 'errno'
-
-// Macro from 'errno.h', listens for error codes from functions
-extern int errno;
 
 int main(void)
 {
