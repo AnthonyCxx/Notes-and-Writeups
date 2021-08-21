@@ -380,7 +380,7 @@ the _in_ keyword exists because it allows you to immutably pass large values to 
 must be initialized before being passed.
 
 **WARNING: DO NOT RUN THIS CODE** <br />
-This code easily ate 16 GB of RAM. Do _not_ run this.
+Do _not_ run this. It eats a lot of RAM.
 ```C#
 public static void Main(string[] args)
 {
