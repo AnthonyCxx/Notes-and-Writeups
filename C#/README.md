@@ -19,6 +19,7 @@ Here are some shortcuts to the major folders and common files. This is not compr
 ### Intermediate
 
 ### References
+- [C# Base Class Library ](https://www.thebestcsharpprogrammerintheworld.com/2020/06/10/base-class-library-bcl/)
 - [Coding Best Practices](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Best%20Practices.md)
 
 # Guides
