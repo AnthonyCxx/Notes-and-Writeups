@@ -10,6 +10,7 @@ Naturally, these notes are in no way comprehensive. <br />
 Here are some shortcuts to the major folders and common files. This is not comprehensive; explore them individual folders on your own.
 
 ### Beginner  
+- [Anatomy of a C# Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Notes.md#c-program-structure)
 
 ### Intermediate
 
