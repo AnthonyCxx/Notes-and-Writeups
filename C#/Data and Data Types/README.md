@@ -9,7 +9,7 @@
 | [Type-casting](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Type%20Casting.md) | Type-casting in C# |
 
 ## Primitive Datatypes
-Technically, a string is a reference type, but I included it here since it fits.
+Technically, a string is a reference type, but I included it here too since it fits nicely.
 
 | Datatype | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
