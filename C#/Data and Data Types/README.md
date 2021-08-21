@@ -35,8 +35,8 @@ Technically, a string is a reference type, but I included it here too since it f
 ## Non-primitive Datatypes
 | Datatype | Description |
 | -------- | ----------- | 
-| String |  |
-| Array |  |
+| [String](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Strings.md) | text represented by an immutable sequence of characters |
+| [Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Arrays.md) | a sequential collection of data of the same type |
 | Enum |  |
 | [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) |  |
 | Struct |  |
