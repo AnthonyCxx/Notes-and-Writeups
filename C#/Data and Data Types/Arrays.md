@@ -152,7 +152,7 @@ foreach (int element in exampleArray)
 ```
 
 ### Using the _string.Join()_ Method\
-```
+```C#
 //Using the string.Join method
 int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
