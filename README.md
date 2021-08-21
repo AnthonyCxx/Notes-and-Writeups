@@ -1,7 +1,7 @@
 # Study Guides
 
 This repository contains study guides for various subjects that I make for myself and upload here to share with others. <br />
-These are just notes and aren't authoritative; use them at your own caution.
+These are just notes and aren't authoritative; use them at your own risk.
 
 ## Guides
 
