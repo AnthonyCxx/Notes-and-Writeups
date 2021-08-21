@@ -25,7 +25,7 @@
 ## Non-primitive Types
 | Datatype | Description |
 | -------- | ----------- | 
-| Class |  |
+| [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) |  |
 | Struct |  |
 | Enum |  |
 | Array |  |
