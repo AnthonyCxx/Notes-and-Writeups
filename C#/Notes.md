@@ -2,8 +2,12 @@
 This is not meant to be a tutorial for C#, only reference notes for people who already know a C-family language. <br />
 If it's not explicitly listed here, assume it's the same as C/C++.
 
-# Building Self-Contained Executables with dotnet (.NET)
-Self-contained executables can be run on other computers without needing typical external dependencies.
+# IDE/Code Environment
+If you're building a C# program, you really should be using [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
+
+# Building Self-Contained Executables via the Commandline with dotnet (.NET)
+Self-contained executables can be run on other computers without needing typical external dependencies. <br />
+Below is how to create a self-contained executable if you aren't using Visual Studio (see: [the easy way](https://stackoverflow.com/questions/1057878/how-to-compile-the-finished-c-sharp-project-and-then-run-outside-visual-studio)).
 
 ## Creating a Project
 ```
