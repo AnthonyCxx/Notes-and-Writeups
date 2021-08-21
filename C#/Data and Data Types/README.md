@@ -1,6 +1,7 @@
 # C# Data Types
 
 | File | Description | 
+| ---- | ----------- |
 | Primitive Datatypes |  |
 | Non-primitive Datatypes |  |
 |  |  |
