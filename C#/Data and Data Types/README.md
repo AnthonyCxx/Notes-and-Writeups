@@ -1,7 +1,7 @@
 # C# Data Types
 
-## Primitive Data Types
-| Data Type | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
+## Primitive Datatypes
+| Datatype | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
 | bool | System.Boolean | 1 | false | true | false | N/A 
 | char | System.Char | 2 | 0 | 65,535 | \0 (U+0000) | N/A |
@@ -22,6 +22,16 @@
 > Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values) <br />
 > Reference: [Literal Suffixes in C#](https://www.c-sharpcorner.com/article/data-type-suffixes-in-c-sharp/) <br />
 
+## Non-primitive Types
+| Datatype | Description |
+| -------- | ----------- | 
+| Class |  |
+| Struct |  |
+| Enum |  |
+| Array |  |
+| String |  |
+
+## Operator Precedence
 
 ## Notes
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
