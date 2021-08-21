@@ -1,5 +1,14 @@
 # C# Data Types
 
+| File | Description | 
+| Primitive Datatypes |  |
+| Non-primitive Datatypes |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
 ## Primitive Datatypes
 Technically, a string is a reference type, but I included it here since it fits.
 
@@ -34,8 +43,6 @@ Technically, a string is a reference type, but I included it here since it fits.
 | Struct |  |
 | Interface |  |
 | Delegate |  |
-
-## Operator Precedence
 
 ## Notes
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
