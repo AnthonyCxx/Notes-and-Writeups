@@ -9,7 +9,7 @@ If you do not know the index, use the [_.IndexOf_](https://github.com/EthanC2/No
 int[] exampleArray = new int[10];
 
 //Declare an array using the .CreateInstance() method
-Array exampleArray = Array.CreateInstance( typeof(int), 10 );
+Array exampleArray = Array.CreateInstance(typeof(int), 10);
 
 //Declare an array with the given elements
 int[] exampleArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
