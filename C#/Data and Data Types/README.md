@@ -7,7 +7,7 @@
 |  |  |
 |  |  |
 |  |  |
-|  |  |
+| [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Operators.md) and [Operator Precedence]() |  |
 |  |  |
 
 ## Primitive Datatypes
