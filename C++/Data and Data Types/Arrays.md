@@ -35,7 +35,7 @@ over any array, you would need to know the size of said array; however, there is
 is true for all arrays of primitive types), then you can calculate the size of the array by finding the size of the array in bytes and dividing it by the size of the 
 first element in the array. This can be done in a single macro: `#define SIZE(array) sizeof(array) / sizeof(array[0])`.
 
-**WARNING**: this trick does not work with pointers (it would just return the size of the pointer); that means that this trick will not work for arrays passed as 
+**WARNING**: this trick does not work with pointers because of [array decay](https://www.geeksforgeeks.org/what-is-array-decay-in-c-how-can-it-be-prevented/) (it would just return the size of the pointer); that means that this trick will not work for arrays passed as 
 paramters nor arrays created with the [_new_](https://docs.microsoft.com/en-us/cpp/cpp/new-operator-cpp?view=msvc-160) keyword. If you want to use this trick in a function, 
 pass the size of the array as a separate parameter.
 
