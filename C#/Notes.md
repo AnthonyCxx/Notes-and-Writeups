@@ -96,12 +96,12 @@ using System;
 using static System.Math; 
 //Allows for writing "Sqrt()" instead of "System.Math.Sqrt()"
 
-Console.WriteLine( Sqrt(9) );
+Console.WriteLine(Sqrt(9));
 ```
 Furthermore, you can alias namespace declarations with the _=_ operator.
 ```C#
 using System;
 using static mth = System.Math;  //'mth' is an alias for 'System.Math'
 
-Console.WriteLine( mth.Sqrt(9) );
+Console.WriteLine(mth.Sqrt(9));
 ```
