@@ -69,7 +69,6 @@ class HelloWorld
     }
 }
 ```
-> Note: args\[0\] in C# is not the program name, but the first commandline argument <br />
 > Note: Use [PascalCase](https://techterms.com/definition/pascalcase) for method names <br />
 > Reference: [C# Documentation: Static Classes and Methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
 
