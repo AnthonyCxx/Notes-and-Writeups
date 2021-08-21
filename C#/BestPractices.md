@@ -10,7 +10,8 @@ marking it as safe to be overwritten. But that's the thing - the sensitive conte
 The sensitive contents of the string continue to sit in memory, leaving that information vulnerable to memory-imaging techniques.
 The best way to avoid this problem is to simple overwrite the contents of the string like the Linux command [shred](https://en.wikipedia.org/wiki/Shred_(Unix)) does, but, again, strings aren't mutable.
 The only real option to securely handle sensitive information is to use a mutable datatype and then _immediately_ overwrite its contents after you're done using it.
-This process is called [data sanitization](https://www.lifewire.com/data-sanitization-methods-2626133). Out of all the techniques, personally I recommend [zero-writing](https://www.lifewire.com/data-sanitization-methods-2626133#write-zero)
+This process is called [data sanitization](https://www.lifewire.com/data-sanitization-methods-2626133). Luckily, C# provides a _SecureString_ class to do just that.
+Out of all the techniques, personally I recommend [zero-writing](https://www.lifewire.com/data-sanitization-methods-2626133#write-zero)
 as not only is it more efficient than overwriting with random characters, but it is also easy to verify that the data has been erased. <br />
 > [C# Documentation: SecureString](https://docs.microsoft.com/en-us/dotnet/api/system.security.securestring?view=net-5.0). <br />
 > <br />
