@@ -10,3 +10,4 @@ These are just notes and aren't authoritative; use them at your own caution.
 | [C++](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B) | Fully Complete |
 | [Python](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python) | Complete |
 | [C](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C) | Complete |
+| [C#](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23) | In progress |
