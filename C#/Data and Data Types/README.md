@@ -41,6 +41,7 @@ Technically, a string is a reference type, but I included it here too since it f
 | [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) |  |
 | Struct |  |
 | Interface |  |
+| Record |  |
 | Delegate |  |
 
 ## Notes
