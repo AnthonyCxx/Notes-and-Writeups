@@ -354,6 +354,3 @@ public partial class Triangle
 }
 ```
 > Note: it's poor practice to name variable after keywords.
-
-# Events
-Don't worry about this for now :)
