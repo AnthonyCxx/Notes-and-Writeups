@@ -2,12 +2,10 @@
 
 | File | Description | 
 | ---- | ----------- |
-| [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes) |  |
-| [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes) |  |
-|  |  |
-|  |  |
-|  |  |
-| [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Operators.md) and [Operator Precedence]() |  |
+| [Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Variables.md) | declaring variables, global variables, and nullable variables |
+| [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes) | primitive datatypes (int, float, double, bool...) |
+| [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes) | non-primitive datatypes (array, enum, class, interface...) |
+| [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Operators.md) and [Operator Precedence](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#operator-precedence) | operators and [operator precedence](https://www.ibm.com/docs/en/xl-c-and-cpp-aix/11.1.0?topic=operators-operator-precedence-associativity) |
 | [Type-casting](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Type%20Casting.md) | Type-casting in C# |
 
 ## Primitive Datatypes
