@@ -2,17 +2,6 @@
 This is not meant to be a tutorial for C#, only reference notes for people who already know a C-family language. <br />
 If it's not explicitly listed here, assume it's the same as C/C++.
 
-# Compiling and Running on the Commandline with [Mono](https://kozmicluis.com/compile-c-sharp-command-line/)
-## Compiling 
-```bash
-mcs -out:hello.exe hello.cs
-```
-## Running
-```bash
-mono hello.exe
-```
-> Note: you can apparently also do `./<executable>`; however, this has resulted in some runtime errors for me. Always use _mono_.
-
 # Building Self-Contained Executables with dotnet (.NET)
 Self-contained executables can be run on other computers without needing typical external dependencies.
 
