@@ -146,7 +146,7 @@ Console.WriteLine( fillerText.TrimEnd() );
 > Prints " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   this string is unnecessarily long"
 
 ### .PadLeft()
-The _.PadLeft(**_int_**, **_char_**) method [pads](https://www.computerhope.com/jargon/p/padding.htm) the beginning of the string with **_char_** until it reaches length **_int_**. <br />
+The _.PadLeft(**_int_**, **_char_**)_ method [pads](https://www.computerhope.com/jargon/p/padding.htm) the beginning of the string with **_char_** until it reaches length **_int_**. <br />
 If the string is already longer than **_int_**, then the string is not padded.
 ```C#
 int[] numbers = {1, 2, 3, 10, 11, 12, 100, 101, 102};
@@ -169,7 +169,7 @@ foreach (int num in numbers)
 > 102 <br />
 
 ### .PadRight()
-The _.PadRight(**_int_**, **_char_**) method [pads](https://www.computerhope.com/jargon/p/padding.htm) the end of the string with **_char_** until it reaches length **_int_**. <br />
+The _.PadRight(**_int_**, **_char_**)_ method [pads](https://www.computerhope.com/jargon/p/padding.htm) the end of the string with **_char_** until it reaches length **_int_**. <br />
 If the string is already longer than **_int_**, then the string is not padded.
 ```C#
 string[] things = {"car", "cow", "bow" };
