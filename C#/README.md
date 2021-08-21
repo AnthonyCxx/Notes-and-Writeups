@@ -18,6 +18,9 @@ Here are some shortcuts to the major folders and common files. This is not compr
 
 ### Intermediate
 
+### References
+- [Coding Best Practices](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/BestPractices.md)
+
 # Guides
 
 ## Microsoft Tutorials 
