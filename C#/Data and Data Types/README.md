@@ -13,20 +13,20 @@ Technically, a string is a reference type, but I included it here too since it f
 
 | Datatype | Full Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
-| bool | System.Boolean | 1 | false | true | false | N/A 
-| char | System.Char | 2 | 0 | 65,535 | \0 (U+0000) | N/A |
-| string | System.String | N/A | 0 / null | 2,048 bytes | null | N/A |
-| sbyte | System.SByte | 1 | -128 | 127 | 0 | N/A |
-| byte | System.Byte | 1 | 0 | 255 | 0 | N/A |
-| short | System.Int16 | 2 | -32,768 | 32,767 | 0 | N/A |
-| ushort | System.UInt16 | 2 | 	0 | 65,535 | 0 | N/A |
-| int | System.Int32 | 4 | -2,147,483,648 | 2,147,483,647 | 0 | N/A |
-| uint | System.UInt32 | 4 | 0 | 4,294,967,295 | 0 | _U_ or _u_ |
-| long | System.Int64 | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 | _L_ or _l_ |
-| ulong | System.UInt64 | 8 | 0 | 18,446,744,073,709,551,615 | 0 | _UL_ or _ul_
-| float | System.Single | 4 | -3.402823 x 10^38 | 3.402823 x 10^38 | 0 | _F_ or _f_ |
-| double | System.Double | 8 | -1.79769313486232 x 10^308 | 1.79769313486232 x 10^308 | 0 | _D_ or _d_ |
-| decimal | System.Decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 | _M_ or _m_ |
+| [bool](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool) | System.Boolean | 1 | false | true | false | N/A 
+| [char](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | System.Char | 2 | 0 | 65,535 | \0 (U+0000) | N/A |
+| [string](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/) | System.String | N/A | 0 / null | 2,048 bytes | null | N/A |
+| [sbyte](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.SByte | 1 | -128 | 127 | 0 | N/A |
+| [byte](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.Byte | 1 | 0 | 255 | 0 | N/A |
+| [short](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.Int16 | 2 | -32,768 | 32,767 | 0 | N/A |
+| [ushort](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.UInt16 | 2 | 	0 | 65,535 | 0 | N/A |
+| [int](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.Int32 | 4 | -2,147,483,648 | 2,147,483,647 | 0 | N/A |
+| [uint](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.UInt32 | 4 | 0 | 4,294,967,295 | 0 | _U_ or _u_ |
+| [long](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.Int64 | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 | _L_ or _l_ |
+| [ulong](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#characteristics-of-the-integral-types) | System.UInt64 | 8 | 0 | 18,446,744,073,709,551,615 | 0 | _UL_ or _ul_
+| [float](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#characteristics-of-the-floating-point-types) | System.Single | 4 | -3.402823 x 10^38 | 3.402823 x 10^38 | 0 | _F_ or _f_ |
+| [double](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#characteristics-of-the-floating-point-types) | System.Double | 8 | -1.79769313486232 x 10^308 | 1.79769313486232 x 10^308 | 0 | _D_ or _d_ |
+| [decimal](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#characteristics-of-the-floating-point-types) | System.Decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 | _M_ or _m_ |
 > Note: Always use the uppercase literal suffixes, as they are clearer. <br />
 > Reference: [C# Documentation: Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) <br />
 > Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values) <br />
