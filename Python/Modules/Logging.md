@@ -2,7 +2,7 @@
 Python has a native module, _logging_, for logging utilities. <br />
 One of the best parts of the logging module is the 5 logging levels it provides: _debug_, _info_, _warning_, _error_, and _critical_.
 
-All content here comes from NeuralNine's [_Logging in Python Crash Course - Security Levels, Log Files, Formatting_](https://www.youtube.com/watch?v=m08LtvC3jaY).
+Python Logging Documentation: [_logging — Logging facility for Python_](https://docs.python.org/3/library/logging.html).
 
 ## Basic Usage
 The simplest use of logging is the _.log()_ function, which is used like `logging.log(level, message)`.
@@ -30,4 +30,16 @@ import logging
 
 # Display an error
 logging.error("stuff")
+```
+
+## Creating a Logging Object
+If you want to use a logger, use `logging.getLogger(logger_name)`.
+
+```Python
+import logging
+
+# Create a custom logger
+logger = logging.getLogger("CustomLogger")
+
+logger.error("stuff")
 ```
