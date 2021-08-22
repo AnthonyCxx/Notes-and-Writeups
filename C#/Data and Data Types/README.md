@@ -24,9 +24,9 @@ Technically, a string is a reference type, but I included it here too since it f
 | [uint](https://docs.microsoft.com/en-us/dotnet/api/system.uint32?view=net-5.0) | System.UInt32 | 4 | 0 | 4,294,967,295 | 0 | _U_ or _u_ |
 | [long](https://docs.microsoft.com/en-us/dotnet/api/system.int64?view=net-5.0) | System.Int64 | 8 | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 | _L_ or _l_ |
 | [ulong](https://docs.microsoft.com/en-us/dotnet/api/system.uint64?view=net-5.0) | System.UInt64 | 8 | 0 | 18,446,744,073,709,551,615 | 0 | _UL_ or _ul_
-| [float]() | System.Single | 4 | -3.402823 x 10^38 | 3.402823 x 10^38 | 0 | _F_ or _f_ |
-| [double]() | System.Double | 8 | -1.79769313486232 x 10^308 | 1.79769313486232 x 10^308 | 0 | _D_ or _d_ |
-| [decimal](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#characteristics-of-the-floating-point-types) | System.Decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 | _M_ or _m_ |
+| [float](https://docs.microsoft.com/en-us/dotnet/api/system.single?view=net-5.0) | System.Single | 4 | -3.402823 x 10^38 | 3.402823 x 10^38 | 0 | _F_ or _f_ |
+| [double](https://docs.microsoft.com/en-us/dotnet/api/system.double?view=net-5.0) | System.Double | 8 | -1.79769313486232 x 10^308 | 1.79769313486232 x 10^308 | 0 | _D_ or _d_ |
+| [decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal?view=net-5.0) | System.Decimal | 16 | ±1.0 × 10^−28 | ±7.9 × 10^28 | 0 | _M_ or _m_ |
 > Note: Always use the uppercase literal suffixes, as they are clearer. <br />
 > Reference: [C# Documentation: Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) <br />
 > Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values) <br />
