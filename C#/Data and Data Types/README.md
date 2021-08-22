@@ -11,7 +11,7 @@
 ## Primitive Datatypes
 Technically, a string is a reference type, but I included it here too since it fits nicely.
 
-| Datatype | Base Class Library Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
+| Datatype | Full Name | Bytes | Minimum Value | Maximum Value | Default Value | Literal Suffix | 
 | --------- | ----------------------- | ----- | ------------- | ------------- | ------------- | -------------- |
 | bool | System.Boolean | 1 | false | true | false | N/A 
 | char | System.Char | 2 | 0 | 65,535 | \0 (U+0000) | N/A |
