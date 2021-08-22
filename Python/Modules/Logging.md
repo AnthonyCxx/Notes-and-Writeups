@@ -7,11 +7,14 @@ The simplest use of logging is the _.log()_ function, which is used like `loggin
 By default, messages that aren't related to warnings or errors aren't shown. To change this, edit the lowest viewable level with `logging.basicConfig(level=level)`.
 
 ```Python
-logging.basicConfig(level=logging.DEBUG)
+# Show all logging messages, down to the debug level
+logging.basicConfig(level=logging.DEBUG) # 'level=' is mandatory.
 
+# Basic log message
 logging.log(logging.INFO, "Start of program...")
 
-print("Working!")
+# //Program goes here...
 
+# Basic log message
 logging.log(logging.INFO, "End of program...")
 ```
