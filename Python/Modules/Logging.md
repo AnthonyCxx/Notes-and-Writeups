@@ -43,3 +43,26 @@ logger = logging.getLogger("CustomLogger")
 
 logger.error("stuff")
 ```
+
+## Logging to Files
+Logging to files in Python requires creating a logger object and adding a file handler to it.
+
+```Python
+import logging
+
+# Create a logger
+logfile = logging.getLogger("Log File")
+
+# Create a file handler
+file_handler = logging.FileHandler("stuff.log")
+
+# File handler only logs warnings, errors, and critcal errors
+file_handler.setLevel(logging.WARNING)
+
+# Add the file handler to the logger
+logfile.addHandler(file_handler)
+
+
+# Log something to the file
+logfile.warning("Hmm, I have a sneaking suspicion that something's gonna go wrong...")
+```
