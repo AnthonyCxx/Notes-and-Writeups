@@ -1,5 +1,5 @@
 # Analyzing a Linux System
-This is going to be centered around Ubuntu.
+This is going to be centered around Ubuntu, but the concepts are generally applicable.
 
 ## Get OS Info
 [How to Check OS Version in Linux via the Commandline](https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/)
