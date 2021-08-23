@@ -30,6 +30,10 @@ print(dataframe.head(10))
 
 # Print the last  10 rows
 print(dataframe.tail(10))
+
+# Print all rows
+pandas.set_option('display.max_rows', None)
+print(dataframe)
 ```
 
 ## Reading Columns and Rows
