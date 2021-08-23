@@ -21,4 +21,5 @@ apt list --installed
 
 ```bash
 cat /var/log/apt/history.log
+cat /var/log/dpkg.log
 ```
