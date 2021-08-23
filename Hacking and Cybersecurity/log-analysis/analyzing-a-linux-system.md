@@ -1,6 +1,13 @@
 # Analyzing a Linux System
 This is going to be centered around Ubuntu.
 
+## Get OS Info
+[How to Check OS Version in Linux via the Commandline](https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/)
+
+```bash
+cat /etc/os-release
+```
+
 ## Finding Installed Packages
 
 ### Installed Packages
