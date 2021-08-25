@@ -34,3 +34,22 @@ Like reading from/writing to the hard disk.
 
 ### Processing from Storage to I/O
 Emailing a saved image...
+
+
+# Parts of a Computer
+
+## CPU
+
+### ALU (Arithmetic Logic Unit)
+
+### Registers
+
+### Interal CPU Interconnection
+
+### Control Unit
+
+## Control Unit
+
+## System Bus
+
+## Memory
