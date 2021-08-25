@@ -45,7 +45,8 @@ Performs calculations
 
 ### Registers
 Storage for the CPU so it can store data while it manipulates it. Registers are free to access (in terms of time), as opposed to accessing RAM which is expensive (takes a long 
-time).
+time). Think of registers as the working set for the CPU. Accessing a register is like reaching over and grabbing a pencil at your desk, while accessing RAM is like having
+to get up and go downstairs to get something and come all the way back.
 
 ### Interal CPU Interconnection
 
