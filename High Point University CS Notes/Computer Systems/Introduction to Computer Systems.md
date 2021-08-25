@@ -44,6 +44,8 @@ Emailing a saved image...
 Performs calculations
 
 ### Registers
+Storage for the CPU so it can store data while it manipulates it. Registers are free to access (in terms of time), as opposed to accessing RAM which is expensive (takes a long 
+time).
 
 ### Interal CPU Interconnection
 
