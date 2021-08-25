@@ -41,6 +41,7 @@ Emailing a saved image...
 ## CPU
 
 ### ALU (Arithmetic Logic Unit)
+Performs calculations
 
 ### Registers
 
