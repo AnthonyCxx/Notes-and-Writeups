@@ -6,3 +6,13 @@
 
 - CPUs of the same family (like the Intel x86 family) generally share the same basic architecture to allow for code compatibility (at least backwards). However, the actual 
 CPU structure is different between versions.
+
+## Structure and Functions
+- _Structure_: the way in which components relate to each other.
+- _Function_: the operation of individual components as part of the structure.
+
+### Functions
+- Data processing: only a few fundamental types of processing
+- Data storage: short-term and long-term
+- Data movement: I/O
+- Control: instructions
