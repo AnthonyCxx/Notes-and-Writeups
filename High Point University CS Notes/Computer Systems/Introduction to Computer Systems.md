@@ -31,3 +31,6 @@ Data transferred from outside to storage, saving a word document.
 
 ### Processing from/to Storage
 Like reading from/writing to the hard disk.
+
+### Processing from Storage to I/O
+Emailing a saved image...
