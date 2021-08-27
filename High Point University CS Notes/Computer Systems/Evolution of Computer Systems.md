@@ -5,3 +5,6 @@ Modern computers started in the 1940s
 - Attempted to calculate the trajectory of weapons (from 1943 until 1955). THe first example of a modern computer.
 - Used deciaml (not binary) as its number system.
 - Was _massive_ (over 30 tons)
+
+# Von Neumann Architecture
+Defines the structure of a basic computer. COmpleted in 1952.
