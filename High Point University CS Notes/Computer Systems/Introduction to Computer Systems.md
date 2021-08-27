@@ -53,9 +53,17 @@ to get up and go downstairs to get something and come all the way back.
 ### Interal CPU Interconnection
 
 ### Control Unit
-
-## Control Unit
+Generates the electrical signals necessary to perform operations; basically, it sends commands.
 
 ## System Bus
 
 ## Memory
+
+## Control Unit
+
+### Sequencing Logic
+
+### Control Unit Registers and Decoders
+WHen you need to add two numbers like (a + b), 
+
+### Control Memory
