@@ -32,3 +32,4 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 
 ## Good Readings
 - [Basics of the Unix Philosophy](http://www.catb.org/esr/writings/taoup/html/ch01s06.html#id2877537)
+- [The Art of Unix Programming](http://www.catb.org/esr/writings/taoup/html/)
