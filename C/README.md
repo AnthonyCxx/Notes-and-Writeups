@@ -29,3 +29,6 @@ P.S. If you don't know the difference between C and C++, [here](https://hackr.io
 ## Reference Material
 - [The C Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/C%20Standard%20Library) (a short, non-comprehensive summary)
 - [Example Programs](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C/Example%20Programs)
+
+## Good Readings
+- [Basics of the Unix Philosophy](http://www.catb.org/esr/writings/taoup/html/ch01s06.html#id2877537)
