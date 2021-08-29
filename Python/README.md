@@ -31,6 +31,7 @@ Explore the folders for yourself, as there is plenty of content not listed here.
 - [Modules](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/Modules)
 
 ### Advanced
+- [GUI Development](https://github.com/EthanC2/Notes-and-Writeups/tree/main/Python/GUI)
 
 ## Resources
 W3Schools: [Python Tutorial](https://www.w3schools.com/python/) <br />
