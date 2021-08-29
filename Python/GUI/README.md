@@ -6,8 +6,6 @@ The majority of the content here comes from [_Create GUI Applications with Pytho
 which is licensed under a [Creative Commons Attribution Share-alike Non-commercial license](https://creativecommons.org/licenses/by-nc-sa/3.0/), so feel free to contact me and 
 I can share the book with you for free :)
 
-Yes, I am aware that PyQt6 was released several months ago, but PyQt5 has been around for so long that there are many good resources for learning it.
-
 ## Topics
 - [Introduction to PyQt5](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Introduction%20to%20PyQt5.md)
 - [Window Layouts](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Window%20Layouts.md)
