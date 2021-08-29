@@ -1,5 +1,7 @@
 # Introduction to GUI Programming with Python and PyQt5
-PyQt5 has three major modules: [_QtWidgets_](https://docs.huihoo.com/pyqt/PyQt5/QtWidgets.html), [_QtGui_](https://docs.huihoo.com/pyqt/PyQt5/QtGui.html) and [_QtCore_](https://docs.huihoo.com/pyqt/PyQt5/QtCore.html), each of which contains a set of tools necessary for creating a user interface (UI).
+PyQt5 has three major modules: [_QtWidgets_](https://docs.huihoo.com/pyqt/PyQt5/QtWidgets.html), [_QtGui_](https://docs.huihoo.com/pyqt/PyQt5/QtGui.html) and [_QtCore_](https://docs.huihoo.com/pyqt/PyQt5/QtCore.html), each of which contains a set of tools necessary for creating a user interface (UI). <br />
+Qt uses an [event-driven system](https://www.technologyuk.net/computing/software-development/software-design/event-driven-programming.shtml) which responds to user input
+by spawning an event, which then results in action.
 
 ## Creating and Empty Window
 ```Python
