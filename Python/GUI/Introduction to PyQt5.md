@@ -6,7 +6,7 @@ PyQt5 has three major modules: [_QtWidgets_](https://docs.huihoo.com/pyqt/PyQt5/
 from PyQt5.QtWidgets import QApplication, QWidget
 
 # Create QApplication
-app = QApplication([])
+app = QApplication([])  # QApplication is given no arguments (typically a list of strings)
 
 # Create a widget (which we're using as a blank window) and then show it
 window = QWidget()
@@ -15,7 +15,7 @@ window.show()        # <-- Show the window. Windows are hidden by default.
 # Start the event loop (show the window)
 app.exec_()
 ```
-> [QApplication](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QApplication.html#detailed-description) is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) necessary for managing windows. 
+> [QApplication](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QApplication.html#detailed-description) is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) necessary for managing windows.
 
 ## Adding Layouts
 The _self.setLayout()_ method defines the type of window that is displayed. <br />
