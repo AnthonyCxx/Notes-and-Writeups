@@ -10,7 +10,7 @@ app = QApplication([])  # QApplication is given no arguments (typically a list o
 
 # Create a widget (which we're using as a blank window) and then show it
 window = QWidget()
-window.show()        # <-- Show the window. Windows are hidden by default.
+window.show()        # <-- Show the window. Windows without a parent are hidden by default.
 
 # Start the event loop (show the window)
 app.exec_()
