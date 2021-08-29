@@ -3,31 +3,19 @@
 ## A Simple Window
 
 ```Python
-import PyQt5.QtWidgets
+from PyQt5.QtWidgets import QApplication, QWidget
 
-class MainWindow(PyQt5.QtWidgets.QWidget):
-    # Constructor
-    def __init__(self):
-        super().__init__()
+# Create QApplication
+app = QApplication([])
 
-        # Add a title to the window
-        self.setWindowTitle("Hello, world!")
+# Create a widget (which we're using as a blank window) and then show it
+window = QWidget()
+window.show()        # <-- Show the window. Windows are hidden by default.
 
-        # Display the window
-        self.show()
-
-
-# // DRIVER CODE // #
-def main():
-    app = PyQt5.QtWidgets.QApplication([])
-    window = MainWindow()
-
-    app.exec_()
-
-if __name__ == '__main__':
-    main()
+# Start the event loop (show the window)
+app.exec_()
 ```
-> I suggest you abbreviate things like _PyQt5.QtWidgets_ as _qtw_ for sake of brevity. I didn't for clarity's sake.
+> [QApplication](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QApplication.html#detailed-description) is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) necessary for managing windows. 
 
 ## Adding Layouts
 The _self.setLayout()_ method defines the type of window that is displayed. <br />
