@@ -1,6 +1,7 @@
 # Introduction to GUI Programming with Python and PyQt5
 
 ## A Simple Window
+
 ```Python
 import PyQt5.QtWidgets
 
@@ -63,6 +64,7 @@ if __name__ == '__main__':
 
 ## Customizing Layouts
 You can add items to the window by adding widgets to the _self.layout()_ function.
+Widgets are the basic building blocks of GUIs; you may know them as things like buttons, check boxes, or progress bars.
 
 ```Python
 import PyQt5.QtWidgets
