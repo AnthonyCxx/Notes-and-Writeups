@@ -1,4 +1,5 @@
 # Introduction to GUI Programming with Python and PyQt5
+PyQt5 has three major modules: [_QtWidgets_]https://docs.huihoo.com/pyqt/PyQt5/QtWidgets.html(), [_QtGui_](https://docs.huihoo.com/pyqt/PyQt5/QtGui.html) and [_QtCore_](https://docs.huihoo.com/pyqt/PyQt5/QtCore.html), each of which contains a set of tools necessary for creating a user interface (UI).
 
 ## A Simple Window
 
