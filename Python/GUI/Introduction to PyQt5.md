@@ -1,5 +1,6 @@
 # Introduction to GUI Programming with Python and PyQt5
 
+A simple, blank window.
 ```Python
 import PyQt5.QtWidgets
 
