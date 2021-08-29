@@ -16,6 +16,7 @@ class MainWindow(PyQt5.QtWidgets.QWidget):
 # // DRIVER CODE // #
 def main():
     app = PyQt5.QtWidgets.QApplication([])
+  
     window = MainWindow()
 
     app.exec_()
