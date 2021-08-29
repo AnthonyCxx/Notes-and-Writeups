@@ -23,3 +23,4 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+> I suggest you abbreviate things like _PyQt5.QtWidgets_ as _qtw_ for sake of brevity. I didn't for clarity's sake.
