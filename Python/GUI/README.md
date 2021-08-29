@@ -11,4 +11,5 @@ I can share the book with you for free :)
 - [Window Layouts](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Window%20Layouts.md)
 
 ## Resources
+- PythonGUI's [PyQt5 Tutorial](https://www.pythonguis.com/pyqt-tutorial/)
 - Codemy's [PyQt5 GUI Thursdays](https://www.youtube.com/playlist?list=PLCC34OHNcOtpmCA8s_dpPMvQLyHbvxocY)
