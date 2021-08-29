@@ -9,6 +9,9 @@ class MainWindow(PyQt5.QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
+        # Add a title to the window
+        self.setWindowTitle("Hello, world!")
+
         # Display the window
         self.show()
 
@@ -16,7 +19,6 @@ class MainWindow(PyQt5.QtWidgets.QWidget):
 # // DRIVER CODE // #
 def main():
     app = PyQt5.QtWidgets.QApplication([])
-  
     window = MainWindow()
 
     app.exec_()
