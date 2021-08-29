@@ -1,1 +1,1 @@
-# GUI Development with Python
+# GUI Development with Python and PyQt5
