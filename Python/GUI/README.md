@@ -8,7 +8,6 @@ I can share the book with you for free :)
 
 ## Topics
 - [Introduction to PyQt5](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Introduction%20to%20PyQt5.md)
-- [Window Layouts](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Window%20Layouts.md)
 
 ## Resources
 - PythonGUI's [PyQt5 Tutorial](https://www.pythonguis.com/pyqt-tutorial/)
