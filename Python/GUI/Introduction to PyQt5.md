@@ -48,7 +48,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
 class MainWindow(QMainWindow):
     def __init__(self):
-        super().__init__()
+        # Call the constructor of 'QMainWindow'
+        super().__init__()  
 
         # Give the window a title (text in the top-left corner)
         self.setWindowTitle("This entire window is a giant button!")
