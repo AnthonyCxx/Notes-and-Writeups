@@ -25,6 +25,7 @@ app.exec_()
 [_QMainWindow_](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QMainWindow.html) is a special class that inherits from the _QWidget_ class and is meant to be used as the basis
 of a window that can then be built upon.
 
+I know the main window looks exactly the same now, but trust me later on you will really want to use _QMainWindow_ as the basis.
 ```Python
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
