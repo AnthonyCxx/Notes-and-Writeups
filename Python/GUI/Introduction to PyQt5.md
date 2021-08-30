@@ -73,9 +73,9 @@ if __name__ == '__main__':
 ```
 
 ## Setting a Fixed Window Size
-You can set a fixed window size with the [_setFixedSize()_](https://www.geeksforgeeks.org/pyqt5-how-to-stop-resizing-of-window-setfixedsize-method/), [_setFixedHeight()_](https://www.geeksforgeeks.org/pyqt5-set-fix-window-size-for-height-or-width/), and [_setFixedWidth()_](https://www.geeksforgeeks.org/pyqt5-set-fix-window-size-for-height-or-width/) methods.
+You can set a fixed window size with the [_setFixedSize()_](https://www.geeksforgeeks.org/pyqt5-how-to-stop-resizing-of-window-setfixedsize-method/), [_setFixedHeight()_](https://www.geeksforgeeks.org/pyqt5-set-fix-window-size-for-height-or-width/), and [_setFixedWidth()_](https://www.geeksforgeeks.org/pyqt5-set-fix-window-size-for-height-or-width/) methods. All three functions take a [_QSize()_](https://doc.qt.io/qt-5/qsize.html) object (from QtCore) as a parameter.
 
-All three functions take a [_QSize()_](https://doc.qt.io/qt-5/qsize.html) object (from QtCore) as a parameter.
+These resizing methods can be used with _any_ widget. Not just windows.
 ```Python
 from PyQt5.QtCore import QSize
 from PyQt5.QtWidgets import QApplication
