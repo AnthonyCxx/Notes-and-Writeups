@@ -40,7 +40,7 @@ window.show()        # <-- Show the window. Windows without a parent are hidden 
 app.exec_()
 ```
 
-## Creating a Custom Window with a Window Class
+## Creating a Custom Window via a Window Class
 If you're going to create anything more than an empty window, you really should do it inside a class.
 
 Note: Don't forget to call _super().\_\_init\_\_()_, otherwise the class won't get properly set up.
