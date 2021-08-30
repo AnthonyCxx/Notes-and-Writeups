@@ -39,3 +39,33 @@ window.show()        # <-- Show the window. Windows without a parent are hidden 
 # Start the event loop (show the window)
 app.exec_()
 ```
+
+## Creating a Custom Window with a Window Class
+If you're going to create anything more than an empty window, you really should do it inside a class.
+
+```Python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        # Give the window a title (text in the top-left corner)
+        self.setWindowTitle("This entire window is a giant button!")
+        
+        # Add a single button the the window labeled 'This is a button!'
+        button = QPushButton("This is a button!")
+        self.setCentralWidget(button)  # Make the button the center of the whole window
+        
+
+def main():
+    app = QApplication([])
+    
+    window = MainWindow()
+    window.show()
+
+    app.exec_()
+
+if __name__ == '__main__':
+    main()
+```
