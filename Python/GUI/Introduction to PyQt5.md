@@ -43,6 +43,7 @@ app.exec_()
 ## Creating a Custom Window with a Window Class
 If you're going to create anything more than an empty window, you really should do it inside a class.
 
+Note: Don't forget to call _super().\_\_init\_\_()_, otherwise the class won't get properly set up.
 ```Python
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
