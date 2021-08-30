@@ -88,3 +88,4 @@ class MainWindow(QMainWindow):
         # Set a fixed window size
         self.setFixedSize(QSize(400, 300))
 ```
+> Try changing the size of the window — you can't.
