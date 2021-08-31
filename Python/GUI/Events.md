@@ -166,7 +166,8 @@ if __name__ == '__main__':
 ```
 
 ## Directly Connecting Widgets
-The slot that receives the signal of a widget can be another widget.
+The slot that receives the signal of a widget can be another widget. Here, the the _QLabel_ widget is directly tied to the _QLineEdit_ widget such that the text
+of the label automatically updates whenever the _QLineEdit_ widget is edited — this is because _textChanged_ is directly tied to the label's _setText_ method.
 
 ```Python
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QVBoxLayout, QWidget
