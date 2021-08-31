@@ -91,4 +91,4 @@ Just use the _.write()_ method. It's that easy.
 with open("file.txt", "w") as f:
         f.write("Writing this to the file...")  
 ```
-> Note: Since the file was opened in '_w_' mode, the contents of it will be overwritten
+> Note: Since the file was opened in '_w_' mode instead of '_a_' mode, the contents of it will be overwritten
