@@ -8,6 +8,7 @@ I can share the book with you for free :)
 
 ## Topics
 - [Introduction to PyQt5](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Introduction%20to%20PyQt5.md)
+- [Slots and Signals](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Events.md)
 
 ## Resources
 - PythonGUI's [PyQt5 Tutorial](https://www.pythonguis.com/pyqt-tutorial/)
