@@ -175,15 +175,19 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        #  A simple text object
         self.label = QLabel()
 
+        # A line of editable text (connected to 'self.label' so it updates 'self.label' when changed)
         self.input = QLineEdit()
         self.input.textChanged.connect(self.label.setText)
 
+        # Structure of the window
         layout = QVBoxLayout()
         layout.addWidget(self.input)
         layout.addWidget(self.label)
 
+        # Make the layout into a widget that can be set as the center of the window
         container = QWidget()
         container.setLayout(layout)
 
