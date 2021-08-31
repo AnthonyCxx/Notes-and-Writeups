@@ -18,11 +18,11 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # Create a button and link it to the method 'on_click'
-        button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
-        button.clicked.connect(self.on_click)        # Set the action to take when pressed
+        self.button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        self.button.clicked.connect(self.on_click)        # Set the action to take when pressed
 
         # Set the button as the central widget of the window
-        self.setCentralWidget(button)
+        self.setCentralWidget(self.button)
 
     def on_click(self):
         print("Pressed the button!")        
@@ -57,12 +57,12 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # Create a button and link it to the method 'on_click'
-        button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
-        button.setCheckable(True)                    # Set button to register being toggled
-        button.clicked.connect(self.on_toggle)       # Set the action to take when toggled
+        self.button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        self.button.setCheckable(True)                    # Set button to register being toggled
+        self.button.clicked.connect(self.on_toggle)       # Set the action to take when toggled
 
         # Set the button as the central widget of the window
-        self.setCentralWidget(button) 
+        self.setCentralWidget(self.button) 
 
     def on_toggle(self, state):
         print(f"Button is now {'on' if state else 'off'}")
@@ -99,13 +99,13 @@ class MainWindow(QMainWindow):
         self.start_time = float()
 
         # Create a button and link it to the method 'on_click'
-        button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
-        button.setCheckable(True)                    # Set button to register being toggled
-        button.pressed.connect(self.on_press)        # Set the action to take when the button is pressed
-        button.released.connect(self.on_release)     # Set the action to take when toggled
+        self.button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        self.button.setCheckable(True)                    # Set button to register being toggled
+        self.button.pressed.connect(self.on_press)        # Set the action to take when the button is pressed
+        self.button.released.connect(self.on_release)     # Set the action to take when toggled
 
         # Set the button as the central widget of the window
-        self.setCentralWidget(button) 
+        self.setCentralWidget(self.button) 
 
     # Start the timer when the button is initially pressed
     def on_press(self):
@@ -115,6 +115,40 @@ class MainWindow(QMainWindow):
     # End the timer and calculate the elapsed time
     def on_release(self):
         print(f"Held the button for {round(time.time() - self.start_time, 2)} seconds")
+
+def main():
+    # Create QApplication
+    app = QApplication([])
+    
+    # Create a main window and then show it
+    window = MainWindow()
+    window.show()
+
+    # Start the event loop
+    app.exec_()
+
+if __name__ == '__main__':
+    main()
+```
+
+## Creating Modifiable Widgets
+When a widget like a button is pressed, the event triggers can actually change the state of the button. <br />
+Here is an example of a button that can only be pressed once.
+
+```Python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.button = QPushButton("This button can only be clicked once")
+        self.button.pressed.connect(self.on_click)
+        self.setCentralWidget(self.button)
+
+    def on_click(self):
+        self.button.setText("The button can no longer be clicked")
+        self.button.setEnabled(False)
 
 def main():
     # Create QApplication
