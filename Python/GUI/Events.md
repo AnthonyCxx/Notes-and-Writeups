@@ -6,7 +6,7 @@ these signals are recieved by _slots_, which are functions that can be bound to 
 
 Here's a good article on signals and slots: PythonGUIs: [Signals, Slots & Events](https://www.pythonguis.com/tutorials/pyqt-signals-slots-events/).
 
-## Creating an Iteractive Button
+## Creating an Interactive Button
 Creating a simple, iteractive button is really as easy as binding a function to the button using the _QPushButton.clicked.connect()_ method.
 
 ```Python
