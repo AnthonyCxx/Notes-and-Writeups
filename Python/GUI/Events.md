@@ -41,3 +41,42 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+## Receiving Data from a Singal
+When the button is clicked, it sends a signal containing data about the button's state. So, binding a function to _button_ that takes a parameter will call that function
+when the button is pushed. When evaluating whether the button is toggled or not, make sure you have _QPushButton.setCheckable()_ to _True_, otherwise the button will always
+return _False_.
+
+```Python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        # Call the constructor of 'QMainWindow'
+        super().__init__()
+
+        # Create a button and link it to the method 'on_click'
+        button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        button.setCheckable(True)                    # Set button to register being toggled
+        button.clicked.connect(self.on_toggle)       # Set the action to take when toggled
+
+        # Set the button as the central widget of the window
+        self.setCentralWidget(button) 
+
+    def on_toggle(self, state):
+        print(f"Button is now {'on' if state else 'off'}")
+
+def main():
+    # Create QApplication
+    app = QApplication([])
+    
+    # Create a main window and then show it
+    window = MainWindow()
+    window.show()
+
+    # Start the event loop
+    app.exec_()
+
+if __name__ == '__main__':
+    main()
+```
