@@ -114,7 +114,7 @@ class MainWindow(QMainWindow):
 
     # End the timer and calculate the elapsed time
     def on_release(self):
-        print(f"Held the button for {time.time() - self.start_time} seconds")
+        print(f"Held the button for {round(time.time() - self.start_time, 2)} seconds")
 
 def main():
     # Create QApplication
