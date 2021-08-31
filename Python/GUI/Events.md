@@ -81,3 +81,52 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+## Making a Useful Button
+This button measures the amount of time the user holds the button by starting a timer when it's initially pressed and then ending the timer when it's released. <br />
+The _on\_release()_ method also prints the elapsed time.
+
+```Python
+import time
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        # Call the constructor of 'QMainWindow'
+        super().__init__()
+
+        # Start time to measure elapsed time
+        self.start_time = float()
+
+        # Create a button and link it to the method 'on_click'
+        button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        button.setCheckable(True)                    # Set button to register being toggled
+        button.pressed.connect(self.on_press)        # Set the action to take when the button is pressed
+        button.released.connect(self.on_release)     # Set the action to take when toggled
+
+        # Set the button as the central widget of the window
+        self.setCentralWidget(button) 
+
+    # Start the timer when the button is initially pressed
+    def on_press(self):
+        print("Pressed the button!")
+        self.start_time = time.time()
+
+    # End the timer and calculate the elapsed time
+    def on_release(self):
+        print(f"Held the button for {time.time() - self.start_time} seconds")
+
+def main():
+    # Create QApplication
+    app = QApplication([])
+    
+    # Create a main window and then show it
+    window = MainWindow()
+    window.show()
+
+    # Start the event loop
+    app.exec_()
+
+if __name__ == '__main__':
+    main()
+```
