@@ -82,7 +82,7 @@ if __name__ == '__main__':
     main()
 ```
 
-## Making a Useful Button
+## Example of a Useful Button
 This button measures the amount of time the user holds the button by starting a timer when it's initially pressed and then ending the timer when it's released.
 The _on\_release()_ method also prints the elapsed time.
 
