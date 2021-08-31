@@ -1,3 +1,2 @@
 # Slots and Signals (Publishers and Subscribers)
-GUIs are fundamentally built on a paradigm of programming called [event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming) make GUIs interactive. Event-driven programming
-is composed of _events_ and _event handlers_ such that whenever the user performs specific actions (like clicking a button), it triggers an _event_ 
+GUIs are fundamentally built on a paradigm of programming called [event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming), which make GUIs interactive. Event-driven programming is composed of _events_ and _event handlers_ such that whenever the user performs specific actions (like clicking a button), it triggers an _event_ 
