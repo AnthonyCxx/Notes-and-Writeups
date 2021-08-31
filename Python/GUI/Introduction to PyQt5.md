@@ -19,7 +19,7 @@ window.show()        # <-- Show the window. Windows without a parent are hidden 
 # Start the event loop (show the window)
 app.exec_()
 ```
-> [QApplication](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QApplication.html#detailed-description) is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) that contains the [event loop](https://en.wikipedia.org/wiki/Event_loop#:~:text=In%20computer%20science%2C%20the%20event,or%20messages%20in%20a%20program.&text=When%20the%20event%20loop%20forms,loop%20or%20main%20event%20loop.) necessary for the user to interact with the window.
+> [QApplication](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QApplication.html#detailed-description) is a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) that contains the [event loop](https://en.wikipedia.org/wiki/Event_loop#:~:text=In%20computer%20science%2C%20the%20event,or%20messages%20in%20a%20program.&text=When%20the%20event%20loop%20forms,loop%20or%20main%20event%20loop.) necessary for the user to interact with the window. It is not optional.
 
 ## Creating the Basis of a GUI App with QMainWindow
 [_QMainWindow_](https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QMainWindow.html) is a special class that inherits from the _QWidget_ class and is meant to be used as the basis
