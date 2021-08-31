@@ -45,10 +45,9 @@ if __name__ == '__main__':
 ## Receiving Data from a Singal
 When the button is clicked, it sends a signal containing data about the button's state. So, binding a function to _button_ that takes a parameter will call that function
 when the button is pushed. When evaluating whether the button is toggled or not, make sure you have _QPushButton.setCheckable()_ to _True_, otherwise the button will always
-return _False_.
+return _False_. Buttons can be pressed and togged in the same click, since the methods are not mutually exclusive. In that case, both the _on\_click()_ and _on\_toggle()_ method will be called.
 
-Buttons can be pressed and togged in the same click, since the methods are not mutually exclusive. <br />
-In that case, both the _on\_click()_ and _on\_toggle()_ method will be called.
+If you want to access the state of the button without pushing it, you have to save the state in a data member of the class such as '_self.is_on_'.
 ```Python
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
