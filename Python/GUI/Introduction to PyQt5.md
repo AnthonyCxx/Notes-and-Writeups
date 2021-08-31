@@ -4,7 +4,7 @@ Qt uses an [event-driven system](https://www.technologyuk.net/computing/software
 by spawning an event, which then results in action.
 
 ## Creating and Empty Window
-Here, we use an empty widget to create an empty window. <br /> 
+The most simple thing you can do is create an empty window. Here, we use an empty widget to create an empty window. <br /> 
 Any widget can be a window so we could have also just used _QPushButton_ to create an empty window with a single, labeless button.
 ```Python
 from PyQt5.QtWidgets import QApplication, QWidget
