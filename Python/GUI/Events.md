@@ -164,3 +164,42 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+## Directly Connecting Widgets
+The slot that receives the signal of a widget can be another widget.
+
+```Python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QVBoxLayout, QWidget
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.label = QLabel()
+
+        self.input = QLineEdit()
+        self.input.textChanged.connect(self.label.setText)
+
+        layout = QVBoxLayout()
+        layout.addWidget(self.input)
+        layout.addWidget(self.label)
+
+        container = QWidget()
+        container.setLayout(layout)
+
+        self.setCentralWidget(container)
+
+def main():
+    # Create QApplication
+    app = QApplication([])
+    
+    # Create a main window and then show it
+    window = MainWindow()
+    window.show()
+
+    # Start the event loop
+    app.exec_()
+
+if __name__ == '__main__':
+    main()
+```
