@@ -17,9 +17,8 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # Create a button and link it to the method 'on_click'
-        button = QPushButton("Press the button.")
-        button.setCheckable(True)
-        button.clicked.connect(self.on_click)
+        button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        button.clicked.connect(self.on_click)        # Set the action to take when pressed
 
         # Set the button as the central widget of the window
         self.setCentralWidget(button)
