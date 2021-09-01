@@ -15,7 +15,7 @@ ULL fib(ULL n = 0)
         return n;
 
     //Calculate the Fibonacci number
-    for(int i = 3; i <= n; i++)
+    for(int i = 3; i <= n; i++)  //Starting at the third iteration (skips the first two)
     {
         next = previous + current;
         previous = current;
