@@ -27,3 +27,16 @@ ULL fib(ULL n = 0)
 ```
 
 ## Fibonacci Sequence (Recursive)
+
+```C++
+//Alias: 'ULL' is a shorthand for 'unsigned long long'
+using ULL = unsigned long long;
+
+ULL fib(ULL n = 0)
+{
+    if (n < 2)
+        return n;
+
+    return fib(n-1) + fib(n-2);
+}
+```
