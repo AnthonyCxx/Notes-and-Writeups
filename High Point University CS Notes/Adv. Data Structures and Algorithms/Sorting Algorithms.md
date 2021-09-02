@@ -3,8 +3,6 @@
 ## Exchange Sort
 
 ```C++
-#define SIZE(array) sizeof(array) / sizeof(array[0])
-
 template <typename T>
 void Swap(T& a, T& b)
 {
