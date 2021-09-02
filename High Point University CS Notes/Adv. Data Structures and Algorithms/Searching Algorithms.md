@@ -3,8 +3,6 @@
 ## Sequential Search
 
 ```C++
-#define SIZE(array) sizeof(array) / sizeof(array[0])
-
 template <typename T>
 bool seqSearch(T array[], T key, size_t size)
 {
@@ -21,9 +19,6 @@ bool seqSearch(T array[], T key, size_t size)
 ## Binary Search
 
 ```C++
-#define SIZE(array) sizeof(array) / sizeof(array[0])
-
-
 //Templated binary search using an iterative approach
 template <typename T>
 bool binarySearch(const T array[], const T searchVal, const size_t size) //Returns 'true' because '-1' is a valid search value
