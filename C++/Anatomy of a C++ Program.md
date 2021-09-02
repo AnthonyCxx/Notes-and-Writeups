@@ -34,7 +34,7 @@ int main()
 }
 ```
 
-## _return 0_
+## _return 0;_
 The line _return 0_ returns the error code 0 to the system that ran the program, indicating that there was no error. _return 0_ must always be the last line of the program,
 since returning from the main function will automatically end the program.
 
