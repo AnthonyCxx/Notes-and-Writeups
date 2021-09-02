@@ -45,7 +45,6 @@ bool binarySearch(const T array[], const T searchVal, const size_t size) //Retur
 
         else if (searchVal > array[middle])  //Discards the smaller half
             left = middle + 1;
-
     }
 
     //If list is exhausted without finding the value, then return false
