@@ -6,12 +6,14 @@
 template <typename T>
 bool seqSearch(T array[], T key, size_t size)
 {
+    //Iterate over the entire array
     for (size_t i=0; i < size; i++)
     {
-        if (array[i] == key)
+        if (array[i] == key)  //If the key has been found
             return true;
     }
 
+    //If the array has been exhausted without success, return false
     return false;
 }
 ```
