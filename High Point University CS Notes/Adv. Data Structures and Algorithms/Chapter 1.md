@@ -10,3 +10,4 @@ This is going to be beefy.
 - _Time Complexity Analysis_: How many times is the basic operation done for each value of the input size.
 - _Every-case Time Complexity_: When the number of times of the basic operation is done on an input size n(T(n)) is always the same (like sequential search).
 - _Worst-case Time Complexity_: W(n) is the maximum number of times an algorithm will do its basic operation on an input of size _n_. If the every-case complexity exists, then W(n) = T(n).
+- _Best-case Time Complexity_: B(n) the minimum number of times an algorithm will perform its basic operation on an input size of _n_. If every-case time complexity exists, B(n) = T(n).
