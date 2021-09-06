@@ -6,3 +6,4 @@ This is going to be beefy.
 - _Parameter_: a variable in a problem that has not been assigned a specific value yet.
 - _Algorithm_: Step by step procedure that produces an answer to a question.
 - _Time Complexity Analysis_: How many times is the basic operation done for each value of the input size.
+- _Every-case Time Complexity_: When the number of times of the basic operation is done on an input size n(T(n)) is always the same (like sequential search).
