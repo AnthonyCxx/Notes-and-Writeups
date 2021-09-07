@@ -1,5 +1,6 @@
-## QLabel
-_QLabel_ can display text or images.
+# QLabel
+"QLabel is used for displaying text or an image. No user interaction functionality is provided. The visual appearance of the label can be configured in various ways, 
+and it can be used for specifying a focus mnemonic key for another widget." -[Qt Documentation](https://doc.qt.io/qt-5/qlabel.html#details)
 
 ```Python
 class MainWindow(QMainWindow):
@@ -13,3 +14,5 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.label)
         self.show()
 ```
+
+## Methods
