@@ -15,4 +15,6 @@ class MainWindow(QMainWindow):
         self.show()
 ```
 
-## Methods
+# Methods
+
+## _.setText()_
