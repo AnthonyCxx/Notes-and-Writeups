@@ -5,4 +5,4 @@ essential of which I'll be covering here.
 ## Widgets
 | Widget | Function | 
 | ------ | -------- |
-| []() |  |
+| [QLabel](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Widgets/QLabel.md) | plain text |
