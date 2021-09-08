@@ -51,8 +51,8 @@ class MainWindow(QMainWindow):
 
 
 ## _.setFont()_
-The _.setFont()_ method changes the font of the text; it takes a [_QFont_](https://doc.qt.io/qt-5/qfont.html) object with the specified font as a string and can optionally take
-the size of the font as a second parameter. All the available fonts are determined by the [QFontDatabase](https://doc.qt.io/qt-5/qfontdatabase.html) class.
+The _.setFont()_ method changes the font of the text; it takes a [_QFont_](https://doc.qt.io/qt-5/qfont.html) object with the specified font as a string and other optional 
+modifiers such as italics. All the available fonts are determined by the [QFontDatabase](https://doc.qt.io/qt-5/qfontdatabase.html) class.
 
 ```Python
 from PyQt5.QtGui import QFont
