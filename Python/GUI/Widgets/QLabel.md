@@ -50,8 +50,9 @@ class MainWindow(QMainWindow):
 ```
 
 ### _.setAlignment()_
-[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) can set the alignment of a _QLabel_ to one of a set of defaults: <br />
-Qt.AlignLeft, Qt.AlignRight, Qt.AlignBottom, Qt.AlignTop, Qt.AlignCenter, Qt.AlignHCenter, Qt.AlignVCenter 
+[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) can set the alignment of a _QLabel_ to one of a set of defaults:
+Qt.AlignLeft, Qt.AlignRight, Qt.AlignBottom, Qt.AlignTop, Qt.AlignCenter, Qt.AlignHCenter, or Qt.AlignVCenter. To use multiple alignments, join them with a vertical
+line like `.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)`.
 
 This program infintely cycles through all the alignment options to give you a visual representation of how they work.
 ```Python
