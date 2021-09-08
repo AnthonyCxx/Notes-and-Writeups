@@ -18,3 +18,7 @@ class MainWindow(QMainWindow):
 # Methods
 
 ## _.setText()_
+
+```Python
+
+```
