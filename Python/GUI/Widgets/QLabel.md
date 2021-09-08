@@ -65,7 +65,7 @@ class MainWindow(QMainWindow):
         self.label = QLabel("Hey, this isn't Comic Sans!") 
 
         # Widget settings
-        self.label.setFont(QFont('Garamond', 30))  # Font, size
+        self.label.setFont(QFont('Garamond', 30, italic=True))  # Font, size, italics
 
         # Create the containers
         self.widgets = QWidget()
