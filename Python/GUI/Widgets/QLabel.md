@@ -65,7 +65,7 @@ class MainWindow(QMainWindow):
 
         # List of possible alignments + an iterator/generator
         self.alignments = ['Qt.AlignLeft', 'Qt.AlignRight', 'Qt.AlignBottom', 'Qt.AlignTop', \
-                           'Qt.AlignCenter ', 'Qt.AlignHCenter ', 'Qt.AlignVCenter']
+                           'Qt.AlignCenter ', 'Qt.AlignHCenter ', 'Qt.AlignVCenter', 'Qt.AlignJustify']
         self.alignment_iter = self.alignment_generator()
 
         # Widgets
