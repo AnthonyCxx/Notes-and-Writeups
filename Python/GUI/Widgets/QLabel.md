@@ -50,10 +50,50 @@ class MainWindow(QMainWindow):
 ```
 
 ### _.setAlignment()_
-[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) 
+[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) can set the alignment of a _QLabel_ to one of a set of defaults:
+
 
 ```Python
+from PyQt5.QtCore import Qt
+from itertools import cycle
 
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        # List of possible alignments + an iterator
+        self.alignments = ['Qt.AlignLeft', 'Qt.AlignRight', 'Qt.AlignBottom', 'Qt.AlignTop', \
+                           'Qt.AlignCenter ', 'Qt.AlignHCenter ', 'Qt.AlignVCenter']
+        self.alignment_iter = self.alignment_generator()
+
+        # Widgets
+        self.label = QLabel("Press the button to change the alignment of the text!") 
+        self.button = QPushButton("Press the button.")    # Create a button labled 'Press the button.'
+        self.button.clicked.connect(self.on_click)        # Set the action to take when pressed
+
+        # Create the containers
+        self.widgets = QWidget()
+        self.layout = QVBoxLayout()
+        
+        # Add the widgets to the layout
+        self.layout.addWidget(self.label)
+        self.layout.addWidget(self.button)
+        
+        # Layout
+        self.widgets.setLayout(self.layout)
+        self.setCentralWidget(self.widgets)
+
+        # init
+        self.show()
+
+    def on_click(self):
+        alignment = next(self.alignment_iter)
+        self.label.setText(alignment)
+        self.label.setAlignment(eval(alignment))
+
+    def alignment_generator(self):
+        for alignment in cycle(self.alignments):
+            yield alignment
 ```
 
 ## _.setFont()_
