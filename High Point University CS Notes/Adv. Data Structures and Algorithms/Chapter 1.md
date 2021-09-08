@@ -11,3 +11,8 @@ This is going to be beefy.
 - _Every-case Time Complexity_: When the number of times of the basic operation is done on an input size n(T(n)) is always the same (like sequential search).
 - _Worst-case Time Complexity_: W(n) is the maximum number of times an algorithm will do its basic operation on an input of size _n_. If the every-case complexity exists, then W(n) = T(n).
 - _Best-case Time Complexity_: B(n) the minimum number of times an algorithm will perform its basic operation on an input size of _n_. If every-case time complexity exists, B(n) = T(n).
+
+- Overhead Instructions: instructions that must be performed prior to using an algorithm.
+- Control Instructions: instructions that must be performed during the algorithm.
+
+### Order of a Function (Big-O Notation)
