@@ -16,3 +16,5 @@ This is going to be beefy.
 - Control Instructions: instructions that must be performed during the algorithm.
 
 ### Order of a Function (Big-O Notation)
+- _Linear Time Algorithms_: n, n/2
+- _Quadratic time algorithms_: 5n^2, (5n^2) + 100
