@@ -48,3 +48,32 @@ class MainWindow(QMainWindow):
     def on_click(self):
         self.label.setText("You pressed the button!")
 ```
+
+
+## _.setFont()_
+
+```Python
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        # Widgets
+        self.label = QLabel("Hey, this isn't Comic Sans!") 
+
+        # Widget settings
+        self.label.setFont(QFont('Garamond'))
+
+        # Create the containers
+        self.widgets = QWidget()
+        self.layout = QVBoxLayout()
+        
+        # Add the widgets to the layout
+        self.layout.addWidget(self.label)
+        
+        # Set window format
+        self.widgets.setLayout(self.layout)
+        self.setCentralWidget(self.widgets)
+
+        # Display window
+        self.show()
+```
