@@ -17,10 +17,23 @@ class MainWindow(QMainWindow):
 ```
 
 ## Displaying Images
-
-
 ```Python
+from PyQt5.QtGui import QPixmap
 
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        # Image
+        self.image = QLabel()
+        self.image.setPixmap(QPixmap(r"C:\Users\ethan\Downloads\FeatherlessChicken.jpg"))
+        self.image.setScaledContents(True)
+        
+        # Setup
+        self.setCentralWidget(self.image)
+
+        # init
+        self.show()  
 ```
 
 ## A Full Example
@@ -43,6 +56,7 @@ class MainWindow(QMainWindow):
         # Central image
         self.image = QLabel()
         self.image.setPixmap(QPixmap(r"C:\Users\ethan\Downloads\FeatherlessChicken.jpg"))
+        self.image.setScaledContents(True)
 
         # Create the containers
         self.widgets = QWidget()
