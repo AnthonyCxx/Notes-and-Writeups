@@ -81,3 +81,6 @@ class MainWindow(QMainWindow):
         # Display window
         self.show()
 ```
+
+### _.setAlignment()_
+[https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/)
