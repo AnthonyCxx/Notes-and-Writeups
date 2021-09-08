@@ -63,7 +63,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        # List of possible alignments + an iterator
+        # List of possible alignments + an iterator/generator
         self.alignments = ['Qt.AlignLeft', 'Qt.AlignRight', 'Qt.AlignBottom', 'Qt.AlignTop', \
                            'Qt.AlignCenter ', 'Qt.AlignHCenter ', 'Qt.AlignVCenter']
         self.alignment_iter = self.alignment_generator()
