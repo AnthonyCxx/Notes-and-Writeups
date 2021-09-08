@@ -50,9 +50,10 @@ class MainWindow(QMainWindow):
 ```
 
 ### _.setAlignment()_
-[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) can set the alignment of a _QLabel_ to one of a set of defaults:
+[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) can set the alignment of a _QLabel_ to one of a set of defaults: <br />
+Qt.AlignLeft, Qt.AlignRight, Qt.AlignBottom, Qt.AlignTop, Qt.AlignCenter, Qt.AlignHCenter, Qt.AlignVCenter 
 
-
+This program infintely cycles through all the alignment options to give you a visual representation of how they work.
 ```Python
 from PyQt5.QtCore import Qt
 from itertools import cycle
@@ -89,7 +90,7 @@ class MainWindow(QMainWindow):
     def on_click(self):
         alignment = next(self.alignment_iter)
         self.label.setText(alignment)
-        self.label.setAlignment(eval(alignment))
+        self.label.setAlignment(eval(alignment))  # Evaluates the string as if it were hard-coded
 
     def alignment_generator(self):
         for alignment in cycle(self.alignments):
