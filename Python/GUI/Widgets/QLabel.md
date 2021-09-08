@@ -38,11 +38,11 @@ class MainWindow(QMainWindow):
         self.layout.addWidget(self.label)
         self.layout.addWidget(self.button)
         
-        # 
+        # Set window format
         self.widgets.setLayout(self.layout)
         self.setCentralWidget(self.widgets)
 
-        # init
+        # Display window
         self.show()
 
     def on_click(self):
