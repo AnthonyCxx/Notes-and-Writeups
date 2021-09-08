@@ -50,7 +50,11 @@ class MainWindow(QMainWindow):
 ```
 
 ### _.setAlignment()_
-[https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/)
+[.setAlignment()](https://www.geeksforgeeks.org/qt-alignment-in-pyqt5/) 
+
+```Python
+
+```
 
 ## _.setFont()_
 The _.setFont()_ method changes the font of the text; it takes a [_QFont_](https://doc.qt.io/qt-5/qfont.html) object with the specified font as a string and other optional 
@@ -68,6 +72,7 @@ class MainWindow(QMainWindow):
 
         # Widget settings
         self.label.setFont(QFont('Garamond', 30, italic=True))  # Font, size, italics
+        self.label.setBold(True)
 
         # Create the containers
         self.widgets = QWidget()
