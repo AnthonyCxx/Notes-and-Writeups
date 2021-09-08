@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
 # Methods
 
 ## _.setText()_
-_.setText()_ changes the text displayed by a QLabel.
+_.setText()_ changes the text displayed by a QLabel. This class has a button that changes the text to "You pressed the button!" when pressed.
 
 ```Python
 class MainWindow(QMainWindow):
