@@ -2,6 +2,7 @@
 "QLabel is used for displaying text or an image. No user interaction functionality is provided. The visual appearance of the label can be configured in various ways, 
 and it can be used for specifying a focus mnemonic key for another widget." -[Qt Documentation](https://doc.qt.io/qt-5/qlabel.html#details)
 
+## Displaying Text
 ```Python
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -12,6 +13,52 @@ class MainWindow(QMainWindow):
 
     def initWindow(self):
         self.setCentralWidget(self.label)
+        self.show()
+```
+
+## Displaying Images
+
+
+```Python
+
+```
+
+## A Full Example
+If you don't get the joke, [read this](https://medium.com/@philosotramp/diogenes-versus-plato-fa8a68e8be2f).
+
+As for the image I used, you can find it [here](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbmcgenomics.biomedcentral.com%2Farticles%2F10.1186%2F1471-2164-13-257&psig=AOvVaw2gqFn-Fe7I8bLqGneoBWa2&ust=1631222509322000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLj22cOn8PICFQAAAAAdAAAAABAD)
+```Python
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        # Window title
+        self.setWindowTitle("Diogenes, the Sarcastic")
+
+        # Text at the top of the screen
+        self.label = QLabel("Behold, a man!") 
+        font = QFont('Garamond', 30)
+        font.setBold(True)
+        self.label.setFont(font)
+        self.label.setAlignment(Qt.AlignHCenter | Qt.AlignTop)
+
+        # Central image
+        self.image = QLabel()
+        self.image.setPixmap(QPixmap(r"C:\Users\ethan\Downloads\FeatherlessChicken.jpg"))
+
+        # Create the containers
+        self.widgets = QWidget()
+        self.layout = QVBoxLayout()
+        
+        # Add the widgets to the layout
+        self.layout.addWidget(self.label)
+        self.layout.addWidget(self.image)
+    
+        # Layout
+        self.widgets.setLayout(self.layout)
+        self.setCentralWidget(self.widgets)
+
+        # init
         self.show()
 ```
 
@@ -114,7 +161,6 @@ class MainWindow(QMainWindow):
 
         # Widget settings
         self.label.setFont(QFont('Garamond', 30, italic=True))  # Font, size, italics
-        self.label.setBold(True)
 
         # Create the containers
         self.widgets = QWidget()
