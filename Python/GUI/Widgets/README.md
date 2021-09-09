@@ -6,4 +6,4 @@ essential of which I'll be covering here.
 | Widget | Function | 
 | ------ | -------- |
 | [QLabel](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Widgets/QLabel.md) | plain text/images |
-| []() |  |
+| [QCheckbox](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/GUI/Widgets/QCheckbox.md) | a togglable option button |
