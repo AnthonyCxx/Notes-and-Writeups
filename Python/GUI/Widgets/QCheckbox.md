@@ -13,7 +13,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # Checkbox
-        self.box = QCheckBox("Case Sensitive?")
+        self.box = QCheckBox("Are you registered to vote?")
         self.box.toggled.connect(self.on_check)
 
         # Containers 
