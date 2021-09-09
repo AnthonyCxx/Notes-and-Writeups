@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
 ```
 
 ## A Full Example
-If you don't get the joke, [read this](https://medium.com/@philosotramp/diogenes-versus-plato-fa8a68e8be2f). As for the image I used, you can find it [here](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbmcgenomics.biomedcentral.com%2Farticles%2F10.1186%2F1471-2164-13-257&psig=AOvVaw2gqFn-Fe7I8bLqGneoBWa2&ust=1631222509322000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLj22cOn8PICFQAAAAAdAAAAABAD)
+If you don't get the joke, [read this](https://medium.com/@philosotramp/diogenes-versus-plato-fa8a68e8be2f). As for the image I used, you can find it [here](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbmcgenomics.biomedcentral.com%2Farticles%2F10.1186%2F1471-2164-13-257&psig=AOvVaw2gqFn-Fe7I8bLqGneoBWa2&ust=1631222509322000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLj22cOn8PICFQAAAAAdAAAAABAD).
 ```Python
 class MainWindow(QMainWindow):
     def __init__(self):
