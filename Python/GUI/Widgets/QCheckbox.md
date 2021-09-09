@@ -4,10 +4,10 @@ can be enabled or disabled without affecting others. Different types of behavior
 allowing exclusive checkboxes. However, QButtonGroup does not provide any visual representation." - [Qt Documentation](https://doc.qt.io/qt-5/qcheckbox.html)
 
 ## Basic Usage
+```Python
 from PyQt5.QtWidgets import QApplication, QHBoxLayout, QMainWindow, QCheckBox, QWidget
 from PyQt5.QtCore import Qt
 
-```Python
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
