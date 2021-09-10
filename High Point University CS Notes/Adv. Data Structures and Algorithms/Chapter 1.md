@@ -21,6 +21,8 @@ This is going to be beefy.
 - _Quadratic time algorithms_: 5n^2, (5n^2) + 100
 
 - _Big-O_: performance will never be worse than this 
-- _Big-Omega_:
-- _Big-Theta_:
+- _Big-Omega_: performance will never be better than this
+- _Big-Theta_: performance on average will be this
+- _Little-O_: 
 - 5n^2 ∈ O(n^2): N = 0, c = 5
+- Properties of Order: O(log n), O(n), O(n log n), O(n^2), O(n^a), O(n^j), O(n^k), O(a^n), O(b^n), O(n!)         
