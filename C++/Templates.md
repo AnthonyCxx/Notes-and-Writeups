@@ -1,5 +1,6 @@
 # Templates (Generics) in C++
 > Video: CPPCon 2014, [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
+> [C++ TUTORIAL - TEMPLATES - 2020](https://www.bogotobogo.com/cplusplus/templates.php#TemplateSpecialization) <br />
 
 Templates are a definition of a function of class that is not specific to any one type.
 The classic example of a template is the _swap()_ function. The _swap()_ function is simple and makes no calls to type-specific features like string's _substr()_ method,
@@ -237,7 +238,43 @@ int main()
 }
 ```
 
-## Template Type Specialization with _\<type\_traits\>_ and _enable\_if()_
+## Template Specialization
+Instances of a specific class/function will be created from a template if an instance of it does not already exist. This principle allows us to manually create instances
+of a template for specific datatypes, which can allow us to re-define the 
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+//Generic add function
+template <typename T>
+T add(T a, T b)
+{
+    return a + b;
+}
+
+//Template specialization: 'string' version includes and extra space
+template <>
+string add(string a, string b)
+{
+    return a + " " + b;
+}
+
+//Main function
+int main()
+{
+    //Different usages of templated 'add' function: standard and specialized
+    cout << add<int>(10, 20) << '\n';                    //30
+    cout << add<string>("this and", "that") << '\n';    //'this and that'
+
+    return 0;
+}
+```
+
+## Template Type-guarding with _std::enable\_if_
+Templates can be specialized such that they can only be used for certain types, making them safer. For example, if I wrote a function _divide()_, I would want it to work
+with all numeric types ([_std::is\_arithmetic()_](https://en.cppreference.com/w/cpp/types/is_arithmetic)), but not string literals. To
 
 ## Sources
 CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
@@ -248,3 +285,4 @@ Programiz: [_C++ Templates_](https://www.programiz.com/cpp-programming/templates
 TheCherno: [_Templates in C++_](https://www.youtube.com/watch?v=I-hZkUa9mIs) <br />
 IBM C++ Documentation: [_Default arguments for template parameters (C++ only)_](https://www.ibm.com/docs/en/zos/2.1.0?topic=parameters-default-arguments-template) <br />
 StackOverflow: [_Template default arguments_](https://stackoverflow.com/questions/15373823/template-default-arguments) <br />
+[C++ TUTORIAL - TEMPLATE SPECIALIZATION - 2020](https://www.bogotobogo.com/cplusplus/template_specialization_function_class.php) <br />
