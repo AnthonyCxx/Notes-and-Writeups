@@ -239,8 +239,9 @@ int main()
 ```
 
 ## Template Specialization
-Instances of a specific class/function will be created from a template if an instance of it does not already exist. This principle allows us to manually create instances
-of a template for specific datatypes, which can allow us to re-define the 
+Instances of a specific class/function will be created from a template if an instance of it does not already exist. Because the compiler will not overwrite manually-created
+versions of a template for specific datatypes, we can overload the same templated method to work differently for different types. Here, I have a generic '_add()_' function
+that has a special case for strings that includes a space between each of the strings instead of just appending one to the other.
 
 ```C++
 #include <iostream>
