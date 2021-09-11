@@ -1,6 +1,6 @@
 # Templates (Generics) in C++
 > Video: CPPCon 2014, [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
-> [C++ TUTORIAL - TEMPLATES - 2020](https://www.bogotobogo.com/cplusplus/templates.php#TemplateSpecialization) <br />
+> Blog post: [C++ TUTORIAL - TEMPLATES - 2020](https://www.bogotobogo.com/cplusplus/templates.php#TemplateSpecialization) <br />
 
 Templates are a definition of a function of class that is not specific to any one type.
 The classic example of a template is the _swap()_ function. The _swap()_ function is simple and makes no calls to type-specific features like string's _substr()_ method,
