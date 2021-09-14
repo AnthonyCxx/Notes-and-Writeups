@@ -18,6 +18,8 @@ class ClassName
 
 ### Example
 ```C++
+#include <string>
+
 class Player
 {
     //Don't worry about the 'public' keyword for now
