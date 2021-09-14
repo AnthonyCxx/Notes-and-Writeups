@@ -50,7 +50,7 @@ Console.WriteLine( string.Format("That\'s a cute {0}", animal) );
 > Prints "That's a cute squirrel"
 
 ### .Concat
-The _Concat(**_string_**, **_string_**, ...) method [concatenates](https://en.wikipedia.org/wiki/Concatenation) any number of strings and returns the result.
+The _.Concat(**_string_**, **_string_**, ...)_ method [concatenates](https://en.wikipedia.org/wiki/Concatenation) any number of strings and returns the result.
 ```C#
 string phrase = "hello";
 Console.WriteLine( string.Concat(phrase, phrase, phrase) ); 
