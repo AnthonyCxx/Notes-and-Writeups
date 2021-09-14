@@ -27,7 +27,7 @@ for (int iterator = 0; iterator < 5; iterator++)  //Declaration, condition, and 
 >> | Loop Section | Function |
 >> | ------------ | -------- |
 >> | int interator = 0 | declare an integer _iterator_ and set it to 0 |
->> | iterator < 5 | as long as the iterator is less tha 5, execute the body |
+>> | iterator < 5 | as long as the iterator is less than 5, execute the body |
 >> | iterator++ | increment the iterator by 1 ([postfix operator](https://www.programiz.com/article/increment-decrement-operator-difference-prefix-postfix)) |
 
 ### Advanced For Loops
