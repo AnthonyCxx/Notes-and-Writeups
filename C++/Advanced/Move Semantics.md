@@ -2,7 +2,7 @@
 Move semantics are an optimization that reallocates the resources (contents) of a temporary object instead of copying it. <br />
 Move semantics are especially efficient when dealing with large objects, and even more efficient if the transfer is marked [_noexcept_](https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/).
 
-Before you start reading, you may want to up on [rvalues, lvalues, xvalues, glvalues, and prvalues](https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues).
+Before you start reading, you may want to up on [rvalues, lvalues, xvalues, glvalues, and prvalues](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3055.pdf).
 
 ## _lvalues_ and _rvalues_
 Before you understand move semantics, you must first understand the difference between an _lvalue_ and an _rvalue_.
