@@ -89,7 +89,7 @@ if (greeting.StartsWith("Good morning")
 > Prints "The string is a morning greeting"
 
 ### .EndsWith()
-The _EndsWith(**_string_**)_ method returns true if the string ends with the provided string/character.
+The _.EndsWith(**_string_**)_ method returns true if the string ends with the provided string/character.
 ```C#
 string item = "ender chest";
 
