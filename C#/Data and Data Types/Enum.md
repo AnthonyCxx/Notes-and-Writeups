@@ -20,7 +20,7 @@ enum EnumName
 ```
 
 ## A Simple Enum
-
+Here is a simple enum called '_Team_' that contains the possible teams a player can be one, based on color.
 
 ```C#
 enum Team
@@ -38,5 +38,11 @@ of the enum will take on said integer value. If you assign one value manually an
 pattern of adding one to the previous value.
 
 ```C#
-
+enum Team
+{
+  Red,                //Red == 0
+  Yellow = 12,       //Yellow == 12
+  Blue,             //Blue == 13
+  Green            //Green == 14
+}
 ```
