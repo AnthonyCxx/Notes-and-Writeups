@@ -5,8 +5,10 @@ programmers with a clear way of representing the possible states/values of an ob
 some two states that a boolean would. By default, the first value of an enum is 0, the second is 1, the third is 2, and so on; however, this can be overwritten by manually 
 assigning the values inside of the enum declaration. [Here](https://www.tutorialsteacher.com/csharp/csharp-enum) is a solid summary of enums.
 
-## Enum Format
+The values
 
+## Enum Format
+Enums are declared with the _enum_ keyword followed by the name of the enum and the list of values the enum has.
 
 ```C#
 enum EnumName
@@ -19,6 +21,7 @@ enum EnumName
 
 ## A Simple Enum
 
+
 ```C#
 enum Team
 {
@@ -30,6 +33,9 @@ enum Team
 ```
 
 ## Enum with Manually Assigned Values
+Each possible value of an enum is mapped to an integer constant that is always one greater than the last (starting at 0). If you assign the values manually, then the values 
+of the enum will take on said integer value. If you assign one value manually and do not assign the ones that follow it, then the following values will just follow the 
+pattern of adding one to the previous value.
 
 ```C#
 
