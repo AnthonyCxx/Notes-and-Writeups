@@ -3,4 +3,23 @@ An enumerated type (enum) is a user-defined type that can be one of a defined se
 programmers with a clear way of representing the possible states/values of an object. For example, a simple machine may have an enum defining its state with two simple values,
 'On' and 'Off'. Enums may be preferable to booleans because they can represent a number of states (as opposed to a boolean's two states) and do not imply a relationship between 
 some two states that a boolean would. By default, the first value of an enum is 0, the second is 1, the third is 2, and so on; however, this can be overwritten by manually 
-assigning the values inside of the enum declaration.
+assigning the values inside of the enum declaration. [Here](https://www.tutorialsteacher.com/csharp/csharp-enum) is a solid summary of enums.
+
+## Enum Format
+
+
+```C#
+
+```
+
+## A Simple Enum
+
+```C#
+
+```
+
+## Enum with Manually Assigned Values
+
+```C#
+
+```
