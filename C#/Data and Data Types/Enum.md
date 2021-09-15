@@ -46,3 +46,5 @@ enum Team
   Green            //Green == 14
 }
 ```
+
+## A Full Example
