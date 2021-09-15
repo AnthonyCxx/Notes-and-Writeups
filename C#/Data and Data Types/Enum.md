@@ -9,7 +9,12 @@ assigning the values inside of the enum declaration. [Here](https://www.tutorial
 
 
 ```C#
-
+enum enum_name
+{
+  Value1,
+  Value2,
+  Value3
+}
 ```
 
 ## A Simple Enum
