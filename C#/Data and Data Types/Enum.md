@@ -5,8 +5,6 @@ programmers with a clear way of representing the possible states/values of an ob
 some two states that a boolean would. By default, the first value of an enum is 0, the second is 1, the third is 2, and so on; however, this can be overwritten by manually 
 assigning the values inside of the enum declaration. [Here](https://www.tutorialsteacher.com/csharp/csharp-enum) is a solid summary of enums.
 
-The values
-
 ## Enum Format
 Enums are declared with the _enum_ keyword followed by the name of the enum and the list of values the enum has.
 
