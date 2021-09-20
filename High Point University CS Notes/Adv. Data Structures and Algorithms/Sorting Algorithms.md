@@ -1,4 +1,7 @@
 # Sorting Algorithms
+> By complexity: <br />
+> [O(n²)]() <br />
+> [O(n log n)]() <br />
 
 # O(n²) Complexity
 
@@ -9,7 +12,7 @@ Fastest when: <br />
 
 ```C++
 template <typename T>
-void Swap(T& a, T& b)
+void Swap(T& a, T& b)  //Cannot be 'swap' (lowercase) since it's a pre-defined function
 {
     T temp(move(a));
     a = move(b);
@@ -58,6 +61,8 @@ Fastest when: <br />
 ```C++
 
 ```
+
+# O(n log n) Complexity
 
 ## Merge Sort
 Time Complexity: O(n²) <br />
