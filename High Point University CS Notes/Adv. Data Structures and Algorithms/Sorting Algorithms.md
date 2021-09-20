@@ -1,6 +1,9 @@
 # Sorting Algorithms
 
 ## Exchange Sort
+Time Complexity: O() <br />
+Slowest when: <br />
+Fastest when: <br />
 
 ```C++
 template <typename T>
@@ -25,4 +28,29 @@ void exchangeSort(T array[], size_t size)
         }
     }
 }
+```
+
+## Selection Sort
+Time Complexity: O() <br />
+Slowest when: <br />
+Fastest when: <br />
+ 
+```C++
+
+```
+
+## Bubble Sort
+Time Complexity: O() <br />
+Slowest when: <br />
+Fastest when: <br />
+
+```C++
+
+```
+
+## Insertion Sort
+
+
+```C++
+
 ```
