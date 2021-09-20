@@ -19,6 +19,7 @@ void Swap(T& a, T& b)  //Cannot be 'swap' (lowercase) since it's a pre-defined f
     b = move(temp);
 }
 
+//Exchange sort
 template <typename T>
 void exchangeSort(T array[], size_t size)
 {
@@ -49,6 +50,7 @@ void Swap(T& a, T& b)
     b = move(temp);
 }
 
+//Selection sort
 template <typename T>
 void selectionSort(T array[], size_t size)
 {
@@ -115,7 +117,30 @@ Slowest when: <br />
 Fastest when: <br />
 
 ```C++
+//Insertion sort
+template <typename T>
+void insertionSort(T array[], size_t size)
+{
+    int key, iter;
 
+    //For every element in the array (beyond the first)
+    for(size_t i=1; i < size; ++i)
+    {
+        //Store the value of the current index in the key, and its predecessor in iter
+        key = array[i];
+        iter = i-1;
+
+        //Move all the elements between the key and its spot back by 1
+        while(key < array[iter] and iter >= 0)
+        {
+            array[iter + 1] = array[iter];
+            --iter;
+        }
+
+        //Assign the extracted value (the key) to its spot
+        array[iter+1] = key;
+    }
+}
 ```
 
 # O(n log n) Complexity
