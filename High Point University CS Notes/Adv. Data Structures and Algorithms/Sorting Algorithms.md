@@ -7,9 +7,6 @@
 
 ## Exchange Sort
 Time Complexity: O(n²) <br />
-Slowest when: <br />
-Fastest when: <br />
-
 ```C++
 template <typename T>
 void Swap(T& a, T& b)  //Cannot be 'swap' (lowercase) since it's a pre-defined function
@@ -38,8 +35,6 @@ void exchangeSort(T array[], size_t size)
 
 ## Selection Sort
 Time Complexity: O(n²) <br />
-Slowest when: <br />
-Fastest when: <br />
  
 ```C++
 template <typename T>
@@ -80,8 +75,6 @@ void selectionSort(T array[], size_t size)
 
 ## Bubble Sort
 Time Complexity: O(n²) <br />
-Slowest when: <br />
-Fastest when: <br />
 
 ```C++
 //Swap function
@@ -113,8 +106,6 @@ void bubbleSort(T array[], size_t size)
 
 ## Insertion Sort
 Time Complexity: O(n²) <br />
-Slowest when: <br />
-Fastest when: <br />
 
 ```C++
 //Insertion sort
@@ -147,5 +138,7 @@ void insertionSort(T array[], size_t size)
 
 ## Merge Sort
 Time Complexity: O(n²) <br />
-Slowest when: <br />
-Fastest when: <br />
+
+```C++
+
+```
