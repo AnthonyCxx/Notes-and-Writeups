@@ -55,7 +55,7 @@ void Swap(T& a, T& b)
 }
 
 template <typename T>
-void selectionSort(T* array, size_t size)
+void selectionSort(T array[], size_t size)
 {
     //To keep track of the smallest number in the array
     size_t min;
