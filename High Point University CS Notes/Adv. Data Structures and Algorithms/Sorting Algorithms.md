@@ -18,7 +18,7 @@ void Swap(T& a, T& b)  //Cannot be 'swap' (lowercase) since it's a pre-defined f
 
 //Exchange sort
 template <typename T>
-void exchangeSort(T array[], size_t size)
+void exchangeSort(T array[], const size_t size)
 {
     //For every element in the array
     for(size_t i=0; i < size-1; i++)
@@ -47,7 +47,7 @@ void Swap(T& a, T& b)
 
 //Selection sort
 template <typename T>
-void selectionSort(T array[], size_t size)
+void selectionSort(T array[], const size_t size)
 {
     //To keep track of the smallest number in the array
     size_t min;
@@ -88,7 +88,7 @@ void Swap(T& a, T& b)
 
 //Bubble sort
 template <typename T>
-void bubbleSort(T array[], size_t size)
+void bubbleSort(T array[], const size_t size)
 {
     //For each element in the array
     for(size_t i=0; i < size-1; ++i)
@@ -110,7 +110,7 @@ Time Complexity: O(n²) <br />
 ```C++
 //Insertion sort
 template <typename T>
-void insertionSort(T array[], size_t size)
+void insertionSort(T array[], const size_t size)
 {
     int key, iter;
 
