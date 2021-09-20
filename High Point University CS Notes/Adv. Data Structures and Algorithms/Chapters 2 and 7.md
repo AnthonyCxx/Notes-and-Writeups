@@ -12,7 +12,7 @@ the list.
 ```
 
 ### Insertion Sort
-- Time Complexity: O() <br />
+- Time Complexity: O(n^2) <br />
 [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/) makes a new set from the first element and ordinally inserts the other list's elements into the new set
 
 ```C++
@@ -20,7 +20,7 @@ the list.
 ```
 
 ### Bubble Sort
-- Time Complexity: O() <br />
+- Time Complexity: O(n^2) <br />
 - [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
 
 ```C++
