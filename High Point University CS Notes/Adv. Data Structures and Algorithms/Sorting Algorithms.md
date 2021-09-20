@@ -1,7 +1,9 @@
 # Sorting Algorithms
 
+# O(n²) Complexity
+
 ## Exchange Sort
-Time Complexity: O(n^2) <br />
+Time Complexity: O(n²) <br />
 Slowest when: <br />
 Fastest when: <br />
 
@@ -31,7 +33,7 @@ void exchangeSort(T array[], size_t size)
 ```
 
 ## Selection Sort
-Time Complexity: O(n^2) <br />
+Time Complexity: O(n²) <br />
 Slowest when: <br />
 Fastest when: <br />
  
@@ -40,7 +42,7 @@ Fastest when: <br />
 ```
 
 ## Bubble Sort
-Time Complexity: O(n^2) <br />
+Time Complexity: O(n²) <br />
 Slowest when: <br />
 Fastest when: <br />
 
@@ -49,10 +51,15 @@ Fastest when: <br />
 ```
 
 ## Insertion Sort
-Time Complexity: O(n^2) <br />
+Time Complexity: O(n²) <br />
 Slowest when: <br />
 Fastest when: <br />
 
 ```C++
 
 ```
+
+## Merge Sort
+Time Complexity: O(n²) <br />
+Slowest when: <br />
+Fastest when: <br />
