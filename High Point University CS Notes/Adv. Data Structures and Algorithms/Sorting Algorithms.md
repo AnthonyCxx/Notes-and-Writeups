@@ -41,11 +41,6 @@ Slowest when: <br />
 Fastest when: <br />
  
 ```C++
-#include <iostream>
-#include "RandomArray.hpp"
-using namespace std;
-
-//Swap function
 template <typename T>
 void Swap(T& a, T& b)
 {
