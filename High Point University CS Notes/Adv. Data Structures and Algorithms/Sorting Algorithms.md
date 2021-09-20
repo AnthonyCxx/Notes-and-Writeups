@@ -1,7 +1,7 @@
 # Sorting Algorithms
 > By complexity: <br />
-> [O(n²)]() <br />
-> [O(n log n)]() <br />
+> [O(n²)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/High%20Point%20University%20CS%20Notes/Adv.%20Data%20Structures%20and%20Algorithms/Sorting%20Algorithms.md#on-complexity) <br />
+> [O(n log n)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/High%20Point%20University%20CS%20Notes/Adv.%20Data%20Structures%20and%20Algorithms/Sorting%20Algorithms.md#on-log-n-complexity) <br />
 
 # O(n²) Complexity
 
