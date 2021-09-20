@@ -7,11 +7,11 @@ Fastest when: <br />
 
 ```C++
 template <typename T>
-void Swap(T& a, T& b)   //Cannot be 'swap' (lowercase) since it's a pre-defined function
+void Swap(T& a, T& b)
 {
-    T temp = a;
-    a = b;
-    b = temp;
+    T temp(move(a));
+    a = move(b);
+    b = move(temp);
 }
 
 template <typename T>
