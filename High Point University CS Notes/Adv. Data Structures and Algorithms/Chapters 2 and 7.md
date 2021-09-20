@@ -22,3 +22,13 @@ the list.
 ### Bubble Sort
 - Time Complexity: O() <br />
 - [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
+
+```C++
+for(int i=1; I < n; i++)
+{
+  for(int j=1; j < n-i; j++)
+  {
+    //...
+  }
+}
+```
