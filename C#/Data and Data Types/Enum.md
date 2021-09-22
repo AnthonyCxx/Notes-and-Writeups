@@ -46,7 +46,7 @@ enum Team
 }
 ```
 
-## Integer Casting
+## Casting between Enum and Integer Values
 To get the integer value from an enum, cast it appropriately. 
 
 ```C#
@@ -63,7 +63,11 @@ enum Days
 
 static void Main(string[] args)
 {
+  //Enum -> Integer
   Console.WriteLine($"The day {Days.Saturday} is the {Ordinal( (int) Days.Saturday + 1 )} day of the week");
+  
+  //Integer -> Enum
+  Console.WriteLine($"The 1st day of the week is {(Days) 0}");
 }
 
 static string Ordinal(int num)
