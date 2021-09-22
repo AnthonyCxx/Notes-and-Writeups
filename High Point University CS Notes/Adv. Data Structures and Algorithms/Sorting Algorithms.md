@@ -7,6 +7,8 @@
 
 ## Exchange Sort
 Time Complexity: O(n²) <br />
+
+For every element in the array, traverse every element in the array — swapping as you come across unordered elements. 
 ```C++
 template <typename T>
 void Swap(T& a, T& b)  //Cannot be 'swap' (lowercase) since it's a pre-defined function
