@@ -20,6 +20,7 @@ enum EnumName
 ## A Simple Enum
 Here is a simple enum called '_Team_' that contains the possible teams a player can be one, based on color.
 
+By default, using an enum like '_Team.Red_' will return the value as a string (e.g. 'Red').
 ```C#
 enum Team
 {
@@ -45,4 +46,23 @@ enum Team
 }
 ```
 
-## A Full Example
+## Integer Casting
+To get the integer value from an enum, cast it appropriately. 
+
+```C#
+enum Days
+{
+  Sunday,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday
+}
+
+static void Main(string[] args)
+{
+  Console.WriteLine($"{Days.Monday}: {(int) Days.Monday}");
+}
+```
