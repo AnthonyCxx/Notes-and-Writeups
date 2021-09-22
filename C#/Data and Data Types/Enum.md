@@ -63,7 +63,7 @@ enum Days
 
 static void Main(string[] args)
 {
-  Console.WriteLine($"The day {Days.Saturday} is the {Ordinal((int) Days.Saturday + 1)} day of the week");
+  Console.WriteLine($"The day {Days.Saturday} is the {Ordinal( (int) Days.Saturday + 1 )} day of the week");
 }
 
 static string Ordinal(int num)
