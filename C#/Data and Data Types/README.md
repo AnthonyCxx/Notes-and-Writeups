@@ -39,7 +39,7 @@ Technically, a string is a reference type, but I included it here too since it f
 | [Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Arrays.md) | a sequential collection of data of the same type |
 | [Enum](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Enum.md) | a user-defined type that takes on one of a set of values |
 | [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) |  |
-| Struct |  |
+| [Struct](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Structs.md) | a simple, value-type for storing related data |
 | Interface |  |
 | Record |  |
 | Delegate |  |
