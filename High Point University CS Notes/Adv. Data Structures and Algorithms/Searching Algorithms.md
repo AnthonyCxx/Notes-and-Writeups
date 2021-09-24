@@ -4,13 +4,13 @@
 
 ```C++
 template <typename T>
-bool seqSearch(T array[], T key, size_t size)
+size_t seqSearch(T array[], T key, size_t size)
 {
     //Iterate over the entire array
     for (size_t i=0; i < size; i++)
     {
         if (array[i] == key)  //If the key has been found
-            return true;
+            return i;
     }
 
     //If the array has been exhausted without success, return false
