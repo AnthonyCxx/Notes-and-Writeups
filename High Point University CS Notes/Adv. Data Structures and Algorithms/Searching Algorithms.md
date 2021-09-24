@@ -23,7 +23,7 @@ bool seqSearch(T array[], T key, size_t size)
 ```C++
 //Templated binary search using an iterative approach
 template <typename T>
-bool binarySearch(const T array[], const T searchVal, const size_t size) //Returns 'true' because '-1' is a valid search value
+size_t binarySearch(const T array[], const T searchVal, const size_t size)
 {
     //Initial points for left and right (and declaration of midpoint)
     size_t left = 0, right = size - 1;
@@ -37,7 +37,7 @@ bool binarySearch(const T array[], const T searchVal, const size_t size) //Retur
 
         //Search value found?
         if (array[middle] == searchVal)
-            return true;
+            return middle;
 
         //Otherwise cut in half again and start over
         else if (searchVal < array[middle])  //Discards the greater half
