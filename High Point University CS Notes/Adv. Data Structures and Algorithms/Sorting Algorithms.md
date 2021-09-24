@@ -139,8 +139,26 @@ void insertionSort(T array[], const size_t size)
 # O(n log n) Complexity
 
 ## Merge Sort
-Time Complexity: O(n²) <br />
+Time Complexity: O(n log n) <br />
 
 ```C++
 
+```
+
+## Quicksort
+Time Complexity: O(n log n) <br />
+
+Move 
+```C++
+void quciksort (index low, index high)
+{
+ index pivotpoint;
+ 
+  if (high > low)
+  {
+   partition(low, high, pivotpoint);
+   quicksort(low, pivotpoint - 1);
+   quicksort(pivotpoint + 1, high);
+  }
+}
 ```
