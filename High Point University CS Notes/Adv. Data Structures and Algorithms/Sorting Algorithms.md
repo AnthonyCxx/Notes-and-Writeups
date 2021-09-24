@@ -201,13 +201,14 @@ void merge(T array[], const size_t l, const size_t m, const size_t r)
       k++;
    }
 
-   while(i < size_left)       //extra element in left array
+   //Copy elements from the new sorted array into the main array
+   while(i < size_left)  
    {
       array[k] = left[i];
       i++;
       k++;
    }
-   while(j < size_right)     //extra element in right array
+   while(j < size_right)
    {
       array[k] = right[j];
       j++;
