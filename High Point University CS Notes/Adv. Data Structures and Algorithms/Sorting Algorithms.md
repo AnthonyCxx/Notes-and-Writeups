@@ -7,6 +7,9 @@
 
 ## Exchange Sort
 Time Complexity: O(n²) <br />
+Stable?: <br />
+Best Case: <br />
+Worst Case: <br />
  
 ```C++
 template <typename T>
@@ -36,6 +39,9 @@ void exchangeSort(T array[], const size_t size)
 
 ## Selection Sort
 Time Complexity: O(n²) <br />
+Stable?: <br />
+Best Case: <br />
+Worst Case: <br />
 
 ```C++
 template <typename T>
@@ -76,6 +82,10 @@ void selectionSort(T array[], const size_t size)
 
 ## Bubble Sort
 Time Complexity: O(n²) <br />
+Stable?: <br />
+Best Case: <br />
+Worst Case: <br />
+
  
 ```C++
 //Swap function
@@ -107,6 +117,9 @@ void bubbleSort(T array[], const size_t size)
 
 ## Insertion Sort
 Time Complexity: O(n²) <br />
+Stable?: <br />
+Best Case: <br />
+Worst Case: <br />
 
 Hah, insertion.
 ```C++
@@ -140,6 +153,9 @@ void insertionSort(T array[], const size_t size)
 
 ## Merge Sort
 Time Complexity: O(n log n) <br />
+Stable?: Yes <br />
+Best Case: <br />
+Worst Case: <br />
 
 ```C++
 
