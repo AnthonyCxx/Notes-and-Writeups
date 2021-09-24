@@ -147,8 +147,9 @@ Time Complexity: O(n log n) <br />
 
 ## Quicksort
 Time Complexity: O(n log n) <br />
+Worst Case: sorted or reveresed
 
-Move 
+Recursively divides and sorts two halves of an array based on a central 'pivot point'.
 ```C++
 //
 void partition(index low, index high, index& pivotpoint)
