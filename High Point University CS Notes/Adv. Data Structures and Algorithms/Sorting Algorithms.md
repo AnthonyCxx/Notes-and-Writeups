@@ -82,7 +82,7 @@ void selectionSort(T array[], const size_t size)
 
 ## Bubble Sort
 Time Complexity: O(n²) <br />
-Stable?: <br />
+Stable?: Yes <br />
 Best Case: <br />
 Worst Case: <br />
 
