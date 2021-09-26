@@ -127,7 +127,8 @@ Hah, insertion.
 template <typename T>
 void insertionSort(T array[], const size_t size)
 {
-    int key, iter;
+    T key; 
+    size_t iter;
 
     //For every element in the array (beyond the first)
     for(size_t i=1; i < size; ++i)
