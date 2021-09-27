@@ -1,5 +1,5 @@
 # Tuples in C#
-A tuple is a mutable data structure that contains two or literals or variables, which may be of different types. <br />
+A tuple is an immutable data structure that contains two or literals or variables, which may be of different types. <br />
 The most common use of a tuple is to [return multiple values from a function](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#use-cases-of-tuples).
 > [Mutable](https://www.merriam-webster.com/dictionary/mutable), opposite of _immutable_: abled to be changed (think _mut_- as in _mutate_)
 
