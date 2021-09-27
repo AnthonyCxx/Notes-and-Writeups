@@ -62,9 +62,9 @@ public double Speed
 }
 ``` 
 > Reference: [C# Documentation: => Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator) <br />
-> Reference: [What is the '=>' Operator?](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Classes/Classes.md#the--operator)  <br />
+> Reference: [What is the '=>' Operator?](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Classes.md#the--operator)  <br />
 > Reference: [C# Documentation: Value Keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) <br />
-> Reference: [What is the 'value' Keyword?](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Classes/Classes.md#the--operator) <br />
+> Reference: [What is the 'value' Keyword?](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Classes.md#the-value-keyword) <br />
 > Reference: [Contextual Examples of the 'value' Keyword](https://stackoverflow.com/questions/12019528/get-set-and-value-keyword-in-c-net) <br />
 
 ### _Get_ Property Accessor
