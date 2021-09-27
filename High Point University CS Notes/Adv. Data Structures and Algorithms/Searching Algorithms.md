@@ -59,14 +59,11 @@ size_t binarySearch(const T array[], const T searchVal, const size_t size)
 template <typename T>
 size_t binarySearch(const T array[], const size_t left, const size_t right, const T searchVal)
 {
-    //Initial points for left and right (and declaration of midpoint)
-    size_t middle = (left + right)/2;
-
     //Search loop (continues until list is exhausted)
     if (left <= right)
     {
         //Calculate the midpoint
-        middle = (left + right) / 2;    //Still integer division since 'size_t' is a special ULL
+        size_t middle = (left + right) / 2;    //Still integer division since 'size_t' is a special ULL
 
         //Search value found?
         if (array[middle] == searchVal)
