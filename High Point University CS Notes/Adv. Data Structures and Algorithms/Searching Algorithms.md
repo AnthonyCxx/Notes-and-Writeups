@@ -18,7 +18,7 @@ size_t seqSearch(T array[], T key, size_t size)
 }
 ```
 
-## Binary Search
+## Binary Search (Iterative)
 
 ```C++
 //Templated binary search using an iterative approach
@@ -48,6 +48,39 @@ size_t binarySearch(const T array[], const T searchVal, const size_t size)
     }
 
     //If list is exhausted without finding the value, then return false
-    return false;
+    return -1;
+}
+```
+
+## Binary Search (Recursive)
+
+```C++
+//Templated binary search using a recursive approach
+template <typename T>
+size_t binarySearch(const T array[], const size_t left, const size_t right, const T searchVal)
+{
+    //Initial points for left and right (and declaration of midpoint)
+    size_t middle = (left + right)/2;
+
+    //Search loop (continues until list is exhausted)
+    if (left <= right)
+    {
+        //Calculate the midpoint
+        middle = (left + right) / 2;    //Still integer division since 'size_t' is a special ULL
+
+        //Search value found?
+        if (array[middle] == searchVal)
+            return middle;
+
+        //Otherwise cut in half again and start over
+        else if (searchVal < array[middle])  //Discards the greater half
+            return binarySearch<T>(array, left, middle - 1, searchVal);
+
+        else if (searchVal > array[middle])  //Discards the smaller half
+            return  binarySearch<T>(array, middle + 1, right, searchVal);
+    }
+
+    //If list is exhausted without finding the value, then return false
+    return -1;
 }
 ```
