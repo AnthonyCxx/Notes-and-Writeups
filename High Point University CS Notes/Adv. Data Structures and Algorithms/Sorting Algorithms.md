@@ -13,7 +13,7 @@ Worst Case: <br />
  
 ```C++
 template <typename T>
-void Swap(T& a, T& b)  //Cannot be 'swap' (lowercase) since it's a pre-defined function
+void Swap(T& a, T& b) noexcept  //Cannot be 'swap' (lowercase) since it's a pre-defined function
 {
     T temp(move(a));
     a = move(b);
@@ -45,7 +45,7 @@ Worst Case: <br />
 
 ```C++
 template <typename T>
-void Swap(T& a, T& b)
+void Swap(T& a, T& b) noexcept
 {
     T temp(move(a));
     a = move(b);
@@ -90,7 +90,7 @@ Worst Case: <br />
 ```C++
 //Swap function
 template <typename T>
-void Swap(T& a, T& b)
+void Swap(T& a, T& b) noexcept
 {
     T temp(move(a));
     a = move(b);
