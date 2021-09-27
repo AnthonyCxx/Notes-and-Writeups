@@ -226,7 +226,7 @@ The _.Contains(**_string_**)_ method returns true if the string contains the giv
 ```C#
 string text = "This is an advertisement so you buy our product; I sure hope you don't use custom software to block it using keywords.";
 
-if ( text.Contains("buy") )
+if (text.Contains("buy"))
 {
   Console.WriteLine("Yeah, it's an advertisement.");
 }
