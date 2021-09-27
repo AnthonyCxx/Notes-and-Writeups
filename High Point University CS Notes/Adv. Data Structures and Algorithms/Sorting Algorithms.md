@@ -243,39 +243,53 @@ Worst Case: sorted or reveresed
 
 Recursively divides and sorts two halves of an array based on a central 'pivot point'.
 ```C++
-//
-void partition(index low, index high, index& pivotpoint)
+//Swap function
+template <typename T>
+void Swap(T& a, T& b) noexcept
 {
- index i, j;
- keytype pivotitem;
- 
- pivotitem = S[low];
- j = low;
- 
- for(i = low+1; i <= high; i++)
- {
-   if (S[i] < pivotitem)
-   {
-    j++;
-    swap(S[i], S[j]);
-   }
- }
- 
- pivotpoint = j;
- swap(S[low], S[pivotpoint]);
+    T temp(move(a));
+    a = move(b);
+    b = move(temp);
+}
+
+
+//Declare a pivot point -- put all smaller values before it and all larger values after it
+template <typename T>
+void partition(T array[], const size_t beg, const size_t end, size_t& pivotpoint)
+{
+    //Pivotitem = given element, j = given index
+    T pivotitem = array[beg];
+    size_t j = beg;
+
+    //Iterate over all the following elements
+    for(size_t i=beg+1; i <= end; i++)
+    {
+        //If the current element is less than the pivotitem
+        if (array[i] < pivotitem)
+        {
+            //Increment j and swap the current elements
+            j++;
+            Swap<T>(array[i], array[j]);
+        }
+    }
+
+    //Swap pivotpoint (now j) and the given index
+    pivotpoint = j;
+    Swap(array[beg], array[pivotpoint]);
 }
 
 
 //Quicksort
-void quicksort (index low, index high)
+template <typename T>
+void quickSort(T array[], const size_t beg, const size_t end)
 {
- index pivotpoint;
- 
-  if (high > low)
-  {
-   partition(low, high, pivotpoint);
-   quicksort(low, pivotpoint - 1);
-   quicksort(pivotpoint + 1, high);
-  }
+    size_t pivotpoint;
+
+    if (beg < end)
+    {
+        partition<T>(array, beg, end, pivotpoint);
+        quickSort<T>(array, beg, pivotpoint-1);
+        quickSort<T>(array, pivotpoint+1, end);
+    }
 }
 ```
