@@ -38,6 +38,8 @@ dotnet run HelloWorld
 ```
 
 ## Publishing the Project
+Publishing a project contains a [self-contained executable](https://gunnarpeipman.com/dotnet-core-self-contained-executable/) that can be run on a specific OS and CPU combo
+without needing to install .NET Core (for example, x86-64 Windows).
 ```
 //Format
 dotnet public -r <RID> -p:PublishSingleFile=true --self-contained true
