@@ -3,6 +3,7 @@ Classes are the heart of C# as it is a pure object-oriented language. A class is
 Classes are meant to mimic some concrete object or abstract idea.
 
 | File | Description | 
+| ---- | ----------- |
 |  |  |
 |  |  |
 |  |  |
