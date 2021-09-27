@@ -23,7 +23,7 @@ class ClassName
 
 # Fields
 A field is a data member of a class. Data members are almost always private (only accessible internally) and are always denoted with a prepended underscore when private. For 
-reference, _private_ is a sort of [access modifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/ObjectOrientedProgramming/AccessModifiers.md).
+reference, _private_ is a sort of [access modifier](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Access%20Modifiers.md).
 ```C#
 class HouseAddress
 {
