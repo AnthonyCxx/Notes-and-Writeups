@@ -140,3 +140,32 @@ int main()
   return 0;
 }
 ```
+
+## Named Array Indices
+Using a union with variables and an array of the same type will allow you to refer to either the array by index or the individual variable. This is because of how
+memory lines up in the computer.
+
+The following example is from Miro Knejp's [CppCon 2019: Non-conforming C++](https://www.youtube.com/watch?v=IAdLwUXRUvg).
+```C++
+union vec4
+{
+    float array[4];
+
+    struct
+    {
+        float a, b, c, d;
+    };
+};
+
+int main()
+{
+    auto v = vec4{};
+    v.a = 5;
+    v.b = 6;
+
+    cout << v.array[0] << '\n';   // == 5 (v.a)
+    cout << v.array[1] << '\n';  //  == 6 (v.b)
+
+    return 0;
+}
+```
