@@ -207,7 +207,7 @@ int main(void)
 > You can buy a medium health potion. <br />
 > You can buy a small health potion.  <br />
 
-## The Ternary Operator (? :)
+## The Ternary Operator (a ? b : c)
 The ternary operator (as opposed to binary or unary operators) takes a condition and evaluates it; if the condition is true, it returns the first expression; if not,
 it returns the second expression. Think of the ternary operator as a simplified version of a standard _if_-_else_ conditional structure.
 
@@ -233,3 +233,15 @@ int main()
 ```
 > Prints "Pi is greater than the square root of 5", as 3.14 is greater than 2.24
 
+## The Elvis Operator (a ?: b)
+[The Elvis operator](https://en.wikipedia.org/wiki/Elvis_operator) is a non-standard GCC extension that allows you to write `a ? a : b` without having to repeatedly evaluate
+`a`, which is especially useful when evaluating `a` is expensive (if it were a large functions, let's say).
+
+```C++
+int array[5] {1, 2, 3, 4, 5};
+
+    bool loc = (binarySearch(array, SIZE(array), 10) != -1 ?: false);
+
+    if (loc)
+        cout << "Loc is nullptr :(\n";
+```
