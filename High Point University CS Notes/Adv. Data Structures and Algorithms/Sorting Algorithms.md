@@ -239,7 +239,9 @@ void mergeSort(T array[], const size_t l, const size_t r)
 
 ## Quicksort
 Time Complexity: O(n log n) <br />
-Worst Case: sorted or reveresed
+Stable?: <br />
+Worst Case: sorted or reveresed <br />
+Best Case: Randomized <br />
 
 Recursively divides and sorts two halves of an array based on a central 'pivot point'.
 ```C++
