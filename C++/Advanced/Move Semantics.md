@@ -377,10 +377,8 @@ and then try to copy that deleted data, which can be fatal, especially when deal
 Despite move semantics seeming somewhat arcane and circumstantial, they can also be used to write better code any time you need to move resources. 
 For example, you could use move semantics to write a more efficient _swap()_ function (credit: [_Marek Polacek, Red Hat Developer_](https://developers.redhat.com/blog/2019/04/12/understanding-when-not-to-stdmove-in-c)).
 
+**WARNING**: do not use move semantics with [PODs](https://www.cs.technion.ac.il/users/yechiel/c++-faq/pod-types.html) (basic datatypes like _int_ or a simple user-defined types like structs); PODs do not have pointers nor 'resources', so there is nothing to move.
 ```C++
-#include <iostream>
-using namespace std;
-
 template <typename T>
 void Swap(T& a, T& b)     //Two variable 'a' and 'b' of type 'T&'
 {
@@ -388,22 +386,6 @@ void Swap(T& a, T& b)     //Two variable 'a' and 'b' of type 'T&'
     T temp(move(a));
     a = move(b);
     b = move(temp);
-}
-
-int main()
-{
-    int a = 10, b = 20;
-
-    //Before
-    cout << "BEFORE Swap: a = " << a << ", b = " << b << '\n';
-
-    //Swap
-    Swap<int>(a, b);
-
-    //After
-    cout << "AFTER Swap: a = " << a << ", b = " << b << '\n';
-
-    return 0;
 }
 ```
 
