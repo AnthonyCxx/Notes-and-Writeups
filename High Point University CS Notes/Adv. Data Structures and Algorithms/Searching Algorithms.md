@@ -47,7 +47,7 @@ size_t binarySearch(const T array[], const T searchVal, const size_t size)
             left = middle + 1;
     }
 
-    //If list is exhausted without finding the value, then return false
+    //If list is exhausted without finding the value, then return -1
     return -1;
 }
 ```
