@@ -105,7 +105,7 @@ void bubbleSort(T array[], const size_t size)
     for(size_t i=0; i < size-1; ++i)
     {
         //Loop over each element in the array (starting at the beginning!)
-        for(size_t j=0; j < size; ++j)
+        for(size_t j=0; j < size-1; ++j)
         {
             //If you following element is smaller than the current, swap them
             if (array[j] > array[j + 1])
