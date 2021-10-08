@@ -240,8 +240,8 @@ int main()
 ```C++
 int array[5] {1, 2, 3, 4, 5};
 
-bool loc = (binarySearch(array, SIZE(array), 10) != -1 ?: false);
+int* loc = (binarySearch(array, SIZE(array), 10) != nullptr ?: nullptr);
 
-if (loc)
-    cout << "Loc is nullptr :(\n";
+if (loc == nullptr)
+    cout << "The given index did not exist :(\n";
 ```
