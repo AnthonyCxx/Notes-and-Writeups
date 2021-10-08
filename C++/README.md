@@ -55,9 +55,12 @@ Trick: [_The ''Clockwise/Spiral Rule''_](http://c-faq.com/decl/spiral.anderson.h
 [_Software Architecture with C++_](https://www.amazon.com/Software-Architecture-effective-architecture-techniques/dp/1838554599) <br />
 
 ## Free Tutorials and Resources
+[_JavaTPoint C++ Tutorial_](https://www.javatpoint.com/cpp-tutorial) <br />
+[_W3Schools C++ Tutorial_](https://www.w3schools.com/CPP/default.asp) <br />
+[_TutorialsPoint C++ Tutorial_](https://www.tutorialspoint.com/cplusplus/index.htm) <br />
+[_The Cherno's C++ Tutorial Series_](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) <br />
 [C++ Secrets](https://cppsecrets.com/index.php) <br />
 [_SO Documentation_](https://sodocumentation.net/cplusplus) <br />
-[_The Cherno's C++ Tutorial Series_](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) <br />
 [_CPPCon 2020: Back to the Basics Playlist_](https://www.youtube.com/watch?v=ZAji7PkXaKY&list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e) <br />
 [_Google C++ Style Guide_](https://google.github.io/styleguide/cppguide.html) <br />
 
