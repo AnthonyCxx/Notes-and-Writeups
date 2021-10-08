@@ -152,7 +152,7 @@ int main()
 > References: [_LearnToProgram: Type Compatibility_](http://learntoprogramming.com/type-compatibility) and [_cplusplus.com: Type Conversions_](https://www.cplusplus.com/doc/tutorial/typecasting/) 
 
 ## Function Overloading
-C++ is an object-oriented language, so it supports [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/). One of the major ways C++ support the object-oriented
+C++ is an object-oriented language, so it supports [polymorphism](https://www.geeksforgeeks.org/polymorphism-in-c/). One of the major ways C++ supports the object-oriented
 programming paradigm is through function overloading (the others being operator overloading and virtual functions). Function overloading allows two functions to share
 the same name and yet remain entirely distinct; the way the compiler can differentiate between functions is by the amount of parameters and/or their type, so you cannot
 having two different functions that only differ in return type will not work ([reference](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm#:~:text=Function%20Overloading%20in%20C%2B%2B,differ%20only%20by%20return%20type.)).
