@@ -13,7 +13,7 @@ class ClassName:
 > Replace _pass_ with the body of the class.
 
 ### Example
-For more on the _\_\_init\_\__ method, see the [here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#constructors-__init__).
+For more on the _\_\_init\_\__ method, see the [here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Python/Object-oriented%20Programming/Classes.md#constructor-__init__).
 
 ```Python
 class Location:
