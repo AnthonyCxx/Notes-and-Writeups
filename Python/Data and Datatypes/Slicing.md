@@ -63,7 +63,7 @@ print(nums[0:10:3]) # [0, 3, 6, 9]
 ```
 
 ## Negative Steps
-Providing a negative step will cause the slice to iterate backwards. <br />
+Providing a negative step will cause the slice to iterate backwards.
 I have no idea how this works.
 
 ```Python
