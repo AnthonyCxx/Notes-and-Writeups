@@ -1,5 +1,5 @@
 # Dunder Methods in Python
-Dunder methods (_dunder_ == 'double underscore') are special methods that can be used to enhance your classes. Dunder methods are prefixed and postfixed by two underscores
+Dunder methods (_dunder_ meaning 'double underscore') are special methods that can be used to enhance your classes. Dunder methods are prefixed and postfixed by two underscores
 and their functionality covers everything from constructors to operator overloading. This list is not comprehensive.
 
 [Here](https://levelup.gitconnected.com/python-dunder-methods-ea98ceabad15) is the only comprehensive article I've found on dunder methods and [here](https://dbader.org/blog/python-dunder-methods) is a summary of it.
