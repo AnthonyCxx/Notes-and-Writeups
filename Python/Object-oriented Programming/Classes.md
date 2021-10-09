@@ -67,8 +67,8 @@ def main():
     # Change the name of the location for ALL instances of the 'Location' class
     Location.address = "221B Baker St."
     
-    print(home.address)
-    print(school.address)
+    print(home.address)    # Address is now "221B Baker St."
+    print(school.address)  # Address is now "221B Baker St."
     
 main()
 ```
