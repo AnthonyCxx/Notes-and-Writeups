@@ -15,6 +15,8 @@ the `swap()` function that works with integers. The very idea of templates is th
 So, if you never call `swap<char>(a, b)`, then the _char_ version of the swap function does not exist because it was never created.
 
 ## Templates Functions
+When writing a templated function, you preface the function declaration with `template <typename T>` and then you are free to use 'T' wherever you want — as a variable type,
+as the return type, as a parameter type, etc.
 
 ```C++
 //A simple program to swap A and B using templates.
