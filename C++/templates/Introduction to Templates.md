@@ -56,6 +56,93 @@ int main()
 
 ## Templated Classes
 
-```C++
+## Templated Classes
+An example of a templated class. Templates provide a safer alternative to using [void pointers to achieve polymorphism](https://riptutorial.com/c/example/17747/polymorphic-behaviour-with-void-pointers), as you would do in C. If you make your class templated, then all the methods must also be templated and you have to put `ClassName<T>::` as the 
+prefix instead of just `ClassName::` as your normally would.
 
+This example is a simple array class, based on the [_array_ class](https://www.cplusplus.com/reference/array/array/) from the C++ Standard Template Library.
+```C++
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+// ARRAY CLASS //
+template <typename T>
+class Array
+{
+    private:
+        //Data members
+        T* array;     //Array Pointer
+        size_t size;
+
+    public:
+        //Functions
+        Array(const size_t);
+        ~Array();
+        void fill(const T);
+        void print() const;
+
+        //Overloaded Operators
+        T& operator[](int) const;
+};
+
+//Constructor
+template <typename T>
+Array<T>::Array(const size_t Size)
+{
+    size = Size;
+    
+    //Declare a new array of whatever type was given
+    array = new T[size];
+}
+
+//Destructor
+template <typename T>
+Array<T>::~Array()
+{
+    //Free the array
+    delete [] array;
+}
+
+//Fill: initialize the array
+template <typename T>
+void Array<T>::fill(const T value)
+{
+    for(int i=0; i < size; i++)
+    {
+        array[i] = value;
+    }
+}
+
+//Print: print the array
+template <typename T>
+void Array<T>::print() const
+{
+    for(int i=0; i < size; i++)
+    {
+        //Print comma-separated indices
+        cout << array[i] << (i != size-1 ? ", " : "");
+    }
+    cout << '\n';
+}
+
+//[] Overload: element access
+template <typename T>
+T& Array<T>::operator[](int index) const  //Return array index by reference so you can assign (and alter) it
+{
+    return array[index];
+}
+
+
+// DRIVER CODE //
+int main()
+{
+    //An array of 10 doubles
+    Array<double> arr(10);
+    arr.fill(3.14);
+    arr.print();
+
+    return 0;
+}
 ```
+> Prints: 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14, 3.14
