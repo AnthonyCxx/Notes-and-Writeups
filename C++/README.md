@@ -21,7 +21,7 @@ This is **NOT** comprehensive; explore them individual folders on your own. <br 
 
 ### Itermediate
 - [Object-Oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Object-Oriented%20Programming)
-- [Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Templates.md)
+- [Templates](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/templates)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
 - [Pointers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Pointers.md)
 - [Using Dynamic Memory](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
