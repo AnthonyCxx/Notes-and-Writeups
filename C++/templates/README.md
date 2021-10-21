@@ -5,6 +5,7 @@ C# and Java's generics. Once you get really deep into it, you'll start exploring
 Long story short: templates are powerful, but also very dangerous and many people are either starkly for or against templates.
 
 | File | Explanation |
+| ---- | ----------- |
 | []() |  |
 | []() |  |
 | []() |  |
