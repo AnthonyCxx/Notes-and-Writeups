@@ -5,8 +5,8 @@ so why write five different overloads of the same exact function when the only d
 with any datatype, saving you plenty of time that you would have spent overloading functions. 
 
 To make a function a template, add `template <typename T>` before the return type,
-where '_T_' is the name of the datatype of the variable that is subject to change. The name '_T_' is entirely arbitrary — you can name the type whatever you want, but '_T_'
-is generally used because it's short and makes sense (since '_T_' is short for type). '_T_' is so common that some languages like C# mandate it as the indicator of 
+where '_T_' is the name of the datatype of the variable that is subject to change. The name 'T' is entirely arbitrary — you can name the type whatever you want, but 'T'
+is generally used because it's short and makes sense (since 'T' is short for type). 'T' is so common that some languages like C# mandate it as the indicator of 
 generic type. When using a templated function/class, you should specifiy the datatype by putting the type in angled brackets after the name of the function/class
 (e.g. `void swap<int>(a, b)`). You can leave the compiler to imply the datatypes, but including the type helps code readability.
 
