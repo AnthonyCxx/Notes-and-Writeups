@@ -53,8 +53,11 @@ int main()
     return 0;
 }
 ```
-
-## Templated Classes
+> Prints: <br />
+> ints A and B BEFORE swap: 10, 20 <br />
+> chars A and B BEFORE swap: A, Z <br />
+> ints A and B AFTER swap: 20, 10 <br />
+> chars A and B AFTER swap: Z, A <br />
 
 ## Templated Classes
 An example of a templated class. Templates provide a safer alternative to using [void pointers to achieve polymorphism](https://riptutorial.com/c/example/17747/polymorphic-behaviour-with-void-pointers), as you would do in C. If you make your class templated, then all the methods must also be templated and you have to put `ClassName<T>::` as the 
