@@ -65,7 +65,8 @@ int main()
 An example of a templated class. Templates provide a safer alternative to using [void pointers to achieve polymorphism](https://riptutorial.com/c/example/17747/polymorphic-behaviour-with-void-pointers), as you would do in C. If you make your class templated, then all the methods must also be templated and you have to put `ClassName<T>::` as the 
 prefix instead of just `ClassName::` as your normally would.
 
-This example is a simple array class, based on the [_array_ class](https://www.cplusplus.com/reference/array/array/) from the C++ Standard Template Library.
+This example is a really poorly implemented array class, based on the [_array_ class](https://www.cplusplus.com/reference/array/array/) from the C++ Standard Template Library.
+It's simple so you can better understand how to use templates with classes.
 ```C++
 #include <iostream>
 #include <iomanip>
