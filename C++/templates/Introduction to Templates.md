@@ -10,8 +10,9 @@ is generally used because it's short and makes sense (since 'T' is short for typ
 generic type. When using a templated function/class, you should specifiy the datatype by putting the type in angled brackets after the name of the function/class
 (e.g. `void swap<int>(a, b)`). You can leave the compiler to imply the datatypes, but including the type helps code readability.
 
-Interestingly enough, the type-specific versions of templated function/class do not exist until used in the program, which is when the compiler creates them. 
-This means that by creating a template, you are effectively programming the compiler itself. Neat.
+When you use a template like `swap<int>(a, b)`, it's not calling a type-generic version of the function. What's actually happening is the compiler is creating a version of 
+the `swap()` function that works with integers. The very idea of templates is that you give the compiler a template and it generates the appropriate functions that you need.
+So, if you never call `swap<char>(a, b)`, then the _char_ version of the swap function does not exist because it was never created.
 
 ## Templates Functions
 
