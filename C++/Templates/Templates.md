@@ -103,14 +103,14 @@ that has a special case for strings that includes a space between each of the st
 using namespace std;
 
 //Generic add function
-template <typename T>
+template <typename T> 
 T add(T a, T b)
 {
     return a + b;
 }
 
 //Template specialization: 'string' version includes and extra space
-template <>
+template <>                       // <== NECESSARY
 string add(string a, string b)
 {
     return a + " " + b;
