@@ -296,11 +296,12 @@ the return type would be deduced to be the datatype of the product of _a_ and _b
 
 //Templated function 'multiply' takes two arguments of different types
 template <typename T1, typename T2>
-auto multiply(const T1& a, const T2& b) -> decltype(a * b)   //Return type is determined by the datatype of the product of 'a' and 'b'
+auto multiply(const T1& a, const T2& b) -> decltype(a * b)   //Trailing return type, requires return type 'auto'
 {
     return a * b;
 }
 ```
+> [_What is decltype()?_](https://docs.microsoft.com/en-us/cpp/cpp/decltype-cpp?view=msvc-160)
 
 ## Sources
 CPPCon 2014: [_Scott Meyers: "Type Deduction and Why You Care"_](https://www.youtube.com/watch?v=wQxj20X-tIU) <br />
