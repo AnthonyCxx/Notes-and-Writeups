@@ -6,7 +6,7 @@ Long story short: templates are powerful, but also very dangerous and many peopl
 
 | File | Explanation |
 | ---- | ----------- |
-| []() |  |
+| [Introduction to Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Introduction%20to%20Templates.md) | explanation of templates and how to use them for functions and classes |
 | []() |  |
 | []() |  |
 | []() |  |
