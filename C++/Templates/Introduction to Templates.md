@@ -288,7 +288,7 @@ with all numeric types ([_std::is\_arithmetic()_](https://en.cppreference.com/w/
 ## Proper Return Type Deduction for Templates with Different Types
 Let's say you have a templated function called _multiply()_, which takes two numbers of different types _T1_ and _T2_ and returns their product. What would the return type be?
 Would it be _T1_? But what if the product was a double and _T1_ were an integer? It would truncate the result. To avoid this problem, you can use _auto_ as the return type,
-which makes the compiler determine the return type. To specify the rules for determining the return type during deduction, you can use [trailing return types](https://www.ibm.com/docs/en/zos/2.1.0?topic=declarators-trailing-return-type-c11), which were introducted in C++11. For example, if you wrote `-> decltype(a*b)`, then
+which makes the compiler determine the return type. If you want to specify rules for determining the return type during deduction instead of leaving it to be deduced by the datatype of the return statement, you can use [trailing return types](https://www.ibm.com/docs/en/zos/2.1.0?topic=declarators-trailing-return-type-c11), which were introducted in C++11. For example, if you wrote `-> decltype(a*b)`, then
 the return type would be deduced to be the datatype of the product of _a_ and _b_.
 
 ```C++
