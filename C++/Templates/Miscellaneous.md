@@ -25,6 +25,32 @@ auto multiply(const T1& a, const T2& b) -> decltype(a*b)   //Trailing return typ
 
 ## Template Type-deduction Guides for Classes
 
+```C++
+#include <iostream>
+#include <type_traits>
+
+template <typename T>
+class Container
+{
+    private:
+        T data;
+
+    public:
+        //Simple constructor using initialization list
+        Container(T param): data(param) {}; 
+};
+
+//Type deduction guide -- constructor will consider arguments to be 'std::string' when given 'const char*'
+Container(const char*) -> Container<std::string>;
+
+int main()
+{
+    //'T' would normally be 'const char*' since it's a string literal, but now it's 'std::string'
+    Container dummy_var("this object will be of type std::string because of deduction guides");
+
+    return 0;
+}
+```
 
 ## Sources
 Medium: [C++ 17 Class Templates: CTAD and Type Deduction Guide](https://medium.com/codex/c-17-class-templates-ctad-and-type-deduction-934d9cf5f529) <br />
