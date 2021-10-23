@@ -2,6 +2,54 @@
 Templates can be specialized such that they can only be used for certain types, making them safer. For example, if I wrote a function _divide()_, I would want it to work
 with all numeric types ([_std::is\_arithmetic()_](https://en.cppreference.com/w/cpp/types/is_arithmetic)), but not string literals. To
 
+## Using Non-datatype as Template Arguments
+Remember when I said that templates are more than just generics? Well, here's a reason why: a template argument can be something other than a datatype. If you've ever used
+a container from the standard template library ([STL containers](https://www.cplusplus.com/reference/stl/)) like _std::array_, then you've seen that you can use a template
+argument to indicate the size of a data structure. Here, the size of the _List_ class is a _std::size\_t_ variable called _N_, which is a letter often used to represent
+the size of a collection of items in computer science.
+
+```C++
+#include <iostream>
+#include <vector>
+#include <initializer_list>
+
+
+template <typename T, std::size_t N>
+class List
+{
+    private:
+        std::vector<T> data;
+
+    public:
+        //Constructor using an initializer_list
+        constexpr List(std::initializer_list<T> elems): data(elems)
+        {
+            //Empty!
+        }
+
+        //Compile-time function: fills the array with a given value
+        constexpr void fill(T value) noexcept
+        {
+            for(size_t i=0; i < N; ++i)
+            {
+                data[i] = value;
+            }
+        }
+};
+
+
+int main()
+{
+    //Initialize list with std::initializer_list
+    List<int, 5> list {1, 2, 3, 4, 5};
+
+    list.fill(10);
+
+    return 0;
+}
+```
+> Reference: [_What is size\_t?_](https://en.cppreference.com/w/cpp/types/size_t)
+
 ## Proper Return Type Deduction for Templates with Different Types
 Let's say you have a templated function called _multiply()_, which takes two numbers of different types _T1_ and _T2_ and returns their product. What would the return type be?
 Would it be _T1_? But what if the product was a double and _T1_ were an integer? It would truncate the result. To avoid this problem, you can use _auto_ as the return type,
