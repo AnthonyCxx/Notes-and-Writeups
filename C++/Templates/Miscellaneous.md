@@ -8,7 +8,7 @@ a container from the standard template library ([STL containers](https://www.cpl
 argument to indicate the size of a data structure. Here, the size of the _List_ class is a _std::size\_t_ variable called _N_, which is a letter often used to represent
 the size of a collection of items in computer science.
 
-This is just one of many things that you could use aside from a datatype; you can make virtually anything a template parameter.
+This is just one of many things that you could use aside from a datatype; you can do a lot with non-template type parameters (compile-time recursive Fibonacci sequence using structs, anyone?).
 ```C++
 #include <iostream>
 #include <vector>
