@@ -24,7 +24,10 @@ auto multiply(const T1& a, const T2& b) -> decltype(a*b)   //Trailing return typ
 > [Why did I write _typename std::decay\<T\>_ instead of just std::decay\<T\>?](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) <br />
 
 ## Template Type-deduction Guides for Classes
+With C++17 came [class template argument deduction](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction) (CTAD)
 
+Note: from testing, I noticed that it doesn't warn you if you accidentally compile with C++14 or before; instead, you just get a generic compilation error. Please remember
+to compile with C++17 when using CTAD.
 ```C++
 #include <iostream>
 
