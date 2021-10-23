@@ -19,4 +19,6 @@ auto multiply(const T1& a, const T2& b) -> decltype(a*b)   //Trailing return typ
     return a*b;
 }
 ```
-> [_What is decltype()?_](https://docs.microsoft.com/en-us/cpp/cpp/decltype-cpp?view=msvc-160)
+> [_What is decltype()?_](https://docs.microsoft.com/en-us/cpp/cpp/decltype-cpp?view=msvc-160) <br />
+> [_What is std::decay\<T\> and When Should I use It?_](https://newbedev.com/what-is-std-decay-and-when-it-should-be-used) <br />
+> [Why did I write _typename std::decay\<T\>_ instead of just std::decay\<T\>?](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) <br />
