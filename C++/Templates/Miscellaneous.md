@@ -24,7 +24,9 @@ auto multiply(const T1& a, const T2& b) -> decltype(a*b)   //Trailing return typ
 > [Why did I write _typename std::decay\<T\>_ instead of just std::decay\<T\>?](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) <br />
 
 ## Template Type-deduction Guides for Classes
-With C++17 came [class template argument deduction](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction) (CTAD)
+With C++17 came [class template argument deduction](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction) (CTAD), which allow you to guide how the
+compiler deduces the datatype of a class. In this example (which was practically taken straight from isocpp.org), the compiler uses the type _std::string_ whenever
+it encounters a _const char\*_ (a string literal). In all reality, you could have just used `"Hello, world!"s` (the [""s string literal suffix](https://en.cppreference.com/w/cpp/string/basic_string/operator%22%22s)).
 
 Note: from testing, I noticed that it doesn't warn you if you accidentally compile with C++14 or before; instead, you just get a generic compilation error. Please remember
 to compile with C++17 when using CTAD.
