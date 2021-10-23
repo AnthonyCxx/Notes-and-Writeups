@@ -27,7 +27,6 @@ auto multiply(const T1& a, const T2& b) -> decltype(a*b)   //Trailing return typ
 
 ```C++
 #include <iostream>
-#include <type_traits>
 
 template <typename T>
 class Container
