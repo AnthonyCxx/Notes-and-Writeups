@@ -22,3 +22,11 @@ auto multiply(const T1& a, const T2& b) -> decltype(a*b)   //Trailing return typ
 > [_What is decltype()?_](https://docs.microsoft.com/en-us/cpp/cpp/decltype-cpp?view=msvc-160) <br />
 > [_What is std::decay\<T\> and When Should I use It?_](https://newbedev.com/what-is-std-decay-and-when-it-should-be-used) <br />
 > [Why did I write _typename std::decay\<T\>_ instead of just std::decay\<T\>?](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) <br />
+
+## Template Type-deduction Guides for Classes
+
+
+## Sources
+Medium: [C++ 17 Class Templates: CTAD and Type Deduction Guide](https://medium.com/codex/c-17-class-templates-ctad-and-type-deduction-934d9cf5f529) <br />
+cppreference: [Class template argument deduction (CTAD)](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction) <br />
+isocpp.org: [Quick Q: What are template deduction guides in C++17?](https://isocpp.org/blog/2017/09/quick-q-what-are-template-deduction-guides-in-cpp17) <br />
