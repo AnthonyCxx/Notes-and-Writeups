@@ -7,6 +7,6 @@ Long story short: templates are powerful, but also very dangerous and many peopl
 | File | Explanation |
 | ---- | ----------- |
 | [Introduction to Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Introduction%20to%20Templates.md) | explanation of templates and how to use them for functions and classes |
-| [More Information on Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Miscellaneous.md) | ... |
+| [Default Template Arguments and Controlling Type Deduction](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Miscellaneous.md) | some more cool stuff you can do with templates |
 | [Variadic Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Variadic%20Functions.md#variadic-templates-c11) | templates that can take a varying amount of arguments  |
 | []() |  |
