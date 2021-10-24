@@ -182,7 +182,7 @@ int main()
 ```
 
 ### _sizeof...()_
-The _sizeof...()_ operator returns how many arguments the fold expression accepted. Here, it's used to find the average of the paramters.
+The _sizeof...()_ operator returns how many arguments the fold expression accepted. Here, it's used to find the average of the parameters.
 
 ```C++
 #include <iostream>
