@@ -369,56 +369,6 @@ int main()
 If you overload a datatype as an 'operator', then you can convert the class into that datatype whenever you (or the program) needs to. If you overload the _bool_
 datatype, then you can use the class as a boolean. If you overload the _const char\*_ datatype, then you can use the class like a string literal (like "Hello, World!").
 
-## _const char\*_ Operator
-Overloading the _const char\*_ provides an alternative to overloading the stream insertion operator (_<<_). However, this approach is not favored as you must return
-a c-string, not a string. And if you call _.c\_str()_ on a temporary string (like `return string("this is the returned literal").c_str()`), then it will return an empty
-string because the c-string reflects the string and the string went out of scope. The solution to this is unfortunately adding a new string class member to store the string.
-It's a sub-optimal solution in my opinion.
-
-```C++
-#include <iostream>
-#include <string>
-using namespace std;
-
-// COORDINATES CLASS //
-class Coordinates
-{
-    private:
-        int x, y;
-        string coords;
-
-    public:
-        Coordinates(int, int);
-        operator const char*();
-};
-
-//Constructor
-Coordinates::Coordinates(int X, int Y)
-{
-    x = X;
-    y = Y;
-}
-
-//Const char* Operator Overload
-Coordinates::operator const char*()
-{
-    coords = to_string(x) + ", " + to_string(y);
-    return coords.c_str();
-}
-
-// DRIVER CODE //
-int main()
-{
-    //Delcare a new set of coordinates
-    Coordinates location(50, 70);
-  
-    //Prints '50, 70'
-    cout << location << '\n';
-
-    return 0;
-}
-```
-
 ## _bool_ Operator
 I'll be honest, I had no idea this existed in C++ until I came across [this cracked StackOverflow question](https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const).
 The _bool_ overload allows a class to be implicitly convered into a boolean when used as a bool, like in a loop or if statement.
