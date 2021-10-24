@@ -182,7 +182,29 @@ int main()
 ```
 
 ### _sizeof...()_
-The _sizeof...()_ operator returns how many arguments the fold expression accepted.
+The _sizeof...()_ operator returns how many arguments the fold expression accepted. Here, it's used to find the average of the paramters.
+
+```C++
+#include <iostream>
+#include <type_traits>
+
+template <typename... Args>
+constexpr auto average(Args... args) -> typename std::decay<decltype((args + ...) / sizeof...(args))>::type
+{
+    if constexpr (sizeof...(args) > 0)
+        return (args + ...) / sizeof...(args);
+    else
+        return 0;
+}
+
+
+int main()
+{
+    std::cout << average(132, 15, 93, 513.32, 862, 100) << std::endl;
+
+    return 0;
+}
+```
 
 ## C-Style Variadic Functions
 C++ has access to C-style variadic functions through the [_\<cstdarg\>_](https://www.cplusplus.com/reference/cstdarg/) library. <br />
