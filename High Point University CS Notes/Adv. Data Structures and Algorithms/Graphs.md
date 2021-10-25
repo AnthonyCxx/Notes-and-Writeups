@@ -19,8 +19,8 @@ Vertices of G1: {A, B, C, D}
 ## Data Structures for Graphs
 
 1. Adjacency Matrix
-|   | A | B | C | D |
-| - |  - |  - | -  |  - |
+| . | A | B | C | D |
+| - | - | - | - | - |
 | A | 0  | 1  | 1  | 0 |
 | B | 0 | 0 | 1 | 1 |
 | C | 0 | 0 | 0 | 1 |
@@ -28,3 +28,8 @@ Vertices of G1: {A, B, C, D}
 
 
 2. Adjacency List
+Jagged array or linked list.
+A -> B -> C -> nullptr
+B -> C -> D -> nullptr
+C -> D -> nullptr
+D -> nullptr
