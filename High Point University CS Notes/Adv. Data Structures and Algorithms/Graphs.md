@@ -54,3 +54,11 @@ A graph that has the maximum amount of possible edges is _complete_
 The amount of possible edges is: <br />
 Directed: nodeCount*(nodeCount-1) <br />
 Undirected: (nodeCount*(nodeCount-1)) / 2 <br />
+
+## ...
+Simple Path:
+Cycle: a simple path where the first and last index are the same
+
+- A graph that contains no cycles is an _acyclic_graph
+- Two distrinct vertices ofa a graph are _connected_ if there is a path between two vertices
+- An undirected graph _connected_ if for every pair of distrinct vertices V there is a directed path between the two points.
