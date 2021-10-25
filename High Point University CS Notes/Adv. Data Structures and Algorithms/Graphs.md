@@ -46,3 +46,6 @@ D -> nullptr
 9. E(G) can be empty (no edges)
 10. Only one edge per set of nodes
 11. Out-degree is how many edges come out from a node, in-degree is how many go in
+
+## Calculating the amount of Possible Edges
+The amount of possible edges is nodeCount*(nodeCount-1)
