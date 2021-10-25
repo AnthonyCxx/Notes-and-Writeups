@@ -48,6 +48,8 @@ D -> nullptr
 11. Out-degree is how many edges come out from a node, in-degree is how many go in
 
 ## Calculating the amount of Possible Edges
-The amount of possible edges is:
-Directed: nodeCount*(nodeCount-1)
-Undirected: (nodeCount*(nodeCount-1)) / 2
+A graph that has the maximum amount of possible edges is _complete_
+---------------------------------------
+The amount of possible edges is: <br />
+Directed: nodeCount*(nodeCount-1) <br />
+Undirected: (nodeCount*(nodeCount-1)) / 2 <br />
