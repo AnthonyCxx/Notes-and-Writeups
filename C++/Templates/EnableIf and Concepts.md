@@ -26,3 +26,6 @@ int main()
 }
 ```
 > "A trivial default constructor is a constructor that performs no action. All data types compatible with the C language (POD types) are trivially default-constructible." -cppreference, [trivial constructors](https://en.cppreference.com/w/cpp/language/default_constructor#Trivial_default_constructor).
+
+## Adding Conditions to Templates
+C++20 introduced the _requires_ and _concept_ keyword, which allows us to...
