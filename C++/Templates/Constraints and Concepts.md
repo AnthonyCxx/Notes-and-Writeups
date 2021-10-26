@@ -47,6 +47,7 @@ in which case it serves as a constraint: it limits the set of arguments that are
 template <typename T>
 concept hasIterator = requires(T container)
 {
+    //Any function with a '.begin()' and a '.end()' method will satisfy the 'hasIterator' requirement
     container.begin();
     container.end();
 };
