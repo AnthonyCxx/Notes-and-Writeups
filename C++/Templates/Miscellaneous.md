@@ -106,7 +106,7 @@ int main()
 > Eli Bendersky's website: [_SFINAE and enable_if_](https://eli.thegreenplace.net/2014/sfinae-and-enable_if/) <br />
 > cppreference: [_std::enable\_if\_](https://en.cppreference.com/w/cpp/types/enable_if) <br />
 
-_std::enable\_if\<condition, returnType\>_ is a function evaluated at compile-time that can be used to restrict templates to being of certain types (like [_static\_assert_](https://en.cppreference.com/w/cpp/language/static_assert), but without the forced error); moreover, it can be used to include or exclude considering certain template overloads when substituting types. _std::enable\_if_ takes the place of the return type of the function, so the type it returns should be the return type of the function. If no type is provided, it assumes and returns _void_.
+_std::enable\_if\<condition, returnType\>_ is a function evaluated at compile-time that can be used to restrict templates to being of certain types (like [_static\_assert_](https://en.cppreference.com/w/cpp/language/static_assert), but without the forced error); moreover, it can be used to include or exclude considering certain template overloads when substituting types. Here, the function _add()_ is not considered for non-trivial types. If no type is provided, it assumes and returns _void_.
 
 Succinctly put, _std::enable\_if_ is "a metafunction is a convenient way to leverage [SFINAE](https://en.cppreference.com/w/cpp/language/sfinae) to conditionally 
 remove functions from overload resolution based on type traits and to provide separate function overloads and specializations for different type traits." -cppreference, [_std::enable\_if_](https://en.cppreference.com/w/cpp/types/enable_if)
