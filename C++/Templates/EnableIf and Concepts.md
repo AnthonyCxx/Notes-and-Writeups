@@ -27,5 +27,7 @@ int main()
 ```
 > "A trivial default constructor is a constructor that performs no action. All data types compatible with the C language (POD types) are trivially default-constructible." -cppreference, [trivial constructors](https://en.cppreference.com/w/cpp/language/default_constructor#Trivial_default_constructor).
 
-## Adding Conditions to Templates
-C++20 introduced the _requires_ and _concept_ keyword, which allows us to...
+## Adding Constraints to Templates
+C++20 introduced the _requires_ and _concept_ keyword, which allows us to conditions to templates that act as constraints. A concept is "Concepts are named Boolean predicates
+on template parameters, evaluated at compile time. A concept may be associated with a template (class template, function template, or member function of a class template), 
+in which case it serves as a constraint: it limits the set of arguments that are accepted as template parameters." -Wikipedia, [_concepts_](https://en.wikipedia.org/wiki/Concepts_(C%2B%2B))
