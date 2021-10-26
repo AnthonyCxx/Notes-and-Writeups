@@ -1,4 +1,5 @@
 # Welcome to the Inner Circle of Template Hell
+https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
 
 **UNFINISHED**
 ```C++
