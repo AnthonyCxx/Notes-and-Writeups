@@ -50,7 +50,7 @@ concept hasIterator = requires(T container)
     //Any function with a '.begin()' and a '.end()' method will satisfy the 'hasIterator' requirement
     container.begin();
     container.end();
-};
+};                           //<== ENDS WITH A SEMI-COLON (it's a declaration!)
 
 
 //Declare a generic print function. The only requirement is that it needs a '.begin()' and a '.end()' method
