@@ -59,6 +59,7 @@ Trick: [_The ''Clockwise/Spiral Rule''_](http://c-faq.com/decl/spiral.anderson.h
 [_W3Schools C++ Tutorial_](https://www.w3schools.com/CPP/default.asp) <br />
 [_TutorialsPoint C++ Tutorial_](https://www.tutorialspoint.com/cplusplus/index.htm) <br />
 [_The Cherno's C++ Tutorial Series_](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) <br />
+[W3Cubs C++ Cheatsheets](https://docs.w3cub.com/cpp/) <br />
 [C++ Secrets](https://cppsecrets.com/index.php) <br />
 [_SO Documentation_](https://sodocumentation.net/cplusplus) <br />
 [_CPPCon 2020: Back to the Basics Playlist_](https://www.youtube.com/watch?v=ZAji7PkXaKY&list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e) <br />
