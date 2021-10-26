@@ -15,11 +15,12 @@ template <typename T, std::size_t N>
 class List
 {
     private:
-        std::vector<T> data;
+        T data[N];
+        const size_t size;
 
     public:
         //Constructor using an initializer_list
-        constexpr List(std::initializer_list<T> elems): data(elems)
+        constexpr List(std::initializer_list<T> elems): data(elems), size(N)
         {
             //Empty!
         }
