@@ -10,3 +10,6 @@ Long story short: templates are powerful, but also very dangerous and many peopl
 | [Default Template Arguments and Controlling Type Deduction](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Miscellaneous.md) | some more cool stuff you can do with templates |
 | [Variadic Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Variadic%20Functions.md#variadic-templates-c11) | templates that can take a varying amount of arguments  |
 | [Cracked Stuff](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Cracked%20Stuff.md) | a collection of the craziest things I've seen done with templates |
+
+A lot of the notes here come from various sources, but I undoubtedly drew the most from David Vandevoorde's, Nicolai Josuttis', and Douglas Gregor's [_C++ Templates: The Complete Guide_](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121), 2nd edition. Even though it's 822 pages, even just the first few chapters cover more than you need
+to know to be able to use templates effectively.
