@@ -100,9 +100,12 @@ int main()
     return 0;
 }
 ```
-## Template Type-guarding with _std::enable\_if_
-Templates can be specialized such that they can only be used for certain types, making them safer. For example, if I wrote a function _divide()_, I would want it to work
-with all numeric types ([_std::is\_arithmetic()_](https://en.cppreference.com/w/cpp/types/is_arithmetic)), but not string literals. To
+
+## Preventing Template Instantiation with _std::enable\_if_
+_std::enable\_if\<condition, returnType\>_ is a function evaluated at compile-time that can be used to include or exclude certain template overloads . _std::enable\_if_ takes the place of the return type of the function, so the type it returns should be the return type of the function. If no type is provided, it returns _void_.
+
+Succinctly put, _std::enable\_if_ is "a metafunction is a convenient way to leverage [SFINAE](https://en.cppreference.com/w/cpp/language/sfinae) to conditionally 
+remove functions from overload resolution based on type traits and to provide separate function overloads and specializations for different type traits." -cppreference, [_std::enable\_if_](https://en.cppreference.com/w/cpp/types/enable_if)
 
 ## Sources
 Medium: [C++ 17 Class Templates: CTAD and Type Deduction Guide](https://medium.com/codex/c-17-class-templates-ctad-and-type-deduction-934d9cf5f529) <br />
