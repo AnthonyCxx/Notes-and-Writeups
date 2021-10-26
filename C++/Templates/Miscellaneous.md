@@ -110,6 +110,22 @@ _std::enable\_if\<condition, returnType\>_ is a function evaluated at compile-ti
 Succinctly put, _std::enable\_if_ is "a metafunction is a convenient way to leverage [SFINAE](https://en.cppreference.com/w/cpp/language/sfinae) to conditionally 
 remove functions from overload resolution based on type traits and to provide separate function overloads and specializations for different type traits." -cppreference, [_std::enable\_if_](https://en.cppreference.com/w/cpp/types/enable_if)
 
+An example of an add function that only works on [trivial](https://en.cppreference.com/w/cpp/named_req/TrivialType) types. You can think of trivial types as those that are
+compatible with the C language (built-ins and structs/classes with trivial constructors).
+```C++
+template <typename T, typename = std::enable_if<std::is_trivial<T>::value>>
+auto add(T&& a, T&& b)
+{
+    return a + b;
+}
+
+int main()
+{
+    return 0;
+}
+```
+> "A trivial default constructor is a constructor that performs no action. All data types compatible with the C language (POD types) are trivially default-constructible." -cppreference, [trivial constructors](https://en.cppreference.com/w/cpp/language/default_constructor#Trivial_default_constructor).
+
 ## Sources
 Medium: [C++ 17 Class Templates: CTAD and Type Deduction Guide](https://medium.com/codex/c-17-class-templates-ctad-and-type-deduction-934d9cf5f529) <br />
 cppreference: [Class template argument deduction (CTAD)](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction) <br />
