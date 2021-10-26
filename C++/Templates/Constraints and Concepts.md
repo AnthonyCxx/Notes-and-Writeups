@@ -38,6 +38,38 @@ in which case it serves as a constraint: it limits the set of arguments that are
 
 ## Using Concepts as Interfaces
 
-```C++
 
+```C++
+#include <iostream>
+#include <array>
+
+//Declaration of a concept like an interface
+template <typename T>
+concept hasIterator = requires(T container)
+{
+    container.begin();
+    container.end();
+};
+
+
+//Declare a generic print function. The only requirement is that it needs a '.begin()' and a '.end()' method
+template <typename T>
+requires hasIterator<T>
+void print(T&& cont)   //Universal reference
+{
+    for(auto itr=cont.begin(); itr != cont.end(); ++itr)
+    {
+        std::cout << *itr << ' ';
+    }
+    std::cout << '\n';
+}
+
+int main()
+{
+   std::array<int, 3> arr {1, 2, 3};
+   print(arr);
+
+    return 0;
+}
 ```
+> Compiled with `g++ -std=gnu++0x -fconcepts file.cpp`
