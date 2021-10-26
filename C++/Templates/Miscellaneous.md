@@ -1,7 +1,3 @@
-## Template Type-guarding with _std::enable\_if_
-Templates can be specialized such that they can only be used for certain types, making them safer. For example, if I wrote a function _divide()_, I would want it to work
-with all numeric types ([_std::is\_arithmetic()_](https://en.cppreference.com/w/cpp/types/is_arithmetic)), but not string literals. To
-
 ## Using Non-datatype as Template Arguments
 Remember when I said that templates are more than just generics? Well, here's a reason why: a template argument can be something other than a datatype. If you've ever used
 a container from the standard template library ([STL containers](https://www.cplusplus.com/reference/stl/)) like _std::array_, then you've seen that you can use a template
@@ -104,6 +100,9 @@ int main()
     return 0;
 }
 ```
+## Template Type-guarding with _std::enable\_if_
+Templates can be specialized such that they can only be used for certain types, making them safer. For example, if I wrote a function _divide()_, I would want it to work
+with all numeric types ([_std::is\_arithmetic()_](https://en.cppreference.com/w/cpp/types/is_arithmetic)), but not string literals. To
 
 ## Sources
 Medium: [C++ 17 Class Templates: CTAD and Type Deduction Guide](https://medium.com/codex/c-17-class-templates-ctad-and-type-deduction-934d9cf5f529) <br />
