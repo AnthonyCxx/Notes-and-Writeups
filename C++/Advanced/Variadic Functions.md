@@ -192,10 +192,7 @@ The _sizeof...()_ operator returns how many arguments the fold expression accept
 template <typename... Args>
 constexpr auto average(Args... args) -> typename std::decay<decltype((args + ...) / sizeof...(args))>::type
 {
-    if constexpr (sizeof...(args) > 0)
-        return (args + ...) / sizeof...(args);
-    else
-        return 0;
+    return (args + ...) / sizeof...(args);
 }
 
 
