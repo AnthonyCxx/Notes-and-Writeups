@@ -31,7 +31,6 @@ This is **NOT** comprehensive; explore them individual folders on your own. <br 
 - [Measuing Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Date%20and%20Time.md)
 - [Move Semantics](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md)
 - [Forwarding](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Advanced/Forwarding.md)
-- [Variadic Functions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Variadic%20Functions.md)
 - [Templates](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Templates)
 
 ### References
