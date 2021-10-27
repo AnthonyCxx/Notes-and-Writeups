@@ -39,7 +39,10 @@ in which case it serves as a constraint: it limits the set of arguments that are
 ## Concepts
 
 ## Using Concepts as Interfaces
-
+Concepts can require that a datatype have certain methods, which is essentially an [interface](https://kindsonthegenius.com/blog/what-are-interfaces-in-c-and-java-a-simple-explanation/) from C# or Java. Using a concept in this way allows you to write a generic function that works with everything that meets a set of user-defined constraints.
+Here, the print function requires that its parameter have both a `.begin()` and `.end()` method, since it's required to iterate over the loop (note: this is an arbitrary 
+constraint — I could just as easily have used a raw for-loop and just passed the size of the container). If a type fails to meet the constraints, then a compile-time error
+will be thrown that will say something like `constraints not satisfied | void print(T&& cont)`.
 
 ```C++
 #include <iostream>
