@@ -4,7 +4,7 @@
 
 ## Preventing Template Instantiation with _std::enable\_if_
 > Eli Bendersky's website: [_SFINAE and enable_if_](https://eli.thegreenplace.net/2014/sfinae-and-enable_if/) <br />
-> cppreference: [_std::enable\_if\_](https://en.cppreference.com/w/cpp/types/enable_if) <br />
+> cppreference: [_std::enable\_if_](https://en.cppreference.com/w/cpp/types/enable_if) <br />
 
 _std::enable\_if\<condition, returnType\>_ is a function evaluated at compile-time that can be used to restrict templates to being of certain types (like [_static\_assert_](https://en.cppreference.com/w/cpp/language/static_assert), but without the forced error); moreover, it can be used to include or exclude considering certain template overloads when substituting types. Here, the function _add()_ is not considered for non-trivial types (as if it did not even exist). If no type is provided, it assumes and returns _void_.
 
