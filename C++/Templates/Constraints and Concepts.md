@@ -33,9 +33,56 @@ on template parameters, evaluated at compile time. A concept may be associated w
 in which case it serves as a constraint: it limits the set of arguments that are accepted as template parameters." -Wikipedia, [_concepts_](https://en.wikipedia.org/wiki/Concepts_(C%2B%2B))
 
 ```C++
+#include <iostream>
+#include <cstdint>    //Contains fixed-width integers (8-bit integers)
+#include <string>
+#include <type_traits>  //For evaluating types
 
+//Class 'Animal' stores the name, age, and genus of an animal
+struct Animal
+{
+    //Data members
+    std::string m_name;       //Name of the animal
+    std::string m_genus;     //Genus of the animal
+    std::uint8_t m_age;      //8-bit fixed-width integer for the age (max value: 256)
+
+    //Constructor
+    Animal(std::string name, std::string genus, std::uint8_t age): m_name(name), m_genus(genus), m_age(age)
+    {
+
+    }
+};
+
+//Class 'Dog' inherits from 'Animal'
+struct Dog: public Animal
+{
+    //Singular constructor to pass on the values
+    Dog(std::string name, std::string genus, std::uint8_t age): Animal(name, genus, age)
+    {
+
+    }
+};
+
+
+//Function 'printStats' REQUIRES that the variable passed be 'Animal' or derived from it
+template <typename T>
+requires std::is_same_v<Animal, std::decay_t<T>> || std::is_base_of_v<Animal, std::decay_t<T>>
+void printStats(T&& animal)
+{
+    std::cout << "Name: " << animal.m_name << '\n';
+    std::cout << "Age: " << (int) animal.m_age << '\n';  //Convert char to int
+    std::cout << "Genus: " << animal.m_genus << '\n';
+}
+
+int main()
+{
+    Dog dexter("Dexter", "Shiba Inu", 240);
+    printStats(dexter);
+
+    return 0;
+}
 ```
-> Compiled with `g++ -std=gnu++0x -fconcepts file.cpp`
+> The calls to _std::decay\_t_ are necessary because if 'T' is cv-qualified (const or volitile) or a reference, then both checks will return _false_.
 
 ## Concepts
 Think of concepts as a _typedef_ for a _requires_ statement — they're a succint way to refer to a more complex/verbose set of constraints.
