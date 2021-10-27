@@ -86,10 +86,26 @@ int main()
 > The calls to _std::decay\_t_ are necessary because if 'T' is cv-qualified (const or volitile) or a reference, then both checks will return _false_.
 
 ## Concepts
-Think of concepts as a _typedef_ for a _requires_ statement — they're a succint way to refer to a more complex/verbose set of constraints.
+Think of concepts as a _typedef_ for a _requires_ statement — they're a succint way to refer to a more complex/verbose set of constraints. If you're going to be writing
+the same set of contraints over and over again, then you might as well make them a concept so you don't have to write ad nauseam (and risk making a mistake). After all,
+all these constraints are evaluated at compile time and don't affect the actual program, so might as well.
 
 ```C++
+template <typename T>
+concept isAnimal = requires
+{
+    std::is_same_v<Animal, std::decay_t<T>> || std::is_base_of_v<Animal, std::decay_t<T>>;
+};
 
+//Function 'printStats' REQUIRES that the variable passed be 'Animal' or derived from it
+template <typename T>
+requires isAnimal<T>
+void printStats(T&& animal)
+{
+    std::cout << "Name: " << animal.m_name << '\n';
+    std::cout << "Age: " << (int) animal.m_age << '\n';
+    std::cout << "Genus: " << animal.m_genus << '\n';
+}
 ```
 > Compiled with `g++ -std=gnu++0x -fconcepts file.cpp`
 
