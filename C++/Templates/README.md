@@ -1,5 +1,6 @@
 # Templates in C++
 > "It's dangerous to go alone! Take this": [<\type_traits\> reference](https://en.cppreference.com/w/cpp/header/type_traits) <br />
+
 On the surface, templates are pretty simple; they're just a way to make a function generic/type-neutral, right? Well, no. C++'s templates are _far_ more powerful than
 C# and Java's generics. Once you get really deep into it, you'll start exploring [recursive templates](http://www.oxfordalgorithmics.com/2014/10/06/c-template-recursion-and-specialisation/), [variadic templates](https://eli.thegreenplace.net/2014/variadic-templates-in-c/), and even [template metaprogramming](https://www.fluentcpp.com/2017/06/02/write-template-metaprogramming-expressively/). Templates are powerful, but also very hard to use since they require a foundational understanding of the language to implement properly and are infamous for causing disgustingly long errors. Don't believe me? Mess up the direction of the arrows and run `cout >> x` — just see how many errors the template spawns.
 
