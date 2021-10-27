@@ -1,6 +1,6 @@
 # Selection with _std::enable\_if_ and _concept_
-> **NOTE**: compiler support for concepts is still in progress. To use concepts with GCC, you must compile with C++20 and allow concepts with the -fconcepts option like 
-`g++ -std=c++2x -fconcepts file.cpp`
+> **NOTE**: As of 10/27/2021, compiler support for concepts is still in progress. To use concepts with GCC, you must compile with C++20 and allow concepts with the 
+> -fconcepts option like `g++ -std=c++2x -fconcepts file.cpp`
 
 ## Preventing Template Instantiation with _std::enable\_if_
 > Eli Bendersky's website: [_SFINAE and enable_if_](https://eli.thegreenplace.net/2014/sfinae-and-enable_if/) <br />
