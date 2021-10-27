@@ -37,6 +37,11 @@ in which case it serves as a constraint: it limits the set of arguments that are
 ```
 
 ## Concepts
+Think of concepts as a _typedef_ for a _requires_ statement — they're a succint way to refer to a more complex/verbose set of constraints.
+
+```C++
+
+```
 
 ## Using Concepts as Interfaces
 Concepts can require that a datatype have certain methods, which is essentially an [interface](https://kindsonthegenius.com/blog/what-are-interfaces-in-c-and-java-a-simple-explanation/) from C# or Java. Using a concept in this way allows you to write a generic function that works with everything that meets a set of user-defined constraints.
