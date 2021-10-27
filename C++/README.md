@@ -2,7 +2,7 @@
 A reference for C++ programming. If you are using this for class, do not use anything past C++14. <br />
 This is not meant to be an authority of any kind nor is it meant to be comprehensive.
 
-P.S. If you don't know the difference between C and C++, [here](https://hackr.io/blog/difference-between-c-and-cplusplus) is a good article and [here](https://www.youtube.com/watch?v=Kq8m980JEeg) is a better video.
+Please read the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) for coding standards.
 
 ## Topics
 Here are some shortcuts to the major folders and common files.
