@@ -464,8 +464,65 @@ that all the resources of a derived class that is referenced by its base class a
 to a derived class object `derivedObj`, then calling `delete derivedObj` would ONLY call destructor of the base class (`~Base`) and potentially cause memory leak. As you can 
 see, more than just RAII is needed to prevent memory leak.
 
+This example also demonstrates the order in which constructors and destructors are called. Constructors are called in order of base -> derived, but destructors are called
+in order of derived -> base.
 ```C++
+#include <iostream>
 
+//Base class
+class Base
+{
+    public:
+        int* ptr;
+
+        //Constructor
+        Base(int a)
+        {
+            std::cout << "Calling base constructor\n";
+            ptr = new int{a};
+        }
+
+        //Destructor
+        virtual ~Base()
+        {
+            std::cout << "Calling base destructor\n";
+            delete ptr;
+        }
+};
+
+//Derived class
+class Derived: public Base
+{
+    public:
+        int* other_ptr;
+
+        //Constructo
+        Derived(int a, int b): Base(a)
+        {
+            std::cout << "Calling derived destructor\n";
+            other_ptr = new int{b};
+        }
+
+        //Deconstructor
+        virtual ~Derived() override
+        {
+            std::cout << "Calling derived destructor\n";
+            delete other_ptr;
+        }
+};
+
+int main()
+{
+    //New instance of the derived class
+    Base* base_ptr = new Derived(10, 20);
+
+    std::cout << "\nA: " << *base_ptr->ptr << "\n\n";
+
+    //If '~Base()' were not virtual, 'other_ptr' would not be deleted (causing memory leak)
+    delete base_ptr;
+
+    return 0;
+}
 ```
 
 ## Pure Virtual Methods (Abstract Classes)
