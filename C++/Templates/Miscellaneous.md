@@ -54,7 +54,7 @@ Would it be _T1_? But what if the product was a double and _T1_ were an integer?
 which makes the compiler determine the return type. If you want to specify rules for determining the return type during deduction instead of leaving it to be deduced by the datatype of the return statement, you can use [trailing return types](https://www.ibm.com/docs/en/zos/2.1.0?topic=declarators-trailing-return-type-c11). For example, if you wrote `-> decltype(a*b)`, then
 the return type would be deduced to be the datatype of the product of _a_ and _b_.
 
-**WARNING:** _decltype()_ may return a reference. Use `-> typename std::decay<decltype(a*b)>::type` to prevent returning references and discard cv-qualifiers (remember to `#include <type_traits>`!). If you return a reference to a local variable (or a parameter that's not a reference), then you will get a segmentation fault. Every time.
+**WARNING:** _decltype()_ may return a reference. Use `-> typename std::remove_reference<decltype(a*b)>::type` to prevent returning references and discard cv-qualifiers (remember to `#include <type_traits>`!). If you return a reference to a local variable (or a parameter that's not a reference), then you will get a segmentation fault. Every time.
 ```C++
 #include <iostream>
 
