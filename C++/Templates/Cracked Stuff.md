@@ -1,5 +1,37 @@
 # Some Interesting Stuff Here...
 
+## Recursive, Compile-time Fibonacci Sequence
+
+```C++
+#include <iostream>
+using ULL = unsigned long long;
+
+template <ULL N>
+struct Fib
+{
+    static constexpr ULL value = Fib<N-1>::value  + Fib<N-2>::value;
+};
+
+template<>
+struct Fib<1>
+{
+    static constexpr ULL value = 1;
+};
+
+template<>
+struct Fib<0>
+{
+    static constexpr ULL value = 0;
+};
+
+int main()
+{
+    std::cout << "17th Fibonacci number: " << Fib<17>::value << std::endl;
+
+    return 0;
+}
+``
+
 https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
 
 **UNFINISHED**
