@@ -35,7 +35,7 @@ in which case it serves as a constraint: it limits the set of arguments that are
 The following example places a _requires_ constraint on the function _printStats_, forcing all passed types to be of or derived from the 'Animal' class. It is necessary
 to use [_std::decay\<\>_](https://en.cppreference.com/w/cpp/types/decay) when comparing datatypes because [cv-qualifiers](https://en.cppreference.com/w/cpp/language/cv) (like
 `const` and `volatile`) and [references](https://www.tutorialspoint.com/cplusplus/cpp_references.htm) (like `int&` and `int&&`) are can change the "type" of a variable.
-For example, if you passed `Animal&&` to the function, then `std::is_same<Animal,T>` would return false, since `Animal` and `Animal&&` are not the same datatype. Discarding
+If you passed `Animal&&` to the function _printStats_, then `std::is_same<Animal,T>` would return false, since `Animal` and `Animal&&` are not the same datatype. Discarding
 cv-qualifiers is necessary when writing template restrictions.
 
 ```C++
