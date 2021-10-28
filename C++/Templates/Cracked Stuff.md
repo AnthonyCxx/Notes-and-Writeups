@@ -30,7 +30,7 @@ int main()
 
     return 0;
 }
-``
+```
 
 https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
 
