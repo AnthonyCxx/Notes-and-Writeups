@@ -1,2 +1,2 @@
 # Welcome — to Template Metaprogramming.
-> "Lasciate ogne speranza voi ch'intrate." <br />
+> "lasciate ogne speranza voi ch'intrate." <br />
