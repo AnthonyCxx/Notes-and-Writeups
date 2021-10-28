@@ -458,7 +458,17 @@ int main()
 ```
 > Read [this FAQ article](https://isocpp.org/wiki/faq/virtual-functions) to better understand virtual functions
 
-## Pure Virtual Methods (Interfaces)
+## Virtual Destructors
+Although [virtual constructors do not exist](https://www.stroustrup.com/bs_faq2.html#virtual-ctor), virtual destructors do. Virtual destructors are used to ensure
+that all the resources of a derived class that is referenced by its base class are freed when you delete it. For example, if you had a pointer of type `Base*` that pointed
+to a derived class object `derivedObj`, then calling `delete derivedObj` would ONLY call destructor of the base class (`~Base`) and potentially cause memory leak. As you can 
+see, more than just RAII is needed to prevent memory leak.
+
+```C++
+
+```
+
+## Pure Virtual Methods (Abstract Classes)
 Pure virtual functions are functions declared in a base class that have no implementation and are intended to be overriden by the derived class. 
 Derived classes _must_ provide their own implementations for pure virtual functions, guaranteeing that each class has its own implementation of the
 virtual method. Any class with a pure virtual function becomes an [abstract base class](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm), preventing them from 
