@@ -1,4 +1,6 @@
 # Pointers in C++
+> NOTE: this section is waiting to be updated on RAII. Seldom should you use raw pointers in your code.
+
 A pointer is a derived datatype that points to some location in memory and are used to keep track of [dynamically-allocated memory](https://www.cplusplus.com/doc/tutorial/dynamic/) amongst other things. Like any variable, pointers are [strongly-typed](https://www.cs.cornell.edu/courses/cs1130/2012sp/1130selfpaced/module1/module1part4/strongtyping.html); however, they can also be [type-casted](https://docs.microsoft.com/en-us/cpp/cpp/reinterpret-cast-operator?view=msvc-160) easily. Pointers are the same size regardless of what type they point to (8 bytes on 64-bit platforms, 4 on 32-bit) ([ref](https://stackoverflow.com/questions/399003/is-the-sizeofsome-pointer-always-equal-to-four)).
 
 ## Declaring a Pointer
