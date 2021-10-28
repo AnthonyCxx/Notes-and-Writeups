@@ -32,7 +32,12 @@ C++20 introduced the _requires_ and _concept_ keyword, which allow us to add con
 on template parameters, evaluated at compile time. A concept may be associated with a template (class template, function template, or member function of a class template), 
 in which case it serves as a constraint: it limits the set of arguments that are accepted as template parameters." -Wikipedia, [_concepts_](https://en.wikipedia.org/wiki/Concepts_(C%2B%2B))
 
-The following example places a _requires_ constraint on the function _printStats_, forcing all passed types to be of or derived from the 'Animal' class.
+The following example places a _requires_ constraint on the function _printStats_, forcing all passed types to be of or derived from the 'Animal' class. It is necessary
+to use [_std::decay\<\>_](https://en.cppreference.com/w/cpp/types/decay) when comparing datatypes because [cv-qualifiers](https://en.cppreference.com/w/cpp/language/cv) (like
+`const` and `volatile`) and [references](https://www.tutorialspoint.com/cplusplus/cpp_references.htm) (like `int&` and `int&&`) are can change the "type" of a variable.
+For example, if you passed `Animal&&` to the function, then `std::is_same<Animal,T>` would return false, since `Animal` and `Animal&&` are not the same datatype. Discarding
+cv-qualifiers is necessary when writing template restrictions.
+
 ```C++
 #include <iostream>
 #include <cstdint>    //Contains fixed-width integers (8-bit integers)
