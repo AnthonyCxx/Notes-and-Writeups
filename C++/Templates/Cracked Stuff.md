@@ -1,4 +1,5 @@
-# [Stare — into oblivion](https://www.youtube.com/watch?v=xl9vXaVQrx0)
+# Some Interesting Stuff Here...
+
 https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
 
 **UNFINISHED**
