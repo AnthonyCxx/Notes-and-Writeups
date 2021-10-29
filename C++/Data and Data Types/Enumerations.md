@@ -1,4 +1,5 @@
 # Enumerations in C++
+> Unless you are using legacy C++, use [enum classes](https://www.learncpp.com/cpp-tutorial/enum-classes/) instead of normal enums.
 An enumerated type (enum) is a user-defined type that can be one of a defined set of values, each of which is represented internally by an integer constant. Enums provide
 programmers with a clear way of representing the possible states/values of an object. For example, a simple machine may have an enum defining its state with two simple
 values, 'ON' and 'OFF' (by convention, enum values are typically fully capitalized). Enums may be preferable to booleans because they can represent a number of states (as
