@@ -234,3 +234,6 @@ int main()
     return 0;
 }
 ```
+
+## Modeling Built-in Exceptions
+[_std::bad\_cast_](https://en.cppreference.com/w/cpp/header/typeinfo)
