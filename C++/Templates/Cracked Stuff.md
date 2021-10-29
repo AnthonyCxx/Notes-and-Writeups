@@ -1,6 +1,7 @@
 # Some Interesting Stuff Here...
 
 ## Recursive, Compile-time Fibonacci Sequence
+Calculates the Nth number in the Fibonacci sequence at compile time using recursive templates. This really should just be a _constexpr_ function.
 
 ```C++
 #include <iostream>
