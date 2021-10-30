@@ -34,7 +34,7 @@ int main()
 ```
 
 ## Generic Function Wrapper
-> The following example is from chapter 11 of [_C++ Templates, the Complete Guide_](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121) <br />
+> The following example is adapted from chapter 11 of [_C++ Templates, the Complete Guide_](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121) <br />
 
 The following code can take any function with any number of arguments and will return the time it takes to run the function
 ```C++
