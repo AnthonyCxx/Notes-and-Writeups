@@ -251,6 +251,7 @@ Instances of a specific class/function will be created from a template if an ins
 versions of a template for specific datatypes, we can overload the same templated method to work differently for different types. Here, I have a generic '_add()_' function
 that has a special case for strings that includes a space between each of the strings instead of just appending one to the other.
 
+Template specializations that define all template members are called explicit specializations — anything less is only a partial specialization.
 ```C++
 #include <iostream>
 #include <string>
