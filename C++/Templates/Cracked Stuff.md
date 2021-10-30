@@ -33,6 +33,9 @@ int main()
 }
 ```
 
+## Generic Function Wrapper
+> The following example is from chapter 11 of [_C++ Templates, the Complete Guide_](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121) <br />
+
 ## Custom Tuple Implementation
 
 https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
