@@ -36,6 +36,29 @@ int main()
 ## Generic Function Wrapper
 > The following example is from chapter 11 of [_C++ Templates, the Complete Guide_](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121) <br />
 
+The following code can take any function with any number of arguments and will return the time it takes to run the function
+```C++
+#include <utility>
+#include <functional>
+#include <chrono>
+
+template <typename Callable, typename... Args>
+double time(Callable&& op, Args&&... args)
+{
+    //Floating-point seconds
+    using fpsecond = std::chrono::duration<double, std::ratio<1,1>>;
+
+    //Keep track of the starting time
+    std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
+
+    //Call the passed function with the given arguments (forwarding the arguments to preserve qualifiers)
+    std::invoke(std::forward<Callable>(op), std::forward<Args>(args)...);
+
+    //Return the elapsed time (current time - start time) as a double
+    return std::chrono::duration_cast<fpsecond>(std::chrono::steady_clock::now() - start).count();
+}
+```
+
 ## Custom Tuple Implementation
 
 https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
