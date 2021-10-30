@@ -43,7 +43,7 @@ The following code can take any function with any number of arguments and will r
 #include <chrono>
 
 template <typename Callable, typename... Args>
-double time(Callable&& op, Args&&... args)
+decltype(auto) time(Callable&& op, Args&&... args)
 {
     //Floating-point seconds
     using fpsecond = std::chrono::duration<double, std::ratio<1,1>>;
