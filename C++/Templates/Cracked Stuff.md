@@ -76,7 +76,7 @@ decltype(auto) time(Function&& func, Args&&... args)
     }
 }
 ```
-> NOTE: you do have to compile with C++17 for this to work, so add -std=c++17 to all your compilations <br />
+> NOTE: you do have to compile with C++17 for this to work, so add `-std=c++17` to all your compilations <br />
 > NOTE: if you pass a templated function, you cannot leave out the template type. templatedSwap<int>(a,b) is fine but templatedSwap(a,b) is not <br />
 
 ## Custom Tuple Implementation
