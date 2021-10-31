@@ -35,7 +35,9 @@ int main()
 
 ## Perfectly Generic Function Wrappers
 The following code can take any function with any number of arguments and will return the time it takes to run the function. If the return type is not void, then it
-returns the return value of the called function along with the elapsed time (in that order) as a [std::pair](https://en.cppreference.com/w/cpp/utility/pair).
+returns the return value of the called function along with the elapsed time (in that order) as a [std::pair](https://en.cppreference.com/w/cpp/utility/pair). <br />
+
+> Example: `double timePassed = time(myPrintFunction, "print this", " as well as this and this ", 123)`.
 ```C++
 #include <utility>
 #include <functional>
