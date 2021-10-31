@@ -33,29 +33,47 @@ int main()
 }
 ```
 
-## Generic Function Wrapper
-> The following example is adapted from chapter 11 of [_C++ Templates, the Complete Guide_](https://www.amazon.com/C-Templates-Complete-Guide-2nd/dp/0321714121) <br />
-
-The following code can take any void function with any number of arguments and will return the time it takes to run the function
+## Perfectly Generic Function Wrappers
+The following code can take any function with any number of arguments and will return the time it takes to run the function. If the return type is not void, then it
+returns the return value of the called function along with the elapsed time (in that order) as a [std::pair](https://en.cppreference.com/w/cpp/utility/pair).
 ```C++
 #include <utility>
 #include <functional>
 #include <chrono>
+#include <type_traits>
 
-template <typename Callable, typename... Args>
-double time(Callable&& op, Args&&... args)
+template <typename Function, typename... Args>
+decltype(auto) time(Function&& func, Args&&... args)
 {
     //Floating-point seconds
     using fpsecond = std::chrono::duration<double, std::ratio<1,1>>;
 
-    //Keep track of the starting time
-    std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
+    //Keep track of the starting time and declare an ending time
+    std::chrono::steady_clock::time_point startTime = std::chrono::steady_clock::now();
+    double elapsedTime;
 
-    //Call the passed function with the given arguments (forwarding the arguments to preserve qualifiers)
-    std::invoke(std::forward<Callable>(op), std::forward<Args>(args)...);
+    //If a void function, call it and just return the elapsed time
+    if constexpr (std::is_same_v<std::invoke_result_t<Function, Args...>, void>)
+    {
+        //Call the passed function with the given arguments (forwarding the arguments to preserve qualifiers)
+        std::invoke(std::forward<Function>(func), std::forward<Args>(args)...);
 
-    //Return the elapsed time (current time - start time) as a double
-    return std::chrono::duration_cast<fpsecond>(std::chrono::steady_clock::now() - start).count();
+        //Record the elapsed time
+        elapsedTime = std::chrono::duration_cast<fpsecond>(std::chrono::steady_clock::now() - startTime).count();
+
+        //Return the elapsed time (current time - start time) as a double
+        return elapsedTime;
+    }
+    else  //Otherwise, return the return value of the passed function along with the elapsed time as std::pair
+    {
+        decltype(auto) returnValue = std::invoke(std::forward<Function>(func), std::forward<Args>(args)...);
+
+        //Record the elapsed time
+        elapsedTime = std::chrono::duration_cast<fpsecond>(std::chrono::steady_clock::now() - startTime).count();
+
+        //Return the called function's return value along with the elapsed time as std::pair
+        return std::make_pair(returnValue, elapsedTime);
+    }
 }
 ```
 
