@@ -71,9 +71,9 @@ Example of opening a file: `file.open("filename", ios::in | ios::binary)`.
 When looping over a file to read its contents, you either need to know how long the file is or you need to be able to detect the end of the file.
 99% of time, you won't know the size of the file, so being able to detect _EOF_ is the only viable method. C++ provides a number of ways to check for _EOF_,
 so there are a number of ways people tend to write their loop conditions, only some of which actually work. Most people tend to write something like
-`while(!file.eof())` to check for _EOF_, but this approach is considered bad practice as the badbit is only set after _EOF_ is read, causing an extra, blank line to be read
-(see [this page](https://www.tutorialspoint.com/why-is-iostream-eof-inside-a-loop-condition-considered-wrong), [this one](https://softwareengineering.stackexchange.com/questions/318081/why-does-ifstream-eof-not-return-true-after-reading-the-last-line-of-a-file), and [this one](https://stackoverflow.com/questions/5605125/why-is-iostreameof-inside-a-loop-condition-i-e-while-stream-eof-cons)). Instead, write something like `while(file >> data)`, which is safe since it relies on the return value of the
+`while(!file.eof())` to check for _EOF_, but this approach is considered bad practice as the badbit is only set after _EOF_ is read, causing an extra, blank line to be read. Instead, write something like `while(file >> data)`, which is safe since it relies on the return value of the
 overloaded _<<_ opreator from the _istream_ class.
+> Source: The ISO C++ Standard: [_Why does my input seem to process past the end of file?_](https://isocpp.org/wiki/faq/input-output#istream-and-eof)
 
 ## Reading a File by Character
 Read a file character by character by using _>>_ with a char datatype. By default, _istream_ streams (like _cin_ and files) skip whitespace. <br />
