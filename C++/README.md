@@ -25,13 +25,14 @@ This is **NOT** comprehensive; explore them individual folders on your own. <br 
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
 - [Pointers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20and%20Data%20Types/Pointers.md)
 - [Using Dynamic Memory](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
-
-### Advanced
 - [Lambda Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Lambda%20Expressions.md)
 - [Measuing Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Date%20and%20Time.md)
 - [Move Semantics](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md)
 - [Forwarding](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Advanced/Forwarding.md)
 - [Templates](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Templates)
+
+### Advanced
+//Nothing here yet :(
 
 ### References
 - [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
