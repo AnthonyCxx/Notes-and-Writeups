@@ -55,7 +55,7 @@ decltype(auto) time(Function&& func, Args&&... args)
     double elapsedTime;
 
     //If a void function, call it and just return the elapsed time
-    if constexpr (std::is_same_v<std::invoke_result_t<Function, Args...>, void>)
+    if constexpr (std::is_void_v<std::invoke_result_t<Function, Args...>>)
     {
         //Call the passed function with the given arguments (forwarding the arguments to preserve qualifiers)
         std::invoke(std::forward<Function>(func), std::forward<Args>(args)...);
