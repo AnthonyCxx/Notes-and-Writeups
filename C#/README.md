@@ -29,6 +29,9 @@ Here are some shortcuts to the major folders and common files. This is not compr
 - [Microsoft C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 - [Coding Best Practices](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Best%20Practices.md)
 
+### Miscellaneous
+- [Small Practice Programs](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Programs)
+
 # Guides
 
 ## Microsoft Tutorials 
