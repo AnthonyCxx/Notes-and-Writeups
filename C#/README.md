@@ -11,7 +11,8 @@ Here are some shortcuts to the major folders and common files. This is not compr
 
 ### Beginner  
 - [Anatomy of a C# Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Notes.md#c-program-structure)
-- [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes), [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#non-primitive-datatypes)
+- [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#primitive-datatypes)
+- [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#non-primitive-datatypes)
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Control%20Flow)
 - [Preprocessor Directives](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Language%20Features/Preprocessor%20Directives.md)
 
