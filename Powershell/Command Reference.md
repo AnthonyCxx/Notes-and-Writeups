@@ -3,7 +3,7 @@
 | Command | Alias(es) | Function | 
 | ------- | --------- | -------- |
 | `Get-Help <command>` | N/A | displays the help page for a command |
-| `.` |  |  |
+| `Get-Service` |  |  |
 | `.` |  |  |
 | `.` |  |  |
 | `.` |  |  |
