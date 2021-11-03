@@ -99,6 +99,23 @@ public static int Add(int param1 = 0, int param2 = 0)  //both parameters have a 
 > Calling the Add method with one parameter: 1 <br />
 > Calling the Add method with no parameters: 0 <br />
 
+## Named Parameters
+Parameters can be passed out-of-order by refererring to them by name when passing the arguements like `paramter:argument`.
+
+```C#
+static void Main(string[] args)
+{
+    string fullname = MakeFullName(lastName:"John", firstName:"Doe");  //lastName is now "John", firstName is now "Doe"
+            
+    Console.WriteLine(fullname);
+}
+
+static string MakeFullName(string firstName, string lastName)
+{
+    return firstName + ' ' + lastName;
+}
+```
+
 ## Constructors
 A constructors is a special public method that are automatically run when an instance of the class is created. Constructors do not have a return type and _must_ 
 share the name of their class and are often used to initialize the data members of said class. Constructors can be used for more than just initializing data members;
