@@ -43,6 +43,20 @@ Doubles also have a special set of values for supporting infinity and NaN (see t
 > Check if a value is one of the above like `10 / 2 == double.NaN;`.
 ---
 
+By default, value types (like _int_ and _bool_) cannot be null. To allow a value-type to be null, you must declare the variable as a [nullable type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types).
+
+```C#
+//Declaring a nullable value
+bool  isTall = null;    //Illegal
+bool? isTall = null;   //Legal
+
+if (isTall is null)  //Checking for null
+{
+    Console.WriteLine("Uh, what?");
+}
+```
+---
+
 ## Non-primitive Datatypes
 | Datatype | Description |
 | -------- | ----------- | 
