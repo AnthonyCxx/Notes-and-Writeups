@@ -10,6 +10,7 @@ This comes in extremely handy with Windows as Windows uses backslashes as a deli
 //Declaring a filepath
 string filepath = @"C:\Program Files";
 ```
+> To use quotation marks in a raw string, you have to use two apiece
 
 ### Interpolated Strings ($, { })
 Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result. <br />
