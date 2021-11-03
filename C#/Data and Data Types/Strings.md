@@ -15,6 +15,8 @@ string filepath = @"C:\Program Files";
 ### Interpolated Strings ($, { })
 Prefixing a string with a _$_ and then putting a variable, function, expression, etc. in _{ }_ will replace it with the value/result. <br />
 String interpolation is a shorthand for calling the _String.Format()_ method. <br />
+
+> According to the [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions#string-data-type), string interpolation should be used for concatenating short strings.
 ```C#
 //Promp the user for their name
 Console.Write("Enter your name: ");  //No implicit \n
