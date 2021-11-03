@@ -33,7 +33,15 @@ Technically, a string is a reference type, but I included it here too since it f
 > Reference: [Literal Suffixes in C#](https://www.c-sharpcorner.com/article/data-type-suffixes-in-c-sharp/) <br />
 
 ---
-Doubles also have a sepcial
+Doubles also have a special set of values for supporting infinity and NaN (see IEEE standard: [formats](https://en.wikipedia.org/wiki/IEEE_754#Formats)). 
+
+| Concept | Float Representation | Double Representation |
+| ------- | -------------------- | --------------------- |
+| [Not a Number (NaN)](https://docs.microsoft.com/en-us/dotnet/api/system.double.nan?view=net-5.0#remarks) | `float.NaN` | `double.NaN` |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
 ---
 
 ## Non-primitive Datatypes
