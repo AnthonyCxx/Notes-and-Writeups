@@ -13,7 +13,9 @@ namespace TextFilterer
             string text = "長いnagai１日だったdattaのでnodeおo疲れtsukareでしょうdeshou」「いいえiie、全然zenzen";
             string removalPattern = @"[a-zA-Z]";
 
+            Console.WriteLine();
             Console.WriteLine(Remove(text, removalPattern));
+            Console.WriteLine();
         }
 
         public static string Remove(string input, string pattern)
