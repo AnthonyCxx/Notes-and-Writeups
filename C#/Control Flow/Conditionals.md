@@ -120,6 +120,33 @@ switch (request)
 }
 ```
 
+### Type-based Switch Statement
+
+```C#
+static void Main(string[] args)
+{   
+            //Prints the integer '123'
+            Console.WriteLine( ToInt("123") );   
+}
+
+static int ToInt(object number)
+{
+    switch (number)
+    {
+        case double d:
+            return Convert.ToInt32(d);
+
+        case string s:
+            return Int32.TryParse(s, out int x) ? x : 0;
+                    
+        default:
+            return 0;
+    }
+}
+```
+> [C# Switch on Type](https://systemoutofmemory.com/blogs/the-programmer-blog/c-sharp-switch-on-type) <br />
+> StackOverflow: [Switch on Type](https://stackoverflow.com/questions/298976/is-there-a-better-alternative-than-this-to-switch-on-type) <br />
+
 ## The Ternary Operator (? :)
 The ternary operator (as opposed to binary or unary operators) takes a condition and evaluates it; if the condition is true, it returns the first expression; if not,
 it returns the second expression. Think of the ternary operator as a simplified version of a standard _if_-_else_ conditional structure.
