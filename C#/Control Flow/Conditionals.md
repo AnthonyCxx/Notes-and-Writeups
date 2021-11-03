@@ -120,6 +120,33 @@ switch (request)
 }
 ```
 
+### Expression-based Switch Statement
+Unlike switch statements in C and C++, switch statements in C# are not limited to integer constants.
+
+```C#
+static void Main(string[] args)
+{   
+    double myHeight = 72D;
+
+    if (MeetsHeightRequirement(myHeight)) {
+        Console.WriteLine("You are tall enough to ride");
+    }
+    else {
+        Console.WriteLine("You do not meet the height requirement");
+    }
+}
+
+static bool MeetsHeightRequirement(double height)
+{
+    switch (height)
+    {
+        case < 60: return false;
+        case >= 60: return true;
+        default:  return false;
+    }
+}
+```
+
 ### Type-based Switch Statement
 
 ```C#
