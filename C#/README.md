@@ -15,8 +15,13 @@ Here are some shortcuts to the major folders and common files. This is not compr
 - [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#non-primitive-datatypes)
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Control%20Flow)
 - [Preprocessor Directives](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Language%20Features/Preprocessor%20Directives.md)
+- [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) <br />
 
 ### Intermediate
+//Empty :(
+
+### Advanced
+//Also empty :(
 
 ### References
 - [C# Base Class Library ](https://www.thebestcsharpprogrammerintheworld.com/2020/06/10/base-class-library-bcl/)
