@@ -8,3 +8,18 @@
 - Hamiltonian Circle (a cycle that visits all points)
 - Brute force is O(n-1)!
 - Best solution is O(n²2^n)
+
+
+Given a list of cities, and the distances between each pair of...
+
+### O(n-1)! Solution
+
+```C++
+
+```
+
+### O(n²2^n) Solution
+
+```C++
+
+```
