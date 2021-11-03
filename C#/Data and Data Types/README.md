@@ -32,6 +32,10 @@ Technically, a string is a reference type, but I included it here too since it f
 > Reference: [C# Documentation: Default Values of C# Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values) <br />
 > Reference: [Literal Suffixes in C#](https://www.c-sharpcorner.com/article/data-type-suffixes-in-c-sharp/) <br />
 
+---
+Doubles also have a sepcial
+---
+
 ## Non-primitive Datatypes
 | Datatype | Description |
 | -------- | ----------- | 
