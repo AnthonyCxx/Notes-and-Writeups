@@ -40,7 +40,7 @@ Doubles also have a special set of values for supporting infinity and NaN (see t
 | [Not a Number (NaN)](https://docs.microsoft.com/en-us/dotnet/api/system.double.nan?view=net-5.0#remarks) | `float.NaN` | `double.NaN` |
 | ∞ | `float.PositiveInfinity` | `double.PositiveInfinity` |
 | -∞ | `float.NegativeInfinity` | `double.PositiveInfinity` |
-
+> Check if a value is one of the above like `10 / 2 == double.NaN;`.
 ---
 
 ## Non-primitive Datatypes
