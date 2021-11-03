@@ -242,4 +242,4 @@ Console.WriteLine($"The beginning of the IP Address is {IPAddressFields[0]} ");
 ```
 > Prints "The beginning of the IP Address is 192" <br />
 >
-> Consider splitting a sentence into individual words with _.Split(" ")_
+> Consider splitting a sentence into individual words with _.Split(' ')_
