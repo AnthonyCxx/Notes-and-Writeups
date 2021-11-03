@@ -148,6 +148,7 @@ static bool MeetsHeightRequirement(double height)
 ```
 
 ### Type-based Switch Statement
+Switch statement evaluations can also be done by datatype.
 
 ```C#
 static void Main(string[] args)
