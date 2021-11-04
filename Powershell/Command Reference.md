@@ -1,13 +1,19 @@
 # A List of Powershell Commands
 
-# Commands
+# Information
 
 ## Get-Help
+> Aliases: 
 
 ## Get-Service
 
-### Get-Member
+## Get-Member
 
-### Get-ComputerInfo
+## Get-ComputerInfo
 
-###
+# Actions
+
+## Sort-Object
+> Aliases: 
+
+## 
