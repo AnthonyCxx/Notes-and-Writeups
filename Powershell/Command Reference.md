@@ -1,9 +1,16 @@
 # A List of Powershell Commands
 
-# Information
+# Help
 
 ## Get-Help
-> Aliases: 
+> Aliases: None
+
+## Get-Alias
+> Aliases: gal
+
+##
+
+# Information
 
 ## Get-Service
 
