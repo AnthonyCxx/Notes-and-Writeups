@@ -8,6 +8,13 @@
 ## Get-Alias
 > Aliases: gal
 
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
 ##
 
 # Information
