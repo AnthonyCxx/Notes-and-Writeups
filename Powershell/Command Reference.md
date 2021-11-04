@@ -1,10 +1,10 @@
 # A List of Powershell Commands
 
-## Commands
+# Commands
 
-### Get-Help
+## Get-Help
 
-### Get-Service
+## Get-Service
 
 ### Get-Member
 
