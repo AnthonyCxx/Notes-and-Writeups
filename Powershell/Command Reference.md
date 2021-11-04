@@ -11,7 +11,7 @@
 
 ## Get-ComputerInfo
 
-# Actions
+# Manipulating Information
 
 ## Sort-Object
 > Aliases: 
