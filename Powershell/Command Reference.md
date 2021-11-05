@@ -26,7 +26,7 @@
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
-| `-Full`,`-Detailed`,`-Examples`,`-Online`,`Parameter`,`ShowWindow` | ... | ... |
+| `-Full`, `-Detailed`, `-Examples`, `-Online`, `Parameter`, `ShowWindow` | ... | ... |
 |  |  |  |
 
 ## Get-Alias
