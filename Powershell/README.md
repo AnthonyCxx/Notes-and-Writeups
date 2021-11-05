@@ -3,4 +3,5 @@
 
 
 # Resources
-- Microsoft Documentation: [Learn Powershell101](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.1)
+- Powershell Documentation: [Fundamentals of Powershell: Syntax and Objects](https://docs.microsoft.com/en-us/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1)
+- Powershell Documentation: [Learn Powershell101](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.1)
