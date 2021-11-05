@@ -9,9 +9,6 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 > [Get-Member](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-member) <br />
 > [Get-Alias](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-alias) <br />
 
-## Get-Command
-> Aliases: gcm
-
 ## Get-Help
 > Aliases: help, man
 
@@ -23,6 +20,9 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 | `-Full`, `-Detailed`, `-Examples`, <br /> `-Online`, `-Parameter <parameter>`, <br /> `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
 
 ---
+
+## Get-Command
+> Aliases: gcm
 
 "The `Get-Command` cmdlet gets all commands that are installed on the computer, including cmdlets, aliases, functions, filters, scripts, and applications."
 
