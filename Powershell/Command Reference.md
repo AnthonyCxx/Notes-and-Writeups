@@ -2,6 +2,8 @@
 > Quick Reference: <br />
 > [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#getting-help) <br />
 
+Anything in quotation marks comes directly from the built-in documentation, which is avalilable with `Get-Help -Name <commandlet>`.
+
 # Getting Help
 
 ## Get-Command
