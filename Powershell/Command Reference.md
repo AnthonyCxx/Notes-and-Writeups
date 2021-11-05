@@ -40,7 +40,7 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 ## Get-Member
 > Aliases: gm
 
-" The `Get-Member` cmdlet gets the members, the properties and methods, of objects."; to use `Get-Member`, you have to pipe something into it.
+"The `Get-Member` cmdlet gets the members, the properties and methods, of objects."; to use `Get-Member`, you have to pipe something into it.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
