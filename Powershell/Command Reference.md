@@ -13,9 +13,12 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `-Noun <noun>` | list commands related to \<noun\> concept | `Get-Command -Noun *adapter*` |
+| `-Verb <verb>` | list commands related to \<verb\> action | `Get-Command -Verb Enable*` |
+| `-Type <type>` | list commands of type \<type\> (e.g. cmdlet, function...) | `Get-Command -Type Script` |
+| `-Module <module>` | list commands from a specific module | `Get-Command -Module Microsoft.PowerShell.Security` |
+| `` |  | `` |
+> You can list all modules with `Get-Module -ListAvailable`.
 
 ---
 
@@ -47,6 +50,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 ## Get-Alias
 > Aliases: gal
 
+"The `Get-Alias` cmdlet gets the aliases in the current session."
+
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Name <alias>` | lists commands related to the given name (the given alias) | `Get-Alias -Name sl*` |
@@ -61,9 +66,10 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 
 ## Get-ComputerInfo
 
-# Manipulating Information
+# Formatting
+
+## Format-Table
+
+## Out-GridView
 
 ## Sort-Object
-> Aliases: 
-
-## 
