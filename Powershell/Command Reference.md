@@ -33,7 +33,7 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 ---
 
 ## Get-Help
-> Aliases: man
+> Aliases: man, help
 
 "`Get-Help` gets the help content that it displays from help files on your computer. Without the help files, `Get-Help` displays only basic information about cmdlets."
 
