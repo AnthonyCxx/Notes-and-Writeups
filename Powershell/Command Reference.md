@@ -32,7 +32,7 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 | `-Verb <verb>` | list commands related to \<verb\> action | `Get-Command -Verb Enable*` |
 | `-Type <type>` | list commands of type \<type\> (e.g. cmdlet, function...) | `Get-Command -Type Script` |
 | `-Module <module>` | list commands from a specific module | `Get-Command -Module Microsoft.PowerShell.Security` |
-| `(Get-Command Get-ComputerInfo).ModuleName` | list module a command is from | `(Get-Command Get-Date).ModuleName` |
+| `(Get-Command <module>).ModuleName` | list module a command is from | `(Get-Command Get-ComputerInfo).ModuleName` |
 > You can list all modules with `Get-Module -ListAvailable`.
 
 ---
