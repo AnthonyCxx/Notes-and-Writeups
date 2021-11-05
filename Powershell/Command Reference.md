@@ -2,8 +2,13 @@
 
 # Help
 
+## Get-Command
+
+## Get-Member
+
 ## Get-Help
 > Aliases: None
+
 | Option | Function | Example |
 | ------ | -------- | ------- |
 |  |  |  |
