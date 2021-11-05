@@ -1,13 +1,28 @@
 # A Quick Reference for Powershell Commands
-> Quick Reference: <br />
 > [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#getting-help) <br />
 
 Anything in quotation marks comes directly from the built-in documentation, which is avalilable with `Get-Help -Name <commandlet>`.
 
 # Getting Help
+> [Get-Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-help) <br />
+> [Get-Command](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-command) <br />
+> [Get-Member](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-member) <br />
+> [Get-Alias](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-alias) <br />
 
 ## Get-Command
 > Aliases: gcm
+
+## Get-Help
+> Aliases: help, man
+
+"`Get-Help` gets the help content that it displays from help files on your computer. Without the help files, `Get-Help` displays only basic information about cmdlets."
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+| `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
+| `-Full`, `-Detailed`, `-Examples`, <br /> `-Online`, `-Parameter <parameter>`, <br /> `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
+
+---
 
 "The `Get-Command` cmdlet gets all commands that are installed on the computer, including cmdlets, aliases, functions, filters, scripts, and applications."
 
@@ -32,18 +47,6 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 |  |  |  |
 |  |  |  |
 |  |  |  |
-
----
-
-## Get-Help
-> Aliases: help, man
-
-"`Get-Help` gets the help content that it displays from help files on your computer. Without the help files, `Get-Help` displays only basic information about cmdlets."
-
-| Option | Function | Example |
-| ------ | -------- | ------- |
-| `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
-| `-Full`, `-Detailed`, `-Examples`, <br /> `-Online`, `-Parameter <parameter>`, <br /> `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
 
 ---
 
