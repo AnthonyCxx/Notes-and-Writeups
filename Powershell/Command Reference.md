@@ -7,6 +7,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 # Getting Help
 
 ## Get-Command
+> Aliases: gcm
+
 "The `Get-Command` cmdlet gets all commands that are installed on the computer, including cmdlets, aliases, functions, filters, scripts, and applications."
 
 | Option | Function | Example |
@@ -14,11 +16,12 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 |  |  |  |
 |  |  |  |
 |  |  |  |
-> Aliases: gcm
 
 ---
 
 ## Get-Member
+> Aliases: gm
+
 " The `Get-Member` cmdlet gets the members, the properties and methods, of objects."
 
 | Option | Function | Example |
@@ -26,7 +29,6 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 |  |  |  |
 |  |  |  |
 |  |  |  |
-> Aliases: gm
 
 ---
 
@@ -39,6 +41,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 | ------ | -------- | ------- |
 | `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
 | `-Full`, `-Detailed`, `-Examples`, <br /> `-Online`, `-Parameter <parameter>`, <br /> `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
+
+---
 
 ## Get-Alias
 > Aliases: gal
