@@ -1,10 +1,24 @@
-# A List of Powershell Commands
+# A Quick Reference for Powershell Commands
 
 # Help
 
 ## Get-Command
+> Aliases:
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ## Get-Member
+> Aliases:
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ## Get-Help
 > Aliases: None
