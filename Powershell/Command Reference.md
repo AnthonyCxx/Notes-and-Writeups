@@ -16,6 +16,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 |  |  |  |
 > Aliases: gcm
 
+---
+
 ## Get-Member
 " The `Get-Member` cmdlet gets the members, the properties and methods, of objects."
 
@@ -25,6 +27,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 |  |  |  |
 |  |  |  |
 > Aliases: gm
+
+---
 
 ## Get-Help
 > Aliases: man
