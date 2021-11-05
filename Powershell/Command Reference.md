@@ -27,6 +27,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 ## Get-Help
 > Aliases: man
 
+"`Get-Help` gets the help content that it displays from help files on your computer. Without the help files, `Get-Help` displays only basic information about cmdlets."
+
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
