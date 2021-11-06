@@ -1,5 +1,8 @@
 # A Quick Reference for Powershell Commands
 > [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#getting-help) <br />
+> [System Information](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#system-information) <br />
+> [Formatting Data](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#formatting-data) <br />
+> [Miscellaneous](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#miscellaneous) <br />
 
 Anything in quotation marks comes directly from the built-in documentation, which is avalilable with `Get-Help -Name <commandlet>`.
 
