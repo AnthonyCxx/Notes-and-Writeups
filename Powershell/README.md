@@ -1,6 +1,10 @@
 # Powershell
 > Terminal: [Windows Fluent Terminal](https://www.microsoft.com/en-us/p/fluent-terminal/9p2krlmfxf9t#activetab=pivot:overviewtab) with Powershell
 
+What is Powershell? "PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. 
+PowerShell runs on Windows, Linux, and macOS." -Powershell Documentation: [What is Powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1).
+
+
 # Notes
 - [Command Reference](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md)
 
