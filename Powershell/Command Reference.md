@@ -17,7 +17,8 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
-| `-Full`, `-Detailed`, `-Examples`, <br /> `-Online`, `-Parameter <parameter>`, <br /> `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
+| `-Full`, `-Detailed`, `-Online`, `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
+| `-Parameter <parameter>` | shows help for a parameter of a command | `Get-Help -Name Set-Timezone -Parameter Id` |
 | `-Examples` | show examples for a command | `Get-Help Write-Output -Examples` |
 
 ---
