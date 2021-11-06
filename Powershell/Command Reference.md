@@ -63,7 +63,7 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 | `-Definition <command>` | lists aliases related to a given cmdlet | `Get-Alias -Definition Sort-Object` |
 | `-Exclude <alias>` | excludes related aliases from the search results | `Get-Alias g* -Exclude gp*` |
 
-# Information
+# System Information
 
 ## Get-Service
 
@@ -71,7 +71,7 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 
 ## Get-ComputerInfo
 
-# Formatting
+# Formatting Data
 
 ## Format-Table
 
