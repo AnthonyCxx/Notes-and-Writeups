@@ -9,7 +9,8 @@ PowerShell runs on Windows, Linux, and macOS." -Powershell Documentation: [What 
 - [Command Reference](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md)
 
 # References
-//Empty
+- Powershell Documentation: [Official List of Approved Verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
+- 
 
 # Resources
 - Powershell Documentation: [Fundamentals of Powershell: Syntax and Objects](https://docs.microsoft.com/en-us/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1)
