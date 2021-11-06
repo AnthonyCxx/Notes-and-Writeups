@@ -18,6 +18,7 @@ Anything in quotation marks comes directly from the built-in documentation, whic
 | ------ | -------- | ------- |
 | `-Name <command>` | shows help files for a given command | `Get-Help -Name Get-ComputerInfo` |
 | `-Full`, `-Detailed`, `-Examples`, <br /> `-Online`, `-Parameter <parameter>`, <br /> `-ShowWindow` | specify help info/format | `Get-Help -Name Get-Alias -ShowWindow` |
+| `-Examples` | show examples for a command | `Get-Help Write-Output -Examples` |
 
 ---
 
