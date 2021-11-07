@@ -6,6 +6,23 @@
 
 Anything in quotation marks comes directly from the built-in documentation, which is avalilable with `Get-Help -Name <commandlet>`.
 
+# Common Parameters and Risk-mitigation Options
+Options that most commands have. [See the documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7.1).
+
+| Option | Function |
+| ------ | -------- | 
+| `-Debug` |  |
+| `-ErrorAction` |  |
+| `-ErrorVariable` |  | 
+| `-OutBuffer` |  | 
+| `-OutVariable` |  | 
+| `-PipelineVariable` |  | 
+| `-Verbose` |  | 
+| `-WarningAction` |  | 
+| `-WarningVariable` |  | 
+| `-Confirm` |  |
+| `-WhatIf` |  | 
+
 # Getting Help
 > [Get-Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-help) <br />
 > [Get-Command](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-command) <br />
