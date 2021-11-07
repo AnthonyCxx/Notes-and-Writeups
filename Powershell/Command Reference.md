@@ -19,10 +19,10 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-InformationVariable` | "stores in a variable a string that you specify by adding the `Write-Information` command." | 
 | `-OutBuffer` | "determines the number of objects to accumulate in a buffer before any objects are sent through the pipeline." | 
 | `-OutVariable` | "stores output from the command in the specified variable in addition to sending the output along the pipeline." | 
-| `-PipelineVariable` | "" | 
-| `-Verbose` | "" | 
-| `-WarningAction` | "" | 
-| `-WarningVariable` | "" | 
+| `-PipelineVariable` | "stores the value of the current pipeline element as a variable." | 
+| `-Verbose` | "displays detailed information about the operation done by the command." | 
+| `-WarningAction` | "determines how the cmdlet responds to a warning from the command." | 
+| `-WarningVariable` | "stores warnings about the command in the specified variable" | 
 | `-Confirm` | "prompts you for confirmation before executing the command." |
 | `-WhatIf` | "writes a message that describes the effects of running the cmdlet without actually performing any action" | 
 
