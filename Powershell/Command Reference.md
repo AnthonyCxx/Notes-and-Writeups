@@ -12,7 +12,7 @@ Options that all commands support. [See the documentation](https://docs.microsof
 
 | Option | Function |
 | ------ | -------- | 
-| `-Debug` | "" |
+| `-Debug` | "displays programmer-level detail about the operation done by the command. This parameter works only when the command generates a debugging message." |
 | `-ErrorAction` | "" |
 | `-ErrorVariable` | "" | 
 | `-OutBuffer` | "" | 
