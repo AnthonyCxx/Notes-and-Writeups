@@ -25,7 +25,7 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-WarningVariable` | "stores warnings about the command in the specified variable" | 
 | `-Confirm` | "prompts you for confirmation before executing the command." |
 | `-WhatIf` | "writes a message that describes the effects of running the cmdlet without actually performing any action" | 
-| `-Force` | supresses prompts for confirmation |
+| `-Force` | forcibly performs a command; supresses prompts for confirmation |
 
 # Getting Help
 > [Get-Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-help) <br />
