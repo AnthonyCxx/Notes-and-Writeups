@@ -15,9 +15,9 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-Debug` | "displays programmer-level detail about the operation; only works if when the command generates a debugging message." |
 | `-ErrorAction` | "determines how to respond to a non-terminating error; only works if the command generates a non-terminating error." |
 | `-ErrorVariable` | "stores error messages about the command in the specified variable and in the `$Error` automatic variable." | 
-| `-InformationAction` | "overrides the value of the `$InformationPreference` preference variable, which by default is set to **SilentlyContinue**." | 
-| `-InformationVariable` | "" | 
-| `-OutBuffer` | "" | 
+| `-InformationAction` | "overrides the value of `$InformationPreference`, which by default is set to **SilentlyContinue**." | 
+| `-InformationVariable` | "stores in a variable a string that you specify by adding the `Write-Information` command." | 
+| `-OutBuffer` | "determines the number of objects to accumulate in a buffer before any objects are sent through the pipeline." | 
 | `-OutVariable` | "" | 
 | `-PipelineVariable` | "" | 
 | `-Verbose` | "" | 
