@@ -12,9 +12,9 @@ Options that all commands support. [See the documentation](https://docs.microsof
 
 | Option | Function |
 | ------ | -------- | 
-| `-Debug` | "displays programmer-level detail about the opation; only when the command generates a debugging message." |
-| `-ErrorAction` | "" |
-| `-ErrorVariable` | "" | 
+| `-Debug` | "displays programmer-level detail about the operation; only works if when the command generates a debugging message." |
+| `-ErrorAction` | "determines how to respond to a non-terminating error; only works if the command generates a non-terminating error" |
+| `-ErrorVariable` | "stores error messages about the command in the specified variable and in the `$Error` automatic variable" | 
 | `-OutBuffer` | "" | 
 | `-OutVariable` | "" | 
 | `-PipelineVariable` | "" | 
