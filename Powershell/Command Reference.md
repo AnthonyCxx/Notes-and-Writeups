@@ -1,4 +1,5 @@
 # A Quick Reference for Powershell Commands
+> [Common Parameters and Risk-mitigation Options](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#common-parameters-and-risk-mitigation-options) <br />
 > [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#getting-help) <br />
 > [System Information](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#system-information) <br />
 > [Formatting Data](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#formatting-data) <br />
@@ -7,7 +8,7 @@
 Anything in quotation marks comes directly from the built-in documentation, which is avalilable with `Get-Help -Name <commandlet>`.
 
 # Common Parameters and Risk-mitigation Options
-Options that most commands have. [See the documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7.1).
+Options that all commands support. [See the documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7.1).
 
 | Option | Function |
 | ------ | -------- | 
