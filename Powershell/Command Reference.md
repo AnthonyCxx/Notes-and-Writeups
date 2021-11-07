@@ -5,24 +5,24 @@
 > [Formatting Data](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#formatting-data) <br />
 > [Miscellaneous](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#miscellaneous) <br />
 
-Anything in quotation marks comes directly from the built-in documentation, which is avalilable with `Get-Help -Name <commandlet>`.
+Anything in quotation marks comes directly from documentation, which is avalilable with `Get-Help -Name <commandlet>` or online.
 
 # Common Parameters and Risk-mitigation Options
 Options that all commands support. [See the documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters?view=powershell-7.1).
 
 | Option | Function |
 | ------ | -------- | 
-| `-Debug` |  |
-| `-ErrorAction` |  |
-| `-ErrorVariable` |  | 
-| `-OutBuffer` |  | 
-| `-OutVariable` |  | 
-| `-PipelineVariable` |  | 
-| `-Verbose` |  | 
-| `-WarningAction` |  | 
-| `-WarningVariable` |  | 
-| `-Confirm` |  |
-| `-WhatIf` |  | 
+| `-Debug` | "" |
+| `-ErrorAction` | "" |
+| `-ErrorVariable` | "" | 
+| `-OutBuffer` | "" | 
+| `-OutVariable` | "" | 
+| `-PipelineVariable` | "" | 
+| `-Verbose` | "" | 
+| `-WarningAction` | "" | 
+| `-WarningVariable` | "" | 
+| `-Confirm` | "prompts you for confirmation before executing the command." |
+| `-WhatIf` | "writes a message that describes the effects of running the cmdlet without actually performing any action" | 
 
 # Getting Help
 > [Get-Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-help) <br />
