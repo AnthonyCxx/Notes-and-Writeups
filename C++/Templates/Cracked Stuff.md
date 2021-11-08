@@ -83,9 +83,94 @@ decltype(auto) time(Function&& func, Args&&... args)
 
 ## Custom Tuple Implementation
 
-https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp
+Inspired by: https://github.com/eliben/code-for-blog/blob/master/2014/variadic-tuple.cpp <br />
+Taken from: https://riptutorial.com/cplusplus/example/19276/variadic-template-data-structures
+    
+```C++
+   #include <iostream>
 
-**UNFINISHED**
+template<std::size_t index, typename T>
+struct GetHelper;
+
+//Base case!
+template <typename ...T>
+struct DataStructure
+{
+
+};
+
+
+//Variadic data structure
+template <typename T, typename ...Rest>
+struct DataStructure<T, Rest...>
+{
+    //Data
+    T first;
+    DataStructure<Rest...> rest;
+
+    //Constructor
+    DataStructure(const T& first, const Rest&... rest): first(first), rest(rest...)
+    {
+
+    }
+
+    //Get function
+    template <std::size_t index>
+    auto get()
+    {
+        return GetHelper<index, DataStructure<T,Rest...>>::get(*this);
+    }
+};
+
+
+//Base case!
+template <typename T, typename ...Rest>
+struct GetHelper<0, DataStructure<T,Rest...>>
+{
+    static T get(DataStructure<T, Rest...>& data)
+    {
+        return data.first;
+    }
+};
+
+
+//Get helper
+template <std::size_t index, typename T, typename ...Rest>
+struct GetHelper<index, DataStructure<T, Rest...>>
+{
+    static auto get(DataStructure<T, Rest...>& data)
+    {
+        return GetHelper<index-1, DataStructure<Rest...>>::get(data.rest);
+    }
+};
+
+// DRIVER CODE //
+int main()
+{
+    DataStructure<int, float, std::string> data(1, 2.1, "Hello");
+
+    std::cout << data.get<0>() << std::endl;
+    std::cout << data.get<1>() << std::endl;
+    std::cout << data.get<2>() << std::endl;
+
+
+    return 0;
+} 
+```
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+## **UNFINISHED**
 ```C++
 #include <iostream>
 
