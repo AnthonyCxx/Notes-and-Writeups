@@ -1,5 +1,5 @@
 # Strings
-Note: **_..._** is used to indicate a varying amount of parameters. <br />
+> Note: **_..._** is used to indicate a varying amount of parameters. <br />
 
 Strings are a series of read-only characters representing text. [Strings are immutable](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#:~:text=String%20objects%20are%20immutable%3A%20they,in%20a%20new%20string%20object.); once created, any operation that changes it actually returns a new string.
 
