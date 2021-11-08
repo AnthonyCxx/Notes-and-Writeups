@@ -26,7 +26,8 @@ Console.WriteLine("\nYou entered: " + (char) character)
 
 ## Console.ReadKey()
 _Console.ReadKey()_ returns a single character and is often used with prompts. <br />
-_Console.ReadKey()_ will only read a character; to use the character, use the _.KeyChar_ ReadKey() data member.
+_Console.ReadKey()_ will only read a character and returns it as a [ConsoleKeyInfo](https://docs.microsoft.com/en-us/dotnet/api/system.consolekeyinfo?view=net-5.0) object;
+to use the character, use the _.KeyChar_ data member.
 ```C#
 char choice;
 
