@@ -39,7 +39,7 @@ A list of the operators in C#, taken from [_The C# Documentation: Operators_](ht
 | \|\| | binary | returns true if at least one operand is true |
 | ^ | binary | returns true if only 1 expression is true |
 | ! | unary prefix | negates the result of an expression |
-> If you want to use `&&` and `||` without short-circuit evaluation, use `&&` and `||`
+> If you want to use `&&` and `||` without short-circuit evaluation, use `&` and `|`
 
 ## Bitwise and Shift Operators
 These operators return a byte which is the result of the following manipulation.
