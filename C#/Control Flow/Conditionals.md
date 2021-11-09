@@ -192,7 +192,4 @@ string result = (pi > sqrt5) ? "Pi is greater than the square root of 5" : "Pi i
 
 Console.WriteLine(result);
 ```
-> Prints "Pi is greater than the square root of 5", as 3.14 is greater than 2.24
-
-## Pattern Matching
-"" -[C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching)
+> Prints "Pi is greater than the square root of 5", as 3.14 is greater than 2.2"
