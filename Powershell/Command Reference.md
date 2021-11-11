@@ -108,3 +108,10 @@ Options that all commands support. [See the documentation](https://docs.microsof
 ## Out-Null
 
 ## Measure-Command
+
+# UNDOCUMENTED
+- `Clear-Host` (cls): clears the screen
+- `Set-Location` (sl, cd): change directory
+- `Get-ChildItem` (gci, dir, ls): list directory contents
+- `Get-Content` (gc, type, cat): print contents of a file to console
+- `Copy-Item` (copy, cp): copy a file
