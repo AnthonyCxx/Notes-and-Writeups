@@ -26,3 +26,10 @@ cout << (12 << 3) << '\n';  //  12 * (2^3) == 94
 cout << (12 >> 1) << '\n';  // 12 / (2^1) == 6
 cout << (12 >> 2) << '\n'; //  12 / (2^2) == 3
 ```
+
+## Finding the last digit of a number 
+Modding any number by 10 yields the digit it ends in.
+
+```C++
+cout << "The last digit in 102 is " << 102 % 10 << '\n';
+```
