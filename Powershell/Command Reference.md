@@ -127,7 +127,7 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Attributes` | limits results to items with the specified [FileAttributes](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileattributes?view=net-5.0) | `` |
+| `-Attributes` | limits results to items with the specified [FileAttributes](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileattributes?view=net-5.0). Combine attributes with `+` (and), `,` (or), and `!` (not) | `` |
 | `` |  | `` |
 
 ---
