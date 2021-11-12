@@ -99,14 +99,14 @@ Options that all commands support. [See the documentation](https://docs.microsof
 
 ---
 
-## Clear-Host: clears the screen
+## Clear-Host
 > Aliases: cls
 
 Clears the screen. This command has no parameters.
 
 ---
 
-## Set-Location: change directory
+## Set-Location
 > Aliases: sl, cd
 
 "Sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or any provider path."
@@ -119,7 +119,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Get-ChildItem: list directory contents
+## Get-ChildItem
 > Aliases: gci, dir, ls
 
 | Option | Function | Example |
@@ -129,7 +129,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Get-Content: print contents of a file to console
+## Get-Content
 > Aliases: (gc, type, cat)
 
 | Option | Function | Example |
@@ -139,7 +139,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Copy-Item: copy a file
+## Copy-Item
 > Aliases: copy, cp
 
 | Option | Function | Example |
