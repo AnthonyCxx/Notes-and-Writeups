@@ -17,3 +17,9 @@
 
 ## Minimum Spanning Tree
 - Remove edges fro mG scuh that G remains connected such that the ...
+
+## Greedy Alogrithms for finding a Minimum Spanning Tree
+- Prim's Alogrithm
+- Kruskal's Algorithm
+- Each uses a different locally optimal property
+- Must prove each algorithm
