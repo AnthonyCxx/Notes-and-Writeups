@@ -87,6 +87,13 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-Definition <command>` | lists aliases related to a given cmdlet | `Get-Alias -Definition Sort-Object` |
 | `-Exclude <alias>` | excludes related aliases from the search results | `Get-Alias g* -Exclude gp*` |
 
+# Navigating the Commandline
+- `Clear-Host` (cls): clears the screen
+- `Set-Location` (sl, cd): change directory
+- `Get-ChildItem` (gci, dir, ls): list directory contents
+- `Get-Content` (gc, type, cat): print contents of a file to console
+- `Copy-Item` (copy, cp): copy a file
+
 # System Information
 
 ## Get-Service
@@ -110,8 +117,3 @@ Options that all commands support. [See the documentation](https://docs.microsof
 ## Measure-Command
 
 # UNDOCUMENTED
-- `Clear-Host` (cls): clears the screen
-- `Set-Location` (sl, cd): change directory
-- `Get-ChildItem` (gci, dir, ls): list directory contents
-- `Get-Content` (gc, type, cat): print contents of a file to console
-- `Copy-Item` (copy, cp): copy a file
