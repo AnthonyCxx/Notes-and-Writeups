@@ -93,18 +93,43 @@ Options that all commands support. [See the documentation](https://docs.microsof
 ## Clear-Host: clears the screen
 > Aliases: cls
 
+Clears the screen.
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
 
 ## Set-Location: change directory
 > Aliases: sl, cd
 
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
+
 ## Get-ChildItem: list directory contents
 > Aliases: gci, dir, ls
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
 
 ## Get-Content: print contents of a file to console
 > Aliases: (gc, type, cat)
 
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
+
 ## Copy-Item: copy a file
 > Aliases: copy, cp
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+|  |  |  |
+|  |  |  |
 
 # System Information
 
