@@ -42,3 +42,6 @@ Modding any number by 10 yields the digit it ends in.
 ```C++
 cout << "The last digit in 102 is " << 102 % 10 << '\n';
 ```
+
+## Bit Hacks
+[https://www.youtube.com/watch?v=ZRNO-ewsNcQ](https://www.youtube.com/watch?v=ZRNO-ewsNcQ)
