@@ -60,7 +60,7 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-Verb <verb>` | list commands related to \<verb\> action | `Get-Command -Verb Enable*` |
 | `-Type <type>` | list commands of type \<type\> (e.g. cmdlet, function...) | `Get-Command -Type Script` |
 | `-Module <module>` | list commands from a specific module | `Get-Command -Module Microsoft.PowerShell.Security` |
-| `(Get-Command <module>).ModuleName` | list module a command is from | `(Get-Command Get-ComputerInfo).ModuleName` |
+| `(Get-Command <cmdlet>).ModuleName` | list module a command is from | `(Get-Command Get-ComputerInfo).ModuleName` |
 > You can list all modules with `Get-Module -ListAvailable`.
 
 ---
