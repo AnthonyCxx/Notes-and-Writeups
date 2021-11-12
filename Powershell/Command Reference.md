@@ -125,11 +125,13 @@ Clears the screen. This command has no parameters.
 ## Get-ChildItem
 > Aliases: gci, dir, ls
 
+Lists the contents of a directory (folder).
+
 | Option | Function | Example |
 | ------ | -------- | ------- |
+| `-Directory` | limits results to directories | `Get-ChildItem -Directory | Measure-Object` |
 | `-Attributes` | limits results to items with the specified [FileAttributes](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileattributes?view=net-5.0). Combine attributes with `+` (and), `,` (or), and `!` (not). | `Get-ChildItem -Attributes !Directory+Hidden` |
-| `` |  | `` |
-| `` |  | `` |
+| `-Exclude` | excludes results that match the given pattern | `Get-ChildItem -Exclude *.tmp` |
 | `` |  | `` |
 | `` |  | `` |
 | `-Depth` | dictates maximum recursion depth | `` |
