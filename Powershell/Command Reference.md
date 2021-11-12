@@ -130,6 +130,7 @@ Lists the contents of a directory (folder).
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Directory` | limits results to directories | `Get-ChildItem -Directory | Measure-Object` |
+| `-File` | limits results to files | `Get-ChildItem -File` |
 | `-Attributes` | limits results to items with the specified [FileAttributes](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileattributes?view=net-5.0). Combine attributes with `+` (and), `,` (or), and `!` (not). | `Get-ChildItem -Attributes !Directory+Hidden` |
 | `-Exclude` | excludes results that match the given pattern | `Get-ChildItem -Exclude *.tmp` |
 | `` |  | `` |
