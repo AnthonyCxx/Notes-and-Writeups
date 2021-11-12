@@ -89,11 +89,22 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-Exclude <alias>` | excludes related aliases from the search results | `Get-Alias g* -Exclude gp*` |
 
 # Navigating the Commandline
-- `Clear-Host` (cls): clears the screen
-- `Set-Location` (sl, cd): change directory
-- `Get-ChildItem` (gci, dir, ls): list directory contents
-- `Get-Content` (gc, type, cat): print contents of a file to console
-- `Copy-Item` (copy, cp): copy a file
+
+## Clear-Host: clears the screen
+> Aliases: cls
+
+
+## Set-Location: change directory
+> Aliases: sl, cd
+
+## Get-ChildItem: list directory contents
+> Aliases: gci, dir, ls
+
+## Get-Content: print contents of a file to console
+> Aliases: (gc, type, cat)
+
+## Copy-Item: copy a file
+> Aliases: copy, cp
 
 # System Information
 
