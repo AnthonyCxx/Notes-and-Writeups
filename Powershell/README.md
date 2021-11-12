@@ -10,7 +10,6 @@ from [.NET](https://dotnet.microsoft.com/) and [C#](https://docs.microsoft.com/e
 
 # References
 - Powershell Documentation: [Official List of Approved Verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
-- 
 
 # Resources
 - Powershell Documentation: [Fundamentals of Powershell: Syntax and Objects](https://docs.microsoft.com/en-us/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1)
