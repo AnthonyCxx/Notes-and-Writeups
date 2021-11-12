@@ -90,10 +90,14 @@ Options that all commands support. [See the documentation](https://docs.microsof
 
 # Navigating the Commandline
 
+---
+
 ## Clear-Host: clears the screen
 > Aliases: cls
 
 Clears the screen. This command has no parameters.
+
+---
 
 ## Set-Location: change directory
 > Aliases: sl, cd
@@ -102,11 +106,13 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Path` |  | `Set-Location -Path C:\Users\ethan\Downloads\ |
+| `-Path` |  | `Set-Location -Path C:\Users\ethan\Downloads\` |
 | `-LiteralPath` |  | `` |
 | `-PassThru` |  | `` |
 | `-StackName` |  | `` |
 | `-UseTransaction` |  | `` |
+
+---
 
 ## Get-ChildItem: list directory contents
 > Aliases: gci, dir, ls
@@ -114,6 +120,8 @@ Clears the screen. This command has no parameters.
 | ------ | -------- | ------- |
 |  |  |  |
 |  |  |  |
+
+---
 
 ## Get-Content: print contents of a file to console
 > Aliases: (gc, type, cat)
@@ -123,6 +131,8 @@ Clears the screen. This command has no parameters.
 |  |  |  |
 |  |  |  |
 
+---
+
 ## Copy-Item: copy a file
 > Aliases: copy, cp
 
@@ -130,6 +140,8 @@ Clears the screen. This command has no parameters.
 | ------ | -------- | ------- |
 |  |  |  |
 |  |  |  |
+
+---
 
 # System Information
 
