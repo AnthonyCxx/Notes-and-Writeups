@@ -9,3 +9,8 @@
 
 - Selection Procedure: choose the next item to add to the solution set according to the greedy criterion satisfying the locally optimal consideration
 - Feasability Check: determine 
+
+
+## Spanning Tree
+- Connected, weighted, undirected graph G
+- Spanning tree is an acyclic sub-graph of G
