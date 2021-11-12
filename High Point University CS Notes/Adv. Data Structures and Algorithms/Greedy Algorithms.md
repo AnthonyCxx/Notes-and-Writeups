@@ -14,3 +14,6 @@
 ## Spanning Tree
 - Connected, weighted, undirected graph G
 - Spanning tree is an acyclic sub-graph of G
+
+## Minimum Spanning Tree
+- Remove edges fro mG scuh that G remains connected such that the ...
