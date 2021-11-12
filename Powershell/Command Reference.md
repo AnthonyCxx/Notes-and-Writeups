@@ -131,6 +131,8 @@ Clears the screen. This command has no parameters.
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
+| `` |  | `` |
+| `-Depth` | dictates maximum recursion depth | `` |
 
 ---
 
