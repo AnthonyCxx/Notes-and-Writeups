@@ -115,7 +115,6 @@ For a better explanation, look here: [_Wikipedia: Single-precision floating-poin
 P.S. If you don't understand the format `variable : int` then reference [this article](https://docs.microsoft.com/en-us/cpp/cpp/cpp-bit-fields?view=msvc-160) on bit fields.
 ```C++
 #include <iostream>
-using namespace std;
 
 union float_cast
 {
