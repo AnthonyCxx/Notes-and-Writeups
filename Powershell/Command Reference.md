@@ -106,16 +106,15 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Path` |  | `Set-Location -Path C:\Users\ethan\Downloads\` |
-| `-LiteralPath` |  | `` |
-| `-PassThru` |  | `` |
-| `-StackName` |  | `` |
-| `-UseTransaction` |  | `` |
+| `-Path` | specifies the path to take | `Set-Location -Path C:\Users\ethan\Downloads\hmm` |
+| `-LiteralPath` | takes the path as a raw (verbatim) string | `Set-Location -LiteralPath C:\Users\ethan\Downloads\*` |
+| `-PassThru` | returns the path after executing the command | ` Write-Host (Set-Location .\Documents\ -PassThru)` |
 
 ---
 
 ## Get-ChildItem: list directory contents
 > Aliases: gci, dir, ls
+
 | Option | Function | Example |
 | ------ | -------- | ------- |
 |  |  |  |
