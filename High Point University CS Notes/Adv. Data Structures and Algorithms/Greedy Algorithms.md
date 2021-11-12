@@ -19,7 +19,7 @@
 - Remove edges fro mG scuh that G remains connected such that the ...
 
 ## Greedy Alogrithms for finding a Minimum Spanning Tree
-- Prim's Alogrithm (builds from 1..n
-- Kruskal's Algorithm (sorts the edges in non-decreasing order and then finds connections)
+- Prim's Alogrithm (builds from 1..n -- O(n log n))
+- Kruskal's Algorithm (sorts the edges in non-decreasing order and then finds connections -- O())
 - Each uses a different locally optimal property
 - Must prove each algorithm
