@@ -93,20 +93,20 @@ Options that all commands support. [See the documentation](https://docs.microsof
 ## Clear-Host: clears the screen
 > Aliases: cls
 
-Clears the screen.
-
-| Option | Function | Example |
-| ------ | -------- | ------- |
-|  |  |  |
-|  |  |  |
+Clears the screen. This command has no parameters.
 
 ## Set-Location: change directory
 > Aliases: sl, cd
 
+"Sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or any provider path."
+
 | Option | Function | Example |
 | ------ | -------- | ------- |
-|  |  |  |
-|  |  |  |
+| `-Path` |  | `Set-Location -Path C:\Users\ethan\Downloads\ |
+| `-LiteralPath` |  | `` |
+| `-PassThru` |  | `` |
+| `-StackName` |  | `` |
+| `-UseTransaction` |  | `` |
 
 ## Get-ChildItem: list directory contents
 > Aliases: gci, dir, ls
