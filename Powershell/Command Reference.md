@@ -89,17 +89,22 @@ Options that all commands support. [See the documentation](https://docs.microsof
 | `-Exclude <alias>` | excludes related aliases from the search results | `Get-Alias g* -Exclude gp*` |
 
 # Navigating the Commandline
+> [Clear-Host](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#clear-host) <br />
+> [Set-Location](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#set-location) <br />
+> [Get-ChildItem](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-childitem) <br />
+> [Get-Content](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#get-content) <br />
+> [Copy-Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#copy-item) <br /> 
 
 ---
 
-## Clear-Host
+## Clear-Host: clears the screen
 > Aliases: cls
 
 Clears the screen. This command has no parameters.
 
 ---
 
-## Set-Location
+## Set-Location: change directory
 > Aliases: sl, cd
 
 "Sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or any provider path."
@@ -112,7 +117,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Get-ChildItem
+## Get-ChildItem: list directory contents
 > Aliases: gci, dir, ls
 
 | Option | Function | Example |
@@ -122,7 +127,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Get-Content
+## Get-Content: print contents of a file to console
 > Aliases: (gc, type, cat)
 
 | Option | Function | Example |
@@ -132,7 +137,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Copy-Item
+## Copy-Item: copy a file
 > Aliases: copy, cp
 
 | Option | Function | Example |
