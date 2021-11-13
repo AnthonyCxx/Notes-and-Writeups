@@ -139,9 +139,9 @@ Lists the contents of a directory (folder).
 | `-Force` | displays normally inaccessable files (e.g. hidden files, system files...) | `Get-ChildItem -Force` | 
 | `-Include` | only includes results to results that match the given pattern | `Get-ChildItem -Include test??.cpp` | 
 | `-Exclude` | excludes results that match the given pattern | `Get-ChildItem -Exclude *.tmp` |
-| `-Filter` | "Specifies a filter to qualify the Path parameter." | `...` |
 | `-Path` | indicates the path to search | `...` | 
 | `-LiteralPath` | indicates the path to search as a raw (verbatim) string | `...` | 
+| `-Filter` | "Specifies a filter to qualify the `-Path` parameter." | `...` |
 | `-Recurse` | recursively lists files | `Get-ChildItem -Recurse` | 
 | `-Depth` | dictates maximum recursion depth | `Get-ChildItem -Recurse -Depth 1` |
 | `-FollowSymlink` | displays (but does not follow) [symlinks](vvvhttps://blogs.windows.com/windowsdeveloper/2016/12/02/symlinks-windows-10/) | `...` |
@@ -153,8 +153,18 @@ Lists the contents of a directory (folder).
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-|  |  |  |
-|  |  |  |
+| `-TotalCount` | get first _n_ lines of the file | `Get-Content .\testdata.dat -TotalCount 3` |
+| `-Tail` |  | `Get-Content .\testdata.dat -Tail 3` |
+| `-Delimiter` | specifies delimiter (default: `\n`) | `Get-Content .\testdata.dat -TotalCount 3 -Delimiter ','` |
+| `-Path` | path of the file to read | `Get-Content -Path .\Documents\testdata.dat` |
+| `-LiteralPath` | path of the file to read as a raw (verbatim) string | `Get-Content -LiteralPath .\Documents\testdata.dat` |
+| `-Include` |  | `Get-Content *.dat -Include beta*` |
+| `-Exclude` |  | `Get-Content *.dat -Exclude test*` |
+| `-Raw` | literally reads newlines (`\n`) and carriage returns (`\r`) | `Get-Content .\testdata.dat -Raw` |
+| `-Encoding` | specifies [encoding system](https://docs.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.filesystemcmdletproviderencoding?view=powershellsdk-1.1.0) (read more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.2) | `` |
+| `-Filter` | "Specifies a filter to qualify the `-Path` parameter." | `...` |
+| `-Force` | "override a read-only attribute or create directories to complete a file path..." | `...` |
+| ` -ReadCount` | "specifies how many lines of content are sent through the pipeline at a time" | `...` |
 
 ---
 
@@ -163,8 +173,10 @@ Lists the contents of a directory (folder).
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-|  |  |  |
-|  |  |  |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 ---
 
