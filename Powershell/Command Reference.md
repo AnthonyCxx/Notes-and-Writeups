@@ -184,8 +184,8 @@ Lists the contents of a directory (folder).
 | `-Force` | forces a copy of normally non-copiable items | `Copy-Item .\aReadOnlyFile.txt .. -Force` |
 | `-Container` | "preserves container objects during the copy operation" | `...` |
 | `-PassThru` | returns the path to the copied object  | `Write-Host (cp .\original.txt copy.txt -PassThru)` |
-| `-FromSession` | "specifies the PSSession object to which a remote file is being copied" | `` |
-| `-ToSession` | "specifies the PSSession object to which a remote file is being copied"  | `` |
+| `-FromSession` | "specifies the PSSession object to which a remote file is being copied" | `...` |
+| `-ToSession` | "specifies the PSSession object to which a remote file is being copied"  | `...` |
 
 ---
 
