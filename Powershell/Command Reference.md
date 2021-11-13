@@ -144,7 +144,7 @@ Lists the contents of a directory (folder).
 | `-LiteralPath` | indicates the path to search as a raw (verbatim) string | `...` | 
 | `-Recurse` | recursively lists files | `Get-ChildItem -Recurse` | 
 | `-Depth` | dictates maximum recursion depth | `Get-ChildItem -Recurse -Depth 1` |
-| `-FollowSymlink` |  | `...` |
+| `-FollowSymlink` | displays (but does not follow) [symlinks](vvvhttps://blogs.windows.com/windowsdeveloper/2016/12/02/symlinks-windows-10/) | `...` |
 
 ---
 
