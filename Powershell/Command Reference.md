@@ -161,7 +161,7 @@ Lists the contents of a directory (folder).
 | `-Include` |  | `Get-Content *.dat -Include beta*` |
 | `-Exclude` |  | `Get-Content *.dat -Exclude test*` |
 | `-Raw` | literally reads newlines (`\n`) and carriage returns (`\r`) | `Get-Content .\testdata.dat -Raw` |
-| `-Encoding` | specifies [encoding system](https://docs.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.filesystemcmdletproviderencoding?view=powershellsdk-1.1.0) (read more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.2) | `` |
+| `-Encoding` | specifies [encoding system](https://docs.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.filesystemcmdletproviderencoding?view=powershellsdk-1.1.0) (read more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.2)) | `Get-Content .\testdata.dat -Encoding ASCII` |
 | `-Filter` | "Specifies a filter to qualify the `-Path` parameter." | `...` |
 | `-Force` | "override a read-only attribute or create directories to complete a file path..." | `...` |
 | ` -ReadCount` | "specifies how many lines of content are sent through the pipeline at a time" | `...` |
