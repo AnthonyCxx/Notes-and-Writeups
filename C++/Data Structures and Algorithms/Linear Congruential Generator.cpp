@@ -1,4 +1,15 @@
-// Random Number Generation in C++
+/* 
+    A Linear Congruential Random Number Generator built in C++.
+    ===========================================================
+    
+    "A linear congruential generator (LCG) is an algorithm that yields a sequence of pseudo-randomized numbers calculated
+    with a discontinuous piecewise linear equation. The method represents one of the oldest and best-known pseudorandom number 
+    generator algorithms. The theory behind them is relatively easy to understand, and they are easily implemented and fast, 
+    especially on computer hardware which can provide modular arithmetic by storage-bit truncation." 
+    - Wikipedia, Linear Congruential Generator
+    
+    The values chosen for a, c, and m are based on Microsofts implementation of Microsoft Visual/Quick C/C++.
+*/
 
 //C++ Header Files
 #include <iostream>     //For printing (disinclude if not using main example)
