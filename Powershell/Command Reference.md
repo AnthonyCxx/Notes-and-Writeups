@@ -72,12 +72,12 @@ Options that all commands support. [See the documentation](https://docs.microsof
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Force` |  | `` |
-| `-InputObject` |  | `` |
-| `-MemberType` |  | `` |
-| `-Name` |  | `` |
-| `-Static` |  | `` |
-| `-View` |  | `` |
+| `-Force` | ... | `...` |
+| `-InputObject` | ... | `...` |
+| `-MemberType` | ... | `...` |
+| `-Name` | ... | `...` |
+| `-Static` | ... | `...` |
+| `-View` | ... | `...` |
 
 ---
 
