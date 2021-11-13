@@ -129,13 +129,22 @@ Lists the contents of a directory (folder).
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
+| `-Name` |  | `` |
 | `-Directory` | limits results to directories | `Get-ChildItem -Directory | Measure-Object` |
 | `-File` | limits results to files | `Get-ChildItem -File` |
+| `-ReadOnly` | limits results to readonly files | `Get-ChildItem -ReadOnly` | 
+| `-Hidden` | limits results to hidden files | `Get-ChildItem -Hidden` |
+| `-System` | limits results to system files | `Get-ChildItem -System` | 
 | `-Attributes` | limits results to items with the specified [FileAttributes](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileattributes?view=net-5.0). Combine attributes with `+` (and), `,` (or), and `!` (not). | `Get-ChildItem -Attributes !Directory+Hidden` |
+| `-Force` | displays normally inaccessable files (e.g. hidden files, system files...) | `Get-ChildItem -Force` | 
+| `-Include` | only includes results to results that match the given pattern | `Get-ChildItem -Include test??.cpp` | 
 | `-Exclude` | excludes results that match the given pattern | `Get-ChildItem -Exclude *.tmp` |
-| `` |  | `` |
-| `` |  | `` |
-| `-Depth` | dictates maximum recursion depth | `` |
+| `-Filter` | "Specifies a filter to qualify the Path parameter." | `...` |
+| `-Path` | indicates the path to search | `...` | 
+| `-LiteralPath` | indicates the path to search as a raw (verbatim) string | `...` | 
+| `-Recurse` | recursively lists files | `Get-ChildItem -Recurse` | 
+| `-Depth` | dictates maximum recursion depth | `Get-ChildItem -Recurse -Depth 1` |
+| `-FollowSymlink` |  | `...` |
 
 ---
 
