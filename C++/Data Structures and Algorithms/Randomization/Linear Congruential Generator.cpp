@@ -32,7 +32,7 @@ class LinearCongruentialGenerator
             //Empty
         }
 
-        //Generates a random number
+        //Generates a random number (0 - 65,535, inclusive)
         [[nodiscard]] std::int16_t rand() noexcept
         {
             _seed = (214'013 * _seed + 2'531'011) % std::numeric_limits<std::int16_t>::max();
