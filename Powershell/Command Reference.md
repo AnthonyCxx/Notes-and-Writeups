@@ -158,8 +158,8 @@ Lists the contents of a directory (folder).
 | `-Delimiter` | specifies delimiter (default: `\n`) | `Get-Content .\testdata.dat -TotalCount 3 -Delimiter ','` |
 | `-Path` | path of the file to read | `Get-Content -Path .\Documents\testdata.dat` |
 | `-LiteralPath` | path of the file to read as a raw (verbatim) string | `Get-Content -LiteralPath .\Documents\testdata.dat` |
-| `-Include` |  | `Get-Content *.dat -Include beta*` |
-| `-Exclude` |  | `Get-Content *.dat -Exclude test*` |
+| `-Include` | include matching items | `Get-Content *.dat -Include beta*` |
+| `-Exclude` | exclude matching items | `Get-Content *.dat -Exclude test*` |
 | `-Raw` | literally reads newlines (`\n`) and carriage returns (`\r`) | `Get-Content .\testdata.dat -Raw` |
 | `-Encoding` | specifies [encoding system](https://docs.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.filesystemcmdletproviderencoding?view=powershellsdk-1.1.0) (read more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.2)) | `Get-Content .\testdata.dat -Encoding ASCII` |
 | `-Filter` | "Specifies a filter to qualify the `-Path` parameter." | `...` |
@@ -174,19 +174,18 @@ Lists the contents of a directory (folder).
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Destination` | specifies the destination directory | `cp .\original.txt -Destination C:\Users\user\Desktop` |
-| `` |  | `` |
+| `-Recurse` | recursively copies from a directory | `cp .\OriginFolder -Destination .\CopiedData -Recurse` |
+| `-Path` | path of the file to copy | `cp -Path .\Documents\original.txt -Destination copy.txt` |
+| `-LiteralPath` | path of the file to read as a raw (verbatim) string | `...` |
+| `-Include` | only include matching items | `cp *.cs -Destination .. -Include *final*` |
+| `-Exclude` | exclude matching items | `cp *.cs -Destination .. -Exclude *test*` |
+| `-Filter` | "specifies a filter to qualify the `-Path` parameter" | `...` |
 | `-Confirm` | prompts the user for confirmation before proceeding | `Copy-Item .\original.txt copy.txt -Confirm` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-Force` | forces a copy of normally non-copiable items | `Copy-Item .\aReadOnlyFile.txt .. -Force` |
 | `-Container` | "preserves container objects during the copy operation" | `...` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-PassThru` | returns the path to the copied object  | `Write-Host (cp .\original.txt copy.txt -PassThru)` |
+| `-FromSession` | "specifies the PSSession object to which a remote file is being copied" | `` |
+| `-ToSession` | "specifies the PSSession object to which a remote file is being copied"  | `` |
 
 ---
 
