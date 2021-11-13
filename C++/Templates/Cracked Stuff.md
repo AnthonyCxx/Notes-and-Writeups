@@ -33,6 +33,52 @@ int main()
 }
 ```
 
+## Inherit from Infinite Base Classes
+Hmm...
+
+```C++
+#include <iostream>
+
+//Elemental type: fire
+struct Fire
+{
+    void Fireball()
+    {
+        std::cout << "Shooting a fireball!\n";
+    }
+};
+
+
+//Elemental type: ice
+struct Ice
+{
+    void IceShard()
+    {
+        std::cout << "Shooting an ice spike!\n";
+    }
+};
+
+
+//Derived struct that can take any amount of base structes of any type...
+template <typename... Bases>
+struct Staff: public Bases...
+{
+
+};
+
+int main()
+{
+    //Declare a staff of type 'Fire' and 'Ice'
+    Staff<Fire, Ice> wizard_staff;
+
+    //Call a derived spell
+    wizard_staff.Fireball();
+
+    return 0;
+}
+```
+
+
 ## Perfectly Generic Function Wrappers
 The following code can take any function with any number of arguments and will return the time it takes to run the function. If the return type is not void, then it
 returns the return value of the called function along with the elapsed time (in that order) as a [std::pair](https://en.cppreference.com/w/cpp/utility/pair). <br />
@@ -171,47 +217,3 @@ int main()
     
     
 ## **UNFINISHED**
-```C++
-#include <iostream>
-
-//Elemental type: fire
-class Fire
-{
-    public:
-    void operator()()
-    {
-        std::cout << "Calling fire\n";
-    }
-};
-
-
-//Elemental type: ice
-class Ice
-{
-    public:
-    void operator()(int i)
-    {
-        std::cout << "Calling ice\n";
-    }
-};
-
-
-//Derived class that can take any amount of base classes of any type...
-template <typename... Bases>
-class Staff: public Bases...
-{
-    using Bases::operator()...;
-
-};
-
-int main()
-{
-    //Declare a staff of type 'Fire' and 'Ice'
-    Staff<Fire, Ice> wizard_staff;
-
-    //Call a derived spell
-    wizard_staff();    //arbitrary int to differentiate 'Ice::spell()' and 'Fire::spell()'
-
-    return 0;
-}
-```
