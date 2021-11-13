@@ -15,3 +15,4 @@ from [.NET](https://dotnet.microsoft.com/) and [C#](https://docs.microsoft.com/e
 - Powershell Documentation: [Fundamentals of Powershell: Syntax and Objects](https://docs.microsoft.com/en-us/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1)
 - Powershell Documentation: [Learn Powershell101](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.1)
 - Powershell Documentation: [About the Common Information Model (CIM)](https://docs.microsoft.com/en-us/windows/win32/wmisdk/common-information-model) \[IMP\]
+- Educba: [A Concise Powershell Tutorial](https://www.educba.com/cmdlets-in-powershell/?source=leftnav)
