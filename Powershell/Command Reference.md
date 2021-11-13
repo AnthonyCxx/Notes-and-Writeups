@@ -173,6 +173,16 @@ Lists the contents of a directory (folder).
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
+| `-Destination` | specifies the destination directory | `Copy-Item .\original.txt -Destination C:\Users\user\Desktop` |
+| `` |  | `` |
+| `-Confirm` | prompts the user for confirmation before proceeding | `Copy-Item .\original.txt copy.txt -Confirm` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `-Container` | "preserves container objects during the copy operation" | `...` |
+| `` |  | `` |
+| `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
