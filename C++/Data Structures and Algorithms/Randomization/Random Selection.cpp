@@ -1,5 +1,7 @@
 //A simple random selection algorithm using MT19937 (C++'s implementation of the Mersenne Twister algorithm)
 
+
+//Return a random element in the array by generating a random index
 T randomElement(T arr[], std::size_t n)
 {
     //Create and seed a random number generator (Mersenne Twister)
