@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <time.h>
 
+//Swap function
 template <typename T>
 void swap(T& a, T& b)
 {
@@ -12,7 +13,7 @@ void swap(T& a, T& b)
     b = temp;
 }
 
-//Randomizes an array
+//Randomizes an array using the Fisher and Yates (Knuth) shuffling algorithm
 template <typename T>
 void randomize(T arr[], std::size_t n)  //Array + its size
 {
@@ -27,6 +28,10 @@ void randomize(T arr[], std::size_t n)  //Array + its size
 }
 
 
+
+
+
+//Unncessary function
 template <typename T>
 void printArray(T arr[], std::size_t n)
 {
@@ -36,6 +41,11 @@ void printArray(T arr[], std::size_t n)
     }
     std::cout << '\n';
 }
+
+
+
+
+
 
 // DRIVER CODE //
 int main()
