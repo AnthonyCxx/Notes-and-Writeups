@@ -112,7 +112,7 @@ All C++ objects belong to the _std_ (standard) namespace. This means that if you
 _std::_ every time you use them. If you're taking a college course, you'll likely be told to use `using namespace std;` in all circumstances; however, in real life, virtually
 no one uses it because of the problems they introduce ([src](https://www.learncpp.com/cpp-tutorial/using-declarations-and-using-directives/): scroll down to "problems with _using_ directives").
 
-```C+
+```C++
 #include <iostream>
 using namespace std;
 
