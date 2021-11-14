@@ -2,6 +2,8 @@
   Templated, Iterative Binary Search
   ==================================
 
+  Requirements: data is sorted
+
   Time Complexity: O(1)
   Space Complexity: O(log n)
 */
