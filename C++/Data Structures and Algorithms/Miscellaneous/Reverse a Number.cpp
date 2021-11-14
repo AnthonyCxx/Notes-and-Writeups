@@ -5,9 +5,9 @@
     ============================================================
 
     This program operates off the following principles:
-    1. Modding an integer 10 yields the last digit of the number (e.g. 127 -> 7).
+    1. Modding an integer 10 yields the last digit of the number (e.g. 127 % 10 -> 7).
     2. Multiplying an integer by 10 moves all the digits over 1 and leaves a space (0), which can be added to.
-    3. Dividing an integer by 10 discards the last number (e.g. 127 -> 12, assuming integer division).
+    3. Dividing an integer by 10 discards the last number (e.g. 127 / 10 -> 12, assuming integer division).
 */
 
 int main()
