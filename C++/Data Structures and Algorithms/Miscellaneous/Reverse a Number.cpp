@@ -25,7 +25,7 @@ int main()
         remainder = original % 10;
 
         //Append the last digit of the original to the result
-        result = result*10 + remainder;
+        result = result * 10  + remainder;
 
         //Remove the last digit from the original number
         original /= 10;
