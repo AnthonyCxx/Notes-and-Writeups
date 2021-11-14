@@ -3,8 +3,7 @@ RAII ("**R**esource **A**cquisition **I**s **I**nitialization") is one of the de
 Smart pointers are essentially a class that acts as a thin wrapper around a raw (normal) pointer; the wrapper allocates dynamic memory in their constructor and deallocates it in
 their destructor. By binding the dynamically-allocated (heap) memory to the pointer that's allocated on the stack, you entirely avoid the problem of memory leak. This is why C++'s approach to memory management is so effective — is entirely nullifies the need for a garbage collector by not creating any garbage in the first place. As an added bonus, smart pointers also eliminate the problem of dangling pointers.
 
-As a (cultural?) note, the debate between raw vs smart pointers is one of those hills that people have pretty strong opinions on as a by-project of the near-religous stances people have on how you should write C++ code and whether or not it's ok to use "non-modern" features like raw pointers. Honestly, I think that using raw pointers is fine as 
-long as you are careful, especially since smart pointers may lead to less-efficient code. Don't believe me? Watch Chandler Carruth's “[There Are No Zero-cost Abstractions](https://www.youtube.com/watch?v=rHIkrotSwcc)”.
+As a (cultural?) note, the debate between raw vs smart pointers is one of those hills that people have pretty strong opinions on as a by-project of the near-religous stances people have on how you should write C++ code and whether or not it's ok to use "non-modern" features like raw pointers and C-style arrays. Honestly, I think that using raw pointers is fine as long as you are careful, especially since smart pointers may lead to less efficient code. Don't believe me? Watch Chandler Carruth's “[There Are No Zero-cost Abstractions](https://www.youtube.com/watch?v=rHIkrotSwcc)”.
 
 ---
 
