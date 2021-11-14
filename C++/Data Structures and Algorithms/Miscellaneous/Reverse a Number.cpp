@@ -27,10 +27,10 @@ int main()
         //Append the last digit of the original to the result
         result = result * 10  + remainder;
 
-        //Remove the last digit from the original number
+        //Remove the last digit from the original number 
         original /= 10;
 
-        // >> Repeat over with the next digit >>
+        // >> Repeat over with the next digit >> //
     }
 
     //Print the result
