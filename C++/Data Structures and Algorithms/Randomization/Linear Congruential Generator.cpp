@@ -23,19 +23,19 @@
 class LinearCongruentialGenerator
 {
     private:
-        std::int64_t _seed;
+        std::uint64_t _seed;
 
     public:
         //Trivial Constructor (used to seed the RNG)
-        LinearCongruentialGenerator(std::int64_t seed): _seed(seed)
+        LinearCongruentialGenerator(std::uint64_t seed): _seed(seed)
         {
             //Empty
         }
 
         //Generates a random number (0 - 65,535, inclusive)
-        [[nodiscard]] std::int16_t rand() noexcept
+        [[nodiscard]] std::uint16_t rand() noexcept
         {
-            _seed = (214'013 * _seed + 2'531'011) % std::numeric_limits<std::int16_t>::max();
+            _seed = (214'013 * _seed + 2'531'011) % std::numeric_limits<std::uint16_t>::max();
             return _seed;
         }
 };
