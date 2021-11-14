@@ -8,7 +8,7 @@
   Space Complexity: O(log n)
 */
 
-template <typename T>    //Array,        left side,          right side,          search value
+template <typename T>    //Array,        left side,            right side,        search value
 std::size_t binarySearch(const T arr[], const std::size_t l, const std::size_t r, const T key)
 {
     if (l <= r)
