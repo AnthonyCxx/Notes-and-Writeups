@@ -21,10 +21,10 @@ std::size_t binarySearch(const T arr[], const std::size_t l, const std::size_t r
             return mid;    //Return the index of the key
 
         //Otherwise cut in half and start over
-        else if (key < arr[mid])    //Discards the greater half
+        else if (key < arr[mid])    //Discards the greater half and repeat the search
             return binarySearch<T>(arr, l, mid-1, key);
 
-        else if (key > arr[mid])    //Discards the smaller half
+        else if (key > arr[mid])    //Discards the smaller half and repeat the search
             return binarySearch<T>(arr, mid+1, r, key);
     }
 
