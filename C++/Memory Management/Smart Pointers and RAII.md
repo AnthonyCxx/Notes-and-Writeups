@@ -9,9 +9,20 @@ C++ defines three types of smart pointers in the [\<memory\>](https://en.cpprefe
 ## Unique Pointers
 Unique pointers are the most common type of smart pointer.
 
+## Passing Unique Pointers
+Since passing by value makes a copy, you cannot pass a unique pointer by value like `func(std::unique_ptr<int> ptr)`. You must either pass by reference call `std::move()`. 
+Alternatively, you can use the `.get()` function to return a reference to the internal pointer, but that can be dangerous since the deallocation of a unique pointer is automatic
+and if you cannot guarantee that the unique pointer will exist for the whole function call, then you will run into memory leak.
+
+---
+
 ## Shared Pointers
 
+---
+
 ## Weak Pointers
+
+---
 
 # Smart Pointers and Exception Safety
 By automatically taking care of freeing the allocated memory, smart pointers allow you to safely throw errors without risking memory leak.
