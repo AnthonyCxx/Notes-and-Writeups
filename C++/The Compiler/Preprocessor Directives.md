@@ -3,7 +3,7 @@ A preprocessor directive is a [directive](https://en.wikipedia.org/wiki/Directiv
 
 ## _#include_ \<file\>
 The _#include_ directive [imports](https://en.wikipedia.org/wiki/Include_directive) another file into the current file. When importing a file, the filename should be
-surrounded with either angular brackets (\< \>) or quotation marks (" "), depending on whether the file belongs to the C++ Standard Library or is a file made by the 
+surrounded with either angular brackets (`<filename>`) or quotation marks (`"filename"`), depending on whether the file belongs to the C++ Standard Library or is a file made by the 
 developer respectively. Including a file is the equivalent of copying and pasting the file where the _#include_ is written. I'm being serious, that's literally what the 
 compiler does. Because of this, all _#include_ directives should come before any code, especially the _main()_ function.
 
