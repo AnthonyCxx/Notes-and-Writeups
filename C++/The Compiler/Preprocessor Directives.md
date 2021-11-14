@@ -26,6 +26,7 @@ In its simplest form, the _#define_ macro is used to define constants that will 
 _#define PI 3.14159_ would replace all instances of 'PI' (but not pi, pI, or Pi) with '3.14159'. Per convention, macro identifiers (names) should always be fully 
 capitalized. See more about macros [here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/The%20Compiler/Macros.md).
 
+**NOTE**: using _#define_ is highly discouraged in C++. You should favor const variables and [aliases and typedefs](https://docs.microsoft.com/en-us/cpp/cpp/aliases-and-typedefs-cpp?view=msvc-170).
 ```C++
 #include <iostream>
 #define PI 3.14159
