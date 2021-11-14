@@ -1,6 +1,9 @@
 #include <iostream>
 
 /*
+    A program to reverse an integer without casting to a string
+    ===========================================================
+
     This program operates off the following principles:
     1. Modding an integer 10 yields the last digit of the number (e.g. 127 -> 7).
     2. Multiplying an integer by 10 moves all the digits over 1 and leaves a space (0), which can be added to.
