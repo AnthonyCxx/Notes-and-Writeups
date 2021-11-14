@@ -14,7 +14,6 @@ T weightedRandomSelection(T values[], float probs[], std::size_t n)  //One n bec
     //Generate a random number 0.0-1.0
     float chance = dist(RNG);                      
     
-    
     //Loop over the probabilities until you reach 0, then return whatever you land on
     for(std::size_t i=0; i < n; ++i)
     {
