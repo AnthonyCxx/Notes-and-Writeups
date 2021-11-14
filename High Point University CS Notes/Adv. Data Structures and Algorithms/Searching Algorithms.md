@@ -14,7 +14,7 @@ size_t seqSearch(T array[], T key, size_t size)
     }
 
     //If the array has been exhausted without success, return false
-    return false;
+    return -1;
 }
 ```
 
