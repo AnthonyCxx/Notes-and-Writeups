@@ -1,6 +1,8 @@
 #include <iostream>
 #include <random>                       
 
+/* Randomly selects an element from an array using an array of probability where elem 'i' in probs represents the weight for element 'i' in the array of values */
+
 template <typename T>
 T weightedRandomSelection(T values[], float probs[], std::size_t n)  //One n because 'values' and 'chance' necessarily share a size
 {
