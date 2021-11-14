@@ -5,7 +5,11 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 
 # Data Structures
 
-# Algorithms
+# Searching Algorithms
+
+# Sorting Algorithms
+
+# Other Algorithms
 - [Randomization](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization)
 
 # Miscellaneous 
