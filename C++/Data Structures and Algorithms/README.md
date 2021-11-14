@@ -9,8 +9,8 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 | Time Complexity | Space Complexity | Algorithm | Best on | Worst on | Requirements |
 | --------------- | ---------------- | --------- | ------- | -------- | ------------ |
 | `O(log n)` | `O(1)` | [Iterative Binary Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Binary%20Search%20Iterative.cpp) | - | - | sorted data |
-- `O(log n)` [Recursive Binary Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Binary%20Search%20Recursive.cpp)
-- `O(n)` [Sequential Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Sequential%20Search.cpp)
+| `O(log n)` | `O(log n)` | [Recursive Binary Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Binary%20Search%20Recursive.cpp) | - | - | sorted data |
+- | `O(n)` | `O(1)` | [Sequential Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Sequential%20Search.cpp) | - | - | - |
 
 # Sorting Algorithms
 
