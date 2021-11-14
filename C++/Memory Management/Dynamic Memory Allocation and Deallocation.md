@@ -6,7 +6,8 @@ The need to store data that we do not already know the size of gave rise to the 
 [the heap](https://www.dummies.com/programming/cpp/how-the-heap-works-in-c/) as opposed to the stack (ref. [_The Stack vs the Heap_](https://nickolasteixeira.medium.com/stack-vs-heap-whats-the-difference-and-why-should-i-care-5abc78da1a88)).
 Dynamic memory is allocated and deallocated using two keywords: [_new_](https://www.youtube.com/watch?v=NUZdUSqsCs4) and [_delete_](https://www.journaldev.com/38336/delete-operator-in-c-plus-plus). Always remember to free dynamically-allocated memory after you are done with it, as the computer does not free it for you (unlike stack-allocated memory); if you forget to free dynamically-allocated memory, it will remain allocated. This problem is known as [memory leak](https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/) and can debilitate a system to the point of crashing it.
 
-C++ also has access to C's memory allocation functions under [_\<cstdlib\>_](https://www.programiz.com/cpp-programming/library-function/cstdlib); read more about allocating memory with C functions [here](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Memory%20Mangagement/Dynamic%20Memory%20Allocation%20and%20Deallocation.md).
+C++ also has access to C's memory allocation functions under [_\<cstdlib\>_](https://www.programiz.com/cpp-programming/library-function/cstdlib); however, using them in C++
+is discouraged because functions like [malloc()](https://www.tutorialspoint.com/c_standard_library/c_function_malloc.htm) do not call constructors (wheras _new_ does).
 
 ## Allocating and Deallocating Memory with _new_ and _delete_
 The _new_ keyword declares a new instance of an object (in the raw memory sense) on the heap at runtime, allowing you to create as much memory as you need,
