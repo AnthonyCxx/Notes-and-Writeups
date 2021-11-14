@@ -3,8 +3,12 @@ RAII ("**R**esource **A**cquisition **I**s **I**nitialization") is one of the de
 Smart pointers are essentially a class that acts as a thin wrapper around a raw (normal) pointer; the wrapper allocates dynamic memory in their constructor and deallocates it in
 their destructor. By binding the dynamically-allocated (heap) memory to the pointer that's allocated on the stack, you entirely avoid the problem of memory leak. This is why C++'s approach to memory management is so effective — is entirely nullifies the need for a garbage collector by not creating any garbage in the first place. As an added bonus, smart pointers also eliminate the problem of dangling pointers.
 
+---
+
 # Unique, Shared, and Weak Pointers
 C++ defines three types of smart pointers in the [\<memory\>](https://en.cppreference.com/w/cpp/header/memory) library, each with their own type of ownership.
+
+---
 
 ## Unique Pointers
 Unique pointers are the most common type of smart pointer.
