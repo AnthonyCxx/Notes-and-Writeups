@@ -8,6 +8,6 @@
 ## Random Selection
 -  `O(1)` Random Selection: [Uniform Random Number Generation](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Random%20Selection.cpp)
 - `O(1)` Random Weighted Selection: [Alias Method](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/Randomization/Alias%20Method.cpp) 
-- `O(n)` Random Weighted Selection: [Random Weighted Selection](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Random%20Weighted%20Selection.cpp)
+- `O(n)` Random Weighted Selection: [Uniform Weighted RNG](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Random%20Weighted%20Selection.cpp)
 ## Random Number Generators
 - [Linear Congruential Generator](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Linear%20Congruential%20Generator.cpp)
