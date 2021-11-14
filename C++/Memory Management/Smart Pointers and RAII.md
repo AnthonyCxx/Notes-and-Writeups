@@ -11,7 +11,9 @@ C++ defines three types of smart pointers in the [\<memory\>](https://en.cpprefe
 ---
 
 ## Unique Pointers
-Unique pointers are the most common type of smart pointer.
+Unique pointers are the most common type of smart pointer. Unique pointers are called unique because they are the _only_ references to their data. Assignment from
+unique pointers (`operator=`) as well as references (`&`) to them are illegal and will raise compile-time errors — this is necessary to prevent dangling pointers. 
+The only transfer operation allowed on unique pointers is moving (via `std::move()`), which will leave it as `nullptr`.
 
 ## Passing Unique Pointers
 Since passing by value makes a copy, you cannot pass a unique pointer by value like `func(std::unique_ptr<int> ptr)`. You must either pass by reference or call `std::move()`. 
