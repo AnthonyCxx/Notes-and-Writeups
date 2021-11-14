@@ -6,6 +6,8 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 # Data Structures
 
 # Searching Algorithms
+- `O(log n)` [Iterative Binary Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Binary%20Search%20Iterative.cpp)
+- `O(log n)` [Recursive Binary Search]()
 - `O(n)` [Sequential Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Sequential%20Search.cpp)
 
 # Sorting Algorithms
