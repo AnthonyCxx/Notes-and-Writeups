@@ -8,7 +8,7 @@
   Space Complexity: O(log n)
 */
 
-template <typename T>
+template <typename T>    //Array        size of the array,   search value
 std::size_t binarySearch(const T arr[], const std::size_t n, const T key)
 {
     //Initial points for left and right (and declaration of midpoint)
