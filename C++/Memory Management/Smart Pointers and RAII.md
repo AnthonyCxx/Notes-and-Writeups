@@ -18,6 +18,8 @@ Since passing by value makes a copy, you cannot pass a unique pointer by value l
 Alternatively, you can use the `.get()` function to return a reference to the internal pointer, but that can be dangerous since the deallocation of a unique pointer is automatic
 and if you cannot guarantee that the unique pointer will exist for the whole function call, then you run the risk of having a dangling pointer.
 
+
+
 ---
 
 ## Shared Pointers
