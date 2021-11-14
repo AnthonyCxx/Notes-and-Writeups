@@ -8,7 +8,8 @@
     especially on computer hardware which can provide modular arithmetic by storage-bit truncation." 
     - Wikipedia, Linear Congruential Generator
     
-    The values chosen for a, c, and m are based on Microsofts implementation of Microsoft Visual/Quick C/C++.
+    The values chosen for a, c, and m are based on Microsofts implementation of Microsoft Visual/Quick C/C++,
+    which meet the requirements specified by the Hull–Dobell Theorem.
 */
 
 //C++ Header Files
