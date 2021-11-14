@@ -1,3 +1,5 @@
+//O(n) runtime
+
 template <typename T>
 std::size_t sequentialSearch(T arr[], std::size_t n, T key)
 {
