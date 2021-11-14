@@ -25,6 +25,6 @@ T weightedRandomSelection(T values[], float probs[], std::size_t n)  //One n bec
             return values[i];
     }
     
-    //In the event that you exhausted the loop without returning a number because of errors with floating-point rounding, return the last element
+    //If you exhausted the loop without returning an item due to errors with floating-point rounding, return the last element
     return values[n-1];
 }
