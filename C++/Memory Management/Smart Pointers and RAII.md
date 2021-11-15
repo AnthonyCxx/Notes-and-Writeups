@@ -96,9 +96,8 @@ int main()
 ## Shared Pointers
 Shared pointers are automatic pointers that allow multiple references to the same data (and by extent, copies). Shared pointers achieve this through a method
 called [reference counting](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization#Reference_counting), which increments every time a new reference is
-made to the data and decrements every time one is removed. When the counter his 0, the data is automatically deallocated. Unfortunately, this process does have overhead,
-meaning that shared pointers are [noticably slower than std::unique_ptr](https://www.modernescpp.com/index.php/memory-and-performance-overhead-of-smart-pointer), especially
-without optimizations.
+made to the data and decrements every time one is removed. When the counter his 0, the data is automatically deallocated. Unfortunately, this process does have both 
+space and time overhead, meaning that shared pointers are [noticably slower than std::unique_ptr](https://www.modernescpp.com/index.php/memory-and-performance-overhead-of-smart-pointer), especially without optimizations.
 
 ```C++
 #include <iostream>
