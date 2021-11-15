@@ -8,6 +8,7 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 > [Sorting Algorithms](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/README.md#sorting-algorithms) <br />
 
 # Data Structures
+- [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/Data%20Structures/Arrays.md)
 
 # Searching Algorithms
 | Time Complexity | Space Complexity | Algorithm | Requirements |
