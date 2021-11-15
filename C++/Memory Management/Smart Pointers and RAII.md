@@ -20,11 +20,22 @@ unique pointers (`operator=`) as well as references (`&`) to them are illegal an
 The only transfer operation allowed on unique pointers is moving (via `std::move()`), which will leave it as `nullptr`.
 
 ## Declaring a Unique Pointer
-If you are following "modern" C++ rules down to the letter, you should never see the _new_ operator anywhere in your code. Personally, I disagree with that philosophy, but it's
-only fair if I give you both sides, no?
+If you are following modern C++ guidelines, you should never see the _new_ operator anywhere in your code. Whenever you declare a unique pointer, you should
+always initialize it with the built-in helper function `std::make_unique<T>()`, which returns a new object of type T. `std::make_unique<T>()` forwards its arguments
+argument to the constructor of the object it creates, so don't worry about lvalues and rvalues.
 
 ```C++
-
+#include <iostream>
+#include <memory>                                                                                                                                                                  
+int main()
+{
+    //Declare a unique pointer to a new integer
+    std::unique_ptr<int> ptr = std::make_unique<int>(10);                                                                                                                                                                                                                               
+    //Use the new pointer
+    std::cout << "Point value: " << *ptr << '\n';                                                                                                                                                                                                                                          
+    return 0;
+}                                                                                                                                                                                                                                                                                       
+// The unique pointer is automatically freed //
 ```
 
 ## Passing Unique Pointers
