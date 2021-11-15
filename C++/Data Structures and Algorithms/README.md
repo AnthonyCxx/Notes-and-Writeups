@@ -19,5 +19,6 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 
 # Miscellaneous Tricks and Problems
 - [Reverse an Integer](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Miscellaneous/Reverse%20a%20Number.cpp)
+- Levenshtein Distance: [Check for String Similarity](https://www.cuelogic.com/blog/the-levenshtein-algorithm)
 
 # LeetCode Solutions
