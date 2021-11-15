@@ -10,6 +10,7 @@ implementing your own low-level data structure (and even then keep that well enc
 
 # Unique, Shared, and Weak Pointers
 C++ defines three types of smart pointers in the [\<memory\>](https://en.cppreference.com/w/cpp/header/memory) library, each with their own type of ownership.
+Smart pointers are fundamentally tied to the concept of memory ownership, so you shouldn't use them as references to other variables — only to safely manage dynamic memory.
 
 ---
 
