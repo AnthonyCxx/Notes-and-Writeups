@@ -20,7 +20,7 @@ template <typename returnType = int>
     //Declare the result (starts at 0 because it's used before being assigned the result of the expression)
     returnType result = 0;
     
-    //For every character in the string (skipping leading zeros and negative signs)
+    //For every character in the string (skipping leading zeros and positive/negative signs)
     for(std::size_t i = str.find_first_not_of("-+0"); i < str.size(); ++i)
     {
         //Append the integer version of the current character to the end of the result
