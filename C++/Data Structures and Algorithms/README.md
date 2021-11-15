@@ -26,6 +26,7 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 | `O(n²)` | `` | [Selection Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Selection%20Sort.cpp) | - | - | unstable |
 | `O(n²)` | `` | [Bubble Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Bubble%20Sort.cpp) | - |  - | stable |
 | `O(n²)` | `` | [Insertion Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Insertion%20Sort.cpp) | - | - | stable |
+> [What is Algorithmic Stability and Why is it Important?](https://www.youtube.com/watch?v=KJuxI1BBLyQ)
 
 # Other Algorithms
 - [Fibonacci Sequence](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms/Other%20Algorithms/Fibonacci%20Sequence)
