@@ -100,6 +100,10 @@ made to the data and decrements every time one is removed. When the counter his 
 meaning that shared pointers are [noticably slower than std::unique_ptr](https://www.modernescpp.com/index.php/memory-and-performance-overhead-of-smart-pointer), especially
 without optimizations.
 
+```C++
+
+```
+
 ---
 
 ## Weak Pointers
