@@ -17,12 +17,65 @@ Unique pointers are the most common type of smart pointer. Unique pointers are c
 unique pointers (`operator=`) as well as references (`&`) to them are illegal and will raise compile-time errors — this is necessary to prevent dangling pointers. 
 The only transfer operation allowed on unique pointers is moving (via `std::move()`), which will leave it as `nullptr`.
 
+## Declaring a Unique Pointer
+If you are following "modern" C++ rules down to the letter, you should never see the _new_ operator anywhere in your code. Personally, I disagree with that philosophy, but it's
+only fair if I give you both sides, no?
+
+```C++
+
+```
+
 ## Passing Unique Pointers
-Since passing by value makes a copy, you cannot pass a unique pointer by value like `func(std::unique_ptr<int> ptr)`. You must either pass by reference or call `std::move()`. 
-Alternatively, you can use the `.get()` function to return a reference to the internal pointer, but that can be dangerous since the deallocation of a unique pointer is automatic
-and if you cannot guarantee that the unique pointer will exist for the whole function call, then you run the risk of having a dangling pointer.
+Since passing by value makes a copy, you cannot pass a unique pointer by value like `func(std::unique_ptr<int> ptr)` without calling `std::move()`. You must either pass by reference. You _could_ use the `.get()` function to return a reference to the internal pointer, but that can be dangerous since the deallocation of a unique
+pointer is automatic and if you cannot guarantee that the unique pointer will exist for the whole function call, then you run the risk of dereferencing a dangling pointer,
+which is UB (undefined behavior).
+
+```C++
+#include <iostream>
+#include <memory>
+
+template <typename T>
+void byUniqueRef(std::unique_ptr<T>& ptr)  //Passed unqiue_ptr by reference
+{
+    std::cout << "Passed the unique pointer by reference: " << *ptr << '\n';
+}
+
+template <typename T>
+void byUniqueMove(std::unique_ptr<T> ptr)  //Passed unique_ptr by value (requires std::move()!)
+{
+    std::cout << "Passed the unique pointer by value (std::move()): " << *ptr << '\n';
+}
+
+template <typename T>
+void byRawPtr(T* ptr)  //Passed raw pointer by value
+{
+    std::cout << "Passed by raw pointer: " << *ptr << '\n';
+}
 
 
+int main()
+{
+    //Declare a unique pointer
+    std::unique_ptr<int> ptr = std::make_unique<int>(10);
+
+    //Pass the unique pointer to a function by reference
+    byUniqueRef(ptr);
+
+    //Pass the unique pointer to a function by raw pointer -- risks dangling pointer! (ok, not in this context, but others)
+    byRawPtr(ptr.get());
+
+    //Pass the unique pointer to a function by moving it (leaves 'ptr' as a nullptr)
+    byUniqueMove(std::move(ptr));
+
+    //Because you moved ptr, it should be equal to nullptr
+    if (ptr == nullptr)
+        std::cout << "ptr == nullptr\n";   //True
+    else
+        std::cout << "ptr != nullptr\n";  //False
+
+    return 0;
+}
+```
 
 ---
 
