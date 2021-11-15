@@ -26,15 +26,17 @@ argument to the constructor of the object it creates, so don't worry about lvalu
 
 ```C++
 #include <iostream>
-#include <memory>                                                                                                                                                                  
+#include <memory>
 int main()
 {
     //Declare a unique pointer to a new integer
-    std::unique_ptr<int> ptr = std::make_unique<int>(10);                                                                                                                                                                          
+    std::unique_ptr<int> ptr = std::make_unique<int>(10);
+    
     //Use the new pointer
     std::cout << "Point value: " << *ptr << '\n';
+    
     return 0;
-}                                                                                                                                                                                                                                         
+} 
 // The unique pointer is automatically freed //
 ```
 
