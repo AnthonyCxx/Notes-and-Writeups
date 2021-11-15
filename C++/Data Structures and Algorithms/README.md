@@ -23,7 +23,7 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 | `O(n²)` | `` | [Insertion Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Insertion%20Sort.cpp) |  |  |
 
 # Other Algorithms
-- [Fibonacci Sequence]()
+- [Fibonacci Sequence](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms/Other%20Algorithms/Fibonacci%20Sequence)
 - [Randomization](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization)
 
 # Miscellaneous Tricks and Problems
