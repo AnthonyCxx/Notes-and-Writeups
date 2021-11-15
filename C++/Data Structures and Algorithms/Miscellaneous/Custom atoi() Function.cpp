@@ -14,7 +14,7 @@ template <typename returnType = int>
     auto isNumericChar = [](const char c) constexpr noexcept -> bool { return c >= 48 and c <= 57; };
 
     //Return nullopt if not all the characters are 0-9 (with the exception of the first character, which may be a positive/negative sign or a number)
-    if ( (str[0] == '-' or str[0] == '+' or isNumericChar(str[0]))   and   !std::all_of(str.cbegin()+1, str.cend(), isNumericChar))
+    if ( (str[0] == '-' or str[0] == '+' or isNumericChar(str[0]))   and   !std::all_of(str.cbegin()+1, str.cend(), isNumericChar) )
         return std::nullopt;
 
     //Declare the result (starts at 0 because it's used before being assigned the result of the expression)
