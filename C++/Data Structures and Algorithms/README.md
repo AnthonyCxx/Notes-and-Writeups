@@ -40,6 +40,7 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - Levenshtein Distance: [Check for String Similarity](https://www.cuelogic.com/blog/the-levenshtein-algorithm)
 
 # Concepts
+- [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw&)
 - [Algorithmic Stability](https://www.youtube.com/watch?v=KJuxI1BBLyQ)
 
 # LeetCode Solutions
