@@ -28,7 +28,7 @@ template <typename returnType = int>
     }
     
     //Make the result negative if there's a negative sign
-    return str[0] == '-' ? result*-1 : result;
+    return str[0] == '-' ? -result : result;
 } 
 
 
