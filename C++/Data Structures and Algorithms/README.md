@@ -26,11 +26,10 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 | `O(n log n)` | `O(log n)` | [Quick Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Quick%20Sort.cpp) |  - | - | unstable |
 | `O(n log n)` | `O(1)` | Heap Sort | - | - | unstable |
 | `O(n log n)` | `O(n)` | [Merge Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Merge%20Sort.cpp) |  - | - | - |
-| `O(n²)` | `` | [Exchange Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Exchange%20Sort.cpp) |  - | - | - |
+| `O(n²)` | `O(1)` | [Exchange Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Exchange%20Sort.cpp) |  - | - | - |
 | `O(n²)` | `O(1)` | [Bubble Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Bubble%20Sort.cpp) | - |  - | stable |
 | `O(n²)` | `O(1)` | [Insertion Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Insertion%20Sort.cpp) | - | - | stable |
 | `O(n²)` | `O(1)` | [Selection Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Selection%20Sort.cpp) | - | - | unstable |
-> Time and space complexity are assumed to be averages.
 
 # Other Algorithms
 - [Fibonacci Sequence](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms/Other%20Algorithms/Fibonacci%20Sequence)
