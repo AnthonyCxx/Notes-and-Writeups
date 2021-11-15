@@ -101,7 +101,27 @@ meaning that shared pointers are [noticably slower than std::unique_ptr](https:/
 without optimizations.
 
 ```C++
+#include <iostream>
+#include <memory>
 
+int main()
+{
+    //Declare a unique pointer to a new integer
+    std::shared_ptr<int> ptr = std::make_shared<int>(10);
+
+    //Print the initial reference count (refs: 1)
+    std::cout << "Initial number of references to ptr: " << ptr.use_count() << '\n';
+
+    //Create a copy of the shared pointer
+    std::shared_ptr<int> ptr2 = ptr;
+    
+    //Print the reference count after adding a new references (refs: 2)
+    std::cout << "Number of references to ptr after adding a new ref: " << ptr.use_count() << '\n';
+
+    return 0;
+}
+
+// The shared pointer is automatically freed, since both pointers went out of scope //
 ```
 
 ---
