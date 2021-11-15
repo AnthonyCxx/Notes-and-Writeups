@@ -8,7 +8,7 @@ unsigned long long fib(unsigned long long n)
         return n;
 
     //Calculate the Fibonacci number
-    for(int i = 3; i <= n; i++)  //Starting at the third iteration (skips the first two)
+    for(std::size_t i = 3; i <= n; ++i)  //Starting at the third iteration (skips the first two)
     {
         next = previous + current;
         previous = current;
