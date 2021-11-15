@@ -19,7 +19,6 @@ Unique pointers are the most common type of smart pointer. Unique pointers are c
 unique pointers (`operator=`) as well as references (`&`) to them are illegal and will raise compile-time errors — this is necessary to prevent dangling pointers. 
 The only transfer operation allowed on unique pointers is moving (via `std::move()`), which will leave it as `nullptr`.
 
-## Declaring a Unique Pointer
 If you are following modern C++ guidelines, you should never see the _new_ operator anywhere in your code. Whenever you declare a unique pointer, you should
 always initialize it with the built-in helper function `std::make_unique<T>()`, which returns a new object of type T. `std::make_unique<T>()` forwards its arguments
 argument to the constructor of the object it creates, so don't worry about lvalues and rvalues.
@@ -95,6 +94,11 @@ int main()
 ---
 
 ## Shared Pointers
+Shared pointers are automatic pointers that allow multiple references to the same data (and by extent, copies). Shared pointers achieve this through a method
+called [reference counting](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization#Reference_counting), which increments every time a new reference is
+made to the data and decrements every time one is removed. When the counter his 0, the data is automatically deallocated. Unfortunately, this process does have overhead,
+meaning that shared pointers are [noticably slower than std::unique_ptr](https://www.modernescpp.com/index.php/memory-and-performance-overhead-of-smart-pointer), especially
+without optimizations.
 
 ---
 
