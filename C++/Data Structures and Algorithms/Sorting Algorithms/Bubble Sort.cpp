@@ -14,7 +14,7 @@ void bubbleSort(T array[], const std::size_t n)
     bool notSorted = true;
 
     //For each element in array
-    for (std::size_t i = 0; i < n && notSorted; ++i)
+    for (std::size_t i = 0; i < n and notSorted; ++i)
     {
         //Set not sorted to false
         notSorted = false;
