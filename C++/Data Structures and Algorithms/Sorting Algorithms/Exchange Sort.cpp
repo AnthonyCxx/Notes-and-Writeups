@@ -14,7 +14,7 @@ void exchangeSort(T array[], const std::size_t n)
     bool notSorted = true;
 
     //For every element in the array
-    for(std::size_t i=0; i < n-1 && notSorted; ++i)
+    for(std::size_t i=0; i < n-1 and notSorted; ++i)
     {
         notSorted = false;
 
