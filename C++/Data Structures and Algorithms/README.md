@@ -18,7 +18,7 @@ to consider mt19937, `rand()` is infamous for being biased towards the lower end
 | `O(n)` | `O(1)` | [Sequential Search](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Searching%20Algorithms/Sequential%20Search.cpp) | - |
 
 # Sorting Algorithms
-There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.html) for sorting algorithms: `O(n log n)` time, `O(1)` space complexity, and [stability](https://www.youtube.com/watch?v=KJuxI1BBLyQ).
+There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.html) for sorting algorithms: O(n log n) time, O(1) space complexity, and [stability](https://www.youtube.com/watch?v=KJuxI1BBLyQ).
 
 | Time Complexity | Space Complexity | Algorithm | Best on | Worst on | Stable? |
 | --------------- | ---------------- | --------- | ------- | -------- | ------- |
