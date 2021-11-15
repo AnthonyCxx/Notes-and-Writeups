@@ -24,7 +24,7 @@ template <typename returnType = int>
     for(std::size_t i = str.find_first_not_of("-+0"); i < str.size(); ++i)
     {
         //Append the integer version of the current character to the end of the result
-        result = result*10 + static_cast<int>(str[i] - '0');
+        result = result*10 + static_cast<int>(str[i] - '0');   //Don't bother casting to unsigned short because of integer promotion. Might as well save a step.
     }
     
     //Make the result negative if there's a negative sign
