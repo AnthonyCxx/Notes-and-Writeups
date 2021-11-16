@@ -23,7 +23,7 @@ template <typename returnType = int>
     //For every character in the string (skipping leading zeros and positive/negative signs)
     for(std::size_t i = str.find_first_not_of("-+0"); i < str.size(); ++i)
     {
-        //Append the integer version of the current character to the end of the current value of the result
+        //Append the integer version of the current character to the current value of the result
         result = result*10 + static_cast<int>(str[i] - '0');
     }
     
