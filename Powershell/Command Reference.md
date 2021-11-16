@@ -213,3 +213,9 @@ Lists the contents of a directory (folder).
 ## Measure-Command
 
 # UNDOCUMENTED
+- New-Item
+- Remove-Item
+- Get-Acl
+- Set-Acl
+- Get-ItemProperty
+- Set-ItemProperty
