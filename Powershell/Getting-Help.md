@@ -1,4 +1,8 @@
 # Getting Help in Powershell
+> [Getting Command Definition (man)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md#get-help) <br />
+> [Search for Commands](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md#get-command) <br />
+> [Get Command Properties and Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md#get-member) <br />
+> [Get Command Aliases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md#get-alias) <br /> 
 
 ## Get-Help
 > Aliases: help, man
