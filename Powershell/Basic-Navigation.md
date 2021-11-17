@@ -107,6 +107,3 @@ Lists the contents of a directory (folder).
 - Set-Acl
 - Get-ItemProperty
 - Set-ItemProperty
-
-# System Information
-> [Back to Top](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#a-quick-reference-for-powershell-commands) <br />
