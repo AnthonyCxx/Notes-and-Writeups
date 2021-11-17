@@ -9,6 +9,8 @@ Anything in quotation marks comes directly from documentation, which is avalilab
 
 # Notes
 - [Command Reference](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md)
+- [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md)
+- [Basic Commands](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md)
 
 # References
 - Powershell Documentation: [Official List of Approved Verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
