@@ -23,3 +23,9 @@
 - Kruskal's Algorithm (sorts the edges in non-decreasing order and then finds connections -- O())
 - Each uses a different locally optimal property
 - Must prove each algorithm
+
+## Dijkstra's Shortest Path Algorithm
+
+```C++
+
+```
