@@ -2,10 +2,10 @@
 > [Show Directory Files (ls)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-childitem) <br />
 > [Change Directories (cd)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#set-location) <br />
 > [Clear Terminal (clear)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
-> [create a file, directory... (touch, mkdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
-> [remove a file, directory... (rm, rmdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
-> [write file contents to terminal (cat)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
-> [copy file, directory... (cp)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
+> [Create a File, Directory... (touch, mkdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
+> [Remove a File, Directory... (rm, rmdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
+> [Write File Contents to Terminal (cat)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
+> [Copy a File, Directory... (cp)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
 
 ## Get-ChildItem
 > Aliases: gci, dir, ls
