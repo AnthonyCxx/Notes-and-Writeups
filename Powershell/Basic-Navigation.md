@@ -12,8 +12,8 @@ Lists the contents of a directory (folder).
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Name` |  | `` |
-| `-Directory` | limits results to directories | `Get-ChildItem -Directory | Measure-Object` |
+| `-Name` |  | `...` |
+| `-Directory` | limits results to directories | `Get-ChildItem -Directory \| Measure-Object` |
 | `-File` | limits results to files | `Get-ChildItem -File` |
 | `-ReadOnly` | limits results to readonly files | `Get-ChildItem -ReadOnly` | 
 | `-Hidden` | limits results to hidden files | `Get-ChildItem -Hidden` |
