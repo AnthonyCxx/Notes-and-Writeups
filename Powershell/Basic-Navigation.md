@@ -1,7 +1,7 @@
 # Basic Commandline Utilities
-> [show directory files (ls)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-childitem) <br />
-> [change directories (cd)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#set-location) <br />
-> [clear screen (clear)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
+> [Show Directory Files (ls)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-childitem) <br />
+> [Change Directories (cd)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#set-location) <br />
+> [Clear Terminal (clear)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
 > [create a file, directory... (touch, mkdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
 > [remove a file, directory... (rm, rmdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
 > [write file contents to terminal (cat)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
