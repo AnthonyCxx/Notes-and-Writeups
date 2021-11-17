@@ -14,7 +14,7 @@ Lists the contents of a directory (folder).
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Name` |  | `...` |
+| `-Name` | limits results to items whose name matches the pattern | `Get-ChildItem -Name *.py` |
 | `-Directory` | limits results to directories | `Get-ChildItem -Directory \| Measure-Object` |
 | `-File` | limits results to files | `Get-ChildItem -File` |
 | `-ReadOnly` | limits results to readonly files | `Get-ChildItem -ReadOnly` | 
