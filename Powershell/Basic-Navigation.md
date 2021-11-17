@@ -1,9 +1,11 @@
 # Basic Commandline Utilities
-> []() <br />
-> []() <br />
-> []() <br />
-> []() <br />
-> []() <br />
+> [show directory files (ls)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-childitem) <br />
+> [change directories (cd)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#set-location) <br />
+> [clear screen (clear)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
+> [create a file, directory... (touch, mkdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
+> [remove a file, directory... (rm, rmdir)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
+> [write file contents to terminal (cat)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
+> [copy file, directory... (cp)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
 
 ## Get-ChildItem
 > Aliases: gci, dir, ls
