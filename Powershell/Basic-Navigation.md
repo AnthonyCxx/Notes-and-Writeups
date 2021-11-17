@@ -7,7 +7,7 @@
 > [Write File Contents to Terminal (cat)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
 > [Copy a File, Directory... (cp)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
 
-## Get-ChildItem
+## [Get-ChildItem](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.2)
 > Aliases: gci, dir, ls
 
 Lists the contents of a directory (folder).
