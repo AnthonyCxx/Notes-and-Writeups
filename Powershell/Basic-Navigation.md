@@ -1,11 +1,9 @@
 # Basic Commandline Utilities
-
-## Clear-Host
-> Aliases: cls
-
-Clears the screen. This command has no parameters.
-
----
+> []() <br />
+> []() <br />
+> []() <br />
+> []() <br />
+> []() <br />
 
 ## Get-ChildItem
 > Aliases: gci, dir, ls
@@ -43,6 +41,13 @@ Lists the contents of a directory (folder).
 | `-Path` | specifies the path to take | `Set-Location -Path C:\Users\ethan\Downloads\hmm` |
 | `-LiteralPath` | takes the path as a raw (verbatim) string | `Set-Location -LiteralPath C:\Users\ethan\Downloads\*` |
 | `-PassThru` | returns the path after executing the command | ` Write-Host (Set-Location .\Documents\ -PassThru)` |
+
+---
+
+## Clear-Host
+> Aliases: cls
+
+Clears the screen. This command has no parameters.
 
 ---
 
