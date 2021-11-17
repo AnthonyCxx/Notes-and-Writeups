@@ -114,3 +114,4 @@ Clears the screen. This command has no parameters.
 - Set-Acl
 - Get-ItemProperty
 - Set-ItemProperty
+- Move-Item
