@@ -109,19 +109,6 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Set-Location
-> Aliases: sl, cd
-
-"Sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or any provider path."
-
-| Option | Function | Example |
-| ------ | -------- | ------- |
-| `-Path` | specifies the path to take | `Set-Location -Path C:\Users\ethan\Downloads\hmm` |
-| `-LiteralPath` | takes the path as a raw (verbatim) string | `Set-Location -LiteralPath C:\Users\ethan\Downloads\*` |
-| `-PassThru` | returns the path after executing the command | ` Write-Host (Set-Location .\Documents\ -PassThru)` |
-
----
-
 ## Get-ChildItem
 > Aliases: gci, dir, ls
 
@@ -145,6 +132,33 @@ Lists the contents of a directory (folder).
 | `-Recurse` | recursively lists files | `Get-ChildItem -Recurse` | 
 | `-Depth` | dictates maximum recursion depth | `Get-ChildItem -Recurse -Depth 1` |
 | `-FollowSymlink` | displays (but does not follow) [symlinks](vvvhttps://blogs.windows.com/windowsdeveloper/2016/12/02/symlinks-windows-10/) | `...` |
+
+---
+
+## Set-Location
+> Aliases: sl, cd
+
+"Sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or any provider path."
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+| `-Path` | specifies the path to take | `Set-Location -Path C:\Users\ethan\Downloads\hmm` |
+| `-LiteralPath` | takes the path as a raw (verbatim) string | `Set-Location -LiteralPath C:\Users\ethan\Downloads\*` |
+| `-PassThru` | returns the path after executing the command | ` Write-Host (Set-Location .\Documents\ -PassThru)` |
+
+---
+
+## New-Item
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+
+---
+
+## Remove-Item
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
 
 ---
 
@@ -189,6 +203,13 @@ Lists the contents of a directory (folder).
 
 ---
 
+- New-Item
+- Remove-Item
+- Get-Acl
+- Set-Acl
+- Get-ItemProperty
+- Set-ItemProperty
+
 # System Information
 > [Back to Top](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Command%20Reference.md#a-quick-reference-for-powershell-commands) <br />
 
@@ -213,9 +234,3 @@ Lists the contents of a directory (folder).
 ## Measure-Command
 
 # UNDOCUMENTED
-- New-Item
-- Remove-Item
-- Get-Acl
-- Set-Acl
-- Get-ItemProperty
-- Set-ItemProperty
