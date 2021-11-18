@@ -57,13 +57,14 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-ItemType` |  | `` |
+| `-ItemType` | specifies the type of item to create | `` |
 | `-Force` |  | `` | 
 | `-Name` |  | `` | 
 | `-Path` |  | `` |
 | `-Value` |  | `` |
 | `-Confirm` |  | `` |
 | `-WhatIf` |  | `` |
+> File, Directory, SymbolicLink, Junction, HardLink
 
 ---
 
@@ -126,3 +127,4 @@ Clears the screen. This command has no parameters.
 - Get-ItemProperty
 - Set-ItemProperty
 - Move-Item
+- Rename-Item
