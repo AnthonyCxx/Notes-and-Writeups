@@ -4,7 +4,7 @@
 > [Get Command Properties and Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md#get-member) <br />
 > [Get Command Aliases](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md#get-alias) <br /> 
 
-## Get-Help
+## [Get-Help](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-help?view=powershell-7.2)
 > Aliases: help, man
 
 "`Get-Help` gets the help content that it displays from help files on your computer. Without the help files, `Get-Help` displays only basic information about cmdlets."
@@ -18,7 +18,7 @@
 
 ---
 
-## Get-Command
+## [Get-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.2)
 > Aliases: gcm
 
 "The `Get-Command` cmdlet gets all commands that are installed on the computer, including cmdlets, aliases, functions, filters, scripts, and applications."
@@ -34,7 +34,7 @@
 
 ---
 
-## Get-Member
+## [Get-Member](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-member?view=powershell-7.2)
 > Aliases: gm
 
 "The `Get-Member` cmdlet gets the members, the properties and methods, of objects."; to use `Get-Member`, you have to pipe something into it.
@@ -50,7 +50,7 @@
 
 ---
 
-## Get-Alias
+## [Get-Alias](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-alias?view=powershell-7.2)
 > Aliases: gal
 
 "The `Get-Alias` cmdlet gets the aliases in the current session."
