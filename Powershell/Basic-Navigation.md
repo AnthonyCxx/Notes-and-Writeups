@@ -57,6 +57,13 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
+| `-ItemType` |  | `` |
+| `-Force` |  | `` | 
+| `-Name` |  | `` | 
+| `-Path` |  | `` |
+| `-Value` |  | `` |
+| `-Confirm` |  | `` |
+| `-WhatIf` |  | `` |
 
 ---
 
@@ -64,6 +71,12 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 ---
 
