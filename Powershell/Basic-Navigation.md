@@ -33,7 +33,7 @@ Lists the contents of a directory (folder).
 
 ---
 
-## Set-Location
+## [Set-Location](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-location?view=powershell-7.2)
 > Aliases: sl, cd
 
 "Sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or any provider path."
@@ -46,28 +46,28 @@ Lists the contents of a directory (folder).
 
 ---
 
-## Clear-Host
+## [Clear-Host](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/clear-host?view=powershell-7.2)
 > Aliases: cls
 
 Clears the screen. This command has no parameters.
 
 ---
 
-## New-Item
+## [New-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.2)
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
 
 ---
 
-## Remove-Item
+## [Remove-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.2)
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
 
 ---
 
-## Get-Content
+## [Get-Content](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2)
 > Aliases: (gc, type, cat)
 
 | Option | Function | Example |
@@ -87,7 +87,7 @@ Clears the screen. This command has no parameters.
 
 ---
 
-## Copy-Item
+## [Copy-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/copy-item?view=powershell-7.2)
 > Aliases: copy, cp
 
 | Option | Function | Example |
@@ -108,8 +108,6 @@ Clears the screen. This command has no parameters.
 
 ---
 
-- New-Item
-- Remove-Item
 - Get-Acl
 - Set-Acl
 - Get-ItemProperty
