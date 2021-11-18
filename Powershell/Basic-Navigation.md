@@ -62,7 +62,7 @@ Creates a new item of the specified type.
 | ------ | -------- | ------- |
 | `-ItemType` | specifies the type of item to create | `New-Item "testdir" -ItemType Directory` |
 | `-Name` | specifies the name of the new item | `New-Item -Name "testfile"` | 
-| `-Force` | allows for overwriting read-only files | `` | 
+| `-Force` | allows for overwriting read-only files | `ni -Name "test.cpp" -Force` | 
 | `-Path` |  | `` |
 | `-Value` |  | `` |
 | `-Confirm` |  | `` |
