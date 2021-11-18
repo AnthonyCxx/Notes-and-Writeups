@@ -57,9 +57,9 @@ Clears the screen. This command has no parameters.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-ItemType` | specifies the type of item to create | `` |
+| `-ItemType` | specifies the type of item to create | `New-Item "testdir" -ItemType Directory` |
+| `-Name` | specifies the name of the new item | `` | 
 | `-Force` |  | `` | 
-| `-Name` |  | `` | 
 | `-Path` |  | `` |
 | `-Value` |  | `` |
 | `-Confirm` |  | `` |
