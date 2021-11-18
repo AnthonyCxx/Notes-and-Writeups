@@ -54,11 +54,14 @@ Clears the screen. This command has no parameters.
 ---
 
 ## [New-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7.2)
+> Aliases: ni, mkdir
+
+Creates a new item of the specified type.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-ItemType` | specifies the type of item to create | `New-Item "testdir" -ItemType Directory` |
-| `-Name` | specifies the name of the new item | `` | 
+| `-Name` | specifies the name of the new item | `New-Item -Name "testfile"` | 
 | `-Force` |  | `` | 
 | `-Path` |  | `` |
 | `-Value` |  | `` |
@@ -69,6 +72,7 @@ Clears the screen. This command has no parameters.
 ---
 
 ## [Remove-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.2)
+> Aliases: 
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
