@@ -140,7 +140,7 @@ Creates a new item of the specified type.
 | Option | Function | Example |
 | ------ | -------- | ------- |
 | `-TotalCount` | get first _n_ lines of the file | `Get-Content .\testdata.dat -TotalCount 3` |
-| `-Tail` |  | `Get-Content .\testdata.dat -Tail 3` |
+| `-Tail` | get last _n_ lines of the file | `Get-Content .\testdata.dat -Tail 3` |
 | `-Delimiter` | specifies delimiter (default: `\n`) | `Get-Content .\testdata.dat -TotalCount 3 -Delimiter ','` |
 | `-Path` | path of the file to read | `Get-Content -Path .\Documents\testdata.dat` |
 | `-LiteralPath` | path of the file to read as a raw (verbatim) string | `Get-Content -LiteralPath .\Documents\testdata.dat` |
