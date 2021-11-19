@@ -84,8 +84,8 @@ Creates a new item of the specified type.
 | `-LiteralPath` |  | `` |
 | `-Recurse` |  | `` |
 | `-Stream` |  | `` |
-| `-Confirm` |  | `` |
-| `-WhatIf` |  | `` |
+| `-Confirm` | prompts the user for confirmation before proceeding | `` |
+| `-WhatIf` | shows what would happen, but prevents the command from running | `Remove-Item -Include * -Path "C:\Windows\System32\" -Recurse -WhatIf` |
 
 ---
 
