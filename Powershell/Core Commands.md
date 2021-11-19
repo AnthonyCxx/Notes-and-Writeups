@@ -87,8 +87,8 @@ Creates a new item of the specified type.
 | `-Recurse` | recursively deletes (use for directories) | `Remove-Item .\folder\ -Recurse` |
 | `-Confirm` | prompts the user for confirmation before proceeding | `Remove-Item * -Confirm` |
 | `-WhatIf` | shows what would happen, but prevents the command from running | `Remove-Item -Include * -Path "C:\Windows\System32\" -Recurse -WhatIf` |
-> Consider adding `-Force` when using `-Recurse` in case the folder contains Hidden or ReadOnly files
-
+> Consider adding `-Force` when using `-Recurse` in case the folder contains Hidden or ReadOnly files <br />
+> Note: `-Filter` is faster than `-Include`
 ---
 
 ## Move-Item
