@@ -14,6 +14,7 @@ Anything in quotation marks comes directly from documentation, which is avalilab
 
 # References
 - Powershell Documentation: [Official List of Approved Verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
+- [A-Z Index of Powershell Commands](https://ss64.com/ps/)
 
 # Resources
 - Powershell Documentation: [Fundamentals of Powershell: Syntax and Objects](https://docs.microsoft.com/en-us/powershell/scripting/learn/tutorials/01-discover-powershell?view=powershell-7.1)
