@@ -72,7 +72,7 @@ Creates a new item of the specified type.
 ---
 
 ## [Remove-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.2)
-> Aliases: 
+> Aliases: del, erase, rd, ri, rm, rmdir
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
