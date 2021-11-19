@@ -12,7 +12,7 @@
 
 Lists the contents of a directory (folder).
 
-|   Option | Function | Example |
+| Option | Function | Example |
 | ------ | -------- | ------- |
 | `-Name` | limits results to items whose name matches the pattern | `Get-ChildItem -Name *.py` |
 | `-Directory` | limits results to directories | `Get-ChildItem -Directory \| Measure-Object` |
