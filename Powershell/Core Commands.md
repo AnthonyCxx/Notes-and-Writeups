@@ -1,13 +1,13 @@
 # Basic Commandline Utilities
 > [Show Directory Content](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#get-childitem) <br />
-> [Change Directories](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#set-location) <br />
-> [Clear Terminal](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
-> [Create an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
-> [Remove an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
-> [Move an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#move-item) <br />
-> [Rename an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#rename-item) <br />
-> [Copy an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
-> [Print File Contents](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
+> [Change Directories](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#set-location) <br />
+> [Clear Terminal](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#clear-host) <br />
+> [Create an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#new-item) <br />
+> [Remove an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#remove-item) <br />
+> [Move an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#move-item) <br />
+> [Rename an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#rename-item) <br />
+> [Copy an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#copy-item)
+> [Print File Contents](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#get-content) <br />
 
 ## [Get-ChildItem](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.2)
 > Aliases: gci, dir, ls
