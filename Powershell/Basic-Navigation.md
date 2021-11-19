@@ -64,7 +64,7 @@ Creates a new item of the specified type.
 | `-Name` | specifies the name of the new item | `New-Item -Name "testfile"` | 
 | `-Force` | allows for overwriting read-only files | `ni -Name "test.cpp" -Force` | 
 | `-Path` | specifies the location to create the new item | `New-Item -Type File -Path .. -Name "testfile.txt"` |
-| `-Value` |  | `New-Item -Type File -Name "testfile.txt" -Value "file content here"` |
+| `-Value` | specifies file content | `New-Item -Type File -Name "testfile.txt" -Value "file content here"` |
 | `-Confirm` | prompts the user for confirmation before proceeding | `New-Item -Type Directory -Name yaboi -Confirm` |
 | `-WhatIf` | shows what _would_ happen, but prevents the command from running | `New-Item -Type File -Name "hmmm.txt" -WhatIf` |
 > File, Directory, SymbolicLink, Junction, HardLink
@@ -76,12 +76,16 @@ Creates a new item of the specified type.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-Include` |  | `` |
+| `-Exclude` |  | `` |
+| `-Force` |  | `` |
+| `-Filter` |  | `` |
+| `-Path` |  | `` |
+| `-LiteralPath` |  | `` |
+| `-Recurse` |  | `` |
+| `-Stream` |  | `` |
+| `-Confirm` |  | `` |
+| `-WhatIf` |  | `` |
 
 ---
 
