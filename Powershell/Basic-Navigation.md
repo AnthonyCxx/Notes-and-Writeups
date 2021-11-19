@@ -65,8 +65,8 @@ Creates a new item of the specified type.
 | `-Force` | allows for overwriting read-only files | `ni -Name "test.cpp" -Force` | 
 | `-Path` | specifies the location to create the new item | `New-Item -Type File -Path .. -Name "testfile.txt"` |
 | `-Value` |  | `New-Item -Type File -Name "testfile.txt" -Value "file content here"` |
-| `-Confirm` |  | `` |
-| `-WhatIf` |  | `` |
+| `-Confirm` | prompts the user for confirmation before proceeding | `New-Item -Type Directory -Name yaboi -Confirm` |
+| `-WhatIf` | shows what _would_ happen, but prevents the command from running | `New-Item -Type File -Name "hmmm.txt" -WhatIf` |
 > File, Directory, SymbolicLink, Junction, HardLink
 
 ---
