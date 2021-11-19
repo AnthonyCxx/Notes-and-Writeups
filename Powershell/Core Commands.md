@@ -69,7 +69,7 @@ Creates a new item of the specified type.
 | `-Value` | specifies file content | `New-Item -Type File -Name "testfile.txt" -Value "file content here"` |
 | `-Confirm` | prompts the user for confirmation before proceeding | `New-Item -Type Directory -Name yaboi -Confirm` |
 | `-WhatIf` | shows what _would_ happen, but prevents the command from running | `New-Item -Type File -Name "hmmm.txt" -WhatIf` |
-> Item Types: File, Directory, SymbolicLink, Junction, HardLink
+> Item Types: [File](https://www.computerhope.com/jargon/f/file.htm), [Directory](https://www.computerhope.com/jargon/d/director.htm), [SymbolicLink](https://docs.microsoft.com/en-us/windows/win32/fileio/symbolic-links), [Junction](https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions#junctions), [HardLink](https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions#hard-links)
 
 ---
 
