@@ -90,7 +90,7 @@ Creates a new item of the specified type.
 ---
 
 ## [Get-Content](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2)
-> Aliases: (gc, type, cat)
+> Aliases: gc, type, cat
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
