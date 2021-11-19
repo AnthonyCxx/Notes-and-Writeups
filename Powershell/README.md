@@ -9,7 +9,7 @@ Anything in quotation marks comes directly from documentation, which is avalilab
 
 # Notes
 - [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md)
-- [Core Commands](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md)
+- [Core Commands](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md)
 - [https://ss64.com/ps/](https://ss64.com/ps/)
 
 # References
