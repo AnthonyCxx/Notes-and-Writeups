@@ -4,8 +4,8 @@
 > [Clear Terminal](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
 > [Create a File, Directory...](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
 > [Remove a File, Directory...](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
-> [Print File Contents](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
 > [Copy a File, Directory...](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
+> [Print File Contents](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
 
 ## [Get-ChildItem](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.2)
 > Aliases: gci, dir, ls
@@ -89,25 +89,27 @@ Creates a new item of the specified type.
 
 ---
 
-## [Get-Content](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2)
-> Aliases: gc, type, cat
+## Move-Item
+> Aliases:
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-TotalCount` | get first _n_ lines of the file | `Get-Content .\testdata.dat -TotalCount 3` |
-| `-Tail` |  | `Get-Content .\testdata.dat -Tail 3` |
-| `-Delimiter` | specifies delimiter (default: `\n`) | `Get-Content .\testdata.dat -TotalCount 3 -Delimiter ','` |
-| `-Path` | path of the file to read | `Get-Content -Path .\Documents\testdata.dat` |
-| `-LiteralPath` | path of the file to read as a raw (verbatim) string | `Get-Content -LiteralPath .\Documents\testdata.dat` |
-| `-Include` | include matching items | `Get-Content *.dat -Include beta*` |
-| `-Exclude` | exclude matching items | `Get-Content *.dat -Exclude test*` |
-| `-Raw` | literally reads newlines (`\n`) and carriage returns (`\r`) | `Get-Content .\testdata.dat -Raw` |
-| `-Encoding` | specifies [encoding system](https://docs.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.filesystemcmdletproviderencoding?view=powershellsdk-1.1.0) (read more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.2)) | `Get-Content .\testdata.dat -Encoding ASCII` |
-| `-Filter` | "Specifies a filter to qualify the `-Path` parameter." | `...` |
-| `-Force` | "override a read-only attribute or create directories to complete a file path..." | `...` |
-| ` -ReadCount` | "specifies how many lines of content are sent through the pipeline at a time" | `...` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
----
+## Rename-Item
+> Aliases:
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 ## [Copy-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/copy-item?view=powershell-7.2)
 > Aliases: copy, cp
@@ -130,9 +132,27 @@ Creates a new item of the specified type.
 
 ---
 
+## [Get-Content](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2)
+> Aliases: gc, type, cat
+
+| Option | Function | Example |
+| ------ | -------- | ------- |
+| `-TotalCount` | get first _n_ lines of the file | `Get-Content .\testdata.dat -TotalCount 3` |
+| `-Tail` |  | `Get-Content .\testdata.dat -Tail 3` |
+| `-Delimiter` | specifies delimiter (default: `\n`) | `Get-Content .\testdata.dat -TotalCount 3 -Delimiter ','` |
+| `-Path` | path of the file to read | `Get-Content -Path .\Documents\testdata.dat` |
+| `-LiteralPath` | path of the file to read as a raw (verbatim) string | `Get-Content -LiteralPath .\Documents\testdata.dat` |
+| `-Include` | include matching items | `Get-Content *.dat -Include beta*` |
+| `-Exclude` | exclude matching items | `Get-Content *.dat -Exclude test*` |
+| `-Raw` | literally reads newlines (`\n`) and carriage returns (`\r`) | `Get-Content .\testdata.dat -Raw` |
+| `-Encoding` | specifies [encoding system](https://docs.microsoft.com/en-us/dotnet/api/microsoft.powershell.commands.filesystemcmdletproviderencoding?view=powershellsdk-1.1.0) (read more [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.2)) | `Get-Content .\testdata.dat -Encoding ASCII` |
+| `-Filter` | "Specifies a filter to qualify the `-Path` parameter." | `...` |
+| `-Force` | "override a read-only attribute or create directories to complete a file path..." | `...` |
+| ` -ReadCount` | "specifies how many lines of content are sent through the pipeline at a time" | `...` |
+
+---
+
 - Get-Acl
 - Set-Acl
 - Get-ItemProperty
 - Set-ItemProperty
-- Move-Item
-- Rename-Item
