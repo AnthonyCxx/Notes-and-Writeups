@@ -4,7 +4,7 @@
 > [Clear Terminal](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
 > [Create a File, Directory...](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
 > [Remove a File, Directory...](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#remove-item) <br />
-> [Write File Contents to Terminal)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
+> [Write File Contents to Terminal](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#get-content) <br />
 > [Copy a File, Directory...](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#copy-item)
 
 ## [Get-ChildItem](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.2)
