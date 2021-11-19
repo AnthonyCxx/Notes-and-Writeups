@@ -1,5 +1,5 @@
 # Basic Commandline Utilities
-> [Show Directory Content](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Comre%20Commands.md#get-childitem) <br />
+> [Show Directory Content](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#get-childitem) <br />
 > [Change Directories](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#set-location) <br />
 > [Clear Terminal](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#clear-host) <br />
 > [Create an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Basic-Navigation.md#new-item) <br />
