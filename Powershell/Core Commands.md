@@ -92,21 +92,30 @@ Creates a new item of the specified type.
 ---
 
 ## [Move-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/move-item?view=powershell-7.2)
-> Aliases:
+> Aliases: mi, move, mv
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-Destination` |  | `` |
+| `-Include` |  | `` |
+| `-Exclude` |  | `` |
+| `-Filter` |  | `` |
+| `-Force` |  | `` |
+| `-Path` |  | `` |
+| `-LiteralPath` |  | `` |
+| `-PassThru` | returns the moved object | `Move-Item *.cpp -Destination .. -PassThru | ForEach {Write-Host $_.Name}` |
+| `-Path` | specifies the directory to search | `` |
+| `-LiteralPath` | specifies the directory to search via raw (verbatim) string | `` |
+| `-Confirm` | prompts the user for confirmation before proceeding | `` |
+| `-WhatIf` | shows what would happen, but prevents the command from running | `` |
 
 ## [Rename-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-item?view=powershell-7.2)
-> Aliases:
+> Aliases: rni, ren
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
@@ -154,6 +163,7 @@ Creates a new item of the specified type.
 
 ---
 
+- Get-Item
 - Get-Acl
 - Set-Acl
 - Get-ItemProperty
