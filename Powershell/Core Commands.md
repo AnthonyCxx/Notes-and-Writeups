@@ -91,7 +91,7 @@ Creates a new item of the specified type.
 > Reference: [-Filter vs -Include](https://tfl09.blogspot.com/2012/02/get-childitem-and-theinclude-and-filter.html)
 ---
 
-## Move-Item
+## [Move-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/move-item?view=powershell-7.2)
 > Aliases:
 
 | Option | Function | Example |
@@ -102,7 +102,7 @@ Creates a new item of the specified type.
 | `` |  | `` |
 | `` |  | `` |
 
-## Rename-Item
+## [Rename-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-item?view=powershell-7.2)
 > Aliases:
 
 | Option | Function | Example |
