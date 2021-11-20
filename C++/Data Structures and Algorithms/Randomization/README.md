@@ -10,4 +10,4 @@
 - `O(1)` Random Weighted Selection: [Alias Method](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/Randomization/Alias%20Method.cpp) 
 - `O(n)` Random Weighted Selection: [Uniform Weighted RNG](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Random%20Weighted%20Selection.cpp)
 ## Random Number Generators
-- [Linear Congruential Generator](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Linear%20Congruential%20Generator.cpp)
+- `DNU` [Linear Congruential Generator](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Linear%20Congruential%20Generator.cpp)
