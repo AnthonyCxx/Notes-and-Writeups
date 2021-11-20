@@ -55,6 +55,12 @@ int reverse(int x)
   1. Modding an integer 10 yields the last digit of the number (e.g. 127 % 10 -> 7).
   2. Multiplying an integer by 10 moves all the digits over 1 and leaves a space (0), which can be added to.
   3. Dividing an integer by 10 discards the last number (e.g. 127 / 10 -> 12, assuming integer division).
+  
+  
+  I used took the absolute value of the integer instead of just doing 'x = -x' because
+  "In 2's complement systems, the absolute value of the most-negative value is out of range, 
+  e.g. for 32-bit 2's complement type int, INT_MIN is -2147483648, but the would-be result 2147483648
+  is greater than INT_MAX, which is 2147483647." -cppreference
 */
 int reverse(int x) 
 {
@@ -66,7 +72,14 @@ int reverse(int x)
     if (x < 0)
     {
         isNeg = true;
-        x = -x;
+      
+        /*
+          Take the absolute value of the integer instead of just doing 'x = -x' because
+          "In 2's complement systems, the absolute value of the most-negative value is out of range, 
+          e.g. for 32-bit 2's complement type int, INT_MIN is -2147483648, but the would-be result 2147483648
+          is greater than INT_MAX, which is 2147483647." -cppreference
+        */
+        x = abs(x); 
     }
 
     //Until you reach 0 (at which point the int is completely reversed)
