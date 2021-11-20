@@ -1,5 +1,13 @@
 //In-depth problem explanation (C#): https://cis300.cs.ksu.edu/stacks-queues/paren/
 
+
+/*
+    To find a valid solution for this problem, you have to iterate over every character in the string,
+    keeping track of the most recently opening parenthesis. If you coming across a closing parenthesis
+    that does not match the most recently opening parenthesis, they the string is malformed (invalid).
+    By the time you finish iterating over the string, you should have no unmatched opening parentheses
+    (which means the stack should be empty)
+*/
 bool isValid(std::string s) 
 {
     //Create a stack to store the left parentheses
