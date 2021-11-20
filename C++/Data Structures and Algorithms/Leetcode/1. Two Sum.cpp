@@ -19,23 +19,24 @@
   Also, the return type of this function (the int vector 'answer') should be `vector<std::size_t>` since they're indices.
 */
 std::vector<int> twoSum(std::vector<int>& nums, int target)
-    {
-        //Variables + Data structures
-        std::unordered_map<int, std::size_t> traversed; 
-        bool not_found = true;
-        std::vector<int> answer;
+{
+    //An unordered 
+    std::unordered_map<int, int> traversed;   //Should be <int, std::size_t>
+
+    //Use a manual for-loop because you need access to the index
+    for(int i=0; i < nums.size(); ++i)
+    { 
+        //If we've passed a number that's the difference between the target and the current number,
+        if (traversed.find(target - nums[i]) != traversed.end())
+        {
+           //Then we've found our match: return the index of the target number and the current index.
+           return {traversed[target-nums[i]], i};
+        }    
         
-        for(std::size_t i=0; i < nums.size() && not_found; ++i)
-        { 
-            if (traversed.find(target - nums[i]) != traversed.end())
-            {
-                not_found = false;
-                answer.push_back(i);
-                answer.push_back(traversed[target-nums[i]]);
-            }    
-                
-            traversed[nums[i]] = i;
-        }
-        
-        return answer;
+        //Add the number we've passed into the map (number -> index)
+        traversed.insert({nums[i], i});    //Note: this MUST come after the check because you can't use the same index twice
     }
+
+    //This is unncessary as Leetcode says to assume there is always a solution, but it's needed to make the compiler happy (all code paths return a value)
+    return {};
+}
