@@ -68,13 +68,6 @@ int reverse(int x)
     if (x < 0)
     {
         isNeg = true;
-      
-        /*
-          Take the absolute value of the integer instead of just doing 'x = -x' because
-          "In 2's complement systems, the absolute value of the most-negative value is out of range, 
-          e.g. for 32-bit 2's complement type int, INT_MIN is -2147483648, but the would-be result 2147483648
-          is greater than INT_MAX, which is 2147483647." -cppreference
-        */
         x = abs(x); 
     }
 
