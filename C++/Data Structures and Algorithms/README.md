@@ -45,5 +45,5 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - [Algorithmic Stability](https://www.youtube.com/watch?v=KJuxI1BBLyQ)
 
 # LeetCode Solutions
-- 1. [Two Sum](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1.%20Two%20Sum.cpp)
+- 1: [Two Sum](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1.%20Two%20Sum.cpp)
 - 20: [Valid Parentheses](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/20.%20Valid%20Parentheses.cpp)
