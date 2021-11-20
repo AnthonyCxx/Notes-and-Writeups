@@ -34,7 +34,7 @@ void partition(T array[], const std::size_t low, const std::size_t high, std::si
 
 //Quicksort
 template <typename T>
-void quickSort(T array[], const size_t low, const size_t high)
+void quickSort(T array[], const std::size_t low, const std::size_t high)
 {
     std::size_t pivotpoint;
 
