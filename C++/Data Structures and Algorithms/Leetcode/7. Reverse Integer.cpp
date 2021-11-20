@@ -44,9 +44,6 @@ int reverse(int x)
 }
 
 
-
-
-
 /*
   SOLUTION 2: Using Integer Arithmetic
   ====================================
@@ -55,7 +52,6 @@ int reverse(int x)
   1. Modding an integer 10 yields the last digit of the number (e.g. 127 % 10 -> 7).
   2. Multiplying an integer by 10 moves all the digits over 1 and leaves a space (0), which can be added to.
   3. Dividing an integer by 10 discards the last number (e.g. 127 / 10 -> 12, assuming integer division).
-  
   
   I used took the absolute value of the integer instead of just doing 'x = -x' because
   "In 2's complement systems, the absolute value of the most-negative value is out of range, 
