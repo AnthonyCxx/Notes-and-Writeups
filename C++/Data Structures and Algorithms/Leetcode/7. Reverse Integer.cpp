@@ -1,6 +1,11 @@
 /*
   Solution explanation (solution 1): https://stackoverflow.com/questions/15355080/the-most-efficient-way-to-reverse-a-number
   Solution explanation (solution 2): https://www.programiz.com/cpp-programming/examples/reverse-number
+  
+  Reversing a number is fairly easy, but the problem arises when you learn 
+  that "the environment does not allow you to store 64-bit integers". This means
+  that you cannot cop out and store the value in an unsigned long long and then just
+  check if the value with within std::numeric_limits<int>::min() and ::max().
 */
 
 
@@ -43,6 +48,6 @@ int reverse(int x)
 
 
 /*
-  SOLUTION 2: Using integer arithmetic
+  SOLUTION 2: Using Integer Arithmetic
   ====================================
 */
