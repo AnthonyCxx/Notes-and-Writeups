@@ -1,4 +1,4 @@
-
+//In-depth problem explanation (C#): https://cis300.cs.ksu.edu/stacks-queues/paren/
 
 bool isValid(std::string s) 
 {
