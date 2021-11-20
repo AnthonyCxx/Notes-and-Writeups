@@ -78,12 +78,12 @@ Creates a new item of the specified type.
 
 | Option | Function | Example |
 | ------ | -------- | ------- |
-| `-Include` |  | `` |
-| `-Exclude` |  | `` |
+| `-Include` | only include matching items | `...` |
+| `-Exclude` | exclude matching items | `...` |
 | `-Force` | remove Hidden+ReadOnly items | `Remove-Item .\test.cpp -Force` |
-| `-Filter` |  | `` |
-| `-Path` |  | `` |
-| `-LiteralPath` |  | `` |
+| `-Filter` | "specifies a filter to qualify the `-Path` parameter" | `...` |
+| `-Path` | specifies the directory to search | `Remove-Item -Path .\Practice\*` |
+| `-LiteralPath` | specifies the directory to search via raw (verbatim) string | `Remove-Item -LiteralPath .\Practice\*` |
 | `-Recurse` | recursively deletes (use for directories) | `Remove-Item .\folder\ -Recurse` |
 | `-Confirm` | prompts the user for confirmation before proceeding | `Remove-Item * -Confirm` |
 | `-WhatIf` | shows what would happen, but prevents the command from running | `Remove-Item -Include * -Path "C:\Windows\System32\" -Recurse -WhatIf` |
