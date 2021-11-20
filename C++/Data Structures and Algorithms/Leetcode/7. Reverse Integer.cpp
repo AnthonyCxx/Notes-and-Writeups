@@ -50,4 +50,42 @@ int reverse(int x)
 /*
   SOLUTION 2: Using Integer Arithmetic
   ====================================
+  
+  This solution operates off the following principles:
+  1. Modding an integer 10 yields the last digit of the number (e.g. 127 % 10 -> 7).
+  2. Multiplying an integer by 10 moves all the digits over 1 and leaves a space (0), which can be added to.
+  3. Dividing an integer by 10 discards the last number (e.g. 127 / 10 -> 12, assuming integer division).
 */
+int reverse(int x) 
+{
+    int result = 0;
+    int remainder;
+    bool isNeg = false;
+
+    //If the original number is negative, make it positive for modulus trick to work
+    if (x < 0)
+    {
+        isNeg = true;
+        x = -x;
+    }
+
+    //Until you reach 0 (at which point the int is completely reversed)
+    while (x > 0)
+    {
+        //If you are about to exceed the max value of an integer, end by returning 0
+        if (std::numeric_limits<std::int32_t>::max() / 10 < result)
+            return 0;
+
+        //Get the last digit of the original
+        remainder = x % 10;
+
+        //Append the last digit of the original to the result
+        result = result*10 + remainder;
+
+        //Remove the last digit from the original number 
+        x /= 10;
+    }
+
+    //If the initial number was negative, return the result as negative
+    return isNeg ? -result : result;
+}
