@@ -38,7 +38,7 @@ int reverse(int x)
     }
         catch(const out_of_range&) //If larger than an int (32 bits), stoi throws oor (out_of_range)
     {
-        //If no conversionc can be made, return 0
+        //If no conversion to int can be made, return 0
         return 0;
     }
 }
