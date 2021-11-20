@@ -1,4 +1,4 @@
-//In-depth problem explanation (C#): https://cis300.cs.ksu.edu/stacks-queues/paren/
+//Problem explanation (C#): https://cis300.cs.ksu.edu/stacks-queues/paren/
 
 
 /*
