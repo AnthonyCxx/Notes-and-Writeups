@@ -22,11 +22,15 @@ std::cout << "The absolute value of " << num << " is " << absvalue << '\n';
 ```
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
-# Conditionless Minimum
+# Conditionless Minimum and Maximum
 ```C++
 int x = 10, y = 20;
+
 int min = y ^ ((x ^ y) & -(x < y));
-std::cout << "The smaller of the two numbers is: " << min << '\n';
+std::cout << "The min of the two numbers is: " << min << '\n';
+
+int max = x ^ ((x ^ y) & -(x < y));
+std::cout << "The max of the two numbers is: " << max << '\n';
 ```
 
 # Sources
