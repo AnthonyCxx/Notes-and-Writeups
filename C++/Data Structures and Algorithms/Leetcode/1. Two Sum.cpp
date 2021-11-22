@@ -30,7 +30,7 @@ std::vector<int> twoSum(std::vector<int>& nums, int target)
         if (traversed.find(target - nums[i]) != traversed.end())
         {
            //Then we've found our match: return the index of the target number and the current index.
-           return {traversed[target-nums[i]], i};
+           return {traversed[target-nums[i]], i};    // {} (braced-initializer expression) implicitly converts to std::vector<int>
         }    
         
         //Add the number we've passed into the map (number -> index)
