@@ -43,5 +43,11 @@ if (x && !(x & (x - 1)))
 ```
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
+# Count Set Bits
+
+```C++
+
+```
+
 # Sources
 - seander@cs.stanford.edu: [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
