@@ -35,7 +35,7 @@ std::cout << "The max of the two numbers is: " << max << '\n';
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
 # Check if Power of 2
-**WARNING**: this only works for positive numbers.
+**WARNING**: only works for positive numbers.
 ```C++
 int x = 64;
 if (x && !(x & (x - 1)))
