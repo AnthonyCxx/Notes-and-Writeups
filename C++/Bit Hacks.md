@@ -32,6 +32,16 @@ std::cout << "The min of the two numbers is: " << min << '\n';
 int max = x ^ ((x ^ y) & -(x < y));
 std::cout << "The max of the two numbers is: " << max << '\n';
 ```
+> [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
+
+# Check if Power of 2
+**WARNING**: this only works for positive numbers.
+```C++
+int x = 64;
+if (x && !(x & (x - 1)))
+   std::cout << "The number " << x << " is a power of 2\n";
+```
+> [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
 # Sources
 - seander@cs.stanford.edu: [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
