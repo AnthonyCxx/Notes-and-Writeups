@@ -1,6 +1,8 @@
 # A Collection of Bit Hacks from Various Sources
 
+
 ## Check for Opposite Signs
+if `((x ^ y) < 0)`, then two integers have opposite signs.
 
 ```C++
 if ((x ^ y) < 0)
