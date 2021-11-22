@@ -1,5 +1,6 @@
 /*
-  
+  Given a vector of people where each member has a vector of money in various accounts,
+  find the richest person.
 */
 
 int maximumWealth(vector<vector<int>>& accounts) 
