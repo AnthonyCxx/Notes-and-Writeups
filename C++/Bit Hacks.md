@@ -1,4 +1,5 @@
 # A Collection of Bit Hacks from Various Sources
+Not all of these are useful. Some are just kinda cool.
 - https://www.youtube.com/watch?v=ZRNO-ewsNcQ&t=179s
 - https://www.youtube.com/watch?v=ReTetN51r7A&t=513s
 
