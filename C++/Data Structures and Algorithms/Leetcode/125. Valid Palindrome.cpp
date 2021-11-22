@@ -1,4 +1,12 @@
-std::string filter(std::string str, std::function<bool(const char)> predicate)
+/*
+    This challenge requires you to filter a string and then determine if it's a palindrome.
+    I could have done the transformation to lowercase at the same time as filtering the string,
+    but I wanted to write the code in such a way that it could be repurposed. Because of this,
+    it is a little slower than most solutions.
+*/
+
+template <typename Function>
+[[nodiscard]] std::string filter(std::string str, Function&& predicate) noexcept
 {
     std::string filteredText;
 
@@ -15,16 +23,24 @@ std::string filter(std::string str, std::function<bool(const char)> predicate)
 
 bool isPalindrome(std::string s)
 {
-    //Apply <cctype>'s 'tolower()' to every character in the string
-    std::for_each(s.begin(), s.end(), [](char& c) -> void {c = tolower(c);});
+    //If 'c' is a captial letter, make it lowercase
+    auto toLowercase = [](char& c) constexpr noexcept -> char {return c >= 'A' and c <= 'Z' ? c + 32 : c;};
+
+    //Apply <cctype>'s 'tolower()' to every character in the string (O(n))
+    std::for_each(s.begin(), s.end(), [&toLowercase](char& c) constexpr noexcept -> void {c = toLowercase(c);});
 
     //Filter the text (remove an non-alphanumeric characters
     std::string filtered = filter(s, [](const char c){return isalnum(c);});
 
-    //Get the reverse of the string
-    std::string reversed = filtered;
-    std::reverse(reversed.begin(), reversed.end());
+    
+    //If any character does not match with its opposite, return false
+    for(std::size_t i=0; i < filtered.size()/2; ++i)
+    {
+        if (filtered[i] != filtered[filtered.size()-i-1])
+            return false;
+    }
 
-    //A word is a palindrome if the word matches its inverse, character for character
-    return filtered == reversed;
+
+    //If all the characters matched, return true
+    return true;
 }
