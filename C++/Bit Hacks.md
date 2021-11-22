@@ -3,7 +3,7 @@
 - https://www.youtube.com/watch?v=ReTetN51r7A&t=513s
 
 # Check for Opposite Signs
-if `((x ^ y) < 0)`, then two integers have opposite signs.
+If true, then two integers have opposite signs.
 
 ```C++
 if ((x ^ y) < 0)
