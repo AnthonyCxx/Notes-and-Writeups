@@ -38,6 +38,7 @@ This is **NOT** comprehensive; explore them individual folders on your own. <br 
 - [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
 - [Code Snippets](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Code%20Snippets)
 - [Competitive Programming Tricks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Competitive%20Programming%20Tricks.md)
+- [A Collection of Bit Hacks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Bit%20Hacks.md)
 
 ## Tricks and Tools
 Tool: [_Online C++ Compiler_](https://www.onlinegdb.com/online_c++_compiler) (good for quickly testing a piece of code) <br />
