@@ -2,7 +2,7 @@
 - https://www.youtube.com/watch?v=ZRNO-ewsNcQ&t=179s
 - https://www.youtube.com/watch?v=ReTetN51r7A&t=513s
 
-## Check for Opposite Signs
+# Check for Opposite Signs
 if `((x ^ y) < 0)`, then two integers have opposite signs.
 
 ```C++
@@ -12,7 +12,7 @@ if ((x ^ y) < 0)
 > Parentheses are needed around _x_ and _y_ because operator< has precedence over operator^ <br />
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
-## Conditionless Absolute Value
+# Conditionless Absolute Value
 Takes the absolute value of an integer.
 ```C++
 int num = -150;
