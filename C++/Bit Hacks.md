@@ -1,5 +1,6 @@
 # A Collection of Bit Hacks from Various Sources
-
+- https://www.youtube.com/watch?v=ZRNO-ewsNcQ&t=179s
+- https://www.youtube.com/watch?v=ReTetN51r7A&t=513s
 
 ## Check for Opposite Signs
 if `((x ^ y) < 0)`, then two integers have opposite signs.
