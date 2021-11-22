@@ -9,6 +9,7 @@ int maximumWealth(vector<vector<int>>& accounts)
 
     for(const vector<int>& acc : accounts)
     {
+        //Find the sum of the values in the array
         temp = std::accumulate(acc.begin(), acc.end(), 0);
 
         if (max < temp)
