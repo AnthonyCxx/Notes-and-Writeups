@@ -5,19 +5,15 @@
 
 int maximumWealth(vector<vector<int>>& accounts) 
 {
-    int sum, max = 0;
+    int temp, max = 0;
 
-    //For every account 
-    for(std::size_t i=0; i < accounts.size(); ++i)
+    for(const vector<int>& acc : accounts)
     {
-        //Get the sum of the money in that account
-        sum = std::accumulate(accounts[i].begin(), accounts[i].end(), 0);  // <== 0 needed as the initial value
+        temp = std::accumulate(acc.begin(), acc.end(), 0);
 
-        //If the sum is greater than the current max, it becomes the new max
-        if (max < sum)
-            max = sum; 
+        if (max < temp)
+            max = temp; 
     }
 
-    //Return the max
     return max;
 }
