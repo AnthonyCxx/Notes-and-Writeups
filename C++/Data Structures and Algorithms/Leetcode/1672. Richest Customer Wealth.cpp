@@ -5,15 +5,15 @@
 
 int maximumWealth(vector<vector<int>>& accounts) 
 {
-    int temp, max = 0;
+    int sum, max = 0;
 
     for(const vector<int>& acc : accounts)
     {
         //Find the sum of the values in the array
-        temp = std::accumulate(acc.begin(), acc.end(), 0);
+        sum = std::accumulate(acc.begin(), acc.end(), 0);
 
-        if (max < temp)
-            max = temp; 
+        if (max < sum)
+            max = sum; 
     }
 
     return max;
