@@ -24,6 +24,7 @@ This is **NOT** comprehensive; explore the individual folders on your own. <br /
 - [Introduction to Templates (Function + Class)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Introduction%20to%20Templates.md)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
 - [Pointers, Dynamic Memory Allocation, and RAII](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
+- [Variadic Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Variadic%20Functions.md#variadic-templates-c11)
 - [Data Structures and Algorithms](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms)
 - [Lambda Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Lambda%20Expressions.md)
 - [Measuing Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Date%20and%20Time.md)
