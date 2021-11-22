@@ -22,5 +22,12 @@ std::cout << "The absolute value of " << num << " is " << absvalue << '\n';
 ```
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
+# Conditionless Minimum
+```C++
+int x = 10, y = 20;
+int min = y ^ ((x ^ y) & -(x < y));
+std::cout << "The smaller of the two numbers is: " << min << '\n';
+```
+
 # Sources
 - seander@cs.stanford.edu: [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
