@@ -12,7 +12,7 @@ if ((x ^ y) < 0)
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
 ## Conditionless Absolute Value
-
+Takes the absolute value of an integer.
 ```C++
 int num = -150;
 const int mask = num >> sizeof(int)*8 - 1;
