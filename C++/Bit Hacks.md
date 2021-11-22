@@ -1,5 +1,5 @@
 # A Collection of Bit Hacks from Various Sources
-Not all of these are useful. Some are just kinda cool.
+All datatypes are chosen carefully. If there is an `unsigned`, that means you CANNOT use it for negative numbers.
 - https://www.youtube.com/watch?v=ZRNO-ewsNcQ&t=179s
 - https://www.youtube.com/watch?v=ReTetN51r7A&t=513s
 
@@ -14,9 +14,8 @@ if ((x ^ y) < 0)
 > [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
 
 # Check if Power of 2
-**WARNING**: only works for positive numbers.
 ```C++
-int x = 64;
+unsigned int x = 64;
 if (x && !(x & (x - 1)))
    std::cout << "The number " << x << " is a power of 2\n";
 ```
