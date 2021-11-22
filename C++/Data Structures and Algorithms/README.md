@@ -47,4 +47,5 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - 1: [Two Sum](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1.%20Two%20Sum.cpp)
 - 7: [Reverse an Integer](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/7.%20Reverse%20Integer.cpp)
 - 20: [Valid Parentheses](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/20.%20Valid%20Parentheses.cpp)
-- 125 [Valid Palindrome.cpp](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/125.%20Valid%20Palindrome.cpp)
+- 125: [Valid Palindrome.cpp](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/125.%20Valid%20Palindrome.cpp)
+- 344: [Reverse String](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/344.%20Reverse%20String.cpp)
