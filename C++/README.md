@@ -4,11 +4,11 @@ This is not meant to be an authority of any kind nor is it meant to be comprehen
 
 Please read the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) for coding standards.
 
-## Topics
+# Topics
 Here are some shortcuts to the major folders and common files.
 This is **NOT** comprehensive; explore the individual folders on your own. <br />
 
-### Beginner
+## Beginner
 - [Anatomy of a C++ Program](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Anatomy%20of%20a%20C%2B%2B%20Program.md)
 - [Primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#primitive-types), [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#non-primitive-data-types), and [Operators/Operator Precedence](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20and%20Data%20Types/README.md#operator-precedence)
 - [Input and Output](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Input%20and%20Output)
@@ -19,7 +19,7 @@ This is **NOT** comprehensive; explore the individual folders on your own. <br /
 - [Formatting Input and Output](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/iomanip.md)
 - [Using Files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Input%20and%20Output/File%20Input%20and%20Output.md)
 
-### Itermediate
+## Itermediate
 - [Object-Oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Object-Oriented%20Programming)
 - [Introduction to Templates (Function + Class)](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Templates/Introduction%20to%20Templates.md)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
@@ -31,26 +31,26 @@ This is **NOT** comprehensive; explore the individual folders on your own. <br /
 - [Forwarding](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Advanced/Forwarding.md)
 - [Templates](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Templates)
 
-### Advanced
+## Advanced
 //Nothing here yet :(
 
-### Miscellaneous
+## Miscellaneous
 - [Data Structures and Algorithms](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms)
 - [Competitive Programming Tricks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Competitive%20Programming%20Tricks.md)
 - [A Collection of Bit Hacks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Bit%20Hacks.md)
 
-### References
+## References
 - [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
 - [Code Snippets](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Code%20Snippets)
 
-## Tricks and Tools
+# Tricks and Tools
 Tool: [_Online C++ Compiler_](https://www.onlinegdb.com/online_c++_compiler) (good for quickly testing a piece of code) <br />
 Tool: [_C++ Insights, source to source transformation_](https://cppinsights.io/) (shows you how the compiler changes your source code behind the scenes) <br />
 Tool: [_cdecl, C gibberish to English_](https://cdecl.org/) (C -> English translator meant for C, but still sometimes useful) <br />
 Tool: [_Hot Examples: Search C++ Code from 1,000,000+ Projects_](https://cpp.hotexamples.com/) <br />
 Trick: [_The ''Clockwise/Spiral Rule''_](http://c-faq.com/decl/spiral.anderson.html) <br />
 
-## Books Used
+# Books Used
 [_C++ Programming: Program Design Including Data Structures, 8th Edition_](https://www.amazon.com/Programming-Program-Design-Including-Structures/dp/1337117560) <br />
 [_Sams Teach Yourself C++ in One Hour a Day, 8th Edition_](https://www.amazon.com/One-Hour-Sams-Teach-Yourself/dp/0789757745) <br />
 [_Modern C++ for Absolute Beginners: A Friendly Introduction to C++ Programming Language and C++11 to C++20 Standards 1st ed. Edition_](https://www.amazon.com/Modern-Absolute-Beginners-Introduction-Programming/dp/1484260465) <br />
@@ -58,7 +58,7 @@ Trick: [_The ''Clockwise/Spiral Rule''_](http://c-faq.com/decl/spiral.anderson.h
 [_A Tour of C++, 2nd Edition_](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832) <br />
 [_Software Architecture with C++_](https://www.amazon.com/Software-Architecture-effective-architecture-techniques/dp/1838554599) <br />
 
-## Free Tutorials and Resources
+# Free Tutorials and Resources
 [_JavaTPoint C++ Tutorial_](https://www.javatpoint.com/cpp-tutorial) <br />
 [_W3Schools C++ Tutorial_](https://www.w3schools.com/CPP/default.asp) <br />
 [_TutorialsPoint C++ Tutorial_](https://www.tutorialspoint.com/cplusplus/index.htm) <br />
@@ -69,5 +69,5 @@ Trick: [_The ''Clockwise/Spiral Rule''_](http://c-faq.com/decl/spiral.anderson.h
 [_CPPCon 2020: Back to the Basics Playlist_](https://www.youtube.com/watch?v=ZAji7PkXaKY&list=PLHTh1InhhwT5o3GwbFYy3sR7HDNRA353e) <br />
 [_Google C++ Style Guide_](https://google.github.io/styleguide/cppguide.html) <br />
 
-## Talks Worth Watching
+# Talks Worth Watching
 - [CPPCon Presentations](https://github.com/CppCon): the world's largest C++ conference
