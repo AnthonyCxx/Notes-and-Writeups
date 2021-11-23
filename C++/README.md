@@ -25,7 +25,6 @@ This is **NOT** comprehensive; explore the individual folders on your own. <br /
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Exception%20Handling)
 - [Pointers, Dynamic Memory Allocation, and RAII](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Memory%20Management)
 - [Variadic Templates](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Variadic%20Functions.md#variadic-templates-c11)
-- [Data Structures and Algorithms](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms)
 - [Lambda Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Lambda%20Expressions.md)
 - [Measuing Time](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Date%20and%20Time.md)
 - [Move Semantics](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Advanced/Move%20Semantics.md)
@@ -35,11 +34,14 @@ This is **NOT** comprehensive; explore the individual folders on your own. <br /
 ### Advanced
 //Nothing here yet :(
 
+### Miscellaneous
+- [Data Structures and Algorithms](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms)
+- [Competitive Programming Tricks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Competitive%20Programming%20Tricks.md)
+- [A Collection of Bit Hacks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Bit%20Hacks.md)
+
 ### References
 - [C++ Standard Library](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/C%2B%2B%20Standard%20Library)
 - [Code Snippets](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Code%20Snippets)
-- [Competitive Programming Tricks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Competitive%20Programming%20Tricks.md)
-- [A Collection of Bit Hacks](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Bit%20Hacks.md)
 
 ## Tricks and Tools
 Tool: [_Online C++ Compiler_](https://www.onlinegdb.com/online_c++_compiler) (good for quickly testing a piece of code) <br />
