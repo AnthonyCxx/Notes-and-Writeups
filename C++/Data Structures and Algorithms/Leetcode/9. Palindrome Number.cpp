@@ -21,7 +21,7 @@ bool isPalindrome(int x)
 
     //If all the checks were passed
     return true;
-};
+}
 
 
 /*
