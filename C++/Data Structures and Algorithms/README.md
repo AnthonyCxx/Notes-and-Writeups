@@ -51,3 +51,4 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - 344: [Reverse String](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/344.%20Reverse%20String.cpp)
 - 1480: [Running Sum of 1d Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1480.%20Running%20Sum%20of%201d%20Array.cpp)
 - 1672: [Richest Customer Wealth](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1672.%20Richest%20Customer%20Wealth.cpp)
+- 1929: [Concatenation of Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1929.%20Concatenation%20of%20Array.cpp)
