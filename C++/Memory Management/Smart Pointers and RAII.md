@@ -126,7 +126,7 @@ int main()
 ---
 
 ## Weak Pointers
-
+A weak pointer is a special type of pointer that does not contribute to the reference count of a shared pointer
 
 ```C++
 #include <iostream>
@@ -167,7 +167,7 @@ By automatically taking care of freeing the allocated memory, smart pointers all
 With normal pointers, you risk never reaching the `delete` statement in the event of an exception, causing memory leak.
 
 ```C++
-void willLeak()
+void doesLeak()
 {
     //Dynamically allocate memory
     int* ptr = new int(5);
