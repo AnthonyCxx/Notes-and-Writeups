@@ -46,7 +46,15 @@ std::cout << "The max of the two numbers is: " << max << '\n';
 # Count Set Bits
 
 ```C++
+unsigned int num = 5;
+unsigned int total;
 
+for (total = 0; num; num >>= 1)
+{
+        total += num & 1;
+}
+
+std::cout << "Total bits set: " << total << '\n';
 ```
 
 # Sources
