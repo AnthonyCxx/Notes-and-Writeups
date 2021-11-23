@@ -44,7 +44,7 @@ cout << "The last digit in 102 is " << 102 % 10 << '\n';
 ```
 
 ## Find the Amount of Digits in a Positive Number
-```C+=
+```C++
 unsigned int countDigits(unsigned int num)
 {
     return log10(num) + 1;
