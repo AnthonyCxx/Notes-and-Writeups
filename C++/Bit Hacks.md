@@ -56,6 +56,8 @@ for (total = 0; num; num >>= 1)
 
 std::cout << "Total bits set: " << total << '\n';
 ```
+> [Credit](https://graphics.stanford.edu/~seander/bithacks.html)
+
 
 # Sources
 - seander@cs.stanford.edu: [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html)
