@@ -37,6 +37,8 @@ A list of the operators in C#, taken from [_The C# Documentation: Operators_](ht
 | -------- | ---- | -------- |
 | && | binary | returns true if both operands are true |
 | \|\| | binary | returns true if at least one operand is true |
+| & | binary | non-short-circuiting && |
+| \| | binary | non-short-circuiting \|\| |
 | ^ | binary | returns true if only 1 expression is true |
 | ! | unary prefix | negates the result of an expression |
 > If you want to use `&&` and `||` without short-circuit evaluation, use `&` and `|`
