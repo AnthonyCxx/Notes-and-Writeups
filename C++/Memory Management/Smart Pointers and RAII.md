@@ -17,7 +17,8 @@ Smart pointers are fundamentally tied to the concept of memory ownership, so you
 ## Unique Pointers
 Unique pointers are the most common type of smart pointer. Unique pointers are called unique because they are the _only_ references to their data. Assignment from
 unique pointers (`operator=`) as well as references (`&`) to them are illegal and will raise compile-time errors — this is necessary to prevent dangling pointers. 
-The only transfer operation allowed on unique pointers is moving (via `std::move()`), which will leave it as `nullptr`.
+The only transfer operation allowed on unique pointers is moving (via `std::move()`), which will leave the moved-from pointer as `nullptr`. Moving a value to a unique
+pointer that already has a value will not cause memory leak, but will deallocate the old memory.
 
 If you are following modern C++ guidelines, you should never see the _new_ operator anywhere in your code. Whenever you declare a unique pointer, you should
 always initialize it with the built-in helper function `std::make_unique<T>()`, which returns a new object of type T. `std::make_unique<T>()` forwards its arguments
