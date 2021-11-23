@@ -164,3 +164,29 @@ int main()
 
 # Smart Pointers and Exception Safety
 By automatically taking care of freeing the allocated memory, smart pointers allow you to safely throw errors without risking memory leak.
+With normal pointers, you risk never reaching the `delete` statement in the event of an exception, causing memory leak.
+
+```C++
+void willLeak()
+{
+    //Dynamically allocate memory
+    int* ptr = new int(5);
+
+    //An exception is thrown, exiting the function
+    throw std::runtime_error("oh no! encountered an exception\n");
+
+    //Never reached, because of an exception D:
+    delete ptr;
+}
+
+void avoidLeak()
+{
+    //Dynamically allocated memory tied to variable located on the stack
+    auto ptr = std::make_unique<int>(5);
+
+    //An exception is thrown, exiting the function
+    throw std::runtime_error("oh no! encountered an exception...\n");
+
+    // Memory pointed to by 'ptr' is automatically deallocated //
+}
+```
