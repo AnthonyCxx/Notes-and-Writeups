@@ -126,8 +126,11 @@ int main()
 ---
 
 ## Weak Pointers
-A weak pointer is a special type of pointer that does not contribute to the reference count of a shared pointer
+A weak pointer is a special type of pointer that does not contribute to the reference count of a shared pointer. However, to dereference the weak pointer (in order
+to be able to use it), you have to temporarily create a shared pointer from the weak pointer by calling the `.lock()` method. If the shared pointer has expired (
+`.expired()` is true), then `.lock()` will return _false_.
 
+To reset a weak pointer (to point it to nothing), call `.reset()`.
 ```C++
 #include <iostream>
 #include <memory>
