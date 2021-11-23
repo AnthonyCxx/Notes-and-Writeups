@@ -43,5 +43,13 @@ Modding any number by 10 yields the digit it ends in.
 cout << "The last digit in 102 is " << 102 % 10 << '\n';
 ```
 
+## Find the Amount of Digits in a Positive Number
+```C+=
+unsigned int countDigits(unsigned int num)
+{
+    return log10(num) + 1;
+}
+```
+
 ## Bit Hacks
 [https://www.youtube.com/watch?v=ZRNO-ewsNcQ](https://www.youtube.com/watch?v=ZRNO-ewsNcQ)
