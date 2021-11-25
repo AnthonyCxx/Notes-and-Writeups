@@ -44,6 +44,9 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw&)
 - [Algorithmic Stability](https://www.youtube.com/watch?v=KJuxI1BBLyQ)
 
+# Resources
+- Neetcode: [Algorithms Playlists](https://www.youtube.com/c/NeetCode/playlists) and [_How I Got Good at Coding Interviews_](https://www.youtube.com/watch?v=SVvr3ZjtjI8)
+
 # LeetCode Solutions
 - 1: [Two Sum](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/1.%20Two%20Sum.cpp)
 - 7: [Reverse an Integer](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/7.%20Reverse%20Integer.cpp)
