@@ -45,7 +45,7 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - [Algorithmic Stability](https://www.youtube.com/watch?v=KJuxI1BBLyQ)
 
 # Resources
-- Leetcode: [Problems](https://leetcode.com/problemset/all/) and [DSA problems]
+- Leetcode: [Problems](https://leetcode.com/problemset/all/) and [DSA problems](https://leetcode.com/explore/learn/)
 - Neetcode: [Algorithms Playlists](https://www.youtube.com/c/NeetCode/playlists) and [_How I Got Good at Coding Interviews_](https://www.youtube.com/watch?v=SVvr3ZjtjI8)
 - [300 Coding Interview Problems](https://www.interviewbit.com/coding-interview-questions/)
 
