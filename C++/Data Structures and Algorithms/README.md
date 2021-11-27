@@ -31,9 +31,11 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 | `O(n²)` | `O(1)` | [Insertion Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Insertion%20Sort.cpp) | - | - | stable |
 | `O(n²)` | `O(1)` | [Selection Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Selection%20Sort.cpp) | - | - | unstable |
 
+# General Algorithms
+- [Randomization](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization)
+
 # Other Algorithms
 - [Fibonacci Sequence](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C++/Data%20Structures%20and%20Algorithms/Other%20Algorithms/Fibonacci%20Sequence)
-- [Randomization](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization)
 
 # Miscellaneous Tricks and Problems
 - [Custom atoi() Function](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Miscellaneous/Custom%20atoi()%20Function.cpp)
