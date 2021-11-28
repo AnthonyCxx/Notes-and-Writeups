@@ -14,4 +14,4 @@ James Gleick, The Information: A History, a Theory, a Flood
 - `DNU` [Linear Congruential Generator](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Randomization/Linear%20Congruential%20Generator.cpp)
 
 # Miscellaneous
-- Generating structured randomness (mountains, fire animations): [perlin noise](https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-noise/a/perlin-noise), [understanding perlin noise](https://adrianb.io/2014/08/09/perlinnoise.html)
+- Generating structured randomness (mountains, fire animations): [perlin noise](https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-noise/a/perlin-noise), [understanding perlin noise](https://adrianb.io/2014/08/09/perlinnoise.html), [perlin moise algorithms X/21 videos](https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3)
