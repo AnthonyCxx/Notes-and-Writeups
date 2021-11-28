@@ -6,6 +6,8 @@ passed to a function (hence why they're so good as one-time functions). Like fun
 body; however, return types are optional for lambdas and they also have a [capture clause](https://www.learncpp.com/cpp-tutorial/lambda-captures/) that can give them access 
 to variables within the same scope.
 
+If you _really_ want to declare the datatype of a lambda variable, it's technically a [std::function](https://en.cppreference.com/w/cpp/utility/functional/function) object.
+
 ## Lambda Expression Format
 ```C++
 //Format
@@ -25,6 +27,20 @@ auto isLowercase = [](char letter) -> bool { return letter >= 97 && letter <= 12
 if (isLowercase('a'))  //Use the lambda like a function
     cout << "The letter 'a' is lowercase\n";
 ```
+
+## Capture Clauses
+Capture clauses, `[ ]`, allow you to use nearby variables (including functors) in a lambda expressions. Captured variables are passed by value unless
+explicitly denoted by a `&`. You can capture any amount of variables, capturing some by reference and others by value – all you have to do is separate them
+with a comma. If you want to capture all local variables by assignment or reference, write a single `[&]` or `[=]` respectively.
+
+```C++
+int i = 2;
+auto lessThanI = [i](const int x) -> bool {return x < i;}; 
+
+if (lessThanI(-2))  //True
+    std::cout << "the number -2 is less than the local variable \'i\'...\n";
+```
+> The lambda _lessThanI_ captures the local variable 'i' by value.
 
 ## Using Lambdas as Function Parameter
 A function can take another function as a paramter. This is common for many functions in the [_\<algorithm\>_](https://www.cplusplus.com/reference/algorithm/) library.
