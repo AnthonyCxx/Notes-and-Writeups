@@ -58,6 +58,7 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 - 26: [Remove Duplicates from Sorted Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array.cpp)
 - 65: [Valid Number](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/65.%20Valid%20Number.cpp)
 - 74: [Search a 2D Matrix](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/74.%20Search%20a%202D%20Matrix.cpp)
+- 75: [Sort Colors](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/75.%20Sort%20Colors.cpp)
 - 125: [Valid Palindrome](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/125.%20Valid%20Palindrome.cpp)
 - 191: [Number of 1 Bits](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/191.%20Number%20of%201%20Bits.cpp)
 - 344: [Reverse String](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Leetcode/344.%20Reverse%20String.cpp)
