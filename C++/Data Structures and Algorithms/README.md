@@ -24,7 +24,7 @@ There are [three ideal qualities](http://web.mit.edu/1.124/LectureNotes/sorting.
 | --------------- | ---------------- | --------- | ------- | -------- | ------- |
 | `O(nk)`| `O(n+k)` | Radix Sort | - | - | stable |
 | `O(n log n)` | `O(log n)` | [Quick Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Quick%20Sort.cpp) |  - | - | unstable |
-| `O(n log n)` | `O(1)` | Heap Sort | - | - | unstable |
+| `O(n log n)` | `O(1)` | Heap Sort | all same value | distinct values | unstable |
 | `O(n log n)` | `O(n)` | [Merge Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Merge%20Sort.cpp) |  - | - | stable |
 | `O(n²)` | `O(1)` | [Exchange Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Exchange%20Sort.cpp) |  - | - | stable |
 | `O(n²)` | `O(1)` | [Bubble Sort](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%2B%2B/Data%20Structures%20and%20Algorithms/Sorting%20Algorithms/Bubble%20Sort.cpp) | - |  - | stable |
