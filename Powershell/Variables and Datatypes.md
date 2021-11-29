@@ -1,7 +1,7 @@
 # Variables and Datatypes in Powershell
 Variables are flexible storage locations for data that can be invoked by name. Powershell is a [strong, dynamically-typed](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/) language, which means that although variables do have a datatype, they can change dynamically.
 
-## Datatypes and Type Accelerators
+# Datatypes and Type Accelerators
 Below is a table of some common datatypes and their attributes. You can find a comprehensive list of datatypes [here](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.2). Some of the names of the types are rather long, so Powershell provides a list of shorthands/aliases for datatypes called 
 [type accelerators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.2), allowing 
 you to just write `[hashtable]` instead of `[System.Collections.Hashtable]`.
@@ -28,7 +28,7 @@ you to just write `[hashtable]` instead of `[System.Collections.Hashtable]`.
 
 ---
 
-## Declaring and Using Variables
+# Declaring and Using Variables
 Variables can be declared directly by writing `$<variable_name_here>` or by using the `New-Variable` cmdlet ([ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-variable?view=powershell-7.2)). As a practice, always declare variables with static typing
 if you can, as it makes the program more predicatable and easier to read.
 
@@ -45,6 +45,7 @@ $smallnum = -12           # Assignment fails because '$smallnum' cannot be re-ty
 ---
 
 # Sources
+- Powershell Documentation: [Variables](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-05?view=powershell-7.2)
 - Powershell Documentation: [about\_Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.2)
 - SS64: [How-to: Variables and Operators](https://ss64.com/ps/syntax-variables.html)
 - Educba: [Powershell Variables](https://www.educba.com/powershell-variables/)
