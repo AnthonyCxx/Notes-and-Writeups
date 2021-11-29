@@ -55,7 +55,8 @@ The [Clear-Variable](https://docs.microsoft.com/en-us/powershell/module/microsof
 value, whereas removing a variable deletes the variable and its value. Assigning `$null` to a variable is the same as using `Clear-Variable`.
 
 ```Powershell
-$today = Get-Date  
+# Declare a variable
+$today = (Get-Date).Day  
 
 # Clearing a Variable (only deletes value)
 Clear-Variable -Name today 
