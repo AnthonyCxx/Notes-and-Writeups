@@ -26,9 +26,9 @@ you to just write `[hashtable]` instead of `[System.Collections.Hashtable]`.
 | `[System.Decimal]`| `[decimal]` | 128-bit floating-point; suitable for money | -79.228 octillion | 79.228 octillion | 0 |
 | `[System.DateTime]`| `[datetime]` | object for dates and time | - | - | - |
 | `[System.Array]`| `[array]` | heterogenous sequence of items | - | - | - |
-| see below | `[hashtable]` | associative array | - | - | - |
+| see below\* | `[hashtable]` | associative array | - | - | - |
 > \> Types can also be accessed by their name without the `System.` prefix -> `[int]` is the same as `[Int32]` <br />
-> \> The full name for `[hashtable]` is `[System.Collections.Hashtable]`, but that was too big to fit, unfortunately.
+> \> \*The full name for `[hashtable]` is `[System.Collections.Hashtable]`, but that was too big to fit, unfortunately.
 
 ---
 
