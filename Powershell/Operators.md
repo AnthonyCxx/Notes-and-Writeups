@@ -1,6 +1,6 @@
 # Operators in Powershell
 "An operator is a language element that you can use in a command or expression. PowerShell supports several types of operators to help you manipulate values."
-- Powershell Documentation: [about\_Operators, long description](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#long-description)
+\- Powershell Documentation: [about\_Operators, long description](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#long-description)
 
 # Arithmetic Operators
 
