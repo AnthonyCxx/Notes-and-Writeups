@@ -13,9 +13,9 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.Byte]`| `[byte]` | 8-bit unsigned integer | 0 | 255 | 0 |
 | `[System.Int32]` | `[int]` | 32-bit signed integer | -2,147,483,648 | 2,147,483,647 | 0 |
 | `[System.Int64]` | `[long]` | 64-bit signed integer | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 |
-| `[System.Single]`| `[float]` | 32-bit floating-point |  |  |  |
-| `[System.Double]`| `[double]` | 64-bit floating-point |  |  |  |
-| `[]`| `[]` |  |  |  |  |
+| `[System.Single]`| `[float]` | 32-bit floating-point | -3.402823E+38 | 3.402823E+38 | 0 |
+| `[System.Double]`| `[double]` | 64-bit floating-point | -1.79769313486232E+308 | 1.79769313486232E+308 | 0 |
+| `[System.Decimal]`| `[decimal]` | 128-bit floating-point; suitable for handling money | -79,228,162,514,264,337,593,543,950,335 | 79,228,162,514,264,337,593,543,950,335 | 0 |
 | `[]`| `[]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
