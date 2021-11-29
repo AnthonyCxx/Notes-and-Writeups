@@ -4,4 +4,16 @@
 
 # Wildcards
 
+```Powershell
+
+```
+
 # Regular Expressions
+
+```Powershell
+
+```
+
+# Sources
+- Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
+- Powershell Documentation: [about\_Regular\_Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2) 
