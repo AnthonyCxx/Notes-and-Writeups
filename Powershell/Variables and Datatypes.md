@@ -13,11 +13,15 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.Byte]`| `[byte]` | 8-bit unsigned integer | 0 | 255 | 0 |
 | `[System.Int32]` | `[int]` | 32-bit signed integer | -2,147,483,648 | 2,147,483,647 | 0 |
 | `[System.Int64]` | `[long]` | 64-bit signed integer | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 |
-| `[]`| `` |  |  |  |  |
-| `[]`| `` |  |  |  |  |
-| `[]`| `` |  |  |  |  |
-| `[]`| `` |  |  |  |  |
-> Types can also be accessed by their name without the `System.` prefix -> int == Int32
+| `[System.Single]`| `[float]` | 32-bit floating-point |  |  |  |
+| `[System.Double]`| `[double]` | 64-bit floating-point |  |  |  |
+| `[]`| `[]` |  |  |  |  |
+| `[]`| `[]` |  |  |  |  |
+| `[]`| `[]` |  |  |  |  |
+| `[]`| `[]` |  |  |  |  |
+| `[]`| `[]` |  |  |  |  |
+| `[]`| `[]` |  |  |  |  |
+> Types can also be accessed by their name without the `System.` prefix -> `[int]` is the same as `[Int32]`
 
 ---
 
