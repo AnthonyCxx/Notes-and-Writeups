@@ -1,8 +1,8 @@
 # Variables and Datatypes in Powershell
-> [Datatypes and Type Accelerators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#datatypes-and-type-accelerators)
-> [Declaring and Using Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#declaring-and-using-variables)
-> [Type-Casting](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#casting-variables)
-> [Clearing and Removing Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#clearing-and-removing-variables)
+> [Datatypes and Type Accelerators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#datatypes-and-type-accelerators) <br />
+> [Declaring and Using Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#declaring-and-using-variables) <br />
+> [Type-Casting](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#casting-variables) <br />
+> [Clearing and Removing Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md#clearing-and-removing-variables) <br />
 
 Variables are flexible storage locations for data that can be invoked by name. Powershell is a [strong, dynamically-typed](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/) language, which means that although variables do have a datatype, they can change dynamically. Variables are denoted by a prepended `$`, which
 is used to reference/invoke them. Like most languages, Powershell provides a number basic datatypes; however, as Windows is an API-based operating system (in contrast to Linux),
