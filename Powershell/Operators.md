@@ -14,19 +14,75 @@ Arithmetic operators preform calculations (addition, subtraction, multiplication
 
 # Assignment Operators
 
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+
 # Comparison Operators
+
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Logical Operators
 
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+
 # Redirection Operators
+
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Split and Join Operators
 
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+
 # Type Operators
+
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Unary Operators
 
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+
 # Special Operators
+
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Sources
 - Powershell Documentation: [about\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2)
