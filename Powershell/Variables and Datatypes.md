@@ -5,7 +5,7 @@ Variables are flexible storage locations for data that can be invoked by name. P
 
 | Datatype | Shorthand | Function | Min Value | Max Value | Default Value | 
 | -------- | --------- | -------- | --------- | --------- | ------------- |
-| `[void]` | - | uninstantiable; hides output; similar to `Out-Null` | - | - | - |
+| `[void]` | - | hides output; similar to `Out-Null` | - | - | - |
 | `Null` | - | represents nothing – an absence; stored in `$null` | - | - | - |
 | `[System.Object]` | `[object]` | base type for all other types | - | - | - |
 | `[System.Boolean]` | `[bool]` | standard boolean type; stores _true_/_false_ | - | - | false |
