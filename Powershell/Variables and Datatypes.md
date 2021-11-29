@@ -2,7 +2,10 @@
 Variables are flexible storage locations for data that can be invoked by name. Powershell is a [strong, dynamically-typed](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/) language, which means that although variables do have a datatype, they can change dynamically.
 
 ## Datatypes and Type Accelerators
-Powershell is 
+Below is a table of some common datatypes and their attributes. You can find a comprehensive list of datatypes [here](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.2).
+
+Powershell provides a list of shorthands/aliases for datatypes called [type accelerators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.2), allowing you to just write `[hashtable]` instead
+of `[System.Collections.Hashtable]`.
 
 | Datatype | Shorthand | Function | Min Value | Max Value | Default Value | 
 | -------- | --------- | -------- | --------- | --------- | ------------- |
