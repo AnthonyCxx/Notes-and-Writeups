@@ -7,13 +7,15 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | -------- | --------- | -------- | --------- | --------- | ------------- |
 | `[void]` | - | cannot be instantiated; hides output; similar to `Out-Null` | - | - | - |
 | `Null` | - | represents nothing – an absence; stored in `$null` | - | - | - |
-| `[System.Object]` | `Object` | base type for all other types | - | - | - |
-| `[System.Boolean]` | `bool` | standard boolean type; stores _true_/_false_ | - | - | false |
-| `[]` | `` |  |  |  |  |
+| `[System.Object]` | `[object]` | base type for all other types | - | - | - |
+| `[System.Boolean]` | `[bool]` | standard boolean type; stores _true_/_false_ | - | - | false |
+| `[System.Char]` | `[char]` | unsigned 16-bit character; UTF-16 compatible | 0 | 65,535 | null |
 | `[]` | `` |  |  |  |  |
 | `[]` | `` |  |  |  |  |
 | `[]`| `` |  |  |  |  |
 > To get the default value of a type, print `[<type>]$var`
+
+---
 
 ## Declaring and Using Variables
 
@@ -21,6 +23,8 @@ Variables are flexible storage locations for data that can be invoked by name. P
 ```Powershell
 $name = "foobar"
 ```
+
+---
 
 # Sources
 - Powershell Documentation: [about\_Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.2)
