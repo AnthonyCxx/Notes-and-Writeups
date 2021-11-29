@@ -20,7 +20,6 @@
 
 # Sources
 - Powershell Documentation: [about\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2)
-- MindMajix: [Powershell Operators](https://mindmajix.com/powershell-operators)
 - Powershell Documentation: [about\_Arithmetic\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.2)
 - Powershell Documentation: [about\_Assignment\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_assignment_operators?view=powershell-7.2)
 - Powershell Documentation: [about\_Comparison\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
@@ -29,3 +28,4 @@
 - Powershell Documentation: [about\_Split](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_split?view=powershell-7.2)
 - Powershell Documentation: [about\_Join](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_join?view=powershell-7.2)
 - Powershell Documentation: [about\_Type_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_operators?view=powershell-7.2)
+- MindMajix: [Powershell Operators](https://mindmajix.com/powershell-operators)
