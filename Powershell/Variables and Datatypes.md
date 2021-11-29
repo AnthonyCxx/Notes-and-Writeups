@@ -10,8 +10,8 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.Object]` | `[object]` | base type for all other types | - | - | - |
 | `[System.Boolean]` | `[bool]` | standard boolean type; stores _true_/_false_ | - | - | false |
 | `[System.Char]` | `[char]` | unsigned 16-bit character; UTF-16 compatible | 0 | 65,535 | null |
-| `[System.Int32]` | `Int32` | 32-bit integer | -2,147,483,648 | 2,147,483,647 | 0 |
-| `[System.Int64]` | `Int64` | 64-bit integer | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 |
+| `[System.Int32]` | `Int32` | 32-bit signed integer | -2,147,483,648 | 2,147,483,647 | 0 |
+| `[System.Int64]` | `Int64` | 64-bit signed integer | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | 0 |
 | `[]`| `` |  |  |  |  |
 | `[]`| `` |  |  |  |  |
 | `[]`| `` |  |  |  |  |
