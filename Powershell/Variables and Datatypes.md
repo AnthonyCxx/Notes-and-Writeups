@@ -54,6 +54,16 @@ $smallnum = -12           # Assignment fails because '$smallnum' cannot be re-ty
 The [Clear-Variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/clear-variable?view=powershell-7.2) and [Remove-Variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/remove-variable?view=powershell-7.2) commands. Clearing a variable just deletes its
 value, whereas removing a variable deletes the variable and its value. Assigning `$null` to a variable is the same as using `Clear-Variable`.
 
+```Powershell
+$today = Get-Date  
+
+# Clearing a Variable (only deletes value)
+Clear-Variable -Name today 
+
+# Deleting a Variable (deletes value + variable)
+Remove-Variable -Name today
+```
+
 # Sources
 - Powershell Documentation: [Variables](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-05?view=powershell-7.2)
 - Powershell Documentation: [about\_Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.2)
