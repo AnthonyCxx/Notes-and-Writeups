@@ -56,7 +56,7 @@ Comparison operators return a boolean based on a comparison of two items.
 | `-ge` | true if greater than or equal to | `1 -ge 1` |
 | `-lt` | true if less than | `1 -lt 2` |
 | `-le` | true if less than or equal to | `1 -le 1` |
-| `-like` | true if matches wildcard pattern | `""` |
+| `-like` | true if matches wildcard pattern | `"Hello, world!" -like "*world*"` |
 | `-notlike` | true if does not match wildcard pattern | `` |
 | `-match` | true if matches regex | `` |
 | `-notmatch` | true if does not match regex | `` |
