@@ -26,8 +26,7 @@ Variables are flexible storage locations for data that can be invoked by name. P
 ---
 
 ## Declaring and Using Variables
-
-
+Variables can be declared directly by writing `$<variable_name_here>` or by using the `New-Variable` cmdlet ([ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-variable?view=powershell-7.2))
 
 ```Powershell
 # Declaringa a dynamically-typed variable
