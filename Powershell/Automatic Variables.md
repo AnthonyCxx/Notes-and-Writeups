@@ -7,9 +7,9 @@ This is not a comprehensive list, just a short list of ones I use often.
 | `$?` | true if that last command succeeded, false otherwise | `Write-Host --ThisOptionDoesNotExist; Write-Host $?` |
 | `$^` | first word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
 | `$$` | last word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
-| `$_` | represents the current object in the pipeline | `Get-Process | ForEach-Object {$_.CPU}` |
-| `$true` | contains _true_ | `` |
-| `$false` | contains _false_ | `` |
+| `$_` | represents the current object in the pipeline | `Get-Process \| ForEach-Object {$_.CPU}` |
+| `$true` | contains _true_ | `$condition = $true` |
+| `$false` | contains _false_ | `$condition = $false` |
 | `$null` | contains _null_ | `if ($DoesNotExist -eq $null) {Write-Host "bad var"}` |
 | `` |  | `` |
 | `` |  | `` |
