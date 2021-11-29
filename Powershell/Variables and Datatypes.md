@@ -1,7 +1,8 @@
 # Variables and Datatypes in Powershell
 Variables are flexible storage locations for data that can be invoked by name. Powershell is a [strong, dynamically-typed](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/) language, which means that although variables do have a datatype, they can change dynamically.
 
-## Datatypes (Type Accelerators)
+## Datatypes and Type Accelerators
+Powershell is 
 
 | Datatype | Shorthand | Function | Min Value | Max Value | Default Value | 
 | -------- | --------- | -------- | --------- | --------- | ------------- |
@@ -26,10 +27,11 @@ Variables are flexible storage locations for data that can be invoked by name. P
 ---
 
 ## Declaring and Using Variables
-Variables can be declared directly by writing `$<variable_name_here>` or by using the `New-Variable` cmdlet ([ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-variable?view=powershell-7.2))
+Variables can be declared directly by writing `$<variable_name_here>` or by using the `New-Variable` cmdlet ([ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-variable?view=powershell-7.2)). As a practice, always declare variables with static typing
+if you can, as it makes the program more predicatable and easier to read.
 
 ```Powershell
-# Declaringa a dynamically-typed variable
+# Declaring a dynamically-typed variable
 $name = "foobar"       # Variable '$name' is instantiated as System.String
 $name = [math]::pi     # '$name' is re-typed to [System.Double]` after being assigned '[math]::pi'
 
