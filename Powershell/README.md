@@ -14,6 +14,8 @@ To see all available topics (for helpfiles), run `Get-Help about_*`.
 - [Variables and Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md)
 - [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md) and [Operator Precedence](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operator_precedence?view=powershell-7.2)
 - [Automatic Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Automatic%20Variables.md)
+- [Wildcards and Regular Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Wildcards%20and%20Regular%20Expressions.md)
+- 
 
 # References
 - Powershell Documentation: [Official List of Approved Verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
