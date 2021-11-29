@@ -39,11 +39,11 @@ as `+=`, which adds the value of the right expression to the variable instead of
 | `=` | assigns a value to a variable | `$today = Get-Date` |
 | `+=` | adds the right expression to the variable | `$count += 5` |
 | `-=` | subtracts the right expression from the variable | `$total -= 5` |
-| `*=` |  | `` |
-| `/=` |  | `` |
-| `%=` |  | `$index %= length` |
-| `++` |  | `$count++` |
-| `--` |  | `$timer--` |
+| `*=` | multiplies the variable by the right expression | `$str * 3` |
+| `/=` | divides the right expression into the variable | `$digits /= 10` |
+| `%=` | mods the variable by the right expression | `$index %= length` |
+| `++` | increments the variable by 1 | `$count++` |
+| `--` | decrements the variable by 1 | `$timer--` |
 
 # [Comparison Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
 
