@@ -64,7 +64,10 @@ Clear-Variable -Name today
 # Deleting a Variable (deletes value + variable)
 Remove-Variable -Name today
 ```
+> Careful not to delete `$today`, because that will substitute the variable name with its value, which does not exist
 
+---
+ 
 # Sources
 - Powershell Documentation: [Variables](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-05?view=powershell-7.2)
 - Powershell Documentation: [about\_Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.2)
