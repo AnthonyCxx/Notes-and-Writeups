@@ -1,6 +1,6 @@
 # [Automatic Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.2)
 
-
+This is not a comprehensive list, just a short list of ones I use often.
 
 | Variable | Contains | Example |
 | -------- | -------- | ------- |
@@ -8,6 +8,10 @@
 | `$^` | first word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
 | `$$` | last word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
 | `$_` | represents the current object in the pipeline | `Get-Process | ForEach-Object {$_.CPU}` |
+| `$true` | contains _true_ | `` |
+| `$false` | contains _false_ | `` |
+| `$null` | contains _null_ | `if ($ThisVarDoesNotExist -eq $null) {Write-Host "the variable does not exist"}` |
+| `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
 > ^ and $ represent the beginning and ends of lines <br />
