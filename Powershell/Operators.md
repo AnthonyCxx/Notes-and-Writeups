@@ -46,13 +46,27 @@ as `+=`, which adds the value of the right expression to the variable instead of
 | `--` | decrements the variable by 1 | `$timer--` |
 
 # [Comparison Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
+Comparison operators return a boolean based on a comparison of two items.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-eq` | true if equals | `` |
+| `-ne` | true if not equal | `` |
+| `-gt` | true if greater than | `` |
+| `-ge` | true if greater than or equal to | `` |
+| `-lt` | true if less than | `` |
+| `-le` | true if less than or equal to | `` |
+| `-like` |  | `` |
+| `-notlike` |  | `` |
+| `-match` |  | `` |
+| `-notmatch` |  | `` |
+| `-replace` |  | `` |
+| `-contains` |  | `` |
+| `-notcontains` |  | `` |
+| `-in` |  | `` |
+| `-notin` |  | `` |
+| `-is` | true if _a_ and _b_ are the same type | `"hello" -is System.String` |
+| `isnot` |  | `` |
 
 # [Logical Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-7.2)
 
