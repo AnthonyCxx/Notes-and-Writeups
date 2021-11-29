@@ -5,11 +5,14 @@ Variables are flexible storage locations for data that can be invoked by name. P
 
 | Datatype | Function | Min Value | Max Value | Default Value | 
 | -------- | -------- | --------- | --------- | ------------- |
-| `$null` |  |  |  |  |
-| `System.Object` |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `Null` | cannot be instantiated; stored in `$null` | - | - | - |
+| `System.Object` | base type for all other types | - | - |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+> To get the default value of a type, print `[<type>]$var`
 
 ## Declaring and Using Variables
 
