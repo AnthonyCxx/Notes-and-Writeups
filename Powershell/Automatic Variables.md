@@ -12,7 +12,7 @@ This is not a comprehensive list, just a short list of ones I use often.
 | `$false` | contains _false_ | `$condition = $false` |
 | `$null` | contains _null_ | `if ($DoesNotExist -eq $null) {Write-Host "bad var"}` |
 | `$HOME` | full path of the user's home directory | `Get-ChildItem -Path $HOME` |
-| `` |  | `` |
+| `$Host` | the current host applications | `$Host.UI.RawUI.CursorPosition.ToString()` |
 | `` |  | `` |
 > ^ and $ represent the beginning and ends of lines <br />
 
