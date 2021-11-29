@@ -3,15 +3,16 @@ Variables are flexible storage locations for data that can be invoked by name. P
 
 ## Datatypes (Type Accelerators)
 
-| Datatype | Function | Min Value | Max Value | Default Value | 
-| -------- | -------- | --------- | --------- | ------------- |
-| `Null` | cannot be instantiated; stored in `$null` | - | - | - |
-| `System.Object` | base type for all other types | - | - |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Datatype | Shorthand | Function | Min Value | Max Value | Default Value | 
+| -------- | --------- | -------- | --------- | --------- | ------------- |
+| `[void]` | - | cannot be instantiated; hides output; similar to `Out-Null` | - | - | - |
+| `Null` | - | represents nothing – an absence; stored in `$null` | - | - | - |
+| `[System.Object]` | `Object` | base type for all other types | - | - | - |
+| `[System.Boolean]` | `bool` | boolean type; stores _true_/_false_ | - | - | false |
+| `` |  |  |  |  |
+| `` |  |  |  |  |
+| `` |  |  |  |  |
+| ``|  |  |  |  |
 > To get the default value of a type, print `[<type>]$var`
 
 ## Declaring and Using Variables
