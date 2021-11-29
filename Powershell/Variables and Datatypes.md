@@ -50,6 +50,25 @@ $smallnum = -12           # Assignment fails because '$smallnum' cannot be re-ty
 
 ---
 
+# Casting Variables
+To cast a variable, put the datatype to cast to followed by the variable to cast like `[datatype]$var`. <br />
+Type-casting does not affect the original variable unless you assign back to it.
+
+If you use a `[void]` cast, then it will suppress and output to the console.
+
+```Powershell
+# Declare a double called 'mypi' with the value of pi (3.14159...)
+$mypi = [math]::pi
+
+# Print 'mypi', casted as an integer
+[int]$mypi
+
+# Attempt an illegal cast (illegal conversion)
+[datetime]$mypi
+```
+
+---
+
 # Clearing and Removing Variables
 The [Clear-Variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/clear-variable?view=powershell-7.2) and [Remove-Variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/remove-variable?view=powershell-7.2) commands. Clearing a variable just deletes its
 value, whereas removing a variable deletes the variable and its value. Assigning `$null` to a variable is the same as using `Clear-Variable`.
