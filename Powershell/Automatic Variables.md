@@ -4,7 +4,7 @@
 
 | Variable | Contains | Example |
 | -------- | -------- | ------- |
-| `$?` |  | `` |
+| `$?` | true if that last command succeeded | `Write-Host --ThisOptionDoesNotExist; Write-Host $?` |
 | `$^` |  | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
 | `$$` |  | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
 | `` |  |
