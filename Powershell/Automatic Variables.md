@@ -2,7 +2,7 @@
 
 
 
-| Variable | Function | Example |
+| Variable | Contains | Example |
 | -------- | -------- | ------- |
 | `$?` |  | `` |
 | `$^` |  | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
