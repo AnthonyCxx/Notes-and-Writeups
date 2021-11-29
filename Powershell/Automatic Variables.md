@@ -12,11 +12,9 @@ This is not a comprehensive list, just a short list of ones I use often.
 | `$^` | first word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
 | `$$` | last word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
 | `$LastExitCode` | contains exit status of last program | `if ($LastExitCode -eq 0) {Write-Host "EXIT_SUCCESS"}` |
+| `$PWD` | full path of current directory | `$PWD -split "\\" | Select-Object -Last 1` |
 | `$HOME` | full path of the user's home directory | `Get-ChildItem -Path $HOME` |
 | `$Host` | the current host applications | `$Host.UI.RawUI.CursorPosition.ToString()` |
-| `$Matches` | contains matches from `-match` and `-notmatch` | `` |
-| `` |  | `` |
-| `` |  | `` |
 > ^ and $ represent the beginning and ends of lines <br />
 
 # Sources
