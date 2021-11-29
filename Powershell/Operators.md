@@ -59,14 +59,14 @@ Comparison operators return a boolean based on a comparison of two items.
 | `-like` | true if matches wildcard pattern | `"Hello, world!" -like "*world*"` |
 | `-notlike` | true if does not match wildcard pattern | `"sourcecode.cpp" -notlike "*.txt"` |
 | `-match` | true if matches regex | `` |
-| `-notmatch` | true if does not match regex | `` |
+| `-notmatch` | true if does not match regex | `if ($num -notmatch "[0-9]{3}") {Write-Host "not a 3-digit number"}` |
 | `-replace` |  | `` |
 | `-contains` |  | `` |
 | `-notcontains` |  | `` |
 | `-in` |  | `` |
 | `-notin` |  | `` |
 | `-is` | true if _a_ and _b_ are the same type | `"hello" -is System.String` |
-| `isnot` |  | `` |
+| `-isnot` |  | `` |
 > What are [wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) and [regex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)?
 
 # [Logical Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-7.2)
