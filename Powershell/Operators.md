@@ -31,13 +31,19 @@ Arithmetic operators preform calculations (addition, subtraction, multiplication
 > For integer division, don't just cast to `[int]`, since that rounds; use [math]::Floor()
 
 # [Assignment Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_assignment_operators?view=powershell-7.2)
+Assignment operators assign a value to a variable. The assignment operator `=` can be combined with arithmetic operators to create compound operators such
+as `+=`, which adds the value of the right expression to the variable instead of overwriting it.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `=` | assigns a value to a variable | `$today = Get-Date` |
+| `+=` | adds the right expression to the variable | `$count += 5` |
+| `-=` | subtracts the right expression from the variable | `$total -= 5` |
+| `*=` |  | `` |
+| `/=` |  | `` |
+| `%=` |  | `$index %= length` |
+| `++` |  | `$count++` |
+| `--` |  | `$timer--` |
 
 # [Comparison Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
 
