@@ -30,8 +30,15 @@ Variables are flexible storage locations for data that can be invoked by name. P
 ## Declaring and Using Variables
 
 
+
 ```Powershell
-$name = "foobar"
+# Declaringa a dynamically-typed variable
+$name = "foobar"       # Variable '$name' is instantiated as System.String
+$name = [math]::pi     # '$name' is re-typed to [System.Double]` after being assigned '[math]::pi'
+
+# Declaring a statically-typed variable
+[byte]$smallnum = 120     # Assign the value '120' to the variable '$smallnum'
+$smallnum = -12           # Assignment fails because '$smallnum' cannot be re-typed to [Int32]
 ```
 
 ---
