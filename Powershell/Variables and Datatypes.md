@@ -8,11 +8,11 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[void]` | - | cannot be instantiated; hides output; similar to `Out-Null` | - | - | - |
 | `Null` | - | represents nothing – an absence; stored in `$null` | - | - | - |
 | `[System.Object]` | `Object` | base type for all other types | - | - | - |
-| `[System.Boolean]` | `bool` | boolean type; stores _true_/_false_ | - | - | false |
-| `` |  |  |  |  |
-| `` |  |  |  |  |
-| `` |  |  |  |  |
-| ``|  |  |  |  |
+| `[System.Boolean]` | `bool` | standard boolean type; stores _true_/_false_ | - | - | false |
+| `[]` | `` |  |  |  |  |
+| `[]` | `` |  |  |  |  |
+| `[]` | `` |  |  |  |  |
+| `[]`| `` |  |  |  |  |
 > To get the default value of a type, print `[<type>]$var`
 
 ## Declaring and Using Variables
