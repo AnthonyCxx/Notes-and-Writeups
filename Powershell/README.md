@@ -12,7 +12,6 @@ To see all available topics (for helpfiles), run `Get-Help about_*`.
 - [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md)
 - [Core Commands](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md)
 - [Automatic Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Automatic%20Variables.md)
-- [https://ss64.com/ps/](https://ss64.com/ps/)
 
 # References
 - Powershell Documentation: [Official List of Approved Verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
