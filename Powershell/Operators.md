@@ -20,14 +20,15 @@ Arithmetic operators preform calculations (addition, subtraction, multiplication
 | `+` | addition; string concatenation | `"Hello, " + "world!"` |
 | `-` | subtraction | `10 - 5` |
 | `*` | multiplication; string multiplication | `"^-^ "*3` |
-| `/` |  | `3 / 2` |
-| `%` |  | `7 % 2` |
-| `-band` |  | `` |
-| `-bnot` |  | `` |
-| `-bor` |  | `` |
-| `-bxor` |  | `` |
-| `-shl` |  | `` |
-| `-shr` |  | `` |
+| `/` | division | `3 / 2` |
+| `%` | modulus | `7 % 2` |
+| `-band` | bitwise AND | `5 -band 0` |
+| `-bnot` | bitwise NOT | `-bnot 1` |
+| `-bor` | bitwise OR | `5 -bor 0` |
+| `-bxor` | bitwise XOR | `5 -bxor 5` |
+| `-shl` | shift bits left | `5 -shl 2` |
+| `-shr` | shift bits right | `5 -shr 2` |
+> For integer division, don't just cast to `[int]`, since that rounds; use [math]::Floor()
 
 # [Assignment Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_assignment_operators?view=powershell-7.2)
 
