@@ -17,7 +17,7 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[]`| `` |  |  |  |  |
 | `[]`| `` |  |  |  |  |
 | `[]`| `` |  |  |  |  |
-> To get the default value of a type, print `[<type>]$var`
+> Types can also be accessed by their name without the `System.` prefix -> int == Int32
 
 ---
 
