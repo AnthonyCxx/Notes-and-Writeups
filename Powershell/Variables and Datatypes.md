@@ -20,8 +20,6 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.DateTime]`| `[datetime]` | object for dates and time | - | - | - |
 | `[System.Array]`| `[array]` | heterogenous sequence of items | - | - | - |
 | see below | `[hashtable]` | associative array | - | - | - |
-| `[]`| `[]` |  |  |  |  |
-| `[]`| `[]` |  |  |  |  |
 > Types can also be accessed by their name without the `System.` prefix -> `[int]` is the same as `[Int32]` <br />
 > The full name for `[hashtable]` is `[System.Collections.Hashtable]`, but that was too big to fit, unfortunately.
 
