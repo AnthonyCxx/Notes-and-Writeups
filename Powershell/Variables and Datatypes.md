@@ -1,5 +1,6 @@
 # Variables and Datatypes in Powershell
-Variables are flexible storage locations for data that can be invoked by name. Powershell is a [strong, dynamically-typed](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/) language, which means that although variables do have a datatype, they can change dynamically.
+Variables are flexible storage locations for data that can be invoked by name. Powershell is a [strong, dynamically-typed](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/) language, which means that although variables do have a datatype, they can change dynamically. Variables are denoted by a prepended `$`, which
+is used to reference/invoke them.
 
 # Datatypes and Type Accelerators
 Below is a table of some common datatypes and their attributes. You can find a comprehensive list of datatypes [here](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.2). Some of the names of the types are rather long, so Powershell provides a list of shorthands/aliases for datatypes called 
