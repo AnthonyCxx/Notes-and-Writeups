@@ -50,12 +50,12 @@ Comparison operators return a boolean based on a comparison of two items.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `-eq` | true if equals | `` |
-| `-ne` | true if not equal | `` |
-| `-gt` | true if greater than | `` |
-| `-ge` | true if greater than or equal to | `` |
-| `-lt` | true if less than | `` |
-| `-le` | true if less than or equal to | `` |
+| `-eq` | true if equals | `1 -eq 2` |
+| `-ne` | true if not equal | `1 -ne 2` |
+| `-gt` | true if greater than | `1 -gt 2` |
+| `-ge` | true if greater than or equal to | `1 -ge 1` |
+| `-lt` | true if less than | `1 -lt 2` |
+| `-le` | true if less than or equal to | `1 -le 1` |
 | `-like` |  | `` |
 | `-notlike` |  | `` |
 | `-match` |  | `` |
