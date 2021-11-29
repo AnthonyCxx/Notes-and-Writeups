@@ -10,13 +10,14 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.Object]` | `[object]` | base type for all other types | - | - | - |
 | `[System.Boolean]` | `[bool]` | standard boolean type; stores _true_/_false_ | - | - | false |
 | `[System.Char]` | `[char]` | unsigned 16-bit character; UTF-16 compatible | 0 | 65,535 | null |
+| `[System.String]`| `[string]` | immutable sequence of chars | - | - | null |
 | `[System.Byte]`| `[byte]` | 8-bit unsigned integer | 0 | 255 | 0 |
 | `[System.Int32]` | `[int]` | 32-bit signed integer | -2,147,483,648 | 2,147,483,647 | 0 |
 | `[System.Int64]` | `[long]` | 64-bit signed integer | -9.223 quintillion | 9.223 quintillion | 0 |
-| `[System.Single]`| `[float]` | 32-bit floating-point | -3.402823E+38 | 3.402823E+38 | 0 |
-| `[System.Double]`| `[double]` | 64-bit floating-point | -1.79769313486232E+308 | 1.79769313486232E+308 | 0 |
+| `[System.Single]`| `[float]` | 32-bit IEEE floating-point | -3.402823E+38 | 3.402823E+38 | 0 |
+| `[System.Double]`| `[double]` | 64-bit IEEE floating-point | -1.79769313486232E+308 | 1.79769313486232E+308 | 0 |
 | `[System.Decimal]`| `[decimal]` | 128-bit floating-point; suitable for handling money | -79.228 octillion | 79.228 octillion | 0 |
-| `[]`| `[]` |  |  |  |  |
+| `[System.DateTime]`| `[datetime]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
