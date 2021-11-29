@@ -19,6 +19,11 @@
 # Special Operators
 
 # Sources
-- Powershell Documentation: [about_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2)
+- Powershell Documentation: [about\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2)
 - MindMajix: [Powershell Operators](https://mindmajix.com/powershell-operators)
-- 
+- Powershell Documentation: [about\_Arithmetic\_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.2)
+- Powershell Documentation: []()
+- Powershell Documentation: []()
+- Powershell Documentation: []()
+- Powershell Documentation: []()
+- Powershell Documentation: []()
