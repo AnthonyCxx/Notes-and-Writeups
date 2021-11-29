@@ -17,10 +17,17 @@ Arithmetic operators preform calculations (addition, subtraction, multiplication
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `+` | addition; string concatenation | `"Hello, " + "world!"` |
+| `-` | subtraction | `10 - 5` |
+| `*` | multiplication; string multiplication | `"^-^ "*3` |
+| `/` |  | `3 / 2` |
+| `%` |  | `7 % 2` |
+| `-band` |  | `` |
+| `-bnot` |  | `` |
+| `-bor` |  | `` |
+| `-bxor` |  | `` |
+| `-shl` |  | `` |
+| `-shr` |  | `` |
 
 # [Assignment Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_assignment_operators?view=powershell-7.2)
 
