@@ -57,7 +57,7 @@ Comparison operators return a boolean based on a comparison of two items.
 | `-lt` | true if less than | `1 -lt 2` |
 | `-le` | true if less than or equal to | `1 -le 1` |
 | `-like` | true if matches wildcard pattern | `"Hello, world!" -like "*world*"` |
-| `-notlike` | true if does not match wildcard pattern | `` |
+| `-notlike` | true if does not match wildcard pattern | `"sourcecode.cpp" -notlike "*.txt"` |
 | `-match` | true if matches regex | `` |
 | `-notmatch` | true if does not match regex | `` |
 | `-replace` |  | `` |
@@ -67,6 +67,7 @@ Comparison operators return a boolean based on a comparison of two items.
 | `-notin` |  | `` |
 | `-is` | true if _a_ and _b_ are the same type | `"hello" -is System.String` |
 | `isnot` |  | `` |
+> What are [wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) and [regex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)?
 
 # [Logical Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-7.2)
 
