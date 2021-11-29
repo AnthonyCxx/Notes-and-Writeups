@@ -6,7 +6,7 @@
 > [Remove an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#remove-item) <br />
 > [Move an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#move-item) <br />
 > [Rename an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#rename-item) <br />
-> [Copy an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#copy-item)
+> [Copy an Item](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#copy-item) <br />
 > [Print File Contents](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md#get-content) <br />
 
 ## [Get-ChildItem](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.2)
