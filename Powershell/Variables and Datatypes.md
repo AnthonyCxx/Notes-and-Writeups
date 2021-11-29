@@ -17,9 +17,9 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.Single]`| `[float]` | 32-bit floating-point | -3.402823E+38 | 3.402823E+38 | 0 |
 | `[System.Double]`| `[double]` | 64-bit floating-point | -1.79769313486232E+308 | 1.79769313486232E+308 | 0 |
 | `[System.Decimal]`| `[decimal]` | 128-bit floating-point; suitable for money | -79.228 octillion | 79.228 octillion | 0 |
-| `[System.DateTime]`| `[datetime]` |  |  |  |  |
-| `[]`| `[]` |  |  |  |  |
-| `[]`| `[]` |  |  |  |  |
+| `[System.DateTime]`| `[datetime]` | object for dates and time | - | - | - |
+| `[System.Array]`| `[array]` | sequence of items; can be of different types | - | - | - |
+| `[System.Collections.HashTable]`| `[hashtable]` | associative array (dictionary) | - | - | - |
 | `[]`| `[]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
 > Types can also be accessed by their name without the `System.` prefix -> `[int]` is the same as `[Int32]`
