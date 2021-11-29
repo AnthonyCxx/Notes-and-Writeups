@@ -5,7 +5,7 @@ Variables are flexible storage locations for data that can be invoked by name. P
 
 
 ```Powershell
-
+$name = "foobar"
 ```
 
 ## Datatypes (Type Accelerators)
