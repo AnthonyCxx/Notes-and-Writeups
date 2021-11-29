@@ -10,7 +10,7 @@ This is not a comprehensive list, just a short list of ones I use often.
 | `$_` | represents the current object in the pipeline | `Get-Process | ForEach-Object {$_.CPU}` |
 | `$true` | contains _true_ | `` |
 | `$false` | contains _false_ | `` |
-| `$null` | contains _null_ | `if ($DoesNotExist -eq $null) {Write-Host "the var does not exist"}` |
+| `$null` | contains _null_ | `if ($DoesNotExist -eq $null) {Write-Host "bad var"}` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
