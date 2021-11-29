@@ -7,7 +7,7 @@
 | `$?` | true if that last command succeeded, false otherwise | `Write-Host --ThisOptionDoesNotExist; Write-Host $?` |
 | `$^` | first word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
 | `$$` | last word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
-| `$_` |  | `` |
+| `$_` | represents the current object in the pipeline | `Get-Process | ForEach-Object {$_.CPU}` |
 | `` |  | `` |
 | `` |  | `` |
 > ^ and $ represent the beginning and ends of lines <br />
