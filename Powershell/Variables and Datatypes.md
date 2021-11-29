@@ -5,6 +5,8 @@ most of the data transferred in the system is done in the form of objects, not r
 For example, when you make a web request with `Invoke-WebRequest` (_curl_ on Linux), you get back a _BasicHtmlWebResponseObject_ object, not text. If you want the text, you 
 need to use the `.Content` property.
 
+On the topic of variables, there are more than just user-generated (called user-managed) variables; there are also [automatic variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.2), [preference variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.2), and [environment variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.2).
+
 # Datatypes and Type Accelerators
 Below is a table of some common datatypes and their attributes. You can find a comprehensive list of datatypes [here](https://docs.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.2). Some of the names of the types are rather long, so Powershell provides a list of shorthands/aliases for datatypes called 
 [type accelerators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.2), allowing 
