@@ -5,11 +5,13 @@
 | Variable | Contains | Example |
 | -------- | -------- | ------- |
 | `$?` | true if that last command succeeded, false otherwise | `Write-Host --ThisOptionDoesNotExist; Write-Host $?` |
-| `$^` |  | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
-| `$$` |  | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
-| `` |  |
-| `` |  |
-| `` |  |
+| `$^` | first word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $^` |
+| `$$` | last word of the last line received | `Get-ChildItem -Attributes Hidden+Directory; Write-Host $$` |
+| `$_` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+> ^ and $ represent the beginning and ends of lines <br />
+> 
 
 - True: `$true`
 - False `$false`
