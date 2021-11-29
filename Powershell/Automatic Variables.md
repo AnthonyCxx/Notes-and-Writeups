@@ -1,4 +1,4 @@
-# Build-in Variables
+# Automatic Variables
 
 - True: `$true`
 - False `$false`
