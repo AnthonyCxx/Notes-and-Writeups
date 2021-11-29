@@ -14,7 +14,7 @@ This is not a comprehensive list, just a short list of ones I use often.
 | `$LastExitCode` | contains exit status of last program | `if ($LastExitCode -eq 0) {Write-Host "EXIT_SUCCESS"}` |
 | `$HOME` | full path of the user's home directory | `Get-ChildItem -Path $HOME` |
 | `$Host` | the current host applications | `$Host.UI.RawUI.CursorPosition.ToString()` |
-| `` |  | `` |
+| `$Matches` | contains matches from `-match` and `-notmatch` | `` |
 | `` |  | `` |
 | `` |  | `` |
 > ^ and $ represent the beginning and ends of lines <br />
