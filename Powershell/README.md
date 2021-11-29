@@ -11,6 +11,7 @@ To see all available topics (for helpfiles), run `Get-Help about_*`.
 # Notes
 - [Getting Help](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Getting-Help.md)
 - [Core Commands](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Core%20Commands.md)
+- [Variables and Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Variables%20and%20Datatypes.md)
 - [Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md) and [Operator Precedence](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operator_precedence?view=powershell-7.2)
 - [Automatic Variables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Automatic%20Variables.md)
 
