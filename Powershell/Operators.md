@@ -3,6 +3,14 @@
 \- Powershell Documentation: [about\_Operators, long description](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#long-description)
 
 # Arithmetic Operators
+Arithmetic operators preform calculations (addition, subtraction, multiplication...)
+
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Assignment Operators
 
