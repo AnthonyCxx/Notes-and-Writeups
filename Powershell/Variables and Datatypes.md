@@ -18,11 +18,12 @@ Variables are flexible storage locations for data that can be invoked by name. P
 | `[System.Double]`| `[double]` | 64-bit floating-point | -1.79769313486232E+308 | 1.79769313486232E+308 | 0 |
 | `[System.Decimal]`| `[decimal]` | 128-bit floating-point; suitable for money | -79.228 octillion | 79.228 octillion | 0 |
 | `[System.DateTime]`| `[datetime]` | object for dates and time | - | - | - |
-| `[System.Array]`| `[array]` | sequence of items; can be of different types | - | - | - |
-| ``| `[hashtable]` | associative array (dictionary) | - | - | - |
+| `[System.Array]`| `[array]` | heterogenous sequence of items | - | - | - |
+| see below | `[hashtable]` | associative array | - | - | - |
 | `[]`| `[]` |  |  |  |  |
 | `[]`| `[]` |  |  |  |  |
-> Types can also be accessed by their name without the `System.` prefix -> `[int]` is the same as `[Int32]`
+> Types can also be accessed by their name without the `System.` prefix -> `[int]` is the same as `[Int32]` <br />
+> The full name for `[hashtable]` is `[System.Collections.Hashtable]`, but that was too big to fit, unfortunately.
 
 ---
 
