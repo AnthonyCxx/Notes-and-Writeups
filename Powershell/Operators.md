@@ -58,7 +58,7 @@ Comparison operators return a boolean based on a comparison of two items.
 | `-le` | true if less than or equal to | `1 -le 1` |
 | `-like` | true if matches wildcard pattern | `"Hello, world!" -like "*world*"` |
 | `-notlike` | true if does not match wildcard pattern | `"sourcecode.cpp" -notlike "*.txt"` |
-| `-match` | true if matches regex | `if ($number -match "[0-9]{3}-[0-9]{3}-[0-9]{4}") {$isPhoneNumber = $true}` |
+| `-match` | true if matches regex | `if ($num -match "[0-9]{3}-[0-9]{3}-[0-9]{4}") {$valid = $true}` |
 | `-notmatch` | true if does not match regex | `if ($num -notmatch "[0-9]{3}") {Write-Host "not a 3-digit number"}` |
 | `-replace` |  | `` |
 | `-contains` |  | `` |
