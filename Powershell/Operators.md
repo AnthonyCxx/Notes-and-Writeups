@@ -81,6 +81,8 @@ Logical operators are used for creating logical expressions, which may be compos
 # [Matching Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
 Matching operators use wildcards and regular expressions to compare elements.
 
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
 | `-like` | true if matches wildcard pattern | `"Hello, world!" -like "*world*"` |
 | `-notlike` | true if does not match wildcard pattern | `"sourcecode.cpp" -notlike "*.txt"` |
 | `-match` | true if matches regex | `if ($num -match "[0-9]{3}-[0-9]{3}-[0-9]{4}") {$valid = $true}` |
@@ -95,6 +97,8 @@ Matching operators use wildcards and regular expressions to compare elements.
 A subcategory of comparison operators, container operators determine whether or not an object is in a container. These operators are _very_ strict and virtually
 only return true when an element is a complete character-for-character match to the search item. If you want a less strict option, you may want to try `-match`.
 
+| Operator | Function | Example | 
+| -------- | -------- | ------- | 
 | `-contains` | true if element in collection | `$greetings -contains "hi"` |
 | `-notcontains` | true if element not in collection | `$languages -notcontains "klingon"` |
 | `-in` | true if element in collection | `5 -in $array` |
