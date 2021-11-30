@@ -16,17 +16,17 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 | `[]` | 1 of any character in the square brackets | `$arr.where({$_ -like "[cdt]ry"})` |
 > [] can also represent a range of characters via a hyphen (e.g. [a-z])
 
-```Powershell
-
-```
-
 # Regular Expressions
-
+Regular expressions are 
 Regular expressions use the `-match` and `-notmatch` operators.
 
-```Powershell
 
-```
+| Metacharacter | Matches with | Example |
+| ------------- | -------- | ------- |
+| `*` | 0 or more of any character | `Get-Command -Name "Test-*"` |
+| `?` | 1 of any character | `Get-Command -Name "?et-Net*"` |
+| `[]` | 1 of any character in the square brackets | `$arr.where({$_ -like "[cdt]ry"})` |
+
 
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
