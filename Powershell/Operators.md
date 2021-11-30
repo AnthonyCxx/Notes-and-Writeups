@@ -166,7 +166,7 @@ A collection of operators that do not fit in any given category.
 | `? :` | ternary: returns left if expression is true, else right | `$num -lt 20 ? "$num is less than 20" : "$num is greater than 20"` |
 | `??` | returns left value if not null, otherwise right | `Write-Host "$($total ?? 0) records recovered"` |
 | `??=` | assigns to left value if null | `$num ??= 0` |
-| `?.` | conditional member access | `` |
+| `?.` | conditional member access | `$player = $null; Write-Host $player?.Health ` |
 | `?[]` | conditional subscript | `if (${arr}?[$index] -eq $null) {Write-Host "index $index has no value"}` |
 > The `..` operator can also be used to slice arrays.
 
