@@ -8,7 +8,7 @@
 > [Redirection Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#redirection-operators) <br />
 > [Split and Join Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#split-and-join-operators) <br />
 > [Type Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#type-operators) <br />
-> [Special Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#special-operators) <br />
+> [Miscellaneous Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#miscellaneous-operators) <br />
 
 "An operator is a language element that you can use in a command or expression. PowerShell supports several types of operators to help you manipulate values."
 \- Powershell Documentation: [about\_Operators, long description](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#long-description)
@@ -154,8 +154,8 @@ A collection of operators that do not fit in any given category.
 | `&` (prefix) | interprets a string as a command | `& "Get-ChildItem"` |
 | `&` (postfix) | starts a job in the background | `Get-ChildItem &` |
 | `[]` | typecasts | `[int][math]::pi` |
-| `,` | declares or appends to arrays | `` |
-| `.` | instance member access | `` |
+| `,` | declares or appends to arrays | `$arr = @(1, 2, 3)` |
+| `.` | instance member access | `(Invoke-WebRequest "https://jisho.org/").Content` |
 | `::` | static member access | `$pi = [math]::pi` |
 | `-f` | formatting | `` |
 | `[]` | index access | `` |
