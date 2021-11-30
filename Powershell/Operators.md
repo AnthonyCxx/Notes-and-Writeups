@@ -157,7 +157,7 @@ A collection of operators that do not fit in any given category.
 | `,` | declares or appends to arrays | `$arr = @(1, 2, 3)` |
 | `.` | instance member access | `(Invoke-WebRequest "https://jisho.org/").Content` |
 | `::` | static member access | `$pi = [math]::pi` |
-| `-f` | formats a string | `"Aw! that's such a cute {0}! I want a {1} one." -f $pet,$adjective` |
+| `-f` | formats a string | `"Cute {0}! I want a {1} one." -f $pet,$adjective` |
 | `[]` | index access | `` |
 | `\|` | pipeline | `` |
 | `&&` |  | `` |
