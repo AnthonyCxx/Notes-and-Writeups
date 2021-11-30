@@ -161,7 +161,7 @@ A collection of operators that do not fit in any given category.
 | `[]` | index access | `$arr[0] -lt $arr[1]` |
 | `\|` | pipeline | `Get-Process \| SELECT processname,cpu \| WHERE cpu -ne $null \| sort` |
 | `&&` | run command if prior succeeds | `` |
-| `\|\|` | run command if prior fails | `` |
+| `\|\|` | run command if prior fails | `Update-Help || Write-Error "$(Get-Date): failed to update help"` |
 | `..` | indicates range of values | `Write-Host $(1.10)` |
 | `? :` | ternary: returns left if expression is true, else right | `10 -lt 20 ? "10 is less than 20" : "10 is greater than 20"` |
 | `??` | returns left value if not null, otherwise right | `Write-Host "$($total ?? 0) records recovered"` |
