@@ -1,6 +1,6 @@
 # [Automatic Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.2)
 
-TAutomatic variables are maintained by Powershell and change based on the state of the environment; this is not a comprehensive list, just a short list of ones I use often.
+Automatic variables are maintained by Powershell and change based on the state of the environment; <br /> this is not a comprehensive list, just a short list of ones I use often.
 
 | Variable | Contains | Example |
 | -------- | -------- | ------- |
