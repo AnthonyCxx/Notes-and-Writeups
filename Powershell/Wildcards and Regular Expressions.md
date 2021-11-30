@@ -23,10 +23,12 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
-| `*` | 0 or more of any character | `Get-Command -Name "Test-*"` |
-| `?` | 1 of any character | `Get-Command -Name "?et-Net*"` |
-| `[]` | 1 of any character in the square brackets | `$arr.where({$_ -like "[cdt]ry"})` |
-
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
