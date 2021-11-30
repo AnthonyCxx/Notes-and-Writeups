@@ -7,7 +7,7 @@ a 3-5 digit number from your user, you could do it arithmetically by repeatedly 
 defining a pattern. In this case, the regular expression `\d{3,5}` would match with any number that's 3-5 digits long.
 
 # Wildcards
-Wildcards are the simplest form of pattern creating, supporting basic matching operations. When using wildcards, you use the `-like` and `-notlike` operators.
+Wildcards are the simplest form of pattern creating, supporting basic matching operations. When using wildcards, you use the `-like` and <br /> `-notlike` operators.
 
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
