@@ -134,10 +134,8 @@ Redirection allows you to control what kind of output ends up where – as well 
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-split` | splits a string into substrings | `"192.168.1.1" -split "\."` |
+| `-join` | joins a collection as a string | `("fname", "mname", "lname") -join " "` |
 
 ---
 
