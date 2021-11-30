@@ -7,8 +7,8 @@
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
 | `*` | 0 or more of any character | `Get-Command -Name "Test-*"` |
-| `?` | 1 of any character | `` |
-| `[]` | 1 of any character in the square brackets | `` |
+| `?` | 1 of any character | `Get-Command -Name "?et-Net*"` |
+| `[]` | 1 of any character in the square brackets | `$arr.where({$_ -like "[cdt]ry"})` |
 > [] can also represent a range of characters via a hyphen (e.g. [a-z])
 
 ```Powershell
