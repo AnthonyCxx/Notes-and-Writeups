@@ -17,8 +17,8 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 > [] can also represent a range of characters via a hyphen (e.g. [a-z])
 
 # Regular Expressions
-Regular expressions are 
-Regular expressions use the `-match` and `-notmatch` operators.
+Regular expressions are far more comprehensive than wildcards, allowing for complex expressions like [this email validator](https://www.emailregex.com/). As a consequence,
+though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators.
 
 
 | Metacharacter | Matches with | Example |
@@ -31,3 +31,7 @@ Regular expressions use the `-match` and `-notmatch` operators.
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
 - Powershell Documentation: [about\_Regular\_Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2) 
+- []() <br />
+- .NET [Regular Expressions Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) <br />
+- .NET [.NET Regular Expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) <br />
+- .NET: [Best Practices for Regular Expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/best-practices) <br />
