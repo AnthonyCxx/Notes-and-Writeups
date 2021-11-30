@@ -74,10 +74,11 @@ Comparison operators return a boolean based on a comparison of two items.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `-and` | true if _a_ and _b_ are true | `$true -and $true` |
+| `-or` | true if _a_ or _b_ is true | `$true -or $false` |
+| `-xor` | true if only _a_ or only _b_ is true | `$true -xor $true` |
+| `-not` | inverts a boolean | `-not $false` |
+| `!` | shorthand for `-not` | - |
 
 # [Redirection Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_redirection?view=powershell-7.2)
 
