@@ -152,7 +152,7 @@ Wow, there are a lot of these...
 | `&` (prefix) | interprets a string as a command | `& "Get-ChildItem"` |
 | `&` (postfix) | starts a job in the background | `Get-ChildItem &` |
 | `..` | returns a range of values | `Write-Host $(1.10)` |
-| `` |  | `` |
+| `[]` | typecasts | `` |
 | `` |  | `` |
 
 ---
