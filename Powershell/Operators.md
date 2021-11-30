@@ -162,7 +162,7 @@ A collection of operators that do not fit in any given category.
 | `\|` | pipeline | `Get-Process \| SELECT processname,cpu \| WHERE cpu -ne $null \| sort` |
 | `&&` | run command if prior succeeds | `Update-Help && Write-Information "Successfully updated help"` |
 | `\|\|` | run command if prior fails | `Update-Help \|\| Write-Error "$(Get-Date): failed to update help"` |
-| `..` | indicates range of values | `Write-Host $(1.10)` |
+| `..` | indicates range of values | `Write-Host $(1..10)` |
 | `? :` | ternary: returns left if expression is true, else right | `$num -lt 20 ? "$num is less than 20" : "$num is greater than 20"` |
 | `??` | returns left value if not null, otherwise right | `Write-Host "$($total ?? 0) records recovered"` |
 | `??=` | assigns to left value if null | `$num ??= 0` |
