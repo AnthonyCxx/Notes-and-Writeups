@@ -160,14 +160,14 @@ A collection of operators that do not fit in any given category.
 | `-f` | formats a string | `"Cute {0}! I want a {1} one." -f $pet,$adjective` |
 | `[]` | index access | `$arr[0] -lt $arr[1]` |
 | `\|` | pipeline | `Get-Process \| SELECT processname,cpu \| WHERE cpu -ne $null \| sort` |
-| `&&` | run command if prior succeeds | `` |
+| `&&` | run command if prior succeeds | `Update-Help && Write-Information "Successfully updated help"` |
 | `\|\|` | run command if prior fails | `Update-Help || Write-Error "$(Get-Date): failed to update help"` |
 | `..` | indicates range of values | `Write-Host $(1.10)` |
-| `? :` | ternary: returns left if expression is true, else right | `10 -lt 20 ? "10 is less than 20" : "10 is greater than 20"` |
+| `? :` | ternary: returns left if expression is true, else right | `$num -lt 20 ? "$num is less than 20" : "$num is greater than 20"` |
 | `??` | returns left value if not null, otherwise right | `Write-Host "$($total ?? 0) records recovered"` |
-| `??=` | assigns to left value if null | `` |
+| `??=` | assigns to left value if null | `$num ??= 0` |
 | `?.` | conditional member access | `` |
-| `?[]` | conditional subscript | `` |
+| `?[]` | conditional subscript | `if (${arr}?[$index] -eq $null) {Write-Host "index $index has no value"}` |
 > The `..` operator can also be used to slice arrays.
 
 ---
