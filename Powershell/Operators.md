@@ -90,7 +90,7 @@ Logical operators are used for creating logical expressions, which may be compos
 | `` |  | `` |
 | `` |  | `` |
 
-# [Split and Join Operators]()
+# [Split and Join Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#split-and-join-operators)
 > [about\_Split](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_split?view=powershell-7.2) <br />
 > [about\_Join](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_join?view=powershell-7.2) <br />
 
