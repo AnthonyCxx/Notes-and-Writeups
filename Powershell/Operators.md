@@ -164,6 +164,8 @@ Wow, there are a lot of these...
 | `? :` | ternary | `` |
 | `??` | null-coalessing | `` |
 | `??=` | null-coallessing assignment | `` |
+| `?.` | conditional member access | `` |
+| `?[]` | conditional subscript | `` |
 
 ---
 
