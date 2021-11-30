@@ -6,7 +6,6 @@
 > [Redirection Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#redirection-operators) <br />
 > [Split and Join Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#split-and-join-operators) <br />
 > [Type Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#type-operators) <br />
-> [Unary Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#unary-operators) <br />
 > [Special Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#special-operators) <br />
 
 "An operator is a language element that you can use in a command or expression. PowerShell supports several types of operators to help you manipulate values."
