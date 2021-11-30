@@ -133,6 +133,8 @@ Redirection allows you to control what kind of output ends up where – as well 
 > [about\_Split](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_split?view=powershell-7.2) <br />
 > [about\_Join](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_join?view=powershell-7.2) <br />
 
+Split and join text to/from strings.
+
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
 | `-split` | splits a string into substrings | `"192.168.1.1" -split "\."` |
