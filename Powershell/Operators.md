@@ -44,7 +44,7 @@ as `+=`, which adds the value of the right expression to the variable instead of
 | `=` | assigns a value to a variable | `$today = Get-Date` |
 | `+=` | adds the right expression to the variable | `$count += 5` |
 | `-=` | subtracts the right expression from the variable | `$total -= 5` |
-| `*=` | multiplies the variable by the right expression | `$str * 3` |
+| `*=` | multiplies the variable by the right expression | `$x *= 3` |
 | `/=` | divides the right expression into the variable | `$digits /= 10` |
 | `%=` | mods the variable by the right expression | `$index %= length` |
 | `++` | increments the variable by 1 | `$count++` |
