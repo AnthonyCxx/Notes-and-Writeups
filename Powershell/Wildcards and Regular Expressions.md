@@ -20,12 +20,23 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 Regular expressions are far more comprehensive than wildcards, allowing for complex expressions like [this email validator](https://www.emailregex.com/). As a consequence,
 though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators.
 
-
+## Patterns
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+
+## Structures
+
+| Structure | Function | Example |
+| ------------- | -------- | ------- |
+| `[]` | matches with one of a set of characters | `[abc]` |
+| `[^]` | matches with one of a set that is not one of the given characters | `[^abc]` |
+| `[-]` | matches with one of a range of characters | `[a-z]` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
