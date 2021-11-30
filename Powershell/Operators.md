@@ -3,6 +3,8 @@
 > [Assignment Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#assignment-operators) <br />
 > [Comparison Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#comparison-operators) <br />
 > [Logical Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#logical-operators) <br />
+> [Matching Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#matching-operators) <br />
+> [Container Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#container-operators) <br />
 > [Redirection Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#redirection-operators) <br />
 > [Split and Join Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#split-and-join-operators) <br />
 > [Type Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#type-operators) <br />
