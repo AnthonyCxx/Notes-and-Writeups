@@ -150,11 +150,11 @@ A collection of operators that do not fit in any given category.
 | `()` | grouping; changes precedence | `(2+2) * 4` |
 | `$()` | denotes a [subexpression](https://www.youtube.com/watch?v=EYS2m4KGR0g) | `Write-Host "Array elements: $((1,2,3,4,5) -join ", ")"` |
 | `@()` | denotes an array subexpression | `$firewallCommands = @(Get-Command -Name *firewall*)` |
-| `@{}` | denotes a hash table subexpression | `` |
+| `@{}` | denotes a hash table subexpression | `$pet_count = @{"cow"=12; "sheep"=4; "pig"=1}` |
 | `&` (prefix) | interprets a string as a command | `& "Get-ChildItem"` |
 | `&` (postfix) | starts a job in the background | `Get-ChildItem &` |
-| `[]` | typecasts | `` |
-| `,` |  | `` |
+| `[]` | typecasts | `[int][math]::pi` |
+| `,` | declares or appends to arrays | `` |
 | `.` | instance member access | `` |
 | `::` | static member access | `$pi = [math]::pi` |
 | `-f` | formatting | `` |
@@ -162,12 +162,13 @@ A collection of operators that do not fit in any given category.
 | `\|` | pipeline | `` |
 | `&&` |  | `` |
 | `\|\|` |  | `` |
-| `..` | returns a range of values | `Write-Host $(1.10)` |
-| `? :` | ternary | `` |
-| `??` | null-coalessing | `` |
-| `??=` | null-coallessing assignment | `` |
+| `..` | indicates range of values | `Write-Host $(1.10)` |
+| `? :` | ternary: returns left if expression is true, else right | `10 -lt 20 ? "10 is less than 20" : "10 is greater than 20"` |
+| `??` | returns left value if not null, otherwise right | `Write-Host "$($total ?? 0) records recovered"` |
+| `??=` | assigns to left value if null | `` |
 | `?.` | conditional member access | `` |
 | `?[]` | conditional subscript | `` |
+> The `..` operator can also be used to slice arrays.
 
 ---
 
