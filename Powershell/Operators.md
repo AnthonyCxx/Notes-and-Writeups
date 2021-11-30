@@ -71,6 +71,7 @@ Comparison operators return a boolean based on a comparison of two items.
 > Klingon is not a language, nerd.
 
 # [Logical Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-7.2)
+Logical operators are used for creating logical expressions, which may be composed of other expressions like comparisons.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
