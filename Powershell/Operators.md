@@ -145,8 +145,8 @@ Wow, there are a lot of these...
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
+| `()` | grouping; changes precedence | `(2+2) * 4` |
+| `$()` | denotes a [subexpression](https://www.youtube.com/watch?v=EYS2m4KGR0g) | `Write-Host "Computer Model: $((Get-ComputerInfo).CsModel)"` |
 | `` |  | `` |
 | `` |  | `` |
 
