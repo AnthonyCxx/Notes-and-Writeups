@@ -4,6 +4,12 @@
 
 # Wildcards
 
+| Metacharacter | Function | Example |
+| ------------- | -------- | ------- |
+| `*` |  | `` |
+| `?` |  | `` |
+| `[]` |  | `` |
+
 ```Powershell
 
 ```
