@@ -61,13 +61,14 @@ Comparison operators return a boolean based on a comparison of two items.
 | `-match` | true if matches regex | `if ($num -match "[0-9]{3}-[0-9]{3}-[0-9]{4}") {$valid = $true}` |
 | `-notmatch` | true if does not match regex | `if ($num -notmatch "[0-9]{3}") {Write-Host "not a 3-digit number"}` |
 | `-replace` | replaces regex pattern with value | `"Hello, world!" -replace "hell","****"` |
-| `-contains` |  | `` |
-| `-notcontains` |  | `` |
-| `-in` |  | `` |
-| `-notin` |  | `` |
+| `-contains` | true if element in collection | `$greetings -contains "hi"` |
+| `-notcontains` | true if element not in collection | `$languages -notcontains "klingon"` |
+| `-in` | true if element in collection | `5 -in $array` |
+| `-notin` | true if element not in collection | `"charlie" -in $roster` |
 | `-is` | true if _a_ and _b_ are the same type | `"hello" -is System.String` |
 | `-isnot` | true if _a_ and _b_ are different types | `1234 -isnot "System.DateTime"` |
-> What are [wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) and [regex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)?
+> What are [wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) and [regex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)? <br />
+> Klingon is not a language, nerd.
 
 # [Logical Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-7.2)
 
