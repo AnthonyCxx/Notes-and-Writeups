@@ -161,8 +161,9 @@ Wow, there are a lot of these...
 | `&&` |  | `` |
 | `\|\|` |  | `` |
 | `..` | returns a range of values | `Write-Host $(1.10)` |
-| `` |  | `` |
-| `` |  | `` |
+| `? :` | ternary | `` |
+| `??` | null-coalessing | `` |
+| `??=` | null-coallessing assignment | `` |
 
 ---
 
