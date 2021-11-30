@@ -158,10 +158,10 @@ A collection of operators that do not fit in any given category.
 | `.` | instance member access | `(Invoke-WebRequest "https://jisho.org/").Content` |
 | `::` | static member access | `$pi = [math]::pi` |
 | `-f` | formats a string | `"Cute {0}! I want a {1} one." -f $pet,$adjective` |
-| `[]` | index access | `` |
+| `[]` | index access | `$arr[0] -lt $arr[1]` |
 | `\|` | pipeline | `Get-Process \| SELECT processname,cpu \| WHERE cpu -ne $null \| sort` |
-| `&&` |  | `` |
-| `\|\|` |  | `` |
+| `&&` | run command if prior succeeds | `` |
+| `\|\|` | run command if prior fails | `` |
 | `..` | indicates range of values | `Write-Host $(1.10)` |
 | `? :` | ternary: returns left if expression is true, else right | `10 -lt 20 ? "10 is less than 20" : "10 is greater than 20"` |
 | `??` | returns left value if not null, otherwise right | `Write-Host "$($total ?? 0) records recovered"` |
