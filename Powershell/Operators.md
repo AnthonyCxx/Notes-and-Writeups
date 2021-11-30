@@ -89,7 +89,6 @@ Matching operators use wildcards and regular expressions to compare elements.
 | `-notmatch` | true if does not match regex | `if ($num -notmatch "[0-9]{3}") {Write-Host "not a 3-digit number"}` |
 | `-replace` | replaces regex pattern with value | `"Hello, world!" -replace "hell","****"` |
 > What are [wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) and [regex](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)? <br />
-> Klingon is not a language, nerd.
 
 ---
 
@@ -103,6 +102,7 @@ only return true when an element is a complete character-for-character match to 
 | `-notcontains` | true if element not in collection | `$languages -notcontains "klingon"` |
 | `-in` | true if element in collection | `5 -in $array` |
 | `-notin` | true if element not in collection | `"charlie" -in $roster` |
+> Klingon is not a language, nerd.
 
 ---
 
