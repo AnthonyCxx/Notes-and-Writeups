@@ -146,7 +146,12 @@ Wow, there are a lot of these...
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
 | `()` | grouping; changes precedence | `(2+2) * 4` |
-| `$()` | denotes a [subexpression](https://www.youtube.com/watch?v=EYS2m4KGR0g) | `Write-Host "Computer Model: $((Get-ComputerInfo).CsModel)"` |
+| `$()` | denotes a [subexpression](https://www.youtube.com/watch?v=EYS2m4KGR0g) | `Write-Host "Array elements: $((1,2,3,4,5) -join ", ")"` |
+| `@()` | denotes an array subexpression | `$firewallCommands = @(Get-Command -Name *firewall*)` |
+| `@{}` | denotes a hash table subexpression | `` |
+| `&` (prefix) | interprets a string as a command | `& "Get-ChildItem"` |
+| `&` (postfix) | starts a job in the background | `Get-ChildItem &` |
+| `..` | returns a range of values | `Write-Host $(1.10)` |
 | `` |  | `` |
 | `` |  | `` |
 
