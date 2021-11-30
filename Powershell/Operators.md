@@ -140,8 +140,8 @@ Redirection allows you to control what kind of output ends up where – as well 
 
 ---
 
-# [Special Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#special-operators)
-Wow, there are a lot of these...
+# [Miscellaneous Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#special-operators)
+A collection of operators that do not fit in any given category.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
