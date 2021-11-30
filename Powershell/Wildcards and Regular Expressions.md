@@ -30,16 +30,21 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 | `` |  | `` |
 | `` |  | `` |
 
+## Quantifiers
+| Quantifier | Matches \_ Times | Example | 
+| ---------- | ---------------- | ------- |
+| `*` | 0+ times | `` |
+| `+` | 1+ times | `` |
+| `?` | 0-1 time | `` |
+| `{n,m}` | [n,m) times | `` |
+
 ## Structures
 
 | Structure | Function | Example |
 | ------------- | -------- | ------- |
 | `[]` | matches with one of a set of characters | `[abc]` |
-| `[^]` | matches with one of a set that is not one of the given characters | `[^abc]` |
-| `[-]` | matches with one of a range of characters | `[a-z]` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `[^]` | matches with one of any character not in the set | `[^abc]` |
+| `[-]` | matches with one of a range of characters | `[a-z0-9]` |
 
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
