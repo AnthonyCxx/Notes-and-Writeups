@@ -151,8 +151,17 @@ Wow, there are a lot of these...
 | `@{}` | denotes a hash table subexpression | `` |
 | `&` (prefix) | interprets a string as a command | `& "Get-ChildItem"` |
 | `&` (postfix) | starts a job in the background | `Get-ChildItem &` |
-| `..` | returns a range of values | `Write-Host $(1.10)` |
 | `[]` | typecasts | `` |
+| `,` |  | `` |
+| `.` | instance member access | `` |
+| `::` | static member access | `Write-Host $([math]::pi`) |
+| `-f` | formatting | `` |
+| `[]` | index access | `` |
+| `\|` | pipeline | `` |
+| `&&` |  | `` |
+| `\|\|` |  | `` |
+| `..` | returns a range of values | `Write-Host $(1.10)` |
+| `` |  | `` |
 | `` |  | `` |
 
 ---
