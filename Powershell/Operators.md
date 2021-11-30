@@ -111,7 +111,7 @@ A subcategory of comparison operators, type operators allow you to compare type 
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
-| `-is` | true if _a_ and _b_ are the same type | `"hello" -is System.String` |
+| `-is` | true if _a_ and _b_ are the same type | `"hello" -is "System.String"` |
 | `-isnot` | true if _a_ and _b_ are different types | `1234 -isnot "System.DateTime"` |
 
 ---
