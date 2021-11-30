@@ -159,7 +159,7 @@ A collection of operators that do not fit in any given category.
 | `::` | static member access | `$pi = [math]::pi` |
 | `-f` | formats a string | `"Cute {0}! I want a {1} one." -f $pet,$adjective` |
 | `[]` | index access | `` |
-| `\|` | pipeline | `` |
+| `\|` | pipeline | `Get-Process \| SELECT processname,cpu \| WHERE cpu -ne $null \| sort -property cpu` |
 | `&&` |  | `` |
 | `\|\|` |  | `` |
 | `..` | indicates range of values | `Write-Host $(1.10)` |
