@@ -2,6 +2,10 @@
 > [Wildcards](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Wildcards%20and%20Regular%20Expressions.md#wildcards) <br />
 > [Regular Expressions](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Wildcards%20and%20Regular%20Expressions.md#regular-expressions) <br />
 
+Wildcards and regular expressions are methods of using a series of characters (i.e. a string) to define a pattern that can be matched against. For example, if you wanted
+a 3-5 digit number from your user, you could do it arithmetically by repeatedly dividing by 10 and incremeting a counter each time, but it can be done more easily by just
+defining a pattern. In this case, the regular expression `\d{3,5}` would match with any number that's 3-5 digits long.
+
 # Wildcards
 
 | Metacharacter | Matches with | Example |
