@@ -82,12 +82,13 @@ Logical operators are used for creating logical expressions, which may be compos
 | `!` | shorthand for `-not` | - |
 
 # [Redirection Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_redirection?view=powershell-7.2)
+Redirection allows you to control what kind of output ends up where – as well as how.
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
 | `>` | send stream to file | `(Invoke-WebRequest "https://leetcode.com/").Content > contents.html` |
-| `>>` | append stream to file | `` |
-| `>&1` | redirect stream to success stream | `` |
+| `>>` | append stream to file | `900..999 >> numbers.txt` |
+| `num>&1` | redirect stream to success stream | `Do-SomethingComplex *>&1` |
 > Reference: [redirectable output streams](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_redirection?view=powershell-7.2#redirectable-output-streams)
 
 # [Split and Join Operators](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Operators.md#split-and-join-operators)
