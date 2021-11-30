@@ -156,7 +156,7 @@ A collection of operators that do not fit in any given category.
 | `[]` | typecasts | `` |
 | `,` |  | `` |
 | `.` | instance member access | `` |
-| `::` | static member access | `Write-Host $([math]::pi`) |
+| `::` | static member access | `$pi = [math]::pi` |
 | `-f` | formatting | `` |
 | `[]` | index access | `` |
 | `\|` | pipeline | `` |
