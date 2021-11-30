@@ -139,18 +139,8 @@ Redirection allows you to control what kind of output ends up where – as well 
 
 ---
 
-# [Unary Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2)
-
-| Operator | Function | Example | 
-| -------- | -------- | ------- | 
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-
----
-
-# [Special Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2)
+# [Special Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.2#special-operators)
+Wow, there are a lot of these...
 
 | Operator | Function | Example | 
 | -------- | -------- | ------- | 
