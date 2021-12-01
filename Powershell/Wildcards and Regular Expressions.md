@@ -21,6 +21,10 @@ Regular expressions are far more comprehensive than wildcards, allowing for comp
 though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators as well as the `Select-String` cmdlet. This is not a comprehensive list, just a collection of the common stuff. [Here's](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) the full list of regular expression patterns/anchors/modifiers/etc.
 
 ## Patterns
+Technically called [character classes](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference#character-classes), patterns
+form the basic building blocks of regular expressions in the same way that mathematics is made up of numbers and operators. character classes are extended into powerful
+regular expressions by incorperating modifiers like quantifiers, anchors, or grouping constructors.
+
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
 | `\d` | digits (0-9) | `` |
