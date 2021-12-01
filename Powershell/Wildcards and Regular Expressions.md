@@ -57,11 +57,14 @@ Quantifiers allow you to modify the amount of times a pattern should be matched,
 | `[-]` | matches with one of a range of characters | `[a-z0-9]` |
 
 ## Anchors
+"Anchors allow you to cause a match to succeed or fail based on the matches position within the input string. The two commonly used anchors are ^ and $. 
+The caret ^ matches the start of a string, and $, which matches the end of a string. The anchors allow you to match your text at a specific position 
+while also discarding unwanted characters." -Powershell Documentation, [about\_Regular\_Expressions: Anchors](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2#anchors)
 
-| Achor | Binds to | Example |
+| Anchor | Binds to | Example |
 | ----- | -------- | ------- |
-| `` |  | `` |
-| `` |  | `` |
+| `^` | the beginning of the string | `` |
+| `$` | the end of the string | `` |
 
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
