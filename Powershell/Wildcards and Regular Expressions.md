@@ -18,7 +18,7 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 
 # [Regular Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)
 Regular expressions are far more comprehensive than wildcards, allowing for complex expressions like [this email validator](https://www.emailregex.com/). As a consequence,
-though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators.
+though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators as well as the `Select-String` cmdlet.
 
 ## Patterns
 | Metacharacter | Matches with | Example |
