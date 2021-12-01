@@ -51,5 +51,6 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 - Powershell Documentation: [about\_Regular\_Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2) 
 - .NET [Regular Expressions Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) <br />
 - .NET [.NET Regular Expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) <br />
+- .NET [Details of Regular Expression Behavior](https://docs.microsoft.com/en-us/dotnet/standard/base-types/details-of-regular-expression-behavior)
 - .NET: [Best Practices for Regular Expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/best-practices) <br />
 - Microsoft TechNet: [Working with Regular Expressions (regex)](https://social.technet.microsoft.com/wiki/contents/articles/4310.powershell-working-with-regular-expressions-regex.aspx) <br /> 
