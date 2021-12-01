@@ -23,12 +23,18 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 ## Patterns
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
+| `\d` | digits (0-9) | `` |
+| `\D` | non-digits | `` |
+| `\w` | words (\[a-zA-Z0-9\_\] | `` |
+| `\W` | non-words | `` |
+| `\s` | whitespace | `` |
+| `\S` | non-whitespace | `` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `.` | any single character (except \\n) | `` |
+> Capitalizing a pattern inverts its matches (i.e. `\d` matches with digits but `\D` matches with anything but digits)
 
 ## Quantifiers
 | Quantifier | Matches \_ Times | Example | 
@@ -36,7 +42,9 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 | `*` | 0+ times | `` |
 | `+` | 1+ times | `` |
 | `?` | 0-1 time | `` |
-| `{n,m}` | [n,m) times | `` |
+| `{n}` | _n_ times | `` |
+| `{n,}` | at least _n_ times | `` |
+| `{n,m}` | \[n,m\] times | `` |
 
 ## Structures
 
