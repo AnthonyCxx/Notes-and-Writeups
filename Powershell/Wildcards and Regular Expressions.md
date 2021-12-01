@@ -34,9 +34,11 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 | `` |  | `` |
 | `` |  | `` |
 | `.` | any single character (except \\n) | `` |
-> Capitalizing a pattern inverts its matches (i.e. `\d` matches with digits but `\D` matches with anything but digits)
+> Capitalizing a pattern inverts it (i.e. `\d` matches with digits but `\D` matches with anything but digits)
 
 ## Quantifiers
+Quantifiers allow you to modify the amount of times a pattern should be matched, allowing you to write "\d{5}" instead of "\d\d\d\d\d". You get the point.
+
 | Quantifier | Matches \_ Times | Example | 
 | ---------- | ---------------- | ------- |
 | `*` | 0+ times | `` |
