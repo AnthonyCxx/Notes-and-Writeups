@@ -6,7 +6,7 @@ Wildcards and regular expressions are methods of using a series of characters (i
 a 3-5 digit number from your user, you could do it arithmetically by repeatedly dividing by 10 and incremeting a counter each time, but it can be done more easily by just
 defining a pattern. In this case, the regular expression `\d{3,5}` would match with any number that's 3-5 digits long.
 
-# Wildcards
+# [Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2)
 Wildcards are the simplest form of pattern creating, supporting basic matching operations. When using wildcards, you use the `-like` and <br /> `-notlike` operators.
 
 | Metacharacter | Matches with | Example |
@@ -16,7 +16,7 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 | `[]` | 1 of any character in the square brackets | `$arr.where({$_ -like "[cdt]ry"})` |
 > [] can also represent a range of characters via a hyphen (e.g. [a-z])
 
-# Regular Expressions
+# [Regular Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)
 Regular expressions are far more comprehensive than wildcards, allowing for complex expressions like [this email validator](https://www.emailregex.com/). As a consequence,
 though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators.
 
