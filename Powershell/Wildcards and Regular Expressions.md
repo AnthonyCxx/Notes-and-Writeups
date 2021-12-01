@@ -61,8 +61,8 @@ while also discarding unwanted characters." -Powershell Documentation, [about\_R
 
 | Anchor | Binds to | Example |
 | ----- | -------- | ------- |
-| `^` | the beginning of the string | `` |
-| `$` | the end of the string | `` |
+| `^` | the beginning of the string | `$introduction -match "^Once upon"` |
+| `$` | the end of the string | `"whoops, I forgot a punctuation mark" -notmatch "[.!?;]$"` |
 
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
