@@ -18,9 +18,7 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 
 # [Regular Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7.2)
 Regular expressions are far more comprehensive than wildcards, allowing for complex expressions like [this email validator](https://www.emailregex.com/). As a consequence,
-though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators as well as the `Select-String` cmdlet.
-
-This is not a comprehensive list, just a collection of the common stuff. [Here's](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) the full list of regular expression patterns/anchors/modifiers/etc.
+though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators as well as the `Select-String` cmdlet. This is not a comprehensive list, just a collection of the common stuff. [Here's](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) the full list of regular expression patterns/anchors/modifiers/etc.
 
 ## Patterns
 | Metacharacter | Matches with | Example |
@@ -31,11 +29,9 @@ This is not a comprehensive list, just a collection of the common stuff. [Here's
 | `\W` | non-words | `` |
 | `\s` | whitespace | `` |
 | `\S` | non-whitespace | `` |
-| `\p{}` | [named unicode block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#supported-named-blocks) | `"낚시" -match "\p{IsHangulSyllables}"` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
 | `.` | any single character (except \\n) | `` |
+| `\p{}` | [named unicode block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#supported-named-blocks) | `"낚시" -match "\p{IsHangulSyllables}"` |
+
 > Capitalizing a pattern inverts it (i.e. `\d` matches with digits but `\D` matches with anything except digits)
 
 ## Quantifiers
