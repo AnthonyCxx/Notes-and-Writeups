@@ -31,7 +31,7 @@ This is not a comprehensive list, just a collection of the common stuff. [Here's
 | `\W` | non-words | `` |
 | `\s` | whitespace | `` |
 | `\S` | non-whitespace | `` |
-| `` |  | `` |
+| `\p{}` | [named unicode block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#supported-named-blocks) | `"낚시" -match "\p{IsHangulSyllables}"` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
