@@ -20,6 +20,8 @@ Wildcards are the simplest form of pattern creating, supporting basic matching o
 Regular expressions are far more comprehensive than wildcards, allowing for complex expressions like [this email validator](https://www.emailregex.com/). As a consequence,
 though, they are much harder to read. Regular expressions use the `-match`, `-notmatch`, and `-replace` operators as well as the `Select-String` cmdlet.
 
+This is not a comprehensive list, just a collection of the common stuff. [Here's](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) the full list of regular expression patterns/anchors/modifiers/etc.
+
 ## Patterns
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
