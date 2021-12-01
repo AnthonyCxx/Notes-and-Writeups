@@ -46,7 +46,7 @@ Quantifiers allow you to modify the amount of times a pattern should be matched,
 | `?` | 0-1 time | `` |
 | `{n}` | _n_ times | `` |
 | `{n,}` | at least _n_ times | `` |
-| `{n,m}` | \[n,m\] times | `` |
+| `{n,m}` | between _n_ to _m_ times (inclusive) | `` |
 
 ## Structures
 
