@@ -39,7 +39,7 @@ though, they are much harder to read. Regular expressions use the `-match`, `-no
 ## Quantifiers
 Quantifiers allow you to modify the amount of times a pattern should be matched, allowing you to write "\d{5}" instead of "\d\d\d\d\d". <br /> You get the point.
 
-| Quantifier | Matches \_ Times | Example | 
+| Quantifier | Matches \_\_ Times | Example | 
 | ---------- | ---------------- | ------- |
 | `*` | 0+ times | `` |
 | `+` | 1+ times | `` |
@@ -55,6 +55,13 @@ Quantifiers allow you to modify the amount of times a pattern should be matched,
 | `[]` | matches with one of a set of characters | `[abc]` |
 | `[^]` | matches with one of any character not in the set | `[^abc]` |
 | `[-]` | matches with one of a range of characters | `[a-z0-9]` |
+
+## Anchors
+
+| Achor | Binds to | Example |
+| ----- | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
 
 # Sources
 - Powershell Documentation: [about\_Wildcards](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wildcards?view=powershell-7.2) 
