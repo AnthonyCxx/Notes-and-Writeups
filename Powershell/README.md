@@ -1,6 +1,6 @@
 # Powershell
 What is Powershell? "PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. 
-PowerShell runs on Windows, Linux, and macOS." It follows a [composibility model](https://en.wikipedia.org/wiki/Monolithic_application) based on content and design principles
+PowerShell runs on Windows, Linux, and macOS." It follows a [composibility model](https://en.wikipedia.org/wiki/Composability) based on content and design principles
 from [.NET](https://dotnet.microsoft.com/) and [C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/). Powershell was designed to unify the commandline with .NET.
 
 Anything in quotation marks comes directly from documentation, which is avalilable with `Get-Help -Name <commandlet>` or online. <br />
