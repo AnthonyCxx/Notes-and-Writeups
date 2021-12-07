@@ -27,7 +27,7 @@ regular expressions by incorperating modifiers like quantifiers, anchors, or gro
 
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
-| `\d` | digits (0-9) | `` |
+| `\d` | digits (0-9) | `$phonenumber -match "\d{3}-\d{3}-\d{4}"` |
 | `\w` | words (\[a-zA-Z0-9\_\] | `` |
 | `\s` | whitespace | `` |
 | `.` | any single character (except \\n) | `` |
