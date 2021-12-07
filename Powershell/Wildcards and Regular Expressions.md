@@ -28,11 +28,8 @@ regular expressions by incorperating modifiers like quantifiers, anchors, or gro
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
 | `\d` | digits (0-9) | `` |
-| `\D` | non-digits | `` |
 | `\w` | words (\[a-zA-Z0-9\_\] | `` |
-| `\W` | non-words | `` |
 | `\s` | whitespace | `` |
-| `\S` | non-whitespace | `` |
 | `.` | any single character (except \\n) | `` |
 | `\p{}` | [named unicode block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#supported-named-blocks) | `"낚시" -match "\p{IsHangulSyllables}"` |
 
@@ -43,13 +40,13 @@ Quantifiers allow you to modify the amount of times a pattern should be matched,
 
 | Quantifier | Matches \_\_ Times | Example | 
 | ---------- | ---------------- | ------- |
-| `*` | 0+ times | `Get-ChildItem | foreach { if ($_.name -match ".*\.cpp") {Write-Host $_.name;}}` |
-| `+` | 1+ times | `` |
+| `*` | 0+ times | `Get-ChildItem \| foreach { if ($_.name -match ".*\.cpp") {Write-Host $_.name;}}` |
+| `+` | 1+ times | `$name -match "\w+"` |
 | `?` | 0-1 time | `"-12" -match "(\+|-)?\d+"` |
 | `{n}` | _n_ times | `"msg" -match "\w{3}"` |
 | `{n,}` | at least _n_ times | `$password -match "\w{$minlen,}"` |
 | `{n,m}` | between _n_ to _m_ times (inclusive) | `$password -match "\w{8,20}"` |
-> Note: Unlike Bash, the `*` operator is just a quantifier and **_must_** have something precede it. <br />
+> Unlike Bash, the `*` operator is just a quantifier and **_must_** have something precede it. <br />
 > To match with any amount of anything, combine `.` and `*` as `.*`.
 
 ## Structures
