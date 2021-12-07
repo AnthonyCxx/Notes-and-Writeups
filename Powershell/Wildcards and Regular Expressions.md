@@ -28,9 +28,9 @@ regular expressions by incorperating modifiers like quantifiers, anchors, or gro
 | Metacharacter | Matches with | Example |
 | ------------- | -------- | ------- |
 | `\d` | digits (0-9) | `$phonenumber -match "\d{3}-\d{3}-\d{4}"` |
-| `\w` | words (\[a-zA-Z0-9\_\] | `` |
-| `\s` | whitespace | `` |
-| `.` | any single character (except \\n) | `` |
+| `\w` | words (\[a-zA-Z0-9\_\] | `"1234_abcd" -match "\w+"` |
+| `\s` | whitespace | `if ($inp -match "\s") {Write-Host "the string cannot contain whitespace"}` |
+| `.` | any single character (except \\n) | `$str -match ".{3}ing"` |
 | `\p{}` | [named unicode block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#supported-named-blocks) | `"낚시" -match "\p{IsHangulSyllables}"` |
 
 > Capitalizing a pattern inverts it (i.e. `\d` matches with digits but `\D` matches with anything except digits)
@@ -42,7 +42,7 @@ Quantifiers allow you to modify the amount of times a pattern should be matched,
 | ---------- | ---------------- | ------- |
 | `*` | 0+ times | `Get-ChildItem \| foreach { if ($_.name -match ".*\.cpp") {Write-Host $_.name;}}` |
 | `+` | 1+ times | `$name -match "\w+"` |
-| `?` | 0-1 time | `"-12" -match "(\+|-)?\d+"` |
+| `?` | 0-1 time | `"-12" -match "(\+\|-)?\d+"` |
 | `{n}` | _n_ times | `"msg" -match "\w{3}"` |
 | `{n,}` | at least _n_ times | `$password -match "\w{$minlen,}"` |
 | `{n,m}` | between _n_ to _m_ times (inclusive) | `$password -match "\w{8,20}"` |
