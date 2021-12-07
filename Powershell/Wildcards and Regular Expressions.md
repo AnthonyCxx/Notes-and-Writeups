@@ -47,7 +47,7 @@ Quantifiers allow you to modify the amount of times a pattern should be matched,
 | `+` | 1+ times | `` |
 | `?` | 0-1 time | `` |
 | `{n}` | _n_ times | `"msg" -match "\w{3}"` |
-| `{n,}` | at least _n_ times | `` |
+| `{n,}` | at least _n_ times | `$password -match "\w{$minlen,}"` |
 | `{n,m}` | between _n_ to _m_ times (inclusive) | `$password -match "\w{8,20}"` |
 
 ## Structures
