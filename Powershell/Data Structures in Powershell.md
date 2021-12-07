@@ -1,8 +1,9 @@
 # Data Structures in Powershell
 > [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#arrays) <br />
-> [Hash Tables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#hashtables) <br />
+> [Hashtables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#hashtables) <br />
 
 # Arrays
+Arrays are a collection of elements that can be off different types. These elements can be accessed individually by the element's [index](https://www.geeksforgeeks.org/introduction-to-arrays/). 
 
 # Hashtables
 
