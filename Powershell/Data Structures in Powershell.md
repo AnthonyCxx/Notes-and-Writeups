@@ -12,6 +12,7 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 
 ## Properties
 | Property | Function | Example | 
+| -------- | -------- | ------- |
 | `` |  | `` | 
 | `` |  | `` | 
 | `` |  | `` | 
