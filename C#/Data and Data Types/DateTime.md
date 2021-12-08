@@ -13,7 +13,7 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 | ------ | ---- | ----- |
 | `.MaxValue` | static | max value of a DataTime object (`12/31/9999 11:59:59 PM`) |
 | `.MinValue` | static | min value of a DateTime object (`1/1/0001 12:00:00 AM`) |
-| `.UnixEpoch` | static | the [unix epoch](https://www.howtogeek.com/759337/what-is-the-unix-epoch-and-how-does-unix-time-work/) |
+| `.UnixEpoch` | static | start of the [unix epoch](https://www.howtogeek.com/759337/what-is-the-unix-epoch-and-how-does-unix-time-work/) |
 > Just as a note, 'epoch' is pronounced as 'epic'
 
 # Properties
@@ -26,17 +26,18 @@ All of the following properties are instance-based.
 | `.Date` | instance | the date + a time of (00:00:00 AM) | `` |  |
 | `.Year` | instance | the year of the object | `` | 1-9999 |
 | `.Month` | instance | the month of the object | `` | 1-12 |
-| `.Day` | instance | the day of the object | `` |  |
-| `.Hour` | instance | the hour of the instance | `` |  |
-| `.Minute` | instance |  | `` |  | 
-| `.Second` | instance |  | `` |  |
-| `.Millisecond` | instance |  | `` |  |
-| `.Ticks` | instance | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |  |
+| `.Day` | instance | the day of the object | `` | 1-31 |
+| `.Hour` | instance | the hour of the instance | `` | 0-23 |
+| `.Minute` | instance |  | `` | 0-59 | 
+| `.Second` | instance |  | `` | 0-59 |
+| `.Millisecond` | instance |  | `` | 0-999 |
+| `.Ticks` | instance | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` | 0-3155378975999999999 |
 | `.DayOfWeek` |  |  | `` |  |
 | `.DayOfYear` |  |  | `` |  |
 | `.TimeOfDay` |  |  | `` |  |
 | `.UtcNow` |  |  | `` |  |
 | `.Kind` |   | | `` |  |
+>  "A tick is equal to 100 nanoseconds or one ten-millionth of a second. There are 10,000 ticks in a millisecond." \[[src](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0)\]
 
 # Methods
 | Method | Function | Example | 
