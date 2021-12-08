@@ -17,11 +17,13 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 > Just as a note, 'epoch' is pronounced as 'epic'
 
 # Properties
-All of the following methods are instance methods.
+All of the following properties are instance-based.
 
 | Properties | Value | Example | 
 | ---------- | ----- | ------- |
 | `.Date` | the date + a time of (00:00:00 AM) | `` |
+| `.Today` |  | `` |
+| `.Now` |  | `` |
 | `.Year` |  | `` |
 | `.Month` |  | `` |
 | `.Day` |  | `` |
@@ -32,8 +34,6 @@ All of the following methods are instance methods.
 | `.Ticks` | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |
 | `.DayOfWeek` |  | `` |
 | `.DayOfYear` |  | `` |
-| `` |  | `` |
-| `.Now` |  | `` |
 | `.TimeOfDay` |  | `` |
 | `.UtcNow` |  | `` |
 | `.Kind` |  | `` |
