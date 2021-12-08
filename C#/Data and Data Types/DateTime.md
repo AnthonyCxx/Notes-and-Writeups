@@ -19,24 +19,24 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 # Properties
 All of the following properties are instance-based.
 
-| Properties | Type | Value | Example | 
-| ---------- | ---- |  ---- | ------- |
-| `.Now` | static | the current date + time as a _DateTime_ object | `var today = DateTime.Now` |
-| `.Date` | instance | the date + a time of (00:00:00 AM) | `` |
-| `.Today` |  |  | `` |
-| `.Year` |  |  | `` |
-| `.Month` |  |  | `` |
-| `.Day` |  |  | `` |
-| `.Hour` |  |  | `` |
-| `.Minute` |  |  | `` |
-| `.Second` |  |  | `` |
-| `.Millisecond` |  |  | `` |
-| `.Ticks` |  | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |
-| `.DayOfWeek` |  |  | `` |
-| `.DayOfYear` |  |  | `` |
-| `.TimeOfDay` |  |  | `` |
-| `.UtcNow` |  |  | `` |
-| `.Kind` |   | | `` |
+| Properties | Type | Value | Example | Range | 
+| ---------- | ---- |  ---- | ------- | ----- | 
+| `.Now` | static | the current date + time as a _DateTime_ object | `var today = DateTime.Now` |  |
+| `.Today` | static | the current date + a time of (00:00:00 AM) | `var todaysDate = DateTime.Today` |  | 
+| `.Date` | instance | the date + a time of (00:00:00 AM) | `` |  |
+| `.Year` | instance | the year of the object | `` | 1-9999 |
+| `.Month` | instance | the month of the object | `` | 1-12 |
+| `.Day` | instance | the day of the object | `` |  |
+| `.Hour` | instance | the hour of the instance | `` |  |
+| `.Minute` | instance |  | `` |  | 
+| `.Second` | instance |  | `` |  |
+| `.Millisecond` | instance |  | `` |  |
+| `.Ticks` | instance | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |  |
+| `.DayOfWeek` |  |  | `` |  |
+| `.DayOfYear` |  |  | `` |  |
+| `.TimeOfDay` |  |  | `` |  |
+| `.UtcNow` |  |  | `` |  |
+| `.Kind` |   | | `` |  |
 
 # Methods
 | Method | Function | Example | 
