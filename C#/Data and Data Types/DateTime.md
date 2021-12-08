@@ -31,7 +31,7 @@ All of the following properties are instance-based.
 | `.Minute` |  |  | `` |
 | `.Second` |  |  | `` |
 | `.Millisecond` |  |  | `` |
-| `.Ticks` | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |
+| `.Ticks` |  | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |
 | `.DayOfWeek` |  |  | `` |
 | `.DayOfYear` |  |  | `` |
 | `.TimeOfDay` |  |  | `` |
