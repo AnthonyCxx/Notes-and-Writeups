@@ -8,6 +8,26 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 
 ```
 
+# Fields
+| Fields | Function | Example | 
+| ------ | -------- | ------- |
+| `.MaxValue` |  | `` |
+| `.MinValue` |  | `` |
+| `.UnixEpoch` |  | `` |
+
+# Properties
+| Properties | Function | Example | 
+| ------ | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+
+# Methods
+| Method | Function | Example | 
+| ------ | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Sources
 - C# Documentation: [DateTime Struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0)
