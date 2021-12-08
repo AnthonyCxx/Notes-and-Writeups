@@ -22,21 +22,21 @@ All of the following methods are instance methods.
 | Properties | Value | Example | 
 | ---------- | ----- | ------- |
 | `.Date` | the date + a time of (00:00:00 AM) | `` |
+| `.Year` |  | `` |
+| `.Month` |  | `` |
+| `.Day` |  | `` |
+| `.Hour` |  | `` |
+| `.Minute` |  | `` |
+| `.Second` |  | `` |
+| `.Millisecond` |  | `` |
+| `.Ticks` | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |
+| `.DayOfWeek` |  | `` |
+| `.DayOfYear` |  | `` |
 | `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `.Now` |  | `` |
+| `.TimeOfDay` |  | `` |
+| `.UtcNow` |  | `` |
+| `.Kind` |  | `` |
 
 # Methods
 | Method | Function | Example | 
