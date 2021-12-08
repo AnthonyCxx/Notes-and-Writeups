@@ -4,7 +4,27 @@
 
 # Arrays
 Arrays are a collection of elements that can be of different types. These elements can be accessed individually by the element's [index](https://www.geeksforgeeks.org/introduction-to-arrays/). To create an array, use the array subexpression operator (`@()`) like `$arr = @(1, 2, 3, 4, 5)`.
-Alternatively, you can declare an array by assigning a comma-separated to a varaible with `$arr = 1,2,3,4,5`.
+Alternatively, you can declare an array by assigning a comma-separated list to a varaible with `$arr = 1,2,3,4,5`. 
+- You can append to an array using `+=` operator.
+- To create an array of a single value, preface it with a comma like `$arr = ,7`
+- Create an array from multiple values using the `..` operator
+- Strongly type an array by casting it at declaration with `[datatype[]]`
+
+## Properties
+| Property | Function | Example | 
+| `` |  | `` | 
+| `` |  | `` | 
+| `` |  | `` | 
+| `` |  | `` | 
+
+## Methods
+| Method | Function | Example | 
+| ------ | -------- | ------- |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 
 # Hashtables
 
