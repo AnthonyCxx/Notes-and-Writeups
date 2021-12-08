@@ -9,11 +9,11 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 ```
 
 # Fields
-| Fields | Function | Example | 
-| ------ | -------- | ------- |
-| `.MaxValue` |  | `` |
-| `.MinValue` |  | `` |
-| `.UnixEpoch` |  | `` |
+| Fields | Function |
+| ------ | -------- |
+| `.MaxValue` | max value of a DataTime object (`12/31/9999 11:59:59 PM`) |
+| `.MinValue` | min value of a DateTime object (`1/1/0001 12:00:00 AM`) |
+| `.UnixEpoch` |  |
 
 # Properties
 | Properties | Function | Example | 
