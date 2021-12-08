@@ -17,8 +17,21 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 > Just as a note, 'epoch' is pronounced as 'epic'
 
 # Properties
-| Properties | Function | Example | 
-| ------ | -------- | ------- |
+| Properties | Value | Example | 
+| ---------- | ----- | ------- |
+| `.Date` | the date + a time of (00:00:00 AM) | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
+| `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
