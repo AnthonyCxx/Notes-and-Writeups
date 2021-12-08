@@ -2,7 +2,7 @@
 The _DateTime_ type for representing date and time in C#. DateTime objects can represent any date/time between `1/1/0001 12:00:00 AM` (DateTime.MinValue) and 
 `12/31/9999 11:59:59 PM` (DateTime.MaxValue). Like Strings, DateTime objects are immutable.
 
-# Creating a DateTime Object
+# Quick Reference
 The constructor of a DateTime object allows you to specify the year, month, day, hour, minute, and second in that order.
 ```C#
 
@@ -19,24 +19,24 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 # Properties
 All of the following properties are instance-based.
 
-| Properties | Value | Example | 
-| ---------- | ----- | ------- |
-| `.Date` | the date + a time of (00:00:00 AM) | `` |
-| `.Today` |  | `` |
-| `.Now` |  | `` |
-| `.Year` |  | `` |
-| `.Month` |  | `` |
-| `.Day` |  | `` |
-| `.Hour` |  | `` |
-| `.Minute` |  | `` |
-| `.Second` |  | `` |
-| `.Millisecond` |  | `` |
+| Properties | Type | Value | Example | 
+| ---------- | ---- |  ---- | ------- |
+| `.Now` | static | the current date + time as a _DateTime_ object | `var today = DateTime.Now` |
+| `.Date` | instance | the date + a time of (00:00:00 AM) | `` |
+| `.Today` |  |  | `` |
+| `.Year` |  |  | `` |
+| `.Month` |  |  | `` |
+| `.Day` |  |  | `` |
+| `.Hour` |  |  | `` |
+| `.Minute` |  |  | `` |
+| `.Second` |  |  | `` |
+| `.Millisecond` |  |  | `` |
 | `.Ticks` | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) | `` |
-| `.DayOfWeek` |  | `` |
-| `.DayOfYear` |  | `` |
-| `.TimeOfDay` |  | `` |
-| `.UtcNow` |  | `` |
-| `.Kind` |  | `` |
+| `.DayOfWeek` |  |  | `` |
+| `.DayOfYear` |  |  | `` |
+| `.TimeOfDay` |  |  | `` |
+| `.UtcNow` |  |  | `` |
+| `.Kind` |   | | `` |
 
 # Methods
 | Method | Function | Example | 
