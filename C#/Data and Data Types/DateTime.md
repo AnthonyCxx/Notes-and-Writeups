@@ -22,16 +22,16 @@ All of the following properties are instance-based.
 | Properties | Type | Value | Range | 
 | ---------- | ---- |  ---- | ----- | 
 | `.Now` | static | the current date + time as a _DateTime_ object | - |
-| `.Today` | static | the current date + a time of (00:00:00 AM)  - | 
+| `.Today` | static | the current date + a time of (00:00:00 AM) | - | 
 | `.Date` | instance | the date + a time of (00:00:00 AM) |  - |
 | `.Year` | instance | the year of the object | 1-9999 |
 | `.Month` | instance | the month of the object | 1-12 |
 | `.Day` | instance | the day of the object | 1-31 |
 | `.Hour` | instance | the hour of the instance | 0-23 |
-| `.Minute` | instance |  |  0-59 | 
-| `.Second` | instance |  |  0-59 |
-| `.Millisecond` | instance |  |  0-999 |
-| `.Ticks` | instance | a [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) (equal to 100 nanoseconds) |  0-3155378975999999999 |
+| `.Minute` | instance | the minute of the instance |  0-59 | 
+| `.Second` | instance | the second of the instance |  0-59 |
+| `.Millisecond` | instance | the millisecond of the instance |  0-999 |
+| `.Ticks` | instance | the [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) of the instance (equal to 100 nanoseconds) |  0-3155378975999999999 |
 | `.DayOfWeek` |  |  | - |
 | `.DayOfYear` |  |  | - |
 | `.TimeOfDay` |  |  | - |
