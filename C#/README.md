@@ -19,7 +19,7 @@ Here are some shortcuts to the major folders and common files. This is not compr
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Exception%20Handling)
 
 ### Intermediate
-//Empty :(
+- [High Performance Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/High%20Performance%20Programming)
 
 ### Advanced
 //Also empty :(
