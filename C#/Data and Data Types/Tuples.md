@@ -1,4 +1,6 @@
 # Tuples in C#
+> [Tuple vs ValueTuple](http://taswar.zeytinsoft.com/c-what-is-the-difference-between-valuetuple-and-tuple/) <br />
+
 A tuple is an immutable data structure that contains two or literals or variables, which may be of different types. <br />
 Tuples are heap-allocated, so don't overuse them.
 > [Immutable](https://www.merriam-webster.com/dictionary/immutable), opposite of _mutable_: unable to be changed (think _mut_- as in _mutate_)
