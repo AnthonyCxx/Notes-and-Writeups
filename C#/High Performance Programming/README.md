@@ -18,4 +18,4 @@ Under construction...
 
 # Miscellaneous
 - Baeldung: [Async vs Multithreading](https://www.baeldung.com/cs/async-vs-multi-threading)
-- Developer.com: [What is Intermediate Language in C#?](https://www.developer.com/microsoft/c-sharp/c-and-intermediate-language-il/)
+- Developer.com: [What is Intermediate Language (IL) in C#?](https://www.developer.com/microsoft/c-sharp/c-and-intermediate-language-il/)
