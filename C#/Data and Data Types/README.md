@@ -47,12 +47,12 @@ By default, value types (like _int_ and _bool_) cannot be null. To allow a value
 
 ```C#
 //Declaring a nullable value
-bool  isTall = null;    //Illegal
-bool? isTall = null;   //Legal
+short  height = null;    //Illegal
+shoft? height = null;   //Legal
 
-if (isTall is null)  //Checking for null
+if (height is null)  //Checking for null
 {
-    Console.WriteLine("Uh, what?");
+    Console.WriteLine("So, wait — you just don't have a height...?");
 }
 ```
 ---
