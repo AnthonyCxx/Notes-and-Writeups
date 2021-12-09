@@ -4,10 +4,11 @@ Classes are meant to mimic some concrete object or abstract idea.
 
 | File | Description | 
 | ---- | ----------- |
-| [An Introduction to Class]() |  |
+| An Introduction to Classes |  |
 | Access Modifiers |  |
 | Methods |  |
 | Operator Overloading |  |
 | Inheritance |  |
+| Abstract and Static Classes |
 | Interfaces |  |
 | Events |  |
