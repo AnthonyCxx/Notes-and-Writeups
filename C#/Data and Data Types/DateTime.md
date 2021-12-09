@@ -17,7 +17,6 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 > Just as a note, 'epoch' is pronounced as 'epic'
 
 # Properties
-All of the following properties are instance-based.
 
 | Properties | Type | Value | Range | 
 | ---------- | ---- |  ---- | ----- | 
