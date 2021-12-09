@@ -1,7 +1,10 @@
 # Strings
 > Note: **_..._** is used to indicate a varying amount of parameters. <br />
 
-Strings are a series of read-only characters representing text. [Strings are immutable](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#:~:text=String%20objects%20are%20immutable%3A%20they,in%20a%20new%20string%20object.); once created, any operation that changes it actually returns a new string.
+Strings are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) that act as a series of read-only characters representing text. [Strings are immutable](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#:~:text=String%20objects%20are%20immutable%3A%20they,in%20a%20new%20string%20object.); once created, any operation that changes it actually returns a new string.
+In C#, the _char_ type is 2-bits wide, which means that strings implicitly support UTF-16 (this is in contrast to C++, in which chars only support ASCII and wide strings must 
+be used for unicode support). 
+
 Read more about strings via [related topics](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#related-topics).
 
 # Special Strings
