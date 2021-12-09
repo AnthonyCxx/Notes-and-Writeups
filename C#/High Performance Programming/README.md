@@ -13,7 +13,9 @@ Under construction...
 - [Span\<T\>](https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/january/csharp-all-about-span-exploring-a-new-net-mainstay) and [stackalloc expressions](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc)
 
 ## IL-Level Control
-- Nuget: [Fody](https://www.nuget.org/packages/Fody/)
+- Nuget Package Download: [Fody](https://www.nuget.org/packages/Fody/)
+- Coding Canvas: [Code Weaving in .NET using Fody](https://codingcanvas.com/code-weaving-using-fody/)
 
 # Miscellaneous
 - Baeldung: [Async vs Multithreading](https://www.baeldung.com/cs/async-vs-multi-threading)
+- Developer.com: [What is Intermediate Language in C#?](https://www.developer.com/microsoft/c-sharp/c-and-intermediate-language-il/)
