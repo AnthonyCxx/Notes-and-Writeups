@@ -15,9 +15,9 @@ public struct Date
     //Constructor
     public Date(int day, int month, int year)
     {
-        Day = day;
+        Day   = day;
         Month = month;
-        Year = year;
+        Year   = year;
     }
 
     //Get the date as a formatted string (mm/dd/yyyy)
