@@ -25,8 +25,8 @@ All of the following properties are instance-based.
 | `.Today` | static | the current date + a time of (00:00:00 AM) | - | 
 | `.Date` | instance | the date + a time of (00:00:00 AM) |  - |
 | `.Year` | instance | the year of the object | 1-9999 |
-| `.Month` | instance | the month of the object | 1-12 |
-| `.Day` | instance | the day of the object | 1-31 |
+| `.Month` | instance | the month of the object (as an int) | 1-12 |
+| `.Day` | instance | the day of the object (as an int) | 1-31 |
 | `.Hour` | instance | the hour of the instance | 0-23 |
 | `.Minute` | instance | the minute of the instance |  0-59 | 
 | `.Second` | instance | the second of the instance |  0-59 |
