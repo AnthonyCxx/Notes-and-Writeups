@@ -1,4 +1,7 @@
 # C# Data Types
+[Datatypes](https://dataled.academy/guides/data-types/) are a set of categories that describe the type of data being stored in a [variable](https://www.cs.utah.edu/~germain/PPS/Topics/variables.html) (which you can think of as a storage location for some data). In C#, all variables must have datatypes and that
+datatype must stay the same throughout the entire program. Diving deeper, there are many descriptors of variables: primitive or non-primitive, value or reference types, but
+at the end of the day all these variables are just storage locations for some data.
 
 | File | Description | 
 | ---- | ----------- |
