@@ -1,4 +1,4 @@
-# Reference Notes for C# 9.0
+# Reference Notes for C# 10.0
 C# is a cross-platform, general-purpose programming language thanks to [.NET Core](https://www.tutorialsteacher.com/core/dotnet-core). C# is exceptionally versatile and can 
 be used in everything from websites (front _and_ backend), to IoT, to video games.
 
