@@ -4,8 +4,10 @@ Classes are meant to mimic some concrete object or abstract idea.
 
 | File | Description | 
 | ---- | ----------- |
-| [Class](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Classes.md) | a generic, flexible user-defined datatype |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| [An Introduction to Class](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Classes.md) | a generic, flexible user-defined datatype |
+| Access Modifiers |  |
+| Methods |  |
+| Operator Overloading |  |
+| Inheritance |  |
+| Interfaces |  |
+| Events |  |
