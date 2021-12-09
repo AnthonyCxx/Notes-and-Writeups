@@ -7,7 +7,9 @@ Under construction...
 - Filip Ekberg: [Back to Basics: Efficient Async and Await](https://www.youtube.com/watch?v=Al8LrBKpZEU)
 
 ## Multithreading
-- [Multithreading](https://www.thoughtco.com/multi-threading-in-c-with-tasks-958372)
+- ThoughtCo: [Multithreading](https://www.thoughtco.com/multi-threading-in-c-with-tasks-958372)
+- C# Documentation: [Threads and Threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading)
+- C# Documentation: [Using Threads and Threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/using-threads-and-threading)
 
 ## Stack-based Data Allocation
 - [Span\<T\>](https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/january/csharp-all-about-span-exploring-a-new-net-mainstay) and [stackalloc expressions](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc)
