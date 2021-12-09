@@ -1,5 +1,5 @@
 # Structs in C#
-
+Structures are a [value type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) that serves as a collection of variables.
 
 # Sources
 - C# Documentation [Structure Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#:~:text=A%20structure%20type%20)
