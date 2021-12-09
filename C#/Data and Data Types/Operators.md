@@ -134,4 +134,4 @@ if (result is not null)
 //This example is taken straight from the C# documentation referenced below 
 ```
 > _result_ cannot be null, because invoking a method (such as _.ToString()_) on a null value results in a [_NullReferenceException_](https://docs.microsoft.com/en-us/dotnet/api/system.nullreferenceexception?view=net-5.0). <br />
-> Reference: [C# Documentation: _is_Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/is).
+> Reference: [C# Documentation: _is_ Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/is).
