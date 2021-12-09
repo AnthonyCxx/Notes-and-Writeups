@@ -1,4 +1,5 @@
 # Control Flow in C#
+Control flow encompasses a set of keywords and structures that allow the programmer to control how the program executes, typically based on [boolean](https://www.computerhope.com/jargon/b/boolean.htm) criteria. One of the simplest tools for control flow is the [_if_](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Control%20Flow/Conditionals.md#if-statement) keyword, which allows you to choose whether or not to execute some code based on a condition. 
 
 | File | Explanation |
 | ---- | ----------- |
