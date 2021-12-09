@@ -17,7 +17,7 @@ public struct Date
     {
         Day   = day;
         Month = month;
-        Year   = year;
+        Year  = year;
     }
 
     //Get the date as a formatted string (mm/dd/yyyy)
