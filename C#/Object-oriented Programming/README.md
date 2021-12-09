@@ -4,7 +4,7 @@ Classes are meant to mimic some concrete object or abstract idea.
 
 | File | Description | 
 | ---- | ----------- |
-| ´[An Introduction to Classes´](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/An%20Introduction%20to%20Classes.md) |  |
+| [An Introduction to Classes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/An%20Introduction%20to%20Classes.md) |  |
 | Access Modifiers |  |
 | Methods |  |
 | Operator Overloading |  |
