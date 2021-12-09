@@ -12,3 +12,5 @@ Classes are meant to mimic some concrete object or abstract idea.
 | Abstract and Static Classes |
 | Interfaces |  |
 | Events |  |
+| Records |  | 
+| Delegates |  | 
