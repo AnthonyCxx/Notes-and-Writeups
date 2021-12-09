@@ -96,3 +96,6 @@ static string Ordinal(int num)
       return strNum + "th";
 }
 ```
+
+# Further Reading
+- Bill Wagner: [How to Write Smarter Enums](https://www.youtube.com/watch?v=aUbXGs7YTGo)
