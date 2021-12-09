@@ -51,5 +51,5 @@ Here are some shortcuts to the major folders and common files. This is not compr
 [tutorialEU's C# Tutorial for Beginners](https://www.youtube.com/watch?v=UKaZ2S4AJAA&list=PLwhVruPHD9rxZ9U5K6vqUFkfrjaRhwEsV) (4.5 hours)
 
 ## Videos Worth Watching
-- [WinForm vs WPF vs UWP vs Console](https://www.youtube.com/watch?v=yq0dSkA1vpM) <br />
+- IAmTimCorey [WinForm vs WPF vs UWP vs Console](https://www.youtube.com/watch?v=yq0dSkA1vpM) <br />
 - Konrad Kokosa .NET Fest 2019: [High-performance code design patterns in C#](https://www.youtube.com/watch?v=3r6gbZFRDHs)
