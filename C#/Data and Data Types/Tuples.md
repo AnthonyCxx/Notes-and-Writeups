@@ -1,10 +1,8 @@
 # Tuples in C#
 > [Tuple vs ValueTuple](http://taswar.zeytinsoft.com/c-what-is-the-difference-between-valuetuple-and-tuple/) <br />
 
-A tuple is an [immutable](https://www.merriam-webster.com/dictionary/immutable) data structure that contains two or literals or variables, which may be of different types. <br />
-The most common use of a tuple is to [return multiple values from a function](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#use-cases-of-tuples).
+A tuple is an [immutable](https://www.merriam-webster.com/dictionary/immutable) data structure that contains two or literals or variables, which may be of different types. A common use of a tuple is to [return multiple values from a function](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#use-cases-of-tuples).
 
-The most common use of a tuple is to [return multiple values from a function](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#use-cases-of-tuples).
 
 ## Declaring a Tuple
 ### Format
