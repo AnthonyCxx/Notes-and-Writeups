@@ -38,13 +38,6 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 | `.Kind` | instance | a [DateTimeKind](https://docs.microsoft.com/es-es/dotnet/api/system.datetimekind?view=net-6.0) enum representing the  | - |
 >  "A tick is equal to 100 nanoseconds or one ten-millionth of a second. There are 10,000 ticks in a millisecond." \[[src](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0)\]
 
-# Methods
-| Method | Function | Example | 
-| ------ | -------- | ------- |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-
 # Sources
 - C# Documentation: [DateTime Struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0)
 - C# Corner: [DateTime in C#](https://www.c-sharpcorner.com/article/datetime-in-c-sharp/)
