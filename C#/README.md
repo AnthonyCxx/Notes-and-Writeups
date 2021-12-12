@@ -53,3 +53,4 @@ Here are some shortcuts to the major folders and common files. This is not compr
 ## Videos Worth Watching
 - IAmTimCorey [WinForm vs WPF vs UWP vs Console](https://www.youtube.com/watch?v=yq0dSkA1vpM) <br />
 - Konrad Kokosa .NET Fest 2019: [High-performance code design patterns in C#](https://www.youtube.com/watch?v=3r6gbZFRDHs)
+- Spencer Schneidenbach: [Using Immutable Data Structures in C# and .NET](https://www.youtube.com/watch?v=g_7pYAfx0kQ)
