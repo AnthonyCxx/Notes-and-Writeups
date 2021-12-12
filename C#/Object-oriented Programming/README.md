@@ -7,6 +7,7 @@ Classes are meant to mimic some concrete object or abstract idea.
 | [An Introduction to Classes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/An%20Introduction%20to%20Classes.md) | an introduction to the foundational principles of object-oriented programming |
 | Access Modifiers |  |
 | Methods |  |
+| Namespaces |  |
 | Operator Overloading |  |
 | Inheritance |  |
 | Abstract and Static Classes |
