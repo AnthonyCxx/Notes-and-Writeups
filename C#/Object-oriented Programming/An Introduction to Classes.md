@@ -1,3 +1,4 @@
 # Classes and Object-Oriented Programming in C#
 Object-oriented programming is a [programming paradigm](https://cs.lmu.edu/~ray/notes/paradigms/) in which concepts (abstract or concrete) are represented as user-defined
-datatypes. These custom types, called classes, contain both the state and actions related to the concept being represented.
+datatypes. These custom types, called classes, contain both the state and actions related to the concept being represented. For example, a class "Dog" would be designed 
+to model a dog (perhaps in the context of a video game or a similar program).
