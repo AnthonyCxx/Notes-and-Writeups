@@ -22,5 +22,6 @@ class ClassName
     //Other class members (properties, operators, indexers...)
 }
 ```
+> For C++ devs: note the lack of a semi-colon after the class declaration.
 
 # References
