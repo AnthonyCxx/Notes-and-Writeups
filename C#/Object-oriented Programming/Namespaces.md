@@ -4,6 +4,16 @@ organize classes into coherent groups. For example, the [System.Collections](htt
 an assortment of classes (as datastructures) and interfaces (for implementing datastructures). Names of namespaces should be an overarching catagory and nested namespaces
 should follow the pattern `<Company>.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]` (ref: [Names of Namespaces](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-namespaces))
 
+# Declaring a Namespace
+To delcare a namespace, 
+
+```C#
+namespace NameSpace
+{
+  //Classes go here
+}
+```
+
 # Using Directives
 ```C#
 
