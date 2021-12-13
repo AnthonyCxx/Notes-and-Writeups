@@ -7,6 +7,7 @@ classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/lan
 
 # Declaring and Using Classes
 
+
 ```C#
 class ClassName
 {
