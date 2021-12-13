@@ -11,7 +11,6 @@ Classes are meant to mimic some concrete object or abstract idea.
 | Operator Overloading |  |
 | Inheritance |  |
 | Abstract and Static Classes |
-| Interfaces |  |
 | Events |  |
 | Records |  | 
 | Delegates |  | 
