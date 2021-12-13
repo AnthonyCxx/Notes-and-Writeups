@@ -94,6 +94,7 @@ Access modifiers can be applied to an accessor method, but only to one. Accessor
 ```C#
 public class Item
 { 
+    //Ok
     public string Name { get; protected set; }
     public int Durability { get; protected set; }
     
