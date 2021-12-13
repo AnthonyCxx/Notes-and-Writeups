@@ -32,6 +32,17 @@ class HouseAddress
 > These data members (street, city, etc.) do not have values yet. Values are typically assigned by a [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors). <br /> <br />
 > Any member (field, property, method, or event) can be accessed by putting a period after the object name and then putting the name of the member.
 
+# Methods
+Methods are function members of a class. Methods are often public (exteranlly accesible) and use PascalCase.
+
+```C#
+public void Foo()
+{
+    Console.WriteLine("Calling the foo method!");
+}
+```
+> [What are foo, bar, and baz?](https://en.wikipedia.org/wiki/Foobar)
+
 # Properties
 A property is a public data member that allows for accessing/changing private or protected data members. Although properties are technically special methods 
 (similarly to how lambdas are functors),  it's best if you think of them as public data members that give guided access to a class's private data members by
