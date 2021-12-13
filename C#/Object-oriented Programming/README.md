@@ -7,8 +7,8 @@ Classes are meant to mimic some concrete object or abstract idea.
 | [An Introduction to Classes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/An%20Introduction%20to%20Classes.md) | an introduction to the foundational principles of object-oriented programming |
 | [Access Modifiers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Access%20Modifiers.md) | regulating access to class members via access modifiers |
 | [Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Methods.md) | a reference for functions, their uses, and modifiers | 
-| [Namespaces](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Namespaces.md) |  |
-| Operator Overloading |  |
+| [Namespaces](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Namespaces.md) | hierarchical organization of classes for cleaner projects |
+| [Operator Overloading](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Operator%20Overloading.md) | defining how operators should work with classes |
 | Inheritance |  |
 | Abstract and Static Classes |
 | Interfaces |  | 
