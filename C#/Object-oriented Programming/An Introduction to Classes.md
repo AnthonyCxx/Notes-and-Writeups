@@ -6,7 +6,7 @@ name and breed, and maybe an int for its age) as [functions](https://docs.micros
 classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types), making them [heap-allocated](https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/). For a complete references for classes, see C#'s documentation: [class keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class).
 
 # Declaring and Using Classes
-
+To declare a class, just include a set of delcarations inside of `class ClassName {}`. Per convention, class names should always use [PascalCase](https://techterms.com/definition/pascalcase). For now, you can ignore the [public](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) keyword.
 
 ```C#
 class ClassName
