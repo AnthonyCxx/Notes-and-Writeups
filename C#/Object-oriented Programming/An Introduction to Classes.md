@@ -5,7 +5,7 @@ to model a dog (perhaps in the context of a video game or a similar program). Th
 name and breed, and maybe an int for its age) and [functions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods) (aka methods) for performing actions (like barking or wagging its tail). At the end of the day, classes are just a means of organizing data to promote well-structured programs. Just as a note, 
 classes are [reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types), making them [heap-allocated](https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/). For a complete references for classes (including all possible types of class members), see C#'s documentation: [class keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class).
 
-# Declaring and Using Classes
+# Declaring a Class
 To declare a class, just include a set of delcarations inside of `class ClassName {}`. Per convention, class names should always use [PascalCase](https://techterms.com/definition/pascalcase). For now, you can ignore the [public](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public) keyword.
 
 ```C#
