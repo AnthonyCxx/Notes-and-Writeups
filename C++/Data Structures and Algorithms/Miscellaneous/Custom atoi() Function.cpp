@@ -11,7 +11,7 @@ template <typename returnType = int>
 [[nodiscard]] constexpr std::optional<returnType> toInt(const std::string& str) noexcept
 {
     //Custom implementation of C's 'isdigit()' from the <cctype> library, but using constexpr and noexcept for better performance
-    const static auto isNumericChar = [](const char c) constexpr noexcept -> bool { return c >= '0' and c <= '9'; };
+    auto isNumericChar = [](const char c) constexpr noexcept -> bool { return c >= '0' and c <= '9'; };
 
     //Return nullopt if not all the characters are 0-9 (with the exception of the first character, which may be a positive/negative sign or a number)
     if ( !(str[0] == '-' or str[0] == '+' or isNumericChar(str[0]))   or   !std::all_of(str.cbegin()+1, str.cend(), isNumericChar))
