@@ -31,25 +31,26 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 | `.Where()` | filters the array given a predicate as a scriptblock ([filter ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2#where)) |
 
 # Hashtables
-A hashtable, often called a map or a dictionary, are an associative datastructure that maps keys to values. You can declare a hashtable with the same `$()` you can with
-arrays, but separate the key and value with `=` and the key/value pairs with `;` like ``.
+A hashtable, often called a map or a dictionary, are an associative datastructure that maps keys to values. You can declare a hashtable like an array, but using curly braces
+instead of parentheses:`${}`; put the key/value pairs inside the curly braces, separating the key and value with `=` and the key/value pairs with `;` like ``. If you access
+a non-existant member of a hastable, it will return `$null`.
+
+- To create an ordered hashtable, prefix the declaration with `[ordered]`.
+- To access the individual members, subscript the hashtable with the key as `$hashtable["key"]`
 
 ## Properties
 | Property | Function |
 | ------ | -------- |
-| `` |  |
-| `` |  |
-| `` |  |
-| `` |  |
+| `.Count` | the amount of key/value pairs in the dictionary |
+| `.Keys` | returns the keys as a list |
 
 ## Methods
-
 | Method | Function |
 | ------ | -------- |
-| `` |  |
-| `` |  |
-| `` |  |
-| `` |  |
+| `.Add()` | adds the given key and value to the hashmap |
+| `.Remove()` | removes the key/value pair of the given key |
+| `.ContainsKey()` | `$true` if  the hashtable contains the key |
+| `.ContainsValue()` | `$true` if the hashtable contains the value |
 
 # Sources
 - Powershell Documentation: [about\_Arrays](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2)
