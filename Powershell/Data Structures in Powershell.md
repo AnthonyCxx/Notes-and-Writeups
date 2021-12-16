@@ -31,7 +31,7 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 | `.Where()` | filters the array given a predicate as a scriptblock ([filter ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2#where)) |
 
 # Hashtables
-A hashtable, often called a map or a dictionary, are an associative datastructure that maps keys to values.
+A hashtable, often called a map or a dictionary, are an associative datastructure that maps keys to values. You can declare a hashtable with the same `$()`
 
 ## Properties
 
