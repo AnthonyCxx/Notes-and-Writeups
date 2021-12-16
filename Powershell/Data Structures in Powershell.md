@@ -19,7 +19,7 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 | `.Length` | returns the length of the array | `Write-Host "The array contains $($arr.Length) elements"` | 
 | `.Count` | an alias for .Length | - | 
 | `.LongLength` | used when .Length is greater than \[int\]::MaxValue | - | 
-| `` |  | `` | 
+| `.Rank` | returns the amount of dimensions the array has | `Write-Host "This is an $($arr.Rank)th dimensional array"` | 
 
 ## Methods
 | Method | Function | Example | 
