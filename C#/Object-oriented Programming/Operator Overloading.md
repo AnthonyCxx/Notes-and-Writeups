@@ -1,4 +1,7 @@
 # Conversion and Operator Overloading in C#
+[Operator overloading](https://docs.microsoft.com/en-us/cpp/cpp/operator-overloading?view=msvc-170) is the ability to define how operators such as `+`, `-`, `*`, and `/` 
+should interact with user-defined types (classes/structs)
+
 Since classes are user-defined types, built-in operators like `+` are not implicitly defined since the program does not know how `Person1 + Person2` should do. Because of this,
 you have to explicitly define how operators should work with classes using operator overloading. In C#, operator overloads are defined as `public static` methods. Overloads
 can be further modified with the [implicit and explicit keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators).
