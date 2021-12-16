@@ -25,7 +25,7 @@ Using directives can also be used to create aliases. To create a using alias, ju
 
 # Sources
 - C# Documentation: [Namespaces](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/namespaces#using-static-directives)
-- Educba: [Namespaces in C#](- https://www.educba.com/namespaces-in-c-sharp/)
+- Educba: [Namespaces in C#](https://www.educba.com/namespaces-in-c-sharp/)
 - C# Documentation: [Using Directive](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/namespaces#using-static-directives)
 - C# Documentation: [Using Static Directive](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/namespaces#using-static-directives)
 - C# Documentation: [Names of Namespaces](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-namespaces)
