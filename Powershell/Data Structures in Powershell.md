@@ -32,7 +32,7 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 
 # Hashtables
 A hashtable, often called a map or a dictionary, are an associative datastructure that maps keys to values. You can declare a hashtable with the same `$()` you can with
-arrays, but separate the pairs with `=`
+arrays, but and the pairs with `;`.
 
 ## Properties
 
