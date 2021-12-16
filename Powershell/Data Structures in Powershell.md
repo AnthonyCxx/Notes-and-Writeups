@@ -9,7 +9,7 @@ Arrays are a collection of elements that can be of different types. These elemen
 Alternatively, you can declare an array by assigning a comma-separated list to a varaible with `$arr = 1,2,3,4,5`. 
 - You can append to an array using `+=` operator.
 - To create an array of a single value, preface it with a comma like `$arr = ,7`
-- Create an array from multiple values using the `..` operator
+- Create an array from multiple values or access multiple values using the `..` operator 
 - Strongly type an array by casting it at declaration with `[datatype[]]`
 
 ## Properties
