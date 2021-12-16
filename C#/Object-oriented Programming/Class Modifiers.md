@@ -62,10 +62,55 @@ public static void Main(string[] args)
 ```
 
 # Abstract (Base) Classes
-Abstract classes are classes that cannot be inherited — only serving as a class to be inherited form.
+Abstract classes are classes that cannot be inherited — only serving as a class to be inherited form. <br />
 
+Here is a short example of a basic [Entity](https://tandemcoder.com/entity-component-system-in-games-starter-guide/) class and a Player class derived from it.
 ```C#
+public abstract class Entity
+{
+    //Struct to define their coordinates
+    public struct Coordinates
+    {
+        public float X {get; set;}
+        public float Y {get; set;}
 
+        public Coordinates(float x = 0.0f, float y = 0.0f)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
+    //Player stats
+    public string Name {get; init;}
+
+    public int Health {get; protected set;}
+    protected Coordinates Coords {get; set;}
+
+    //Constructor
+    public Entity(string name, float xcoord = 0, float ycoord = 0)
+    {
+        if (String.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("name cannot be null/whitespace");
+
+        Name = name;
+        Coords = new Coordinates(xcoord, ycoord);
+    }
+}
+
+public class Player: Entity
+{
+    private int _level;
+
+    //Constructor
+    public Player(string name, float xcoord = 0, float ycoord = 0): base(name, xcoord, ycoord)
+    {
+        //Init new data members
+        _level = 0;
+    }
+
+    public string GetStats() => $"{Name} [level {_level}]: ({Coords.X},{Coords.Y})";
+}
 ```
 
 # Sealed Classes
