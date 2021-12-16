@@ -2,12 +2,10 @@
 Although these are not technically their own category of modifiers, I still felt they should have their own section.
 
 # Static Classes
-Often when programming, we need to use classes not for variables (i.e. not to be instantiated), but just to better organize our program. Such classes are called utility clases. 
-When using a static class, 
+Often when programming, we need to use classes not for variables (i.e. not to be instantiated), but just to better organize our program. Such classes are called utility classes. 
+To make a class static, just prefix the `class` keyword with `static` as `static class`...
 
 Below is an example of a fully fleshed-out temperature converter as a utility class, which implements a `.Convert()` method to convert a temperature from one unit into another
-
-Static members of a class are shared across all instances of the class and are accessed directly via `<ClassName>.<MemberName>`. 
 
 ```C#
 public static class TempConverter
