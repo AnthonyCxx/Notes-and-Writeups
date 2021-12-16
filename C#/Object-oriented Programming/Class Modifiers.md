@@ -2,7 +2,7 @@
 Although these are not technically their own category of modifiers, I still felt they should have their own section.
 
 # Static Classes
-
+Static members of a class are shared across all instances of the class and are accessed directly via `<ClassName>.<MemberName>`. 
 
 ```C#
 
