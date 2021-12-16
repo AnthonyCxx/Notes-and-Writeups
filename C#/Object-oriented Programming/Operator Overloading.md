@@ -1,73 +1,47 @@
 # Conversion and Operator Overloading in C#
 [Operator overloading](https://docs.microsoft.com/en-us/cpp/cpp/operator-overloading?view=msvc-170) is the ability to define how operators such as `+`, `-`, `*`, and `/` 
-should interact with user-defined types (classes/structs)
-
-Since classes are user-defined types, built-in operators like `+` are not implicitly defined since the program does not know how `Person1 + Person2` should do. Because of this,
-you have to explicitly define how operators should work with classes using operator overloading. In C#, operator overloads are defined as `public static` methods. Overloads
+should interact with user-defined types (classes/structs). By default, built-in operators like `+` are not implicitly defined. Because of this, you have to explicitly define
+how operators should work with classes using operator overloading. In C#, operator overloads are defined as `public static` methods. Overloads
 can be further modified with the [implicit and explicit keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators).
 
 # Operator Overloading
+A simple _Point_ class representing a pair of x- and y-coordinates, with an overloaded `+` operator that returns a new point.
 
 ```C#
-public class Point
+public readonly struct Point
 {
-    public double X {get; set;}
-    public double Y {get; set;}
+    //X and Y coordinates
+    public readonly double X {get; init;}
+    public readonly double Y {get; init;}
 
-    public Point(double x, double y)
-    {
-        X = x;
-        Y = y;
-    }
+    //Constructor
+    public Point(double x, double y) {X = x; Y = y;}
 
-    //Operator
+    //Operator overloads
     public static Point operator+(Point a, Point b) => new Point(a.X + b.X, a.Y + b.Y);
 }
 ```
 
 # Conversion Overloading
-
+This version of of the _Point_ struct overrides the [.ToString()](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring?view=net-6.0) method and defines
+the (string) conversion.
 ```C#
-public class Point
+public readonly struct Point
 {
-    public double X {get; set;}
-    public double Y {get; set;}
+    //X and Y coordinates
+    public readonly double X {get; init;}
+    public readonly double Y {get; init;}
 
-    public Point(int x, int y)
-    {
-        X = x;
-        Y = y;
-    }
-
-    //String implementation
+    //Constructor
+    public Point(double x, double y) {X = x; Y = y;}
+    
+    //Methods
     public override string ToString() => $"({X},{Y})";
 
-    //String conversion overload
-    public static explicit operator string(Point p) => p.ToString();
-}
-```
-
-# Complete Example
-
-```C#
-public class Point
-{
-    public double X {get; set;}
-    public double Y {get; set;}
-
-    public Point(double x, double y)
-    {
-        X = x;
-        Y = y;
-    }
-
+    //Operator overloads
     public static Point operator+(Point a, Point b) => new Point(a.X + b.X, a.Y + b.Y);
-
-
-    //String implementation
-    public override string ToString() => $"({X},{Y})";
-
-    //String conversion overload
+    
+    //Conversion operator overloads
     public static explicit operator string(Point p) => p.ToString();
 }
 ```
