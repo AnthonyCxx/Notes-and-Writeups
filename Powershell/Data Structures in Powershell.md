@@ -14,21 +14,21 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 - Strongly type an array by casting it at declaration with `[datatype[]]`
 
 ## Properties
-| Property | Function | Example | 
-| -------- | -------- | ------- |
-| `.Length` | returns the length of the array | `Write-Host "The array contains $($arr.Length) elements"` | 
-| `.Count` | an alias for .Length | - | 
-| `.LongLength` | used when .Length is greater than \[int\]::MaxValue | - | 
-| `.Rank` | returns the amount of dimensions the array has | `Write-Host "This is an $($arr.Rank)th dimensional array"` | 
+| Property | Function |
+| -------- | -------- |
+| `.Length` | returns the length of the array |
+| `.Count` | an alias for .Length |
+| `.LongLength` | used when .Length is greater than \[int\]::MaxValue (2,147,483,647) | 
+| `.Rank` | returns the amount of dimensions the array has | 
 
 ## Methods
 | Method | Function | Example | 
 | ------ | -------- | ------- |
-| `.Clear()` | resets all values in the array to their default value (`$null` for non-typed arrays) | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
-| `` |  | `` |
+| `.Clear()` | resets all values in the array to their default value (`$null` for non-typed arrays) |
+| `.ForEach()` | apply an operation to each element in the array ([op ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2#foreach)) |
+| `.Where()` | filters the array given a predicate as a scriptblock ([filter ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2#where)) |
+| `` |  |
+| `` |  |
 
 # Hashtables
 
