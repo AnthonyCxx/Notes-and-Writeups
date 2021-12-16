@@ -2,7 +2,12 @@
 Although these are not technically their own category of modifiers, I still felt they should have their own section.
 
 # Static Classes
-Often when programming, we need to use classes not for variables (i.e. not to be instantiated), but just to better organize our program. These classes are often called utility clases. Static members of a class are shared across all instances of the class and are accessed directly via `<ClassName>.<MemberName>`. 
+Often when programming, we need to use classes not for variables (i.e. not to be instantiated), but just to better organize our program. Such classes are called utility clases. 
+When using a static class, 
+
+Below is an example of a fully fleshed-out temperature converter as a utility class, which implements a `.Convert()` method to convert a temperature from one unit into another
+
+Static members of a class are shared across all instances of the class and are accessed directly via `<ClassName>.<MemberName>`. 
 
 ```C#
 public static class TempConverter
@@ -10,6 +15,7 @@ public static class TempConverter
     //Enum defines the temperature unit system (Fahrenheit, Celsius, Kelvin)
     public enum UnitSystem {F, C, K};
 
+    //Parent function, converts a given temperature from the source units to the destination units (e.g. 100°C => 212°F) 
     public static double Convert(double temp, UnitSystem src, UnitSystem dst) => dst switch
     {
             //Destination units dictates which conversion function to call
