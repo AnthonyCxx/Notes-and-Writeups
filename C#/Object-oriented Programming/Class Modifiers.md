@@ -62,12 +62,14 @@ public static void Main(string[] args)
 ```
 
 # Abstract (Base) Classes
+Abstract classes are classes that cannot be inherited — only serving as a class to be inherited form.
 
 ```C#
 
 ```
 
 # Sealed Classes
+Sealed classes cannot be inherited from. The _sealed_ keyword is the equivalent of C++'s [final](https://en.cppreference.com/w/cpp/language/final) keyword.
 
 ```C#
 
