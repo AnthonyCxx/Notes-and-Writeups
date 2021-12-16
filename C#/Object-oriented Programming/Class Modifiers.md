@@ -66,6 +66,7 @@ Abstract classes are classes that cannot be inherited — only serving as a clas
 
 Here is a short example of a basic [Entity](https://tandemcoder.com/entity-component-system-in-games-starter-guide/) class and a Player class derived from it.
 ```C#
+//Abstract base class 'Entity' 
 public abstract class Entity
 {
     //Struct to define their coordinates
@@ -98,6 +99,7 @@ public abstract class Entity
     }
 }
 
+//Derived class 'Player'
 public class Player: Entity
 {
     private int _level;
@@ -109,6 +111,7 @@ public class Player: Entity
         _level = 0;
     }
 
+    //Get the stats of the player
     public string GetStats() => $"{Name} [level {_level}]: ({Coords.X},{Coords.Y})";
 }
 ```
