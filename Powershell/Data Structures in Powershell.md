@@ -30,6 +30,10 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 
 # Hashtables
 
+## Properties
+
+## Methods
+
 # Sources
 - Powershell Documentation: [about\_Arrays](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2)
 - Powershell Documentation: [Everything You Wanted to Know About Arrays](https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-arrays?view=powershell-7.2)
