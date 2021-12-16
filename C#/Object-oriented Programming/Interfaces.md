@@ -8,10 +8,10 @@ Essentially, an interface is a contract that states that any class that inherits
 specify how.
 
 
-## Built-In Interfaces
+# Built-In Interfaces
 
-### IEquatable<T>
+## IEquatable<T>
 Defines a method _Equals(**\<T\> other**)_ that compares two objects of the same type.
 
-### Conventions
+## Conventions
 - Identifiers should have a prepended letter 'I' (for interface) to distinguish them from classes
