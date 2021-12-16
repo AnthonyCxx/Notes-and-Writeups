@@ -24,19 +24,32 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 | `.Rank` | returns the amount of dimensions the array has | 
 
 ## Methods
-| Method | Function | Example | 
-| ------ | -------- | ------- |
+| Method | Function |
+| ------ | -------- | 
 | `.Clear()` | resets all values in the array to their default value (`$null` for non-typed arrays) |
 | `.ForEach()` | apply an operation to each element in the array ([op ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2#foreach)) |
 | `.Where()` | filters the array given a predicate as a scriptblock ([filter ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2#where)) |
 
 # Hashtables
 A hashtable, often called a map or a dictionary, are an associative datastructure that maps keys to values. You can declare a hashtable with the same `$()` you can with
-arrays, but and the pairs with `;`.
+arrays, but separate the key and value with `=` and the key/value pairs with `;` like ``.
 
 ## Properties
+| Property | Function |
+| ------ | -------- |
+| `` |  |
+| `` |  |
+| `` |  |
+| `` |  |
 
 ## Methods
+
+| Method | Function |
+| ------ | -------- |
+| `` |  |
+| `` |  |
+| `` |  |
+| `` |  |
 
 # Sources
 - Powershell Documentation: [about\_Arrays](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.2)
