@@ -10,7 +10,7 @@ Classes are meant to mimic some concrete object or abstract idea.
 | [Namespaces](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Namespaces.md) | hierarchical organization of classes for cleaner projects |
 | [Operator Overloading](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Operator%20Overloading.md) | defining how operators should work with classes |
 | [Inheritance](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Inheritence.md) | re-utilization of existing classes to support code reuse |
-| Class Modifiers | class modifers like [static](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members), [abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract), and [sealed](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed) |
+| [Class Modifiers](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Class%20Modifiers.md) | class modifers like [static](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members), [abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract), and [sealed](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed) |
 | Interfaces |  | 
 | Events |  |
 | Records |  | 
