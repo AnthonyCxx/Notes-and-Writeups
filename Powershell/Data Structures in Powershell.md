@@ -24,7 +24,7 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 ## Methods
 | Method | Function | Example | 
 | ------ | -------- | ------- |
-| `` |  | `` |
+| `.Clear()` | resets all values in the array to their default value (`$null` for non-typed arrays) | `` |
 | `` |  | `` |
 | `` |  | `` |
 | `` |  | `` |
