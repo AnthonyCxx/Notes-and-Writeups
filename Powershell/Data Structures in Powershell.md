@@ -3,6 +3,8 @@
 >   \>\> [Properties](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#properties) <br />
 >   \>\> [Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#methods) <br />
 > [Hashtables](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#hashtables) <br />
+>   \>\> [Properties](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#properties-1) <br />
+>   \>\> [Methods](https://github.com/EthanC2/Notes-and-Writeups/blob/main/Powershell/Data%20Structures%20in%20Powershell.md#methods-1) <br />
 
 # Arrays
 Arrays are a collection of elements that can be of different types. These elements can be accessed individually by the element's [index](https://www.geeksforgeeks.org/introduction-to-arrays/). To create an array, use the array subexpression operator (`@()`) like `$arr = @(1, 2, 3, 4, 5)`.
