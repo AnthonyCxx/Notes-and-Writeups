@@ -1,6 +1,7 @@
 # Inheritence in C#
  Unlike in some other languages such as Perl and C++, 
-C# does not support [multiple inheritance](https://docstore.mik.ua/orelly/perl4/porm/ch11_06.htm)  (the ability for a derived class to have more than one base class).
+C# does not support [multiple inheritance](https://docstore.mik.ua/orelly/perl4/porm/ch11_06.htm)  (the ability for a derived class to have more than one base class) to avoid
+poor organization and problems like [diamond inheritance](https://medium.com/@harshamw/deadly-diamond-of-death-e8bb4355c343).
 If you need to 'inherit' from multiple base classes, you have to use [interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces) instead. Although, C# does not support multiple inheritance, it does support [multilevel (chain) inheritance](https://www.geeksforgeeks.org/c-sharp-multilevel-inheritance/), 
 allowing you use a derived class as a base class for another class; Multilevel inheritance is different from multiple inheritance in that multiple inheritance 
 allows a new class to inherit from two unrelated classes, whereas  multilevel inheritance allows a class to inherit from a class that is itself a derived class.
