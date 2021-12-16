@@ -16,9 +16,9 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 ## Properties
 | Property | Function | Example | 
 | -------- | -------- | ------- |
-| `` |  | `` | 
-| `` |  | `` | 
-| `` |  | `` | 
+| `.Length` | returns the length of the array | `Write-Host "The array contains $($arr.Length) elements"` | 
+| `.Count` | an alias for .Length | - | 
+| `.LongLength` | used when .Length is greater than \[int\]::MaxValue (2,147,483,647) | - | 
 | `` |  | `` | 
 
 ## Methods
