@@ -18,7 +18,7 @@ public readonly struct Point
     public Point(double x, double y) {X = x; Y = y;}
 
     //Operator overloads
-    public static Point operator+(Point a, Point b) => new Point(a.X + b.X, a.Y + b.Y);
+    public static Point operator+(Point a, Point b) => new Point(a.X+b.X, a.Y+b.Y);
 }
 ```
 
@@ -39,7 +39,7 @@ public readonly struct Point
     public override string ToString() => $"({X},{Y})";
 
     //Operator overloads
-    public static Point operator+(Point a, Point b) => new Point(a.X + b.X, a.Y + b.Y);
+    public static Point operator+(Point a, Point b) => new Point(a.X+b.X, a.Y+b.Y);
     
     //Conversion operator overloads
     public static explicit operator string(Point p) => p.ToString();
