@@ -10,6 +10,7 @@ Alternatively, you can declare an array by assigning a comma-separated list to a
 - You can append to an array using `+=` operator.
 - To create an array of a single value, preface it with a comma like `$arr = ,7`
 - Create an array from multiple values or access multiple values using the `..` operator 
+- Negative indices refer to the distance from the end of the array (negative indices are **_not_** zero-indexed)
 - Strongly type an array by casting it at declaration with `[datatype[]]`
 
 ## Properties
