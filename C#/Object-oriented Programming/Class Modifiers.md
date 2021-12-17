@@ -1,4 +1,8 @@
 # Class Modifiers in C#
+> [Static Classes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Class%20Modifiers.md#static-classes) <br />
+> [Abstract (Base) Classes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Class%20Modifiers.md#abstract-base-classes) <br />
+> [Sealed Classes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Class%20Modifiers.md#sealed-classes) <br />
+
 Although these are not technically their own category of modifiers, I still felt they should have their own section.
 
 # Static Classes
