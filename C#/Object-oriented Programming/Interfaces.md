@@ -5,7 +5,7 @@
 
 Essentially, an interface is a contract that states that any class that inherits from it must implement all of the members of the interface. However, it does not 
 specify how. Per convention, the name of an interface should *always* begin with an 'I' (just like private fields should always start with an underscore). Below is an example
-of how to use 
+of how to use interfaces in a project.
 
 # Full Example of How to Use Interfaces
 
