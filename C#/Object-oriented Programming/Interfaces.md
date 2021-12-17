@@ -5,7 +5,8 @@
 
 Essentially, an interface is a contract that states that any class that inherits from it must implement all of the members of the interface. However, it does not 
 specify how. Per convention, the name of an interface should *always* begin with an 'I' (just like private fields should always start with an underscore). Below is an example
-of how to use interfaces in a project.
+of how to use interfaces in a project. Since this is a small example it didn't matter too much, but in real practice `.Play()` and `.Pause()` wouldn't be a part of an interface
+like `IPlayable`, but instead would be a part of another class under the *Media* namespace like *MediaPlayer*.
 
 # Full Example of How to Use Interfaces
 
@@ -15,6 +16,7 @@ namespace Media
 {
     namespace MediaContent
     {
+        //'MediaFile' serves as a base class for any media file (images, videos, gifs)
         public abstract class MediaFile
         {
             //Fields
@@ -57,6 +59,7 @@ namespace Media
 {
     namespace MediaContent
     {
+        //Defines any playable media object (songs, videos, podcasts)
         interface IPlayable
         {
             public uint Duration {get; init;}  //Length (in seconds)
