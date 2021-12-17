@@ -120,7 +120,10 @@ public class Player: Entity
 Sealed classes cannot be inherited from. The _sealed_ keyword is the equivalent of C++'s [final](https://en.cppreference.com/w/cpp/language/final) keyword.
 
 ```C#
-
+public sealed class SealedClass
+{
+    //This class cannot be derived from
+}
 ```
 
 # Sources
