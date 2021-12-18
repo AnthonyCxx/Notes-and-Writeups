@@ -2,7 +2,10 @@
 Delegates are objects which represent functions. If you are familiar with C++, then you can think of delegates as a [std::function<T()>](https://en.cppreference.com/w/cpp/utility/functional/function) object
 (a sort of [functor](https://www.geeksforgeeks.org/functors-in-cpp/))
 
-# 
+# Example Application: Creating an Array of Functions
+A bit niche, but an interesting example nonetheless; this example uses delegates to declare an array of functions, which can be individually accessed or looped through.
+Practically, this could be used to avoid having to write a function to evaluate a user's choice and then call the corrosponding function. However, that's a very obscure
+approach so I wouldn't recommend it in real practice. (full example in C: [click](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Example%20Programs/LookupTables.c)).
 
 ```C#
 //Defines a delegate (a functor) to a method that takes 2 doubles and return 1
