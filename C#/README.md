@@ -17,6 +17,7 @@ Here are some shortcuts to the major folders and common files. This is not compr
 - [Preprocessor Directives](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Language%20Features/Preprocessor%20Directives.md)
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Exception%20Handling)
+- [Records](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Misc/Records.md)
 
 ### Intermediate
 - [High Performance Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/High%20Performance%20Programming)
