@@ -29,7 +29,7 @@ static void Main(string[] args)
                                     MathOperations.Mul,
                                     MathOperations.Div,
                                     MathOperations.Mod
-                                };
+                                 };
 
     //Loop through the array, applying every basic operation to the numbers 10 and 20
     foreach(Operation op in BasicOperations)
