@@ -1,5 +1,31 @@
 # Delegates in C#
-Delegates are objects which represent functions. If you are familiar with C++, then you can think of delegates as a [std::function<T()>](https://en.cppreference.com/w/cpp/utility/functional/function) object (a sort of [functor](https://www.geeksforgeeks.org/functors-in-cpp/)).
+Delegates are types which represent functions (one with a parameter list and a return type). If you are familiar with C++, then you can think of delegates as a [std::function<T()>](https://en.cppreference.com/w/cpp/utility/functional/function) object (a type used for creating [functors](https://www.geeksforgeeks.org/functors-in-cpp/)).
+To declare a delegate, use the `delegate` followed by a standard function delclaration like `public delegate int Comparison(int x, int y);`. Although delegates don't seem
+particularly useful at first glance, they are incredibly useful for events... and
+
+```C#
+class DelegatePractice
+{
+    //Declaration of a delegate type called 'Comparison' that takes two ints and returns an int
+    public delegate int Comparison(int x, int y);
+
+    //Static delegate objects: 'Lesser' and 'Greater' and objects that alias functions 'Min()' and 'Max()'
+    public static Comparison Lesser = Min;
+    public static Comparison Greater = Max;
+
+    //Existing methods for the delegates to alias
+    public static int Min(int x, int y)
+    {
+        return x < y ? x : y;
+    }
+
+    public static int Max(int x, int y)
+    {
+        return x > y ? x : y;
+    }
+}
+```
+> Usage: `int lesser = DelegatePractice.Lesser(10,20);`
 
 # Func<> and Action<>
 
