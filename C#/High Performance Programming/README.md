@@ -13,6 +13,7 @@ Under construction...
 
 ## Stack-based Data Allocation
 - [Span\<T\>](https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/january/csharp-all-about-span-exploring-a-new-net-mainstay) and [stackalloc expressions](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc)
+- Nick Chapsas: [What is Span in C# and why you should be using it](https://www.youtube.com/watch?v=FM5dpxJMULY)
 
 ## IL-Level Control
 - Nuget Package Download: [Fody](https://www.nuget.org/packages/Fody/)
