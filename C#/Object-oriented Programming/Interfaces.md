@@ -4,7 +4,8 @@
 \- Bobby Davis, Jr. ([video ref](https://www.youtube.com/watch?v=_zCR1Rq7qB0))
 
 Essentially, an interface is a contract that states that any class that inherits from it must implement all of the members of the interface. However, it does not 
-specify how. Per convention, the name of an interface should *always* begin with an 'I' (just like private fields should always start with an underscore). Below is an example
+specify how. Per convention, the name of an interface should *always* begin with an 'I' (just like private fields should always start with an underscore). Interfaces
+create a common set of behaviors for a class (as opposed to a common set of traits (fields), as abstract base classes do). Below is an example
 of how to use interfaces in a project. Since this is a small example it didn't matter too much, but in real practice `.Play()` and `.Pause()` wouldn't be a part of an interface
 like `IPlayable`, but instead would be a part of another class under the *Media* namespace like *MediaPlayer*, which would take any `IPlayable` object.
 
