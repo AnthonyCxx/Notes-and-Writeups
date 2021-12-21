@@ -15,10 +15,11 @@ Under construction...
 - [Span\<T\>](https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/january/csharp-all-about-span-exploring-a-new-net-mainstay) and [stackalloc expressions](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc)
 - Nick Chapsas: [What is Span in C# and why you should be using it](https://www.youtube.com/watch?v=FM5dpxJMULY)
 
-## IL-Level Control
+## IL and IL-Level Control
+- Developer.com: [What is Intermediate Language (IL) in C#?](https://www.developer.com/microsoft/c-sharp/c-and-intermediate-language-il/)
+- C# Online IL Viewer: [sharplab.io](https://sharplab.io/)
 - Nuget Package Download: [Fody](https://www.nuget.org/packages/Fody/)
 - Coding Canvas: [Code Weaving in .NET using Fody](https://codingcanvas.com/code-weaving-using-fody/)
 
 # Miscellaneous
 - Baeldung: [Async vs Multithreading](https://www.baeldung.com/cs/async-vs-multi-threading)
-- Developer.com: [What is Intermediate Language (IL) in C#?](https://www.developer.com/microsoft/c-sharp/c-and-intermediate-language-il/)
