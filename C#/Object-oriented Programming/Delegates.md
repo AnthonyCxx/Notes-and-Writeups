@@ -1,7 +1,7 @@
 # Delegates in C#
 Delegates are types which represent functions (one with a parameter list and a return type). If you are familiar with C++, then you can think of delegates as a [std::function<T()>](https://en.cppreference.com/w/cpp/utility/functional/function) object (a type used for creating [functors](https://www.geeksforgeeks.org/functors-in-cpp/)).
 To declare a delegate, use the `delegate` followed by a standard function delclaration like `public delegate int Comparison(int x, int y);`. Although delegates don't seem
-particularly useful at first glance, they are incredibly useful for events... and
+particularly useful at first glance, they are incredibly useful in both events and polymorphism.
 
 ```C#
 class DelegatePractice
