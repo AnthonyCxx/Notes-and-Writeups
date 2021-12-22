@@ -28,14 +28,28 @@ class DelegatePractice
 ```
 > Usage: `int lesser = DelegatePractice.Lesser(10,20);`
 
+# Anonymous Delegates
+
+```C#
+
+```
+
 # Func<> and Action<>
+[*Func<>*](https://docs.microsoft.com/en-us/dotnet/api/system.action?view=net-6.0) and [*Action<>*](https://docs.microsoft.com/en-us/dotnet/api/system.func-2?view=net-6.0) 
+are pre-defined delegates that, amongst other things, allow you to declare a parameter as a delegate without specificlly requiring a custom delegate type you have made.
+The datatypes of the paramters should go inside the template `<>` as a list, with the return type of the function coming last. The only real difference between *Func<>*
+and *Action<>* is that *Action<>* does not have a return type (its return type is always void).
 
+```C#
 
-# Example Usage: Creating an Array of Functions
+```
+
+# *Func*-y Examples: Creating an Array of Functions
 A bit niche, but an interesting example nonetheless; this example uses delegates to declare an array of functions, which can be individually accessed or looped through.
 Practically, this could be used to avoid having to write a function to evaluate a user's choice and then call the corrosponding function. However, that's a very obscure
 approach so I wouldn't recommend it in real practice. (full example in C: [click](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C/Example%20Programs/LookupTables.c)).
 
+By the way, I hope that pun hurt.
 ```C#
 //Defines a delegate (a functor) to a method that takes 2 doubles and return 1
 public delegate double Operation(double a, double b);
