@@ -4,6 +4,8 @@ To declare a delegate, use the `delegate` followed by a standard function delcla
 particularly useful at first glance, they are incredibly useful in both events and polymorphism. Again, the delcartion of a delegate is a _type_ — like a class. If you want
 to actually use a delegate, you have to create a variable of the desired delegate type.
 
+One note about naming delegates: even though delegates are just function aliases, they are still variables (and not methods), so they should still follow variable naming
+conventions.
 ```C#
 class DelegatePractice
 {
@@ -29,10 +31,17 @@ class DelegatePractice
 > Usage: `int lesser = DelegatePractice.Lesser(10,20);`
 
 # Anonymous Delegates
+Delegates can be assgined anonymous methods via the format `delegate (<params>) {<script_block>};`. Be careful with adding anonymous delegates though, as, like with 
+lambdas, you cannot explicitly remove an anonymous function since it has no name; although, there is always the [Delegate.RemoveAll()](https://docs.microsoft.com/en-us/dotnet/api/system.delegate.removeall?view=net-6.0) method.
 
 ```C#
-
+public static void Main(string[] args)
+{
+    Action<int> printNum = delegate (int i) {Console.WriteLine($"Num: {i}");};
+    printNum(12);
+}
 ```
+> Prints: `Num: 12`
 
 # Func<> and Action<>
 [*Func<>*](https://docs.microsoft.com/en-us/dotnet/api/system.action?view=net-6.0) and [*Action<>*](https://docs.microsoft.com/en-us/dotnet/api/system.func-2?view=net-6.0) 
@@ -41,7 +50,25 @@ The datatypes of the paramters should go inside the template `<>` as a list, wit
 and *Action<>* is that *Action<>* does not have a return type (its return type is always void).
 
 ```C#
+public static void Main(string[] args)
+{
+    Func<int,int,string> AppendNums = Join;
+    Console.WriteLine($"12 and 0 appended is {AppendNums(12,0)}");
 
+    Action PrintRandNum = Rand;
+    PrintRandNum();
+}
+
+public static string Join(int a, int b)
+{
+    return $"{a}{b}";
+}
+
+public static void Rand()
+{
+    var rnd = new Random();
+    Console.WriteLine(rnd.Next());
+}   
 ```
 
 # *Func*-y Examples: Creating an Array of Functions
