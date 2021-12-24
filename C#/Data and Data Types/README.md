@@ -69,10 +69,9 @@ if (height is null)  //Checking for null
 | [Enum](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Enum.md) | a user-defined type that takes on one of a set of values |
 | [Array](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Arrays.md) | a sequential collection of data of the same type |
 | [Tuple](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/Tuples.md) | an immutable collection of elements of different types |
-| [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) |  |
-| Interface |  |
+| [Class](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming) | custom datatypes meant to represent real or abstract concepts |
+| [Interface](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Object-oriented%20Programming/Interfaces.md) | a contract which defines a common set of behaviors for a class |
 | Record |  |
-| Delegate |  |
 
 ## Notes
 -  private variables should have a `_` prepended (per industry standard, not my opinion) 
