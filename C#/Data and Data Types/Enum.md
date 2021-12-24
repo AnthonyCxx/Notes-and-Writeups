@@ -52,7 +52,7 @@ To get the integer value from an enum, cast it appropriately.
 ```C#
 enum Days
 {
-  Monday,
+  Monday = 1,  //Start at 1, not 0
   Tuesday,
   Wednesday,
   Thursday,
@@ -64,7 +64,7 @@ enum Days
 static void Main(string[] args)
 {
   //Enum -> Integer
-  Console.WriteLine($"The day {Days.Saturday} is the {Ordinal( (int) Days.Saturday + 1 )} day of the week");
+  Console.WriteLine($"The day {Days.Saturday} is the {Ordinal( (int) Days.Saturday )} day of the week");
   
   //Integer -> Enum
   Console.WriteLine($"The 1st day of the week is {(Days) 0}");
