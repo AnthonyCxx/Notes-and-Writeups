@@ -90,24 +90,24 @@ int[] array = {6, -10, 9, 15, 221};
 Console.WriteLine($"Minimum = {minimum}, Maximum = {maximum}");            
 
 //Function: findMinMax - finds the minimum and maximum value of an array
-public static Tuple<int, int> findMinMax(int[] array)
+public static (int,int) findMinMax(int[] array)
 {
-    int min = array[0], max = array[0];
-            
-    foreach(int value in array)
-    {
-        if (min > value)
-        {
-            min = value;
-        }
-                
-        if (max < value)
-         {
-            max = value;
-         }
+  int min = array[0], max = array[0];
+
+  foreach(int value in array)
+  {
+     if (min > value)
+     {
+        min = value;
      }
-            
-     return Tuple.Create(min, max);
+
+     if (max < value)
+     {
+        max = value;
+     }
+  }
+
+  return (min, max);
 }
 ```
 > Prints "Minimum = -10, Maximum = 221" <br />
