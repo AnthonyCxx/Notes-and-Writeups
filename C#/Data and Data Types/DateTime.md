@@ -35,7 +35,7 @@ The constructor of a DateTime object allows you to specify the year, month, day,
 | `.Ticks` | instance | the [tick](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0) of the instance (equal to 100 nanoseconds) |  0-3155378975999999999 |
 | `.DayOfWeek` | instance | day of the week of the instance as a string (e.g. Wednesday) | Sunday-Saturday |
 | `.DayOfYear` | instance |day of the year \[int\] | 1-366 |
-| `.Kind` | instance | a [DateTimeKind](https://docs.microsoft.com/es-es/dotnet/api/system.datetimekind?view=net-6.0) enum representing the  | - |
+| `.Kind` | instance | a [DateTimeKind](https://docs.microsoft.com/es-es/dotnet/api/system.datetimekind?view=net-6.0) enum indicating what the time is based on | - |
 >  "A tick is equal to 100 nanoseconds or one ten-millionth of a second. There are 10,000 ticks in a millisecond." \[[src](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.ticks?view=net-6.0)\]
 
 # Sources
