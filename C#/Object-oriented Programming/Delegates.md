@@ -71,13 +71,6 @@ public static void Rand()
 }   
 ```
 
-# Multiple Method Delegates
-Methods can have...
-
-```C#
-
-```
-
 # *Func*-y Examples: Creating an Array of Functions
 A bit niche, but an interesting example nonetheless; this example uses delegates to declare an array of functions, which can be individually accessed or looped through.
 Practically, this could be used to avoid having to write a function to evaluate a user's choice and then call the corrosponding function. However, that's a very obscure
