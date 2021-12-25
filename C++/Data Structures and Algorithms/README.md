@@ -3,12 +3,27 @@ A collection of implementations of data structures and algorithms, prefaced by t
 compared to C++'s implementation of the Mersenne Twister algorithm ([mt19937](https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine)); even if you weren't 
 to consider mt19937, `rand()` is infamous for being biased towards the lower end the distribution. Regardless of your use case, it should be marked `DNU`.
 
-> [Data Structures](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/README.md#data-structures) <br />
-> [Searching Algorithms](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/README.md#searching-algorithms) <br />
-> [Sorting Algorithms](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/README.md#sorting-algorithms) <br />
-
 # Data Structures
 - [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/Data%20Structures/Arrays.md)
+- Linked Lists
+- Binary Trees
+- Queue
+- Stack
+- Heap
+- Hash Table
+- Trie
+
+# Major Categories of Programming Problems
+| Categorey | Description |
+| --------- | ----------- |
+| [Searching]() |  |
+| [Sorting]() |  |
+| [Recursion]() |  |
+| [Greedy Algorithms]() |  |
+| [Dynamic Programming]() |  |
+| [Backtracking]() |  |
+| [Graph Problems]() |  |
+| [Pattern Finding]() |  |
 
 # Searching Algorithms
 | Time Complexity | Space Complexity | Algorithm | Requirements |
