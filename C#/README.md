@@ -15,7 +15,7 @@ Here are some shortcuts to the major folders and common files. This is not compr
 - [Non-primitive Datatypes](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Data%20and%20Data%20Types/README.md#non-primitive-datatypes)
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Control%20Flow)
 - [Preprocessor Directives](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Language%20Features/Preprocessor%20Directives.md)
-- [Formatting Strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Formatting%20Strings.md)
+- [Formatting Strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Formatting%20Strings,%20Numbers,%20Dates,%20and%20Time.md)
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Exception%20Handling)
 - [Records](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Misc/Records.md)
