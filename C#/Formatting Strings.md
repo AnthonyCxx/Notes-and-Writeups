@@ -75,16 +75,16 @@ Console.WriteLine($"{Math.PI:N2}");
 ## Formatting Dates and Times
 Trust me when I tell you there are _a lot_ of DataTime formats. Here are just some common ones. For more information, see [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers) and [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings). You should be aware that the format you choose will slightly change from
 region to region; for example, the `{DateTime.Now:U}` yields `Wednesday, 29 December 2021 16:01:56` for English speakers and `miércoles, diciembre 29, 2021 4:00:09 PM` 
-for Spanish speakers (the month and day and swapped), which is only a slight difference in this case but is still important to recognize.
+for Spanish speakers (the month and day and swapped), which is only a slight difference in this case but is still good to know.
 
 | Abbrev. | Full Expression | Example |
 | ------- | --------------- | ------- | 
 | `d` | `MM/dd/yyyy` | 12/29/2021 |
 | `D` | `dddd, dd MMMM yyyy` |  Wednesday, 29 December 2021 |
 | `f` | `dddd, dd MMMM yyyy HH:mm` | Wednesday, 29 December 2021 16:17 | 
-| `F` | `` |  |
-| `g` | `` |  |
-| `G` | `` |  |
+| `F` | `dddd, dd MMMM yyyy HH:mm:ss` | Wednesday, 29 December 2021 16:19:25 |
+| `g` | `MM/dd/yyyy HH:mm` | 12/29/2021 16:20 |
+| `G` | `MM/dd/yyyy HH:mm:ss` | 12/29/2021 16:20:12 |
 | `` | `` |  |
 | `` | `` |  |
 | `` | `` |  |
