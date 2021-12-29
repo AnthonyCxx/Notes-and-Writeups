@@ -82,3 +82,10 @@ for Spanish speakers, which is only a slight difference in this case but is stil
 | `` |  |  | 
 | `` |  |  |
 | `` |  |  |
+
+
+# Sources 
+- C# Documentation: [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)
+- C# Documentation: [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
+- daveoncsharp: [Formatting a DateTime Object in C#](https://www.daveoncsharp.com/2009/09/formatting-a-datetime-object-in-csharp/)
+- TutorialsTeacher: [DateTime Formats in C#](https://www.tutorialsteacher.com/articles/datetime-formats-in-csharp)
