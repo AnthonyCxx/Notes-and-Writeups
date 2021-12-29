@@ -58,8 +58,9 @@ both the hex numbers 1 and 2A will take the same space).
 
 ```C#
 //Show Pi to three digits
-Console.WriteLine($"{Math.PI:N3}");
+Console.WriteLine($"{Math.PI:N2}");
 ```
+> Prints "3.14"
 
 ## Formatting Numbers
 | Formatter | Effect | 
@@ -72,8 +73,10 @@ Console.WriteLine($"{Math.PI:N3}");
 | `:P` | displays as a percent |
 
 ## Formatting Dates and Times
-| Formatter | Effect | 
-| --------- | ------ |
-| `` |  |
-| `` |  |
-| `` |  |
+Trust me when I tell you there are _a lot_ of DataTime formats. Here are just some common ones. For more information, see [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers) and [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
+
+| Formatter | Effect | Example |
+| --------- | ------ | ------- | 
+| `` |  |  | 
+| `` |  |  |
+| `` |  |  |
