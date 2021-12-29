@@ -33,8 +33,20 @@ Console.WriteLine($"{"text",6}");
 ---
 
 # Formatting Strings
+...some example here.........
 
+```C#
+
+```
+
+## Formatting Numbers
 | Format | Effect | 
 | ------ | ------ |
-| `:Nn` |  |
+| `:Nn` | displays _n_ digits |
+| `:X` | hexadecimal notation |
+| `:E` | scientific notation |
 | `` |  |
+| `` |  |
+| `` |  |
+
+## Formatting Dates and Times
