@@ -33,15 +33,17 @@ Console.WriteLine($"{"text",6}");
 ---
 
 # Formatting Strings
-...some example here.........
+When combining [string formatting components](https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting#format-string-component) with [alignment components](https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting#alignment-component), the alignment component should come before the string
+formatting component with the string formatting component directly appended on the end like `$"{num,2:X}"` (which displays a number in hex with at least two spaces, meaning
+both the hex numbers 1 and 2A will take the same space).
 
 ```C#
 
 ```
 
 ## Formatting Numbers
-| Format | Effect | 
-| ------ | ------ |
+| Formatter | Effect | 
+| --------- | ------ |
 | `:Nn` | displays _n_ digits |
 | `:X` | hexadecimal notation |
 | `:E` | scientific notation |
@@ -50,3 +52,8 @@ Console.WriteLine($"{"text",6}");
 | `` |  |
 
 ## Formatting Dates and Times
+| Formatter | Effect | 
+| --------- | ------ |
+| `` |  |
+| `` |  |
+| `` |  |
