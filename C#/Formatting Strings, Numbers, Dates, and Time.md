@@ -85,12 +85,15 @@ for Spanish speakers (the month and day and swapped), which is only a slight dif
 | `F` | `dddd, dd MMMM yyyy HH:mm:ss` | Wednesday, 29 December 2021 16:19:25 |
 | `g` | `MM/dd/yyyy HH:mm` | 12/29/2021 16:20 |
 | `G` | `MM/dd/yyyy HH:mm:ss` | 12/29/2021 16:20:12 |
-| `` | `` |  |
-| `` | `` |  |
-| `` | `` |  |
-| `` | `` |  |
-| `` | `` |  |
-| `` | `` |  |
+| `M` and `m` | `` |  |
+| `O` and `o` | `` |  |
+| `R` and `r` | `` |  |
+| `s` | `` |  |
+| `t` | `` |  |
+| `T` | `` |  |
+| `u` | `` |  |
+| `U` | `` |  |
+| `Y` and `y` | `` |  |
 
 
 # Sources 
