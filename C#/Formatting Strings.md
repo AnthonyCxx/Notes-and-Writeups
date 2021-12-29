@@ -3,6 +3,7 @@ The [String.Format()](https://docs.microsoft.com/en-us/dotnet/api/system.string.
 The document contains a collection of formatting techniques as well as examples. Generally, you should use string interpolation instead of concatenation because it's more
 efficient, especially for concatenating multiple strings.
 
+Here, string interpolation is an effective choice for the _FullName_ property because the first and last name may change after being initialized.
 ```C#
 public struct Person
 {
