@@ -5,6 +5,6 @@ Passing an integer _n_ as the second argument of an interpolated string will pad
 A positive number will right-justify the text, a negative number will left-justify it.
 
 ```C#
+//Prints "  text"
 Console.WriteLine($"{"text",6}");
 ```
-> Prints "  text"
