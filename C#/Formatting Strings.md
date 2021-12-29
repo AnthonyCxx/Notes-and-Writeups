@@ -1,6 +1,24 @@
 # Formatting Strings in C#
 The [String.Format()](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=net-6.0) method (which is indirectly called when you use [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)) is incredibly dexterous and provides a wide array of tool for formatting strings.
-The document contains a collection of formatting techniques as well as examples.
+The document contains a collection of formatting techniques as well as examples. Generally, you should use string interpolation instead of concatenation because it's more
+efficient, especially for concatenating multiple strings.
+
+```C#
+public struct Person
+{
+    public string FirstName {get; private set;}
+    public string LastName {get; private set;}
+
+    //String interpolation
+    public string FullName { get => $"{FirstName} {LastName}";}
+
+    Person(string fname, string lname)
+    {
+        FirstName = fname;
+        LastName  = lname;
+    }
+}
+```
 
 ---
 
