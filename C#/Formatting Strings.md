@@ -6,11 +6,17 @@ The document contains a collection of formatting techniques as well as examples.
 
 # Indexing
 By default, when calling _String.Format()_, the order of the curly braces (`{}`) is the order the  arguments are interpolated; however, the order can be manually overriden
-by using indices.
+by using indices. Indices ARE zero-indexed, so be careful or you'll get a [System.FormatException](https://docs.microsoft.com/en-us/dotnet/api/system.formatexception?view=net-6.0).
 
 ```C#
+string fname = "John", lname = "Doe", greeting;
+int age = 34;
 
+greeting = String.Format("Hello, my name is {1} {2} and I'm {0} years old.", age, fname, lname);
+
+Console.WriteLine(greeting);
 ```
+> Prints "Hello, my name is John, Doe and I'm 34 years old."
 
 ---
 
