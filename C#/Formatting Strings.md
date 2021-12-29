@@ -77,18 +77,20 @@ Trust me when I tell you there are _a lot_ of DataTime formats. Here are just so
 region to region; for example, the `{DateTime.Now:U}` yields `Wednesday, 29 December 2021 16:01:56` for English speakers and `miércoles, diciembre 29, 2021 4:00:09 PM` 
 for Spanish speakers (the month and day and swapped), which is only a slight difference in this case but is still important to recognize.
 
-| Abbrev. | Full Expression | Effect | Example |
-| ------- | --------------- | ------ | ------- | 
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
-| `` | `` |  |  |
+| Abbrev. | Full Expression | Example |
+| ------- | --------------- | ------- | 
+| `d` | `MM/dd/yyyy` | 12/29/2021 |
+| `D` | `dddd, dd MMMM yyyy` |  Wednesday, 29 December 2021 |
+| `f` | `dddd, dd MMMM yyyy HH:mm` | Wednesday, 29 December 2021 16:17 | 
+| `F` | `` |  |
+| `g` | `` |  |
+| `G` | `` |  |
+| `` | `` |  |
+| `` | `` |  |
+| `` | `` |  |
+| `` | `` |  |
+| `` | `` |  |
+| `` | `` |  |
 
 
 # Sources 
@@ -96,3 +98,4 @@ for Spanish speakers (the month and day and swapped), which is only a slight dif
 - C# Documentation: [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
 - daveoncsharp: [Formatting a DateTime Object in C#](https://www.daveoncsharp.com/2009/09/formatting-a-datetime-object-in-csharp/)
 - TutorialsTeacher: [DateTime Formats in C#](https://www.tutorialsteacher.com/articles/datetime-formats-in-csharp)
+- StackOverflow: [DateTime Formats used in InvariantCulture](https://stackoverflow.com/questions/46778141/datetime-formats-used-in-invariantculture)
