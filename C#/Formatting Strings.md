@@ -66,8 +66,8 @@ both the hex numbers 1 and 2A will take the same space).
 | `:D` | decimal (base 10) notation ||
 | `:X` | hexadecimal notation |
 | `:E` | scientific notation |
-| `` |  |
-| `` |  |
+| `:C` | displays as currency |
+| `:P` | displays as a percent |
 
 ## Formatting Dates and Times
 | Formatter | Effect | 
