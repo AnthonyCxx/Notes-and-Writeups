@@ -62,10 +62,10 @@ both the hex numbers 1 and 2A will take the same space).
 ## Formatting Numbers
 | Formatter | Effect | 
 | --------- | ------ |
-| `:Nn` | displays _n_ digits |
+| `:Nn` | displays _n_ digits 
+| `:D` | decimal (base 10) notation ||
 | `:X` | hexadecimal notation |
 | `:E` | scientific notation |
-| `` |  |
 | `` |  |
 | `` |  |
 
