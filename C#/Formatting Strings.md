@@ -5,6 +5,8 @@ The document contains a collection of formatting techniques as well as examples.
 ---
 
 # Indexing
+By default, when calling _String.Format()_, the order of the curly braces (`{}`) is the order the  arguments are interpolated; however, the order can be manually overriden
+by using indices.
 
 ```C#
 
