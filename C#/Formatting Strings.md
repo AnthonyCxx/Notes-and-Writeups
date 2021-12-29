@@ -9,7 +9,7 @@ A positive number will right-justify the text, a negative number will left-justi
 ```C#
 Console.WriteLine($"{"text",6}");
 ```
-> Prints "    text"
+> Prints "&nbsp;&nbsp;text"
 
 ---
 
