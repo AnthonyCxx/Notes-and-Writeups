@@ -56,7 +56,8 @@ formatting component with the string formatting component directly appended on t
 both the hex numbers 1 and 2A will take the same space).
 
 ```C#
-
+//Show Pi to three digits
+Console.WriteLine($"{Math.PI:N3}");
 ```
 
 ## Formatting Numbers
