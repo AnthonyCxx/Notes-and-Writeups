@@ -9,11 +9,10 @@ In C#, files are viewed as [streams](https://docs.microsoft.com/en-us/dotnet/api
 
 # Reading Files
 
-## Reading by Word
-
-## Reading by Line
-
-## Reading Whole File
+| Method | Reads | 
+| `.Read()` |  |
+| `` |  |
+| `` |  |
 
 # Writing Files
 
