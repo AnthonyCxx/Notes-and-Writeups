@@ -16,9 +16,9 @@ Here are some shortcuts to the major folders and common files. This is not compr
 - [Control Flow](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Control%20Flow)
 - [Preprocessor Directives](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Language%20Features/Preprocessor%20Directives.md)
 - [Formatting Strings](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Formatting%20Strings,%20Numbers,%20Dates,%20and%20Time.md)
-- [Reading and Writing Files](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Misc/File%20IO.md)
 - [Object-oriented Programming](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Object-oriented%20Programming)
 - [Exception Handling](https://github.com/EthanC2/Notes-and-Writeups/tree/main/C%23/Exception%20Handling)
+- [Working with Files and Directories](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Misc/Working%20with%20Files%20and%20Directories.md)
 - [Records](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C%23/Misc/Records.md)
 
 ### Intermediate
