@@ -1,7 +1,7 @@
 # Formatting Data in C#
 The [String.Format()](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=net-6.0) method (which is indirectly called when you use [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)) is incredibly dexterous and provides a wide array of tool for formatting strings.
 The document contains a collection of formatting techniques as well as examples. Generally, you should use string interpolation instead of concatenation because it's more
-efficient, especially for concatenating multiple strings.
+efficient, especially for concatenating multiple strings (unless it's a lot of strings, in which case you should use [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-6.0)).
 
 Here, string interpolation is an effective choice for the _FullName_ property because the first and last name may change after being initialized.
 ```C#
