@@ -79,28 +79,23 @@ for Spanish speakers (the month and day and swapped), which is only a slight dif
 
 | Name | Abbrev. | Full Expression | Example |
 | ---- | ------- | --------------- | ------- | 
-| Short Date Pattern | `d` | `MM/dd/yyyy` | 12/29/2021 |
-| Long Date Pattern | `D` | `dddd, dd MMMM yyyy` |  Wednesday, 29 December 2021 |
-| Full Date/Time Pattern (short) | `f` | `dddd, dd MMMM yyyy HH:mm` | Wednesday, 29 December 2021 16:17 | 
-| Full Date/Time Pattern (long) | `F` | `dddd, dd MMMM yyyy HH:mm:ss` | Wednesday, 29 December 2021 16:19:25 |
-|  | `g` | `MM/dd/yyyy HH:mm` | 12/29/2021 16:20 |
-|  | `G` | `MM/dd/yyyy HH:mm:ss` | 12/29/2021 16:20:12 |
-|  | `M` and `m` | `MMMM dd` | January 01 |
-|  | `O` and `o` | `yyyy-MM-ddTHH:mm:ss.fffffffK` | 2022-01-01T15:09:05.4584656+00:00 |
-|  | `R` and `r` | `ddd, dd MMM yyyy HH:mm:ss GMT` | Sat, 01 Jan 2022 15:09:41 GMT |
-|  | `s` | `yyyy-MM-ddTHH:mm:ss` | 2022-01-01T15:10:10 |
-|  | `t` | `HH:mm` | 15:17 |
-|  | `T` | `HH:mm:ss` | 15:17:12 |
-|  | `u` | `yyyy-MM-dd HH:mm:ssZ` | 2022-01-01 15:17:31Z |
-|  | `U` | `dddd, dd MMMM yyyy HH:mm:ss` | Saturday, 01 January 2022 15:17:40 |
-|  | `Y` and `y` | `yyyy MMMM` | 2022 January |
-> C# Doucmentation Ref: [Table of Format Specifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers)
-
-| Abbrev. | Example |
-| ------- | ------- |
-|  |  |
-|  |  |
-|  |  |
+| Short date | `d` | `MM/dd/yyyy` | 12/29/2021 |
+| Long date | `D` | `dddd, dd MMMM yyyy` |  Wednesday, 29 December 2021 |
+| Full date/time (short) | `f` | `dddd, dd MMMM yyyy HH:mm` | Wednesday, 29 December 2021 16:17 | 
+| Full date/time (long) | `F` | `dddd, dd MMMM yyyy HH:mm:ss` | Wednesday, 29 December 2021 16:19:25 |
+| General date/time (short) | `g` | `MM/dd/yyyy HH:mm` | 12/29/2021 16:20 |
+| General date/time (long) | `G` | `MM/dd/yyyy HH:mm:ss` | 12/29/2021 16:20:12 |
+| Month/day | `M` and `m` | `MMMM dd` | January 01 |
+| Round-trip date/time | `O` and `o` | `yyyy-MM-ddTHH:mm:ss.fffffffK` | 2022-01-01T15:09:05.4584656+00:00 |
+| [RFC1123](http://www.csgnetwork.com/timerfc1123calc.html) format | `R` and `r` | `ddd, dd MMM yyyy HH:mm:ss GMT` | Sat, 01 Jan 2022 15:09:41 GMT |
+| Sortable date/time | `s` | `yyyy-MM-ddTHH:mm:ss` | 2022-01-01T15:10:10 |
+| Short time | `t` | `HH:mm` | 15:17 |
+| Long time | `T` | `HH:mm:ss` | 15:17:12 |
+| Universal sortable date/time | `u` | `yyyy-MM-dd HH:mm:ssZ` | 2022-01-01 15:17:31Z |
+| Universal full date/time | `U` | `dddd, dd MMMM yyyy HH:mm:ss` | Saturday, 01 January 2022 15:17:40 |
+| year/month | `Y` and `y` | `yyyy MMMM` | 2022 January |
+> C# Doucmentation Ref: [Table of Format Specifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers) <br />
+> [Full Expression Key](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
 
 
 
