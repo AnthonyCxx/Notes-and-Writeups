@@ -94,8 +94,8 @@ for Spanish speakers (the month and day and swapped), which is only a slight dif
 | Universal sortable date/time | `u` | `yyyy-MM-dd HH:mm:ssZ` | 2022-01-01 15:17:31Z |
 | Universal full date/time | `U` | `dddd, dd MMMM yyyy HH:mm:ss` | Saturday, 01 January 2022 15:17:40 |
 | Year/month | `Y` and `y` | `yyyy MMMM` | 2022 January |
-> C# Doucmentation Ref: [Table of Format Specifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers) <br />
-> [Full Expression Key](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
+> C# Doc. Ref: [Table of Format Specifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers) <br />
+> C# Doc. Ref:[Full Expression Key](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
 
 
 
