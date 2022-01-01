@@ -77,23 +77,31 @@ Trust me when I tell you there are _a lot_ of DataTime formats. Here are just so
 region to region; for example, the `{DateTime.Now:U}` yields `Wednesday, 29 December 2021 16:01:56` for English speakers and `miércoles, diciembre 29, 2021 4:00:09 PM` 
 for Spanish speakers (the month and day and swapped), which is only a slight difference in this case but is still good to know.
 
-| Abbrev. | Full Expression | Example |
-| ------- | --------------- | ------- | 
-| `d` | `MM/dd/yyyy` | 12/29/2021 |
-| `D` | `dddd, dd MMMM yyyy` |  Wednesday, 29 December 2021 |
-| `f` | `dddd, dd MMMM yyyy HH:mm` | Wednesday, 29 December 2021 16:17 | 
-| `F` | `dddd, dd MMMM yyyy HH:mm:ss` | Wednesday, 29 December 2021 16:19:25 |
-| `g` | `MM/dd/yyyy HH:mm` | 12/29/2021 16:20 |
-| `G` | `MM/dd/yyyy HH:mm:ss` | 12/29/2021 16:20:12 |
-| `M` and `m` | `` |  |
-| `O` and `o` | `` |  |
-| `R` and `r` | `` |  |
-| `s` | `` |  |
-| `t` | `` |  |
-| `T` | `` |  |
-| `u` | `` |  |
-| `U` | `` |  |
-| `Y` and `y` | `` |  |
+| Name | Abbrev. | Full Expression | Example |
+| ---- | ------- | --------------- | ------- | 
+| Short Date Pattern | `d` | `MM/dd/yyyy` | 12/29/2021 |
+| Long Date Pattern | `D` | `dddd, dd MMMM yyyy` |  Wednesday, 29 December 2021 |
+| Full Date/Time Pattern (short) | `f` | `dddd, dd MMMM yyyy HH:mm` | Wednesday, 29 December 2021 16:17 | 
+| Full Date/Time Pattern (long) | `F` | `dddd, dd MMMM yyyy HH:mm:ss` | Wednesday, 29 December 2021 16:19:25 |
+|  | `g` | `MM/dd/yyyy HH:mm` | 12/29/2021 16:20 |
+|  | `G` | `MM/dd/yyyy HH:mm:ss` | 12/29/2021 16:20:12 |
+|  | `M` and `m` | `MMMM dd` | January 01 |
+|  | `O` and `o` | `yyyy-MM-ddTHH:mm:ss.fffffffK` | 2022-01-01T15:09:05.4584656+00:00 |
+|  | `R` and `r` | `ddd, dd MMM yyyy HH:mm:ss GMT` | Sat, 01 Jan 2022 15:09:41 GMT |
+|  | `s` | `yyyy-MM-ddTHH:mm:ss` | 2022-01-01T15:10:10 |
+|  | `t` | `HH:mm` | 15:17 |
+|  | `T` | `HH:mm:ss` | 15:17:12 |
+|  | `u` | `yyyy-MM-dd HH:mm:ssZ` | 2022-01-01 15:17:31Z |
+|  | `U` | `dddd, dd MMMM yyyy HH:mm:ss` | Saturday, 01 January 2022 15:17:40 |
+|  | `Y` and `y` | `yyyy MMMM` | 2022 January |
+> C# Doucmentation Ref: [Table of Format Specifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers)
+
+| Abbrev. | Example |
+| ------- | ------- |
+|  |  |
+|  |  |
+|  |  |
+
 
 
 # Sources 
