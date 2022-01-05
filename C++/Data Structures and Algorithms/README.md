@@ -4,11 +4,19 @@ compared to C++'s implementation of the Mersenne Twister algorithm ([mt19937](ht
 to consider mt19937, `rand()` is infamous for being biased towards the lower end the distribution. Regardless of your use case, it should be marked `DNU`.
 
 # Data Structures
+
+## Physical Data Structures
+Dictate how the data is stored in physical memory.
+
 - [Arrays](https://github.com/EthanC2/Notes-and-Writeups/blob/main/C++/Data%20Structures%20and%20Algorithms/Data%20Structures/Arrays.md)
 - Linked Lists
-- Binary Trees
+
+## Logical Data Structures
+Dictate how the data can be utilized.
+
 - Queue
 - Stack
+- Binary Trees
 - Heap
 - Hash Table
 - Trie
